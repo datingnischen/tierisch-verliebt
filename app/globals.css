@@ -647,6 +647,24 @@ img {
   font-weight: 700;
 }
 
+.pagination-bar {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--muted);
+}
+
+.pagination-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .sticky-cta-button {
   position: fixed;
   bottom: 0;

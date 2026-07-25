@@ -1,9 +1,26 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
-import { getMagazineCategories, getMagazinePages, getMagazinePosts, stripHtml } from "@/lib/wordpress";
+import { getMagazineCategories, getMagazinePages, getMagazinePosts, SITE_URL, stripHtml } from "@/lib/wordpress";
 
 const HOME_HERO_IMAGE = "https://static2.icony-hosting.de/dyncontent2f3e1caa346107861506226d1d547c07/img/generic2021/frontpage-v4/backgrounds/frontpage-visual-tierischverliebt.webp";
+
+export const metadata: Metadata = {
+  title: "tierisch-verliebt.de – Singles, Tierwelten & Magazin",
+  description:
+    "Finde tierliebe Singles, entdecke Magazin-Themen rund um Hund, Katze und weitere Tierwelten und starte kostenlos in eine Partnersuche mit Herz für Tiere.",
+  alternates: {
+    canonical: `${SITE_URL}/`,
+  },
+  openGraph: {
+    title: "tierisch-verliebt.de – Singles, Tierwelten & Magazin",
+    description:
+      "Finde tierliebe Singles, entdecke Magazin-Themen rund um Hund, Katze und weitere Tierwelten und starte kostenlos in eine Partnersuche mit Herz für Tiere.",
+    url: `${SITE_URL}/`,
+    images: [HOME_HERO_IMAGE],
+  },
+};
 
 export default async function HomePage() {
   const [posts, pages, categories, expert] = await Promise.all([
@@ -75,25 +92,16 @@ export default async function HomePage() {
         </article>
 
         <article className="panel-card">
-          <span className="eyebrow">Magazin & Vertrauen</span>
-          <h2>Das Magazin bleibt echte WordPress-Quelle — die Oberfläche wird nur klarer und stärker.</h2>
+          <span className="eyebrow">Magazin & Einstieg</span>
+          <h2>Hier treffen Tierwelten, Kennenlernen und hilfreiche Magazin-Inhalte aufeinander.</h2>
           <p>
-            Beiträge, Kategorien und Autorenprofile werden direkt aus dem bestehenden Magazin gelesen und im neuen
-            Frontend kundenfreundlich dargestellt.
+            Du bekommst Ratgeber, alltagsnahe Tier-Themen und direkte Wege zu passenden Kontakten — ohne Umwege und
+            ohne unklare Einstiege.
           </p>
-          <ul className="stats-list">
-            <li>
-              <strong>{posts.length}</strong>
-              <span>aktuelle Beiträge</span>
-            </li>
-            <li>
-              <strong>{pages.length}</strong>
-              <span>wichtige Magazin-Seiten</span>
-            </li>
-            <li>
-              <strong>{categories.length}</strong>
-              <span>Magazin-Themen</span>
-            </li>
+          <ul className="trust-points" aria-label="Stärken von tierisch-verliebt.de">
+            <li>Hund, Katze und weitere Tierwelten mit klaren Einstiegen</li>
+            <li>Magazin, Geschichten und Partnersuche greifen sauber ineinander</li>
+            <li>Direkte Wege zu Anmeldung, Themenwelten und vertrauensvollen Artikeln</li>
           </ul>
         </article>
       </section>

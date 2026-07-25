@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
-import { getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
+import { SITE_URL, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -16,9 +16,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const entry = await getMagazineEntryBySlug(slug);
   if (!entry) return {};
 
+  const description = stripHtml(entry.excerpt || entry.content).slice(0, 155);
+
   return {
-    title: `${entry.title} | tierisch-verliebt.de`,
-    description: stripHtml(entry.excerpt || entry.content).slice(0, 155),
+    title: entry.title,
+    description,
+    alternates: {
+      canonical: `${SITE_URL}/magazin/${slug}`,
+    },
+    openGraph: {
+      title: entry.title,
+      description,
+      url: `${SITE_URL}/magazin/${slug}`,
+      type: entry.type === "post" ? "article" : "website",
+      images: entry.featuredImage ? [entry.featuredImage] : undefined,
+    },
   };
 }
 
@@ -41,7 +53,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
               Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}
             </span>
           ) : null}
-          {entry.date ? <span>{entry.date.slice(0, 10)}</span> : null}
+          {entry.date ? <span>{formatGermanDate(entry.date)}</span> : null}
           <Link href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
         </div>
       </section>
@@ -77,8 +89,8 @@ export default async function MagazineDetailPage({ params }: PageProps) {
             eyebrow={authorProfile.slug === "christian-m-haas" ? "Unser Datingexperte" : "Magazin-Autor"}
             title={
               authorProfile.slug === "christian-m-haas"
-                ? "Hinter den Inhalten steht ein reales Profil mit Dating-Erfahrung und echter Tierliebe."
-                : `Dieser Beitrag wurde von ${authorProfile.name} für das Tier-Magazin verfasst.`
+                ? "Hinter den Inhalten steht ein reales Profil mit Dating-Erfahrung, Tierliebe und langjähriger Magazinbegleitung."
+                : `Dieser Beitrag wurde von ${authorProfile.name} für das Tier-Magazin zusammengestellt.`
             }
             primaryLabel={authorProfile.slug === "christian-m-haas" ? "Zum Expertenprofil" : "Zum Autorenprofil"}
           />

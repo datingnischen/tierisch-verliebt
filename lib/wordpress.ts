@@ -1,6 +1,8 @@
 import { cache } from "react";
 
 const MAGAZINE_API_BASE = "https://tierisch-verliebt.de/magazin/wp-json/wp/v2";
+export const SITE_URL = "https://tierisch-verliebt.vercel.app";
+export const MAGAZINE_POSTS_PER_PAGE = 12;
 
 export type WpRendered = {
   rendered?: string;
@@ -135,6 +137,20 @@ function normalizeCategory(term: WpTerm): MagazineCategory {
   };
 }
 
+export function formatGermanDate(dateString?: string) {
+  if (!dateString) return "";
+
+  try {
+    return new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(dateString));
+  } catch {
+    return dateString.slice(0, 10);
+  }
+}
+
 function normalizeEntry(item: WpRestItem): MagazineEntry {
   const featured = item._embedded?.["wp:featuredmedia"]?.[0];
   const author = item._embedded?.author?.[0];
@@ -181,12 +197,16 @@ async function fetchWp<T>(path: string, params: Record<string, string | number |
   return response as Response & { json(): Promise<T> };
 }
 
-async function fetchAllPaginated<T>(path: string, baseParams: Record<string, string | number | boolean>) {
+async function fetchAllPaginated<T>(
+  path: string,
+  baseParams: Record<string, string | number | boolean>,
+  perPage = 100,
+) {
   const results: T[] = [];
   let page = 1;
 
   while (true) {
-    const response = await fetchWp<T[]>(path, { ...baseParams, per_page: 100, page });
+    const response = await fetchWp<T[]>(path, { ...baseParams, per_page: perPage, page });
     const batch = await response.json();
     results.push(...batch);
 
@@ -218,24 +238,55 @@ export const getMagazineCategories = cache(async (): Promise<MagazineCategory[]>
 });
 
 export const getMagazinePosts = cache(async (): Promise<MagazineEntry[]> => {
-  const posts = await fetchAllPaginated<WpRestItem>("/posts", {
-    _embed: 1,
-    orderby: "date",
-    order: "desc",
-  });
+  const posts = await fetchAllPaginated<WpRestItem>(
+    "/posts",
+    {
+      _embed: 1,
+      orderby: "date",
+      order: "desc",
+    },
+    20,
+  );
 
   return posts.map(normalizeEntry);
 });
 
 export const getMagazinePages = cache(async (): Promise<MagazineEntry[]> => {
-  const pages = await fetchAllPaginated<WpRestItem>("/pages", {
-    _embed: 1,
-    orderby: "title",
-    order: "asc",
-  });
+  const pages = await fetchAllPaginated<WpRestItem>(
+    "/pages",
+    {
+      _embed: 1,
+      orderby: "title",
+      order: "asc",
+    },
+    20,
+  );
 
   return pages.map(normalizeEntry);
 });
+
+export const getMagazinePostsPage = cache(
+  async (page: number, perPage = MAGAZINE_POSTS_PER_PAGE): Promise<{
+    posts: MagazineEntry[];
+    totalPages: number;
+    totalItems: number;
+  }> => {
+    const response = await fetchWp<WpRestItem[]>("/posts", {
+      _embed: 1,
+      orderby: "date",
+      order: "desc",
+      per_page: perPage,
+      page,
+    });
+
+    const posts = await response.json();
+    return {
+      posts: posts.map(normalizeEntry),
+      totalPages: Number(response.headers.get("X-WP-TotalPages") || 1),
+      totalItems: Number(response.headers.get("X-WP-Total") || posts.length),
+    };
+  },
+);
 
 export const getAllMagazineEntries = cache(async (): Promise<MagazineEntry[]> => {
   const [posts, pages] = await Promise.all([getMagazinePosts(), getMagazinePages()]);
@@ -271,12 +322,16 @@ export const getMagazineCategoryBySlug = cache(async (slug: string): Promise<Mag
 });
 
 export const getMagazinePostsByCategory = cache(async (categoryId: number): Promise<MagazineEntry[]> => {
-  const posts = await fetchAllPaginated<WpRestItem>("/posts", {
-    _embed: 1,
-    categories: categoryId,
-    orderby: "date",
-    order: "desc",
-  });
+  const posts = await fetchAllPaginated<WpRestItem>(
+    "/posts",
+    {
+      _embed: 1,
+      categories: categoryId,
+      orderby: "date",
+      order: "desc",
+    },
+    20,
+  );
 
   return posts.map(normalizeEntry);
 });

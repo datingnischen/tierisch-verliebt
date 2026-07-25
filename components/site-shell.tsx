@@ -68,7 +68,7 @@ const footerColumns: Array<{ title: string; links: NavLink[] }> = [
     title: "Mitgliedschaft",
     links: [
       { label: "Registrieren", href: "https://tierisch-verliebt.de/?AID=magazin", external: true },
-      { label: "Live-Startseite", href: "https://tierisch-verliebt.de/", external: true },
+      { label: "Startseite", href: "https://tierisch-verliebt.de/", external: true },
       { label: "Magazin-Start", href: "/magazin" },
       { label: "Kostenlos starten", href: "https://tierisch-verliebt.de/?AID=magazin", external: true },
     ],
@@ -92,7 +92,6 @@ export function SiteHeader() {
         </a>
 
         <div className="header-actions compact-header-actions" aria-label="Nutzeraktionen">
-          <a className="login-link" href="https://tierisch-verliebt.de/">Live</a>
           <a className="header-register header-register-primary" href="https://tierisch-verliebt.de/?AID=magazin">Registrieren</a>
 
           <details className="header-menu">
@@ -169,6 +168,8 @@ export function SiteFooter() {
         <div className="sub-footer-links">
           <a href="https://tierisch-verliebt.de/?AID=magazin">Registrieren</a>
           <a href="https://tierisch-verliebt.de/magazin/">Magazin</a>
+          <a href="https://tierisch-verliebt.de/datenschutz.html">Datenschutz</a>
+          <a href="https://tierisch-verliebt.de/impressum.html">Impressum</a>
         </div>
       </div>
     </footer>

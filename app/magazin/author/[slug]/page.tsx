@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorPosts, getAuthorProfile, getKnownAuthorSlugs } from "@/lib/author-profiles";
-import { stripHtml } from "@/lib/wordpress";
+import { SITE_URL, stripHtml } from "@/lib/wordpress";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -22,8 +22,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!profile) return {};
 
   return {
-    title: `${profile.name} | tierisch-verliebt.de`,
+    title: profile.name,
     description: profile.bio.slice(0, 155),
+    alternates: {
+      canonical: `${SITE_URL}/magazin/author/${slug}`,
+    },
+    openGraph: {
+      title: profile.name,
+      description: profile.bio.slice(0, 155),
+      url: `${SITE_URL}/magazin/author/${slug}`,
+      images: profile.imageUrl ? [profile.imageUrl] : undefined,
+    },
   };
 }
 
@@ -40,7 +49,6 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
         <p>{profile.bio}</p>
         <div className="meta-row">
           <span>{profile.role}</span>
-          <span>{posts.length} veröffentlichte Beiträge</span>
           <Link href="/magazin">Zum Magazin</Link>
         </div>
       </section>

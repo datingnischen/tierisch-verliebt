@@ -12,7 +12,7 @@ type ExpertTrustCardProps = {
 export function ExpertTrustCard({
   profile,
   eyebrow = "Begleitet von unserem Datingexperten",
-  title = "Die Inhalte orientieren sich an echter Dating- und Tierliebe-Erfahrung statt an anonymer Redaktionsoptik.",
+  title = "Die Inhalte greifen Dating-Erfahrung, Tierliebe und alltagsnahe Fragen rund ums Kennenlernen auf.",
   primaryLabel = "Zum Autorenprofil",
   primaryHref,
 }: ExpertTrustCardProps) {

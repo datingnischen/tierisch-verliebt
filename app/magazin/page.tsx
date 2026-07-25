@@ -1,11 +1,35 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { getMagazineCategories, getMagazinePages, getMagazinePosts, stripHtml } from "@/lib/wordpress";
+import {
+  MAGAZINE_POSTS_PER_PAGE,
+  SITE_URL,
+  formatGermanDate,
+  getMagazineCategories,
+  getMagazinePages,
+  getMagazinePostsPage,
+  stripHtml,
+} from "@/lib/wordpress";
 
 export const revalidate = 300;
 
+export const metadata: Metadata = {
+  title: "Tier-Magazin für tierliebe Singles",
+  description:
+    "Entdecke Magazin-Inhalte rund um Hund, Katze und weitere Tierwelten – mit klaren Einstiegen, echten Autoren und direktem Weg zur tierlieben Partnersuche.",
+  alternates: {
+    canonical: `${SITE_URL}/magazin`,
+  },
+  openGraph: {
+    title: "Tier-Magazin für tierliebe Singles",
+    description:
+      "Entdecke Magazin-Inhalte rund um Hund, Katze und weitere Tierwelten – mit klaren Einstiegen, echten Autoren und direktem Weg zur tierlieben Partnersuche.",
+    url: `${SITE_URL}/magazin`,
+  },
+};
+
 export default async function MagazineOverviewPage() {
-  const [posts, pages, categories] = await Promise.all([
-    getMagazinePosts(),
+  const [{ posts, totalPages, totalItems }, pages, categories] = await Promise.all([
+    getMagazinePostsPage(1, MAGAZINE_POSTS_PER_PAGE),
     getMagazinePages(),
     getMagazineCategories(),
   ]);
@@ -18,8 +42,8 @@ export default async function MagazineOverviewPage() {
         <span className="eyebrow">Tier-Magazin</span>
         <h1>Tierwissen, tierliebe Geschichten und Magazin-Inhalte für Singles mit Herz für Tiere.</h1>
         <p>
-          Hunde, Katzen und weitere Tierwelten treffen hier auf Ratgeber, Magazineinstiege und eine klare,
-          vertrauensvolle Oberfläche statt eines nackten Imports.
+          Entdecke Ratgeber, Tierwelten und echte Geschichten rund um Hund, Katze und weitere Haustier-Themen — mit
+          klaren Einstiegen, echten Autorenprofilen und direktem Weg zur Anmeldung.
         </p>
         <div className="button-row">
           <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
@@ -36,7 +60,12 @@ export default async function MagazineOverviewPage() {
           <article className="editorial-feature-card">
             {featuredPost.featuredImage ? (
               <div className="editorial-feature-media">
-                <img src={featuredPost.featuredImage} alt={featuredPost.featuredImageAlt || featuredPost.title} loading="eager" decoding="async" />
+                <img
+                  src={featuredPost.featuredImage}
+                  alt={featuredPost.featuredImageAlt || featuredPost.title}
+                  loading="eager"
+                  decoding="async"
+                />
               </div>
             ) : null}
             <div className="editorial-feature-copy">
@@ -45,7 +74,7 @@ export default async function MagazineOverviewPage() {
               <p>{stripHtml(featuredPost.excerpt || featuredPost.content).slice(0, 220)}…</p>
               <div className="meta-row">
                 {featuredPost.authorName ? <span>Von {featuredPost.authorName}</span> : null}
-                {featuredPost.date ? <span>{featuredPost.date.slice(0, 10)}</span> : null}
+                {featuredPost.date ? <span>{formatGermanDate(featuredPost.date)}</span> : null}
               </div>
               <Link className="button button-primary" href={`/magazin/${featuredPost.slug}`}>
                 Jetzt lesen
@@ -73,10 +102,10 @@ export default async function MagazineOverviewPage() {
         <article className="panel-card">
           <div className="section-header">
             <span className="eyebrow">Neueste Beiträge</span>
-            <h2>Aktuelle Artikel</h2>
+            <h2>Aktuelle Artikel im Überblick</h2>
           </div>
           <div className="stack-list">
-            {posts.slice(0, 8).map((post) => (
+            {posts.map((post) => (
               <Link key={post.id} href={`/magazin/${post.slug}`} className="article-card article-card-rich">
                 {post.featuredImage ? (
                   <div className="article-card-media">
@@ -90,6 +119,19 @@ export default async function MagazineOverviewPage() {
               </Link>
             ))}
           </div>
+
+          {totalPages > 1 ? (
+            <div className="pagination-bar" aria-label="Seitennavigation Magazin">
+              <span>
+                Seite 1 von {totalPages} · {totalItems} Beiträge
+              </span>
+              <div className="pagination-actions">
+                <Link className="button button-secondary" href="/magazin/page/2">
+                  Ältere Beiträge
+                </Link>
+              </div>
+            </div>
+          ) : null}
         </article>
 
         <article className="panel-card">
