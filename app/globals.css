@@ -247,6 +247,24 @@ img {
   color: var(--foreground);
 }
 
+.social-content p:has(.social-inline-icon),
+.social-content p img.social-inline-icon {
+  overflow: hidden;
+}
+
+.social-inline-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 12px 8px 0;
+  float: left;
+}
+
+.social-content p {
+  min-height: 42px;
+}
+
 .article-card {
   display: grid;
   gap: 8px;

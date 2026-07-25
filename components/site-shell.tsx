@@ -60,7 +60,7 @@ const footerColumns: Array<{ title: string; links: NavLink[] }> = [
       { label: "Unser Datingexperte", href: "/magazin/christian" },
       { label: "Christian M. Haas", href: "/magazin/author/christian-m-haas" },
       { label: "Redaktion", href: "/magazin/author/redaktion" },
-      { label: "Social Media", href: "https://tierisch-verliebt.de/social-media/", external: true },
+      { label: "Social Media", href: "/social-media" },
       { label: "Presse & Sponsoring", href: "/magazin/thema/presse" },
       { label: "Apps", href: "/magazin/thema/apps" },
     ],
