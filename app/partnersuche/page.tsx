@@ -51,10 +51,17 @@ export default async function PartnersucheHubPage() {
           </p>
           <div className="city-grid">
             {hub.cities.map((city) => (
-              <Link key={city.slug} className="city-card" href={city.href}>
-                <span className="eyebrow eyebrow-muted">Partnersuche</span>
-                <h3>{city.cityName}</h3>
-                <p>Tierliebe Singles, Treffpunkte und hilfreiche Einstiege für {city.cityName}.</p>
+              <Link key={city.slug} className="city-card city-card-with-media" href={city.href}>
+                {city.imageUrl ? (
+                  <div className="city-card-media">
+                    <img src={city.imageUrl} alt={city.imageAlt || `Vorschau für ${city.cityName}`} loading="lazy" decoding="async" />
+                  </div>
+                ) : null}
+                <div className="city-card-copy">
+                  <span className="eyebrow eyebrow-muted">Partnersuche</span>
+                  <h3>{city.cityName}</h3>
+                  <p>Tierliebe Singles, Treffpunkte und hilfreiche Einstiege für {city.cityName}.</p>
+                </div>
               </Link>
             ))}
           </div>

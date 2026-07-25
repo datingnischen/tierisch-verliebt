@@ -25,7 +25,13 @@ export type PartnersucheCity = {
 export type PartnersucheHub = {
   title: string;
   description: string;
-  cities: Array<{ slug: string; cityName: string; href: string }>;
+  cities: Array<{
+    slug: string;
+    cityName: string;
+    href: string;
+    imageUrl?: string;
+    imageAlt?: string;
+  }>;
 };
 
 function normalizeSlugToCityName(slug: string) {
@@ -137,16 +143,19 @@ export const getPartnersucheSlugs = cache(async (): Promise<string[]> => {
 export const getPartnersucheHub = cache(async (): Promise<PartnersucheHub> => {
   const html = await fetchText(PARTNERSUCHE_BASE);
   const slugs = await getPartnersucheSlugs();
+  const previews = await Promise.all(slugs.map((slug) => getPartnersucheCity(slug)));
 
   return {
     title: getTitle(html) || "Finde tierliebe Singles aus deiner Region",
     description:
       getMetaContent(html, "description") ||
       "Wähle eine Stadt und entdecke tierliebe Singles, Treffpunkte und hilfreiche Einstiege für deine Partnersuche.",
-    cities: slugs.map((slug) => ({
+    cities: slugs.map((slug, index) => ({
       slug,
       cityName: normalizeSlugToCityName(slug),
       href: `/partnersuche/${slug}`,
+      imageUrl: previews[index]?.imageUrl,
+      imageAlt: previews[index]?.imageAlt,
     })),
   };
 });
