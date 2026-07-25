@@ -193,6 +193,36 @@ img {
   gap: 14px;
 }
 
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.city-grid-compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.city-card {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.city-card h3 {
+  color: var(--foreground);
+}
+
 .article-card {
   display: grid;
   gap: 8px;
@@ -735,6 +765,8 @@ img {
   .expert-card,
   .editorial-feature-card,
   .article-card-rich,
+  .city-grid,
+  .city-grid-compact,
   .footer-main,
   .footer-link-grid,
   .footer-cta-soft {

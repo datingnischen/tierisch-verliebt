@@ -6,6 +6,7 @@ type NavLink = {
 
 const headerMenuItems: NavLink[] = [
   { label: "Start", href: "/" },
+  { label: "Partnersuche", href: "/partnersuche" },
   { label: "Magazin", href: "/magazin" },
   { label: "Registrieren", href: "https://tierisch-verliebt.de/?AID=magazin", external: true },
   { label: "Hunde", href: "/magazin/hunderassen" },
@@ -69,6 +70,7 @@ const footerColumns: Array<{ title: string; links: NavLink[] }> = [
     links: [
       { label: "Registrieren", href: "https://tierisch-verliebt.de/?AID=magazin", external: true },
       { label: "Startseite", href: "https://tierisch-verliebt.de/", external: true },
+      { label: "Partnersuche", href: "/partnersuche" },
       { label: "Magazin-Start", href: "/magazin" },
       { label: "Kostenlos starten", href: "https://tierisch-verliebt.de/?AID=magazin", external: true },
     ],
