@@ -53,7 +53,7 @@ export default async function SocialMediaPage() {
       <section className="content-section">
         <article className="panel-card">
           <div className="section-header">
-            <span className="eyebrow">Importierter CMS-Inhalt</span>
+            <span className="eyebrow">Unsere Kanäle im Überblick</span>
             <h2>Offizielle Kanäle und Community-Einstiege</h2>
           </div>
           <div className="rich-content social-content" dangerouslySetInnerHTML={{ __html: page.contentHtml }} />

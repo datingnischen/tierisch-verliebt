@@ -78,7 +78,7 @@ export default async function PartnersucheCityPage({ params }: PageProps) {
       <section className="content-section">
         <article className="panel-card">
           <div className="section-header">
-            <span className="eyebrow">Importierter Stadtinhalt</span>
+            <span className="eyebrow">Tipps & Highlights vor Ort</span>
             <h2>Tierfreundliche Orte, Treffpunkte und regionale Tipps</h2>
           </div>
           <div className="rich-content" dangerouslySetInnerHTML={{ __html: city.contentHtml }} />

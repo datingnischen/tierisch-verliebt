@@ -46,8 +46,7 @@ export default async function PartnersucheHubPage() {
             <h2>Wähle deine Stadt für den regionalen Einstieg</h2>
           </div>
           <p>
-            Hier findest du die regionalen Einstiege aus dem bisherigen ICONY-CMS jetzt direkt im neuen Frontend — mit
-            bekannten Städten, tierfreundlichen Themen und dem direkten Weg zur Anmeldung.
+            Hier findest du regionale Einstiege mit bekannten Städten, tierfreundlichen Themen und dem direkten Weg zur Anmeldung.
           </p>
           <div className="city-grid">
             {hub.cities.map((city) => (
