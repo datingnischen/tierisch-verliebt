@@ -1,13 +1,24 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://static2.icony-hosting.de/dyncontent759285aef0330335de28d4eaf40f0689/fonts/opensans/OpenSans.woff2") format("woff2");
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #fffaf5;
+  --background: #f4f4f4;
   --surface: #ffffff;
-  --surface-soft: #f8f4ec;
-  --foreground: #2e251f;
-  --muted: #6c6158;
-  --line: #eadfd1;
-  --brand: #d95f2d;
-  --brand-soft: #fff0e5;
-  --accent: #8bbf55;
+  --surface-soft: #fafafa;
+  --foreground: #333333;
+  --muted: #505050;
+  --line: #d2d2d2;
+  --brand: #c02e2e;
+  --brand-dark: #6f1b1b;
+  --brand-soft: #faeaea;
+  --accent: #429a45;
+  --accent-dark: #29842c;
+  --accent-soft: #e5f0e5;
 }
 
 * {
@@ -25,11 +36,11 @@ body {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top right, rgba(139, 191, 85, 0.16), transparent 32%),
-    radial-gradient(circle at top left, rgba(217, 95, 45, 0.12), transparent 28%),
-    linear-gradient(180deg, #fffcf8 0%, var(--background) 100%);
+    radial-gradient(circle at top right, rgba(66, 154, 69, 0.08), transparent 30%),
+    radial-gradient(circle at top left, rgba(192, 46, 46, 0.08), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -57,10 +68,10 @@ img {
 .hero-card,
 .panel-card {
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
   border-radius: 28px;
-  box-shadow: 0 24px 50px rgba(83, 57, 35, 0.1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
 }
 
 .hero-card {
@@ -71,8 +82,8 @@ img {
 
 .hero-card h1 {
   font-size: clamp(2.2rem, 5vw, 4rem);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
 }
 
 .hero-card h2,
@@ -95,11 +106,11 @@ img {
 }
 
 .hero-brand {
-  background: radial-gradient(circle at top left, rgba(139, 191, 85, 0.2), transparent 42%), rgba(255, 255, 255, 0.98);
+  background: radial-gradient(circle at top left, rgba(66, 154, 69, 0.12), transparent 42%), rgba(255, 255, 255, 0.99);
 }
 
 .hero-magazine {
-  background: radial-gradient(circle at top left, rgba(217, 95, 45, 0.16), transparent 42%), rgba(255, 255, 255, 0.98);
+  background: radial-gradient(circle at top left, rgba(192, 46, 46, 0.1), transparent 42%), rgba(255, 255, 255, 0.99);
 }
 
 .eyebrow {
@@ -108,10 +119,10 @@ img {
   padding: 8px 14px;
   border-radius: 999px;
   background: var(--brand-soft);
-  color: var(--brand);
-  font-size: 0.84rem;
+  color: var(--brand-dark);
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -142,9 +153,9 @@ img {
 }
 
 .button-primary {
-  background: linear-gradient(135deg, var(--brand), #e57a4f);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: #fff;
-  box-shadow: 0 10px 22px rgba(150, 79, 37, 0.22);
+  box-shadow: 0 10px 22px rgba(66, 154, 69, 0.24);
 }
 
 .button-secondary {
@@ -202,9 +213,9 @@ img {
 .chip {
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(139, 191, 85, 0.12);
-  border: 1px solid rgba(139, 191, 85, 0.2);
-  color: #587d30;
+  background: var(--brand-soft);
+  border: 1px solid #f2caca;
+  color: var(--brand-dark);
   font-weight: 600;
 }
 
@@ -291,10 +302,10 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--accent), var(--brand));
+  background: linear-gradient(135deg, var(--brand), #d44e4e);
   color: #fff;
   font-weight: 900;
-  box-shadow: 0 16px 34px rgba(139, 191, 85, 0.25);
+  box-shadow: 0 16px 34px rgba(192, 46, 46, 0.2);
 }
 
 .brand-lockup-copy {
@@ -336,10 +347,10 @@ img {
   min-height: 46px;
   padding: 0 20px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), #74a545);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: #fff;
   font-weight: 800;
-  box-shadow: 0 18px 34px rgba(116, 165, 69, 0.24);
+  box-shadow: 0 18px 34px rgba(66, 154, 69, 0.24);
 }
 
 .header-menu {
