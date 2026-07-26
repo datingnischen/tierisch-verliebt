@@ -652,8 +652,17 @@ img {
 }
 
 .article-card-copy {
-  padding: 20px 22px 22px;
+  padding: 24px 24px 26px;
   align-content: start;
+}
+
+.article-card-copy h3,
+.article-card-copy p {
+  margin: 0;
+}
+
+.article-card-copy p {
+  line-height: 1.6;
 }
 
 .eyebrow-brand {
@@ -919,6 +928,10 @@ img {
   .expert-card-copy,
   .floating-entry-card {
     padding: 24px;
+  }
+
+  .article-card-copy {
+    padding: 20px 20px 22px;
   }
 
   .floating-entry-card {
