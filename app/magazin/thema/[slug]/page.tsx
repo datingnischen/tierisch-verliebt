@@ -88,10 +88,6 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
       </section>
 
       <section className="content-section">
-        <div className="section-header">
-          <span className="eyebrow">Aktuelle Beiträge</span>
-          <h2>Passende Artikel aus {category.name}</h2>
-        </div>
         <div className="stack-list">
           {posts.map((post) => (
             <Link key={post.id} href={`/magazin/${post.slug}`} className="article-card article-card-rich">
