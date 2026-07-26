@@ -1,7 +1,3 @@
-'use client';
-
-import { usePathname } from "next/navigation";
-
 type NavLink = {
   label: string;
   href: string;
@@ -86,12 +82,6 @@ function externalAttrs(external?: boolean) {
 }
 
 export function SiteHeader() {
-  const pathname = usePathname();
-
-  if (pathname === "/social-media") {
-    return null;
-  }
-
   return (
     <header className="site-header-shell">
       <div className="site-header-bar compact-header-bar shell">
