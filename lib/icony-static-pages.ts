@@ -39,14 +39,17 @@ function getTitle(html: string) {
 }
 
 function extractPanelAfterH1(html: string, h1Text: string) {
-  const h1Index = html.indexOf(h1Text);
-  if (h1Index === -1) return "";
+  const h1Regex = /<h1[^>]*>[\s\S]*?<\/h1>/i;
+  const h1Match = h1Regex.exec(html);
+  if (!h1Match) return "";
+
+  const h1Index = h1Match.index;
+  const h1EndIndex = h1Index + h1Match[0].length;
   const endMarker = '<div class="ic-row m-t-40">';
-  const endIndex = html.indexOf(endMarker, h1Index);
+  const endIndex = html.indexOf(endMarker, h1EndIndex);
   if (endIndex === -1) return "";
 
-  const startTagEnd = html.lastIndexOf('>', h1Index);
-  return html.slice(startTagEnd + 1, endIndex).trim();
+  return html.slice(h1EndIndex, endIndex).trim();
 }
 
 function normalizeImportedHtml(html: string) {

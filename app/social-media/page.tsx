@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { getSocialMediaPage, socialMediaCanonical } from "@/lib/icony-static-pages";
@@ -32,23 +31,7 @@ export default async function SocialMediaPage() {
         <span className="eyebrow">Social Media</span>
         <h1>{page.title}</h1>
         <p>{page.description}</p>
-        <div className="button-row">
-          <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
-            Kostenlos registrieren
-          </Link>
-          <Link className="button button-secondary" href="/partnersuche">
-            Zur Partnersuche
-          </Link>
-        </div>
       </section>
-
-      {page.imageUrl ? (
-        <section className="content-section">
-          <figure className="article-hero-media">
-            <img src={page.imageUrl} alt={page.imageAlt || page.title} loading="eager" decoding="async" />
-          </figure>
-        </section>
-      ) : null}
 
       <section className="content-section">
         <article className="panel-card">
