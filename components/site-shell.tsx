@@ -16,6 +16,8 @@ const headerMenuItems: NavLink[] = [
   { label: "Über uns", href: "/magazin/ueber-uns" },
 ];
 
+const HEADER_LOGO_URL = "https://static2.icony-hosting.de/dyncontenta4a2c6ef760359a40c5972ce5e4dd552/img/tierischverliebt/logo.svg";
+
 const footerColumns: Array<{ title: string; links: NavLink[] }> = [
   {
     title: "Hunde",
@@ -81,19 +83,34 @@ function externalAttrs(external?: boolean) {
   return external ? { target: "_blank", rel: "noopener" } : undefined;
 }
 
+function BrandLogo({ footer = false }: { footer?: boolean }) {
+  if (footer) {
+    return (
+      <a className="brand-lockup footer-brand-wordmark tv-brand-lockup" href="/" aria-label="tierisch-verliebt.de Startseite">
+        <span className="brand-lockup-mark">TV</span>
+        <span className="brand-lockup-copy">
+          <strong>tierisch verliebt</strong>
+          <small>Dating für Tierfreunde mit Herz</small>
+        </span>
+      </a>
+    );
+  }
+
+  return (
+    <a className="brand-lockup brand-lockup-header" href="/" aria-label="tierisch-verliebt.de Startseite">
+      <img className="brand-logo-image" src={HEADER_LOGO_URL} alt="tierisch-verliebt" width="216" height="80" />
+    </a>
+  );
+}
+
 export function SiteHeader() {
   return (
     <header className="site-header-shell">
-      <div className="site-header-bar compact-header-bar shell">
-        <a className="brand-lockup tv-brand-lockup" href="/" aria-label="tierisch-verliebt.de Startseite">
-          <span className="brand-lockup-mark">TV</span>
-          <span className="brand-lockup-copy">
-            <strong>tierisch verliebt</strong>
-            <small>Singles für Tierfreunde & Haustiermenschen</small>
-          </span>
-        </a>
+      <div className="site-header-bar compact-header-bar">
+        <BrandLogo />
 
         <div className="header-actions compact-header-actions" aria-label="Nutzeraktionen">
+          <a className="login-link" href="https://tierisch-verliebt.de/login/">Login</a>
           <a className="header-register header-register-primary" href="https://tierisch-verliebt.de/?AID=magazin">Registrieren</a>
 
           <details className="header-menu">
@@ -129,13 +146,7 @@ export function SiteFooter() {
 
       <div className="footer-main">
         <div className="footer-brand-panel">
-          <a className="brand-lockup footer-brand-wordmark tv-brand-lockup" href="/" aria-label="tierisch-verliebt.de Startseite">
-            <span className="brand-lockup-mark">TV</span>
-            <span className="brand-lockup-copy">
-              <strong>tierisch verliebt</strong>
-              <small>Dating für Tierfreunde mit Herz</small>
-            </span>
-          </a>
+          <BrandLogo footer />
           <p>
             tierisch-verliebt.de verbindet tierliebe Singles, Haustier-Community und Tier-Magazin in einer klaren,
             warmen Oberfläche für Menschen, bei denen Tiere zur Familie gehören.

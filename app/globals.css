@@ -346,25 +346,49 @@ img {
 .site-header-shell {
   position: sticky;
   top: 0;
-  z-index: 40;
-  backdrop-filter: blur(18px);
-  background: rgba(255, 250, 245, 0.88);
+  z-index: 50;
+  padding: 10px 16px;
   border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
 
 .site-header-bar {
-  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
+  gap: 22px;
+}
+
+.compact-header-bar {
+  min-height: 52px;
+  grid-template-columns: auto auto;
   justify-content: space-between;
-  gap: 18px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  gap: 14px;
 }
 
 .brand-lockup {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  color: var(--brand);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-lockup-header {
+  gap: 0;
+}
+
+.brand-logo-image {
+  display: block;
+  width: auto;
+  height: 44px;
+  max-width: min(190px, 52vw);
 }
 
 .brand-lockup-mark {
@@ -405,10 +429,34 @@ img {
   font-size: 0.82rem;
 }
 
+.main-nav a,
+.login-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: #4f4f4f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.login-link:hover {
+  background: #f5f5f5;
+  color: var(--brand);
+}
+
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: flex-end;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.compact-header-actions {
+  position: relative;
 }
 
 .header-register,
@@ -416,13 +464,19 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  padding: 0 20px;
-  border-radius: 999px;
+  min-height: 42px;
+  padding: 10px 18px;
+  border-radius: 10px;
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: #fff;
   font-weight: 800;
-  box-shadow: 0 18px 34px rgba(66, 154, 69, 0.24);
+  text-decoration: none;
+  box-shadow: 0 12px 26px rgba(66, 154, 69, 0.28);
+}
+
+.header-register:hover,
+.header-register-primary:hover {
+  background: var(--accent-dark);
 }
 
 .header-menu {
@@ -433,28 +487,35 @@ img {
   list-style: none;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-height: 46px;
-  padding: 0 16px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.86);
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 13px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  background: #fff;
+  color: var(--foreground);
   cursor: pointer;
   font-weight: 700;
+  box-shadow: none;
 }
 
 .header-menu summary::-webkit-details-marker {
   display: none;
 }
 
+.header-menu summary:hover {
+  color: var(--brand);
+  border-color: #f0bbc3;
+}
+
 .menu-icon {
   display: inline-grid;
-  gap: 4px;
+  gap: 3px;
+  width: 16px;
 }
 
 .menu-icon span {
   display: block;
-  width: 16px;
   height: 2px;
   border-radius: 999px;
   background: currentColor;
@@ -463,27 +524,35 @@ img {
 .header-menu-panel {
   position: absolute;
   right: 0;
-  top: calc(100% + 10px);
-  width: min(420px, calc(100vw - 24px));
-  padding: 14px;
+  top: calc(100% + 12px);
+  width: min(360px, calc(100vw - 32px));
+  max-height: min(72vh, 680px);
+  overflow-y: auto;
+  padding: 12px;
   border-radius: 24px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(241, 217, 222, 0.9);
   background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 24px 52px rgba(83, 57, 35, 0.14);
+  box-shadow: 0 24px 80px rgba(83, 57, 35, 0.16);
 }
 
 .main-nav {
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 
 .main-nav a {
+  justify-content: flex-start;
+  width: 100%;
   padding: 12px 14px;
   border-radius: 16px;
-  background: #fffaf5;
+  background: #fff8f7;
   border: 1px solid var(--line);
   color: var(--foreground);
   font-weight: 700;
+}
+
+.compact-menu-nav a:hover {
+  background: #fff0f0;
 }
 
 .footer-cta-soft {
