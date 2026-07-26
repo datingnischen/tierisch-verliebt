@@ -651,6 +651,11 @@ img {
   gap: 16px;
 }
 
+.article-card-copy {
+  padding: 20px 22px 22px;
+  align-content: start;
+}
+
 .eyebrow-brand {
   background: var(--brand-soft);
   color: var(--brand);
