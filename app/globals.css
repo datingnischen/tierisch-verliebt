@@ -813,58 +813,6 @@ img {
   font-weight: 700;
 }
 
-.author-profile-hero {
-  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
-  gap: 28px;
-  align-items: stretch;
-}
-
-.author-profile-visual {
-  display: grid;
-  gap: 18px;
-}
-
-.author-profile-portrait-frame {
-  overflow: hidden;
-  border-radius: 28px;
-  border: 1px solid rgba(192, 46, 46, 0.14);
-  background: linear-gradient(180deg, #fff7f4 0%, #eef7ea 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-.author-profile-portrait-frame img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-}
-
-.author-profile-badge {
-  display: grid;
-  gap: 10px;
-  padding: 18px;
-  border-radius: 22px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.92);
-}
-
-.author-profile-badge p {
-  font-size: 0.98rem;
-  line-height: 1.65;
-}
-
-.author-profile-copy {
-  display: grid;
-  gap: 16px;
-  align-content: center;
-}
-
-.author-profile-copy h1 {
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
-  line-height: 1.06;
-  letter-spacing: -0.03em;
-}
-
 .author-profile-role {
   color: var(--brand) !important;
   font-size: 1.05rem;
@@ -873,39 +821,121 @@ img {
 
 .author-profile-intro {
   font-size: 1.08rem !important;
+  max-width: 760px;
 }
 
-.author-profile-facts {
+.author-hero-simple {
+  padding: 18px 0 30px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(250, 234, 234, 0.55), rgba(255, 255, 255, 0.96));
+}
+
+.author-hero-simple-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.author-hero-simple-media {
+  display: grid;
+  justify-items: start;
+}
+
+.author-hero-simple-photo {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 1px solid rgba(192, 46, 46, 0.16);
+  box-shadow: 0 20px 55px rgba(192, 46, 46, 0.18);
+  background: #fff;
+}
+
+.author-hero-simple-copy {
+  display: grid;
   gap: 14px;
 }
 
-.author-profile-fact-card {
-  padding: 16px 18px;
-  border-radius: 20px;
+.author-hero-simple-copy h1 {
+  font-size: clamp(2.35rem, 5vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  margin: 4px 0 0;
+}
+
+.author-trust-facts-inline,
+.author-profile-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.author-trust-facts-inline span {
   border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 250, 250, 0.95) 100%);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.82);
   color: var(--foreground);
-  font-weight: 600;
-  line-height: 1.55;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-.author-profile-grid {
-  align-items: stretch;
+.author-profile-link-list-hero {
+  margin-top: 2px;
 }
 
-.author-profile-panel {
-  height: 100%;
+.author-editorial-section {
+  padding-top: 8px;
+}
+
+.author-editorial-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.author-editorial-main {
+  display: grid;
+  gap: 16px;
+}
+
+.author-editorial-main h2,
+.author-editorial-side h2 {
+  margin-top: 0;
+}
+
+.author-editorial-main p,
+.author-editorial-side p {
+  margin: 0;
+}
+
+.author-editorial-side {
+  display: grid;
+  gap: 16px;
+}
+
+.author-side-card {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
 }
 
 .author-story {
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .author-quote {
-  margin-top: 8px;
+  margin-top: 6px;
   padding: 18px 20px;
   border-left: 4px solid var(--brand);
   border-radius: 0 20px 20px 0;
@@ -920,27 +950,65 @@ img {
   gap: 12px;
 }
 
-.author-profile-link-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.author-latest-post-clean h3 {
+  font-size: 1.28rem;
+  line-height: 1.3;
 }
 
-.author-latest-post {
-  margin-top: 6px;
-  padding: 22px;
+.author-post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.author-post-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(244, 244, 244, 0.96) 100%);
-  box-shadow: none;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.author-latest-post h3 {
-  font-size: 1.35rem;
-  line-height: 1.25;
+.author-post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.08);
 }
 
-.author-article-card .meta-row {
-  font-size: 0.95rem;
+.author-post-card-media,
+.author-post-card-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, #ffe7e7, #fffdfd);
+  overflow: hidden;
+}
+
+.author-post-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-post-card-body {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}
+
+.author-post-card-body .meta-row {
+  font-size: 0.92rem;
+}
+
+.author-post-card-body h3 {
+  font-size: 1.14rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.author-post-card-body p {
+  margin: 0;
+  line-height: 1.65;
 }
 
 .pagination-bar {
@@ -1018,7 +1086,8 @@ img {
   .grid-two,
   .home-stage,
   .expert-card,
-  .author-profile-hero,
+  .author-hero-simple-grid,
+  .author-editorial-layout,
   .editorial-feature-card,
   .article-card-rich,
   .city-grid,
@@ -1029,11 +1098,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .author-profile-facts {
-    grid-template-columns: 1fr;
-  }
-
-  .author-profile-portrait-frame img {
+  .author-hero-simple-photo {
+    max-width: 220px;
     max-height: 420px;
   }
 
@@ -1065,7 +1131,8 @@ img {
   .rich-content,
   .home-stage,
   .expert-card-copy,
-  .floating-entry-card {
+  .floating-entry-card,
+  .author-side-card {
     padding: 24px;
   }
 
@@ -1098,10 +1165,15 @@ img {
 }
 
 @media (max-width: 480px) {
-  .author-profile-badge,
-  .author-profile-fact-card,
-  .author-latest-post {
+  .author-side-card,
+  .author-post-card-body {
     padding: 18px;
+  }
+
+  .author-trust-facts-inline span,
+  .author-profile-link-list .chip {
+    width: 100%;
+    justify-content: center;
   }
 
   .sticky-cta-button {
