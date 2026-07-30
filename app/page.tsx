@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
+import { staticAsset } from "@/lib/static-asset";
 import { formatGermanDate, getMagazineCategories, getMagazinePages, getMagazinePosts, SITE_URL, stripHtml } from "@/lib/wordpress";
 
-const HOME_HERO_IMAGE = "https://static2.icony-hosting.de/dyncontent2f3e1caa346107861506226d1d547c07/img/generic2021/frontpage-v4/backgrounds/frontpage-visual-tierischverliebt.webp";
+const HOME_HERO_IMAGE = staticAsset("/home/frontpage-visual-tierischverliebt.webp");
 
 export const metadata: Metadata = {
   title: "tierisch-verliebt.de – Singles, Tierwelten & Magazin",

@@ -1,3 +1,5 @@
+import { staticAsset } from "@/lib/static-asset";
+
 type NavLink = {
   label: string;
   href: string;
@@ -16,7 +18,7 @@ const headerMenuItems: NavLink[] = [
   { label: "Über uns", href: "/magazin/ueber-uns" },
 ];
 
-const HEADER_LOGO_URL = "https://static2.icony-hosting.de/dyncontenta4a2c6ef760359a40c5972ce5e4dd552/img/tierischverliebt/logo.svg";
+const HEADER_LOGO_URL = staticAsset("/brand/tierisch-verliebt-logo.svg");
 
 const footerColumns: Array<{ title: string; links: NavLink[] }> = [
   {
