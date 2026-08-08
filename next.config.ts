@@ -22,6 +22,7 @@ export default function nextConfig(phase: string): NextConfig {
   );
 
   return {
+    turbopack: { root: process.cwd() },
     assetPrefix: isDev ? undefined : `${assetHost}${assetPathPrefix}`,
     async rewrites() {
       return [

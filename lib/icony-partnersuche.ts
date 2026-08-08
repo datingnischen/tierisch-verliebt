@@ -5,9 +5,6 @@ const SOURCE_BASE = "https://tierisch-verliebt.de";
 const PARTNERSUCHE_BASE = `${SOURCE_BASE}/partnersuche/`;
 const SITEMAP_URL = `${SOURCE_BASE}/sitemap.php`;
 
-type SitemapUrl = {
-  loc: string;
-};
 
 export type PartnersucheCity = {
   slug: string;
@@ -88,7 +85,7 @@ function extractDivByClass(html: string, classFragment: string) {
   if (!openMatch || openMatch.index === undefined) return "";
 
   let depth = 1;
-  let cursor = openMatch.index + openMatch[0].length;
+  const cursor = openMatch.index + openMatch[0].length;
   const tagRegex = /<div\b[^>]*>|<\/div>/gi;
   tagRegex.lastIndex = cursor;
 

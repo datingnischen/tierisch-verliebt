@@ -1,15 +1,14 @@
 import type { MetadataRoute } from "next";
 import { getKnownAuthorSlugs } from "@/lib/author-profiles";
-import { getPartnersucheSlugs } from "@/lib/icony-partnersuche";
+import { getMarketCityPages } from "@/lib/market-partnersuche";
 import { SITE_URL, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/wordpress";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [posts, pages, categories, authors, partnersucheSlugs] = await Promise.all([
+  const [posts, pages, categories, authors] = await Promise.all([
     getMagazinePosts(),
     getMagazinePages(),
     getMagazineCategories(),
     getKnownAuthorSlugs(),
-    getPartnersucheSlugs(),
   ]);
 
   return [
@@ -55,8 +54,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
-    ...partnersucheSlugs.map((slug) => ({
-      url: `${SITE_URL}/partnersuche/${slug}`,
+    ...getMarketCityPages("de").map((page) => ({
+      url: `${SITE_URL}${page.path}`,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
