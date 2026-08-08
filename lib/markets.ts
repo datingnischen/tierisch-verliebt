@@ -29,10 +29,6 @@ export function publicUrl(market: MarketCode, pathname = "/"): string {
   return `https://${getMarket(market).domain}${normalized}`;
 }
 
-export function platformUrl(market: MarketCode, pathname = "/"): string {
-  return publicUrl(market, pathname);
-}
-
 export type MarketRequestResolution =
   | { action: "pass" }
   | { action: "not-found" }
@@ -59,7 +55,7 @@ function marketForHostname(hostname = ""): MarketCode | null {
   return MARKET_CODES.find((market) => getMarket(market).domain === normalized) ?? null;
 }
 
-function resolveRegional(market: RegionalMarket, requestedPath: string): MarketRequestResolution {
+function resolveRegional(market: RegionalMarket, requestedPath: string, productionHost: boolean): MarketRequestResolution {
   if (INTERNAL_PATH.test(requestedPath)) return { action: "not-found" };
   const path = requestedPath.length > 1 ? requestedPath.replace(/\/+$/, "") : requestedPath;
   if (path === "/") return { action: "market-home", market, pathname: `/market-home/${market}` };
@@ -68,7 +64,7 @@ function resolveRegional(market: RegionalMarket, requestedPath: string): MarketR
   if (city) return { action: "market-partnersuche-city", market, pathname: `/market-partnersuche/${market}/${city}`, slug: city };
   if (path === "/robots.txt") return { action: "market-robots", market, pathname: `/market-robots/${market}` };
   if (path === "/sitemap.xml") return { action: "market-sitemap", market, pathname: `/market-sitemap/${market}` };
-  if (PLATFORM_PATH.test(path)) return { action: "redirect-platform", market, url: platformUrl(market, path) };
+  if (PLATFORM_PATH.test(path) && !productionHost) return { action: "redirect-platform", market, url: publicUrl(market, path) };
   return { action: "placeholder", market, pathname: `/market-placeholder/${market}`, requestedPath: path };
 }
 
@@ -79,12 +75,11 @@ export function resolveMarketRequest(pathname: string, hostname = ""): MarketReq
 
   const hostMarket = marketForHostname(hostname);
   if (hostMarket) {
-    const prefixed = normalized.match(/^\/(de|at|ch)(\/.*)?$/);
-    if (prefixed) return { action: "not-found" };
-    const hostPath = normalized;
+    const prefixed = normalized.match(/^\/(?:de|at|ch)(\/.*)?$/);
+    const hostPath = prefixed ? prefixed[1] || "/" : normalized;
     return hostMarket === "de"
       ? { action: "rewrite", market: "de", pathname: hostPath }
-      : resolveRegional(hostMarket, hostPath);
+      : resolveRegional(hostMarket, hostPath, true);
   }
 
   const match = normalized.match(/^\/(de|at|ch)(\/.*)?$/);
@@ -94,5 +89,5 @@ export function resolveMarketRequest(pathname: string, hostname = ""): MarketReq
   if (INTERNAL_PATH.test(requestedPath)) return { action: "not-found" };
   return market === "de"
     ? { action: "rewrite", market: "de", pathname: requestedPath }
-    : resolveRegional(market, requestedPath);
+    : resolveRegional(market, requestedPath, false);
 }
