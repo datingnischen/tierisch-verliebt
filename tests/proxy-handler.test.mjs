@@ -22,3 +22,29 @@ test("honors the recognized direct country host over a conflicting forwarded hos
   assert.equal(response.status, 200);
   assert.match(response.headers.get("x-middleware-rewrite") || "", /\/market-partnersuche\/at\/wien$/);
 });
+
+test("hands AT and CH platform-owned paths back to the existing legacy platform", async () => {
+  const { proxy } = await handler();
+  for (const [url, marker] of [
+    ["https://tierisch-verliebt.vercel.app/at/registration/", "https://tierisch-verliebt.at/registration"],
+    ["https://tierisch-verliebt.at/login/", "https://tierisch-verliebt.at/login"],
+    ["https://tierisch-verliebt.ch/suche/", "https://tierisch-verliebt.ch/suche"],
+  ]) {
+    const response = proxy(new NextRequest(url));
+    assert.equal(response.status, 200, url);
+    const html = await response.text();
+    assert.match(html, new RegExp(marker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), url);
+    assert.match(html, /noindex,nofollow/, url);
+  }
+});
+
+test("rejects prefixed public-host routes so AT/CH stay prefix-free", async () => {
+  const { proxy } = await handler();
+  for (const url of [
+    "https://tierisch-verliebt.at/at/partnersuche/wien",
+    "https://tierisch-verliebt.at/de/partnersuche/wien",
+    "https://tierisch-verliebt.ch/ch/partnersuche/zuerich",
+  ]) {
+    assert.equal(proxy(new NextRequest(url)).status, 404, url);
+  }
+});

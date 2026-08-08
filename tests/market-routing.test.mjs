@@ -28,7 +28,8 @@ test("routes prefix-free DE and hidden AT/CH previews", async () => {
 test("keeps each production country host authoritative", async () => {
   const { resolveMarketRequest } = await loadMarkets();
   assert.deepEqual(resolveMarketRequest("/partnersuche/wien", "tierisch-verliebt.at"), { action: "market-partnersuche-city", market: "at", pathname: "/market-partnersuche/at/wien", slug: "wien" });
-  assert.deepEqual(resolveMarketRequest("/de/partnersuche/zuerich", "tierisch-verliebt.ch"), { action: "market-partnersuche-city", market: "ch", pathname: "/market-partnersuche/ch/zuerich", slug: "zuerich" });
+  assert.deepEqual(resolveMarketRequest("/de/partnersuche/zuerich", "tierisch-verliebt.ch"), { action: "not-found" });
+  assert.deepEqual(resolveMarketRequest("/ch/partnersuche/zuerich", "tierisch-verliebt.ch"), { action: "not-found" });
   assert.deepEqual(resolveMarketRequest("/market-partnersuche/at", "tierisch-verliebt.vercel.app"), { action: "not-found" });
 });
 
@@ -36,4 +37,11 @@ test("routes market robots and sitemaps", async () => {
   const { resolveMarketRequest } = await loadMarkets();
   assert.deepEqual(resolveMarketRequest("/at/robots.txt"), { action: "market-robots", market: "at", pathname: "/market-robots/at" });
   assert.deepEqual(resolveMarketRequest("/ch/sitemap.xml"), { action: "market-sitemap", market: "ch", pathname: "/market-sitemap/ch" });
+});
+
+test("hands platform-owned registration, login and search paths to the legacy market platform", async () => {
+  const { resolveMarketRequest } = await loadMarkets();
+  assert.deepEqual(resolveMarketRequest("/at/registration/"), { action: "redirect-platform", market: "at", url: "https://tierisch-verliebt.at/registration" });
+  assert.deepEqual(resolveMarketRequest("/login/", "tierisch-verliebt.at"), { action: "redirect-platform", market: "at", url: "https://tierisch-verliebt.at/login" });
+  assert.deepEqual(resolveMarketRequest("/suche/", "tierisch-verliebt.ch"), { action: "redirect-platform", market: "ch", url: "https://tierisch-verliebt.ch/suche" });
 });
