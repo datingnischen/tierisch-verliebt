@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { canonicalMagazinePagePath } from "@/lib/about-section";
 import {
   MAGAZINE_POSTS_PER_PAGE,
   SITE_URL,
@@ -49,8 +50,8 @@ export default async function MagazineOverviewPage() {
           <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
             Kostenlos registrieren
           </Link>
-          <Link className="button button-secondary" href="/magazin/ueber-uns">
-            Unsere Geschichte
+          <Link className="button button-secondary" href="/ueber-uns">
+            Über uns
           </Link>
         </div>
       </section>
@@ -141,7 +142,7 @@ export default async function MagazineOverviewPage() {
           </div>
           <div className="stack-list">
             {pages.slice(0, 8).map((page) => (
-              <Link key={page.id} href={`/magazin/${page.slug}`} className="article-card">
+              <Link key={page.id} href={canonicalMagazinePagePath(page.slug)} className="article-card">
                 <h3>{page.title}</h3>
                 <p>{stripHtml(page.excerpt || page.content).slice(0, 150)}…</p>
               </Link>

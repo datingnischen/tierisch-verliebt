@@ -1,4 +1,5 @@
 import { cache } from "react";
+import { ABOUT_SOCIAL_MEDIA_PATH } from "@/lib/about-section";
 import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/wordpress";
 
 const SOURCE_URL = "https://tierisch-verliebt.de/social-media/";
@@ -38,7 +39,7 @@ function getTitle(html: string) {
   return match?.[1] ? decodeHtmlEntities(stripHtml(match[1])) : "";
 }
 
-function extractPanelAfterH1(html: string, h1Text: string) {
+function extractPanelAfterH1(html: string) {
   const h1Regex = /<h1[^>]*>[\s\S]*?<\/h1>/i;
   const h1Match = h1Regex.exec(html);
   if (!h1Match) return "";
@@ -79,7 +80,7 @@ function firstParagraphFromHtml(html: string) {
 export const getSocialMediaPage = cache(async (): Promise<ImportedStaticPage> => {
   const html = await fetchText(SOURCE_URL);
   const title = getTitle(html) || "Tierisch-verliebt auf Social Media";
-  const rawContent = extractPanelAfterH1(html, title);
+  const rawContent = extractPanelAfterH1(html);
   const contentHtml = normalizeImportedHtml(rawContent);
   const { imageUrl, imageAlt } = extractFirstImage(contentHtml);
 
@@ -97,5 +98,5 @@ export const getSocialMediaPage = cache(async (): Promise<ImportedStaticPage> =>
 });
 
 export function socialMediaCanonical() {
-  return `${SITE_URL}/social-media`;
+  return `${SITE_URL}${ABOUT_SOCIAL_MEDIA_PATH}`;
 }

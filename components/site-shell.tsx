@@ -9,13 +9,13 @@ type Props = { market?: MarketCode };
 const deHeader: NavLink[] = [
   { label: "Start", href: "/" }, { label: "Partnersuche", href: "/partnersuche" }, { label: "Magazin", href: "/magazin" },
   { label: "Hunde", href: "/magazin/hunderassen" }, { label: "Katzen", href: "/magazin/beliebtesten-katzenrassen" },
-  { label: "Weitere Tierwelten", href: "/magazin/tierwelten" }, { label: "Apps", href: "/magazin/thema/apps" }, { label: "Über uns", href: "/magazin/ueber-uns" },
+  { label: "Weitere Tierwelten", href: "/magazin/tierwelten" }, { label: "Apps", href: "/magazin/thema/apps" }, { label: "Über uns", href: "/ueber-uns" },
 ];
 const deFooter: Array<{ title: string; links: NavLink[] }> = [
   { title: "Hunde", links: [{ label: "Ratgeber", href: "/magazin/thema/ratgeber-hund" },{ label: "Labrador Retriever", href: "/magazin/labrador-retriever" },{ label: "Französische Bulldogge", href: "/magazin/franzoesische-bulldogge" },{ label: "Beliebteste Hunderassen", href: "/magazin/beliebtesten-hunderassen" }] },
   { title: "Katzen", links: [{ label: "Ratgeber", href: "/magazin/thema/ratgeber-katze" },{ label: "Katzenrassen", href: "/magazin/katzenrassen" },{ label: "Britisch Kurzhaar", href: "/magazin/britisch-kurzhaar" },{ label: "Beliebteste Katzenrassen", href: "/magazin/beliebtesten-katzenrassen" }] },
   { title: "Weitere Tierwelten", links: [{ label: "Vögel", href: "/magazin/voegel-uebersicht" },{ label: "Kleintiere", href: "/magazin/kleintiere" },{ label: "Meerschweinchen", href: "/magazin/meerschweinchen" },{ label: "Kaninchen", href: "/magazin/kaninchen" }] },
-  { title: "Über uns & Magazin", links: [{ label: "Unsere Geschichte", href: "/magazin/ueber-uns" },{ label: "Christian M. Haas", href: "/magazin/author/christian-m-haas" },{ label: "Redaktion", href: "/magazin/author/redaktion" },{ label: "Social Media", href: "/social-media" }] },
+  { title: "Über uns & Magazin", links: [{ label: "Unsere Geschichte", href: "/ueber-uns/geschichte" },{ label: "Christian M. Haas", href: "/magazin/author/christian-m-haas" },{ label: "Redaktion", href: "/magazin/author/redaktion" },{ label: "Social Media", href: "/ueber-uns/social-media" }] },
   { title: "Mitgliedschaft", links: [{ label: "Partnersuche", href: "/partnersuche" },{ label: "Magazin-Start", href: "/magazin" }] },
 ];
 const logo = staticAsset("/brand/tierisch-verliebt-logo.svg");

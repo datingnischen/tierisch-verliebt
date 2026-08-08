@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { ABOUT_OVERVIEW_PATH, ABOUT_SOCIAL_MEDIA_PATH, ABOUT_STORY_PATH } from "@/lib/about-section";
 import { getKnownAuthorSlugs } from "@/lib/author-profiles";
 import { getMarketCityPages } from "@/lib/market-partnersuche";
 import { SITE_URL, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/wordpress";
@@ -28,7 +29,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/social-media`,
+      url: `${SITE_URL}${ABOUT_OVERVIEW_PATH}`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}${ABOUT_STORY_PATH}`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}${ABOUT_SOCIAL_MEDIA_PATH}`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
@@ -38,7 +49,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
-    ...pages.map((page) => ({
+    ...pages
+      .filter((page) => page.slug !== "ueber-uns")
+      .map((page) => ({
       url: `${SITE_URL}/magazin/${page.slug}`,
       lastModified: page.modified || page.date,
       changeFrequency: "monthly" as const,
