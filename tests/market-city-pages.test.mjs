@@ -30,6 +30,8 @@ test("keeps every imported city complete, sanitized and market-local", async () 
     const hub = getMarketPartnersucheHub(market);
     const pages = getMarketCityPages(market);
     assert.equal(hub.cities.length, EXPECTED[market].length);
+    assert.ok(hub.editorial.heroImageUrl?.startsWith("https://static-cms.icony-hosting.de/"));
+    assert.ok(hub.editorial.introParagraphs.length >= 2);
 
     for (const page of pages) {
       assert.equal(page.market, market);
