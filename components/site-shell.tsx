@@ -1,5 +1,4 @@
 import { MarketLink } from "@/components/market-link";
-import { staticAsset } from "@/lib/static-asset";
 import { getMarket, publicUrl, type MarketCode } from "@/lib/markets";
 
 type NavLink = { label: string; href: string; external?: boolean };
@@ -19,16 +18,30 @@ const deFooter: Array<{ title: string; links: NavLink[] }> = [
   { title: "Mitgliedschaft", links: [{ label: "Partnersuche", href: "/partnersuche" }, { label: "Magazin-Start", href: "/magazin" }] },
 ];
 
-const logo = staticAsset("/brand/tierisch-verliebt-logo.svg");
+const logoByMarket: Record<MarketCode, { src: string; alt: string }> = {
+  de: {
+    src: "https://static2.icony-hosting.de/dyncontenta4a2c6ef760359a40c5972ce5e4dd552/img/tierischverliebt/logo.svg",
+    alt: "tierisch-verliebt.de Logo",
+  },
+  at: {
+    src: "https://static2.icony-hosting.de/dyncontentcb72a5051616a0d0a687530951e79ac2/img/tierischverliebtat/logo.svg",
+    alt: "tierisch-verliebt.at Logo",
+  },
+  ch: {
+    src: "https://static2.icony-hosting.de/dyncontent36672bdefe632c6e08d5c1e307546c4d/img/tierischverliebtch/logo.svg",
+    alt: "tierisch-verliebt.ch Logo",
+  },
+};
 
 function localLink(market: MarketCode, href: string, children: React.ReactNode, className?: string) {
   return <MarketLink className={className} market={market} path={href}>{children}</MarketLink>;
 }
 
 function Brand({ market, footer = false }: { market: MarketCode; footer?: boolean }) {
+  const logo = logoByMarket[market];
   const content = footer
     ? <><span className="brand-lockup-mark">TV</span><span className="brand-lockup-copy"><strong>tierisch verliebt</strong><small>Dating für Tierfreunde mit Herz</small></span></>
-    : <img className="brand-logo-image" src={logo} alt={`tierisch-verliebt.${market}`} width="216" height="80" />;
+    : <img className="brand-logo-image" src={logo.src} alt={logo.alt} width="216" height="80" />;
   return localLink(market, "/", content, footer ? "brand-lockup footer-brand-wordmark tv-brand-lockup" : "brand-lockup brand-lockup-header");
 }
 
