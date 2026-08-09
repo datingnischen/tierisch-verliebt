@@ -20,6 +20,7 @@ test("city routes switch shell registration CTAs to AID=location", async () => {
   const shell = await source("../components/site-shell.tsx");
   const sticky = await source("../components/sticky-cta-button.tsx");
   assert.match(shell, /function isCityPage\(pathname: string\)/);
+  assert.match(shell, /\^\\\/\(\?:\(\?:de\|at\|ch\)\\\/\)\?partnersuche\\\/\[a-z0-9-\]\+\\\/\?\$\/i/);
   assert.match(shell, /publicUrl\(market, isCityPage\(pathname\) \? "\/registration\/\?AID=location" : "\/\?AID=magazin"\)/);
   assert.match(sticky, /publicUrl\(market,cityIntent\?'\/registration\/\?AID=location':'\/\?AID=magazin'\)/);
 });

@@ -82,7 +82,7 @@ function localLink(market: MarketCode, href: string, children: React.ReactNode, 
 }
 
 function isCityPage(pathname: string) {
-  return /^\/(?:de|at|ch\/)?partnersuche\/[a-z0-9-]+\/?$/i.test(pathname) || /^\/partnersuche\/[a-z0-9-]+\/?$/i.test(pathname);
+  return /^\/(?:(?:de|at|ch)\/)?partnersuche\/[a-z0-9-]+\/?$/i.test(pathname);
 }
 
 function registrationHref(market: MarketCode, pathname: string) {
