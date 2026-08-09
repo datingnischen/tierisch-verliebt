@@ -28,3 +28,13 @@ test("renders widgets before the editorial copy on DE and AT/CH city routes", as
     assert.ok(content > widget, "singles widget must appear before editorial copy");
   }
 });
+
+test("city pages keep all registration links on AID=location", async () => {
+  const dePage = await source("../app/partnersuche/[slug]/page.tsx");
+  const expertCard = await source("../components/expert-trust-card.tsx");
+  assert.match(dePage, /href=\{city\.registrationUrl\}/);
+  assert.match(dePage, /registrationHref=\{city\.registrationUrl\}/);
+  assert.match(expertCard, /registrationHref = "https:\/\/tierisch-verliebt\.de\/\?AID=magazin"/);
+  assert.match(expertCard, /href=\{registrationHref\}/);
+  assert.doesNotMatch(dePage, /AID=magazin/);
+});

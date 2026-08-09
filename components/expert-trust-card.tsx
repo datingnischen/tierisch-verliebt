@@ -7,6 +7,7 @@ type ExpertTrustCardProps = {
   title?: string;
   primaryLabel?: string;
   primaryHref?: string;
+  registrationHref?: string;
 };
 
 export function ExpertTrustCard({
@@ -15,6 +16,7 @@ export function ExpertTrustCard({
   title = "Die Inhalte greifen Dating-Erfahrung, Tierliebe und alltagsnahe Fragen rund ums Kennenlernen auf.",
   primaryLabel = "Zum Autorenprofil",
   primaryHref,
+  registrationHref = "https://tierisch-verliebt.de/?AID=magazin",
 }: ExpertTrustCardProps) {
   return (
     <article className="expert-card panel-card">
@@ -49,7 +51,7 @@ export function ExpertTrustCard({
           <Link className="button button-primary" href={primaryHref || profile.profileUrl}>
             {primaryLabel}
           </Link>
-          <Link className="button button-secondary" href="https://tierisch-verliebt.de/?AID=magazin">
+          <Link className="button button-secondary" href={registrationHref}>
             Kostenlos registrieren
           </Link>
         </div>
