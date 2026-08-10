@@ -50,6 +50,7 @@ const deFooter: Array<{ title: string; links: NavLink[] }> = [
     title: "Über uns & Magazin",
     links: [
       { label: "Unsere Geschichte", href: "/ueber-uns/geschichte" },
+      { label: "Presse & Sponsoring", href: "/magazin/thema/presse" },
       { label: "Christian M. Haas", href: "/magazin/author/christian-m-haas" },
       { label: "Redaktion", href: "/magazin/author/redaktion" },
       { label: "Social Media", href: "/ueber-uns/social-media" },
