@@ -887,6 +887,75 @@ img {
   padding-top: 28px;
 }
 
+.magazine-detail-content-section {
+  margin-top: 20px;
+}
+
+.magazine-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.42fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.magazine-detail-main,
+.magazine-detail-side {
+  min-width: 0;
+}
+
+.magazine-detail-side {
+  position: sticky;
+  top: 88px;
+}
+
+.magazine-conversion-rail {
+  display: grid;
+  gap: 16px;
+}
+
+.magazine-conversion-card {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.05);
+}
+
+.magazine-conversion-card-primary {
+  background: linear-gradient(180deg, rgba(250, 234, 234, 0.96) 0%, rgba(255, 255, 255, 0.98) 100%);
+}
+
+.magazine-conversion-card h2,
+.magazine-conversion-card h3,
+.magazine-conversion-card p {
+  margin: 0;
+}
+
+.magazine-online-frame-wrap {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(192, 46, 46, 0.12);
+  background: #fff9f8;
+}
+
+.magazine-online-frame {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  border: 0;
+}
+
+.magazine-conversion-link {
+  color: var(--brand);
+  font-weight: 800;
+}
+
+.magazine-mobile-conversion {
+  display: none;
+}
+
 .hero-magazine-breed {
   gap: 20px;
   background:
@@ -1469,6 +1538,7 @@ img {
   .expert-card,
   .author-hero-simple-grid,
   .author-editorial-layout,
+  .magazine-detail-layout,
   .editorial-feature-card,
   .article-card-rich,
   .city-grid,
@@ -1543,6 +1613,14 @@ img {
   .shell-narrow {
     width: min(100% - 20px, 920px);
     padding-top: 20px;
+  }
+
+  .magazine-detail-side {
+    display: none;
+  }
+
+  .magazine-mobile-conversion {
+    display: block;
   }
 
   .breed-highlight-grid,

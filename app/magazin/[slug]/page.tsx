@@ -13,6 +13,8 @@ type BreedSectionLink = { id: string; label: string };
 
 export const revalidate = 300;
 
+const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischverliebt&pc=c02e2e&aid=magazin";
+
 function isBreedProfile(html: string) {
   return /<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*<ul>/i.test(html);
 }
@@ -103,6 +105,52 @@ function enhanceBreedContent(html: string) {
   return next;
 }
 
+function MagazineConversionRail({ title }: { title: string }) {
+  return (
+    <div className="magazine-conversion-rail">
+      <div className="magazine-conversion-card magazine-conversion-card-primary">
+        <span className="eyebrow eyebrow-brand">Singlebörse</span>
+        <h2>Tierliebe Singles statt nur weiterlesen</h2>
+        <p>
+          Wer bei {title} landet, sucht oft mehr als Infos — nämlich Menschen mit derselben Liebe zu Hund, Katze und Co.
+        </p>
+        <div className="button-row">
+          <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
+            Kostenlos registrieren
+          </Link>
+        </div>
+      </div>
+
+      <div className="magazine-conversion-card magazine-conversion-card-online">
+        <span className="eyebrow eyebrow-muted">Gerade online</span>
+        <h3>Wer ist gerade auf tierisch-verliebt.de online?</h3>
+        <div className="magazine-online-frame-wrap">
+          <iframe
+            title="Gerade online auf tierisch-verliebt.de"
+            className="magazine-online-frame"
+            src={ONLINE_IFRAME_SRC}
+            loading="lazy"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+      </div>
+
+      <div className="magazine-conversion-card">
+        <span className="eyebrow eyebrow-muted">Warum hier?</span>
+        <h3>Gute Gründe für den Einstieg</h3>
+        <ul className="trust-points" aria-label="Vorteile der Singlebörse">
+          <li>Singles mit echter Tierliebe statt austauschbaren Flirts</li>
+          <li>Direkter Einstieg aus Magazin, Tierwelt und Ratgeber</li>
+          <li>Kostenlos starten und passende Kontakte entdecken</li>
+        </ul>
+        <Link className="magazine-conversion-link" href="https://tierisch-verliebt.de/?AID=magazin">
+          Jetzt Singles entdecken
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const entry = await getMagazineEntryBySlug(slug);
@@ -162,6 +210,10 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
+      <section className="content-section magazine-mobile-conversion">
+        <MagazineConversionRail title={entry.title} />
+      </section>
+
       {breedPage && breedFacts.length ? (
         <section className="content-section content-section-tight">
           <div className="breed-highlight-grid" aria-label="Schnelle Rasseinfos">
@@ -203,8 +255,17 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      <section className={`rich-content${breedPage ? " breed-rich-content" : ""}`}>
-        <div dangerouslySetInnerHTML={{ __html: renderedContent }} />
+      <section className="content-section magazine-detail-content-section">
+        <div className="magazine-detail-layout">
+          <div className="magazine-detail-main">
+            <section className={`rich-content${breedPage ? " breed-rich-content" : ""}`}>
+              <div dangerouslySetInnerHTML={{ __html: renderedContent }} />
+            </section>
+          </div>
+          <aside className="magazine-detail-side" aria-label="Singlebörse und Conversion-Module">
+            <MagazineConversionRail title={entry.title} />
+          </aside>
+        </div>
       </section>
 
       {authorProfile ? (
