@@ -36,7 +36,10 @@ test("magazine detail pages render a conversion rail with online iframe and CTAs
   const page = await source("../app/magazin/[slug]/page.tsx");
   assert.match(page, /function MagazineConversionRail/);
   assert.match(page, /ONLINE_IFRAME_SRC/);
+  assert.match(page, /MAGAZINE_CTA_IMAGE = staticAsset/);
   assert.match(page, /Gerade online auf tierisch-verliebt\.de/);
+  assert.match(page, /magazine-conversion-card-banner/);
+  assert.match(page, /magazine-conversion-points/);
   assert.match(page, /magazine-detail-layout/);
   assert.match(page, /magazine-detail-side/);
   assert.match(page, /magazine-mobile-conversion/);
@@ -52,5 +55,8 @@ test("global styles define the richer breed-page presentation and conversion rai
   assert.match(css, /\.breed-inline-media/);
   assert.match(css, /\.magazine-detail-layout/);
   assert.match(css, /\.magazine-conversion-rail/);
+  assert.match(css, /\.magazine-conversion-card-banner/);
+  assert.match(css, /\.magazine-conversion-hero/);
+  assert.match(css, /\.magazine-conversion-points/);
   assert.match(css, /\.magazine-online-frame/);
 });

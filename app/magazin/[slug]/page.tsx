@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
+import { staticAsset } from "@/lib/static-asset";
 import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
 
 type PageProps = {
@@ -14,6 +15,7 @@ type BreedSectionLink = { id: string; label: string };
 export const revalidate = 300;
 
 const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischverliebt&pc=c02e2e&aid=magazin";
+const MAGAZINE_CTA_IMAGE = staticAsset("/home/frontpage-visual-tierischverliebt.webp");
 
 function isBreedProfile(html: string) {
   return /<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*<ul>/i.test(html);
@@ -108,12 +110,20 @@ function enhanceBreedContent(html: string) {
 function MagazineConversionRail({ title }: { title: string }) {
   return (
     <div className="magazine-conversion-rail">
-      <div className="magazine-conversion-card magazine-conversion-card-primary">
+      <div className="magazine-conversion-card magazine-conversion-card-primary magazine-conversion-card-banner">
+        <figure className="magazine-conversion-hero">
+          <img src={MAGAZINE_CTA_IMAGE} alt="Tierisch verliebt – tierliebe Singles kennenlernen" loading="lazy" decoding="async" />
+        </figure>
         <span className="eyebrow eyebrow-brand">Singlebörse</span>
         <h2>Tierliebe Singles statt nur weiterlesen</h2>
         <p>
           Wer bei {title} landet, sucht oft mehr als Infos — nämlich Menschen mit derselben Liebe zu Hund, Katze und Co.
         </p>
+        <div className="magazine-conversion-points" aria-label="Einstiegsvorteile">
+          <span>Kostenlos starten</span>
+          <span>Tierliebe Singles</span>
+          <span>Direkter Einstieg</span>
+        </div>
         <div className="button-row">
           <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
             Kostenlos registrieren
