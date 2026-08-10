@@ -909,6 +909,60 @@ img {
   box-shadow: 0 24px 44px rgba(83, 57, 35, 0.12);
 }
 
+.breed-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.breed-highlight-card {
+  display: grid;
+  gap: 8px;
+  padding: 18px 18px 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(192, 46, 46, 0.12);
+  background: linear-gradient(180deg, rgba(255, 248, 244, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
+  box-shadow: 0 14px 28px rgba(83, 57, 35, 0.06);
+}
+
+.breed-highlight-label {
+  color: var(--brand-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.breed-highlight-card strong {
+  color: var(--foreground);
+  font-size: 1.06rem;
+  line-height: 1.45;
+}
+
+.breed-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.breed-jump-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(210, 210, 210, 0.9);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--foreground);
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(83, 57, 35, 0.04);
+}
+
+.breed-jump-link:hover {
+  color: var(--brand);
+  border-color: rgba(192, 46, 46, 0.22);
+}
+
 .breed-rich-content {
   position: relative;
   padding: 38px;
@@ -929,8 +983,27 @@ img {
   font-size: clamp(1.55rem, 2vw, 1.95rem);
 }
 
+.breed-section-title:first-child {
+  margin-top: 0;
+}
+
 .breed-rich-content h3 {
   font-size: 1.16rem;
+}
+
+.breed-inline-media {
+  margin: 28px 0;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(210, 210, 210, 0.9);
+  background: #fff7f3;
+  box-shadow: 0 18px 34px rgba(83, 57, 35, 0.08);
+}
+
+.breed-inline-media img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .breed-facts-card {
@@ -997,6 +1070,72 @@ img {
 
 .breed-facts-copy strong {
   color: var(--foreground);
+}
+
+.breed-faq-card {
+  display: grid;
+  gap: 22px;
+  margin: 36px 0 8px;
+  padding: 28px;
+  border-radius: 26px;
+  border: 1px solid rgba(66, 154, 69, 0.18);
+  background: linear-gradient(180deg, rgba(247, 252, 245, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
+  box-shadow: 0 18px 36px rgba(66, 154, 69, 0.07);
+}
+
+.breed-faq-header {
+  display: grid;
+  gap: 10px;
+}
+
+.breed-section-title-inline {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.breed-faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.breed-faq-item {
+  border: 1px solid rgba(210, 210, 210, 0.88);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  overflow: hidden;
+}
+
+.breed-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 20px;
+  font-weight: 800;
+  color: var(--foreground);
+  position: relative;
+}
+
+.breed-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.breed-faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--brand);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.breed-faq-item[open] summary::after {
+  content: "–";
+}
+
+.breed-faq-answer {
+  padding: 0 20px 18px;
 }
 
 .expert-card {
@@ -1406,6 +1545,7 @@ img {
     padding-top: 20px;
   }
 
+  .breed-highlight-grid,
   .breed-facts-list {
     grid-template-columns: 1fr;
   }

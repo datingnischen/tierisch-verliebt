@@ -3,11 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
-import { SITE_URL, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
+import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+type BreedSectionLink = { id: string; label: string };
 
 export const revalidate = 300;
 
@@ -15,8 +17,65 @@ function isBreedProfile(html: string) {
   return /<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*<ul>/i.test(html);
 }
 
+function slugifyHeading(text: string) {
+  return stripHtml(text)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "abschnitt";
+}
+
+function getBreedFacts(html: string) {
+  const match = html.match(/<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*<ul>([\s\S]*?)<\/ul>/i);
+  if (!match) return [] as string[];
+
+  return [...match[1].matchAll(/<li>([\s\S]*?)<\/li>/gi)]
+    .map((item) => decodeHtmlEntities(stripHtml(item[1])))
+    .filter(Boolean);
+}
+
+function getBreedSectionLinks(html: string): BreedSectionLink[] {
+  const links = [...html.matchAll(/<h2>([\s\S]*?)<\/h2>/gi)]
+    .map((match) => decodeHtmlEntities(stripHtml(match[1])))
+    .filter((label) => label && label.toLowerCase() !== "faq")
+    .map((label) => ({ id: slugifyHeading(label), label }));
+
+  return links.filter((link, index, all) => all.findIndex((entry) => entry.id === link.id) === index);
+}
+
+function buildFaqMarkup(source: string) {
+  const items = [...source.matchAll(/<h3>([\s\S]*?)<\/h3>\s*([\s\S]*?)(?=<h3>|$)/gi)]
+    .map((match, index) => ({
+      question: decodeHtmlEntities(stripHtml(match[1])),
+      answer: match[2].trim(),
+      open: index === 0,
+    }))
+    .filter((item) => item.question && item.answer);
+
+  if (!items.length) return source;
+
+  return [
+    '<section class="breed-faq-card">',
+    '  <div class="breed-faq-header">',
+    '    <span class="eyebrow eyebrow-brand">FAQ</span>',
+    '    <h2 id="faq" class="breed-section-title breed-section-title-inline">Häufige Fragen zum Barsoi</h2>',
+    '    <p>Die häufigsten Fragen zur Haltung, Pflege und Beschäftigung des Barsoi kompakt beantwortet.</p>',
+    '  </div>',
+    '  <div class="breed-faq-list">',
+    ...items.map((item) => [
+      `    <details class="breed-faq-item"${item.open ? " open" : ""}>`,
+      `      <summary>${item.question}</summary>`,
+      `      <div class="breed-faq-answer">${item.answer}</div>`,
+      '    </details>',
+    ].join("\n")),
+    '  </div>',
+    '</section>',
+  ].join("\n");
+}
+
 function enhanceBreedContent(html: string) {
-  return html.replace(/<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*(<ul>[\s\S]*?<\/ul>)/i, (_match, listHtml: string) => {
+  let next = html.replace(/<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*(<ul>[\s\S]*?<\/ul>)/i, (_match, listHtml: string) => {
     const list = listHtml
       .replace(/^<ul>/i, '<ul class="breed-facts-list">')
       .replace(/<li>([\s\S]*?)<\/li>/gi, '<li><span class="breed-facts-paw" aria-hidden="true">🐾</span><span class="breed-facts-copy">$1</span></li>');
@@ -32,6 +91,16 @@ function enhanceBreedContent(html: string) {
       '</section>',
     ].join('');
   });
+
+  next = next.replace(/<p>\s*(<img[\s\S]*?>)\s*<\/p>/gi, '<figure class="breed-inline-media">$1</figure>');
+  next = next.replace(/<h2>([\s\S]*?)<\/h2>/gi, (_match, headingHtml: string) => {
+    const headingText = decodeHtmlEntities(stripHtml(headingHtml));
+    const id = slugifyHeading(headingText);
+    return `<h2 id="${id}" class="breed-section-title">${headingHtml}</h2>`;
+  });
+  next = next.replace(/<h2 id="faq" class="breed-section-title">FAQ<\/h2>([\s\S]*)$/i, (_match, faqContent: string) => buildFaqMarkup(faqContent));
+
+  return next;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -65,6 +134,8 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   const authorProfile = entry.authorSlug ? await getAuthorProfile(entry.authorSlug) : null;
   const breedPage = isBreedProfile(entry.content);
   const renderedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
+  const breedFacts = breedPage ? getBreedFacts(entry.content) : [];
+  const breedSections = breedPage ? getBreedSectionLinks(entry.content) : [];
 
   return (
     <main className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : ""}`}>
@@ -91,6 +162,22 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
+      {breedPage && breedFacts.length ? (
+        <section className="content-section content-section-tight">
+          <div className="breed-highlight-grid" aria-label="Schnelle Rasseinfos">
+            {breedFacts.slice(0, 4).map((fact) => {
+              const [label, ...valueParts] = fact.split(":");
+              return (
+                <article key={fact} className="breed-highlight-card">
+                  <span className="breed-highlight-label">{label}</span>
+                  <strong>{valueParts.join(":").trim() || label}</strong>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ) : null}
+
       {entry.categories.length ? (
         <section className={`content-section${breedPage ? " content-section-tight" : ""}`}>
           <div className="chip-row">
@@ -99,6 +186,19 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                 {category.name}
               </Link>
             ))}
+          </div>
+        </section>
+      ) : null}
+
+      {breedPage && breedSections.length ? (
+        <section className="content-section content-section-tight">
+          <div className="breed-jump-nav" aria-label="Direkt zu den wichtigsten Abschnitten">
+            {breedSections.map((section) => (
+              <a key={section.id} className="breed-jump-link" href={`#${section.id}`}>
+                {section.label}
+              </a>
+            ))}
+            <a className="breed-jump-link" href="#faq">FAQ</a>
           </div>
         </section>
       ) : null}
