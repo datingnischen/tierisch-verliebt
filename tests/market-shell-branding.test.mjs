@@ -25,12 +25,12 @@ test("city routes switch shell registration CTAs to AID=location", async () => {
   assert.match(sticky, /publicUrl\(market,cityIntent\?'\/registration\/\?AID=location':'\/\?AID=magazin'\)/);
 });
 
-test("footer uses relative preview-safe legal and market links where available", async () => {
+test("footer keeps legal links on live market domains and market switch links preview-relative", async () => {
   const shell = await source("../components/site-shell.tsx");
-  assert.ok(shell.includes('function legalHref(market: MarketCode, path: "/datenschutz.html" | "/impressum.html")'));
-  assert.ok(shell.includes('return market === "de" ? publicUrl(market, path) : path;'));
+  assert.doesNotMatch(shell, /function legalHref\(/);
+  assert.ok(shell.includes('href={publicUrl(market, "/datenschutz.html")}'));
+  assert.ok(shell.includes('href={publicUrl(market, "/impressum.html")}'));
   assert.ok(shell.includes('function marketSwitchHref(currentMarket: MarketCode, targetMarket: MarketCode)'));
   assert.ok(shell.includes('return currentMarket === targetMarket ? "/" : `/${targetMarket}`;'));
-  assert.ok(shell.includes('href={legalHref(market, "/datenschutz.html")}'));
   assert.ok(shell.includes('href={marketSwitchHref(market, "at")}'));
 });

@@ -90,10 +90,6 @@ function registrationHref(market: MarketCode, pathname: string) {
   return publicUrl(market, isCityPage(pathname) ? "/registration/?AID=location" : "/?AID=magazin");
 }
 
-function legalHref(market: MarketCode, path: "/datenschutz.html" | "/impressum.html") {
-  return market === "de" ? publicUrl(market, path) : path;
-}
-
 function marketSwitchHref(currentMarket: MarketCode, targetMarket: MarketCode) {
   return currentMarket === targetMarket ? "/" : `/${targetMarket}`;
 }
@@ -198,8 +194,8 @@ export function SiteFooter({ market = "de" }: Props) {
         <div className="sub-footer-links">
           <a href={register}>Registrieren</a>
           {market === "de" ? localLink(market, "/magazin", "Magazin") : null}
-          <a href={legalHref(market, "/datenschutz.html")}>Datenschutz</a>
-          <a href={legalHref(market, "/impressum.html")}>Impressum</a>
+          <a href={publicUrl(market, "/datenschutz.html")}>Datenschutz</a>
+          <a href={publicUrl(market, "/impressum.html")}>Impressum</a>
           <a href={marketSwitchHref(market, "de")}>DE</a>
           <a href={marketSwitchHref(market, "at")}>AT</a>
           <a href={marketSwitchHref(market, "ch")}>CH</a>
