@@ -49,7 +49,7 @@ export const getAuthorProfile = cache(async (slug: string): Promise<AuthorProfil
       intro:
         "Christian M. Haas entwickelt seit vielen Jahren Angebote für themenspezifisches Online-Dating. Bei tierisch-verliebt.de bringt er dieses Know-how mit einer sehr persönlichen Tierverbundenheit zusammen – für ein Magazin, das nahbar, glaubwürdig und alltagsrelevant bleibt.",
       imageUrl,
-      profileUrl: "/magazin/author/christian-m-haas",
+      profileUrl: "/magazin/christian",
       facts: [
         "Langjährige Erfahrung mit Dating-Portalen und spezialisierten Communities",
         "Persönlicher Tieralltag mit zwei Katzen und drei Graupapageien",
