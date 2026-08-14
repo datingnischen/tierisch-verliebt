@@ -22,12 +22,15 @@ test("magazine overview uses roomier curated overview modules", async () => {
 
 test("global styles define the magazine overview and footer polish hooks", async () => {
   const css = await source("../app/globals.css");
-  assert.match(css, /\.hero-brand-magazine/);
-  assert.match(css, /\.magazine-overview-grid/);
-  assert.match(css, /\.article-card-rich-magazine/);
+  assert.match(css, /\.magazine-overview-page \{/);
+  assert.match(css, /\.hero-brand-magazine[\s\S]*padding: 48px 40px 38px;/);
+  assert.match(css, /\.magazine-overview-grid[\s\S]*gap: 30px;/);
+  assert.match(css, /\.article-card-rich-magazine[\s\S]*grid-template-columns: minmax\(220px, 248px\) minmax\(0, 1fr\);/);
+  assert.match(css, /\.chip-row-magazine[\s\S]*gap: 18px;/);
+  assert.match(css, /\.magazine-overview-page \.chip[\s\S]*min-height: 54px;/);
   assert.match(css, /\.article-card-page-link/);
   assert.match(css, /align-items: start;/);
-  assert.match(css, /\.footer-link-grid[\s\S]*border-radius: 30px;/);
+  assert.match(css, /\.footer-link-grid[\s\S]*padding: 30px;/);
   assert.match(css, /\.footer-column h2[\s\S]*border-bottom:/);
   assert.match(css, /\.footer-brand-badge/);
   assert.match(css, /\.sub-footer-market-link/);

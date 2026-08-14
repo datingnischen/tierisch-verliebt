@@ -65,6 +65,11 @@ img {
   width: min(920px, calc(100% - 32px));
 }
 
+.magazine-overview-page {
+  width: min(1080px, calc(100% - 36px));
+  padding-top: 26px;
+}
+
 .hero-card,
 .panel-card {
   border: 1px solid var(--line);
@@ -110,12 +115,12 @@ img {
 }
 
 .hero-brand-magazine {
-  gap: 22px;
-  padding: 42px 32px 30px;
+  gap: 26px;
+  padding: 48px 40px 38px;
 }
 
 .hero-brand-magazine p {
-  max-width: 62ch;
+  max-width: 64ch;
 }
 
 .hero-magazine {
@@ -181,8 +186,8 @@ img {
 }
 
 .magazine-overview-grid {
-  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
-  gap: 24px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+  gap: 30px;
   align-items: start;
 }
 
@@ -207,7 +212,15 @@ img {
 }
 
 .content-section-tight {
-  margin-top: 18px;
+  margin-top: 28px;
+}
+
+.magazine-overview-page .content-section {
+  margin-top: 32px;
+}
+
+.magazine-overview-page .section-header {
+  gap: 14px;
 }
 
 .stack-list,
@@ -711,10 +724,10 @@ img {
 
 .footer-main {
   width: min(1180px, calc(100% - 32px));
-  margin: 24px auto 0;
+  margin: 28px auto 0;
   display: grid;
-  grid-template-columns: minmax(300px, 1.02fr) minmax(0, 1.98fr);
-  gap: 24px;
+  grid-template-columns: minmax(320px, 1.04fr) minmax(0, 1.96fr);
+  gap: 30px;
   align-items: start;
 }
 
@@ -781,8 +794,8 @@ img {
 .footer-link-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px 24px;
-  padding: 26px;
+  gap: 26px 28px;
+  padding: 30px;
   border: 1px solid rgba(230, 220, 206, 0.92);
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.94);
@@ -971,7 +984,7 @@ img {
 }
 
 .editorial-feature-card-magazine {
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
   align-items: stretch;
 }
 
@@ -980,11 +993,11 @@ img {
 }
 
 .editorial-feature-media-magazine {
-  min-height: 300px;
+  min-height: 340px;
 }
 
 .editorial-feature-copy-magazine {
-  padding: 28px 30px 30px;
+  padding: 34px 36px 36px;
   align-content: center;
 }
 
@@ -1008,10 +1021,10 @@ img {
 }
 
 .article-card-rich-magazine {
-  grid-template-columns: minmax(190px, 220px) minmax(0, 1fr);
+  grid-template-columns: minmax(220px, 248px) minmax(0, 1fr);
   gap: 0;
-  border-radius: 24px;
-  box-shadow: 0 14px 34px rgba(83, 57, 35, 0.08);
+  border-radius: 26px;
+  box-shadow: 0 16px 36px rgba(83, 57, 35, 0.08);
 }
 
 .article-card-media {
@@ -1019,12 +1032,12 @@ img {
 }
 
 .article-card-media-magazine {
-  min-height: 220px;
+  min-height: 248px;
 }
 
 .article-card-copy-magazine {
-  gap: 12px;
-  padding: 22px 22px 24px;
+  gap: 14px;
+  padding: 26px 26px 28px;
 }
 
 .article-card-meta-magazine {
@@ -1045,12 +1058,19 @@ img {
 }
 
 .chip-row-magazine {
-  gap: 14px;
+  gap: 18px;
+}
+
+.magazine-overview-page .chip {
+  min-height: 54px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-size: 1rem;
 }
 
 .panel-card-magazine-main,
 .panel-card-magazine-side {
-  gap: 20px;
+  gap: 24px;
 }
 
 .magazine-overview-posts {
@@ -1062,12 +1082,12 @@ img {
 }
 
 .important-page-list {
-  gap: 16px;
+  gap: 18px;
 }
 
 .article-card-page-link {
-  gap: 12px;
-  padding: 22px;
+  gap: 14px;
+  padding: 24px;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(255, 248, 247, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
   box-shadow: 0 14px 32px rgba(83, 57, 35, 0.06);
@@ -1246,7 +1266,15 @@ img {
 }
 
 .content-section-tight {
-  margin-top: 18px;
+  margin-top: 28px;
+}
+
+.magazine-overview-page .content-section {
+  margin-top: 32px;
+}
+
+.magazine-overview-page .section-header {
+  gap: 14px;
 }
 
 .article-hero-media-breed {
@@ -1900,8 +1928,12 @@ img {
     padding-top: 20px;
   }
 
+  .magazine-overview-page {
+    width: min(100% - 20px, 1080px);
+  }
+
   .hero-brand-magazine {
-    padding: 30px 24px 24px;
+    padding: 34px 24px 28px;
   }
 
   .magazine-detail-side {
