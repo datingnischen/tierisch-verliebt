@@ -8,6 +8,8 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+const CHRISTIAN_CANONICAL_PATH = "/magazin/christian";
+
 export const revalidate = 300;
 
 export async function generateStaticParams() {
@@ -20,16 +22,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const profile = await getAuthorProfile(slug);
   if (!profile) return {};
 
+  const canonicalPath = slug === "christian-m-haas" ? CHRISTIAN_CANONICAL_PATH : `/magazin/author/${slug}`;
+  const shouldNoindex = slug === "christian-m-haas";
+
   return {
     title: profile.name,
     description: profile.bio.slice(0, 155),
     alternates: {
-      canonical: `${SITE_URL}/magazin/author/${slug}`,
+      canonical: `${SITE_URL}${canonicalPath}`,
     },
+    robots: shouldNoindex
+      ? {
+          index: false,
+          follow: true,
+        }
+      : undefined,
     openGraph: {
       title: profile.name,
       description: profile.bio.slice(0, 155),
-      url: `${SITE_URL}/magazin/author/${slug}`,
+      url: `${SITE_URL}${canonicalPath}`,
       images: profile.imageUrl ? [profile.imageUrl] : undefined,
     },
   };
