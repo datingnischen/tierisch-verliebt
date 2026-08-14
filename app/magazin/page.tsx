@@ -36,10 +36,12 @@ export default async function MagazineOverviewPage() {
   ]);
 
   const featuredPost = posts[0];
+  const latestPosts = posts.slice(0, 3);
+  const importantPages = pages.slice(0, 6);
 
   return (
-    <main className="shell shell-narrow">
-      <section className="hero-card hero-brand">
+    <main className="shell shell-narrow magazine-overview-page">
+      <section className="hero-card hero-brand hero-brand-magazine">
         <span className="eyebrow">Tier-Magazin</span>
         <h1>Tierwissen, tierliebe Geschichten und Magazin-Inhalte für Singles mit Herz für Tiere.</h1>
         <p>
@@ -58,9 +60,9 @@ export default async function MagazineOverviewPage() {
 
       {featuredPost ? (
         <section className="content-section">
-          <article className="editorial-feature-card">
+          <article className="editorial-feature-card editorial-feature-card-magazine">
             {featuredPost.featuredImage ? (
-              <div className="editorial-feature-media">
+              <div className="editorial-feature-media editorial-feature-media-magazine">
                 <img
                   src={featuredPost.featuredImage}
                   alt={featuredPost.featuredImageAlt || featuredPost.title}
@@ -69,28 +71,32 @@ export default async function MagazineOverviewPage() {
                 />
               </div>
             ) : null}
-            <div className="editorial-feature-copy">
+            <div className="editorial-feature-copy editorial-feature-copy-magazine">
               <span className="eyebrow eyebrow-muted">Gerade beliebt</span>
-              <h3>{featuredPost.title}</h3>
+              <h2>{featuredPost.title}</h2>
               <p>{stripHtml(featuredPost.excerpt || featuredPost.content).slice(0, 220)}…</p>
-              <div className="meta-row">
+              <div className="meta-row editorial-feature-meta">
                 {featuredPost.authorName ? <span>Von {featuredPost.authorName}</span> : null}
                 {featuredPost.date ? <span>{formatGermanDate(featuredPost.date)}</span> : null}
               </div>
-              <Link className="button button-primary" href={`/magazin/${featuredPost.slug}`}>
-                Jetzt lesen
-              </Link>
+              <div className="button-row">
+                <Link className="button button-primary" href={`/magazin/${featuredPost.slug}`}>
+                  Jetzt lesen
+                </Link>
+              </div>
             </div>
           </article>
         </section>
       ) : null}
 
-      <section className="content-section">
-        <div className="section-header">
-          <span className="eyebrow">Beliebte Kategorien</span>
-          <h2>Magazin-Themen mit direktem Einstieg</h2>
+      <section className="content-section content-section-tight">
+        <div className="section-header section-header-inline">
+          <div>
+            <span className="eyebrow">Beliebte Kategorien</span>
+            <h2>Magazin-Themen mit direktem Einstieg</h2>
+          </div>
         </div>
-        <div className="chip-row">
+        <div className="chip-row chip-row-magazine">
           {categories.slice(0, 8).map((category) => (
             <Link key={category.slug} className="chip" href={`/magazin/thema/${category.slug}`}>
               {category.name}
@@ -99,52 +105,56 @@ export default async function MagazineOverviewPage() {
         </div>
       </section>
 
-      <section className="grid-two">
-        <article className="panel-card">
+      <section className="grid-two magazine-overview-grid">
+        <article className="panel-card panel-card-magazine-main">
           <div className="section-header">
             <span className="eyebrow">Neueste Beiträge</span>
             <h2>Aktuelle Artikel im Überblick</h2>
+            <p>Die wichtigsten frischen Themen mit mehr Luft, klarerer Hierarchie und direktem Einstieg ins Magazin.</p>
           </div>
-          <div className="stack-list">
-            {posts.map((post) => (
-              <Link key={post.id} href={`/magazin/${post.slug}`} className="article-card article-card-rich">
+          <div className="stack-list magazine-overview-posts">
+            {latestPosts.map((post) => (
+              <Link key={post.id} href={`/magazin/${post.slug}`} className="article-card article-card-rich article-card-rich-magazine">
                 {post.featuredImage ? (
-                  <div className="article-card-media">
+                  <div className="article-card-media article-card-media-magazine">
                     <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" />
                   </div>
                 ) : null}
-                <div className="article-card-copy">
+                <div className="article-card-copy article-card-copy-magazine">
+                  <div className="meta-row article-card-meta-magazine">
+                    {post.categories[0] ? <span>{post.categories[0].name}</span> : null}
+                    {post.date ? <span>{formatGermanDate(post.date)}</span> : null}
+                  </div>
                   <h3>{post.title}</h3>
-                  <p>{stripHtml(post.excerpt || post.content).slice(0, 160)}…</p>
+                  <p>{stripHtml(post.excerpt || post.content).slice(0, 170)}…</p>
                 </div>
               </Link>
             ))}
           </div>
 
-          {totalPages > 1 ? (
-            <div className="pagination-bar" aria-label="Seitennavigation Magazin">
-              <span>
-                Seite 1 von {totalPages} · {totalItems} Beiträge
-              </span>
-              <div className="pagination-actions">
-                <Link className="button button-secondary" href="/magazin/page/2">
-                  Ältere Beiträge
-                </Link>
-              </div>
+          <div className="pagination-bar pagination-bar-magazine">
+            <span>
+              Seite 1 von {totalPages} · {totalItems} Beiträge
+            </span>
+            <div className="pagination-actions">
+              <Link className="button button-secondary" href={totalPages > 1 ? "/magazin/page/2" : "/magazin"}>
+                {totalPages > 1 ? "Ältere Beiträge" : "Zum Magazin"}
+              </Link>
             </div>
-          ) : null}
+          </div>
         </article>
 
-        <article className="panel-card">
+        <article className="panel-card panel-card-magazine-side">
           <div className="section-header">
             <span className="eyebrow">Wichtige Seiten</span>
             <h2>Evergreen- und Info-Seiten</h2>
+            <p>Schnelle Einstiege in dauerhaft wichtige Inhalte statt einer gestreckten, leeren Spalte.</p>
           </div>
-          <div className="stack-list">
-            {pages.slice(0, 8).map((page) => (
-              <Link key={page.id} href={canonicalMagazinePagePath(page.slug)} className="article-card">
+          <div className="stack-list important-page-list">
+            {importantPages.map((page) => (
+              <Link key={page.id} href={canonicalMagazinePagePath(page.slug)} className="article-card article-card-compact article-card-page-link">
                 <h3>{page.title}</h3>
-                <p>{stripHtml(page.excerpt || page.content).slice(0, 150)}…</p>
+                <p>{stripHtml(page.excerpt || page.content).slice(0, 120)}…</p>
               </Link>
             ))}
           </div>
