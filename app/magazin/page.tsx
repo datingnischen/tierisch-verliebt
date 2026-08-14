@@ -147,8 +147,8 @@ export default async function MagazineOverviewPage() {
         <article className="panel-card panel-card-magazine-side">
           <div className="section-header">
             <span className="eyebrow">Wichtige Seiten</span>
-            <h2>Evergreen- und Info-Seiten</h2>
-            <p>Schnelle Einstiege in dauerhaft wichtige Inhalte statt einer gestreckten, leeren Spalte.</p>
+            <h2>Hilfreiche Seiten auf einen Blick</h2>
+            <p>Schnelle Einstiege in wichtige Themen, Hintergründe und hilfreiche Magazin-Bereiche.</p>
           </div>
           <div className="stack-list important-page-list">
             {importantPages.map((page) => (

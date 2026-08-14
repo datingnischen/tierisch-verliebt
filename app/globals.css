@@ -698,6 +698,12 @@ img {
   box-shadow: 0 26px 60px rgba(83, 57, 35, 0.12);
 }
 
+.footer-cta-copy {
+  display: grid;
+  gap: 12px;
+  max-width: 60ch;
+}
+
 .site-footer-shell {
   margin-top: 64px;
   padding: 0 0 calc(96px + env(safe-area-inset-bottom, 0px));
@@ -710,6 +716,10 @@ img {
   grid-template-columns: minmax(300px, 1.02fr) minmax(0, 1.98fr);
   gap: 24px;
   align-items: start;
+}
+
+.footer-main-showcase {
+  position: relative;
 }
 
 .footer-brand-panel,
@@ -726,6 +736,38 @@ img {
   padding: 28px;
   background: linear-gradient(180deg, rgba(255, 251, 248, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
   box-shadow: 0 18px 38px rgba(83, 57, 35, 0.08);
+}
+
+.footer-brand-panel-rich {
+  align-content: start;
+}
+
+.footer-brand-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(66, 154, 69, 0.1);
+  color: #3a7d2c;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.footer-brand-intro {
+  max-width: 34ch;
+}
+
+.footer-trust-list-rich {
+  gap: 12px;
 }
 
 .footer-trust-list,
@@ -745,6 +787,15 @@ img {
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 18px 38px rgba(83, 57, 35, 0.08);
+}
+
+.footer-link-grid-rich a {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.footer-link-grid-rich a:hover {
+  color: var(--brand);
 }
 
 .footer-column {
@@ -778,11 +829,36 @@ img {
   border-top: 1px solid rgba(226, 214, 196, 0.9);
 }
 
+.sub-footer-rich {
+  color: var(--muted);
+}
+
+.sub-footer-copy {
+  font-size: 0.95rem;
+}
+
 .sub-footer-links {
   display: flex;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+.sub-footer-links-rich a {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.sub-footer-market-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(226, 214, 196, 0.9);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .home-stage {
@@ -1759,6 +1835,10 @@ img {
   .site-header-bar,
   .sub-footer {
     width: min(100% - 20px, 1180px);
+  }
+
+  .footer-brand-topline {
+    align-items: flex-start;
   }
 
   .site-header-bar,

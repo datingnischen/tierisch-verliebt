@@ -157,24 +157,27 @@ export function SiteFooter({ market = "de" }: Props) {
   return (
     <footer className="site-footer-shell">
       <section className="footer-cta footer-cta-soft" aria-label="Registrierung">
-        <div>
+        <div className="footer-cta-copy">
           <p className="eyebrow">Tierliebe Partnersuche</p>
           <h2>Finde tierliebe Singles, bei denen Hund, Katze & Co. wirklich dazugehören.</h2>
           <p>Regionale Tipps und echte Profilvorschauen führen direkt zu passenden Kontakten in {config.countryName}.</p>
         </div>
         <a className="footer-cta-button" href={register}>Jetzt kostenlos starten</a>
       </section>
-      <div className="footer-main">
-        <div className="footer-brand-panel">
-          <Brand market={market} footer />
-          <p>tierisch-verliebt.{market} verbindet tierliebe Singles mit regionalen Einstiegen für Menschen, bei denen Tiere zur Familie gehören.</p>
-          <ul className="footer-trust-list" aria-label="Vertrauensmerkmale">
+      <div className="footer-main footer-main-showcase">
+        <div className="footer-brand-panel footer-brand-panel-rich">
+          <div className="footer-brand-topline">
+            <Brand market={market} footer />
+            <span className="footer-brand-badge">Mit Liebe für Tierfreunde</span>
+          </div>
+          <p className="footer-brand-intro">tierisch-verliebt.{market} verbindet tierliebe Singles mit regionalen Einstiegen für Menschen, bei denen Tiere zur Familie gehören.</p>
+          <ul className="footer-trust-list footer-trust-list-rich" aria-label="Vertrauensmerkmale">
             <li>Gemeinsame Tierliebe statt austauschbarer Flirts</li>
             <li>Regionale Ratgeber und tierfreundliche Treffpunkte</li>
             <li>Direkter Einstieg in die kostenlose Registrierung</li>
           </ul>
         </div>
-        <nav className="footer-link-grid" aria-label="Footer Navigation">
+        <nav className="footer-link-grid footer-link-grid-rich" aria-label="Footer Navigation">
           {columns.map((column) => (
             <div className="footer-column" key={column.title}>
               <h2>{column.title}</h2>
@@ -189,16 +192,16 @@ export function SiteFooter({ market = "de" }: Props) {
           ))}
         </nav>
       </div>
-      <div className="sub-footer">
-        <span>© {new Date().getFullYear()} tierisch-verliebt.{market}</span>
-        <div className="sub-footer-links">
+      <div className="sub-footer sub-footer-rich">
+        <span className="sub-footer-copy">© {new Date().getFullYear()} tierisch-verliebt.{market}</span>
+        <div className="sub-footer-links sub-footer-links-rich">
           <a href={register}>Registrieren</a>
           {market === "de" ? localLink(market, "/magazin", "Magazin") : null}
           <a href={publicUrl(market, "/datenschutz.html")}>Datenschutz</a>
           <a href={publicUrl(market, "/impressum.html")}>Impressum</a>
-          <a href={marketSwitchHref(market, "de")}>DE</a>
-          <a href={marketSwitchHref(market, "at")}>AT</a>
-          <a href={marketSwitchHref(market, "ch")}>CH</a>
+          <a className="sub-footer-market-link" href={marketSwitchHref(market, "de")}>DE</a>
+          <a className="sub-footer-market-link" href={marketSwitchHref(market, "at")}>AT</a>
+          <a className="sub-footer-market-link" href={marketSwitchHref(market, "ch")}>CH</a>
         </div>
       </div>
     </footer>
