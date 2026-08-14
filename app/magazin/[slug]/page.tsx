@@ -16,6 +16,8 @@ export const revalidate = 300;
 
 const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischverliebt&pc=c02e2e&aid=magazin";
 const MAGAZINE_CTA_IMAGE = staticAsset("/home/frontpage-visual-tierischverliebt.webp");
+const CHRISTIAN_PAGE_DESCRIPTION =
+  "Christian M. Haas ist Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber. Erfahre mehr über seine Tierverbundenheit, Dating-Erfahrung und redaktionellen Schwerpunkte.";
 
 function isBreedProfile(html: string) {
   return /<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*<ul>/i.test(html);
@@ -93,7 +95,7 @@ function enhanceBreedContent(html: string) {
       '  </div>',
       `  ${list}`,
       '</section>',
-    ].join('');
+    ].join("");
   });
 
   next = next.replace(/<p>\s*(<img[\s\S]*?>)\s*<\/p>/gi, '<figure class="breed-inline-media">$1</figure>');
@@ -166,7 +168,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const entry = await getMagazineEntryBySlug(slug);
   if (!entry) return {};
 
-  const description = stripHtml(entry.excerpt || entry.content).slice(0, 155);
+  const description = slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : stripHtml(entry.excerpt || entry.content).slice(0, 155);
 
   return {
     title: entry.title,
@@ -194,9 +196,40 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   const renderedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
   const breedFacts = breedPage ? getBreedFacts(entry.content) : [];
   const breedSections = breedPage ? getBreedSectionLinks(entry.content) : [];
+  const isChristianPage = slug === "christian";
+  const christianStructuredData = isChristianPage
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin` },
+            { "@type": "ListItem", position: 2, name: entry.title, item: `${SITE_URL}/magazin/christian` },
+          ],
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Christian M. Haas",
+          url: `${SITE_URL}/magazin/christian`,
+          description: CHRISTIAN_PAGE_DESCRIPTION,
+          jobTitle: "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
+          image: authorProfile?.imageUrl || entry.featuredImage || undefined,
+          sameAs: ["https://datingnischen.de/christian", "https://www.linkedin.com/in/christian-m-haas-457323379"],
+          knowsAbout: ["Online-Dating", "tierfreundliche Partnersuche", "Haustiere im Alltag", "Dating-Communities"],
+        },
+      ]
+    : [];
 
   return (
     <main className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : ""}`}>
+      {christianStructuredData.map((payload) => (
+        <script
+          key={payload["@type"]}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(payload) }}
+        />
+      ))}
       <section className={`hero-card hero-magazine${breedPage ? " hero-magazine-breed" : ""}`}>
         <span className="eyebrow">{entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}</span>
         <h1>{entry.title}</h1>
