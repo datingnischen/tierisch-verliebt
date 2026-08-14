@@ -8,6 +8,8 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+type StructuredData = Record<string, unknown>;
+
 const CHRISTIAN_CANONICAL_PATH = "/magazin/christian";
 
 export const revalidate = 300;
@@ -46,6 +48,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+function serializeJsonLd(payload: StructuredData) {
+  return JSON.stringify(payload)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+}
+
 export default async function MagazineAuthorPage({ params }: PageProps) {
   const { slug } = await params;
   const [profile, posts] = await Promise.all([getAuthorProfile(slug), getAuthorPosts(slug)]);
@@ -53,9 +64,59 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
 
   const latestPost = posts[0];
   const highlightedPosts = posts.slice(0, 6);
+  const canonicalPath = slug === "christian-m-haas" ? CHRISTIAN_CANONICAL_PATH : profile.profileUrl;
+  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  const shouldNoindex = slug === "christian-m-haas";
+  const isEditorialTeamPage = slug === "redaktion";
+
+  const structuredData: StructuredData[] = shouldNoindex
+    ? []
+    : [
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin` },
+            { "@type": "ListItem", position: 2, name: profile.name, item: canonicalUrl },
+          ],
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": isEditorialTeamPage ? "AboutPage" : "ProfilePage",
+          url: canonicalUrl,
+          name: profile.name,
+          description: profile.bio,
+          mainEntity: isEditorialTeamPage
+            ? {
+                "@type": "Thing",
+                name: profile.name,
+                description: profile.bio,
+                url: canonicalUrl,
+              }
+            : {
+                "@type": "Person",
+                "@id": `${canonicalUrl}#person`,
+                name: profile.name,
+                description: profile.bio,
+                url: canonicalUrl,
+                image: profile.imageUrl,
+                jobTitle: profile.role,
+                sameAs: profile.links?.filter((link) => link.external).map((link) => link.href) ?? [],
+                knowsAbout: profile.expertise,
+              },
+        },
+      ];
 
   return (
     <main className="shell shell-narrow">
+      {structuredData.map((payload) => (
+        <script
+          key={`${String(payload["@type"])}-${String(payload.url ?? payload.name ?? "entity")}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(payload) }}
+        />
+      ))}
+
       <section className="author-hero-simple">
         <div className="author-hero-simple-grid">
           <div className="author-hero-simple-media">

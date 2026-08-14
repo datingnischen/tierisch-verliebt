@@ -15,3 +15,16 @@ test("christian author route canonicalizes to the ranking page and stays noindex
   assert.match(authorRoute, /robots:\s*shouldNoindex[\s\S]*index:\s*false[\s\S]*follow:\s*true/);
   assert.ok(authorRoute.includes('url: `${SITE_URL}${canonicalPath}`'));
 });
+
+test("indexable author routes emit bounded structured data while the christian alias stays graph-free", async () => {
+  const authorRoute = await source("../app/magazin/author/[slug]/page.tsx");
+  assert.match(authorRoute, /const structuredData: StructuredData\[\] = shouldNoindex\s*\? \[\]/);
+  assert.match(authorRoute, /"@type": "BreadcrumbList"/);
+  assert.match(authorRoute, /"@type": isEditorialTeamPage \? "AboutPage" : "ProfilePage"/);
+  assert.match(authorRoute, /mainEntity:\s*isEditorialTeamPage/);
+  assert.match(authorRoute, /"@type": "Thing"/);
+  assert.match(authorRoute, /"@type": "Person"/);
+  assert.match(authorRoute, /"@id": `\$\{canonicalUrl\}#person`/);
+  assert.match(authorRoute, /type="application\/ld\+json"/);
+  assert.match(authorRoute, /serializeJsonLd\(payload\)/);
+});
