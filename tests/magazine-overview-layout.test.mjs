@@ -30,7 +30,8 @@ test("global styles define the magazine overview and footer polish hooks", async
   assert.match(css, /\.magazine-overview-grid[\s\S]*gap: 28px;/);
   assert.match(css, /\.article-card-rich-magazine[\s\S]*grid-template-columns: minmax\(208px, 232px\) minmax\(0, 1fr\);/);
   assert.match(css, /\.chip-row-magazine[\s\S]*gap: 10px 12px;/);
-  assert.match(css, /\.chip-magazine-topic[\s\S]*min-height: 40px;/);
+  assert.match(css, /\.chip-row-magazine[\s\S]*align-items: flex-start;/);
+  assert.match(css, /\.chip-magazine-topic[\s\S]*padding: 9px 14px;/);
   assert.match(css, /\.article-card-page-link/);
   assert.match(css, /align-items: start;/);
   assert.match(css, /\.footer-link-grid[\s\S]*padding: 30px;/);

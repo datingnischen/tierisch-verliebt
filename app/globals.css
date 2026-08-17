@@ -1079,7 +1079,7 @@ img {
 
 .chip-row-magazine {
   gap: 10px 12px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .magazine-overview-page .chip {
@@ -1090,13 +1090,14 @@ img {
 }
 
 .chip-magazine-topic {
-  min-height: 40px;
-  padding: 0 14px;
-  border-radius: 999px;
-  border-color: rgba(226, 189, 189, 0.85);
-  background: rgba(255, 246, 246, 0.86);
+  min-height: 0;
+  padding: 9px 14px;
+  border-radius: 18px;
+  border-color: rgba(226, 189, 189, 0.78);
+  background: rgba(255, 248, 248, 0.92);
   color: #8f2417;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.2;
   font-weight: 600;
   box-shadow: none;
 }
