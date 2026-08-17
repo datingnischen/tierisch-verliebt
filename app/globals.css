@@ -223,6 +223,26 @@ img {
   gap: 14px;
 }
 
+.magazine-category-section {
+  display: grid;
+  gap: 16px;
+}
+
+.magazine-category-header {
+  gap: 10px;
+}
+
+.magazine-category-header h2 {
+  max-width: 22ch;
+}
+
+.magazine-category-header p {
+  max-width: 62ch;
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
 .stack-list,
 .link-list {
   display: grid;
@@ -1058,7 +1078,8 @@ img {
 }
 
 .chip-row-magazine {
-  gap: 14px 16px;
+  gap: 10px 12px;
+  align-items: center;
 }
 
 .magazine-overview-page .chip {
@@ -1066,6 +1087,22 @@ img {
   padding: 0 16px;
   border-radius: 999px;
   font-size: 0.95rem;
+}
+
+.chip-magazine-topic {
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border-color: rgba(226, 189, 189, 0.85);
+  background: rgba(255, 246, 246, 0.86);
+  color: #8f2417;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.chip-magazine-topic:hover {
+  background: rgba(255, 239, 239, 0.96);
 }
 
 .panel-card-magazine-main,
@@ -1275,6 +1312,26 @@ img {
 
 .magazine-overview-page .section-header {
   gap: 14px;
+}
+
+.magazine-category-section {
+  display: grid;
+  gap: 16px;
+}
+
+.magazine-category-header {
+  gap: 10px;
+}
+
+.magazine-category-header h2 {
+  max-width: 22ch;
+}
+
+.magazine-category-header p {
+  max-width: 62ch;
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
 }
 
 .article-hero-media-breed {
@@ -1902,6 +1959,10 @@ img {
 
   .article-card-copy-magazine {
     gap: 10px;
+  }
+
+  .magazine-category-header h2 {
+    max-width: none;
   }
 
   .floating-entry-card {

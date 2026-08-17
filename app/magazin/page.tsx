@@ -89,16 +89,17 @@ export default async function MagazineOverviewPage() {
         </section>
       ) : null}
 
-      <section className="content-section content-section-tight">
-        <div className="section-header section-header-inline">
+      <section className="content-section content-section-tight magazine-category-section">
+        <div className="section-header magazine-category-header">
           <div>
             <span className="eyebrow">Beliebte Kategorien</span>
             <h2>Magazin-Themen mit direktem Einstieg</h2>
+            <p>Schnelle Wege zu Hund, Katze, Vögeln, Apps und weiteren Themen, die Tierfreunde gerade besonders interessieren.</p>
           </div>
         </div>
         <div className="chip-row chip-row-magazine">
           {categories.slice(0, 8).map((category) => (
-            <Link key={category.slug} className="chip" href={`/magazin/thema/${category.slug}`}>
+            <Link key={category.slug} className="chip chip-magazine-topic" href={`/magazin/thema/${category.slug}`}>
               {category.name}
             </Link>
           ))}
