@@ -17,6 +17,20 @@ type ChristianBookProfileInput = {
 
 const BOOK_MARKER_START = "<!-- dating-ohne-bullshit-book:start -->";
 const BOOK_MARKER_END = "<!-- dating-ohne-bullshit-book:end -->";
+const BOOK_SCHEMA_START = "<!-- dating-ohne-bullshit-schema:start -->";
+const BOOK_SCHEMA_END = "<!-- dating-ohne-bullshit-schema:end -->";
+
+export function stripPublishedBookSchema(content: string) {
+  let result = content;
+  let start = result.indexOf(BOOK_SCHEMA_START);
+  while (start >= 0) {
+    const end = result.indexOf(BOOK_SCHEMA_END, start + BOOK_SCHEMA_START.length);
+    if (end < 0) break;
+    result = result.slice(0, start) + result.slice(end + BOOK_SCHEMA_END.length);
+    start = result.indexOf(BOOK_SCHEMA_START);
+  }
+  return result;
+}
 
 function extractBoundedBookImage(content: string) {
   const starts = content.split(BOOK_MARKER_START).length - 1;

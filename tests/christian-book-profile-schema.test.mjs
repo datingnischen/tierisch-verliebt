@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildChristianBookProfileGraph } from "../lib/christian-book-profile-schema.ts";
+import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "../lib/christian-book-profile-schema.ts";
 import { serializeJsonLd } from "../lib/json-ld.ts";
 
 const markerContent = `
@@ -74,6 +74,11 @@ test("uses the safe JSON-LD serializer", () => {
   );
 });
 
+test("removes the CMS Book script before rendering to avoid duplicate Book nodes", () => {
+  const content = 'before<!-- dating-ohne-bullshit-schema:start --><script type="application/ld+json">{"@type":"Book"}</script><!-- dating-ohne-bullshit-schema:end -->after';
+  assert.equal(stripPublishedBookSchema(content), "beforeafter");
+});
+
 test("the Christian magazine page emits the single CMS-gated graph", async () => {
   const { readFile } = await import("node:fs/promises");
   const page = await readFile(new URL("../app/magazin/[slug]/page.tsx", import.meta.url), "utf8");
@@ -81,5 +86,6 @@ test("the Christian magazine page emits the single CMS-gated graph", async () =>
   assert.match(page, /slug,\s*christianSlug: "christian",\s*content: entry\.content/);
   assert.match(page, /profileGraph \? \(/);
   assert.match(page, /serializeJsonLd\(profileGraph\)/);
+  assert.match(page, /stripPublishedBookSchema\(renderedContent\)/);
   assert.doesNotMatch(page, /const christianStructuredData/);
 });

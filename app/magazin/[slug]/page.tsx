@@ -5,7 +5,7 @@ import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
 import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
-import { buildChristianBookProfileGraph } from "@/lib/christian-book-profile-schema";
+import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 type PageProps = {
@@ -196,6 +196,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   const authorProfile = entry.authorSlug ? await getAuthorProfile(entry.authorSlug) : null;
   const breedPage = isBreedProfile(entry.content);
   const renderedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
+  const schemaDedupedContent = stripPublishedBookSchema(renderedContent);
   const breedFacts = breedPage ? getBreedFacts(entry.content) : [];
   const breedSections = breedPage ? getBreedSectionLinks(entry.content) : [];
   const profileGraph = buildChristianBookProfileGraph({
@@ -293,7 +294,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         <div className="magazine-detail-layout">
           <div className="magazine-detail-main">
             <section className={`rich-content${breedPage ? " breed-rich-content" : ""}`}>
-              <div dangerouslySetInnerHTML={{ __html: renderedContent }} />
+              <div dangerouslySetInnerHTML={{ __html: schemaDedupedContent }} />
             </section>
           </div>
           <aside className="magazine-detail-side" aria-label="Singlebörse und Conversion-Module">
