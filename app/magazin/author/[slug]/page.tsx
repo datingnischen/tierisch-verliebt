@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAuthorPosts, getAuthorProfile, getKnownAuthorSlugs } from "@/lib/author-profiles";
 import { SITE_URL, formatGermanDate, stripHtml } from "@/lib/wordpress";
+import { serializeJsonLd } from "@/lib/json-ld";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -46,15 +47,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: profile.imageUrl ? [profile.imageUrl] : undefined,
     },
   };
-}
-
-function serializeJsonLd(payload: StructuredData) {
-  return JSON.stringify(payload)
-    .replace(/</g, "\\u003c")
-    .replace(/>/g, "\\u003e")
-    .replace(/&/g, "\\u0026")
-    .replace(/\u2028/g, "\\u2028")
-    .replace(/\u2029/g, "\\u2029");
 }
 
 export default async function MagazineAuthorPage({ params }: PageProps) {

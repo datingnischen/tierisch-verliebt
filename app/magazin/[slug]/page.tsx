@@ -5,6 +5,8 @@ import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
 import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
+import { buildChristianBookProfileGraph } from "@/lib/christian-book-profile-schema";
+import { serializeJsonLd } from "@/lib/json-ld";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -196,40 +198,29 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   const renderedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
   const breedFacts = breedPage ? getBreedFacts(entry.content) : [];
   const breedSections = breedPage ? getBreedSectionLinks(entry.content) : [];
-  const isChristianPage = slug === "christian";
-  const christianStructuredData = isChristianPage
-    ? [
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin` },
-            { "@type": "ListItem", position: 2, name: entry.title, item: `${SITE_URL}/magazin/christian` },
-          ],
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: "Christian M. Haas",
-          url: `${SITE_URL}/magazin/christian`,
-          description: CHRISTIAN_PAGE_DESCRIPTION,
-          jobTitle: "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
-          image: authorProfile?.imageUrl || entry.featuredImage || undefined,
-          sameAs: ["https://datingnischen.de/christian", "https://www.linkedin.com/in/christian-m-haas-457323379"],
-          knowsAbout: ["Online-Dating", "tierfreundliche Partnersuche", "Haustiere im Alltag", "Dating-Communities"],
-        },
-      ]
-    : [];
+  const profileGraph = buildChristianBookProfileGraph({
+    slug,
+    christianSlug: "christian",
+    content: entry.content,
+    canonicalUrl: `${SITE_URL}/magazin/christian`,
+    profileName: "Christian M. Haas",
+    profileDescription: CHRISTIAN_PAGE_DESCRIPTION,
+    profileImage: authorProfile?.imageUrl || entry.featuredImage || undefined,
+    jobTitle: "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
+    sameAs: ["https://datingnischen.de/christian", "https://www.linkedin.com/in/christian-m-haas-457323379"],
+    knowsAbout: ["Online-Dating", "tierfreundliche Partnersuche", "Haustiere im Alltag", "Dating-Communities"],
+    breadcrumbRootName: "Magazin",
+    breadcrumbRootUrl: `${SITE_URL}/magazin`,
+  });
 
   return (
     <main className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : ""}`}>
-      {christianStructuredData.map((payload) => (
+      {profileGraph ? (
         <script
-          key={payload["@type"]}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(payload) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(profileGraph) }}
         />
-      ))}
+      ) : null}
       <section className={`hero-card hero-magazine${breedPage ? " hero-magazine-breed" : ""}`}>
         <span className="eyebrow">{entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}</span>
         <h1>{entry.title}</h1>
