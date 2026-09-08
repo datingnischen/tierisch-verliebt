@@ -23,7 +23,7 @@ for (const market of ["de", "at", "ch"]) {
 }
 
 test("keeps every imported city complete, sanitized and market-local", async () => {
-  const { getMarketCityPages, getMarketPartnersucheHub } = await loadContent();
+  const { getMarketCityPages, getMarketPartnersucheHub, withPostcodeSearch } = await loadContent();
 
   for (const market of ["de", "at", "ch"]) {
     const domain = `tierisch-verliebt.${market}`;
@@ -45,10 +45,27 @@ test("keeps every imported city complete, sanitized and market-local", async () 
       assert.ok(page.icony.zip.length >= 4);
       assert.equal(page.icony.country, market === "de" ? 49 : market === "at" ? 43 : 41);
       assert.equal(new URL(page.registrationUrl).hostname, domain);
-      assert.equal(new URL(page.searchUrl).hostname, domain);
+      const searchUrl = new URL(page.searchUrl);
+      assert.equal(searchUrl.hostname, domain);
+      assert.equal(searchUrl.pathname, "/suche/");
+      assert.equal(searchUrl.searchParams.get("plz"), page.icony.zip);
+      assert.equal(searchUrl.searchParams.get("AID"), "location");
+      assert.deepEqual([...searchUrl.searchParams.keys()], ["plz", "AID"]);
       assert.doesNotMatch(page.contentHtml, /<(?:script|iframe|form|input|button)\b/i);
       assert.doesNotMatch(page.contentHtml, /\son[a-z]+\s*=/i);
       assert.doesNotMatch(page.contentHtml, /(?:href|src)\s*=\s*["']\s*javascript:/i);
     }
   }
+
+  const valid = getMarketCityPages("de")[0];
+  for (const zip of ["", "1234", "ABCDE"]) {
+    assert.throws(
+      () => withPostcodeSearch({ ...valid, icony: { ...valid.icony, zip } }),
+      /Invalid postcode/,
+    );
+  }
+  assert.throws(
+    () => withPostcodeSearch({ ...valid, searchUrl: "https://tierisch-verliebt.de/suche/" }),
+    /Invalid search attribution/,
+  );
 });

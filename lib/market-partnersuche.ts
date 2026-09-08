@@ -163,12 +163,29 @@ const HUB_COPY: Record<MarketCode, HubCopy> = {
   },
 };
 
+export function withPostcodeSearch(page: MarketCityPage): MarketCityPage {
+  const postcodePattern = page.market === "de" ? /^\d{5}$/ : /^\d{4}$/;
+  if (!postcodePattern.test(page.icony.zip)) {
+    throw new Error(`Invalid postcode for ${page.market}/${page.slug}: ${page.icony.zip}`);
+  }
+  const url = new URL(page.searchUrl);
+  const aid = url.searchParams.get("AID");
+  if (aid !== "location") {
+    throw new Error(`Invalid search attribution for ${page.market}/${page.slug}`);
+  }
+  url.search = "";
+  url.searchParams.set("plz", page.icony.zip);
+  url.searchParams.set("AID", aid);
+  return { ...page, searchUrl: url.toString() };
+}
+
 export function getMarketCityPages(market: MarketCode): MarketCityPage[] {
-  return imports[market].pages;
+  return imports[market].pages.map(withPostcodeSearch);
 }
 
 export function getMarketCityPage(market: MarketCode, slug: string): MarketCityPage | null {
-  return imports[market].pages.find((page) => page.slug === slug) ?? null;
+  const page = imports[market].pages.find((entry) => entry.slug === slug);
+  return page ? withPostcodeSearch(page) : null;
 }
 
 export function getMarketPartnersucheHub(market: MarketCode) {
