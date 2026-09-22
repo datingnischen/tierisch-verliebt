@@ -6,6 +6,7 @@ import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
 import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
+import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 type PageProps = {
@@ -52,36 +53,6 @@ function getBreedSectionLinks(html: string): BreedSectionLink[] {
   return links.filter((link, index, all) => all.findIndex((entry) => entry.id === link.id) === index);
 }
 
-function buildFaqMarkup(source: string) {
-  const items = [...source.matchAll(/<h3>([\s\S]*?)<\/h3>\s*([\s\S]*?)(?=<h3>|$)/gi)]
-    .map((match, index) => ({
-      question: decodeHtmlEntities(stripHtml(match[1])),
-      answer: match[2].trim(),
-      open: index === 0,
-    }))
-    .filter((item) => item.question && item.answer);
-
-  if (!items.length) return source;
-
-  return [
-    '<section class="breed-faq-card">',
-    '  <div class="breed-faq-header">',
-    '    <span class="eyebrow eyebrow-brand">FAQ</span>',
-    '    <h2 id="faq" class="breed-section-title breed-section-title-inline">Häufige Fragen zum Barsoi</h2>',
-    '    <p>Die häufigsten Fragen zur Haltung, Pflege und Beschäftigung des Barsoi kompakt beantwortet.</p>',
-    '  </div>',
-    '  <div class="breed-faq-list">',
-    ...items.map((item) => [
-      `    <details class="breed-faq-item"${item.open ? " open" : ""}>`,
-      `      <summary>${item.question}</summary>`,
-      `      <div class="breed-faq-answer">${item.answer}</div>`,
-      '    </details>',
-    ].join("\n")),
-    '  </div>',
-    '</section>',
-  ].join("\n");
-}
-
 function enhanceBreedContent(html: string) {
   let next = html.replace(/<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*(<ul>[\s\S]*?<\/ul>)/i, (_match, listHtml: string) => {
     const list = listHtml
@@ -106,7 +77,6 @@ function enhanceBreedContent(html: string) {
     const id = slugifyHeading(headingText);
     return `<h2 id="${id}" class="breed-section-title">${headingHtml}</h2>`;
   });
-  next = next.replace(/<h2 id="faq" class="breed-section-title">FAQ<\/h2>([\s\S]*)$/i, (_match, faqContent: string) => buildFaqMarkup(faqContent));
 
   return next;
 }
@@ -118,20 +88,22 @@ function MagazineConversionRail({ title }: { title: string }) {
         <figure className="magazine-conversion-hero">
           <img src={MAGAZINE_CTA_IMAGE} alt="Tierisch verliebt – tierliebe Singles kennenlernen" loading="lazy" decoding="async" />
         </figure>
-        <span className="eyebrow eyebrow-brand">Singlebörse</span>
-        <h2>Tierliebe Singles statt nur weiterlesen</h2>
-        <p>
-          Wer bei {title} landet, sucht oft mehr als Infos — nämlich Menschen mit derselben Liebe zu Hund, Katze und Co.
-        </p>
-        <div className="magazine-conversion-points" aria-label="Einstiegsvorteile">
-          <span>Kostenlos starten</span>
-          <span>Tierliebe Singles</span>
-          <span>Direkter Einstieg</span>
-        </div>
-        <div className="button-row">
-          <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
-            Kostenlos registrieren
-          </Link>
+        <div className="magazine-conversion-body">
+          <span className="eyebrow eyebrow-brand">Singlebörse</span>
+          <h2>Tierliebe Singles statt nur weiterlesen</h2>
+          <p>
+            Wer bei {title} landet, sucht oft mehr als Infos — nämlich Menschen mit derselben Liebe zu Hund, Katze und Co.
+          </p>
+          <ul className="magazine-conversion-points" aria-label="Einstiegsvorteile">
+            <li>Kostenlos starten</li>
+            <li>Tierliebe Singles</li>
+            <li>Direkter Einstieg</li>
+          </ul>
+          <div className="button-row">
+            <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
+              Kostenlos registrieren
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -195,7 +167,9 @@ export default async function MagazineDetailPage({ params }: PageProps) {
 
   const authorProfile = entry.authorSlug ? await getAuthorProfile(entry.authorSlug) : null;
   const breedPage = isBreedProfile(entry.content);
-  const renderedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
+  const enhancedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
+  const faqItems = getMagazineFaqItems(entry.content);
+  const renderedContent = renderMagazineFaqSection(enhancedContent, getMagazineFaqSubject(entry.title));
   const schemaDedupedContent = stripPublishedBookSchema(renderedContent);
   const breedFacts = breedPage ? getBreedFacts(entry.content) : [];
   const breedSections = breedPage ? getBreedSectionLinks(entry.content) : [];
@@ -213,6 +187,11 @@ export default async function MagazineDetailPage({ params }: PageProps) {
     breadcrumbRootName: "Magazin",
     breadcrumbRootUrl: `${SITE_URL}/magazin`,
   });
+  const faqGraph = buildMagazineFaqGraph({
+    items: faqItems,
+    pageUrl: `${SITE_URL}/magazin/${slug}`,
+    pageName: `Häufige Fragen zu ${decodeHtmlEntities(entry.title)}`,
+  });
 
   return (
     <main className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : ""}`}>
@@ -220,6 +199,12 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(profileGraph) }}
+        />
+      ) : null}
+      {faqGraph ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqGraph) }}
         />
       ) : null}
       <section className={`hero-card hero-magazine${breedPage ? " hero-magazine-breed" : ""}`}>
@@ -285,7 +270,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                 {section.label}
               </a>
             ))}
-            <a className="breed-jump-link" href="#faq">FAQ</a>
+            {faqItems.length ? <a className="breed-jump-link" href="#faq">FAQ</a> : null}
           </div>
         </section>
       ) : null}

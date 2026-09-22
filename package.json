@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "imports": {
-    "#markets": "./lib/markets.ts"
+    "#markets": "./lib/markets.ts",
+    "#wordpress": "./lib/wordpress.ts"
   },
   "scripts": {
     "dev": "next dev",

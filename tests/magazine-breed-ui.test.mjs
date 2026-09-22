@@ -24,12 +24,12 @@ test("breed pages derive quick highlights and jump navigation from editorial con
   assert.match(page, /breed-jump-link/);
 });
 
-test("breed FAQ content is transformed into a richer accordion block", async () => {
-  const page = await source("../app/magazin/[slug]/page.tsx");
-  assert.match(page, /function buildFaqMarkup\(source: string\)/);
-  assert.match(page, /breed-faq-card/);
-  assert.match(page, /<details class=\"breed-faq-item\"/);
-  assert.match(page, /Häufige Fragen zum Barsoi/);
+test("FAQ content is transformed into a richer accordion block", async () => {
+  const lib = await source("../lib/magazine-faq.ts");
+  assert.match(lib, /export function renderMagazineFaqSection\(html: string, subject: string\)/);
+  assert.match(lib, /breed-faq-card/);
+  assert.match(lib, /<details class="breed-faq-item"/);
+  assert.match(lib, /Häufige Fragen/);
 });
 
 test("magazine detail pages render a conversion rail with online iframe and CTAs", async () => {
@@ -39,6 +39,7 @@ test("magazine detail pages render a conversion rail with online iframe and CTAs
   assert.match(page, /MAGAZINE_CTA_IMAGE = staticAsset/);
   assert.match(page, /Gerade online auf tierisch-verliebt\.de/);
   assert.match(page, /magazine-conversion-card-banner/);
+  assert.match(page, /magazine-conversion-body/);
   assert.match(page, /magazine-conversion-points/);
   assert.match(page, /magazine-detail-layout/);
   assert.match(page, /magazine-detail-side/);
@@ -57,6 +58,7 @@ test("global styles define the richer breed-page presentation and conversion rai
   assert.match(css, /\.magazine-conversion-rail/);
   assert.match(css, /\.magazine-conversion-card-banner/);
   assert.match(css, /\.magazine-conversion-hero/);
-  assert.match(css, /\.magazine-conversion-points/);
+  assert.match(css, /\.magazine-conversion-body/);
+  assert.match(css, /\.magazine-conversion-points li/);
   assert.match(css, /\.magazine-online-frame/);
 });
