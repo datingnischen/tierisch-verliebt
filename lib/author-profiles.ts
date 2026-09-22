@@ -3,6 +3,14 @@ import { getMagazineEntryBySlug, getMagazinePosts, stripHtml } from "@/lib/wordp
 
 const AUTHOR_ARCHIVE_BASE = "https://tierisch-verliebt.de/magazin/author";
 
+// Christians Autorenarchiv ist nur ein Alias: es kanonisiert auf /magazin/christian
+// und bleibt noindex — deshalb gehoert es auch nicht in die Sitemap.
+const NOINDEX_AUTHOR_SLUGS = new Set(["christian-m-haas"]);
+
+export function isNoindexAuthorArchive(slug: string) {
+  return NOINDEX_AUTHOR_SLUGS.has(slug);
+}
+
 export type AuthorProfileLink = {
   label: string;
   href: string;

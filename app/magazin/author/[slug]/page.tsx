@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { getAuthorPosts, getAuthorProfile, getKnownAuthorSlugs } from "@/lib/author-profiles";
+import { notFound, permanentRedirect } from "next/navigation";
+import { getAuthorPosts, getAuthorProfile, getKnownAuthorSlugs, isNoindexAuthorArchive } from "@/lib/author-profiles";
 import { SITE_URL, formatGermanDate, stripHtml } from "@/lib/wordpress";
 import { serializeJsonLd } from "@/lib/json-ld";
 
@@ -22,11 +22,14 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const posts = await getAuthorPosts(slug);
+  if (!posts.length) return {};
+
   const profile = await getAuthorProfile(slug);
   if (!profile) return {};
 
   const canonicalPath = slug === "christian-m-haas" ? CHRISTIAN_CANONICAL_PATH : `/magazin/author/${slug}`;
-  const shouldNoindex = slug === "christian-m-haas";
+  const shouldNoindex = isNoindexAuthorArchive(slug);
 
   return {
     title: profile.name,
@@ -51,14 +54,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function MagazineAuthorPage({ params }: PageProps) {
   const { slug } = await params;
-  const [profile, posts] = await Promise.all([getAuthorProfile(slug), getAuthorPosts(slug)]);
+  const posts = await getAuthorPosts(slug);
+  // Autoren ohne Beitraege (z. B. das ausgelaufene Redaktions-Archiv) leiten dauerhaft
+  // auf das Autorenprofil weiter, statt ein leeres Archiv auszuliefern.
+  if (!posts.length) permanentRedirect(CHRISTIAN_CANONICAL_PATH);
+
+  const profile = await getAuthorProfile(slug);
   if (!profile) notFound();
 
   const latestPost = posts[0];
   const highlightedPosts = posts.slice(0, 6);
   const canonicalPath = slug === "christian-m-haas" ? CHRISTIAN_CANONICAL_PATH : profile.profileUrl;
   const canonicalUrl = `${SITE_URL}${canonicalPath}`;
-  const shouldNoindex = slug === "christian-m-haas";
+  const shouldNoindex = isNoindexAuthorArchive(slug);
   const isEditorialTeamPage = slug === "redaktion";
 
   const structuredData: StructuredData[] = shouldNoindex
