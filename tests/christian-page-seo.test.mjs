@@ -14,7 +14,9 @@ test("christian page uses dedicated SEO and a CMS-gated profile graph", async ()
   assert.match(page, /christianSlug: "christian"/);
   assert.match(page, /content: entry\.content/);
   assert.match(page, /canonicalUrl: `\$\{SITE_URL\}\/magazin\/christian`/);
-  assert.match(page, /sameAs: \["https:\/\/datingnischen\.de\/christian", "https:\/\/www\.linkedin\.com\/in\/christian-m-haas-457323379"\]/);
+  assert.match(page, /siteUrl: SITE_URL/);
+  assert.match(page, /sameAs: authorProfile\?\.sameAs/);
+  assert.match(page, /dateModified: entry\.modified \|\| undefined/);
   assert.match(page, /profileGraph \? \(/);
   assert.match(page, /type="application\/ld\+json"/);
   assert.match(page, /serializeJsonLd\(profileGraph\)/);

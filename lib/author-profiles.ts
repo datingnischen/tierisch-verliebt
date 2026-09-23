@@ -17,11 +17,34 @@ export type AuthorProfileLink = {
   external?: boolean;
 };
 
+export type AuthorSocialPlatform = "linkedin" | "xing" | "instagram" | "facebook" | "youtube";
+
+export type AuthorSocialLink = {
+  platform: AuthorSocialPlatform;
+  label: string;
+  href: string;
+};
+
+export type AuthorProfileFact = {
+  label: string;
+  value: string;
+};
+
 export type AuthorProfile = {
   slug: string;
   name: string;
   role: string;
+  /** Short role label shown next to the name in the author box. */
+  jobTitle: string;
   bio: string;
+  /** Two-sentence bio for the compact author box; never a truncated CMS excerpt. */
+  shortBio: string;
+  /** Short topic labels rendered as chips. */
+  topics: string[];
+  socials: AuthorSocialLink[];
+  sameAs: string[];
+  /** Scannable key facts; the same statements the Person node carries. */
+  profileFacts: AuthorProfileFact[];
   imageUrl?: string;
   profileUrl: string;
   facts: string[];
@@ -51,6 +74,28 @@ export const getAuthorProfile = cache(async (slug: string): Promise<AuthorProfil
       slug,
       name: "Christian M. Haas",
       role: "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
+      jobTitle: "Gründer & Datingexperte",
+      shortBio:
+        "Christian M. Haas gründete tierisch-verliebt.de aus eigener Tierliebe und entwickelt seit Jahren Singlebörsen für spezialisierte Zielgruppen. Zu Hause leben zwei Katzen und drei Graupapageien.",
+      topics: ["Online-Dating", "Tierfreundliche Partnersuche", "Community-Aufbau", "Leben mit Haustieren"],
+      socials: [
+        { platform: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/christian-m-haas-457323379" },
+        { platform: "xing", label: "XING", href: "https://www.xing.com/profile/ChristianM_Haas/web_profiles" },
+      ],
+      sameAs: [
+        "https://datingnischen.de/christian",
+        "https://www.linkedin.com/in/christian-m-haas-457323379",
+        "https://www.xing.com/profile/ChristianM_Haas/web_profiles",
+        "https://gravatar.com/automatic8c1daff973",
+      ],
+      profileFacts: [
+        { label: "Rolle", value: "Gründer von tierisch-verliebt.de, Datingexperte und Autor" },
+        { label: "Schwerpunkte", value: "Online-Dating, tierfreundliche Partnersuche, Community-Aufbau" },
+        { label: "Tiere im Haushalt", value: "Zwei Katzen und drei Graupapageien – trotz Katzenallergie" },
+        { label: "Erstes Haustier", value: "Ein Nymphensittich, seit seiner Kindheit" },
+        { label: "Plattformbetrieb", value: "ICONY GmbH – Christian begleitet das Magazin redaktionell und beratend" },
+        { label: "Buch", value: "„Dating ohne Bullshit“, BoD – Books on Demand, 1. Auflage 2026" },
+      ],
       bio:
         bio ||
         "Christian M. Haas verbindet fundierte Dating-Erfahrung mit echter Tiernähe und schreibt über Kennenlernen, Beziehungen und den Alltag von Menschen, für die Haustiere selbstverständlich zur Familie gehören.",
@@ -96,6 +141,13 @@ export const getAuthorProfile = cache(async (slug: string): Promise<AuthorProfil
     slug,
     name,
     role: "Redaktion für tierliebe Singles, Ratgeber und Haustier-Themen",
+    jobTitle: "Magazin-Redaktion",
+    shortBio:
+      "Die Redaktion bündelt Tierwissen, Ratgeber und Dating-Impulse für Menschen, bei denen Haustiere fest zum Leben gehören.",
+    topics: ["Hunde", "Katzen", "Tierwelten", "Partnersuche"],
+    socials: [],
+    sameAs: [],
+    profileFacts: [],
     bio:
       "Die Redaktion sammelt Tipps, Tierwissen und Dating-Impulse für Menschen, bei denen Hund, Katze oder andere Haustiere fest zum Leben dazugehören.",
     intro:

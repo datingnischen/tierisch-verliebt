@@ -13,23 +13,43 @@ const markerContent = `
 const base = {
   christianSlug: "christian",
   canonicalUrl: "https://tierisch-verliebt.vercel.app/magazin/christian",
+  siteUrl: "https://tierisch-verliebt.vercel.app",
   profileName: "Christian M. Haas",
   profileDescription: "Datingexperte und Tierliebhaber",
-  breadcrumbRootName: "Magazin",
-  breadcrumbRootUrl: "https://tierisch-verliebt.vercel.app/magazin",
+  breadcrumb: [
+    { name: "Startseite", url: "https://tierisch-verliebt.vercel.app" },
+    { name: "Magazin", url: "https://tierisch-verliebt.vercel.app/magazin" },
+    { name: "Christian M. Haas", url: "https://tierisch-verliebt.vercel.app/magazin/christian" },
+  ],
 };
 
 test("builds the Christian CMS-gated profile and book graph", () => {
   const graph = buildChristianBookProfileGraph({ ...base, slug: "christian", content: markerContent });
   assert.ok(graph);
   assert.equal(graph["@context"], "https://schema.org");
-  assert.deepEqual(graph["@graph"].map((node) => node["@type"]), ["BreadcrumbList", "ProfilePage", "Person", "Book"]);
+  assert.deepEqual(graph["@graph"].map((node) => node["@type"]), [
+    "Organization",
+    "WebSite",
+    "BreadcrumbList",
+    "ProfilePage",
+    "Person",
+    "Book",
+  ]);
 
-  const [breadcrumb, profile, person, book] = graph["@graph"];
-  assert.equal(breadcrumb.itemListElement.length, 2);
+  const [operator, website, breadcrumb, profile, person, book] = graph["@graph"];
+  assert.equal(operator.name, "ICONY GmbH");
+  assert.equal(website.publisher["@id"], operator["@id"]);
+  assert.equal(breadcrumb.itemListElement.length, 3);
+  assert.deepEqual(breadcrumb.itemListElement.map((item) => item.name), ["Startseite", "Magazin", "Christian M. Haas"]);
   assert.equal(profile.mainEntity["@id"], `${base.canonicalUrl}#person`);
+  assert.equal(profile.isPartOf["@id"], website["@id"]);
+  assert.equal(profile.breadcrumb["@id"], breadcrumb["@id"]);
   assert.equal(person["@id"], `${base.canonicalUrl}#person`);
+  assert.equal(person.mainEntityOfPage["@id"], profile["@id"]);
+  assert.equal(person.affiliation["@id"], operator["@id"]);
   assert.equal(book.author["@id"], `${base.canonicalUrl}#person`);
+  assert.equal(book.bookEdition, "1. Auflage");
+  assert.equal(book.publisher.name, "BoD – Books on Demand");
   assert.deepEqual(
     {
       name: book.name,

@@ -1,24 +1,48 @@
 export type StructuredDataNode = Record<string, unknown>;
 
+export type ProfileBreadcrumbItem = { name: string; url: string };
+
 type ChristianBookProfileInput = {
   slug: string;
   christianSlug: string;
   content: string;
   canonicalUrl: string;
+  siteUrl: string;
   profileName: string;
   profileDescription: string;
   profileImage?: string;
   jobTitle?: string;
   sameAs?: string[];
   knowsAbout?: string[];
-  breadcrumbRootName: string;
-  breadcrumbRootUrl: string;
+  breadcrumb: ProfileBreadcrumbItem[];
+  dateModified?: string;
+  aboutPageUrl?: string;
 };
 
 const BOOK_MARKER_START = "<!-- dating-ohne-bullshit-book:start -->";
 const BOOK_MARKER_END = "<!-- dating-ohne-bullshit-book:end -->";
 const BOOK_SCHEMA_START = "<!-- dating-ohne-bullshit-schema:start -->";
 const BOOK_SCHEMA_END = "<!-- dating-ohne-bullshit-schema:end -->";
+
+/** The platform operator named in the imprint; the person is affiliated with it, not employed by it. */
+export const PLATFORM_OPERATOR = {
+  name: "ICONY GmbH",
+  url: "https://www.icony.com",
+} as const;
+
+export const BRAND_NAME = "tierisch-verliebt.de";
+
+/** Facts printed inside the CMS book block, mirrored here so the markup stays backed by the page. */
+export const PUBLISHED_BOOK = {
+  name: "Dating ohne Bullshit",
+  subtitle: "Der ungeschönte Insiderblick ins Online-Dating-Business",
+  isbn: "9783696371210",
+  datePublished: "2026-08-21",
+  numberOfPages: 136,
+  edition: "1. Auflage",
+  publisher: "BoD – Books on Demand",
+  amazonUrl: "https://www.amazon.de/dp/3696371211/",
+} as const;
 
 export function stripPublishedBookSchema(content: string) {
   let result = content;
@@ -59,24 +83,50 @@ export function buildChristianBookProfileGraph(input: ChristianBookProfileInput)
   if (!bookImage) return null;
 
   const personId = `${input.canonicalUrl}#person`;
+  const pageId = `${input.canonicalUrl}#profile-page`;
+  const breadcrumbId = `${input.canonicalUrl}#breadcrumb`;
+  const websiteId = `${input.siteUrl}#website`;
+  const operatorId = `${input.siteUrl}#operator`;
 
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": operatorId,
+        name: PLATFORM_OPERATOR.name,
+        url: PLATFORM_OPERATOR.url,
+      },
+      {
+        "@type": "WebSite",
+        "@id": websiteId,
+        url: input.siteUrl,
+        name: BRAND_NAME,
+        inLanguage: "de-DE",
+        publisher: { "@id": operatorId },
+      },
+      {
         "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: input.breadcrumbRootName, item: input.breadcrumbRootUrl },
-          { "@type": "ListItem", position: 2, name: input.profileName, item: input.canonicalUrl },
-        ],
+        "@id": breadcrumbId,
+        itemListElement: input.breadcrumb.map((item, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.name,
+          item: item.url,
+        })),
       },
       {
         "@type": "ProfilePage",
-        "@id": `${input.canonicalUrl}#profile-page`,
+        "@id": pageId,
         url: input.canonicalUrl,
         name: input.profileName,
         description: input.profileDescription,
+        isPartOf: { "@id": websiteId },
+        breadcrumb: { "@id": breadcrumbId },
         mainEntity: { "@id": personId },
+        primaryImageOfPage: input.profileImage,
+        dateModified: input.dateModified,
+        inLanguage: "de-DE",
       },
       {
         "@type": "Person",
@@ -84,23 +134,28 @@ export function buildChristianBookProfileGraph(input: ChristianBookProfileInput)
         name: input.profileName,
         description: input.profileDescription,
         url: input.canonicalUrl,
+        mainEntityOfPage: { "@id": pageId },
         image: input.profileImage,
         jobTitle: input.jobTitle,
-        sameAs: input.sameAs,
-        knowsAbout: input.knowsAbout,
+        affiliation: { "@id": operatorId },
+        publishingPrinciples: input.aboutPageUrl,
+        sameAs: input.sameAs?.length ? input.sameAs : undefined,
+        knowsAbout: input.knowsAbout?.length ? input.knowsAbout : undefined,
       },
       {
         "@type": "Book",
-        "@id": `${input.canonicalUrl}#book-9783696371210`,
-        name: "Dating ohne Bullshit",
-        alternateName: "Der ungeschönte Insiderblick ins Online-Dating-Business",
+        "@id": `${input.canonicalUrl}#book-${PUBLISHED_BOOK.isbn}`,
+        name: PUBLISHED_BOOK.name,
+        alternateName: PUBLISHED_BOOK.subtitle,
         author: { "@id": personId },
-        isbn: "9783696371210",
-        datePublished: "2026-08-21",
+        isbn: PUBLISHED_BOOK.isbn,
+        datePublished: PUBLISHED_BOOK.datePublished,
         inLanguage: "de-DE",
         bookFormat: "https://schema.org/Paperback",
-        numberOfPages: 136,
-        url: "https://www.amazon.de/dp/3696371211/",
+        bookEdition: PUBLISHED_BOOK.edition,
+        numberOfPages: PUBLISHED_BOOK.numberOfPages,
+        publisher: { "@type": "Organization", name: PUBLISHED_BOOK.publisher },
+        url: PUBLISHED_BOOK.amazonUrl,
         image: bookImage,
       },
     ],
