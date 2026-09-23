@@ -8,6 +8,8 @@ import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug,
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
+import { detectMagazineAnimal, getMagazineSidebarVariant, type MagazineSidebarVariant } from "@/lib/magazine-animal";
+import { findTierwelt } from "@/lib/tierwelten";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -18,7 +20,6 @@ type BreedSectionLink = { id: string; label: string };
 export const revalidate = 300;
 
 const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischverliebt&pc=c02e2e&aid=magazin";
-const MAGAZINE_CTA_IMAGE = staticAsset("/home/frontpage-visual-tierischverliebt.webp");
 const CHRISTIAN_PAGE_DESCRIPTION =
   "Christian M. Haas ist Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber. Erfahre mehr über seine Tierverbundenheit, Dating-Erfahrung und redaktionellen Schwerpunkte.";
 
@@ -81,18 +82,18 @@ function enhanceBreedContent(html: string) {
   return next;
 }
 
-function MagazineConversionRail({ title }: { title: string }) {
+function MagazineConversionRail({ title, variant }: { title: string; variant: Required<MagazineSidebarVariant> }) {
   return (
     <div className="magazine-conversion-rail">
       <div className="magazine-conversion-card magazine-conversion-card-primary magazine-conversion-card-banner">
         <figure className="magazine-conversion-hero">
-          <img src={MAGAZINE_CTA_IMAGE} alt="Tierisch verliebt – tierliebe Singles kennenlernen" loading="lazy" decoding="async" />
+          <img src={staticAsset(variant.image)} alt={variant.imageAlt} loading="lazy" decoding="async" />
         </figure>
         <div className="magazine-conversion-body">
           <span className="eyebrow eyebrow-brand">Singlebörse</span>
           <h2>Tierliebe Singles statt nur weiterlesen</h2>
           <p>
-            Wer bei {title} landet, sucht oft mehr als Infos — nämlich Menschen mit derselben Liebe zu Hund, Katze und Co.
+            Wer bei {title} landet, sucht oft mehr als Infos — nämlich {variant.audience}.
           </p>
           <ul className="magazine-conversion-points" aria-label="Einstiegsvorteile">
             <li>Kostenlos starten</li>
@@ -187,15 +188,34 @@ export default async function MagazineDetailPage({ params }: PageProps) {
     christianSlug: "christian",
     content: entry.content,
     canonicalUrl: `${SITE_URL}/magazin/christian`,
+    siteUrl: SITE_URL,
     profileName: "Christian M. Haas",
     profileDescription: CHRISTIAN_PAGE_DESCRIPTION,
     profileImage: authorProfile?.imageUrl || entry.featuredImage || undefined,
-    jobTitle: "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
-    sameAs: ["https://datingnischen.de/christian", "https://www.linkedin.com/in/christian-m-haas-457323379"],
-    knowsAbout: ["Online-Dating", "tierfreundliche Partnersuche", "Haustiere im Alltag", "Dating-Communities"],
-    breadcrumbRootName: "Magazin",
-    breadcrumbRootUrl: `${SITE_URL}/magazin`,
+    jobTitle: authorProfile?.role || "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
+    sameAs: authorProfile?.sameAs,
+    knowsAbout: [
+      "Online-Dating",
+      "tierfreundliche Partnersuche",
+      "Dating-Communities für Tierfreunde",
+      "Leben mit Hund, Katze und Papagei",
+      "Aufbau und Betrieb von Singlebörsen",
+    ],
+    breadcrumb: [
+      { name: "Startseite", url: SITE_URL },
+      { name: "Magazin", url: `${SITE_URL}/magazin` },
+      { name: "Christian M. Haas", url: `${SITE_URL}/magazin/christian` },
+    ],
+    dateModified: entry.modified || undefined,
   });
+  const sidebarVariant = getMagazineSidebarVariant(
+    detectMagazineAnimal({
+      tierweltGroupId: findTierwelt(slug)?.group.id,
+      title: entry.title,
+      content: entry.content,
+      categorySlugs: entry.categories.map((category) => category.slug),
+    }),
+  );
   const faqGraph = buildMagazineFaqGraph({
     items: faqItems,
     pageUrl: `${SITE_URL}/magazin/${slug}`,
@@ -219,7 +239,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
       <section className={`hero-card hero-magazine${breedPage ? " hero-magazine-breed" : ""}`}>
         <span className="eyebrow">{entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}</span>
         <h1>{entry.title}</h1>
-        <p>{stripHtml(entry.excerpt || entry.content).slice(0, 220)}…</p>
+        <p>{slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : `${stripHtml(entry.excerpt || entry.content).slice(0, 220)}…`}</p>
         <div className="meta-row">
           {entry.authorName ? (
             <span>
@@ -242,7 +262,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
       ) : null}
 
       <section className="content-section magazine-mobile-conversion">
-        <MagazineConversionRail title={entry.title} />
+        <MagazineConversionRail title={entry.title} variant={sidebarVariant} />
       </section>
 
       {breedPage && breedFacts.length ? (
@@ -294,7 +314,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
             </section>
           </div>
           <aside className="magazine-detail-side" aria-label="Singlebörse und Conversion-Module">
-            <MagazineConversionRail title={entry.title} />
+            <MagazineConversionRail title={entry.title} variant={sidebarVariant} />
           </aside>
         </div>
       </section>
@@ -303,13 +323,9 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         <section className="content-section">
           <ExpertTrustCard
             profile={authorProfile}
+            variant="compact"
             eyebrow={authorProfile.slug === "christian-m-haas" ? "Unser Datingexperte" : "Magazin-Autor"}
-            title={
-              authorProfile.slug === "christian-m-haas"
-                ? "Hinter den Inhalten steht ein reales Profil mit Dating-Erfahrung, Tierliebe und langjähriger Magazinbegleitung."
-                : `Dieser Beitrag wurde von ${authorProfile.name} für das Tier-Magazin zusammengestellt.`
-            }
-            primaryLabel={authorProfile.slug === "christian-m-haas" ? "Zum Expertenprofil" : "Zum Autorenprofil"}
+            primaryLabel={`Mehr über ${authorProfile.name}`}
           />
         </section>
       ) : null}

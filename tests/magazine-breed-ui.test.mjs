@@ -36,7 +36,8 @@ test("magazine detail pages render a conversion rail with online iframe and CTAs
   const page = await source("../app/magazin/[slug]/page.tsx");
   assert.match(page, /function MagazineConversionRail/);
   assert.match(page, /ONLINE_IFRAME_SRC/);
-  assert.match(page, /MAGAZINE_CTA_IMAGE = staticAsset/);
+  assert.match(page, /staticAsset\(variant\.image\)/);
+  assert.match(page, /detectMagazineAnimal\(/);
   assert.match(page, /Gerade online auf tierisch-verliebt\.de/);
   assert.match(page, /magazine-conversion-card-banner/);
   assert.match(page, /magazine-conversion-body/);
