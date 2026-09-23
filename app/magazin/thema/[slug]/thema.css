@@ -116,11 +116,10 @@
 /* Themen-Navigation */
 .thema-topic-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
   padding: 4px 2px 8px;
-  overflow-x: auto;
-  scrollbar-width: none;
 }
 
 .thema-topic-nav::-webkit-scrollbar {
@@ -277,7 +276,7 @@
 
 .thema-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 22px;
 }
 
@@ -502,6 +501,14 @@
     flex-direction: column;
     align-items: stretch;
     padding: 28px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thema-topic-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
 }
 

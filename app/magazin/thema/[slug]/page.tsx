@@ -80,7 +80,6 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
     stripHtml(category.description) ||
     `Hier findest du Artikel, Ratgeber und praktische Einstiege rund um ${category.name.toLowerCase()} – passend für tierliebe Singles und Haustiermenschen.`;
   const [featured, ...rest] = posts;
-  const latestDate = posts.find((post) => post.modified || post.date);
   const otherTopics = categories.filter((item) => item.count > 0);
 
   const pageGraph = {
@@ -147,10 +146,10 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
             <strong>{posts.length}</strong>
             <span>Artikel</span>
           </li>
-          {latestDate ? (
+          {featured?.date ? (
             <li>
-              <strong>{formatGermanDate(latestDate.modified || latestDate.date).replace(/^\d+\.\s*/, "")}</strong>
-              <span>Zuletzt aktualisiert</span>
+              <strong>{formatGermanDate(featured.date).replace(/^\d+\.\s*/, "")}</strong>
+              <span>Neuester Artikel</span>
             </li>
           ) : null}
           <li>
