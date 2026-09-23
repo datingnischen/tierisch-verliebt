@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 960" width="320" height="480" role="img" aria-labelledby="t d">
+<title id="t">Umkreissuche – Tierisch Verliebt</title>
+<desc id="d">Radar mit Tierfreunden in deiner Nähe, kostenlos anmelden</desc>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&amp;display=swap');
+text{font-family:'Open Sans','Segoe UI',Helvetica,Arial,sans-serif}
+.over{font-size:19px;font-weight:700;letter-spacing:5px;fill:#ff9aa2}
+.h1{font-size:46px;font-weight:800;fill:#fff;letter-spacing:-.5px}
+.km{font-size:16px;font-weight:800;fill:#3a1418}
+.cta{font-size:30px;font-weight:800;fill:#fff}
+.sweep{transform-box:view-box;transform-origin:320px 500px;animation:spin 4.8s linear infinite}
+.blip{transform-box:fill-box;transform-origin:50% 100%;animation:blip 4.8s ease-out infinite}
+.ring{fill:none;stroke:#ff7b86;stroke-width:2;transform-box:fill-box;transform-origin:center;opacity:0;animation:ring 4.8s ease-out infinite}
+.pulse{fill:none;stroke:#5fd063;stroke-width:2.5;transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-out infinite}
+.me{transform-box:fill-box;transform-origin:50% 100%;animation:float 3s ease-in-out infinite}
+.twinkle{animation:tw 3.5s ease-in-out infinite}
+.shine{animation:shine 3.2s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes blip{0%{transform:scale(1.13)}18%,100%{transform:scale(1)}}
+@keyframes ring{0%{opacity:.9;transform:scale(.6)}30%{opacity:0;transform:scale(4)}100%{opacity:0}}
+@keyframes pulse{0%{opacity:.8;transform:scale(.4)}100%{opacity:0;transform:scale(2.6)}}
+@keyframes float{50%{transform:translateY(-5px)}}
+@keyframes tw{50%{opacity:.08}}
+@keyframes shine{0%,55%{transform:translateX(-160px)}100%{transform:translateX(700px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.ring{opacity:0}}
+</style>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="52%" r="75%">
+    <stop offset="0" stop-color="#4a1519"/><stop offset=".55" stop-color="#26090d"/><stop offset="1" stop-color="#120407"/>
+  </radialGradient>
+  <radialGradient id="glowR" r=".5"><stop offset="0" stop-color="#c02e2e" stop-opacity=".55"/><stop offset="1" stop-color="#c02e2e" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowG" r=".5"><stop offset="0" stop-color="#429a45" stop-opacity=".35"/><stop offset="1" stop-color="#429a45" stop-opacity="0"/></radialGradient>
+  <radialGradient id="disc" r=".5"><stop offset="0" stop-color="#ff5c6c" stop-opacity=".16"/><stop offset=".8" stop-color="#ff5c6c" stop-opacity=".04"/><stop offset="1" stop-color="#ff5c6c" stop-opacity=".1"/></radialGradient>
+  <linearGradient id="sweepCol"><stop offset="0" stop-color="#ff6b78"/><stop offset="1" stop-color="#ff9aa2"/></linearGradient>
+  <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#ffb3ba" stop-opacity=".9"/><stop offset="1" stop-color="#ffb3ba" stop-opacity="0"/></linearGradient>
+  <linearGradient id="pinRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ec4a52"/><stop offset="1" stop-color="#a51f27"/></linearGradient>
+  <linearGradient id="pinGreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6cd66f"/><stop offset="1" stop-color="#2b7e2e"/></linearGradient>
+  <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5cc15f"/><stop offset="1" stop-color="#2f8a33"/></linearGradient>
+  <linearGradient id="shineG" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <clipPath id="avClip"><circle r="33"/></clipPath>
+  <clipPath id="btnClip"><rect x="60" y="836" width="520" height="80" rx="40"/></clipPath>
+  <filter id="shadow" x="-50%" y="-30%" width="200%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity=".45"/></filter>
+  <filter id="chipShadow" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".35"/></filter>
+  <filter id="btnShadow" x="-10%" y="-30%" width="120%" height="190%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2f8a33" flood-opacity=".55"/></filter>
+  <linearGradient id="av0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd29d"/><stop offset="1" stop-color="#ff9f7a"/></linearGradient><linearGradient id="av1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9b8ff"/><stop offset="1" stop-color="#8f7bff"/></linearGradient><linearGradient id="av2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a8f0d6"/><stop offset="1" stop-color="#3fc2a0"/></linearGradient><linearGradient id="av3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fd8ff"/><stop offset="1" stop-color="#4d8ef7"/></linearGradient><linearGradient id="av4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc1d6"/><stop offset="1" stop-color="#f26c9b"/></linearGradient>
+</defs>
+
+<rect width="640" height="960" fill="url(#bg)"/>
+<circle cx="80" cy="120" r="260" fill="url(#glowR)"/>
+<circle cx="600" cy="880" r="280" fill="url(#glowG)"/>
+
+<text x="320" y="78" text-anchor="middle" class="over">UMKREISSUCHE</text>
+<text x="320" y="136" text-anchor="middle" class="h1">Tierfreunde</text>
+<text x="320" y="190" text-anchor="middle" class="h1">in deiner <tspan fill="#ff6b78">Nähe</tspan></text>
+
+<!-- Radar -->
+<circle cx="320" cy="500" r="280" fill="url(#disc)"/>
+<g fill="none" stroke="#fff">
+  <circle cx="320" cy="500" r="280" stroke-opacity=".28" stroke-width="2"/>
+  <circle cx="320" cy="500" r="210" stroke-opacity=".14" stroke-width="1.5"/>
+  <circle cx="320" cy="500" r="140" stroke-opacity=".14" stroke-width="1.5"/>
+  <circle cx="320" cy="500" r="70" stroke-opacity=".14" stroke-width="1.5"/>
+  <circle cx="320" cy="500" r="292" stroke-opacity=".12" stroke-width="1.5" stroke-dasharray="2 10" stroke-linecap="round"/>
+  <path d="M40 500H600M320 220V780" stroke-opacity=".08" stroke-width="1.5"/>
+</g>
+<circle cx="250" cy="300" r="2.5" fill="#fff" opacity=".35" class="twinkle" style="animation-delay:0s"/><circle cx="520" cy="470" r="2.5" fill="#fff" opacity=".35" class="twinkle" style="animation-delay:0.7s"/><circle cx="210" cy="700" r="2.5" fill="#fff" opacity=".35" class="twinkle" style="animation-delay:1.4s"/><circle cx="300" cy="640" r="2.5" fill="#fff" opacity=".35" class="twinkle" style="animation-delay:2.1s"/><circle cx="560" cy="590" r="2.5" fill="#fff" opacity=".35" class="twinkle" style="animation-delay:2.8s"/><circle cx="120" cy="470" r="2.5" fill="#fff" opacity=".35" class="twinkle" style="animation-delay:3.5s"/><circle cx="430" cy="250" r="2.5" fill="#fff" opacity=".35" class="twinkle" style="animation-delay:4.2s"/>
+<g class="sweep"><g fill="#ff6b78" fill-opacity=".022"><path d="M320 500L599.73 487.79A280 280 0 0 1 600 500Z"/><path d="M320 500L598.93 475.6A280 280 0 0 1 600 500Z"/><path d="M320 500L597.6 463.45A280 280 0 0 1 600 500Z"/><path d="M320 500L595.75 451.38A280 280 0 0 1 600 500Z"/><path d="M320 500L593.36 439.4A280 280 0 0 1 600 500Z"/><path d="M320 500L590.46 427.53A280 280 0 0 1 600 500Z"/><path d="M320 500L587.04 415.8A280 280 0 0 1 600 500Z"/><path d="M320 500L583.11 404.23A280 280 0 0 1 600 500Z"/><path d="M320 500L578.69 392.85A280 280 0 0 1 600 500Z"/><path d="M320 500L573.77 381.67A280 280 0 0 1 600 500Z"/><path d="M320 500L568.36 370.71A280 280 0 0 1 600 500Z"/><path d="M320 500L562.49 360A280 280 0 0 1 600 500Z"/><path d="M320 500L556.15 349.56A280 280 0 0 1 600 500Z"/><path d="M320 500L549.36 339.4A280 280 0 0 1 600 500Z"/><path d="M320 500L542.14 329.55A280 280 0 0 1 600 500Z"/><path d="M320 500L534.49 320.02A280 280 0 0 1 600 500Z"/><path d="M320 500L526.44 310.83A280 280 0 0 1 600 500Z"/><path d="M320 500L517.99 302.01A280 280 0 0 1 600 500Z"/><path d="M320 500L509.17 293.56A280 280 0 0 1 600 500Z"/><path d="M320 500L499.98 285.51A280 280 0 0 1 600 500Z"/><path d="M320 500L490.45 277.86A280 280 0 0 1 600 500Z"/><path d="M320 500L480.6 270.64A280 280 0 0 1 600 500Z"/><path d="M320 500L470.44 263.85A280 280 0 0 1 600 500Z"/><path d="M320 500L460 257.51A280 280 0 0 1 600 500Z"/><path d="M320 500L449.29 251.64A280 280 0 0 1 600 500Z"/><path d="M320 500L438.33 246.23A280 280 0 0 1 600 500Z"/><path d="M320 500L427.15 241.31A280 280 0 0 1 600 500Z"/><path d="M320 500L415.77 236.89A280 280 0 0 1 600 500Z"/><path d="M320 500L404.2 232.96A280 280 0 0 1 600 500Z"/><path d="M320 500L392.47 229.54A280 280 0 0 1 600 500Z"/></g><path d="M320 500H600" stroke="url(#edge)" stroke-width="3" stroke-linecap="round"/></g>
+
+<!-- Du -->
+<circle cx="320" cy="500" r="30" class="pulse"/>
+<circle cx="320" cy="500" r="30" class="pulse" style="animation-delay:1s"/>
+<circle cx="320" cy="500" r="30" class="pulse" style="animation-delay:2s"/>
+<ellipse cx="320" cy="502" rx="14" ry="5" fill="#000" opacity=".35"/>
+<g transform="translate(320 500)">
+  <g class="me">
+    <path d="M0 0C-10-14-44-33-44-64A44 44 0 1 1 44-64C44-33 10-14 0 0Z" fill="url(#pinGreen)" filter="url(#shadow)"/>
+    <circle cy="-64" r="36" fill="#fff" fill-opacity=".14"/>
+    <path d="M0 9C-2-1-14-5-14-13a7 7 0 0 1 14-3a7 7 0 0 1 14 3C14-5 2-1 0 9Z" fill="#fff" transform="translate(0 -62) scale(1.35)"/>
+  </g>
+</g>
+
+
+  <g transform="translate(432 548)">
+    <circle class="ring" r="10" style="animation-delay:0.31s"/>
+    <circle r="4" fill="#ff7b86"/>
+    <g>
+      <g class="blip" style="animation-delay:0.31s">
+        <path d="M0 0C-9-13-40-30-40-58A40 40 0 1 1 40-58C40-30 9-13 0 0Z" fill="url(#pinRed)" filter="url(#shadow)"/>
+        <circle cy="-58" r="33" fill="url(#av0)"/>
+        <g clip-path="url(#avClip)" transform="translate(0 -58)">
+    <ellipse cx="-17" cy="-2" rx="8" ry="15" fill="#8a5a3b" transform="rotate(22 -17 -2)"/>
+    <ellipse cx="17" cy="-2" rx="8" ry="15" fill="#8a5a3b" transform="rotate(-22 17 -2)"/>
+    <circle r="17" cy="2" fill="#d9a066"/>
+    <ellipse cy="10" rx="10" ry="7.5" fill="#f6e2c8"/>
+    <ellipse cy="6" rx="4.2" ry="3" fill="#2a1a14"/>
+    <path d="M-3.5 12.5q3.5 3 7 0" stroke="#2a1a14" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#2a1a14"/><circle cx="6.5" cy="-2" r="2.3" fill="#2a1a14"/>
+    <circle cx="-5.8" cy="-2.8" r=".8" fill="#fff"/><circle cx="7.2" cy="-2.8" r=".8" fill="#fff"/></g>
+        <circle cy="-58" r="33" fill="none" stroke="#fff" stroke-width="3"/>
+      </g>
+      <g transform="translate(0 26)">
+        <rect x="-38" y="-15" width="76" height="30" rx="15" fill="#fff" filter="url(#chipShadow)"/>
+        <text y="6" text-anchor="middle" class="km">2 km</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(190 392)">
+    <circle class="ring" r="10" style="animation-delay:2.93s"/>
+    <circle r="4" fill="#ff7b86"/>
+    <g>
+      <g class="blip" style="animation-delay:2.93s">
+        <path d="M0 0C-9-13-40-30-40-58A40 40 0 1 1 40-58C40-30 9-13 0 0Z" fill="url(#pinRed)" filter="url(#shadow)"/>
+        <circle cy="-58" r="33" fill="url(#av1)"/>
+        <g clip-path="url(#avClip)" transform="translate(0 -58)">
+    <path d="M-17-2-15-24-2-13Z" fill="#f2a65a"/><path d="M17-2 15-24 2-13Z" fill="#f2a65a"/>
+    <path d="M-13.5-7-12.8-18-6-12.5Z" fill="#ffc7b8"/><path d="M13.5-7 12.8-18 6-12.5Z" fill="#ffc7b8"/>
+    <ellipse cy="2" rx="18" ry="16" fill="#f2a65a"/>
+    <path d="M-4-13v5M0-14v6M4-13v5" stroke="#c9742e" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="-6.5" cy="0" rx="2.4" ry="3.2" fill="#23321f"/><ellipse cx="6.5" cy="0" rx="2.4" ry="3.2" fill="#23321f"/>
+    <path d="M-2.5 5h5l-2.5 3Z" fill="#e0708a"/>
+    <path d="M-5 11q2.5 2 5 0q2.5 2 5 0" stroke="#5a3a2a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M-8 7-19 5M-8 9-19 10M8 7 19 5M8 9 19 10" stroke="#fff" stroke-width=".9" opacity=".8"/></g>
+        <circle cy="-58" r="33" fill="none" stroke="#fff" stroke-width="3"/>
+      </g>
+      <g transform="translate(0 26)">
+        <rect x="-38" y="-15" width="76" height="30" rx="15" fill="#fff" filter="url(#chipShadow)"/>
+        <text y="6" text-anchor="middle" class="km">5 km</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(472 330)">
+    <circle class="ring" r="10" style="animation-delay:4.16s"/>
+    <circle r="4" fill="#ff7b86"/>
+    <g>
+      <g class="blip" style="animation-delay:4.16s">
+        <path d="M0 0C-9-13-40-30-40-58A40 40 0 1 1 40-58C40-30 9-13 0 0Z" fill="url(#pinRed)" filter="url(#shadow)"/>
+        <circle cy="-58" r="33" fill="url(#av2)"/>
+        <g clip-path="url(#avClip)" transform="translate(0 -58)">
+    <ellipse cx="-7" cy="-18" rx="5.5" ry="15" fill="#f4efe9" transform="rotate(-8 -7 -18)"/>
+    <ellipse cx="7" cy="-18" rx="5.5" ry="15" fill="#f4efe9" transform="rotate(8 7 -18)"/>
+    <ellipse cx="-7" cy="-18" rx="2.6" ry="11" fill="#f5b8c6" transform="rotate(-8 -7 -18)"/>
+    <ellipse cx="7" cy="-18" rx="2.6" ry="11" fill="#f5b8c6" transform="rotate(8 7 -18)"/>
+    <ellipse cy="6" rx="16" ry="14" fill="#f4efe9"/>
+    <circle cx="-6" cy="3" r="2.3" fill="#2a1a14"/><circle cx="6" cy="3" r="2.3" fill="#2a1a14"/>
+    <ellipse cy="9" rx="2.4" ry="1.7" fill="#e0708a"/>
+    <path d="M0 10.5v2.5M-3 13q3 2 6 0" stroke="#5a3a2a" stroke-width="1.1" fill="none" stroke-linecap="round"/></g>
+        <circle cy="-58" r="33" fill="none" stroke="#fff" stroke-width="3"/>
+      </g>
+      <g transform="translate(0 26)">
+        <rect x="-38" y="-15" width="76" height="30" rx="15" fill="#fff" filter="url(#chipShadow)"/>
+        <text y="6" text-anchor="middle" class="km">8 km</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(118 612)">
+    <circle class="ring" r="10" style="animation-delay:2.01s"/>
+    <circle r="4" fill="#ff7b86"/>
+    <g>
+      <g class="blip" style="animation-delay:2.01s">
+        <path d="M0 0C-9-13-40-30-40-58A40 40 0 1 1 40-58C40-30 9-13 0 0Z" fill="url(#pinRed)" filter="url(#shadow)"/>
+        <circle cy="-58" r="33" fill="url(#av3)"/>
+        <g clip-path="url(#avClip)" transform="translate(0 -58)">
+    <ellipse cx="-17" cy="-2" rx="8" ry="15" fill="#1f1f26" transform="rotate(22 -17 -2)"/>
+    <ellipse cx="17" cy="-2" rx="8" ry="15" fill="#1f1f26" transform="rotate(-22 17 -2)"/>
+    <circle r="17" cy="2" fill="#3b3b44"/>
+    <ellipse cy="10" rx="10" ry="7.5" fill="#e9e6e1"/>
+    <ellipse cy="6" rx="4.2" ry="3" fill="#2a1a14"/>
+    <path d="M-3.5 12.5q3.5 3 7 0" stroke="#2a1a14" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <circle cx="-6.5" cy="-2" r="2.3" fill="#2a1a14"/><circle cx="6.5" cy="-2" r="2.3" fill="#2a1a14"/>
+    <circle cx="-5.8" cy="-2.8" r=".8" fill="#fff"/><circle cx="7.2" cy="-2.8" r=".8" fill="#fff"/></g>
+        <circle cy="-58" r="33" fill="none" stroke="#fff" stroke-width="3"/>
+      </g>
+      <g transform="translate(0 26)">
+        <rect x="-38" y="-15" width="76" height="30" rx="15" fill="#fff" filter="url(#chipShadow)"/>
+        <text y="6" text-anchor="middle" class="km">12 km</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(386 748)">
+    <circle class="ring" r="10" style="animation-delay:1s"/>
+    <circle r="4" fill="#ff7b86"/>
+    <g>
+      <g class="blip" style="animation-delay:1s">
+        <path d="M0 0C-9-13-40-30-40-58A40 40 0 1 1 40-58C40-30 9-13 0 0Z" fill="url(#pinRed)" filter="url(#shadow)"/>
+        <circle cy="-58" r="33" fill="url(#av4)"/>
+        <g clip-path="url(#avClip)" transform="translate(0 -58)">
+    <path d="M-17-2-15-24-2-13Z" fill="#9aa0ab"/><path d="M17-2 15-24 2-13Z" fill="#9aa0ab"/>
+    <path d="M-13.5-7-12.8-18-6-12.5Z" fill="#f4c3cf"/><path d="M13.5-7 12.8-18 6-12.5Z" fill="#f4c3cf"/>
+    <ellipse cy="2" rx="18" ry="16" fill="#9aa0ab"/>
+    <path d="M-4-13v5M0-14v6M4-13v5" stroke="#6b707b" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="-6.5" cy="0" rx="2.4" ry="3.2" fill="#23321f"/><ellipse cx="6.5" cy="0" rx="2.4" ry="3.2" fill="#23321f"/>
+    <path d="M-2.5 5h5l-2.5 3Z" fill="#e0708a"/>
+    <path d="M-5 11q2.5 2 5 0q2.5 2 5 0" stroke="#5a3a2a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M-8 7-19 5M-8 9-19 10M8 7 19 5M8 9 19 10" stroke="#fff" stroke-width=".9" opacity=".8"/></g>
+        <circle cy="-58" r="33" fill="none" stroke="#fff" stroke-width="3"/>
+      </g>
+      <g transform="translate(0 26)">
+        <rect x="-38" y="-15" width="76" height="30" rx="15" fill="#fff" filter="url(#chipShadow)"/>
+        <text y="6" text-anchor="middle" class="km">15 km</text>
+      </g>
+    </g>
+  </g>
+
+<!-- CTA -->
+<g filter="url(#btnShadow)"><rect x="60" y="836" width="520" height="80" rx="40" fill="url(#btn)"/></g>
+<rect x="61" y="837" width="518" height="39" rx="38" fill="#fff" opacity=".1"/>
+<g clip-path="url(#btnClip)"><polygon class="shine" points="40,836 120,836 80,916 0,916" fill="url(#shineG)"/></g>
+<text x="300" y="886" text-anchor="middle" class="cta">Kostenlos anmelden</text>
+<circle cx="520" cy="876" r="22" fill="#fff" fill-opacity=".2"/>
+<path d="M512 876h15m-6-7 7 7-7 7" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
