@@ -55,7 +55,7 @@ const deFooter: Array<{ title: string; links: NavLink[] }> = [
       { label: "Social Media", href: "/ueber-uns/social-media" },
     ],
   },
-  { title: "Mitgliedschaft", links: [{ label: "Partnersuche", href: "/partnersuche" }, { label: "Magazin-Start", href: "/magazin" }] },
+  { title: "Mitgliedschaft", links: [{ label: "Partnersuche", href: "/partnersuche" }, { label: "Magazin-Start", href: "/magazin" }, { label: "Inhaltsverzeichnis A–Z", href: "/magazin/inhalt" }] },
 ];
 
 const logoByMarket: Record<MarketCode, { src: string; alt: string }> = {
