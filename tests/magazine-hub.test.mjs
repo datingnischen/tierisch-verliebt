@@ -11,8 +11,13 @@ test("nested wordpress link list becomes hub links with surrounding html kept", 
   assert.ok(split);
   assert.equal(split.links.length, breeds.length);
   assert.equal(split.links[0].slug, "abessinier-katze");
-  assert.equal(split.before.trim(), "<p>Intro</p>\n<h3>Rassen:</h3>");
+  assert.equal(split.before.trim(), "<p>Intro</p>");
   assert.equal(split.after.trim(), "<h2>Fazit</h2>");
+});
+
+test("only the heading directly above the list is dropped", () => {
+  const split = splitHubLinkList(`<h2>Einleitung</h2><p>Text</p><h3>Rassen:</h3><ul>${breeds.map(item).join("")}</ul>`);
+  assert.equal(split.before, "<h2>Einleitung</h2><p>Text</p>");
 });
 
 test("relative links and short lists", () => {

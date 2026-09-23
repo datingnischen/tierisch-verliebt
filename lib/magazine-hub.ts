@@ -20,6 +20,7 @@ const HUB_LINK_ITEM =
   /<li[^>]*>\s*<a[^>]+href=["'](?:https?:\/\/(?:www\.)?tierisch-verliebt\.de)?\/magazin\/([a-z0-9-]+)\/?["'][^>]*>([\s\S]*?)<\/a>\s*<\/li>/gi;
 const LIST_GLUE = /^(?:\s|<\/?(?:ol|ul|li)\b[^>]*>)*$/i;
 const LEADING_LIST_TAGS = /(?:\s|<(?:ol|ul|li)\b[^>]*>)*$/i;
+const TRAILING_HEADING = /\s*<h([2-4])[^>]*>(?:(?!<\/?(?:h\d|p|ul|ol|div)\b)[\s\S])*<\/h\1>\s*$/i;
 const TRAILING_LIST_TAGS = /^(?:\s|<\/(?:ol|ul|li)>)*/i;
 
 export function splitHubLinkList(html: string): HubSplit | null {
@@ -48,7 +49,8 @@ export function splitHubLinkList(html: string): HubSplit | null {
   const last = items[bestEnd - 1];
   const head = html.slice(0, first.index!);
   const tail = html.slice(last.index! + last[0].length);
-  const before = head.replace(LEADING_LIST_TAGS, "");
+  // Die alte Listenüberschrift ("Steckbriefe unserer Katzenrassen:") ersetzt der Grid-Header.
+  const before = head.replace(LEADING_LIST_TAGS, "").replace(TRAILING_HEADING, "");
   const after = tail.replace(TRAILING_LIST_TAGS, "");
 
   const seen = new Set<string>();

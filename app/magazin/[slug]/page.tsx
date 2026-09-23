@@ -317,9 +317,11 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      <section className="content-section magazine-mobile-conversion">
-        <MagazineConversionRail title={entry.title} variant={sidebarVariant} />
-      </section>
+      {hub ? null : (
+        <section className="content-section magazine-mobile-conversion">
+          <MagazineConversionRail title={entry.title} variant={sidebarVariant} />
+        </section>
+      )}
 
       {breedPage && breedFacts.length ? (
         <section className="content-section content-section-tight">
@@ -362,11 +364,19 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
+      {/* Übersichtsseiten ohne Sidebar: kurzes Intro neben langer Sidebar hinterlässt sonst eine große Lücke */}
+      {hub ? (
+        <section className="content-section">
+          <section className="rich-content">
+            <div dangerouslySetInnerHTML={{ __html: hub.before }} />
+          </section>
+        </section>
+      ) : (
       <section className="content-section magazine-detail-content-section">
         <div className="magazine-detail-layout">
           <div className="magazine-detail-main">
             <section className={`rich-content${breedPage ? " breed-rich-content" : ""}`}>
-              <div dangerouslySetInnerHTML={{ __html: hub ? hub.before : schemaDedupedContent }} />
+              <div dangerouslySetInnerHTML={{ __html: schemaDedupedContent }} />
             </section>
           </div>
           <aside className="magazine-detail-side" aria-label="Singlebörse und Conversion-Module">
@@ -374,6 +384,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           </aside>
         </div>
       </section>
+      )}
 
       {hub && hubEntries ? (
         <section className="content-section">
@@ -382,6 +393,12 @@ export default async function MagazineDetailPage({ params }: PageProps) {
             entries={hubEntries}
             title={decodeHtmlEntities(entry.title)}
             emoji={HUB_EMOJI[magazineAnimal] ?? "🐾"}
+            promo={{
+              href: "https://tierisch-verliebt.de/?AID=magazin",
+              image: staticAsset(sidebarVariant.image),
+              imageAlt: sidebarVariant.imageAlt,
+              audience: sidebarVariant.audience,
+            }}
           />
         </section>
       ) : null}
