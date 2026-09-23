@@ -1,0 +1,516 @@
+/* Magazin-Themenseiten (/magazin/thema/[slug]) – gleiche Bildsprache wie der Tierwelten-Hub */
+.thema-page {
+  width: min(1120px, calc(100% - 32px));
+  padding-top: 22px;
+}
+
+.thema-page section {
+  scroll-margin-top: 96px;
+}
+
+.thema-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.thema-breadcrumb a {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+/* Hero */
+.thema-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: end;
+  padding: 48px 40px;
+  border-radius: 32px;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(255, 255, 255, 0.16), transparent 32%),
+    radial-gradient(circle at 8% 100%, rgba(66, 154, 69, 0.45), transparent 42%),
+    linear-gradient(135deg, #8f2222 0%, var(--brand) 48%, #d9573f 100%);
+  box-shadow: 0 26px 56px rgba(111, 27, 27, 0.24);
+}
+
+.thema-hero::after {
+  content: attr(data-emoji);
+  position: absolute;
+  right: -10px;
+  top: -40px;
+  font-size: 13rem;
+  opacity: 0.1;
+  transform: rotate(-14deg);
+  pointer-events: none;
+}
+
+.thema-hero-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: start;
+  gap: 20px;
+}
+
+.thema-hero .eyebrow {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.thema-hero h1 {
+  font-size: clamp(2.4rem, 5.4vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.thema-hero p {
+  max-width: 60ch;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.thema-hero .button-secondary {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.thema-hero-stats {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.thema-hero-stats li {
+  display: grid;
+  min-width: 170px;
+  padding: 14px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.thema-hero-stats strong {
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+
+.thema-hero-stats span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.85;
+}
+
+/* Themen-Navigation */
+.thema-topic-nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 4px 2px 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.thema-topic-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.thema-topic {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 0 8px 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.thema-topic:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+}
+
+.thema-topic small {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.thema-topic.is-active {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+.thema-topic.is-active small {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+/* Artikel */
+.thema-articles {
+  display: grid;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.thema-section-header {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+}
+
+.thema-section-header h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.15;
+}
+
+.thema-card-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.7), transparent 55%),
+    linear-gradient(135deg, var(--brand-soft), #f6efe6);
+}
+
+.thema-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.thema-featured:hover .thema-card-media img,
+.thema-card:hover .thema-card-media img {
+  transform: scale(1.05);
+}
+
+.thema-card-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 4.5rem;
+}
+
+.thema-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.thema-meta > * + *::before {
+  content: "·";
+  margin-right: 14px;
+  color: var(--line);
+}
+
+.thema-meta-label {
+  color: var(--brand);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+}
+
+.thema-featured {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 24px 50px rgba(83, 57, 35, 0.1);
+}
+
+.thema-featured-media {
+  min-height: 360px;
+}
+
+.thema-featured-copy {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 16px;
+  padding: 36px;
+}
+
+.thema-featured-copy h3 {
+  font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+  line-height: 1.15;
+}
+
+.thema-featured-copy p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.thema-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 22px;
+}
+
+.thema-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.thema-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 44px rgba(83, 57, 35, 0.14);
+}
+
+.thema-card .thema-card-media {
+  aspect-ratio: 16 / 10;
+}
+
+.thema-card-body {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 22px 24px 24px;
+}
+
+.thema-card-body h3 {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+.thema-card-body p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Ganze Karte klickbar, Überschrift bleibt der eigentliche Link */
+.thema-featured h3 a::after,
+.thema-card h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.thema-featured h3 a:hover,
+.thema-card h3 a:hover {
+  color: var(--brand);
+}
+
+.thema-featured-cta {
+  position: relative;
+  z-index: 1;
+}
+
+.thema-card-more {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.thema-empty {
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px dashed var(--line);
+  background: #fff;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Info-Block */
+.thema-info {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin-top: 48px;
+  padding: 34px 36px;
+  border-radius: 30px;
+  border: 1px solid var(--line);
+  background: #fffaf5;
+}
+
+.thema-info-copy {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+}
+
+.thema-info-copy h2 {
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  line-height: 1.2;
+}
+
+.thema-info-copy p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.thema-info-links {
+  display: grid;
+  gap: 10px;
+}
+
+.thema-info-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.thema-info-link::after {
+  content: "→";
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.thema-info-link:hover {
+  transform: translateX(3px);
+  border-color: var(--brand);
+}
+
+.thema-info-link > span:first-child {
+  font-size: 1.5rem;
+}
+
+.thema-info-link span span,
+.thema-info-link > span:nth-child(2) {
+  display: grid;
+  gap: 2px;
+}
+
+.thema-info-link small {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+/* CTA */
+.thema-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin: 40px 0 56px;
+  padding: 34px 36px;
+  border-radius: 30px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.14), transparent 40%),
+    linear-gradient(135deg, var(--accent-dark), #1f6a22);
+  box-shadow: 0 22px 44px rgba(41, 132, 44, 0.24);
+}
+
+.thema-cta > div {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+}
+
+.thema-cta .eyebrow {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.thema-cta h2 {
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  line-height: 1.15;
+}
+
+.thema-cta p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.thema-cta .button-primary {
+  flex: 0 0 auto;
+  background: #fff;
+  color: var(--accent-dark);
+}
+
+@media (max-width: 900px) {
+  .thema-hero {
+    grid-template-columns: 1fr;
+    padding: 36px 24px;
+  }
+
+  .thema-hero-stats {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .thema-hero-stats li {
+    min-width: 0;
+  }
+
+  .thema-featured,
+  .thema-info {
+    grid-template-columns: 1fr;
+  }
+
+  .thema-featured-media {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .thema-featured-copy,
+  .thema-info {
+    padding: 24px;
+  }
+
+  .thema-cta {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .thema-hero::after {
+    font-size: 8rem;
+  }
+
+  .thema-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -126,6 +126,18 @@ export function stripHtml(text = "") {
     .trim();
 }
 
+// Viele Beiträge haben kein Beitragsbild, aber Bilder im Inhalt – das erste taugt als Kartenbild.
+export function getEntryCoverImage(entry: Pick<MagazineEntry, "featuredImage" | "content">) {
+  if (entry.featuredImage) return entry.featuredImage;
+  const match = entry.content.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return match ? decodeHtmlEntities(match[1]) : undefined;
+}
+
+export function getReadingMinutes(html = "") {
+  const words = stripHtml(html).split(" ").filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
 const INTERNAL_CONTENT_LINK =
   /href=(["'])https?:\/\/(?:www\.)?tierisch-verliebt\.de(\/(?:magazin|partnersuche|ueber-uns|social-media)(?:[\/?#][^"']*)?)\1/gi;
 
