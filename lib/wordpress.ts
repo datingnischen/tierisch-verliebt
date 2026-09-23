@@ -127,10 +127,17 @@ export function stripHtml(text = "") {
 }
 
 // Viele Beiträge haben kein Beitragsbild, aber Bilder im Inhalt – das erste taugt als Kartenbild.
+// Steckbrief-Häkchen (check-icon-16.png) und Emojis sind keine Kartenbilder.
+const DECORATIVE_IMAGE = /(?:icon|emoji|smilies)[^"'/]*\.(?:png|gif|svg)|-\d{2}x\d{2}\.|\/s\.w\.org\//i;
+
 export function getEntryCoverImage(entry: Pick<MagazineEntry, "featuredImage" | "content">) {
   if (entry.featuredImage) return entry.featuredImage;
-  const match = entry.content.match(/<img[^>]+src=["']([^"']+)["']/i);
-  return match ? decodeHtmlEntities(match[1]) : undefined;
+  for (const match of entry.content.matchAll(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi)) {
+    const width = Number(match[0].match(/\swidth=["']?(\d+)/i)?.[1] || 0);
+    if (DECORATIVE_IMAGE.test(match[1]) || (width && width < 120)) continue;
+    return decodeHtmlEntities(match[1]);
+  }
+  return undefined;
 }
 
 export function getReadingMinutes(html = "") {

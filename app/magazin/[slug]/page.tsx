@@ -3,13 +3,24 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AuthorProfileFacts } from "@/components/author-profile-facts";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
+import { MagazineHubGrid } from "@/components/magazine-hub-grid";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
-import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, relativizeInternalLinks, stripHtml } from "@/lib/wordpress";
+import {
+  SITE_URL,
+  decodeHtmlEntities,
+  formatGermanDate,
+  getAllMagazineEntries,
+  getMagazineEntryBySlug,
+  relativizeInternalLinks,
+  stripHtml,
+  type MagazineEntry,
+} from "@/lib/wordpress";
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { detectMagazineAnimal, getMagazineSidebarVariant, type MagazineSidebarVariant } from "@/lib/magazine-animal";
+import { splitHubLinkList } from "@/lib/magazine-hub";
 import { findTierwelt } from "@/lib/tierwelten";
 
 type PageProps = {
@@ -81,6 +92,17 @@ function enhanceBreedContent(html: string) {
   });
 
   return next;
+}
+
+const HUB_EMOJI: Record<string, string> = { katze: "🐱", hund: "🐶", vogel: "🐦", pferd: "🐴" };
+
+async function loadHubEntries() {
+  try {
+    const entries = await getAllMagazineEntries();
+    return new Map(entries.map((item) => [item.slug, item]));
+  } catch {
+    return new Map<string, MagazineEntry>();
+  }
 }
 
 function MagazineRadarCard() {
@@ -234,14 +256,16 @@ export default async function MagazineDetailPage({ params }: PageProps) {
     ],
     dateModified: entry.modified || undefined,
   });
-  const sidebarVariant = getMagazineSidebarVariant(
-    detectMagazineAnimal({
-      tierweltGroupId: findTierwelt(slug)?.group.id,
-      title: entry.title,
-      content: entry.content,
-      categorySlugs: entry.categories.map((category) => category.slug),
-    }),
-  );
+  // Übersichtsseiten (z. B. Katzenrassen): die Linkliste wird zum Kachel-Grid über die volle Breite.
+  const hub = breedPage ? null : splitHubLinkList(schemaDedupedContent);
+  const hubEntries = hub ? await loadHubEntries() : null;
+  const magazineAnimal = detectMagazineAnimal({
+    tierweltGroupId: findTierwelt(slug)?.group.id,
+    title: entry.title,
+    content: entry.content,
+    categorySlugs: entry.categories.map((category) => category.slug),
+  });
+  const sidebarVariant = getMagazineSidebarVariant(magazineAnimal);
   const faqGraph = buildMagazineFaqGraph({
     items: faqItems,
     pageUrl: `${SITE_URL}/magazin/${slug}`,
@@ -342,7 +366,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         <div className="magazine-detail-layout">
           <div className="magazine-detail-main">
             <section className={`rich-content${breedPage ? " breed-rich-content" : ""}`}>
-              <div dangerouslySetInnerHTML={{ __html: schemaDedupedContent }} />
+              <div dangerouslySetInnerHTML={{ __html: hub ? hub.before : schemaDedupedContent }} />
             </section>
           </div>
           <aside className="magazine-detail-side" aria-label="Singlebörse und Conversion-Module">
@@ -350,6 +374,25 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           </aside>
         </div>
       </section>
+
+      {hub && hubEntries ? (
+        <section className="content-section">
+          <MagazineHubGrid
+            links={hub.links}
+            entries={hubEntries}
+            title={decodeHtmlEntities(entry.title)}
+            emoji={HUB_EMOJI[magazineAnimal] ?? "🐾"}
+          />
+        </section>
+      ) : null}
+
+      {hub && stripHtml(hub.after) ? (
+        <section className="content-section">
+          <section className="rich-content">
+            <div dangerouslySetInnerHTML={{ __html: hub.after }} />
+          </section>
+        </section>
+      ) : null}
 
       {/* Mobil ohne Sidebar: Radar nach dem Artikel statt davor, damit der Inhalt oben bleibt */}
       <section className="content-section magazine-mobile-conversion magazine-mobile-radar">

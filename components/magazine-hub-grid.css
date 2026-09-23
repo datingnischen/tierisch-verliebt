@@ -1,0 +1,224 @@
+.hub-grid-section {
+  display: grid;
+  gap: 22px;
+  scroll-margin-top: 90px;
+}
+
+.hub-grid-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hub-grid-header h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.15;
+}
+
+.hub-grid-badge {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--brand-soft), var(--accent-soft));
+  font-size: 2rem;
+}
+
+.hub-grid-letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.hub-grid-letters a {
+  display: grid;
+  place-items: center;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  color: var(--brand-dark);
+  font-weight: 800;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.hub-grid-letters a:hover,
+.hub-grid-letters a:focus-visible {
+  background: var(--brand);
+  color: #fff;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.hub-tile {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  scroll-margin-top: 90px;
+}
+
+.hub-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 46px rgba(83, 57, 35, 0.14);
+}
+
+.hub-tile-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--brand-soft), var(--accent-soft));
+}
+
+.hub-tile-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hub-tile:hover .hub-tile-media img {
+  transform: scale(1.05);
+}
+
+.hub-tile-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+}
+
+.hub-tile-badge {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  max-width: calc(100% - 24px);
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--brand-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.hub-tile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 18px 16px;
+}
+
+.hub-tile-body h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.hub-tile-body h3 a:hover {
+  color: var(--brand);
+}
+
+.hub-tile-body > p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hub-tile-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hub-tile-traits li {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.hub-tile-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 4px;
+  color: var(--brand);
+  font-weight: 800;
+}
+
+.hub-tile-cta span {
+  transition: transform 0.18s ease;
+}
+
+.hub-tile-cta:hover span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .hub-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hub-grid-letters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .hub-tile {
+    border-radius: 18px;
+  }
+
+  .hub-tile-body {
+    padding: 14px 14px 12px;
+  }
+
+  .hub-tile-body h3 {
+    font-size: 1.02rem;
+  }
+
+  .hub-tile-body > p {
+    display: none;
+  }
+
+  .hub-tile-badge {
+    left: 8px;
+    bottom: 8px;
+    font-size: 0.7rem;
+  }
+}
