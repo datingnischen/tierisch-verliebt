@@ -188,25 +188,14 @@ export default async function MagazineDetailPage({ params }: PageProps) {
     christianSlug: "christian",
     content: entry.content,
     canonicalUrl: `${SITE_URL}/magazin/christian`,
-    siteUrl: SITE_URL,
     profileName: "Christian M. Haas",
     profileDescription: CHRISTIAN_PAGE_DESCRIPTION,
     profileImage: authorProfile?.imageUrl || entry.featuredImage || undefined,
-    jobTitle: authorProfile?.role || "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
-    sameAs: authorProfile?.sameAs,
-    knowsAbout: [
-      "Online-Dating",
-      "tierfreundliche Partnersuche",
-      "Dating-Communities für Tierfreunde",
-      "Leben mit Hund, Katze und Papagei",
-      "Aufbau und Betrieb von Singlebörsen",
-    ],
-    breadcrumb: [
-      { name: "Startseite", url: SITE_URL },
-      { name: "Magazin", url: `${SITE_URL}/magazin` },
-      { name: "Christian M. Haas", url: `${SITE_URL}/magazin/christian` },
-    ],
-    dateModified: entry.modified || undefined,
+    jobTitle: "Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber",
+    sameAs: ["https://datingnischen.de/christian", "https://www.linkedin.com/in/christian-m-haas-457323379"],
+    knowsAbout: ["Online-Dating", "tierfreundliche Partnersuche", "Haustiere im Alltag", "Dating-Communities"],
+    breadcrumbRootName: "Magazin",
+    breadcrumbRootUrl: `${SITE_URL}/magazin`,
   });
   const sidebarVariant = getMagazineSidebarVariant(
     detectMagazineAnimal({
@@ -239,7 +228,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
       <section className={`hero-card hero-magazine${breedPage ? " hero-magazine-breed" : ""}`}>
         <span className="eyebrow">{entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}</span>
         <h1>{entry.title}</h1>
-        <p>{slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : `${stripHtml(entry.excerpt || entry.content).slice(0, 220)}…`}</p>
+        <p>{stripHtml(entry.excerpt || entry.content).slice(0, 220)}…</p>
         <div className="meta-row">
           {entry.authorName ? (
             <span>
@@ -323,9 +312,13 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         <section className="content-section">
           <ExpertTrustCard
             profile={authorProfile}
-            variant="compact"
             eyebrow={authorProfile.slug === "christian-m-haas" ? "Unser Datingexperte" : "Magazin-Autor"}
-            primaryLabel={`Mehr über ${authorProfile.name}`}
+            title={
+              authorProfile.slug === "christian-m-haas"
+                ? "Hinter den Inhalten steht ein reales Profil mit Dating-Erfahrung, Tierliebe und langjähriger Magazinbegleitung."
+                : `Dieser Beitrag wurde von ${authorProfile.name} für das Tier-Magazin zusammengestellt.`
+            }
+            primaryLabel={authorProfile.slug === "christian-m-haas" ? "Zum Expertenprofil" : "Zum Autorenprofil"}
           />
         </section>
       ) : null}
