@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { IconySinglesWidget } from "@/components/icony-singles-widget";
 import { MarketLink } from "@/components/market-link";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
+import { MoreCities } from "@/components/more-cities";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { getMarketCityPage, getMarketCityPages, getNearbyMarketCities } from "@/lib/market-partnersuche";
 import { publicUrl } from "@/lib/markets";
@@ -56,7 +57,7 @@ export default async function PartnersucheCityPage({ params }: PageProps) {
       </section>
       <section className="content-section"><IconySinglesWidget city={city.cityName} zip={city.icony.zip} country={city.icony.country} platformId={city.icony.platformId} registrationUrl={city.registrationUrl} searchUrl={city.searchUrl} /></section>
       <section className="content-section"><article className="panel-card"><div className="section-header"><span className="eyebrow">Tipps & Highlights vor Ort</span><h2>Tierfreundliche Orte und Ideen für {city.cityName}</h2></div><div className="rich-content" dangerouslySetInnerHTML={{ __html: city.contentHtml }} /></article></section>
-      <section className="content-section"><article className="panel-card"><div className="section-header"><span className="eyebrow">Weitere Städte</span><h2>Mehr regionale Einstiege für tierliebe Singles</h2></div><div className="city-grid city-grid-compact">{nearby.map((entry) => <MarketLink key={entry.slug} className="city-card" market="de" path={entry.path}><span className="eyebrow eyebrow-muted">Tierliebe Singles</span><h3>{entry.cityName}</h3><p>Singles {entry.cityName} entdecken</p></MarketLink>)}</div></article></section>
+      <MoreCities market="de" cities={nearby} total={getMarketCityPages("de").length} />
       {expert ? <section className="content-section"><ExpertTrustCard profile={expert} eyebrow="Unser Datingexperte" title={`Christian begleitet tierliebe Dating-Themen und regionale Einstiege auch für ${city.cityName}.`} primaryLabel="Zum Expertenprofil" registrationHref={city.registrationUrl} /></section> : null}
     </main>
   );

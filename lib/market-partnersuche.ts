@@ -207,8 +207,10 @@ export function getMarketPartnersucheHub(market: MarketCode) {
 }
 
 export function getNearbyMarketCities(market: MarketCode, slug: string, count = 6) {
-  const pages = getMarketCityPages(market);
+  const pages = [...getMarketCityPages(market)].sort((a, b) => a.path.localeCompare(b.path, "de"));
   const index = pages.findIndex((page) => page.slug === slug);
   const ordered = index >= 0 ? [...pages.slice(index + 1), ...pages.slice(0, index)] : pages;
-  return ordered.slice(0, count);
+  const withImage = ordered.filter((page) => page.imageUrl);
+  const withoutImage = ordered.filter((page) => !page.imageUrl);
+  return [...withImage, ...withoutImage].slice(0, count);
 }
