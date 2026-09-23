@@ -21,6 +21,7 @@ import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, rend
 import { serializeJsonLd } from "@/lib/json-ld";
 import { detectMagazineAnimal, getMagazineSidebarVariant, type MagazineSidebarVariant } from "@/lib/magazine-animal";
 import { splitHubLinkList } from "@/lib/magazine-hub";
+import { extractLeadImage } from "@/lib/magazine-lead-image";
 import { findTierwelt } from "@/lib/tierwelten";
 
 type PageProps = {
@@ -225,7 +226,15 @@ export default async function MagazineDetailPage({ params }: PageProps) {
 
   const authorProfile = entry.authorSlug ? await getAuthorProfile(entry.authorSlug) : null;
   const breedPage = isBreedProfile(entry.content);
-  const enhancedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
+  // Ohne Beitragsbild wird ein Bild ganz am Anfang des Inhalts zum Artikelbild (z. B. Apps-Beiträge).
+  const leadImage = entry.featuredImage ? null : extractLeadImage(entry.content);
+  const heroImage = entry.featuredImage
+    ? { src: entry.featuredImage, alt: entry.featuredImageAlt || entry.title }
+    : leadImage
+      ? { src: leadImage.image.src, alt: leadImage.image.alt || entry.title }
+      : null;
+  const bodyContent = leadImage ? leadImage.content : entry.content;
+  const enhancedContent = breedPage ? enhanceBreedContent(bodyContent) : bodyContent;
   const faqItems = getMagazineFaqItems(entry.content);
   const renderedContent = renderMagazineFaqSection(enhancedContent, getMagazineFaqSubject(entry.title));
   const schemaDedupedContent = relativizeInternalLinks(stripPublishedBookSchema(renderedContent));
@@ -309,10 +318,10 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      {entry.featuredImage ? (
+      {heroImage ? (
         <section className={`content-section${breedPage ? " content-section-featured" : ""}`}>
           <figure className={`article-hero-media${breedPage ? " article-hero-media-breed" : ""}`}>
-            <img src={entry.featuredImage} alt={entry.featuredImageAlt || entry.title} loading="eager" decoding="async" />
+            <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" />
           </figure>
         </section>
       ) : null}
