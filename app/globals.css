@@ -303,22 +303,223 @@ img {
   color: var(--foreground);
 }
 
-.social-content p:has(.social-inline-icon),
-.social-content p img.social-inline-icon {
+.social-hero {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: 32px;
+}
+
+.social-hero-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.social-hero-media {
+  margin: 0;
+  aspect-ratio: 4 / 5;
+  border-radius: 24px;
   overflow: hidden;
+  transform: rotate(2deg);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.14);
 }
 
-.social-inline-icon {
-  width: 42px;
-  height: 42px;
+.social-hero-media img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  margin: 0 12px 8px 0;
-  float: left;
+  display: block;
 }
 
-.social-content p {
-  min-height: 42px;
+.social-hero-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-bubble {
+  --social-color: var(--brand);
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--social-color);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.18s ease;
+}
+
+a.social-bubble:hover {
+  transform: translateY(-2px) rotate(-4deg);
+}
+
+.social-facebook {
+  --social-color: #1877f2;
+}
+
+.social-youtube {
+  --social-color: #ff0000;
+}
+
+.social-tiktok {
+  --social-color: #111111;
+}
+
+.social-instagram {
+  --social-color: #e1306c;
+}
+
+.social-instagram .social-bubble,
+.social-bubble.social-instagram {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7);
+}
+
+.social-channel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.social-channel-card {
+  --social-color: var(--brand);
+  position: relative;
+  display: grid;
+  gap: 6px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.social-channel-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: var(--social-color);
+}
+
+.social-channel-card.social-instagram::before {
+  background: linear-gradient(90deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.social-channel-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--social-color) 40%, var(--line));
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+}
+
+.social-channel-card .social-bubble {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+}
+
+.social-channel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.social-channel-kind {
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.social-channel-name {
+  color: var(--foreground);
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.social-channel-handle {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.social-channel-text {
+  margin-top: 6px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.social-channel-cta {
+  margin-top: 10px;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.social-channel-card:hover .social-channel-cta span {
+  display: inline-block;
+  transform: translateX(3px);
+}
+
+.social-community {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  padding: 28px;
+  border-radius: 28px;
+  background: radial-gradient(circle at top right, rgba(24, 119, 242, 0.12), transparent 50%), var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+}
+
+.social-community .social-bubble {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+}
+
+.social-community-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.social-community-copy .eyebrow {
+  background: #fff;
+  color: var(--accent-dark);
+}
+
+.social-community-copy p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .social-hero,
+  .social-channel-grid,
+  .social-community {
+    grid-template-columns: 1fr;
+  }
+
+  .social-hero-media {
+    order: -1;
+    aspect-ratio: 16 / 10;
+    transform: none;
+  }
+
+  .social-community .button {
+    justify-self: start;
+  }
 }
 
 .article-card {

@@ -17,7 +17,7 @@ export type AuthorProfileLink = {
   external?: boolean;
 };
 
-export type AuthorSocialPlatform = "linkedin" | "xing" | "instagram" | "facebook" | "youtube";
+export type AuthorSocialPlatform = "linkedin" | "xing" | "instagram" | "facebook" | "youtube" | "tiktok";
 
 export type AuthorSocialLink = {
   platform: AuthorSocialPlatform;
