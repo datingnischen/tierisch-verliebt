@@ -83,7 +83,15 @@ function enhanceBreedContent(html: string) {
   return next;
 }
 
-function MagazineConversionRail({ title, variant }: { title: string; variant: Required<MagazineSidebarVariant> }) {
+function MagazineConversionRail({
+  title,
+  variant,
+  showRadar = false,
+}: {
+  title: string;
+  variant: Required<MagazineSidebarVariant>;
+  showRadar?: boolean;
+}) {
   return (
     <div className="magazine-conversion-rail">
       <div className="magazine-conversion-card magazine-conversion-card-primary magazine-conversion-card-banner">
@@ -108,6 +116,19 @@ function MagazineConversionRail({ title, variant }: { title: string; variant: Re
           </div>
         </div>
       </div>
+
+      {showRadar ? (
+        <Link className="magazine-radar-card" href="https://tierisch-verliebt.de/?AID=magazin">
+          <img
+            src={staticAsset("/brand/umkreissuche-radar.svg")}
+            alt="Umkreissuche: Tierfreunde in deiner Nähe – kostenlos anmelden"
+            width={320}
+            height={480}
+            loading="lazy"
+            decoding="async"
+          />
+        </Link>
+      ) : null}
 
       <div className="magazine-conversion-card magazine-conversion-card-online">
         <span className="eyebrow eyebrow-muted">Gerade online</span>
@@ -321,7 +342,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
             </section>
           </div>
           <aside className="magazine-detail-side" aria-label="Singlebörse und Conversion-Module">
-            <MagazineConversionRail title={entry.title} variant={sidebarVariant} />
+            <MagazineConversionRail title={entry.title} variant={sidebarVariant} showRadar />
           </aside>
         </div>
       </section>
