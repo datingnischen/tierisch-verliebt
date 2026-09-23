@@ -517,6 +517,24 @@
     font-size: 8rem;
   }
 
+  .thema-hero-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .thema-hero-stats li {
+    padding: 10px 12px;
+    border-radius: 16px;
+  }
+
+  .thema-hero-stats strong {
+    font-size: 1.1rem;
+  }
+
+  .thema-hero-stats span {
+    font-size: 0.66rem;
+  }
+
   .thema-grid {
     grid-template-columns: 1fr;
   }

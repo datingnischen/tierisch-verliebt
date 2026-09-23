@@ -148,7 +148,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
           </li>
           {featured?.date ? (
             <li>
-              <strong>{formatGermanDate(featured.date).replace(/^\d+\.\s*/, "")}</strong>
+              <strong>{new Intl.DateTimeFormat("de-DE", { month: "short", year: "numeric" }).format(new Date(featured.date))}</strong>
               <span>Neuester Artikel</span>
             </li>
           ) : null}
