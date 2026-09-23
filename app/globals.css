@@ -1233,6 +1233,11 @@ img {
   height: auto;
 }
 
+.magazine-mobile-radar .magazine-radar-card {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
 .magazine-conversion-card-primary {
   background: linear-gradient(180deg, rgba(250, 234, 234, 0.96) 0%, rgba(255, 255, 255, 0.98) 100%);
 }

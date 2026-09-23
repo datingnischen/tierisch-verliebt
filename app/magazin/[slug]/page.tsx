@@ -83,6 +83,21 @@ function enhanceBreedContent(html: string) {
   return next;
 }
 
+function MagazineRadarCard() {
+  return (
+    <Link className="magazine-radar-card" href="https://tierisch-verliebt.de/?AID=magazin">
+      <img
+        src={staticAsset("/brand/umkreissuche-radar.svg")}
+        alt="Umkreissuche: Tierfreunde in deiner Nähe – kostenlos anmelden"
+        width={320}
+        height={480}
+        loading="lazy"
+        decoding="async"
+      />
+    </Link>
+  );
+}
+
 function MagazineConversionRail({
   title,
   variant,
@@ -117,18 +132,7 @@ function MagazineConversionRail({
         </div>
       </div>
 
-      {showRadar ? (
-        <Link className="magazine-radar-card" href="https://tierisch-verliebt.de/?AID=magazin">
-          <img
-            src={staticAsset("/brand/umkreissuche-radar.svg")}
-            alt="Umkreissuche: Tierfreunde in deiner Nähe – kostenlos anmelden"
-            width={320}
-            height={480}
-            loading="lazy"
-            decoding="async"
-          />
-        </Link>
-      ) : null}
+      {showRadar ? <MagazineRadarCard /> : null}
 
       <div className="magazine-conversion-card magazine-conversion-card-online">
         <span className="eyebrow eyebrow-muted">Gerade online</span>
@@ -345,6 +349,11 @@ export default async function MagazineDetailPage({ params }: PageProps) {
             <MagazineConversionRail title={entry.title} variant={sidebarVariant} showRadar />
           </aside>
         </div>
+      </section>
+
+      {/* Mobil ohne Sidebar: Radar nach dem Artikel statt davor, damit der Inhalt oben bleibt */}
+      <section className="content-section magazine-mobile-conversion magazine-mobile-radar">
+        <MagazineRadarCard />
       </section>
 
       {authorProfile && slug !== "christian" ? (
