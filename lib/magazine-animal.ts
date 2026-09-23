@@ -68,8 +68,8 @@ export const MAGAZINE_SIDEBAR_DEFAULT_IMAGE = "/home/frontpage-visual-tierischve
 
 export const MAGAZINE_SIDEBAR_VARIANTS: Record<MagazineAnimal, MagazineSidebarVariant> = {
   katze: {
-    // TODO: Bild eines Paares mit 1–2 Katzen in der Mitte ablegen und hier eintragen,
-    // z. B. image: "/home/sidebar-paar-katze.webp"
+    // Quelle: Pexels, Foto 8359643 von Vlada Karpovich – siehe docs/bildquellen/README.md
+    image: "/home/sidebar-paar-katze.webp",
     imageAlt: "Tierisch verliebt – Singles mit Katzenliebe kennenlernen",
     audience: "Menschen mit derselben Liebe zu Katzen",
   },

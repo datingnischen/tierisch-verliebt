@@ -28,3 +28,7 @@ test("every variant resolves to an image", () => {
   }
   assert.equal(getMagazineSidebarVariant("allgemein").image, MAGAZINE_SIDEBAR_DEFAULT_IMAGE);
 });
+
+test("cat pages use the couple-with-cat image", () => {
+  assert.equal(getMagazineSidebarVariant("katze").image, "/home/sidebar-paar-katze.webp");
+});
