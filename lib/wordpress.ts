@@ -126,6 +126,18 @@ export function stripHtml(text = "") {
     .trim();
 }
 
+const INTERNAL_CONTENT_LINK =
+  /href=(["'])https?:\/\/(?:www\.)?tierisch-verliebt\.de(\/(?:magazin|partnersuche|ueber-uns|social-media)(?:[\/?#][^"']*)?)\1/gi;
+
+// WordPress speichert interne Links absolut; relativ funktionieren sie auf Produktion und auf Vercel-Previews.
+export function relativizeInternalLinks(html = "") {
+  return html.replace(INTERNAL_CONTENT_LINK, (match, quote: string, path: string) => {
+    if (/\/wp-(?:content|admin|json)\//i.test(path)) return match;
+    const relative = path.replace(/\/+(?=[?#]|$)/, "");
+    return `href=${quote}${relative}${quote}`;
+  });
+}
+
 function normalizeCategory(term: WpTerm): MagazineCategory {
   return {
     id: term.id,

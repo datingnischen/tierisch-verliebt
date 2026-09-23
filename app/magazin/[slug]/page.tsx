@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
-import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, stripHtml } from "@/lib/wordpress";
+import { SITE_URL, decodeHtmlEntities, formatGermanDate, getMagazineEntryBySlug, relativizeInternalLinks, stripHtml } from "@/lib/wordpress";
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
@@ -121,15 +121,24 @@ function MagazineConversionRail({ title }: { title: string }) {
         </div>
       </div>
 
-      <div className="magazine-conversion-card">
+      <div className="magazine-conversion-card magazine-conversion-card-reasons">
         <span className="eyebrow eyebrow-muted">Warum hier?</span>
         <h3>Gute Gründe für den Einstieg</h3>
-        <ul className="trust-points" aria-label="Vorteile der Singlebörse">
-          <li>Singles mit echter Tierliebe statt austauschbaren Flirts</li>
-          <li>Direkter Einstieg aus Magazin, Tierwelt und Ratgeber</li>
-          <li>Kostenlos starten und passende Kontakte entdecken</li>
+        <ul className="magazine-reason-list" aria-label="Vorteile der Singlebörse">
+          <li>
+            <span className="magazine-reason-icon" aria-hidden="true">🐾</span>
+            <span><strong>Echte Tierliebe</strong> statt austauschbarer Flirts</span>
+          </li>
+          <li>
+            <span className="magazine-reason-icon" aria-hidden="true">📖</span>
+            <span><strong>Direkter Einstieg</strong> aus Magazin, Tierwelt und Ratgeber</span>
+          </li>
+          <li>
+            <span className="magazine-reason-icon" aria-hidden="true">💚</span>
+            <span><strong>Kostenlos starten</strong> und passende Kontakte entdecken</span>
+          </li>
         </ul>
-        <Link className="magazine-conversion-link" href="https://tierisch-verliebt.de/?AID=magazin">
+        <Link className="button button-primary magazine-reason-button" href="https://tierisch-verliebt.de/?AID=magazin">
           Jetzt Singles entdecken
         </Link>
       </div>
@@ -170,7 +179,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   const enhancedContent = breedPage ? enhanceBreedContent(entry.content) : entry.content;
   const faqItems = getMagazineFaqItems(entry.content);
   const renderedContent = renderMagazineFaqSection(enhancedContent, getMagazineFaqSubject(entry.title));
-  const schemaDedupedContent = stripPublishedBookSchema(renderedContent);
+  const schemaDedupedContent = relativizeInternalLinks(stripPublishedBookSchema(renderedContent));
   const breedFacts = breedPage ? getBreedFacts(entry.content) : [];
   const breedSections = breedPage ? getBreedSectionLinks(entry.content) : [];
   const profileGraph = buildChristianBookProfileGraph({
@@ -218,7 +227,9 @@ export default async function MagazineDetailPage({ params }: PageProps) {
             </span>
           ) : null}
           {entry.date ? <span>{formatGermanDate(entry.date)}</span> : null}
-          <Link href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
+          <Link className="button button-primary meta-row-cta" href="https://tierisch-verliebt.de/?AID=magazin">
+            Kostenlos registrieren
+          </Link>
         </div>
       </section>
 
