@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { canonicalMagazinePagePath } from "@/lib/about-section";
+import { magazineTopicEmoji } from "@/lib/magazine-index";
 import {
   MAGAZINE_POSTS_PER_PAGE,
   SITE_URL,
@@ -97,10 +98,35 @@ export default async function MagazineOverviewPage() {
             <p>Schnelle Wege zu Hund, Katze, Vögeln, Apps und weiteren Themen, die Tierfreunde gerade besonders interessieren.</p>
           </div>
         </div>
-        <div className="chip-row chip-row-magazine">
+        <div className="magazine-topic-grid">
+          <Link className="magazine-topic-card magazine-topic-card-index" href="/magazin/inhalt">
+            <span className="magazine-topic-icon" aria-hidden="true">
+              📚
+            </span>
+            <span className="magazine-topic-copy">
+              <strong>Inhaltsverzeichnis: alle Beiträge &amp; Seiten A–Z</strong>
+              <small>Hunderassen, Katzenrassen, Ratgeber und mehr – durchsuchbar auf einer Seite</small>
+            </span>
+            <span className="magazine-topic-arrow" aria-hidden="true">
+              →
+            </span>
+          </Link>
           {categories.slice(0, 8).map((category) => (
-            <Link key={category.slug} className="chip chip-magazine-topic" href={`/magazin/thema/${category.slug}`}>
-              {category.name}
+            <Link key={category.slug} className="magazine-topic-card" href={`/magazin/thema/${category.slug}`}>
+              <span className="magazine-topic-icon" aria-hidden="true">
+                {magazineTopicEmoji(category.slug)}
+              </span>
+              <span className="magazine-topic-copy">
+                <strong>{category.name}</strong>
+                {category.count > 0 ? (
+                  <small>
+                    {category.count} {category.count === 1 ? "Beitrag" : "Beiträge"}
+                  </small>
+                ) : null}
+              </span>
+              <span className="magazine-topic-arrow" aria-hidden="true">
+                →
+              </span>
             </Link>
           ))}
         </div>
