@@ -34,9 +34,8 @@ test("global styles define the magazine overview and footer polish hooks", async
   assert.match(css, /\.magazine-topic-card-index/);
   assert.match(css, /\.article-card-page-link/);
   assert.match(css, /align-items: start;/);
-  assert.match(css, /\.footer-link-grid[\s\S]*padding: 30px;/);
-  assert.match(css, /\.footer-column h2[\s\S]*border-bottom:/);
-  assert.match(css, /\.footer-brand-badge/);
-  assert.match(css, /\.sub-footer-market-link/);
-  assert.match(css, /\.sub-footer[\s\S]*border-top:/);
+  assert.match(css, /\.tv-footer-cta \{/);
+  assert.match(css, /\.tv-footer-nav \{[\s\S]*grid-template-columns: repeat\(3, minmax\(0, 1fr\)\);/);
+  assert.match(css, /\.tv-footer-markets a\[aria-current\]/);
+  assert.match(css, /\.tv-footer-bottom \{[\s\S]*border-top:/);
 });

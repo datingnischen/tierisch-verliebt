@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { MarketLink } from "@/components/market-link";
 import { getMarket, publicUrl, type MarketCode } from "@/lib/markets";
+import { staticAsset } from "@/lib/static-asset";
 
 type NavLink = { label: string; href: string; external?: boolean };
 type Props = { market?: MarketCode };
@@ -93,20 +94,34 @@ function marketSwitchHref(currentMarket: MarketCode, targetMarket: MarketCode) {
   return currentMarket === targetMarket ? "/" : `/${targetMarket}`;
 }
 
-function Brand({ market, footer = false }: { market: MarketCode; footer?: boolean }) {
+function Brand({ market }: { market: MarketCode }) {
   const logo = logoByMarket[market];
-  const content = footer ? (
-    <>
-      <span className="brand-lockup-mark">TV</span>
-      <span className="brand-lockup-copy">
-        <strong>tierisch verliebt</strong>
-        <small>Dating für Tierfreunde mit Herz</small>
-      </span>
-    </>
-  ) : (
-    <img className="brand-logo-image" src={logo.src} alt={logo.alt} width="216" height="80" />
+  return localLink(
+    market,
+    "/",
+    <img className="brand-logo-image" src={logo.src} alt={logo.alt} width="216" height="80" />,
+    "brand-lockup brand-lockup-header",
   );
-  return localLink(market, "/", content, footer ? "brand-lockup footer-brand-wordmark tv-brand-lockup" : "brand-lockup brand-lockup-header");
+}
+
+function PawIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <ellipse cx="14" cy="26" rx="6" ry="8" />
+      <ellipse cx="25" cy="14" rx="6" ry="8.5" />
+      <ellipse cx="39" cy="14" rx="6" ry="8.5" />
+      <ellipse cx="50" cy="26" rx="6" ry="8" />
+      <path d="M32 30c-8 0-17 11-17 19 0 6 5 8 9 7 3-1 5-2 8-2s5 1 8 2c4 1 9-1 9-7 0-8-9-19-17-19z" />
+    </svg>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+      <path d="M5 10.5l3.2 3.2L15 7" />
+    </svg>
+  );
 }
 
 export function SiteHeader({ market = "de" }: Props) {
@@ -154,53 +169,78 @@ export function SiteFooter({ market = "de" }: Props) {
     : deFooter;
 
   return (
-    <footer className="site-footer-shell">
-      <section className="footer-cta footer-cta-soft" aria-label="Registrierung">
-        <div className="footer-cta-copy">
-          <p className="eyebrow">Tierliebe Partnersuche</p>
-          <h2>Finde tierliebe Singles, bei denen Hund, Katze & Co. wirklich dazugehören.</h2>
-          <p>Regionale Tipps und echte Profilvorschauen führen direkt zu passenden Kontakten in {config.countryName}.</p>
-        </div>
-        <a className="footer-cta-button" href={register}>Jetzt kostenlos starten</a>
-      </section>
-      <div className="footer-main footer-main-showcase">
-        <div className="footer-brand-panel footer-brand-panel-rich">
-          <div className="footer-brand-topline">
-            <Brand market={market} footer />
-            <span className="footer-brand-badge">Mit Liebe für Tierfreunde</span>
+    <footer className="tv-footer">
+      <div className="tv-footer-inner">
+        <section className="tv-footer-cta" aria-label="Registrierung">
+          <PawIcon className="tv-footer-cta-paw tv-footer-cta-paw-big" />
+          <PawIcon className="tv-footer-cta-paw tv-footer-cta-paw-small" />
+          <div className="tv-footer-cta-copy">
+            <p className="tv-footer-kicker">Tierliebe Partnersuche</p>
+            <h2>Finde tierliebe Singles, bei denen Hund, Katze & Co. wirklich dazugehören.</h2>
+            <p>Regionale Tipps und echte Profilvorschauen führen direkt zu passenden Kontakten in {config.countryName}.</p>
           </div>
-          <p className="footer-brand-intro">tierisch-verliebt.{market} verbindet tierliebe Singles mit regionalen Einstiegen für Menschen, bei denen Tiere zur Familie gehören.</p>
-          <ul className="footer-trust-list footer-trust-list-rich" aria-label="Vertrauensmerkmale">
-            <li>Gemeinsame Tierliebe statt austauschbarer Flirts</li>
-            <li>Regionale Ratgeber und tierfreundliche Treffpunkte</li>
-            <li>Direkter Einstieg in die kostenlose Registrierung</li>
-          </ul>
+          <a className="tv-footer-cta-button" href={register}>
+            Jetzt kostenlos starten
+            <span aria-hidden="true">→</span>
+          </a>
+        </section>
+
+        <div className="tv-footer-main">
+          <div className="tv-footer-brand">
+            {localLink(
+              market,
+              "/",
+              <img
+                src={staticAsset(`/brand/tierisch-verliebt-logo-light-${market}.svg`)}
+                alt={logoByMarket[market].alt}
+                width="216"
+                height="80"
+              />,
+              "tv-footer-logo",
+            )}
+            <p className="tv-footer-claim">
+              <PawIcon />
+              Mit Liebe für Tierfreunde
+            </p>
+            <p className="tv-footer-intro">
+              tierisch-verliebt.{market} verbindet tierliebe Singles mit regionalen Einstiegen für Menschen, bei denen Tiere zur
+              Familie gehören.
+            </p>
+            <ul className="tv-footer-trust" aria-label="Vertrauensmerkmale">
+              <li><CheckIcon />Gemeinsame Tierliebe statt austauschbarer Flirts</li>
+              <li><CheckIcon />Regionale Ratgeber und tierfreundliche Treffpunkte</li>
+              <li><CheckIcon />Direkter Einstieg in die kostenlose Registrierung</li>
+            </ul>
+          </div>
+          <nav className={`tv-footer-nav${regional ? " tv-footer-nav-compact" : ""}`} aria-label="Footer Navigation">
+            {columns.map((column) => (
+              <div className="tv-footer-column" key={column.title}>
+                <h2>{column.title}</h2>
+                <ul>
+                  {column.links.map((link) => (
+                    <li key={link.label}>
+                      {link.external ? <a href={link.href}>{link.label}</a> : localLink(market, link.href, link.label)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </nav>
         </div>
-        <nav className="footer-link-grid footer-link-grid-rich" aria-label="Footer Navigation">
-          {columns.map((column) => (
-            <div className="footer-column" key={column.title}>
-              <h2>{column.title}</h2>
-              <ul>
-                {column.links.map((link) => (
-                  <li key={link.label}>
-                    {link.external ? <a href={link.href}>{link.label}</a> : localLink(market, link.href, link.label)}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </nav>
-      </div>
-      <div className="sub-footer sub-footer-rich">
-        <span className="sub-footer-copy">© {new Date().getFullYear()} tierisch-verliebt.{market}</span>
-        <div className="sub-footer-links sub-footer-links-rich">
-          <a href={register}>Registrieren</a>
-          {market === "de" ? localLink(market, "/magazin", "Magazin") : null}
-          <a href={publicUrl(market, "/datenschutz.html")}>Datenschutz</a>
-          <a href={publicUrl(market, "/impressum.html")}>Impressum</a>
-          <a className="sub-footer-market-link" href={marketSwitchHref(market, "de")}>DE</a>
-          <a className="sub-footer-market-link" href={marketSwitchHref(market, "at")}>AT</a>
-          <a className="sub-footer-market-link" href={marketSwitchHref(market, "ch")}>CH</a>
+
+        <div className="tv-footer-bottom">
+          <span>© {new Date().getFullYear()} tierisch-verliebt.{market} · Dating für Tierfreunde mit Herz</span>
+          <div className="tv-footer-legal">
+            <a href={register}>Registrieren</a>
+            {market === "de" ? localLink(market, "/magazin", "Magazin") : null}
+            <a href={publicUrl(market, "/datenschutz.html")}>Datenschutz</a>
+            <a href={publicUrl(market, "/impressum.html")}>Impressum</a>
+            <span className="tv-footer-markets" aria-label="Land wählen">
+              <a href={marketSwitchHref(market, "de")} aria-current={market === "de" ? "true" : undefined}>DE</a>
+              <a href={marketSwitchHref(market, "at")} aria-current={market === "at" ? "true" : undefined}>AT</a>
+              <a href={marketSwitchHref(market, "ch")} aria-current={market === "ch" ? "true" : undefined}>CH</a>
+            </span>
+          </div>
         </div>
       </div>
     </footer>
