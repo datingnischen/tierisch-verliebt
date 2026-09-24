@@ -956,6 +956,13 @@ a.social-bubble:hover {
   color: var(--brand);
 }
 
+.expert-facts,
+.trust-points {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
 .trust-points li,
 .expert-facts li {
   position: relative;
