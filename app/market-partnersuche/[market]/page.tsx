@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { CitySearchFallback } from "@/components/city-search-fallback";
 import { MarketLink } from "@/components/market-link";
 import { getMarketPartnersucheHub } from "@/lib/market-partnersuche";
 import { getMarket, isMarketCode, publicUrl, type RegionalMarket } from "@/lib/markets";
@@ -82,6 +83,7 @@ export default async function MarketHub({ params }: Props) {
               </MarketLink>
             ))}
           </div>
+          <CitySearchFallback market={market} />
         </article>
       </section>
 

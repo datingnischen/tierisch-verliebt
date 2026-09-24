@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CitySearchFallback } from "@/components/city-search-fallback";
 import { MarketLink } from "@/components/market-link";
 import { getMarketPartnersucheHub } from "@/lib/market-partnersuche";
 import { publicUrl } from "@/lib/markets";
@@ -66,6 +67,7 @@ export default function PartnersucheHubPage() {
               </MarketLink>
             ))}
           </div>
+          <CitySearchFallback market="de" />
         </article>
       </section>
 
