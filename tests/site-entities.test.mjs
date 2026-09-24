@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { buildSiteGraph } from "../lib/site-entities.ts";
+import { buildMagazineArticleGraph, buildSiteGraph } from "../lib/site-entities.ts";
 
 const siteUrl = "https://tierisch-verliebt.vercel.app";
 const readRepoFile = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf8");
@@ -49,4 +49,51 @@ test("home, about and social media pages render the site graph", () => {
   for (const path of ["app/page.tsx", "app/ueber-uns/page.tsx", "app/ueber-uns/social-media/page.tsx"]) {
     assert.match(readRepoFile(path), /<SiteJsonLd/, path);
   }
+});
+
+test("magazine posts get a BlogPosting with author, category breadcrumb and Berlin dates", () => {
+  const url = `${siteUrl}/magazin/hund-und-dating`;
+  const graph = buildMagazineArticleGraph({
+    siteUrl,
+    url,
+    type: "post",
+    headline: "Hund und Dating",
+    description: "Beschreibung",
+    image: "https://tierisch-verliebt.de/magazin/wp-content/uploads/hund.jpg",
+    datePublished: "2026-05-28T07:05:37",
+    dateModified: "2026-12-01T09:00:00",
+    author: { name: "Christian M. Haas", url: `${siteUrl}/magazin/christian` },
+    category: { name: "Hunde", url: `${siteUrl}/magazin/thema/hunde` },
+  });
+
+  const byType = Object.fromEntries(graph["@graph"].map((node) => [node["@type"], node]));
+  assert.deepEqual(Object.keys(byType), ["WebPage", "BreadcrumbList", "BlogPosting", "WebSite", "Organization"]);
+  const article = byType.BlogPosting;
+  assert.equal(article.mainEntityOfPage["@id"], `${url}#webpage`);
+  assert.equal(article.author["@id"], `${siteUrl}/magazin/christian#person`);
+  assert.equal(article.publisher["@id"], `${siteUrl}#operator`);
+  assert.equal(article.isPartOf["@id"], `${siteUrl}#website`);
+  assert.equal(article.datePublished, "2026-05-28T07:05:37+02:00");
+  assert.equal(article.dateModified, "2026-12-01T09:00:00+01:00");
+  assert.equal(byType.WebSite.about["@id"], `${siteUrl}#brand`);
+  assert.deepEqual(byType.BreadcrumbList.itemListElement.map((item) => item.name), ["Startseite", "Magazin", "Hunde", "Hund und Dating"]);
+});
+
+test("magazine CMS pages stay a WebPage without an article node", () => {
+  const graph = buildMagazineArticleGraph({
+    siteUrl,
+    url: `${siteUrl}/magazin/katzenrassen`,
+    type: "page",
+    headline: "Katzenrassen",
+    description: "Beschreibung",
+  });
+  const types = graph["@graph"].map((node) => node["@type"]);
+  assert.ok(!types.includes("BlogPosting"));
+  assert.equal(graph["@graph"][1].itemListElement.length, 3);
+});
+
+test("the magazine detail page renders the article graph except on Christian's profile", () => {
+  const page = readRepoFile("app/magazin/[slug]/page.tsx");
+  assert.match(page, /buildMagazineArticleGraph\(/);
+  assert.match(page, /slug === "christian"\s*\?\s*null/);
 });

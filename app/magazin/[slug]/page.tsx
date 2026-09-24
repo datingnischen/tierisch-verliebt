@@ -19,6 +19,7 @@ import {
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
+import { buildMagazineArticleGraph } from "@/lib/site-entities";
 import { detectMagazineAnimal, getMagazineSidebarVariant, type MagazineSidebarVariant } from "@/lib/magazine-animal";
 import { splitHubLinkList } from "@/lib/magazine-hub";
 import { extractLeadImage } from "@/lib/magazine-lead-image";
@@ -33,6 +34,7 @@ type BreedSectionLink = { id: string; label: string };
 export const revalidate = 300;
 
 const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischverliebt&pc=c02e2e&aid=magazin";
+const UNLISTED_CATEGORY_SLUGS = new Set(["allgemein", "uncategorized"]);
 const CHRISTIAN_PAGE_DESCRIPTION =
   "Christian M. Haas ist Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber. Erfahre mehr über seine Tierverbundenheit, Dating-Erfahrung und redaktionellen Schwerpunkte.";
 
@@ -196,12 +198,16 @@ function MagazineConversionRail({
   );
 }
 
+function entryDescription(slug: string, entry: MagazineEntry) {
+  return slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : stripHtml(entry.excerpt || entry.content).slice(0, 155);
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const entry = await getMagazineEntryBySlug(slug);
   if (!entry) return {};
 
-  const description = slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : stripHtml(entry.excerpt || entry.content).slice(0, 155);
+  const description = entryDescription(slug, entry);
 
   return {
     title: entry.title,
@@ -275,6 +281,30 @@ export default async function MagazineDetailPage({ params }: PageProps) {
     categorySlugs: entry.categories.map((category) => category.slug),
   });
   const sidebarVariant = getMagazineSidebarVariant(magazineAnimal);
+  const articleCategory = entry.categories.find((category) => !UNLISTED_CATEGORY_SLUGS.has(category.slug));
+  // Christians Profil hat mit profileGraph schon sein eigenes Markup.
+  const articleGraph =
+    slug === "christian"
+      ? null
+      : buildMagazineArticleGraph({
+          siteUrl: SITE_URL,
+          url: `${SITE_URL}/magazin/${slug}`,
+          type: entry.type,
+          headline: decodeHtmlEntities(entry.title),
+          description: entryDescription(slug, entry),
+          image: heroImage && /^https?:\/\//.test(heroImage.src) ? heroImage.src : undefined,
+          datePublished: entry.date,
+          dateModified: entry.modified,
+          author: entry.authorName
+            ? {
+                name: authorProfile?.name || entry.authorName,
+                url: authorProfile ? `${SITE_URL}${authorProfile.profileUrl}` : undefined,
+              }
+            : undefined,
+          category: articleCategory
+            ? { name: decodeHtmlEntities(articleCategory.name), url: `${SITE_URL}/magazin/thema/${articleCategory.slug}` }
+            : undefined,
+        });
   const faqGraph = buildMagazineFaqGraph({
     items: faqItems,
     pageUrl: `${SITE_URL}/magazin/${slug}`,
@@ -283,6 +313,12 @@ export default async function MagazineDetailPage({ params }: PageProps) {
 
   return (
     <main className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : ""}`}>
+      {articleGraph ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleGraph) }}
+        />
+      ) : null}
       {profileGraph ? (
         <script
           type="application/ld+json"
