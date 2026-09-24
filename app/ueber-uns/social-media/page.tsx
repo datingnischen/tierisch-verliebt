@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AuthorSocialIcon } from "@/components/author-social-icon";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
+import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, aboutSocialMediaCanonical } from "@/lib/about-section";
 import { getSocialMediaPage } from "@/lib/icony-static-pages";
@@ -31,6 +32,9 @@ export default async function AboutSocialMediaPage() {
 
   return (
     <main className="shell shell-narrow">
+      <SiteJsonLd
+        page={{ type: "AboutPage", url: aboutSocialMediaCanonical(), name: page.title, description: page.description }}
+      />
       <section className="hero-card hero-brand social-hero">
         <div className="social-hero-copy">
           <span className="eyebrow">Über uns · Social Media</span>

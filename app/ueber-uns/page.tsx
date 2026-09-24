@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
+import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import {
   ABOUT_PRESS_PATH,
@@ -38,6 +39,14 @@ export default async function AboutOverviewPage() {
 
   return (
     <main className="shell shell-narrow">
+      <SiteJsonLd
+        page={{
+          type: "AboutPage",
+          url: aboutOverviewCanonical(),
+          name: String(metadata.title),
+          description: String(metadata.description),
+        }}
+      />
       <section className="hero-card hero-brand">
         <span className="eyebrow">Über uns</span>
         <h1>Wer hinter tierisch-verliebt steht, wie die Marke gewachsen ist und wo du uns findest.</h1>

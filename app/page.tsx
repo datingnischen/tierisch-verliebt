@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
+import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
 import { formatGermanDate, getMagazineCategories, getMagazinePages, getMagazinePosts, SITE_URL, stripHtml } from "@/lib/wordpress";
 
 const HOME_HERO_IMAGE = staticAsset("/home/frontpage-visual-tierischverliebt.webp");
 
+const HOME_TITLE = "tierisch-verliebt.de – Singles, Tierwelten & Magazin";
+const HOME_DESCRIPTION =
+  "Finde tierliebe Singles, entdecke Magazin-Themen rund um Hund, Katze und weitere Tierwelten und starte kostenlos in eine Partnersuche mit Herz für Tiere.";
+
 export const metadata: Metadata = {
-  title: "tierisch-verliebt.de – Singles, Tierwelten & Magazin",
-  description:
-    "Finde tierliebe Singles, entdecke Magazin-Themen rund um Hund, Katze und weitere Tierwelten und starte kostenlos in eine Partnersuche mit Herz für Tiere.",
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/`,
   },
   openGraph: {
-    title: "tierisch-verliebt.de – Singles, Tierwelten & Magazin",
-    description:
-      "Finde tierliebe Singles, entdecke Magazin-Themen rund um Hund, Katze und weitere Tierwelten und starte kostenlos in eine Partnersuche mit Herz für Tiere.",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
     url: `${SITE_URL}/`,
     images: [HOME_HERO_IMAGE],
   },
@@ -36,6 +39,7 @@ export default async function HomePage() {
 
   return (
     <main className="shell">
+      <SiteJsonLd page={{ type: "WebPage", url: `${SITE_URL}/`, name: HOME_TITLE, description: HOME_DESCRIPTION }} />
       <section className="home-stage panel-card">
         <div className="home-stage-copy">
           <span className="eyebrow eyebrow-brand">Tierliebe Partnersuche</span>
