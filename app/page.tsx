@@ -4,7 +4,7 @@ import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
-import { formatGermanDate, getMagazineCategories, getMagazinePages, getMagazinePosts, SITE_URL, stripHtml } from "@/lib/wordpress";
+import { formatUpdatedDate, getMagazineCategories, getMagazinePages, getMagazinePosts, SITE_URL, stripHtml } from "@/lib/wordpress";
 
 const HOME_HERO_IMAGE = staticAsset("/home/frontpage-visual-tierischverliebt.webp");
 
@@ -147,7 +147,7 @@ export default async function HomePage() {
             <p className="home-feature-excerpt">{stripHtml(featuredPost.excerpt || featuredPost.content).slice(0, 220)}…</p>
             <div className="meta-row home-feature-meta">
               {featuredPost.authorName ? <span>Von {featuredPost.authorName}</span> : null}
-              {featuredPost.date ? <span>{formatGermanDate(featuredPost.date)}</span> : null}
+              {formatUpdatedDate(featuredPost) ? <span>{formatUpdatedDate(featuredPost)}</span> : null}
             </div>
             <div className="button-row home-feature-actions">
               <Link className="button button-primary" href={`/magazin/${featuredPost.slug}`}>
@@ -167,7 +167,7 @@ export default async function HomePage() {
               <Link key={`${entry.type}-${entry.id}`} href={`/magazin/${entry.slug}`} className="home-more-link">
                 <div className="meta-row home-more-meta">
                   {entry.categories[0] ? <span>{entry.categories[0].name}</span> : null}
-                  {entry.date ? <span>{formatGermanDate(entry.date)}</span> : null}
+                  {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
                 </div>
                 <h3>{entry.title}</h3>
                 <p>{stripHtml(entry.excerpt || entry.content).slice(0, 145)}…</p>

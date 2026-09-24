@@ -9,7 +9,7 @@ import { staticAsset } from "@/lib/static-asset";
 import {
   SITE_URL,
   decodeHtmlEntities,
-  formatGermanDate,
+  formatUpdatedDate,
   getAllMagazineEntries,
   getMagazineEntryBySlug,
   relativizeInternalLinks,
@@ -305,7 +305,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
               Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}
             </span>
           ) : null}
-          {entry.date ? <span>{formatGermanDate(entry.date)}</span> : null}
+          {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
           <Link className="button button-primary meta-row-cta" href="https://tierisch-verliebt.de/?AID=magazin">
             Kostenlos registrieren
           </Link>

@@ -113,7 +113,7 @@ export function buildMagazineIndex({
       items: entries.map((post) => ({
         label: post.title,
         href: `/magazin/${post.slug}`,
-        meta: formatDate(post.date),
+        meta: formatDate(post.modified || post.date),
         children: [],
       })),
     });

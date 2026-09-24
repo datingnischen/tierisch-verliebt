@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default async function MagazineIndexPage() {
   const [posts, pages, categories] = await Promise.all([getMagazinePosts(), getMagazinePages(), getMagazineCategories()]);
-  const sections = buildMagazineIndex({ posts, pages, categories, formatDate: formatGermanDate });
+  const sections = buildMagazineIndex({ posts, pages, categories, formatDate: (date) => (date ? `Aktualisiert ${formatGermanDate(date)}` : "") });
   const total = countIndexLinks(sections);
 
   const breadcrumbGraph = {

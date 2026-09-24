@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { serializeJsonLd } from "@/lib/json-ld";
 import {
   SITE_URL,
-  formatGermanDate,
+  formatUpdatedDate,
+  getEntryUpdatedDate,
   getEntryCoverImage,
   getMagazineCategories,
   getMagazineCategoryBySlug,
@@ -80,6 +81,11 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
     stripHtml(category.description) ||
     `Hier findest du Artikel, Ratgeber und praktische Einstiege rund um ${category.name.toLowerCase()} – passend für tierliebe Singles und Haustiermenschen.`;
   const [featured, ...rest] = posts;
+  const latestUpdate = posts
+    .map((post) => getEntryUpdatedDate(post))
+    .filter((date): date is string => Boolean(date))
+    .sort()
+    .at(-1);
   const otherTopics = categories.filter((item) => item.count > 0);
 
   const pageGraph = {
@@ -146,10 +152,10 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
             <strong>{posts.length}</strong>
             <span>Artikel</span>
           </li>
-          {featured?.date ? (
+          {latestUpdate ? (
             <li>
-              <strong>{new Intl.DateTimeFormat("de-DE", { month: "short", year: "numeric" }).format(new Date(featured.date))}</strong>
-              <span>Neuester Artikel</span>
+              <strong>{new Intl.DateTimeFormat("de-DE", { month: "short", year: "numeric" }).format(new Date(latestUpdate))}</strong>
+              <span>Zuletzt aktualisiert</span>
             </li>
           ) : null}
           <li>
@@ -283,7 +289,7 @@ function PostMeta({ post, label }: { post: MagazineEntry; label?: string }) {
   return (
     <div className="thema-meta">
       {label ? <span className="thema-meta-label">{label}</span> : null}
-      {post.date ? <time dateTime={post.date}>{formatGermanDate(post.date)}</time> : null}
+      {getEntryUpdatedDate(post) ? <time dateTime={getEntryUpdatedDate(post)}>{formatUpdatedDate(post)}</time> : null}
       <span>{getReadingMinutes(post.content)} Min. Lesezeit</span>
     </div>
   );

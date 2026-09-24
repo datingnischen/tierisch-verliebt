@@ -182,6 +182,17 @@ export function formatGermanDate(dateString?: string) {
   }
 }
 
+// Artikel zeigen ihr Änderungsdatum, feste Seiten (type "page") gar kein Datum.
+export function getEntryUpdatedDate(entry: Pick<MagazineEntry, "type" | "date" | "modified">) {
+  if (entry.type !== "post") return undefined;
+  return entry.modified || entry.date || undefined;
+}
+
+export function formatUpdatedDate(entry: Pick<MagazineEntry, "type" | "date" | "modified">) {
+  const formatted = formatGermanDate(getEntryUpdatedDate(entry));
+  return formatted ? `Aktualisiert am ${formatted}` : "";
+}
+
 function normalizeEntry(item: WpRestItem): MagazineEntry {
   const featured = item._embedded?.["wp:featuredmedia"]?.[0];
   const author = item._embedded?.author?.[0];
