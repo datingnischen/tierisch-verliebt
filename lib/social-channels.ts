@@ -47,6 +47,15 @@ export const SOCIAL_CHANNELS: SocialChannel[] = [
     cta: "Kanal abonnieren",
     href: "https://www.youtube.com/@tierischverliebt",
   },
+  {
+    platform: "pinterest",
+    name: "Pinterest",
+    handle: "/tierischverliebt",
+    kind: "Pinnwände & Ideen",
+    description: "Pinnwände voller Tierliebe, Inspiration und Ideen rund ums Leben mit Haustier.",
+    cta: "Auf Pinterest folgen",
+    href: "https://de.pinterest.com/tierischverliebt/",
+  },
 ];
 
 export const SOCIAL_COMMUNITY_GROUP = {
