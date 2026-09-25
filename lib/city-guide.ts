@@ -1,4 +1,4 @@
-import type { MarketCode } from "./markets.ts";
+import { withTrailingSlash, type MarketCode } from "#markets";
 
 /**
  * Zerlegt den importierten ICONY-Stadttext in Kapitel, ohne ein Wort zu ändern:
@@ -72,6 +72,7 @@ export const ANIMAL_LABELS: Record<GuideAnimal, string> = {
 };
 
 const EMPTY_PARAGRAPH = /<p>(?:\s|&nbsp;| |<br\s*\/?>)*<\/p>/gi;
+const OWN_PAGE_LINK = /href="(https?:\/\/(?:www\.)?tierisch-verliebt\.(?:de|at|ch))(\/[^"]*)"/gi;
 const CREDIT = /(?:<hr\s*\/?>\s*)?<p>\s*<small>\s*Bildquelle:?\s*([^<\s]+)\s*<\/small>\s*<\/p>/i;
 const HEADING = (level: 2 | 3) => new RegExp(`<h${level}\\b[^>]*>([\\s\\S]*?)</h${level}>`, "gi");
 const RELATED_HEADING = /könnten auch interessant/i;
@@ -133,6 +134,8 @@ export function buildCityGuide(input: { market: MarketCode; path?: string; conte
   let html = stripHeroImage(input.contentHtml, input.imageUrl);
   const credit = html.match(CREDIT);
   html = html.replace(CREDIT, "").replace(EMPTY_PARAGRAPH, "").replace(/<hr\s*\/?>\s*$/i, "").trim();
+  // Eigene Seiten-URLs im ICONY-Text enden auf "/" (spart die 308-Umleitung), Dateien bleiben unverändert.
+  html = html.replace(OWN_PAGE_LINK, (_, origin: string, path: string) => `href="${origin}${withTrailingSlash(path)}"`);
 
   const parts: { heading: string | null; html: string }[] = [{ heading: null, html: "" }];
   let cursor = 0;

@@ -46,3 +46,10 @@ test("orders neighbours by straight-line distance", () => {
     for (const page of getMarketCityPages(market)) assert.equal(nearestCities(market, page.slug, getMarketCityPages(market)).length, 5, `${market}/${page.slug} ohne Koordinaten`);
   }
 });
+
+test("own page links inside the ICONY text end with a slash", () => {
+  const page = getMarketCityPages("de").find((entry) => entry.slug === "wuppertal");
+  const guide = buildCityGuide(page);
+  const html = guide.introHtml + guide.sections.map((s) => s.html).join("");
+  assert.ok(!/href="https:\/\/tierisch-verliebt\.(?:de|at|ch)\/[^"]*[^/"]"/.test(html), "Link ohne Schrägstrich");
+});
