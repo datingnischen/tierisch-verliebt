@@ -21,20 +21,21 @@ test("implements the safe elFlirt-style dynamic ICONY widget", async () => {
 test("renders widgets before the editorial copy on DE and AT/CH city routes", async () => {
   const dePage = await source("../app/partnersuche/[slug]/page.tsx");
   const marketPage = await source("../app/market-partnersuche/[market]/[slug]/page.tsx");
-  for (const page of [dePage, marketPage]) {
-    const widget = page.indexOf("<IconySinglesWidget");
-    const content = page.indexOf("dangerouslySetInnerHTML");
-    assert.ok(widget >= 0, "city route must render the singles widget");
-    assert.ok(content > widget, "singles widget must appear before editorial copy");
-  }
+  const cityPage = await source("../components/city-page/tier-city-page.tsx");
+  for (const page of [dePage, marketPage]) assert.match(page, /<TierCityPage/, "city route must use the shared city layout");
+  const widget = cityPage.indexOf("<IconySinglesWidget");
+  const content = cityPage.indexOf("dangerouslySetInnerHTML");
+  assert.ok(widget >= 0, "city layout must render the singles widget");
+  assert.ok(content > widget, "singles widget must appear before editorial copy");
 });
 
 test("city pages keep all registration links on AID=location", async () => {
   const dePage = await source("../app/partnersuche/[slug]/page.tsx");
+  const cityPage = await source("../components/city-page/tier-city-page.tsx");
   const expertCard = await source("../components/expert-trust-card.tsx");
-  assert.match(dePage, /href=\{city\.registrationUrl\}/);
+  assert.match(cityPage, /href=\{city\.registrationUrl\}/);
   assert.match(dePage, /registrationHref=\{city\.registrationUrl\}/);
   assert.match(expertCard, /registrationHref = "https:\/\/tierisch-verliebt\.de\/\?AID=magazin"/);
   assert.match(expertCard, /href=\{registrationHref\}/);
-  assert.doesNotMatch(dePage, /AID=magazin/);
+  assert.doesNotMatch(dePage + cityPage, /AID=magazin/);
 });
