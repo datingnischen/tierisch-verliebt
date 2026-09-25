@@ -8,17 +8,19 @@ async function source(path) {
 
 test("breed magazine pages detect and enhance steckbrief sections", async () => {
   const page = await source("../app/magazin/[slug]/page.tsx");
-  assert.match(page, /function isBreedProfile\(html: string\)/);
-  assert.match(page, /function enhanceBreedContent\(html: string\)/);
-  assert.match(page, /breed-facts-list/);
-  assert.match(page, /breed-facts-paw/);
+  const lib = await source("../lib/magazine-breed.ts");
+  assert.match(page, /parseBreedProfile\(entry\.content\)/);
+  assert.match(page, /enhanceBreedContent\(/);
   assert.match(page, /breed-rich-content/);
+  assert.match(lib, /breed-facts-list/);
+  assert.match(lib, /breed-facts-paw/);
 });
 
 test("breed pages derive quick highlights and jump navigation from editorial content", async () => {
   const page = await source("../app/magazin/[slug]/page.tsx");
-  assert.match(page, /function getBreedFacts\(html: string\)/);
-  assert.match(page, /function getBreedSectionLinks\(html: string\)/);
+  assert.match(page, /pickKeyFacts\(/);
+  assert.match(page, /getBreedSectionLinks\(/);
+  assert.match(page, /breed-hero-grid/);
   assert.match(page, /breed-highlight-grid/);
   assert.match(page, /breed-jump-nav/);
   assert.match(page, /breed-jump-link/);
@@ -53,6 +55,8 @@ test("global styles define the richer breed-page presentation and conversion rai
   assert.match(css, /\.breed-facts-card/);
   assert.match(css, /\.breed-highlight-grid/);
   assert.match(css, /\.breed-jump-nav/);
+  assert.match(css, /\.breed-hero-grid/);
+  assert.match(css, /\.breed-trait-list/);
   assert.match(css, /\.breed-faq-card/);
   assert.match(css, /\.breed-inline-media/);
   assert.match(css, /\.magazine-detail-layout/);

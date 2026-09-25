@@ -25,12 +25,18 @@ import { detectMagazineAnimal, getMagazineSidebarVariant, type MagazineSidebarVa
 import { splitHubLinkList } from "@/lib/magazine-hub";
 import { extractLeadImage } from "@/lib/magazine-lead-image";
 import { findTierwelt } from "@/lib/tierwelten";
+import {
+  enhanceBreedContent,
+  getBreedName,
+  getBreedSectionLinks,
+  getLeadText,
+  parseBreedProfile,
+  pickKeyFacts,
+} from "@/lib/magazine-breed";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-type BreedSectionLink = { id: string; label: string };
 
 export const revalidate = 300;
 
@@ -38,65 +44,6 @@ const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischve
 const UNLISTED_CATEGORY_SLUGS = new Set(["allgemein", "uncategorized"]);
 const CHRISTIAN_PAGE_DESCRIPTION =
   "Christian M. Haas ist Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber. Erfahre mehr über seine Tierverbundenheit, Dating-Erfahrung und redaktionellen Schwerpunkte.";
-
-function isBreedProfile(html: string) {
-  return /<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*<ul>/i.test(html);
-}
-
-function slugifyHeading(text: string) {
-  return stripHtml(text)
-    .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "") || "abschnitt";
-}
-
-function getBreedFacts(html: string) {
-  const match = html.match(/<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*<ul>([\s\S]*?)<\/ul>/i);
-  if (!match) return [] as string[];
-
-  return [...match[1].matchAll(/<li>([\s\S]*?)<\/li>/gi)]
-    .map((item) => decodeHtmlEntities(stripHtml(item[1])))
-    .filter(Boolean);
-}
-
-function getBreedSectionLinks(html: string): BreedSectionLink[] {
-  const links = [...html.matchAll(/<h2>([\s\S]*?)<\/h2>/gi)]
-    .map((match) => decodeHtmlEntities(stripHtml(match[1])))
-    .filter((label) => label && label.toLowerCase() !== "faq")
-    .map((label) => ({ id: slugifyHeading(label), label }));
-
-  return links.filter((link, index, all) => all.findIndex((entry) => entry.id === link.id) === index);
-}
-
-function enhanceBreedContent(html: string) {
-  let next = html.replace(/<p>\s*<strong>\s*Steckbrief\s*<\/strong>\s*<\/p>\s*(<ul>[\s\S]*?<\/ul>)/i, (_match, listHtml: string) => {
-    const list = listHtml
-      .replace(/^<ul>/i, '<ul class="breed-facts-list">')
-      .replace(/<li>([\s\S]*?)<\/li>/gi, '<li><span class="breed-facts-paw" aria-hidden="true">🐾</span><span class="breed-facts-copy">$1</span></li>');
-
-    return [
-      '<section class="breed-facts-card">',
-      '  <div class="breed-facts-header">',
-      '    <span class="eyebrow eyebrow-brand">Steckbrief</span>',
-      '    <h2>Steckbrief auf einen Blick</h2>',
-      '    <p>Die wichtigsten Rassemerkmale kompakt zusammengefasst — warm, schnell erfassbar und mit etwas mehr Charakter als eine einfache Standardliste.</p>',
-      '  </div>',
-      `  ${list}`,
-      '</section>',
-    ].join("");
-  });
-
-  next = next.replace(/<p>\s*(<img[\s\S]*?>)\s*<\/p>/gi, '<figure class="breed-inline-media">$1</figure>');
-  next = next.replace(/<h2>([\s\S]*?)<\/h2>/gi, (_match, headingHtml: string) => {
-    const headingText = decodeHtmlEntities(stripHtml(headingHtml));
-    const id = slugifyHeading(headingText);
-    return `<h2 id="${id}" class="breed-section-title">${headingHtml}</h2>`;
-  });
-
-  return next;
-}
 
 const HUB_EMOJI: Record<string, string> = { katze: "🐱", hund: "🐶", vogel: "🐦", pferd: "🐴" };
 
@@ -199,8 +146,21 @@ function MagazineConversionRail({
   );
 }
 
+function truncateAtWord(text: string, max: number) {
+  if (text.length <= max) return text;
+  return `${text.slice(0, max).replace(/\s+\S*$/, "")}…`;
+}
+
+const BREED_EYEBROW: Record<string, string> = { katze: "Katzenrasse", hund: "Hunderasse", vogel: "Vogelart", pferd: "Pferderasse" };
+
+/** Intro-Text: bei Rassen der erste Absatz – der WP-Auszug beginnt dort mit „Kurzbeschreibung …“. */
+function entryIntro(entry: MagazineEntry) {
+  const lead = parseBreedProfile(entry.content) ? getLeadText(entry.content) : "";
+  return lead || stripHtml(entry.excerpt || entry.content);
+}
+
 function entryDescription(slug: string, entry: MagazineEntry) {
-  return slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : stripHtml(entry.excerpt || entry.content).slice(0, 155);
+  return slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : entryIntro(entry).slice(0, 155);
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -232,7 +192,9 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   if (!entry) notFound();
 
   const authorProfile = entry.authorSlug ? await getAuthorProfile(entry.authorSlug) : null;
-  const breedPage = isBreedProfile(entry.content);
+  const breedProfile = parseBreedProfile(entry.content);
+  const breedPage = Boolean(breedProfile);
+  const breedName = getBreedName(entry.title);
   // Ohne Beitragsbild wird ein Bild ganz am Anfang des Inhalts zum Artikelbild (z. B. Apps-Beiträge).
   const leadImage = entry.featuredImage ? null : extractLeadImage(entry.content);
   const heroImage = entry.featuredImage
@@ -241,12 +203,13 @@ export default async function MagazineDetailPage({ params }: PageProps) {
       ? { src: leadImage.image.src, alt: leadImage.image.alt || entry.title }
       : null;
   const bodyContent = leadImage ? leadImage.content : entry.content;
-  const enhancedContent = breedPage ? enhanceBreedContent(bodyContent) : bodyContent;
+  const bodyBreedProfile = breedProfile && leadImage ? parseBreedProfile(bodyContent) : breedProfile;
+  const enhancedContent = bodyBreedProfile ? enhanceBreedContent(bodyBreedProfile, breedName) : bodyContent;
   const faqItems = getMagazineFaqItems(entry.content);
   const renderedContent = renderMagazineFaqSection(enhancedContent, getMagazineFaqSubject(entry.title));
   const schemaDedupedContent = relativizeInternalLinks(stripPublishedBookSchema(renderedContent));
-  const breedFacts = breedPage ? getBreedFacts(entry.content) : [];
-  const breedSections = breedPage ? getBreedSectionLinks(entry.content) : [];
+  const breedKeyFacts = breedProfile ? pickKeyFacts(breedProfile.facts) : [];
+  const breedSections = breedPage ? getBreedSectionLinks(entry.content, breedName) : [];
   const profileGraph = buildChristianBookProfileGraph({
     slug,
     christianSlug: "christian",
@@ -332,7 +295,48 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqGraph) }}
         />
       ) : null}
-      <section className={`hero-card hero-magazine${breedPage ? " hero-magazine-breed" : ""}`}>
+      {breedPage ? (
+        <section className="hero-card hero-magazine hero-magazine-breed">
+          <div className="breed-hero-grid">
+            <div className="breed-hero-copy">
+              <div className="breed-hero-eyebrows">
+                <span className="eyebrow">{BREED_EYEBROW[magazineAnimal] ?? "Rasseporträt"}</span>
+                <span className="eyebrow eyebrow-muted">Steckbrief &amp; Ratgeber</span>
+              </div>
+              <h1>{entry.title}</h1>
+              <p className="breed-hero-intro">{truncateAtWord(entryIntro(entry), 230)}</p>
+              <div className="meta-row">
+                {entry.authorName ? (
+                  <span>
+                    Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}
+                  </span>
+                ) : null}
+                {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
+                <Link className="button button-primary meta-row-cta" href="https://tierisch-verliebt.de/?AID=magazin">
+                  Kostenlos registrieren
+                </Link>
+              </div>
+            </div>
+            {heroImage ? (
+              <figure className="article-hero-media article-hero-media-breed breed-hero-media">
+                <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" fetchPriority="high" />
+              </figure>
+            ) : null}
+          </div>
+          {breedKeyFacts.length ? (
+            <dl className="breed-highlight-grid" aria-label={`${breedName} in Kennzahlen`}>
+              {breedKeyFacts.map((fact) => (
+                <div key={fact.label} className="breed-highlight-card">
+                  <span className="breed-highlight-icon" aria-hidden="true">{fact.icon}</span>
+                  <dt className="breed-highlight-label">{fact.label}</dt>
+                  <dd>{fact.value}</dd>
+                </div>
+              ))}
+            </dl>
+          ) : null}
+        </section>
+      ) : (
+      <section className="hero-card hero-magazine">
         <span className="eyebrow">{entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}</span>
         <h1>{entry.title}</h1>
         <p>{slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : `${stripHtml(entry.excerpt || entry.content).slice(0, 220)}…`}</p>
@@ -348,6 +352,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+      )}
 
       {slug === "christian" && authorProfile ? (
         <section className="content-section">
@@ -355,12 +360,27 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      {heroImage ? (
-        <section className={`content-section${breedPage ? " content-section-featured" : ""}`}>
-          <figure className={`article-hero-media${breedPage ? " article-hero-media-breed" : ""}`}>
+      {heroImage && !breedPage ? (
+        <section className="content-section">
+          <figure className="article-hero-media">
             <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" />
           </figure>
         </section>
+      ) : null}
+
+      {breedPage && breedSections.length ? (
+        <nav className="content-section content-section-tight breed-jump-nav-wrap" aria-label={`Inhalt: ${breedName}`}>
+          <div className="breed-jump-nav">
+            <span className="breed-jump-title">Inhalt</span>
+            <a className="breed-jump-link breed-jump-link-primary" href="#steckbrief">Steckbrief</a>
+            {breedSections.map((section) => (
+              <a key={section.id} className="breed-jump-link" href={`#${section.id}`} title={section.label}>
+                {section.label}
+              </a>
+            ))}
+            {faqItems.length ? <a className="breed-jump-link" href="#faq">FAQ</a> : null}
+          </div>
+        </nav>
       ) : null}
 
       {hub ? null : (
@@ -368,22 +388,6 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           <MagazineConversionRail title={entry.title} variant={sidebarVariant} />
         </section>
       )}
-
-      {breedPage && breedFacts.length ? (
-        <section className="content-section content-section-tight">
-          <div className="breed-highlight-grid" aria-label="Schnelle Rasseinfos">
-            {breedFacts.slice(0, 4).map((fact) => {
-              const [label, ...valueParts] = fact.split(":");
-              return (
-                <article key={fact} className="breed-highlight-card">
-                  <span className="breed-highlight-label">{label}</span>
-                  <strong>{valueParts.join(":").trim() || label}</strong>
-                </article>
-              );
-            })}
-          </div>
-        </section>
-      ) : null}
 
       {entry.categories.length ? (
         <section className={`content-section${breedPage ? " content-section-tight" : ""}`}>
@@ -393,19 +397,6 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                 {category.name}
               </Link>
             ))}
-          </div>
-        </section>
-      ) : null}
-
-      {breedPage && breedSections.length ? (
-        <section className="content-section content-section-tight">
-          <div className="breed-jump-nav" aria-label="Direkt zu den wichtigsten Abschnitten">
-            {breedSections.map((section) => (
-              <a key={section.id} className="breed-jump-link" href={`#${section.id}`}>
-                {section.label}
-              </a>
-            ))}
-            {faqItems.length ? <a className="breed-jump-link" href="#faq">FAQ</a> : null}
           </div>
         </section>
       ) : null}

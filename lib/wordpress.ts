@@ -211,7 +211,8 @@ function normalizeEntry(item: WpRestItem): MagazineEntry {
     link: item.link,
     title: decodeHtmlEntities(item.title?.rendered || ""),
     excerpt: item.excerpt?.rendered || "",
-    content: item.content?.rendered || "",
+    // NextGEN-Galerien rendert die REST-API nur als Platzhalter-Text.
+    content: (item.content?.rendered || "").replace(/ngg_shortcode_\d+_placeholder/g, ""),
     featuredImage: featured?.source_url,
     featuredImageAlt: featured?.alt_text ? decodeHtmlEntities(featured.alt_text) : undefined,
     authorName: author?.name ? decodeHtmlEntities(author.name) : undefined,
