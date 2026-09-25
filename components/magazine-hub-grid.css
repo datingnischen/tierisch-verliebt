@@ -170,12 +170,26 @@
 .hub-tile-cta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   width: fit-content;
+  min-height: 40px;
   margin-top: auto;
-  padding-top: 4px;
+  padding: 0 16px;
+  border: 1.5px solid var(--brand);
+  border-radius: 999px;
+  background: var(--brand-soft);
   color: var(--brand);
+  font-size: 0.92rem;
   font-weight: 800;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.hub-tile-cta:hover,
+.hub-tile-cta:focus-visible {
+  background: var(--brand);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .hub-tile-cta span {
