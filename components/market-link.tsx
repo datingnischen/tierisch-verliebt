@@ -3,7 +3,7 @@
 import type { MouseEvent, ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { MarketCode } from "@/lib/markets";
-import { publicUrl } from "@/lib/markets";
+import { publicUrl, withTrailingSlash } from "@/lib/markets";
 
 type Props = { market: MarketCode; path?: string; children: ReactNode; className?: string };
 
@@ -17,7 +17,7 @@ export function MarketLink({ market, path = "/", children, className }: Props) {
     if (host === "localhost" || host === "127.0.0.1" || host.endsWith(".vercel.app")) {
       event.preventDefault();
       const normalized = path === "/" ? "" : `/${path.replace(/^\/+|\/+$/g, "")}`;
-      router.push(`/${market}${normalized}`);
+      router.push(withTrailingSlash(`/${market}${normalized}`));
     }
   }
 

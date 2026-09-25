@@ -1,5 +1,6 @@
 import { cache } from "react";
 import { getMagazineEntryBySlug, SITE_URL } from "@/lib/wordpress";
+import { withTrailingSlash } from "@/lib/markets";
 
 export const ABOUT_OVERVIEW_PATH = "/ueber-uns";
 export const ABOUT_STORY_PATH = "/ueber-uns/geschichte";
@@ -14,19 +15,19 @@ export function canonicalMagazinePagePath(slug: string) {
 }
 
 export function aboutOverviewCanonical() {
-  return `${SITE_URL}${ABOUT_OVERVIEW_PATH}`;
+  return `${SITE_URL}${withTrailingSlash(ABOUT_OVERVIEW_PATH)}`;
 }
 
 export function aboutStoryCanonical() {
-  return `${SITE_URL}${ABOUT_STORY_PATH}`;
+  return `${SITE_URL}${withTrailingSlash(ABOUT_STORY_PATH)}`;
 }
 
 export function aboutReviewsCanonical() {
-  return `${SITE_URL}${ABOUT_REVIEWS_PATH}`;
+  return `${SITE_URL}${withTrailingSlash(ABOUT_REVIEWS_PATH)}`;
 }
 
 export function aboutSocialMediaCanonical() {
-  return `${SITE_URL}${ABOUT_SOCIAL_MEDIA_PATH}`;
+  return `${SITE_URL}${withTrailingSlash(ABOUT_SOCIAL_MEDIA_PATH)}`;
 }
 
 export const getAboutStoryPage = cache(async () => {

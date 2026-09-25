@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { SITE_URL, getAllMagazineEntries, type MagazineEntry } from "@/lib/wordpress";
 import { buildMagazineFaqGraph } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
@@ -8,7 +8,7 @@ import "./tierwelten.css";
 
 export const revalidate = 300;
 
-const PAGE_URL = `${SITE_URL}/magazin/tierwelten`;
+const PAGE_URL = `${SITE_URL}/magazin/tierwelten/`;
 const REGISTER_URL = "https://tierisch-verliebt.de/?AID=magazin";
 const TITLE = "Tierwelten: Katzen, Hunde, Vögel & Pferde für tierliebe Singles";
 const DESCRIPTION =
@@ -51,14 +51,14 @@ function buildPageGraph() {
           "@type": "ListItem",
           position: index + 1,
           name: world.name,
-          url: `${SITE_URL}/magazin/${world.slug}`,
+          url: `${SITE_URL}/magazin/${world.slug}/`,
         })),
       },
       {
         "@type": "BreadcrumbList",
         "@id": `${PAGE_URL}#breadcrumb`,
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin` },
+          { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin/` },
           { "@type": "ListItem", position: 2, name: "Tierwelten", item: PAGE_URL },
         ],
       },

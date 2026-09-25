@@ -1,6 +1,7 @@
 import { cache } from "react";
 import { ABOUT_SOCIAL_MEDIA_PATH } from "@/lib/about-section";
 import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/wordpress";
+import { withTrailingSlash } from "@/lib/markets";
 
 const SOURCE_URL = "https://tierisch-verliebt.de/social-media/";
 const REVIEWS_SOURCE_URL = "https://tierisch-verliebt.de/bewertungen-und-erfahrungen/";
@@ -130,5 +131,5 @@ export const getReviewsPage = cache(async (): Promise<ImportedStaticPage> => {
 });
 
 export function socialMediaCanonical() {
-  return `${SITE_URL}${ABOUT_SOCIAL_MEDIA_PATH}`;
+  return `${SITE_URL}${withTrailingSlash(ABOUT_SOCIAL_MEDIA_PATH)}`;
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { notFound } from "next/navigation";
 import { AuthorProfileFacts } from "@/components/author-profile-facts";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
@@ -16,6 +16,7 @@ import {
   stripHtml,
   type MagazineEntry,
 } from "@/lib/wordpress";
+import { withTrailingSlash } from "@/lib/markets";
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
@@ -213,12 +214,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: entry.title,
     description,
     alternates: {
-      canonical: `${SITE_URL}/magazin/${slug}`,
+      canonical: `${SITE_URL}/magazin/${slug}/`,
     },
     openGraph: {
       title: entry.title,
       description,
-      url: `${SITE_URL}/magazin/${slug}`,
+      url: `${SITE_URL}/magazin/${slug}/`,
       type: entry.type === "post" ? "article" : "website",
       images: entry.featuredImage ? [entry.featuredImage] : undefined,
     },
@@ -250,7 +251,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
     slug,
     christianSlug: "christian",
     content: entry.content,
-    canonicalUrl: `${SITE_URL}/magazin/christian`,
+    canonicalUrl: `${SITE_URL}/magazin/christian/`,
     siteUrl: SITE_URL,
     profileName: "Christian M. Haas",
     profileDescription: CHRISTIAN_PAGE_DESCRIPTION,
@@ -266,8 +267,8 @@ export default async function MagazineDetailPage({ params }: PageProps) {
     ],
     breadcrumb: [
       { name: "Startseite", url: SITE_URL },
-      { name: "Magazin", url: `${SITE_URL}/magazin` },
-      { name: "Christian M. Haas", url: `${SITE_URL}/magazin/christian` },
+      { name: "Magazin", url: `${SITE_URL}/magazin/` },
+      { name: "Christian M. Haas", url: `${SITE_URL}/magazin/christian/` },
     ],
     dateModified: entry.modified || undefined,
   });
@@ -288,7 +289,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
       ? null
       : buildMagazineArticleGraph({
           siteUrl: SITE_URL,
-          url: `${SITE_URL}/magazin/${slug}`,
+          url: `${SITE_URL}/magazin/${slug}/`,
           type: entry.type,
           headline: decodeHtmlEntities(entry.title),
           description: entryDescription(slug, entry),
@@ -298,16 +299,16 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           author: entry.authorName
             ? {
                 name: authorProfile?.name || entry.authorName,
-                url: authorProfile ? `${SITE_URL}${authorProfile.profileUrl}` : undefined,
+                url: authorProfile ? `${SITE_URL}${withTrailingSlash(authorProfile.profileUrl)}` : undefined,
               }
             : undefined,
           category: articleCategory
-            ? { name: decodeHtmlEntities(articleCategory.name), url: `${SITE_URL}/magazin/thema/${articleCategory.slug}` }
+            ? { name: decodeHtmlEntities(articleCategory.name), url: `${SITE_URL}/magazin/thema/${articleCategory.slug}/` }
             : undefined,
         });
   const faqGraph = buildMagazineFaqGraph({
     items: faqItems,
-    pageUrl: `${SITE_URL}/magazin/${slug}`,
+    pageUrl: `${SITE_URL}/magazin/${slug}/`,
     pageName: `Häufige Fragen zu ${decodeHtmlEntities(entry.title)}`,
   });
 

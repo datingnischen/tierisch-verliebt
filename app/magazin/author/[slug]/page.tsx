@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { getAuthorPosts, getAuthorProfile, getKnownAuthorSlugs, isNoindexAuthorArchive } from "@/lib/author-profiles";
 import { SITE_URL, formatUpdatedDate, stripHtml } from "@/lib/wordpress";
+import { withTrailingSlash } from "@/lib/markets";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 type PageProps = {
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: profile.name,
     description: profile.bio.slice(0, 155),
     alternates: {
-      canonical: `${SITE_URL}${canonicalPath}`,
+      canonical: `${SITE_URL}${withTrailingSlash(canonicalPath)}`,
     },
     robots: shouldNoindex
       ? {
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: profile.name,
       description: profile.bio.slice(0, 155),
-      url: `${SITE_URL}${canonicalPath}`,
+      url: `${SITE_URL}${withTrailingSlash(canonicalPath)}`,
       images: profile.imageUrl ? [profile.imageUrl] : undefined,
     },
   };
@@ -65,7 +66,7 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
   const latestPost = posts[0];
   const highlightedPosts = posts.slice(0, 6);
   const canonicalPath = slug === "christian-m-haas" ? CHRISTIAN_CANONICAL_PATH : profile.profileUrl;
-  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  const canonicalUrl = `${SITE_URL}${withTrailingSlash(canonicalPath)}`;
   const shouldNoindex = isNoindexAuthorArchive(slug);
   const isEditorialTeamPage = slug === "redaktion";
 
@@ -76,7 +77,7 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin` },
+            { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin/` },
             { "@type": "ListItem", position: 2, name: profile.name, item: canonicalUrl },
           ],
         },

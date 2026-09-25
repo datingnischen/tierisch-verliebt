@@ -11,9 +11,9 @@ test("christian author route canonicalizes to the ranking page and stays noindex
   assert.ok(authorRoute.includes('const CHRISTIAN_CANONICAL_PATH = "/magazin/christian"'));
   assert.ok(authorRoute.includes('const canonicalPath = slug === "christian-m-haas" ? CHRISTIAN_CANONICAL_PATH : `/magazin/author/${slug}`;'));
   assert.ok(authorRoute.includes("const shouldNoindex = isNoindexAuthorArchive(slug);"));
-  assert.ok(authorRoute.includes('canonical: `${SITE_URL}${canonicalPath}`'));
+  assert.ok(authorRoute.includes('canonical: `${SITE_URL}${withTrailingSlash(canonicalPath)}`'));
   assert.match(authorRoute, /robots:\s*shouldNoindex[\s\S]*index:\s*false[\s\S]*follow:\s*true/);
-  assert.ok(authorRoute.includes('url: `${SITE_URL}${canonicalPath}`'));
+  assert.ok(authorRoute.includes('url: `${SITE_URL}${withTrailingSlash(canonicalPath)}`'));
 });
 
 test("indexable author routes emit bounded structured data while the christian alias stays graph-free", async () => {

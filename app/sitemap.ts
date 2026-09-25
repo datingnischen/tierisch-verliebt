@@ -3,6 +3,7 @@ import { ABOUT_OVERVIEW_PATH, ABOUT_REVIEWS_PATH, ABOUT_SOCIAL_MEDIA_PATH, ABOUT
 import { getKnownAuthorSlugs, isNoindexAuthorArchive } from "@/lib/author-profiles";
 import { getMarketCityPages } from "@/lib/market-partnersuche";
 import { SITE_URL, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/wordpress";
+import { withTrailingSlash } from "@/lib/markets";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [posts, pages, categories, authors] = await Promise.all([
@@ -19,42 +20,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     {
-      url: `${SITE_URL}/magazin`,
+      url: `${SITE_URL}/magazin/`,
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/magazin/inhalt`,
+      url: `${SITE_URL}/magazin/inhalt/`,
       changeFrequency: "daily",
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/partnersuche`,
+      url: `${SITE_URL}/partnersuche/`,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}${ABOUT_OVERVIEW_PATH}`,
+      url: `${SITE_URL}${withTrailingSlash(ABOUT_OVERVIEW_PATH)}`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${SITE_URL}${ABOUT_STORY_PATH}`,
+      url: `${SITE_URL}${withTrailingSlash(ABOUT_STORY_PATH)}`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${SITE_URL}${ABOUT_REVIEWS_PATH}`,
+      url: `${SITE_URL}${withTrailingSlash(ABOUT_REVIEWS_PATH)}`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${SITE_URL}${ABOUT_SOCIAL_MEDIA_PATH}`,
+      url: `${SITE_URL}${withTrailingSlash(ABOUT_SOCIAL_MEDIA_PATH)}`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     ...posts.map((post) => ({
-      url: `${SITE_URL}/magazin/${post.slug}`,
+      url: `${SITE_URL}/magazin/${post.slug}/`,
       lastModified: post.modified || post.date,
       changeFrequency: "weekly" as const,
       priority: 0.8,
@@ -62,25 +63,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...pages
       .filter((page) => page.slug !== "ueber-uns")
       .map((page) => ({
-      url: `${SITE_URL}/magazin/${page.slug}`,
+      url: `${SITE_URL}/magazin/${page.slug}/`,
       lastModified: page.modified || page.date,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
     ...categories.map((category) => ({
-      url: `${SITE_URL}/magazin/thema/${category.slug}`,
+      url: `${SITE_URL}/magazin/thema/${category.slug}/`,
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
     ...authors
       .filter((slug) => !isNoindexAuthorArchive(slug))
       .map((slug) => ({
-        url: `${SITE_URL}/magazin/author/${slug}`,
+        url: `${SITE_URL}/magazin/author/${slug}/`,
         changeFrequency: "monthly" as const,
         priority: 0.6,
       })),
     ...getMarketCityPages("de").map((page) => ({
-      url: `${SITE_URL}${page.path}`,
+      url: `${SITE_URL}${withTrailingSlash(page.path)}`,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),

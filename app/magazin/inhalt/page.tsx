@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { SITE_URL, formatGermanDate, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/wordpress";
 import { buildMagazineIndex, countIndexLinks } from "@/lib/magazine-index";
 import { serializeJsonLd } from "@/lib/json-ld";
@@ -8,7 +8,7 @@ import "./inhalt.css";
 
 export const revalidate = 300;
 
-const PAGE_URL = `${SITE_URL}/magazin/inhalt`;
+const PAGE_URL = `${SITE_URL}/magazin/inhalt/`;
 const TITLE = "Inhaltsverzeichnis: alle Magazin-Beiträge & Seiten A–Z";
 const DESCRIPTION =
   "Alle Ratgeber-Beiträge, Hunderassen, Katzenrassen und Kleintier-Seiten des tierisch-verliebt.de Magazins auf einen Blick – nach Thema sortiert und durchsuchbar.";
@@ -29,7 +29,7 @@ export default async function MagazineIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin` },
+      { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin/` },
       { "@type": "ListItem", position: 2, name: "Inhaltsverzeichnis", item: PAGE_URL },
     ],
   };

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Link from "next/link";
+import Link from "@/components/link";
 import { getHubLetter, getHubTileFacts, getHubTileTeaser, type HubLink } from "@/lib/magazine-hub";
 import { findTierwelt } from "@/lib/tierwelten";
 import { getEntryCoverImage, type MagazineEntry } from "@/lib/wordpress";

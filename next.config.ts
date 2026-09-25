@@ -23,6 +23,10 @@ export default function nextConfig(phase: string): NextConfig {
 
   return {
     turbopack: { root: process.cwd() },
+    // Seiten-URLs enden auf "/" wie auf der ICONY-Plattform. Die Umleitung übernimmt proxy.ts,
+    // weil nur dort das interne Länderpräfix (/at/…, /ch/…) bekannt ist.
+    trailingSlash: true,
+    skipTrailingSlashRedirect: true,
     assetPrefix: isDev ? undefined : `${assetHost}${assetPathPrefix}`,
     async rewrites() {
       return [

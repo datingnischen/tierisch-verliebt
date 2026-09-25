@@ -111,7 +111,7 @@ export function buildMagazineArticleGraph(input: MagazineArticleGraphInput) {
   const isArticle = input.type === "post";
   const trail = [
     { name: "Startseite", url: input.siteUrl },
-    { name: "Magazin", url: `${input.siteUrl}/magazin` },
+    { name: "Magazin", url: `${input.siteUrl}/magazin/` },
     ...(input.category ? [input.category] : []),
     { name: input.headline, url: input.url },
   ];

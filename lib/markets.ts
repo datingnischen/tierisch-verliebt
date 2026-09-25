@@ -24,9 +24,26 @@ export function getMarket(code: MarketCode): MarketConfig {
   return MARKETS[code];
 }
 
+const FILE_PATH_PATTERN = /\/[^/]*\.[a-z0-9]+$/i;
+
+/**
+ * Seitenpfade enden immer auf einen Schrägstrich, wie die ICONY-Plattform (/login/, /suche/).
+ * Dateien wie /sitemap.xml bleiben ohne. Query und Anker hängen hinter dem Schrägstrich.
+ */
+export function withTrailingSlash(pathname: string): string {
+  const match = pathname.match(/^([^?#]*)(.*)$/);
+  const path = match?.[1] ?? pathname;
+  const suffix = match?.[2] ?? "";
+  if (!path || path.endsWith("/") || FILE_PATH_PATTERN.test(path)) {
+    return `${path || "/"}${suffix}`;
+  }
+  return `${path}/${suffix}`;
+}
+
+/** Absolute URL auf der Live-Domain des Markts, Seitenpfade mit Schrägstrich am Ende. */
 export function publicUrl(market: MarketCode, pathname = "/"): string {
-  const normalized = pathname === "/" ? "/" : `/${pathname.replace(/^\/+|\/+$/g, "")}`;
-  return `https://${getMarket(market).domain}${normalized}`;
+  const trimmed = pathname.replace(/^\/+/, "");
+  return `https://${getMarket(market).domain}${withTrailingSlash(`/${trimmed}`)}`;
 }
 
 export type MarketRequestResolution =
@@ -43,14 +60,14 @@ export type MarketRequestResolution =
 
 const INTERNAL_PATH = /^\/market-(?:home|partnersuche|placeholder|robots|sitemap)(?:\/|$)/;
 const PLATFORM_PATH = /^\/(?:login|registration|suche)(?:\/|$)/;
-const PASS_PREFIXES = ["/_next/", "/app-assets/", "/api/"];
+const PASS_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
 const STATIC_FILE = /\.(?:avif|css|gif|ico|jpe?g|js|json|map|png|svg|webp|woff2?)$/i;
 
 function shouldPass(pathname: string) {
   return pathname === "/favicon.ico" || PASS_PREFIXES.some((prefix) => pathname.startsWith(prefix)) || STATIC_FILE.test(pathname);
 }
 
-function marketForHostname(hostname = ""): MarketCode | null {
+export function marketForHostname(hostname = ""): MarketCode | null {
   const normalized = hostname.toLowerCase().split(",")[0].trim().replace(/:\d+$/, "").replace(/^www\./, "");
   return MARKET_CODES.find((market) => getMarket(market).domain === normalized) ?? null;
 }

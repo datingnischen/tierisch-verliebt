@@ -15,8 +15,19 @@ test("supports the three tierisch-verliebt public markets", async () => {
   assert.equal(getMarket("de").domain, "tierisch-verliebt.de");
   assert.equal(getMarket("at").domain, "tierisch-verliebt.at");
   assert.equal(getMarket("ch").domain, "tierisch-verliebt.ch");
-  assert.equal(publicUrl("at", "/partnersuche/wien"), "https://tierisch-verliebt.at/partnersuche/wien");
-  assert.equal(publicUrl("de", "/partnersuche/berlin"), "https://tierisch-verliebt.de/partnersuche/berlin");
+  assert.equal(publicUrl("at", "/partnersuche/wien"), "https://tierisch-verliebt.at/partnersuche/wien/");
+  assert.equal(publicUrl("de", "/partnersuche/berlin"), "https://tierisch-verliebt.de/partnersuche/berlin/");
+});
+
+test("public page URLs end with a slash, files stay without", async () => {
+  const { publicUrl, withTrailingSlash } = await loadMarkets();
+  assert.equal(publicUrl("ch"), "https://tierisch-verliebt.ch/");
+  assert.equal(publicUrl("de", "/registration/?AID=location"), "https://tierisch-verliebt.de/registration/?AID=location");
+  assert.equal(publicUrl("de", "/?AID=magazin"), "https://tierisch-verliebt.de/?AID=magazin");
+  assert.equal(publicUrl("at", "/sitemap.xml"), "https://tierisch-verliebt.at/sitemap.xml");
+  assert.equal(publicUrl("de", "/datenschutz.html"), "https://tierisch-verliebt.de/datenschutz.html");
+  assert.equal(withTrailingSlash("/magazin/zwergspitz?x=1#faq"), "/magazin/zwergspitz/?x=1#faq");
+  assert.equal(withTrailingSlash("/app-assets/brand/icon.png"), "/app-assets/brand/icon.png");
 });
 
 test("routes prefixed DE plus hidden AT/CH previews", async () => {

@@ -1,4 +1,5 @@
 import { cache } from "react";
+import { withTrailingSlash } from "#markets";
 
 const MAGAZINE_API_BASE = "https://tierisch-verliebt.de/magazin/wp-json/wp/v2";
 export const SITE_URL = "https://tierisch-verliebt.vercel.app";
@@ -149,11 +150,11 @@ const INTERNAL_CONTENT_LINK =
   /href=(["'])https?:\/\/(?:www\.)?tierisch-verliebt\.de(\/(?:magazin|partnersuche|ueber-uns|social-media)(?:[\/?#][^"']*)?)\1/gi;
 
 // WordPress speichert interne Links absolut; relativ funktionieren sie auf Produktion und auf Vercel-Previews.
+// Seitenpfade enden wie überall auf "/", sonst kostet jeder Klick eine 308-Umleitung.
 export function relativizeInternalLinks(html = "") {
   return html.replace(INTERNAL_CONTENT_LINK, (match, quote: string, path: string) => {
     if (/\/wp-(?:content|admin|json)\//i.test(path)) return match;
-    const relative = path.replace(/\/+(?=[?#]|$)/, "");
-    return `href=${quote}${relative}${quote}`;
+    return `href=${quote}${withTrailingSlash(path)}${quote}`;
   });
 }
 

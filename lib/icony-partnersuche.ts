@@ -1,5 +1,6 @@
 import { cache } from "react";
 import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/wordpress";
+import { withTrailingSlash } from "@/lib/markets";
 
 const SOURCE_BASE = "https://tierisch-verliebt.de";
 const PARTNERSUCHE_BASE = `${SOURCE_BASE}/partnersuche/`;
@@ -200,5 +201,5 @@ export const getNearbyPartnersucheCities = cache(async (slug: string) => {
 });
 
 export function partnersucheCanonical(path = "/partnersuche") {
-  return `${SITE_URL}${path}`;
+  return `${SITE_URL}${withTrailingSlash(path)}`;
 }

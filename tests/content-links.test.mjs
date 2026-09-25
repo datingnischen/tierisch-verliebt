@@ -2,9 +2,9 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { relativizeInternalLinks } from "../lib/wordpress.ts";
 
-test("internal WordPress content links become relative for Vercel previews", () => {
+test("internal WordPress content links become relative with trailing slash for Vercel previews", () => {
   const html = `<a href="https://tierisch-verliebt.de/magazin/zwergspitz/">Zwergspitz</a> <a href="https://www.tierisch-verliebt.de/partnersuche/berlin/#top">Berlin</a>`;
-  assert.equal(relativizeInternalLinks(html), `<a href="/magazin/zwergspitz">Zwergspitz</a> <a href="/partnersuche/berlin#top">Berlin</a>`);
+  assert.equal(relativizeInternalLinks(html), `<a href="/magazin/zwergspitz/">Zwergspitz</a> <a href="/partnersuche/berlin/#top">Berlin</a>`);
 });
 
 test("uploads, registration and external links stay absolute", () => {

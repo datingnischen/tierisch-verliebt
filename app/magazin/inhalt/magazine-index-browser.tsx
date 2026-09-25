@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/link";
 import { useDeferredValue, useMemo, useState } from "react";
 import type { MagazineIndexItem, MagazineIndexSection } from "@/lib/magazine-index";
 

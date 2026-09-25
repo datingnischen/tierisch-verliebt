@@ -13,7 +13,7 @@ test("christian page uses dedicated SEO and a CMS-gated profile graph", async ()
   assert.match(page, /buildChristianBookProfileGraph\(\{/);
   assert.match(page, /christianSlug: "christian"/);
   assert.match(page, /content: entry\.content/);
-  assert.match(page, /canonicalUrl: `\$\{SITE_URL\}\/magazin\/christian`/);
+  assert.match(page, /canonicalUrl: `\$\{SITE_URL\}\/magazin\/christian\/`/);
   assert.match(page, /siteUrl: SITE_URL/);
   assert.match(page, /sameAs: authorProfile\?\.sameAs/);
   assert.match(page, /dateModified: entry\.modified \|\| undefined/);

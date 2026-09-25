@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { magazineTopicEmoji } from "@/lib/magazine-index";
 import {
   MAGAZINE_POSTS_PER_PAGE,
@@ -75,13 +75,13 @@ export const metadata: Metadata = {
   description:
     "Entdecke Magazin-Inhalte rund um Hund, Katze und weitere Tierwelten – mit klaren Einstiegen, echten Autoren und direktem Weg zur tierlieben Partnersuche.",
   alternates: {
-    canonical: `${SITE_URL}/magazin`,
+    canonical: `${SITE_URL}/magazin/`,
   },
   openGraph: {
     title: "Tier-Magazin für tierliebe Singles",
     description:
       "Entdecke Magazin-Inhalte rund um Hund, Katze und weitere Tierwelten – mit klaren Einstiegen, echten Autoren und direktem Weg zur tierlieben Partnersuche.",
-    url: `${SITE_URL}/magazin`,
+    url: `${SITE_URL}/magazin/`,
   },
 };
 

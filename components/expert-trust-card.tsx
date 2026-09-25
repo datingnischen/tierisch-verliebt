@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/link";
 import { AuthorSocialIcon } from "@/components/author-social-icon";
 import type { AuthorProfile } from "@/lib/author-profiles";
 

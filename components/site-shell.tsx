@@ -92,7 +92,7 @@ function registrationHref(market: MarketCode, pathname: string) {
 }
 
 function marketSwitchHref(currentMarket: MarketCode, targetMarket: MarketCode) {
-  return currentMarket === targetMarket ? "/" : `/${targetMarket}`;
+  return currentMarket === targetMarket ? "/" : `/${targetMarket}/`;
 }
 
 function Brand({ market }: { market: MarketCode }) {

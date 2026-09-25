@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { notFound, redirect } from "next/navigation";
 import { MAGAZINE_POSTS_PER_PAGE, SITE_URL, getMagazinePostsPage, stripHtml } from "@/lib/wordpress";
 
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!pageNumber) return {};
   if (pageNumber === 1) {
     return {
-      alternates: { canonical: `${SITE_URL}/magazin` },
+      alternates: { canonical: `${SITE_URL}/magazin/` },
     };
   }
 
@@ -28,12 +28,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `Tier-Magazin – Seite ${pageNumber}`,
     description: `Weitere Magazin-Beiträge und Tierwelten für tierliebe Singles auf Seite ${pageNumber}.`,
     alternates: {
-      canonical: `${SITE_URL}/magazin/page/${pageNumber}`,
+      canonical: `${SITE_URL}/magazin/page/${pageNumber}/`,
     },
     openGraph: {
       title: `Tier-Magazin – Seite ${pageNumber}`,
       description: `Weitere Magazin-Beiträge und Tierwelten für tierliebe Singles auf Seite ${pageNumber}.`,
-      url: `${SITE_URL}/magazin/page/${pageNumber}`,
+      url: `${SITE_URL}/magazin/page/${pageNumber}/`,
     },
   };
 }

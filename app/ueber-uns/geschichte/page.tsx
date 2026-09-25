@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, aboutStoryCanonical, getAboutStoryPage } from "@/lib/about-section";

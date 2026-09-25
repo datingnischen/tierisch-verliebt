@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/link";
 import { notFound } from "next/navigation";
 import { serializeJsonLd } from "@/lib/json-ld";
 import {
@@ -59,12 +59,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: category.name,
     description,
     alternates: {
-      canonical: `${SITE_URL}/magazin/thema/${slug}`,
+      canonical: `${SITE_URL}/magazin/thema/${slug}/`,
     },
     openGraph: {
       title: category.name,
       description,
-      url: `${SITE_URL}/magazin/thema/${slug}`,
+      url: `${SITE_URL}/magazin/thema/${slug}/`,
     },
   };
 }
@@ -75,7 +75,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
   if (!category) notFound();
 
   const [posts, categories] = await Promise.all([getMagazinePostsByCategory(category.id), getMagazineCategories()]);
-  const pageUrl = `${SITE_URL}/magazin/thema/${slug}`;
+  const pageUrl = `${SITE_URL}/magazin/thema/${slug}/`;
   const emoji = topicEmoji(slug);
   const intro =
     stripHtml(category.description) ||
@@ -106,7 +106,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
             "@type": "ListItem",
             position: index + 1,
             name: post.title,
-            url: `${SITE_URL}/magazin/${post.slug}`,
+            url: `${SITE_URL}/magazin/${post.slug}/`,
           })),
         },
       },
@@ -114,7 +114,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
         "@type": "BreadcrumbList",
         "@id": `${pageUrl}#breadcrumb`,
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin` },
+          { "@type": "ListItem", position: 1, name: "Magazin", item: `${SITE_URL}/magazin/` },
           { "@type": "ListItem", position: 2, name: category.name, item: pageUrl },
         ],
       },

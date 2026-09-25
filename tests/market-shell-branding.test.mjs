@@ -31,6 +31,6 @@ test("footer keeps legal links on live market domains and market switch links pr
   assert.ok(shell.includes('href={publicUrl(market, "/datenschutz.html")}'));
   assert.ok(shell.includes('href={publicUrl(market, "/impressum.html")}'));
   assert.ok(shell.includes('function marketSwitchHref(currentMarket: MarketCode, targetMarket: MarketCode)'));
-  assert.ok(shell.includes('return currentMarket === targetMarket ? "/" : `/${targetMarket}`;'));
+  assert.ok(shell.includes('return currentMarket === targetMarket ? "/" : `/${targetMarket}/`;'));
   assert.ok(shell.includes('href={marketSwitchHref(market, "at")}'));
 });
