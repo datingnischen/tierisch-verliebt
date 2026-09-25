@@ -43,6 +43,7 @@ npm run lint
 npm run build
 npm run import:partnersuche  # Stadtseiten neu von ICONY importieren (Python 3, nur Standardbibliothek)
 npm run test:import          # Offline-Tests für den Importer
+python scripts/build_country_maps.py  # Landesumrisse für die Karte auf /partnersuche (Natural Earth)
 ```
 
 ## Stadtseiten neu importieren

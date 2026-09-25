@@ -1,14 +1,13 @@
 import type { CSSProperties, ReactNode } from "react";
-import { Bricolage_Grotesque } from "next/font/google";
 import { IconySinglesWidget } from "@/components/icony-singles-widget";
 import { MarketLink } from "@/components/market-link";
 import { ANIMAL_LABELS, TOPIC_LABELS, buildCityGuide, cityGeo, nearestCities, type GuideTopic } from "@/lib/city-guide";
 import { getMarketCityPages, type MarketCityPage } from "@/lib/market-partnersuche";
 import type { MarketCode } from "@/lib/markets";
 import { AnimalIcon, ClockIcon, HeartIcon, PawIcon, PinIcon, TopicIcon } from "./tier-icons";
+import { display } from "./display-font";
 import "./tier-city-page.css";
 
-const display = Bricolage_Grotesque({ subsets: ["latin"], weight: ["500", "700", "800"], variable: "--tvc-display" });
 
 type Props = { market: MarketCode; city: MarketCityPage; expert?: ReactNode };
 

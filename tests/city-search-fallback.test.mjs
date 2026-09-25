@@ -18,9 +18,10 @@ test("city hubs point to the individual ICONY search on the live market domain",
     assert.equal(publicUrl(market, "/suche/?AID=location"), `https://tierisch-verliebt.${market}/suche/?AID=location`);
   }
 
-  for (const [path, market] of [["../app/partnersuche/page.tsx", '"de"'], ["../app/market-partnersuche/[market]/page.tsx", "{market}"]]) {
-    const page = await source(path);
-    assert.ok(page.includes(`<CitySearchFallback market=${market} />`), `${path} must render the search fallback`);
-    assert.ok(page.indexOf("<CitySearchFallback") > page.indexOf('className="city-grid"'), `${path} must place the fallback below the city grid`);
+  for (const path of ["../app/partnersuche/page.tsx", "../app/market-partnersuche/[market]/page.tsx"]) {
+    assert.match(await source(path), /<TierCityHub market=/, `${path} must use the shared city hub`);
   }
+  const hub = await source("../components/city-page/tier-city-hub.tsx");
+  assert.ok(hub.includes("<CitySearchFallback market={market} />"), "hub must render the search fallback");
+  assert.ok(hub.indexOf("<CitySearchFallback") > hub.indexOf("<CityFinder"), "hub must place the fallback below the city grid");
 });
