@@ -147,6 +147,8 @@ export function SiteHeader({ market = "de" }: Props) {
             <div className="header-menu-panel">
               <nav className="main-nav compact-menu-nav" aria-label="Hauptnavigation">
                 {items.map((item) => <span key={item.href}>{localLink(market, item.href, item.label)}</span>)}
+                {/* Nur auf sehr schmalen Handys sichtbar – dort weicht „Login“ aus der Kopfzeile ins Menü. */}
+                <span className="menu-login"><a href={publicUrl(market, "/login/")}>Login</a></span>
                 {regional ? <span className="menu-market-label">{config.countryName}</span> : null}
               </nav>
             </div>

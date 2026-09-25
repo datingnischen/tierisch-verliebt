@@ -930,6 +930,20 @@ a.social-bubble:hover {
   background: #fff0f0;
 }
 
+.menu-login {
+  display: none;
+}
+
+@media (max-width: 359px) {
+  .compact-header-actions .login-link {
+    display: none;
+  }
+
+  .menu-login {
+    display: block;
+  }
+}
+
 .home-stage {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
@@ -2728,9 +2742,10 @@ body {
     justify-content: space-between;
   }
 
+  /* Menü-Button sitzt rechts – die Box klappt nach links auf, sonst ragt sie aus dem Bild. */
   .header-menu-panel {
-    left: 0;
-    right: auto;
+    left: auto;
+    right: 0;
   }
 
   .hero-card,
@@ -2813,6 +2828,39 @@ body {
 }
 
 @media (max-width: 480px) {
+  /* Kopfzeile: Logo + Login + Registrieren + Menü müssen in 343 px (375er-Handy) passen. */
+  .site-header-shell {
+    padding: 8px 12px;
+  }
+
+  .site-header-bar {
+    width: 100%;
+  }
+
+  .compact-header-bar {
+    gap: 8px;
+  }
+
+  .brand-logo-image {
+    height: 36px;
+    max-width: 30vw;
+  }
+
+  .compact-header-actions {
+    width: auto;
+    gap: 4px;
+  }
+
+  .compact-header-actions .login-link {
+    padding: 8px;
+  }
+
+  .compact-header-actions .header-register {
+    min-height: 40px;
+    padding: 8px 12px;
+    font-size: 0.92rem;
+  }
+
   .author-side-card,
   .author-post-card-body {
     padding: 18px;
