@@ -24,7 +24,7 @@ type EntryPoint = {
   label: string;
   teaser: string;
   icon: ReactNode;
-  size?: "big" | "wide";
+  size?: "big" | "banner";
 };
 
 // Kuratierte Einstiege statt alphabetischer Seitenliste; Bilder kommen aus den WordPress-Seiten.
@@ -32,9 +32,9 @@ const MAGAZINE_ENTRY_POINTS: EntryPoint[] = [
   { slug: "hunderassen", href: "/magazin/hunderassen", label: "Hunderassen", teaser: "Rassenporträts von Akita Inu bis Zwergspitz", icon: <DogIcon />, size: "big" },
   { slug: "katzenrassen", href: "/magazin/katzenrassen", label: "Katzenrassen", teaser: "Von Maine Coon bis Sphynx", icon: <CatIcon /> },
   { slug: "voegel-uebersicht", href: "/magazin/voegel-uebersicht", label: "Vögel", teaser: "Wellensittich & Co. artgerecht halten", icon: <BirdIcon /> },
-  { slug: "tierwelten", href: "/magazin/tierwelten", label: "Unsere Tierwelten", teaser: "Hund, Katze, Vogel und Kleintier im Überblick", icon: <PawIcon />, size: "wide" },
   { slug: "kleintiere", href: "/magazin/kleintiere", label: "Kleintiere", teaser: "Kaninchen, Hamster, Meerschweinchen", icon: <BunnyIcon /> },
   { slug: "fci-gruppen", href: "/magazin/fci-gruppen", label: "FCI-Gruppen", teaser: "So werden Hunderassen eingeteilt", icon: <HorseIcon /> },
+  { slug: "tierwelten", href: "/magazin/tierwelten", label: "Unsere Tierwelten", teaser: "Hund, Katze, Vogel und Kleintier im Überblick", icon: <PawIcon />, size: "banner" },
 ];
 
 function categoryIcon(slug: string) {
@@ -123,7 +123,7 @@ export default async function MagazineOverviewPage() {
           <span className="tvm-topic-icon" aria-hidden="true"><PawIcon /></span>
           <span><strong>Alles von A–Z</strong><small>Beiträge &amp; Seiten durchsuchen</small></span>
         </Link>
-        {categories.slice(0, 8).map((category) => (
+        {categories.slice(0, 6).map((category) => (
           <Link key={category.slug} className="tvm-topic" href={`/magazin/thema/${category.slug}`}>
             <span className="tvm-topic-icon" aria-hidden="true">{categoryIcon(category.slug)}</span>
             <span>
