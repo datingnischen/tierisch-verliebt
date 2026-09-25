@@ -46,6 +46,35 @@ export function publicUrl(market: MarketCode, pathname = "/"): string {
   return `https://${getMarket(market).domain}${withTrailingSlash(`/${trimmed}`)}`;
 }
 
+/** Vorschau-Hosts (lokal, Vercel): Dort liegen alle Märkte unter /de, /at, /ch. */
+export function isPreviewHost(hostname = ""): boolean {
+  const host = hostname.toLowerCase();
+  return host === "localhost" || host === "127.0.0.1" || host.endsWith(".vercel.app");
+}
+
+/** Pfad einer Next.js-Seite auf dem Vorschau-Host, z. B. ("ch", "/partnersuche/zuerich") → "/ch/partnersuche/zuerich/". */
+export function previewPath(market: MarketCode, pathname = "/"): string {
+  const normalized = pathname === "/" ? "" : `/${pathname.replace(/^\/+/, "")}`;
+  return withTrailingSlash(`/${market}${normalized}`);
+}
+
+const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns|bewertungen-und-erfahrungen)(?:\/|$)/;
+const REGIONAL_NEXT_PAGE = /^\/partnersuche(?:\/[a-z0-9-]+)?\/?$/;
+
+/**
+ * Live-URL einer Seite, die Next.js selbst rendert, auf den Vorschau-Pfad abbilden (für Links im
+ * importierten HTML). ICONY-Seiten (Login, Suche, Impressum …) bleiben null und damit live.
+ */
+export function previewPathForUrl(href: string): string | null {
+  let url: URL;
+  try { url = new URL(href); } catch { return null; }
+  const market = marketForHostname(url.hostname);
+  if (!market || url.search) return null;
+  const path = url.pathname || "/";
+  const served = path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path);
+  return served ? `${previewPath(market, path)}${url.hash}` : null;
+}
+
 export type MarketRequestResolution =
   | { action: "pass" }
   | { action: "not-found" }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { TierCityPage } from "@/components/city-page/tier-city-page";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
+import { PreviewLinkRewriter } from "@/components/preview-link-rewriter";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { getMarketCityPage, getMarketCityPages } from "@/lib/market-partnersuche";
 import { publicUrl } from "@/lib/markets";
@@ -37,10 +38,13 @@ export default async function PartnersucheCityPage({ params }: PageProps) {
   if (!city) notFound();
 
   return (
+    <>
     <TierCityPage
       market="de"
       city={city}
       expert={expert ? <ExpertTrustCard profile={expert} eyebrow="Unser Datingexperte" title={`Christian begleitet tierliebe Dating-Themen und regionale Einstiege auch für ${city.cityName}.`} primaryLabel="Zum Expertenprofil" registrationHref={city.registrationUrl} /> : null}
     />
+    <PreviewLinkRewriter selector=".tvc-rich" />
+    </>
   );
 }
