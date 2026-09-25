@@ -9,7 +9,11 @@ async function source(path) {
 test("magazine overview uses roomier curated overview modules", async () => {
   const page = await source("../app/magazin/page.tsx");
   assert.match(page, /const latestPosts = posts\.slice\(0, 3\);/);
-  assert.match(page, /const importantPages = pages\.slice\(0, 6\);/);
+  assert.doesNotMatch(page, /pages\.slice\(0, 6\)/);
+  assert.match(page, /const MAGAZINE_ENTRY_POINTS: EntryPoint\[\] = \[/);
+  for (const href of ["/magazin/hunderassen", "/magazin/katzenrassen", "/magazin/tierwelten", "/magazin/kleintiere"]) {
+    assert.ok(page.includes(`href: "${href}"`), href);
+  }
   assert.match(page, /className="shell shell-narrow magazine-overview-page"/);
   assert.match(page, /hero-brand-magazine/);
   assert.match(page, /editorial-feature-card editorial-feature-card-magazine/);
@@ -18,9 +22,9 @@ test("magazine overview uses roomier curated overview modules", async () => {
   assert.match(page, /className="magazine-topic-card"/);
   assert.match(page, /href="\/magazin\/inhalt"/);
   assert.match(page, /Schnelle Wege zu Hund, Katze, Vögeln, Apps und weiteren Themen/);
-  assert.match(page, /className="article-card article-card-compact article-card-page-link"/);
-  assert.match(page, /Hilfreiche Seiten auf einen Blick/);
-  assert.match(page, /wichtige Themen, Hintergründe und hilfreiche Magazin-Bereiche/);
+  assert.match(page, /"entry-point-card"/);
+  assert.match(page, /Wichtige Einstiege/);
+  assert.match(page, /className="entry-point-more" href="\/magazin\/inhalt"/);
 });
 
 test("global styles define the magazine overview and footer polish hooks", async () => {
@@ -32,7 +36,8 @@ test("global styles define the magazine overview and footer polish hooks", async
   assert.match(css, /\.article-card-rich-magazine[\s\S]*grid-template-columns: minmax\(208px, 232px\) minmax\(0, 1fr\);/);
   assert.match(css, /\.magazine-topic-grid[\s\S]*grid-template-columns: repeat\(auto-fill, minmax\(260px, 1fr\)\);/);
   assert.match(css, /\.magazine-topic-card-index/);
-  assert.match(css, /\.article-card-page-link/);
+  assert.match(css, /\.entry-point-grid \{/);
+  assert.match(css, /\.entry-point-card-image::after/);
   assert.match(css, /align-items: start;/);
   assert.match(css, /\.tv-footer-cta \{/);
   assert.match(css, /\.tv-footer-nav \{[\s\S]*grid-template-columns: repeat\(3, minmax\(0, 1fr\)\);/);
