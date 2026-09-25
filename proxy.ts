@@ -22,4 +22,4 @@ export function proxy(request: NextRequest) {
   return NextResponse.rewrite(destination,{request:{headers}});
 }
 
-export const config={matcher:["/((?!_next/static|_next/image|app-assets/).*)"]};
+export const config={matcher:["/((?!_next/static|_next/image|icon.png|apple-icon.png|app-assets/).*)"]};
