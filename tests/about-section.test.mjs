@@ -13,18 +13,21 @@ test("maps moved ueber-uns content to canonical about routes", async () => {
   assert.ok(aboutSource.includes('ABOUT_OVERVIEW_PATH = "/ueber-uns"'));
   assert.ok(aboutSource.includes('ABOUT_STORY_PATH = "/ueber-uns/geschichte"'));
   assert.ok(aboutSource.includes('ABOUT_SOCIAL_MEDIA_PATH = "/ueber-uns/social-media"'));
+  assert.ok(aboutSource.includes('ABOUT_REVIEWS_PATH = "/ueber-uns/bewertungen"'));
   assert.ok(aboutSource.includes('ABOUT_PRESS_PATH = "/magazin/thema/presse"'));
   assert.ok(aboutSource.includes('if (slug === "ueber-uns") return ABOUT_STORY_PATH'));
   assert.ok(aboutSource.includes('return `/magazin/${slug}`'));
 });
 
 test("legacy about routes permanently redirect to the new about section", async () => {
-  const [legacyStory, legacySocial] = await Promise.all([
+  const [legacyStory, legacySocial, legacyReviews] = await Promise.all([
     readRepoFile("app/magazin/ueber-uns/page.tsx"),
     readRepoFile("app/social-media/page.tsx"),
+    readRepoFile("app/bewertungen-und-erfahrungen/page.tsx"),
   ]);
   assert.match(legacyStory, /permanentRedirect\(ABOUT_STORY_PATH\)/);
   assert.match(legacySocial, /permanentRedirect\(ABOUT_SOCIAL_MEDIA_PATH\)/);
+  assert.match(legacyReviews, /permanentRedirect\(ABOUT_REVIEWS_PATH\)/);
 });
 
 test("internal navigation and expert trust links use canonical Christian path", async () => {
@@ -47,6 +50,19 @@ test("sitemap publishes only canonical about URLs", async () => {
   assert.match(sitemapSource, /ABOUT_OVERVIEW_PATH/);
   assert.match(sitemapSource, /ABOUT_STORY_PATH/);
   assert.match(sitemapSource, /ABOUT_SOCIAL_MEDIA_PATH/);
+  assert.match(sitemapSource, /ABOUT_REVIEWS_PATH/);
   assert.match(sitemapSource, /filter\(\(page\) => page\.slug !== "ueber-uns"\)/);
   assert.doesNotMatch(sitemapSource, /`\$\{SITE_URL\}\/social-media`/);
+});
+
+test("reviews page lives in the about section and is linked from overview and footer", async () => {
+  const [overview, shell, page] = await Promise.all([
+    readRepoFile("app/ueber-uns/page.tsx"),
+    readRepoFile("components/site-shell.tsx"),
+    readRepoFile("app/ueber-uns/bewertungen/page.tsx"),
+  ]);
+  assert.match(overview, /href=\{ABOUT_REVIEWS_PATH\}/);
+  assert.ok(shell.includes('{ label: "Bewertungen", href: "/ueber-uns/bewertungen" }'));
+  assert.match(page, /canonical: aboutReviewsCanonical\(\)/);
+  assert.doesNotMatch(shell + overview, /href: "\/bewertungen-und-erfahrungen"/);
 });

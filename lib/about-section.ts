@@ -4,6 +4,8 @@ import { getMagazineEntryBySlug, SITE_URL } from "@/lib/wordpress";
 export const ABOUT_OVERVIEW_PATH = "/ueber-uns";
 export const ABOUT_STORY_PATH = "/ueber-uns/geschichte";
 export const ABOUT_SOCIAL_MEDIA_PATH = "/ueber-uns/social-media";
+/** Standard aller Projekte: ICONY-Seite „Bewertung und Erfahrungen“ unter /ueber-uns/bewertungen. */
+export const ABOUT_REVIEWS_PATH = "/ueber-uns/bewertungen";
 export const ABOUT_PRESS_PATH = "/magazin/thema/presse";
 
 export function canonicalMagazinePagePath(slug: string) {
@@ -17,6 +19,10 @@ export function aboutOverviewCanonical() {
 
 export function aboutStoryCanonical() {
   return `${SITE_URL}${ABOUT_STORY_PATH}`;
+}
+
+export function aboutReviewsCanonical() {
+  return `${SITE_URL}${ABOUT_REVIEWS_PATH}`;
 }
 
 export function aboutSocialMediaCanonical() {

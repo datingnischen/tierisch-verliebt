@@ -5,12 +5,13 @@ import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import {
   ABOUT_PRESS_PATH,
+  ABOUT_REVIEWS_PATH,
   ABOUT_SOCIAL_MEDIA_PATH,
   ABOUT_STORY_PATH,
   aboutOverviewCanonical,
   getAboutStoryPage,
 } from "@/lib/about-section";
-import { getSocialMediaPage } from "@/lib/icony-static-pages";
+import { getReviewsPage, getSocialMediaPage } from "@/lib/icony-static-pages";
 import { stripHtml } from "@/lib/wordpress";
 
 export const revalidate = 3600;
@@ -31,9 +32,10 @@ export const metadata: Metadata = {
 };
 
 export default async function AboutOverviewPage() {
-  const [story, social, expert] = await Promise.all([
+  const [story, social, reviews, expert] = await Promise.all([
     getAboutStoryPage(),
     getSocialMediaPage(),
+    getReviewsPage(),
     getAuthorProfile("christian-m-haas"),
   ]);
 
@@ -52,7 +54,7 @@ export default async function AboutOverviewPage() {
         <h1>Wer hinter tierisch-verliebt steht, wie die Marke gewachsen ist und wo du uns findest.</h1>
         <p>
           Dieser Bereich bündelt die wichtigsten Vertrauens- und Hintergrundseiten von tierisch-verliebt — von
-          unserer Geschichte über Presse & Sponsoring bis zu den offiziellen Social-Media-Kanälen.
+          unserer Geschichte über Bewertungen und Presse & Sponsoring bis zu den offiziellen Social-Media-Kanälen.
         </p>
         <div className="button-row">
           <Link className="button button-primary" href={ABOUT_STORY_PATH}>
@@ -60,6 +62,9 @@ export default async function AboutOverviewPage() {
           </Link>
           <Link className="button button-secondary" href={ABOUT_PRESS_PATH}>
             Presse & Sponsoring
+          </Link>
+          <Link className="button button-secondary" href={ABOUT_REVIEWS_PATH}>
+            Bewertungen
           </Link>
           <Link className="button button-secondary" href={ABOUT_SOCIAL_MEDIA_PATH}>
             Zu Social Media
@@ -87,6 +92,19 @@ export default async function AboutOverviewPage() {
           <p>{social.lead || social.description}</p>
           <Link className="button button-primary" href={ABOUT_SOCIAL_MEDIA_PATH}>
             Social Media ansehen
+          </Link>
+        </article>
+      </section>
+
+      <section className="content-section">
+        <article className="panel-card">
+          <div className="section-header">
+            <span className="eyebrow">Bewertungen & Erfahrungen</span>
+            <h2>{reviews.title}</h2>
+          </div>
+          <p>{reviews.lead || reviews.description}</p>
+          <Link className="button button-primary" href={ABOUT_REVIEWS_PATH}>
+            Bewertungen ansehen
           </Link>
         </article>
       </section>

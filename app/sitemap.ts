@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { ABOUT_OVERVIEW_PATH, ABOUT_SOCIAL_MEDIA_PATH, ABOUT_STORY_PATH } from "@/lib/about-section";
+import { ABOUT_OVERVIEW_PATH, ABOUT_REVIEWS_PATH, ABOUT_SOCIAL_MEDIA_PATH, ABOUT_STORY_PATH } from "@/lib/about-section";
 import { getKnownAuthorSlugs, isNoindexAuthorArchive } from "@/lib/author-profiles";
 import { getMarketCityPages } from "@/lib/market-partnersuche";
 import { SITE_URL, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/wordpress";
@@ -40,6 +40,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${SITE_URL}${ABOUT_STORY_PATH}`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}${ABOUT_REVIEWS_PATH}`,
       changeFrequency: "monthly",
       priority: 0.7,
     },

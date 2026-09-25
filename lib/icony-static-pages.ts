@@ -3,6 +3,7 @@ import { ABOUT_SOCIAL_MEDIA_PATH } from "@/lib/about-section";
 import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/wordpress";
 
 const SOURCE_URL = "https://tierisch-verliebt.de/social-media/";
+const REVIEWS_SOURCE_URL = "https://tierisch-verliebt.de/bewertungen-und-erfahrungen/";
 
 export type ImportedStaticPage = {
   title: string;
@@ -94,6 +95,37 @@ export const getSocialMediaPage = cache(async (): Promise<ImportedStaticPage> =>
     imageAlt,
     contentHtml,
     sourceUrl: SOURCE_URL,
+  };
+});
+
+/** Nur Sterne-Emojis ohne Text (ICONY-Editor) bringen im neuen Layout nichts. */
+function removeEmojiOnlyParagraphs(html: string) {
+  return html.replace(/<p>\s*(?:\u2B50\s*)+<\/p>/g, "");
+}
+
+/** ICONY liefert eine 400px-Vorschau; die Originalgröße liegt unter demselben Pfad ohne Größensegment. */
+function originalImageUrl(url?: string) {
+  return url?.replace(/(static-cms\.icony-hosting\.de\/cms\/[0-9A-F]+)\/400\//, "$1/");
+}
+
+export const getReviewsPage = cache(async (): Promise<ImportedStaticPage> => {
+  const html = await fetchText(REVIEWS_SOURCE_URL);
+  const title = getTitle(html) || "Bewertung und Erfahrungen zu tierisch-verliebt.de";
+  const normalized = removeEmojiOnlyParagraphs(normalizeImportedHtml(extractPanelAfterH1(html)));
+  const { imageUrl, imageAlt } = extractFirstImage(normalized);
+  // Das erste Bild steht im Hero, nicht noch einmal im Text
+  const contentHtml = imageUrl ? normalized.replace(/<p>\s*<img[^>]*>\s*<\/p>/i, "").trim() : normalized;
+
+  return {
+    title,
+    description:
+      getMetaContent(html, "description") ||
+      "Das Feedback unserer Community hilft uns, tierisch-verliebt.de stetig weiterzuentwickeln.",
+    lead: firstParagraphFromHtml(contentHtml),
+    imageUrl: originalImageUrl(imageUrl),
+    imageAlt: imageAlt && imageAlt !== "bewertungen" ? imageAlt : "Zufriedene Frau mit Daumen hoch und Sterne-Bewertung",
+    contentHtml,
+    sourceUrl: REVIEWS_SOURCE_URL,
   };
 });
 
