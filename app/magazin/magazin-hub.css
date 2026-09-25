@@ -251,6 +251,11 @@
   grid-column: 1 / -1;
 }
 
+/* Titelbild der Tierwelten hat eingebrannten Schriftzug oben – Tiere statt Text zeigen */
+.tvm-tile-banner img {
+  object-position: center 88%;
+}
+
 .tvm-tile img {
   position: absolute;
   inset: 0;
