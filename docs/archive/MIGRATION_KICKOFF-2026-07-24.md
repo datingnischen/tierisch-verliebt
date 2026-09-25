@@ -1,3 +1,5 @@
+> Historisches Dokument (Stand 2026-07-24), nicht mehr aktuell – den aktuellen Stand beschreibt die README.md im Repo-Root.
+
 # Tierisch Verliebt – Vercel Migration Kickoff
 
 Stand: 2026-07-24
