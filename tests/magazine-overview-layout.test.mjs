@@ -6,25 +6,23 @@ async function source(path) {
   return readFile(new URL(path, import.meta.url), "utf8");
 }
 
-test("magazine overview uses roomier curated overview modules", async () => {
+test("magazine overview uses the Gassi-Guide look with curated entry points", async () => {
   const page = await source("../app/magazin/page.tsx");
-  assert.match(page, /const latestPosts = posts\.slice\(0, 3\);/);
+  assert.match(page, /const latestPosts = posts\.slice\(1, 7\);/);
   assert.doesNotMatch(page, /pages\.slice\(0, 6\)/);
   assert.match(page, /const MAGAZINE_ENTRY_POINTS: EntryPoint\[\] = \[/);
   for (const href of ["/magazin/hunderassen", "/magazin/katzenrassen", "/magazin/tierwelten", "/magazin/kleintiere"]) {
     assert.ok(page.includes(`href: "${href}"`), href);
   }
-  assert.match(page, /className="shell shell-narrow magazine-overview-page"/);
-  assert.match(page, /hero-brand-magazine/);
-  assert.match(page, /editorial-feature-card editorial-feature-card-magazine/);
-  assert.match(page, /className="grid-two magazine-overview-grid"/);
-  assert.match(page, /article-card-rich article-card-rich-magazine/);
-  assert.match(page, /className="magazine-topic-card"/);
+  assert.match(page, /className=\{`tvc tvm \$\{display\.variable\}`\}/);
+  assert.match(page, /className="tvc-hero tvh-hero tvm-hero"/);
+  assert.match(page, /className="tvm-feature"/);
+  assert.match(page, /className="tvc-wrap tvm-topics"/);
+  assert.match(page, /className="tvm-bento"/);
+  assert.match(page, /className="tvh-card tvm-post"/);
   assert.match(page, /href="\/magazin\/inhalt"/);
-  assert.match(page, /Schnelle Wege zu Hund, Katze, Vögeln, Apps und weiteren Themen/);
-  assert.match(page, /"entry-point-card"/);
   assert.match(page, /Wichtige Einstiege/);
-  assert.match(page, /className="entry-point-more" href="\/magazin\/inhalt"/);
+  assert.match(page, /https:\/\/tierisch-verliebt\.de\/\?AID=magazin/);
 });
 
 test("global styles define the magazine overview and footer polish hooks", async () => {
