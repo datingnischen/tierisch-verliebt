@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "@/components/link";
 import { display } from "@/components/city-page/display-font";
+import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
 import { BirdIcon, BunnyIcon, CatIcon, ClockIcon, DogIcon, HeartIcon, HorseIcon, PawIcon } from "@/components/city-page/tier-icons";
 import {
   MAGAZINE_POSTS_PER_PAGE,
@@ -36,16 +37,6 @@ const MAGAZINE_ENTRY_POINTS: EntryPoint[] = [
   { slug: "fci-gruppen", href: "/magazin/fci-gruppen", label: "FCI-Gruppen", teaser: "So werden Hunderassen eingeteilt", icon: <HorseIcon /> },
   { slug: "tierwelten", href: "/magazin/tierwelten", label: "Unsere Tierwelten", teaser: "Hund, Katze, Vogel und Kleintier im Überblick", icon: <PawIcon />, size: "banner" },
 ];
-
-function categoryIcon(slug: string) {
-  if (slug.includes("hund")) return <DogIcon />;
-  if (slug.includes("katze")) return <CatIcon />;
-  if (slug.includes("vogel") || slug.includes("voegel")) return <BirdIcon />;
-  if (slug.includes("klein") || slug.includes("kaninchen")) return <BunnyIcon />;
-  if (slug.includes("pferd")) return <HorseIcon />;
-  if (slug.includes("allgemein") || slug.includes("dating")) return <HeartIcon />;
-  return <PawIcon />;
-}
 
 function excerpt(text: string, length: number) {
   const plain = stripHtml(text);
@@ -125,7 +116,7 @@ export default async function MagazineOverviewPage() {
         </Link>
         {categories.slice(0, 6).map((category) => (
           <Link key={category.slug} className="tvm-topic" href={`/magazin/thema/${category.slug}`}>
-            <span className="tvm-topic-icon" aria-hidden="true">{categoryIcon(category.slug)}</span>
+            <span className="tvm-topic-icon" aria-hidden="true"><MagazineCategoryIcon slug={category.slug} /></span>
             <span>
               <strong>{category.name}</strong>
               {category.count > 0 ? <small>{category.count} {category.count === 1 ? "Beitrag" : "Beiträge"}</small> : null}
@@ -171,7 +162,7 @@ export default async function MagazineOverviewPage() {
               <Link className="tvh-card tvm-post" href={`/magazin/${post.slug}`}>
                 <span className="tvh-card-media">
                   {post.featuredImage ? <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" /> : <PawIcon />}
-                  {post.categories[0] ? <span className="tvh-card-region">{categoryIcon(post.categories[0].slug)}{post.categories[0].name}</span> : null}
+                  {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
                 </span>
                 <span className="tvh-card-body">
                   <strong>{post.title}</strong>

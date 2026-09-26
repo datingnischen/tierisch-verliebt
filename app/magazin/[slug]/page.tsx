@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "@/components/link";
 import { notFound } from "next/navigation";
 import { AuthorProfileFacts } from "@/components/author-profile-facts";
+import { display } from "@/components/city-page/display-font";
+import { ClockIcon, PawIcon } from "@/components/city-page/tier-icons";
+import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { MagazineHubGrid } from "@/components/magazine-hub-grid";
+import "@/components/city-page/tier-city-page.css";
+import "./magazin-article.css";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
 import {
@@ -151,6 +156,18 @@ function truncateAtWord(text: string, max: number) {
   return `${text.slice(0, max).replace(/\s+\S*$/, "")}…`;
 }
 
+/** Anriss im Hero: WP-Auszug ohne eigenes Satzende bekommt Auslassungspunkte. */
+function heroLead(entry: MagazineEntry) {
+  const lead = truncateAtWord(stripHtml(entry.excerpt || entry.content).replace(/\s*(\[…\]|\[\.\.\.\]|…)\s*$/, ""), 220);
+  return /[.!?…]$/.test(lead) ? lead : `${lead} …`;
+}
+
+/** Lesezeit bei ~200 Wörtern pro Minute, mindestens eine Minute. */
+function readingMinutes(html: string) {
+  const words = stripHtml(html).split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
 const BREED_EYEBROW: Record<string, string> = { katze: "Katzenrasse", hund: "Hunderasse", vogel: "Vogelart", pferd: "Pferderasse" };
 
 /** Intro-Text: bei Rassen der erste Absatz – der WP-Auszug beginnt dort mit „Kurzbeschreibung …“. */
@@ -276,7 +293,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   });
 
   return (
-    <main className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : ""}`}>
+    <main className={breedPage ? "magazine-detail-page" : `tvc tvm-article ${display.variable}`}>
       {articleGraph ? (
         <script
           type="application/ld+json"
@@ -295,6 +312,53 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqGraph) }}
         />
       ) : null}
+      {breedPage ? null : (
+        <section className="tvc-hero tvm-article-hero">
+          <div className="tvc-wrap tvm-article-grid">
+            <div className="tvc-hero-copy">
+              <nav className="tvc-crumbs" aria-label="Brotkrumen">
+                <Link href="/">Start</Link>
+                <span aria-hidden="true">›</span>
+                <Link href="/magazin">Magazin</Link>
+                {articleCategory ? (
+                  <>
+                    <span aria-hidden="true">›</span>
+                    <Link href={`/magazin/thema/${articleCategory.slug}`}>{decodeHtmlEntities(articleCategory.name)}</Link>
+                  </>
+                ) : null}
+              </nav>
+              <span className="tvc-badge">
+                <span className="tvm-badge-icon" aria-hidden="true">{articleCategory ? <MagazineCategoryIcon slug={articleCategory.slug} /> : <PawIcon />}</span>
+                {articleCategory ? decodeHtmlEntities(articleCategory.name) : entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}
+              </span>
+              <h1>{entry.title}</h1>
+              <p className="tvc-lead">{slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : heroLead(entry)}</p>
+              <div className="tvm-article-meta">
+                {entry.authorName ? (
+                  <span className="tvm-article-author">
+                    {authorProfile?.imageUrl ? <img src={authorProfile.imageUrl} alt="" width={40} height={40} /> : null}
+                    <span>Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}</span>
+                  </span>
+                ) : null}
+                {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
+                {entry.type === "post" ? <span className="tvm-article-read"><ClockIcon />{readingMinutes(entry.content)} Min. Lesezeit</span> : null}
+              </div>
+              <div className="tvc-actions">
+                <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
+                <a className="tvc-btn tvc-btn-ghost" href="#inhalt">{entry.type === "post" ? "Zum Artikel" : "Zum Inhalt"} <span aria-hidden="true">↓</span></a>
+              </div>
+            </div>
+            {heroImage ? (
+              <figure className="tvm-article-photo">
+                <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" fetchPriority="high" />
+                <figcaption><PawIcon />tierisch-verliebt Magazin</figcaption>
+              </figure>
+            ) : null}
+          </div>
+        </section>
+      )}
+
+      <div id="inhalt" className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : " tvm-article-shell"}`}>
       {breedPage ? (
         <section className="hero-card hero-magazine hero-magazine-breed">
           <div className="breed-hero-grid">
@@ -335,36 +399,11 @@ export default async function MagazineDetailPage({ params }: PageProps) {
             </dl>
           ) : null}
         </section>
-      ) : (
-      <section className="hero-card hero-magazine">
-        <span className="eyebrow">{entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}</span>
-        <h1>{entry.title}</h1>
-        <p>{slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : `${stripHtml(entry.excerpt || entry.content).slice(0, 220)}…`}</p>
-        <div className="meta-row">
-          {entry.authorName ? (
-            <span>
-              Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}
-            </span>
-          ) : null}
-          {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
-          <Link className="button button-primary meta-row-cta" href="https://tierisch-verliebt.de/?AID=magazin">
-            Kostenlos registrieren
-          </Link>
-        </div>
-      </section>
-      )}
+      ) : null}
 
       {slug === "christian" && authorProfile ? (
         <section className="content-section">
           <AuthorProfileFacts profile={authorProfile} />
-        </section>
-      ) : null}
-
-      {heroImage && !breedPage ? (
-        <section className="content-section">
-          <figure className="article-hero-media">
-            <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" />
-          </figure>
         </section>
       ) : null}
 
@@ -389,7 +428,8 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </section>
       )}
 
-      {entry.categories.length ? (
+      {/* Im neuen Hero stehen Thema und Breadcrumb schon oben – Chips nur, wenn es mehr zu zeigen gibt */}
+      {entry.categories.length && (breedPage || entry.categories.length > 1) ? (
         <section className={`content-section${breedPage ? " content-section-tight" : ""}`}>
           <div className="chip-row">
             {entry.categories.map((category) => (
@@ -463,6 +503,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           />
         </section>
       ) : null}
+      </div>
     </main>
   );
 }
