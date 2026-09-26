@@ -14,6 +14,12 @@ import {
   stripHtml,
   type MagazineEntry,
 } from "@/lib/wordpress";
+import { display } from "@/components/city-page/display-font";
+import { ClockIcon, HeartIcon, PawIcon } from "@/components/city-page/tier-icons";
+import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
+import "@/components/city-page/tier-city-page.css";
+import "@/components/city-page/tier-city-hub.css";
+import "../../magazin-hub.css";
 import "./thema.css";
 
 type PageProps = {
@@ -23,18 +29,6 @@ type PageProps = {
 export const revalidate = 300;
 
 const REGISTER_URL = "https://tierisch-verliebt.de/?AID=magazin";
-
-const TOPIC_EMOJI: Record<string, string> = {
-  apps: "📱",
-  "ratgeber-hund": "🐶",
-  "ratgeber-katze": "🐱",
-  "ratgeber-voegel": "🦜",
-  presse: "📰",
-};
-
-function topicEmoji(slug: string) {
-  return TOPIC_EMOJI[slug] ?? "🐾";
-}
 
 function teaser(post: MagazineEntry, length: number) {
   const text = stripHtml(post.excerpt || post.content);
@@ -76,10 +70,9 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
 
   const [posts, categories] = await Promise.all([getMagazinePostsByCategory(category.id), getMagazineCategories()]);
   const pageUrl = `${SITE_URL}/magazin/thema/${slug}/`;
-  const emoji = topicEmoji(slug);
   const intro =
     stripHtml(category.description) ||
-    `Hier findest du Artikel, Ratgeber und praktische Einstiege rund um ${category.name.toLowerCase()} – passend für tierliebe Singles und Haustiermenschen.`;
+    `Hier findest du Artikel, Ratgeber und praktische Einstiege im Thema „${category.name}“ – passend für tierliebe Singles und Haustiermenschen.`;
   const [featured, ...rest] = posts;
   const latestUpdate = posts
     .map((post) => getEntryUpdatedDate(post))
@@ -122,115 +115,106 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
   };
 
   return (
-    <main className="shell thema-page">
+    <main className={`tvc tvm ${display.variable}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageGraph) }} />
 
-      <nav className="thema-breadcrumb" aria-label="Brotkrumen">
-        <Link href="/magazin">Magazin</Link>
-        <span aria-hidden="true">›</span>
-        <span aria-current="page">{category.name}</span>
-      </nav>
-
-      <section className="thema-hero" data-emoji={emoji}>
-        <div className="thema-hero-copy">
-          <span className="eyebrow">
-            <span aria-hidden="true">{emoji}</span> Magazin-Thema
-          </span>
-          <h1>{category.name}</h1>
-          <p>{intro}</p>
-          <div className="button-row">
-            <a className="button button-primary" href="#artikel">
-              Artikel entdecken
-            </a>
-            <Link className="button button-secondary" href={REGISTER_URL}>
-              Kostenlos registrieren
-            </Link>
+      <section className="tvc-hero tvh-hero tvm-hero">
+        <div className="tvc-wrap tvm-hero-grid">
+          <div className="tvc-hero-copy">
+            <nav className="tvc-crumbs" aria-label="Brotkrumen">
+              <Link href="/">Start</Link>
+              <span aria-hidden="true">›</span>
+              <Link href="/magazin">Magazin</Link>
+              <span aria-hidden="true">›</span>
+              <span aria-current="page">{category.name}</span>
+            </nav>
+            <span className="tvc-badge">
+              <span className="tvm-badge-icon" aria-hidden="true"><MagazineCategoryIcon slug={slug} /></span>
+              Magazin-Thema
+            </span>
+            <h1>{category.name}</h1>
+            <p className="tvc-lead">{intro}</p>
+            <ul className="tvh-stats" aria-label={`${category.name} in Zahlen`}>
+              <li><strong>{posts.length}</strong><span>Artikel</span></li>
+              {latestUpdate ? (
+                <li>
+                  <strong>{new Intl.DateTimeFormat("de-DE", { month: "short", year: "numeric" }).format(new Date(latestUpdate))}</strong>
+                  <span>Zuletzt aktualisiert</span>
+                </li>
+              ) : null}
+              <li><strong>0 €</strong><span>Zum Start</span></li>
+            </ul>
+            <div className="tvc-actions">
+              <a className="tvc-btn tvc-btn-primary" href="#artikel">Artikel entdecken</a>
+              <Link className="tvc-btn tvc-btn-ghost" href={REGISTER_URL}>Kostenlos registrieren</Link>
+            </div>
           </div>
-        </div>
-        <ul className="thema-hero-stats" aria-label={`${category.name} in Zahlen`}>
-          <li>
-            <strong>{posts.length}</strong>
-            <span>Artikel</span>
-          </li>
-          {latestUpdate ? (
-            <li>
-              <strong>{new Intl.DateTimeFormat("de-DE", { month: "short", year: "numeric" }).format(new Date(latestUpdate))}</strong>
-              <span>Zuletzt aktualisiert</span>
-            </li>
+
+          {featured ? (
+            <Link className="tvm-feature" href={`/magazin/${featured.slug}`}>
+              <span className="tvm-feature-pin" aria-hidden="true"><HeartIcon /></span>
+              {getEntryCoverImage(featured) ? (
+                <span className="tvm-feature-media"><CoverImage post={featured} eager /></span>
+              ) : null}
+              <span className="tvm-feature-body">
+                <span className="tvm-kicker">Neuester Artikel</span>
+                <strong>{featured.title}</strong>
+                <span className="tvm-feature-excerpt">{teaser(featured, 130)}</span>
+                <span className="tvm-feature-meta">
+                  <span>{getReadingMinutes(featured.content)} Min. Lesezeit</span>
+                  <span className="tvm-go">Jetzt lesen <span aria-hidden="true">→</span></span>
+                </span>
+              </span>
+            </Link>
           ) : null}
-          <li>
-            <strong>0 €</strong>
-            <span>Zum Start</span>
-          </li>
-        </ul>
+        </div>
       </section>
 
       {otherTopics.length > 1 ? (
-        <nav className="thema-topic-nav" aria-label="Weitere Magazin-Themen">
+        <nav className="tvc-wrap tvm-topics tvm-topics-flat" aria-label="Weitere Magazin-Themen">
           {otherTopics.map((item) => (
             <Link
               key={item.slug}
               href={`/magazin/thema/${item.slug}`}
-              className={`thema-topic${item.slug === slug ? " is-active" : ""}`}
+              className={`tvm-topic${item.slug === slug ? " tvm-topic-index" : ""}`}
               aria-current={item.slug === slug ? "page" : undefined}
             >
-              <span aria-hidden="true">{topicEmoji(item.slug)}</span>
-              {item.name}
-              <small>{item.count}</small>
+              <span className="tvm-topic-icon" aria-hidden="true"><MagazineCategoryIcon slug={item.slug} /></span>
+              <span><strong>{item.name}</strong><small>{item.count} {item.count === 1 ? "Beitrag" : "Beiträge"}</small></span>
             </Link>
           ))}
         </nav>
       ) : null}
 
-      <section id="artikel" className="thema-articles" aria-labelledby="thema-artikel-titel">
-        <header className="thema-section-header">
-          <span className="eyebrow eyebrow-brand">Alle Artikel</span>
+      <section id="artikel" className="tvc-wrap tvm-section" aria-labelledby="thema-artikel-titel">
+        <div className="tvc-head">
+          <span className="tvc-eyebrow">Alle Artikel</span>
           <h2 id="thema-artikel-titel">Lesestoff rund um {category.name}</h2>
-        </header>
-
-        {featured ? (
-          <article className="thema-featured">
-            <Link href={`/magazin/${featured.slug}`} className="thema-card-media thema-featured-media" tabIndex={-1} aria-hidden="true">
-              <CoverImage post={featured} emoji={emoji} eager />
-            </Link>
-            <div className="thema-featured-copy">
-              <PostMeta post={featured} label="Neuester Artikel" />
-              <h3>
-                <Link href={`/magazin/${featured.slug}`}>{featured.title}</Link>
-              </h3>
-              <p>{teaser(featured, 260)}</p>
-              <Link className="button button-primary thema-featured-cta" href={`/magazin/${featured.slug}`}>
-                Jetzt lesen
-              </Link>
-            </div>
-          </article>
-        ) : (
-          <p className="thema-empty">In diesem Thema erscheinen bald die ersten Artikel.</p>
-        )}
-
+        </div>
+        {!featured ? <p className="thema-empty">In diesem Thema erscheinen bald die ersten Artikel.</p> : null}
         {rest.length ? (
-          <div className="thema-grid">
+          <ul className="tvm-posts">
             {rest.map((post) => (
-              <article key={post.id} className="thema-card">
-                <Link href={`/magazin/${post.slug}`} className="thema-card-media" tabIndex={-1} aria-hidden="true">
-                  <CoverImage post={post} emoji={emoji} />
-                </Link>
-                <div className="thema-card-body">
-                  <PostMeta post={post} />
-                  <h3>
-                    <Link href={`/magazin/${post.slug}`}>{post.title}</Link>
-                  </h3>
-                  <p>{teaser(post, 150)}</p>
-                  <span className="thema-card-more" aria-hidden="true">
-                    Weiterlesen →
+              <li key={post.id}>
+                <Link className="tvh-card tvm-post" href={`/magazin/${post.slug}`}>
+                  <span className="tvh-card-media"><CoverImage post={post} /></span>
+                  <span className="tvh-card-body">
+                    <strong>{post.title}</strong>
+                    <span className="tvm-post-excerpt">{teaser(post, 120)}</span>
+                    <span className="tvm-post-date">
+                      <ClockIcon />
+                      {getEntryUpdatedDate(post) ? `${formatUpdatedDate(post)} · ` : ""}{getReadingMinutes(post.content)} Min.
+                    </span>
+                    <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
                   </span>
-                </div>
-              </article>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         ) : null}
       </section>
 
+      <div className="tvc-wrap">
       <section className="thema-info">
         <div className="thema-info-copy">
           <span className="eyebrow eyebrow-muted">Worum es hier geht</span>
@@ -275,22 +259,13 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
           Kostenlos registrieren
         </Link>
       </section>
+      </div>
     </main>
   );
 }
 
-function CoverImage({ post, emoji, eager = false }: { post: MagazineEntry; emoji: string; eager?: boolean }) {
+function CoverImage({ post, eager = false }: { post: MagazineEntry; eager?: boolean }) {
   const src = getEntryCoverImage(post);
-  if (!src) return <span className="thema-card-fallback">{emoji}</span>;
+  if (!src) return <PawIcon />;
   return <img src={src} alt={post.featuredImageAlt || post.title} loading={eager ? "eager" : "lazy"} decoding="async" />;
-}
-
-function PostMeta({ post, label }: { post: MagazineEntry; label?: string }) {
-  return (
-    <div className="thema-meta">
-      {label ? <span className="thema-meta-label">{label}</span> : null}
-      {getEntryUpdatedDate(post) ? <time dateTime={getEntryUpdatedDate(post)}>{formatUpdatedDate(post)}</time> : null}
-      <span>{getReadingMinutes(post.content)} Min. Lesezeit</span>
-    </div>
-  );
 }

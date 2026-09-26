@@ -405,6 +405,38 @@
   text-underline-offset: 4px;
 }
 
+/* ---------- Geteilt mit Themen-, Autoren- und Artikelseiten ---------- */
+
+.tvm-badge-icon {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--tvc-red);
+}
+
+.tvm-badge-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Themenleiste ohne großes Startfeld (Themenseiten): aktives Thema dunkel hervorgehoben */
+.tvm-topics-flat {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.tvm-topics-flat .tvm-topic-index {
+  grid-row: auto;
+  grid-column: auto;
+}
+
+.tvm .thema-info,
+.tvm .thema-cta {
+  margin-top: 64px;
+}
+
 /* ---------- Responsiv ---------- */
 
 @media (max-width: 1020px) {

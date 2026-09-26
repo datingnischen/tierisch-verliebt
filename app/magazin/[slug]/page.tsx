@@ -8,6 +8,7 @@ import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { MagazineHubGrid } from "@/components/magazine-hub-grid";
 import "@/components/city-page/tier-city-page.css";
+import "../magazin-hub.css";
 import "./magazin-article.css";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
@@ -17,6 +18,7 @@ import {
   formatUpdatedDate,
   getAllMagazineEntries,
   getMagazineEntryBySlug,
+  getReadingMinutes,
   relativizeInternalLinks,
   stripHtml,
   type MagazineEntry,
@@ -162,11 +164,11 @@ function heroLead(entry: MagazineEntry) {
   return /[.!?…]$/.test(lead) ? lead : `${lead} …`;
 }
 
-/** Lesezeit bei ~200 Wörtern pro Minute, mindestens eine Minute. */
-function readingMinutes(html: string) {
-  const words = stripHtml(html).split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 200));
-}
+const BREED_HUB: Record<string, { href: string; label: string }> = {
+  hund: { href: "/magazin/hunderassen", label: "Hunderassen" },
+  katze: { href: "/magazin/katzenrassen", label: "Katzenrassen" },
+  vogel: { href: "/magazin/voegel-uebersicht", label: "Vögel" },
+};
 
 const BREED_EYEBROW: Record<string, string> = { katze: "Katzenrasse", hund: "Hunderasse", vogel: "Vogelart", pferd: "Pferderasse" };
 
@@ -293,7 +295,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   });
 
   return (
-    <main className={breedPage ? "magazine-detail-page" : `tvc tvm-article ${display.variable}`}>
+    <main className={`tvc tvm-article ${display.variable}`}>
       {articleGraph ? (
         <script
           type="application/ld+json"
@@ -311,6 +313,63 @@ export default async function MagazineDetailPage({ params }: PageProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqGraph) }}
         />
+      ) : null}
+      {breedPage ? (
+        <>
+          <section className="tvc-hero tvm-article-hero tvm-breed-hero">
+            <div className="tvc-wrap tvm-article-grid breed-hero-grid">
+              <div className="tvc-hero-copy">
+                <nav className="tvc-crumbs" aria-label="Brotkrumen">
+                  <Link href="/">Start</Link>
+                  <span aria-hidden="true">›</span>
+                  <Link href="/magazin">Magazin</Link>
+                  {BREED_HUB[magazineAnimal] ? (
+                    <>
+                      <span aria-hidden="true">›</span>
+                      <Link href={BREED_HUB[magazineAnimal].href}>{BREED_HUB[magazineAnimal].label}</Link>
+                    </>
+                  ) : null}
+                </nav>
+                <span className="tvc-badge">
+                  <span className="tvm-badge-icon" aria-hidden="true"><MagazineCategoryIcon slug={magazineAnimal} /></span>
+                  {BREED_EYEBROW[magazineAnimal] ?? "Rasseporträt"} · Steckbrief &amp; Ratgeber
+                </span>
+                <h1>{entry.title}</h1>
+                <p className="tvc-lead">{truncateAtWord(entryIntro(entry), 230)}</p>
+                <div className="tvm-article-meta">
+                  {entry.authorName ? (
+                    <span className="tvm-article-author">
+                      {authorProfile?.imageUrl ? <img src={authorProfile.imageUrl} alt="" width={40} height={40} /> : null}
+                      <span>Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}</span>
+                    </span>
+                  ) : null}
+                  {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
+                </div>
+                <div className="tvc-actions">
+                  <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
+                  <a className="tvc-btn tvc-btn-ghost" href="#steckbrief">Zum Steckbrief <span aria-hidden="true">↓</span></a>
+                </div>
+              </div>
+              {heroImage ? (
+                <figure className="tvm-article-photo">
+                  <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" fetchPriority="high" />
+                  <figcaption><PawIcon />{breedName}</figcaption>
+                </figure>
+              ) : null}
+            </div>
+          </section>
+          {breedKeyFacts.length ? (
+            <dl className="tvc-wrap breed-highlight-grid tvm-breed-facts" aria-label={`${breedName} in Kennzahlen`}>
+              {breedKeyFacts.map((fact) => (
+                <div key={fact.label} className="breed-highlight-card">
+                  <span className="breed-highlight-icon" aria-hidden="true">{fact.icon}</span>
+                  <dt className="breed-highlight-label">{fact.label}</dt>
+                  <dd>{fact.value}</dd>
+                </div>
+              ))}
+            </dl>
+          ) : null}
+        </>
       ) : null}
       {breedPage ? null : (
         <section className="tvc-hero tvm-article-hero">
@@ -341,7 +400,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                   </span>
                 ) : null}
                 {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
-                {entry.type === "post" ? <span className="tvm-article-read"><ClockIcon />{readingMinutes(entry.content)} Min. Lesezeit</span> : null}
+                {entry.type === "post" ? <span className="tvm-article-read"><ClockIcon />{getReadingMinutes(entry.content)} Min. Lesezeit</span> : null}
               </div>
               <div className="tvc-actions">
                 <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
@@ -359,48 +418,6 @@ export default async function MagazineDetailPage({ params }: PageProps) {
       )}
 
       <div id="inhalt" className={`shell shell-narrow magazine-detail-shell${breedPage ? " breed-detail-shell" : " tvm-article-shell"}`}>
-      {breedPage ? (
-        <section className="hero-card hero-magazine hero-magazine-breed">
-          <div className="breed-hero-grid">
-            <div className="breed-hero-copy">
-              <div className="breed-hero-eyebrows">
-                <span className="eyebrow">{BREED_EYEBROW[magazineAnimal] ?? "Rasseporträt"}</span>
-                <span className="eyebrow eyebrow-muted">Steckbrief &amp; Ratgeber</span>
-              </div>
-              <h1>{entry.title}</h1>
-              <p className="breed-hero-intro">{truncateAtWord(entryIntro(entry), 230)}</p>
-              <div className="meta-row">
-                {entry.authorName ? (
-                  <span>
-                    Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}
-                  </span>
-                ) : null}
-                {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
-                <Link className="button button-primary meta-row-cta" href="https://tierisch-verliebt.de/?AID=magazin">
-                  Kostenlos registrieren
-                </Link>
-              </div>
-            </div>
-            {heroImage ? (
-              <figure className="article-hero-media article-hero-media-breed breed-hero-media">
-                <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" fetchPriority="high" />
-              </figure>
-            ) : null}
-          </div>
-          {breedKeyFacts.length ? (
-            <dl className="breed-highlight-grid" aria-label={`${breedName} in Kennzahlen`}>
-              {breedKeyFacts.map((fact) => (
-                <div key={fact.label} className="breed-highlight-card">
-                  <span className="breed-highlight-icon" aria-hidden="true">{fact.icon}</span>
-                  <dt className="breed-highlight-label">{fact.label}</dt>
-                  <dd>{fact.value}</dd>
-                </div>
-              ))}
-            </dl>
-          ) : null}
-        </section>
-      ) : null}
-
       {slug === "christian" && authorProfile ? (
         <section className="content-section">
           <AuthorProfileFacts profile={authorProfile} />

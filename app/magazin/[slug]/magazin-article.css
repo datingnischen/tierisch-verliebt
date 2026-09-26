@@ -41,21 +41,6 @@
   line-height: 1.04;
 }
 
-.tvm-badge-icon {
-  display: grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #fff;
-  color: var(--tvc-red);
-}
-
-.tvm-badge-icon svg {
-  width: 16px;
-  height: 16px;
-}
-
 .tvm-article-meta {
   display: flex;
   flex-wrap: wrap;
@@ -143,13 +128,13 @@
   scroll-margin-top: 80px;
 }
 
-.tvm-article .rich-content {
+.tvm-article .rich-content:not(.breed-rich-content) {
   border-color: var(--tvc-line);
   border-radius: 30px;
   box-shadow: 0 20px 44px rgba(70, 30, 20, 0.08);
 }
 
-.tvm-article .rich-content h2 {
+.tvm-article .rich-content:not(.breed-rich-content) h2 {
   position: relative;
   padding-left: 42px;
   color: var(--tvc-ink);
@@ -158,7 +143,7 @@
   letter-spacing: -0.01em;
 }
 
-.tvm-article .rich-content h2::before {
+.tvm-article .rich-content:not(.breed-rich-content) h2::before {
   content: "";
   position: absolute;
   top: 0.1em;
@@ -169,7 +154,7 @@
   background: #fbeaea;
 }
 
-.tvm-article .rich-content h2::after {
+.tvm-article .rich-content:not(.breed-rich-content) h2::after {
   content: "";
   position: absolute;
   top: calc(0.1em + 7px);
@@ -181,27 +166,27 @@
   mask: var(--tvm-paw) center / contain no-repeat;
 }
 
-.tvm-article .rich-content h3 {
+.tvm-article .rich-content:not(.breed-rich-content) h3 {
   font-family: var(--tvc-display), "Open Sans", sans-serif;
   color: var(--tvc-red-dark);
 }
 
-.tvm-article .rich-content li::marker {
+.tvm-article .rich-content:not(.breed-rich-content) li::marker {
   color: var(--tvc-red);
 }
 
-.tvm-article .rich-content hr {
+.tvm-article .rich-content:not(.breed-rich-content) hr {
   height: 0;
   margin: 28px 0;
   border: 0;
   border-top: 2px dashed var(--tvc-line);
 }
 
-.tvm-article .rich-content img {
+.tvm-article .rich-content:not(.breed-rich-content) img {
   border-radius: 18px;
 }
 
-.tvm-article .rich-content blockquote {
+.tvm-article .rich-content:not(.breed-rich-content) blockquote {
   margin: 0 0 18px;
   padding: 16px 20px;
   border-left: 4px solid var(--tvc-green);
@@ -212,6 +197,111 @@
 .tvm-article .chip {
   border-color: var(--tvc-line);
   background: #fff;
+}
+
+/* ---------- Autorenseite ---------- */
+
+.tvm-author-role {
+  margin-top: -6px;
+  color: #ffd9d9;
+  font-weight: 800;
+}
+
+.tvm-author-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.tvm-author-facts li {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.tvm-author-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 16px;
+}
+
+.tvm-author-link {
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-underline-offset: 4px;
+}
+
+.tvm-author-link:hover {
+  text-decoration-color: #fff;
+}
+
+.tvm-author-role + .tvc-lead {
+  margin-top: 10px;
+}
+
+.tvm-author-photo {
+  max-width: 400px;
+  justify-self: center;
+}
+
+.tvm-author-photo img {
+  aspect-ratio: 4 / 5;
+}
+
+.tvm-author-body .author-editorial-section {
+  margin-top: 8px;
+}
+
+/* ---------- Rassenseiten: Kennzahlen als Faktenleiste im Hero ---------- */
+
+.tvm-breed-hero {
+  padding-bottom: 120px;
+}
+
+.tvm-breed-facts {
+  position: relative;
+  z-index: 3;
+  margin-top: -64px;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-top: 0;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 24px 50px rgba(70, 30, 20, 0.12);
+}
+
+.tvm-breed-facts .breed-highlight-card {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.tvm-breed-facts .breed-highlight-card + .breed-highlight-card {
+  border-left: 1px solid var(--tvc-line);
+  border-radius: 0;
+}
+
+.tvm-breed-facts .breed-highlight-icon {
+  border-radius: 14px;
+  background: #fbeaea;
+}
+
+.tvm-breed-facts .breed-highlight-card dd {
+  font-family: var(--tvc-display), "Open Sans", sans-serif;
+}
+
+.tvm-breed-hero + .tvm-breed-facts + .tvm-article-shell,
+.tvm-article .breed-detail-shell {
+  padding-top: 20px;
 }
 
 /* ---------- Responsiv ---------- */
@@ -228,12 +318,18 @@
   }
 }
 
+@media (max-width: 900px) {
+  .tvm-breed-facts .breed-highlight-card + .breed-highlight-card {
+    border-left: 0;
+  }
+}
+
 @media (max-width: 700px) {
   .tvm-article-hero {
     padding-bottom: 84px;
   }
 
-  .tvm-article .rich-content h2 {
+  .tvm-article .rich-content:not(.breed-rich-content) h2 {
     padding-left: 38px;
   }
 }

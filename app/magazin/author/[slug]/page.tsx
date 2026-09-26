@@ -3,6 +3,13 @@ import Link from "@/components/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { getAuthorPosts, getAuthorProfile, getKnownAuthorSlugs, isNoindexAuthorArchive } from "@/lib/author-profiles";
 import { SITE_URL, formatUpdatedDate, stripHtml } from "@/lib/wordpress";
+import { display } from "@/components/city-page/display-font";
+import { ClockIcon, PawIcon } from "@/components/city-page/tier-icons";
+import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
+import "@/components/city-page/tier-city-page.css";
+import "@/components/city-page/tier-city-hub.css";
+import "../../magazin-hub.css";
+import "../../[slug]/magazin-article.css";
 import { withTrailingSlash } from "@/lib/markets";
 import { serializeJsonLd } from "@/lib/json-ld";
 
@@ -109,7 +116,7 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
       ];
 
   return (
-    <main className="shell shell-narrow">
+    <main className={`tvc tvm ${display.variable}`}>
       {structuredData.map((payload) => (
         <script
           key={`${String(payload["@type"])}-${String(payload.url ?? payload.name ?? "entity")}`}
@@ -118,11 +125,50 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
         />
       ))}
 
-      <section className="author-hero-simple">
-        <div className="author-hero-simple-grid">
-          <div className="author-hero-simple-media">
+      <section className="tvc-hero tvh-hero tvm-hero">
+        <div className="tvc-wrap tvm-article-grid">
+          <div className="tvc-hero-copy">
+            <nav className="tvc-crumbs" aria-label="Brotkrumen">
+              <Link href="/">Start</Link>
+              <span aria-hidden="true">›</span>
+              <Link href="/magazin">Magazin</Link>
+              <span aria-hidden="true">›</span>
+              <span aria-current="page">{profile.name}</span>
+            </nav>
+            <span className="tvc-badge"><PawIcon className="tvc-badge-paw" />Autorenprofil</span>
+            <h1>{profile.name}</h1>
+            <p className="tvm-author-role">{profile.role}</p>
+            <p className="tvc-lead">{profile.intro || profile.bio}</p>
+
+            <ul className="tvm-author-facts" aria-label="Kurzprofil und Vertrauenssignale">
+              {profile.facts.map((fact) => (
+                <li key={fact}>{fact}</li>
+              ))}
+            </ul>
+
+            <div className="tvc-actions">
+              <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">
+                Jetzt kostenlos registrieren
+              </Link>
+            </div>
+            <div className="tvm-author-links">
+              {profile.links?.map((link) => (
+                <Link
+                  key={link.href}
+                  className="tvm-author-link"
+                  href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <figure className="tvm-article-photo tvm-author-photo">
             {profile.imageUrl ? (
-              <img src={profile.imageUrl} alt={profile.name} loading="eager" decoding="async" className="author-hero-simple-photo" />
+              <img src={profile.imageUrl} alt={profile.name} loading="eager" decoding="async" />
             ) : (
               <div className="expert-card-avatar-fallback" aria-hidden="true">
                 {profile.name
@@ -132,46 +178,12 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
                   .slice(0, 2)}
               </div>
             )}
-          </div>
-
-          <div className="author-hero-simple-copy">
-            <span className="eyebrow">Autorenprofil</span>
-            <h1>{profile.name}</h1>
-            <p className="author-profile-role">{profile.role}</p>
-            <p className="author-profile-intro">{profile.intro || profile.bio}</p>
-
-            <div className="author-trust-facts-inline" aria-label="Kurzprofil und Vertrauenssignale">
-              {profile.facts.map((fact) => (
-                <span key={fact}>{fact}</span>
-              ))}
-            </div>
-
-            <div className="author-profile-link-list author-profile-link-list-hero">
-              {profile.links?.map((link) => (
-                <Link
-                  key={link.href}
-                  className="chip"
-                  href={link.href}
-                  target={link.external ? "_blank" : undefined}
-                  rel={link.external ? "noopener noreferrer" : undefined}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-
-            <div className="button-row">
-              <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
-                Jetzt kostenlos registrieren
-              </Link>
-              <Link className="button button-secondary" href="/magazin">
-                Zum Magazin
-              </Link>
-            </div>
-          </div>
+            <figcaption><PawIcon />{profile.name}</figcaption>
+          </figure>
         </div>
       </section>
 
+      <div className="tvc-wrap tvm-author-body">
       <section className="content-section author-editorial-section">
         <div className="author-editorial-layout">
           <article className="author-editorial-main">
@@ -216,35 +228,33 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
       </section>
 
       {highlightedPosts.length ? (
-        <section className="content-section">
-          <div className="section-header">
-            <span className="eyebrow">Beiträge von {profile.name}</span>
-            <h2>Aktuelle Artikel aus dem Magazin</h2>
+        <section className="tvm-section" aria-labelledby="tvm-author-posts">
+          <div className="tvc-head">
+            <span className="tvc-eyebrow">Beiträge von {profile.name}</span>
+            <h2 id="tvm-author-posts">Aktuelle Artikel aus dem Magazin</h2>
             <p>Ratgeber, Einordnungen und Impulse rund um tierliebe Partnersuche, Alltag mit Haustieren und gemeinsame Werte.</p>
           </div>
-          <div className="author-post-grid">
+          <ul className="tvm-posts">
             {highlightedPosts.map((post) => (
-              <Link key={post.id} href={`/magazin/${post.slug}`} className="author-post-card">
-                {post.featuredImage ? (
-                  <div className="author-post-card-media">
-                    <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" />
-                  </div>
-                ) : (
-                  <div className="author-post-card-media author-post-card-placeholder" aria-hidden="true" />
-                )}
-                <div className="author-post-card-body">
-                  <div className="meta-row">
-                    {formatUpdatedDate(post) ? <span>{formatUpdatedDate(post)}</span> : null}
-                    {post.categories[0] ? <span>{post.categories[0].name}</span> : null}
-                  </div>
-                  <h3>{post.title}</h3>
-                  <p>{stripHtml(post.excerpt || post.content).slice(0, 165)}…</p>
-                </div>
-              </Link>
+              <li key={post.id}>
+                <Link href={`/magazin/${post.slug}`} className="tvh-card tvm-post">
+                  <span className="tvh-card-media">
+                    {post.featuredImage ? <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" /> : <PawIcon />}
+                    {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
+                  </span>
+                  <span className="tvh-card-body">
+                    <strong>{post.title}</strong>
+                    <span className="tvm-post-excerpt">{stripHtml(post.excerpt || post.content).slice(0, 140)}…</span>
+                    {formatUpdatedDate(post) ? <span className="tvm-post-date"><ClockIcon />{formatUpdatedDate(post)}</span> : null}
+                    <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
+                  </span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       ) : null}
+      </div>
     </main>
   );
 }
