@@ -29,10 +29,15 @@ test("indexable author routes emit bounded structured data while the christian a
   assert.match(authorRoute, /serializeJsonLd\(payload\)/);
 });
 
+test("christian author archive permanently redirects to his profile page", async () => {
+  const authorRoute = await source("../app/magazin/author/[slug]/page.tsx");
+  assert.match(authorRoute, /if \(slug === "christian-m-haas"\) permanentRedirect\(withTrailingSlash\(CHRISTIAN_CANONICAL_PATH\)\);/);
+});
+
 test("author archives without posts redirect to the author profile and stay out of the sitemap", async () => {
   const authorRoute = await source("../app/magazin/author/[slug]/page.tsx");
   assert.match(authorRoute, /import \{ notFound, permanentRedirect \} from "next\/navigation";/);
-  assert.match(authorRoute, /if \(!posts\.length\) permanentRedirect\(CHRISTIAN_CANONICAL_PATH\);/);
+  assert.match(authorRoute, /if \(!posts\.length\) permanentRedirect\(withTrailingSlash\(CHRISTIAN_CANONICAL_PATH\)\);/);
 
   const profiles = await source("../lib/author-profiles.ts");
   assert.match(profiles, /export function isNoindexAuthorArchive\(slug: string\)/);

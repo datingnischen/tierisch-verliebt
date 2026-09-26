@@ -62,10 +62,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function MagazineAuthorPage({ params }: PageProps) {
   const { slug } = await params;
+  // Christians Autorenarchiv war nur ein Doppelgänger seines Profils – dauerhaft dorthin weiterleiten.
+  if (slug === "christian-m-haas") permanentRedirect(withTrailingSlash(CHRISTIAN_CANONICAL_PATH));
   const posts = await getAuthorPosts(slug);
   // Autoren ohne Beitraege (z. B. das ausgelaufene Redaktions-Archiv) leiten dauerhaft
   // auf das Autorenprofil weiter, statt ein leeres Archiv auszuliefern.
-  if (!posts.length) permanentRedirect(CHRISTIAN_CANONICAL_PATH);
+  if (!posts.length) permanentRedirect(withTrailingSlash(CHRISTIAN_CANONICAL_PATH));
 
   const profile = await getAuthorProfile(slug);
   if (!profile) notFound();
