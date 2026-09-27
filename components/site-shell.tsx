@@ -17,6 +17,7 @@ const deHeader: NavLink[] = [
   { label: "Weitere Tierwelten", href: "/magazin/tierwelten" },
   { label: "Apps", href: "/magazin/thema/apps" },
   { label: "Über uns", href: "/ueber-uns" },
+  { label: "Suche", href: "/ueber-uns/suche" },
 ];
 
 const deFooter: Array<{ title: string; links: NavLink[] }> = [

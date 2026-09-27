@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "@/components/link";
+import { AboutSearchForm } from "@/components/about-search-form";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
@@ -70,6 +71,14 @@ export default async function AboutOverviewPage() {
             Zu Social Media
           </Link>
         </div>
+      </section>
+
+      <section className="panel-card">
+        <div className="section-header">
+          <span className="eyebrow">Suche</span>
+          <h2>Du suchst einen Ratgeber, eine Rasse oder deine Stadt?</h2>
+        </div>
+        <AboutSearchForm />
       </section>
 
       <section className="grid-two content-section">
