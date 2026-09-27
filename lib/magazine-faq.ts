@@ -13,7 +13,16 @@ type FaqGraphInput = {
   pageName: string;
 };
 
-const FAQ_HEADING_PATTERN = /^(faqs?|h[aä]ufige fragen\b.*|h[aä]ufig gestellte fragen\b.*|fragen und antworten\b.*)$/i;
+// „FAQ“, „FAQs“, „FAQ`s“, „FAQ's“, „Häufige Fragen zum Mops“, „Häufig gestellte Fragen“ …
+export const FAQ_HEADING_PATTERN = /^(faq(?:[`'’´]?s)?|h[aä]ufige fragen\b.*|h[aä]ufig gestellte fragen\b.*|fragen und antworten\b.*)$/i;
+
+type FaqSection = {
+  start: number;
+  bodyEnd: number;
+  /** Inhalt vor der ersten Frage (z. B. ein Bild) – bleibt vor der FAQ-Karte stehen. */
+  preamble: string;
+  items: MagazineFaqItem[];
+};
 
 function escapeHtml(text: string) {
   return text
@@ -29,39 +38,81 @@ export function getMagazineFaqSubject(title: string) {
   return (subject || plain).trim();
 }
 
-function findFaqSection(html: string) {
-  const heading = [...html.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/gi)]
-    .find((match) => FAQ_HEADING_PATTERN.test(stripHtml(match[1])));
-  if (!heading || heading.index === undefined) return null;
+const HEADING = /<h([1-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi;
 
-  const bodyStart = heading.index + heading[0].length;
-  const nextHeading = html.slice(bodyStart).search(/<h2\b/i);
-  const bodyEnd = nextHeading === -1 ? html.length : bodyStart + nextHeading;
-
-  return { start: heading.index, bodyEnd, body: html.slice(bodyStart, bodyEnd) };
+function headingText(html: string) {
+  return decodeHtmlEntities(stripHtml(html)).replace(/\s*:$/, "");
 }
 
-export function getMagazineFaqItems(html: string): MagazineFaqItem[] {
-  const section = findFaqSection(html);
-  if (!section) return [];
+const isQuestion = (text: string) => /\?$/.test(text);
 
-  return [...section.body.matchAll(/<h3\b[^>]*>([\s\S]*?)<\/h3>\s*([\s\S]*?)(?=<h3\b|$)/gi)]
-    .map((match, index) => {
-      const answerHtml = match[2].trim();
+// Fragen stehen in WordPress in drei Formaten:
+// 1. <h3>Frage?</h3><p>Antwort</p>                     (auch <h4>)
+// 2. <p><strong>Frage?</strong></p><p>Antwort</p>
+// 3. <p><strong>Frage?</strong><br>Antwort</p>
+const QUESTION = /<h([34])\b[^>]*>([\s\S]*?)<\/h\1>|<p\b[^>]*>\s*<(strong|b)\b[^>]*>((?:(?!<\/\3>|<\/?p\b)[\s\S])*?)<\/\3>\s*(<\/p>|<br\b[^>]*>)/gi;
+
+function parseFaqItems(body: string) {
+  const markers = [...body.matchAll(QUESTION)]
+    .map((match) => {
+      const inline = match[4] !== undefined;
+      const question = headingText(inline ? match[4] : match[2]);
+      return {
+        start: match.index ?? 0,
+        end: (match.index ?? 0) + match[0].length,
+        question,
+        inline,
+        // Format 3: Der Rest des Absatzes ist schon die Antwort.
+        answerPrefix: inline && /^<br/i.test(match[5]) ? "<p>" : "",
+      };
+    })
+    // Fett gesetzter Text ist nur dann eine Frage, wenn er auch so endet.
+    .filter((marker) => marker.question && (!marker.inline || isQuestion(marker.question)));
+
+  const items = markers
+    .map((marker, index) => {
+      const answerHtml = `${marker.answerPrefix}${body.slice(marker.end, markers[index + 1]?.start ?? body.length)}`.trim();
       return {
         id: `faq-frage-${index + 1}`,
-        question: decodeHtmlEntities(stripHtml(match[1])),
+        question: marker.question,
         answerHtml,
         answerText: stripHtml(answerHtml),
       };
     })
-    .filter((item) => item.question && item.answerText);
+    .filter((item) => item.question && item.answerText)
+    .map((item, index) => ({ ...item, id: `faq-frage-${index + 1}` }));
+
+  return { items, preamble: markers.length ? body.slice(0, markers[0].start).trim() : "" };
+}
+
+function findFaqSection(html: string): FaqSection | null {
+  const headings = [...html.matchAll(HEADING)].map((match) => ({
+    level: Number(match[1]),
+    text: headingText(match[2]),
+    start: match.index ?? 0,
+    end: (match.index ?? 0) + match[0].length,
+  }));
+  const headingIndex = headings.findIndex((heading) => heading.level <= 3 && FAQ_HEADING_PATTERN.test(heading.text));
+  if (headingIndex === -1) return null;
+
+  const heading = headings[headingIndex];
+  // Der Abschnitt endet an der nächsten gleich- oder höherrangigen Überschrift –
+  // außer bei „<h3>FAQ</h3>“, wo die Fragen selbst h3 sein dürfen.
+  const next = headings
+    .slice(headingIndex + 1)
+    .find((entry) => entry.level < heading.level || (entry.level === heading.level && !(heading.level === 3 && isQuestion(entry.text))));
+  const bodyEnd = next ? next.start : html.length;
+
+  return { start: heading.start, bodyEnd, ...parseFaqItems(html.slice(heading.end, bodyEnd)) };
+}
+
+export function getMagazineFaqItems(html: string): MagazineFaqItem[] {
+  return findFaqSection(html)?.items ?? [];
 }
 
 export function renderMagazineFaqSection(html: string, subject: string) {
   const section = findFaqSection(html);
-  const items = getMagazineFaqItems(html);
-  if (!section || !items.length) return html;
+  if (!section || !section.items.length) return html;
 
   const card = [
     '<section class="breed-faq-card" id="faq" aria-labelledby="faq-titel">',
@@ -71,7 +122,7 @@ export function renderMagazineFaqSection(html: string, subject: string) {
     `    <p>Die häufigsten Fragen zum Thema „${escapeHtml(subject)}“ — kompakt beantwortet.</p>`,
     '  </div>',
     '  <div class="breed-faq-list">',
-    ...items.map((item, index) => [
+    ...section.items.map((item, index) => [
       `    <details class="breed-faq-item" id="${item.id}"${index === 0 ? " open" : ""}>`,
       `      <summary>${escapeHtml(item.question)}</summary>`,
       `      <div class="breed-faq-answer">${item.answerHtml}</div>`,
@@ -81,7 +132,8 @@ export function renderMagazineFaqSection(html: string, subject: string) {
     '</section>',
   ].join("\n");
 
-  return `${html.slice(0, section.start)}${card}${html.slice(section.bodyEnd)}`;
+  const preamble = section.preamble ? `${section.preamble}\n` : "";
+  return `${html.slice(0, section.start)}${preamble}${card}${html.slice(section.bodyEnd)}`;
 }
 
 export function buildMagazineFaqGraph({ items, pageUrl, pageName }: FaqGraphInput) {

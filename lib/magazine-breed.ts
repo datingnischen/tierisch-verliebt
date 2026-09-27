@@ -208,7 +208,7 @@ export function slugifyHeading(text: string) {
   );
 }
 
-const SKIPPED_SECTIONS = /^(faqs?|steckbrief.*|kurzbeschreibung.*|einleitung|weitere artikel.*)$/i;
+const SKIPPED_SECTIONS = /^(faq(?:[`'’´]?s)?|h[aä]ufige fragen\b.*|h[aä]ufig gestellte fragen\b.*|steckbrief.*|kurzbeschreibung.*|einleitung|weitere artikel.*)$/i;
 
 /** „Farben und Farbkombinationen bei Britisch Kurzhaar“ → „Farben und Farbkombinationen“ – nur wenn der Rassename folgt. */
 export function shortenSectionLabel(label: string, breedName: string) {

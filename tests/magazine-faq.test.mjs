@@ -77,3 +77,44 @@ test("magazine detail pages render the FAQ card and its schema for every article
   assert.match(page, /faqGraph \? \(/);
   assert.match(page, /serializeJsonLd\(faqGraph\)/);
 });
+
+test("recognises bold paragraph questions under an FAQ heading (Blue Lacy format)", () => {
+  const html = `<h2>Ernährung</h2><p>Futter.</p>
+<h2>FAQ</h2>
+<p><strong>Wie viel Pflege benötigt ein Blue Lacy?</strong></p>
+<p>Wenig.</p>
+<p><strong>Tipp:</strong> Einmal pro Woche bürsten.</p>
+<p><strong>Sind Blue Lacys familienfreundlich?</strong></p>
+<p>Ja.</p>`;
+  const items = getMagazineFaqItems(html);
+  assert.deepEqual(items.map((item) => item.question), ["Wie viel Pflege benötigt ein Blue Lacy?", "Sind Blue Lacys familienfreundlich?"]);
+  assert.match(items[0].answerHtml, /Tipp:/);
+});
+
+test("recognises inline questions with a line break before the answer (Cornish Rex format)", () => {
+  const html = `<h2>FAQ</h2><p data-start="1"><strong data-start="2">Ist die Cornish Rex für Allergiker geeignet?</strong><br data-start="3">Nicht automatisch.</p>`;
+  const [item] = getMagazineFaqItems(html);
+  assert.equal(item.question, "Ist die Cornish Rex für Allergiker geeignet?");
+  assert.equal(item.answerHtml, "<p>Nicht automatisch.</p>");
+});
+
+test("accepts FAQ`s, Häufig gestellte Fragen and h1/h3 FAQ headings", () => {
+  for (const heading of ["<h2>FAQ`s</h2>", "<h1>FAQ`s</h1>", "<h2>Häufig gestellte Fragen</h2>", "<h3>FAQ</h3>", "<h2>FAQ&#8217;s</h2>"]) {
+    const items = getMagazineFaqItems(`${heading}<h3>Wird ein Mops alt?</h3><p>Ja.</p><h4>Haart ein Mops?</h4><p>Ja.</p>`);
+    assert.equal(items.length, 2, heading);
+  }
+  assert.equal(getMagazineFaqItems("<h2>Häufige Krankheiten</h2><h3>HD?</h3><p>Ja.</p>").length, 0);
+});
+
+test("an h3 FAQ section keeps h3 questions and ends at the next non-question h3", () => {
+  const html = "<h3>FAQ</h3><h3>Ist sie selten?</h3><p>Ja.</p><h3>Quellen</h3><p>Liste</p>";
+  const items = getMagazineFaqItems(html);
+  assert.equal(items.length, 1);
+  assert.match(renderMagazineFaqSection(html, "Korat"), /<h3>Quellen<\/h3><p>Liste<\/p>$/);
+});
+
+test("content before the first question stays in front of the FAQ card", () => {
+  const html = `<h2>FAQ\`s</h2><p><img src="a.jpg"></p><h3>Ist der Pitbull ein Listenhund?</h3><p>In vielen Bundesländern.</p>`;
+  const rendered = renderMagazineFaqSection(html, "Pitbull");
+  assert.match(rendered, /^<p><img src="a\.jpg"><\/p>\n<section class="breed-faq-card"/);
+});
