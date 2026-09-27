@@ -16,6 +16,12 @@ const MARKETS: Record<MarketCode, MarketConfig> = {
   ch: { code: "ch", countryName: "Schweiz", domain: "tierisch-verliebt.ch", locale: "de-CH", platformId: "tierischverliebtch" },
 };
 
+/**
+ * Öffentlicher Ursprung der deutschen Seite (ohne Schrägstrich am Ende) für Canonicals, og:url,
+ * JSON-LD, Sitemap und robots. Assets kommen weiter vom Vercel-Host (lib/static-asset.ts).
+ */
+export const LIVE_ORIGIN = `https://${MARKETS.de.domain}`;
+
 export function isMarketCode(value: string): value is MarketCode {
   return MARKET_CODES.includes(value as MarketCode);
 }

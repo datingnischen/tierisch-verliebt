@@ -1,8 +1,9 @@
 import { cache } from "react";
-import { withTrailingSlash } from "#markets";
+import { LIVE_ORIGIN, withTrailingSlash } from "#markets";
 
 const MAGAZINE_API_BASE = "https://tierisch-verliebt.de/magazin/wp-json/wp/v2";
-export const SITE_URL = "https://tierisch-verliebt.vercel.app";
+/** Öffentliche Seiten-URLs (Canonical, og:url, JSON-LD, Sitemap) zeigen auf die Live-Domain. */
+export const SITE_URL = LIVE_ORIGIN;
 export const MAGAZINE_POSTS_PER_PAGE = 12;
 
 export type WpRendered = {
