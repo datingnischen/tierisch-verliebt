@@ -1,0 +1,314 @@
+/* Über-uns-Bereich im Gassi-Guide-Look (baut auf tier-city-page.css und tier-city-hub.css auf) */
+
+.tva-hero {
+  padding-bottom: 120px;
+}
+
+.tva-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
+  align-items: center;
+  gap: 52px;
+}
+
+.tva-hero-solo {
+  grid-template-columns: minmax(0, 900px);
+}
+
+.tva-hero h1 {
+  max-width: 18ch;
+}
+
+.tva-polaroid {
+  justify-self: end;
+  width: 100%;
+  max-width: 340px;
+}
+
+.tva-polaroid img {
+  aspect-ratio: 4 / 5;
+}
+
+/* Unternavigation */
+.tva-subnav {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 6px;
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  margin-top: -30px;
+  padding: 6px;
+  overflow-x: auto;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 24px 50px rgba(70, 30, 20, 0.14);
+  scrollbar-width: none;
+}
+
+.tva-subnav::-webkit-scrollbar {
+  display: none;
+}
+
+.tva-subnav a {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: var(--tvc-ink);
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.tva-subnav a:hover,
+.tva-subnav a:focus-visible {
+  background: #f6ede3;
+}
+
+.tva-subnav a[aria-current] {
+  background: var(--tvc-wine);
+  color: #fff;
+}
+
+.tva-section {
+  margin-top: 72px;
+}
+
+/* ---------- Übersicht: Suche und Kacheln ---------- */
+
+.tva-search {
+  padding: clamp(24px, 4vw, 38px);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(66, 154, 69, 0.1), transparent 45%),
+    #fff;
+  box-shadow: 0 20px 44px rgba(70, 30, 20, 0.08), inset 0 0 0 1px var(--tvc-line);
+}
+
+.tva-search .tvc-head {
+  margin-bottom: 16px;
+}
+
+.tva-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.tva-tile {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border-radius: 26px;
+  background: #fff;
+  color: var(--tvc-ink);
+  box-shadow: 0 12px 28px rgba(70, 30, 20, 0.08), inset 0 0 0 1px var(--tvc-line);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tva-tile:hover,
+.tva-tile:focus-visible {
+  transform: translateY(-4px) rotate(-0.6deg);
+  box-shadow: 0 22px 40px rgba(70, 30, 20, 0.16), inset 0 0 0 2px var(--tvc-green);
+}
+
+.tva-tile-media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--tvc-wine), var(--tvc-red-dark));
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tva-tile-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tva-tile:hover .tva-tile-media img {
+  transform: scale(1.06);
+}
+
+.tva-tile-media > svg {
+  width: 64px;
+  height: 64px;
+}
+
+.tva-tile-body {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding: 18px 20px 20px;
+}
+
+.tva-tile-body small {
+  color: var(--tvc-red-dark);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tva-tile-body strong {
+  font-family: var(--tvc-display), sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
+.tva-tile-body span {
+  color: var(--tvc-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tva-tile-body em {
+  margin-top: 6px;
+  color: var(--tvc-green-dark);
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* Social-Leiste */
+.tva-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 28px;
+  padding: 28px 32px;
+  border-radius: 30px;
+  background: linear-gradient(120deg, var(--tvc-wine), var(--tvc-red-dark));
+  color: #fff;
+  box-shadow: 0 22px 44px rgba(45, 15, 15, 0.22);
+}
+
+.tva-social h2 {
+  margin: 4px 0 0;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+}
+
+.tva-social .tvc-eyebrow {
+  color: #f5b7b7;
+}
+
+.tva-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.tva-social a {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.tva-social a:hover,
+.tva-social a:focus-visible {
+  background: #fff;
+  color: var(--tvc-red-dark);
+  transform: translateY(-2px);
+}
+
+/* Christian-Karte und importierte Texte im neuen Rahmen */
+.tva .author-box,
+.tva .rich-content,
+.tva .social-community,
+.tva .panel-card {
+  border-radius: 30px;
+}
+
+.tva-body {
+  display: grid;
+  gap: 28px;
+  margin-top: 56px;
+}
+
+.tva-body > .rich-content,
+.tva-rich {
+  padding: clamp(24px, 4vw, 48px);
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0 20px 44px rgba(70, 30, 20, 0.08), inset 0 0 0 1px var(--tvc-line);
+}
+
+.tva-figure {
+  margin: 0;
+}
+
+.tva-figure img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  border-radius: 32px;
+  object-fit: cover;
+  box-shadow: 0 24px 50px rgba(70, 30, 20, 0.16);
+}
+
+/* Abschluss-CTA */
+.tva-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 36px 40px;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(66, 154, 69, 0.35), transparent 50%),
+    linear-gradient(120deg, #2d0f0f, var(--tvc-wine));
+  color: #fff;
+  box-shadow: 0 24px 50px rgba(45, 15, 15, 0.25);
+}
+
+.tva-cta h2 {
+  margin: 6px 0 8px;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+}
+
+.tva-cta p {
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.6;
+}
+
+.tva-cta .tvc-eyebrow {
+  color: #f5b7b7;
+}
+
+@media (max-width: 1020px) {
+  .tva-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tva-polaroid {
+    justify-self: center;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tva-cta {
+    grid-template-columns: 1fr;
+    padding: 28px 22px;
+  }
+
+  .tva-social {
+    padding: 24px 20px;
+  }
+}

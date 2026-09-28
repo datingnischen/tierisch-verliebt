@@ -1,4 +1,6 @@
+import { ABOUT_SEARCH_PATH } from "@/lib/about-section";
 import type { Metadata } from "next";
+import { AboutShell } from "@/components/about/about-shell";
 import { AboutSearchForm } from "@/components/about-search-form";
 import { MarketLink } from "@/components/market-link";
 import {
@@ -93,16 +95,17 @@ export default async function AboutSearchPage({ searchParams }: PageProps) {
     : [];
 
   return (
-    <main className="shell shell-narrow">
-      <section className="hero-card hero-brand">
-        <span className="eyebrow">Über uns · Suche</span>
-        <h1>{query ? `Suche nach „${query}“` : "Was suchst du?"}</h1>
-        <p>
-          Hier durchsuchst du unser Magazin mit Ratgebern und Rasseporträts sowie die Stadtseiten der Partnersuche in
-          Deutschland, Österreich und der Schweiz.
-        </p>
+    <AboutShell
+      current={ABOUT_SEARCH_PATH}
+      crumb="Suche"
+      badge="Über uns · Suche"
+      title={query ? `Suche nach „${query}“` : "Was suchst du?"}
+      lead="Hier durchsuchst du unser Magazin mit Ratgebern und Rasseporträts sowie die Stadtseiten der Partnersuche in Deutschland, Österreich und der Schweiz."
+    >
+      <div className="tvc-wrap tva-body">
+      <div className="tva-search">
         <AboutSearchForm query={query} autoFocus={!query} />
-      </section>
+      </div>
 
       {!query ? (
         <section className="panel-card">
@@ -143,6 +146,7 @@ export default async function AboutSearchPage({ searchParams }: PageProps) {
           </p>
         </section>
       )}
-    </main>
+      </div>
+    </AboutShell>
   );
 }

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "@/components/link";
+import { AboutPolaroid, AboutShell } from "@/components/about/about-shell";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
-import { ABOUT_OVERVIEW_PATH, aboutReviewsCanonical } from "@/lib/about-section";
+import { ABOUT_OVERVIEW_PATH, ABOUT_REVIEWS_PATH, aboutReviewsCanonical } from "@/lib/about-section";
 import { getReviewsPage } from "@/lib/icony-static-pages";
 
 export const revalidate = 3600;
@@ -29,35 +30,32 @@ export default async function AboutReviewsPage() {
   const [page, expert] = await Promise.all([getReviewsPage(), getAuthorProfile("christian-m-haas")]);
 
   return (
-    <main className="shell shell-narrow">
+    <AboutShell
+      current={ABOUT_REVIEWS_PATH}
+      crumb="Bewertungen"
+      badge="Über uns · Bewertungen"
+      title={page.title}
+      lead={page.description}
+      actions={
+        <>
+          <a className="tvc-btn tvc-btn-primary" href="https://www.trustpilot.com/review/tierisch-verliebt.de" target="_blank" rel="noopener">
+            Bewertungen auf Trustpilot
+          </a>
+          <Link className="tvc-btn tvc-btn-ghost" href={ABOUT_OVERVIEW_PATH}>
+            Zur Über-uns-Übersicht
+          </Link>
+        </>
+      }
+      aside={page.imageUrl ? <AboutPolaroid src={page.imageUrl} alt={page.imageAlt || "Bewertungen"} caption="Echte Stimmen aus der Community" /> : undefined}
+    >
       <SiteJsonLd page={{ type: "AboutPage", url: aboutReviewsCanonical(), name: page.title, description: page.description }} />
-      <section className="hero-card hero-brand social-hero">
-        <div className="social-hero-copy">
-          <span className="eyebrow">Über uns · Bewertungen</span>
-          <h1>{page.title}</h1>
-          <p>{page.description}</p>
-          <div className="button-row">
-            <a className="button button-primary" href="https://www.trustpilot.com/review/tierisch-verliebt.de" target="_blank" rel="noopener">
-              Bewertungen auf Trustpilot
-            </a>
-            <Link className="button button-secondary" href={ABOUT_OVERVIEW_PATH}>
-              Zur Über-uns-Übersicht
-            </Link>
-          </div>
-        </div>
-        {page.imageUrl ? (
-          <figure className="social-hero-media">
-            <img src={page.imageUrl} alt={page.imageAlt || "Bewertungen"} loading="eager" decoding="async" />
-          </figure>
-        ) : null}
-      </section>
-
+      <div className="tvc-wrap tva-body">
       <section className="rich-content">
         <div dangerouslySetInnerHTML={{ __html: page.contentHtml }} />
       </section>
 
       {expert ? (
-        <section className="content-section">
+        <section>
           <ExpertTrustCard
             profile={expert}
             eyebrow="Unser Datingexperte"
@@ -66,6 +64,7 @@ export default async function AboutReviewsPage() {
           />
         </section>
       ) : null}
-    </main>
+      </div>
+    </AboutShell>
   );
 }

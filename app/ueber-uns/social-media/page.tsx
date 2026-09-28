@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "@/components/link";
+import { AboutPolaroid, AboutShell } from "@/components/about/about-shell";
 import { AuthorSocialIcon } from "@/components/author-social-icon";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
-import { ABOUT_OVERVIEW_PATH, aboutSocialMediaCanonical } from "@/lib/about-section";
+import { ABOUT_OVERVIEW_PATH, ABOUT_SOCIAL_MEDIA_PATH, aboutSocialMediaCanonical } from "@/lib/about-section";
 import { getSocialMediaPage } from "@/lib/icony-static-pages";
 import { SOCIAL_CHANNELS, SOCIAL_COMMUNITY_GROUP } from "@/lib/social-channels";
 
@@ -31,44 +32,24 @@ export default async function AboutSocialMediaPage() {
   const [page, expert] = await Promise.all([getSocialMediaPage(), getAuthorProfile("christian-m-haas")]);
 
   return (
-    <main className="shell shell-narrow">
+    <AboutShell
+      current={ABOUT_SOCIAL_MEDIA_PATH}
+      crumb="Social Media"
+      badge="Über uns · Social Media"
+      title={page.title}
+      lead={page.description}
+      actions={
+        <Link className="tvc-btn tvc-btn-ghost" href={ABOUT_OVERVIEW_PATH}>
+          Zur Über-uns-Übersicht
+        </Link>
+      }
+      aside={page.imageUrl ? <AboutPolaroid src={page.imageUrl} alt={page.imageAlt || "Frau mit Hund"} caption="Tierliebe teilen" /> : undefined}
+    >
       <SiteJsonLd
         page={{ type: "AboutPage", url: aboutSocialMediaCanonical(), name: page.title, description: page.description }}
       />
-      <section className="hero-card hero-brand social-hero">
-        <div className="social-hero-copy">
-          <span className="eyebrow">Über uns · Social Media</span>
-          <h1>{page.title}</h1>
-          <p>{page.description}</p>
-          <ul className="social-hero-icons" aria-label="Unsere Kanäle">
-            {SOCIAL_CHANNELS.map((channel) => (
-              <li key={channel.platform}>
-                <a
-                  className={`social-bubble social-${channel.platform}`}
-                  href={channel.href}
-                  target="_blank"
-                  rel="noopener"
-                  aria-label={channel.name}
-                >
-                  <AuthorSocialIcon platform={channel.platform} size={20} />
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="button-row">
-            <Link className="button button-secondary" href={ABOUT_OVERVIEW_PATH}>
-              Zur Über-uns-Übersicht
-            </Link>
-          </div>
-        </div>
-        {page.imageUrl ? (
-          <figure className="social-hero-media">
-            <img src={page.imageUrl} alt={page.imageAlt || "Frau mit Hund"} loading="eager" decoding="async" />
-          </figure>
-        ) : null}
-      </section>
-
-      <section className="content-section">
+      <div className="tvc-wrap tva-body">
+      <section>
         <div className="section-header">
           <span className="eyebrow">Unsere Kanäle</span>
           <h2>Folge uns dort, wo du ohnehin scrollst</h2>
@@ -99,7 +80,7 @@ export default async function AboutSocialMediaPage() {
         </div>
       </section>
 
-      <section className="content-section">
+      <section>
         <div className="social-community">
           <span className="social-bubble social-facebook">
             <AuthorSocialIcon platform={SOCIAL_COMMUNITY_GROUP.platform} size={26} />
@@ -116,7 +97,7 @@ export default async function AboutSocialMediaPage() {
       </section>
 
       {expert ? (
-        <section className="content-section">
+        <section>
           <ExpertTrustCard
             profile={expert}
             eyebrow="Unser Datingexperte"
@@ -125,6 +106,7 @@ export default async function AboutSocialMediaPage() {
           />
         </section>
       ) : null}
-    </main>
+      </div>
+    </AboutShell>
   );
 }
