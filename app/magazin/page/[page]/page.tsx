@@ -1,13 +1,38 @@
 import type { Metadata } from "next";
 import Link from "@/components/link";
 import { notFound, redirect } from "next/navigation";
-import { MAGAZINE_POSTS_PER_PAGE, SITE_URL, getMagazinePostsPage, stripHtml } from "@/lib/wordpress";
+import { MAGAZINE_POSTS_PER_PAGE, SITE_URL, formatUpdatedDate, getMagazinePostsPage, stripHtml } from "@/lib/wordpress";
+import { display } from "@/components/city-page/display-font";
+import { ClockIcon, PawIcon } from "@/components/city-page/tier-icons";
+import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
+import "@/components/city-page/tier-city-page.css";
+import "@/components/city-page/tier-city-hub.css";
+import "../../magazin-hub.css";
 
 type PageProps = {
   params: Promise<{ page: string }>;
 };
 
 export const revalidate = 300;
+
+function excerpt(text: string, length: number) {
+  const plain = stripHtml(text);
+  return plain.length > length ? `${plain.slice(0, length).replace(/\s+\S*$/, "")} …` : plain;
+}
+
+/** Seitenzahlen rund um die aktuelle Seite, Lücken als null (… in der Leiste). */
+function pageWindow(current: number, total: number) {
+  const pages = new Set([1, total, current - 1, current, current + 1].filter((page) => page >= 1 && page <= total));
+  const sorted = [...pages].sort((a, b) => a - b);
+  const result: (number | null)[] = [];
+  sorted.forEach((page, index) => {
+    if (index > 0 && page - sorted[index - 1] > 1) result.push(null);
+    result.push(page);
+  });
+  return result;
+}
+
+const pageHref = (page: number) => (page === 1 ? "/magazin" : `/magazin/page/${page}`);
 
 function parsePageNumber(value: string) {
   const pageNumber = Number(value);
@@ -48,66 +73,78 @@ export default async function MagazinePaginationPage({ params }: PageProps) {
   if (!posts.length || pageNumber > totalPages) notFound();
 
   return (
-    <main className="shell shell-narrow">
-      <section className="hero-card hero-brand">
-        <span className="eyebrow">Tier-Magazin</span>
-        <h1>Weitere Magazin-Beiträge für tierliebe Singles</h1>
-        <p>
-          Hier findest du weitere Artikel, Geschichten und Ratgeber aus dem Magazin — ideal zum Stöbern nach Hunde-,
-          Katzen- und Tierwelten-Themen.
-        </p>
-        <div className="button-row">
-          <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
-            Kostenlos registrieren
-          </Link>
-          <Link className="button button-secondary" href="/magazin">
-            Zur ersten Magazin-Seite
-          </Link>
+    <main className={`tvc tvm ${display.variable}`}>
+      <section className="tvc-hero tvh-hero tvm-hero tvm-hero-compact">
+        <div className="tvc-wrap">
+          <div className="tvc-hero-copy">
+            <nav className="tvc-crumbs" aria-label="Brotkrumen">
+              <Link href="/">Start</Link>
+              <span aria-hidden="true">›</span>
+              <Link href="/magazin">Magazin</Link>
+              <span aria-hidden="true">›</span>
+              <span aria-current="page">Seite {pageNumber}</span>
+            </nav>
+            <span className="tvc-badge"><PawIcon className="tvc-badge-paw" />Tier-Magazin · Seite {pageNumber} von {totalPages}</span>
+            <h1>Weitere Magazin-Beiträge</h1>
+            <p className="tvc-lead">
+              Hier findest du weitere Artikel, Geschichten und Ratgeber aus dem Magazin – ideal zum Stöbern nach Hunde-,
+              Katzen- und Tierwelten-Themen.
+            </p>
+            <ul className="tvh-stats">
+              <li><strong>{totalItems}</strong><span>Beiträge</span></li>
+              <li><strong>{pageNumber}/{totalPages}</strong><span>Seite</span></li>
+            </ul>
+            <div className="tvc-actions">
+              <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
+              <Link className="tvc-btn tvc-btn-ghost" href="/magazin/inhalt">Alles von A–Z</Link>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="content-section">
-        <div className="section-header">
-          <span className="eyebrow">Seite {pageNumber}</span>
-          <h2>Weitere aktuelle Artikel</h2>
+      <section className="tvc-wrap tvm-section tvm-section-first" aria-labelledby="tvm-page-title">
+        <div className="tvc-head">
+          <span className="tvc-eyebrow">Seite {pageNumber}</span>
+          <h2 id="tvm-page-title">Weitere aktuelle Artikel</h2>
         </div>
-        <div className="stack-list">
+        <ul className="tvm-posts">
           {posts.map((post) => (
-            <Link key={post.id} href={`/magazin/${post.slug}`} className="article-card article-card-rich">
-              {post.featuredImage ? (
-                <div className="article-card-media">
-                  <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" />
-                </div>
-              ) : null}
-              <div className="article-card-copy">
-                <h3>{post.title}</h3>
-                <p>{stripHtml(post.excerpt || post.content).slice(0, 170)}…</p>
-              </div>
-            </Link>
+            <li key={post.id}>
+              <Link className="tvh-card tvm-post" href={`/magazin/${post.slug}`}>
+                <span className="tvh-card-media">
+                  {post.featuredImage ? <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" /> : <PawIcon />}
+                  {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
+                </span>
+                <span className="tvh-card-body">
+                  <strong>{post.title}</strong>
+                  <span className="tvm-post-excerpt">{excerpt(post.excerpt || post.content, 120)}</span>
+                  {formatUpdatedDate(post) ? <span className="tvm-post-date"><ClockIcon />{formatUpdatedDate(post)}</span> : null}
+                  <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <div className="pagination-bar" aria-label="Seitennavigation Magazin">
-          <span>
-            Seite {pageNumber} von {totalPages} · {totalItems} Beiträge
-          </span>
-          <div className="pagination-actions">
-            {pageNumber > 2 ? (
-              <Link className="button button-secondary" href={`/magazin/page/${pageNumber - 1}`}>
-                Neuere Beiträge
-              </Link>
-            ) : pageNumber === 2 ? (
-              <Link className="button button-secondary" href="/magazin">
-                Neuere Beiträge
-              </Link>
-            ) : null}
-            {pageNumber < totalPages ? (
-              <Link className="button button-secondary" href={`/magazin/page/${pageNumber + 1}`}>
-                Ältere Beiträge
-              </Link>
-            ) : null}
-          </div>
-        </div>
+        <nav className="tvm-pager" aria-label="Seitennavigation Magazin">
+          {pageNumber > 1 ? <Link className="tvm-pager-step" href={pageHref(pageNumber - 1)}>← Neuere Beiträge</Link> : <span />}
+          <ol className="tvm-pager-pages">
+            {pageWindow(pageNumber, totalPages).map((page, index) =>
+              page === null ? (
+                <li key={`gap-${index}`} aria-hidden="true">…</li>
+              ) : (
+                <li key={page}>
+                  {page === pageNumber ? (
+                    <span aria-current="page">{page}</span>
+                  ) : (
+                    <Link href={pageHref(page)} aria-label={`Seite ${page}`}>{page}</Link>
+                  )}
+                </li>
+              ),
+            )}
+          </ol>
+          {pageNumber < totalPages ? <Link className="tvm-pager-step tvm-pager-next" href={pageHref(pageNumber + 1)}>Ältere Beiträge →</Link> : <span />}
+        </nav>
       </section>
     </main>
   );
