@@ -164,7 +164,7 @@ export default async function TierweltenPage() {
                 <article key={world.slug} className="tierwelt-card">
                   <Link href={`/magazin/${world.slug}`} className="tierwelt-card-media" tabIndex={-1} aria-hidden="true">
                     {entry?.featuredImage ? (
-                      <img src={entry.featuredImage} alt="" loading="lazy" decoding="async" />
+                      <img src={entry.featuredImage} alt={entry.featuredImageAlt || entry.title} loading="lazy" decoding="async" />
                     ) : (
                       <span className="tierwelt-card-fallback">{group.emoji}</span>
                     )}

@@ -339,7 +339,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                 <div className="tvm-article-meta">
                   {entry.authorName ? (
                     <span className="tvm-article-author">
-                      {authorProfile?.imageUrl ? <img src={authorProfile.imageUrl} alt="" width={40} height={40} /> : null}
+                      {authorProfile?.imageUrl ? <img src={authorProfile.imageUrl} alt={authorProfile.name} width={40} height={40} /> : null}
                       <span>Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}</span>
                     </span>
                   ) : null}
@@ -395,7 +395,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
               <div className="tvm-article-meta">
                 {entry.authorName ? (
                   <span className="tvm-article-author">
-                    {authorProfile?.imageUrl ? <img src={authorProfile.imageUrl} alt="" width={40} height={40} /> : null}
+                    {authorProfile?.imageUrl ? <img src={authorProfile.imageUrl} alt={authorProfile.name} width={40} height={40} /> : null}
                     <span>Von {authorProfile ? <Link href={authorProfile.profileUrl}>{entry.authorName}</Link> : entry.authorName}</span>
                   </span>
                 ) : null}

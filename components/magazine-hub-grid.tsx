@@ -70,7 +70,7 @@ export function MagazineHubGrid({ links, entries, title, emoji, promo }: Props) 
             <article className="hub-tile" id={firstOfLetter ? `hub-${tile.letter.toLowerCase()}` : undefined}>
               <Link href={href} className="hub-tile-media" tabIndex={-1} aria-hidden="true">
                 {tile.image ? (
-                  <img src={tile.image} alt="" loading="lazy" decoding="async" />
+                  <img src={tile.image} alt={tile.label} loading="lazy" decoding="async" />
                 ) : (
                   <span className="hub-tile-fallback">{emoji}</span>
                 )}
@@ -112,7 +112,7 @@ export function MagazineHubGrid({ links, entries, title, emoji, promo }: Props) 
       </div>
 
       <aside className="hub-cta">
-        <img src={promo.image} alt="" loading="lazy" decoding="async" />
+        <img src={promo.image} alt={promo.imageAlt} loading="lazy" decoding="async" />
         <div>
           <span className="eyebrow">Singlebörse</span>
           <h2>Deine Lieblingsrasse gefunden? Jetzt fehlt nur noch der passende Mensch.</h2>

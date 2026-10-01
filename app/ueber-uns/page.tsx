@@ -132,7 +132,7 @@ export default async function AboutOverviewPage() {
           {tiles.map((tile) => (
             <Link key={tile.href} className="tva-tile" href={tile.href}>
               <span className="tva-tile-media">
-                {tile.image ? <img src={tile.image} alt="" loading="lazy" decoding="async" /> : <PawIcon />}
+                {tile.image ? <img src={tile.image} alt={tile.title} loading="lazy" decoding="async" /> : <PawIcon />}
               </span>
               <span className="tva-tile-body">
                 <small>{tile.kicker}</small>

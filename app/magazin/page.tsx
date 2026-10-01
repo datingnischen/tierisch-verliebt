@@ -139,7 +139,7 @@ export default async function MagazineOverviewPage() {
               className={["tvm-tile", entry.size ? `tvm-tile-${entry.size}` : "", entry.image ? "" : "tvm-tile-plain"].filter(Boolean).join(" ")}
               style={{ ["--tilt" as string]: `${index % 2 ? 0.8 : -0.8}deg` }}
             >
-              {entry.image ? <img src={entry.image} alt="" loading="lazy" decoding="async" /> : null}
+              {entry.image ? <img src={entry.image} alt={`${entry.label} im tierisch-verliebt Magazin`} loading="lazy" decoding="async" /> : null}
               <span className="tvm-tile-icon" aria-hidden="true">{entry.icon}</span>
               <span className="tvm-tile-copy">
                 <strong>{entry.label}</strong>

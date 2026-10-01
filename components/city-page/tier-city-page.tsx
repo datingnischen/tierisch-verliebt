@@ -166,7 +166,7 @@ export function TierCityPage({ market, city, expert }: Props) {
             {nearby.map((entry) => (
               <li key={entry.slug}>
                 <MarketLink className="tvc-near-row" market={market} path={entry.path}>
-                  {entry.imageUrl ? <img src={entry.imageUrl} alt="" loading="lazy" decoding="async" /> : <span className="tvc-near-ph"><PawIcon /></span>}
+                  {entry.imageUrl ? <img src={entry.imageUrl} alt={entry.imageAlt || `Partnersuche in ${entry.cityName}`} loading="lazy" decoding="async" /> : <span className="tvc-near-ph"><PawIcon /></span>}
                   <span className="tvc-near-name"><small>Tierliebe Singles in</small><strong>{entry.cityName}</strong></span>
                   <span className="tvc-near-bar" aria-hidden="true"><i style={{ width: `${Math.max(18, (entry.km / maxKm) * 100)}%` }} /></span>
                   <span className="tvc-near-km">{entry.km} km</span>
