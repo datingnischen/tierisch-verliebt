@@ -23,3 +23,16 @@ export function isWpRestPath(pathname: string): boolean {
 export function isWpRestRoot(pathname: string, search: URLSearchParams): boolean {
   return search.has("rest_route") && MAGAZINE_ROOT.test(withoutMarket(pathname));
 }
+
+/**
+ * Ziel-URL für ein internes Rewrite des Endpunkts. Vercel verwirft bei Rewrites Parameter ohne Wert, und `?_embed`
+ * (ohne Wert) ist die übliche WordPress-Schreibweise: sie wird hier zu `_embed=1`, sonst fehlen die eingebetteten Daten.
+ */
+export function restRewriteUrl(href: string, pathname: string): URL {
+  const destination = new URL(href);
+  destination.pathname = pathname;
+  for (const key of ["_embed"]) {
+    if (destination.searchParams.get(key) === "" && destination.searchParams.has(key)) destination.searchParams.set(key, "1");
+  }
+  return destination;
+}

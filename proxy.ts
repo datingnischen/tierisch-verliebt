@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server.js";
 import { NextResponse } from "next/server.js";
-import { isWpRestPath, isWpRestRoot } from "#wp-rest-paths";
+import { isWpRestPath, isWpRestRoot, restRewriteUrl } from "#wp-rest-paths";
 import { isMarketCode, marketForHostname, publicUrl, resolveMarketRequest, withTrailingSlash, type MarketCode } from "#markets";
 
 const INTERNAL_REWRITE_TOKEN = globalThis.crypto.randomUUID();
@@ -46,7 +46,9 @@ export function proxy(request: NextRequest) {
   const destinationHeader=request.headers.get("x-tv-rewrite-destination"),token=request.headers.get("x-tv-rewrite-token");
   if(token===INTERNAL_REWRITE_TOKEN&&destinationHeader===request.nextUrl.pathname)return NextResponse.next();
   // /magazin/?rest_route=… (WordPress ohne schöne Permalinks) beantwortet die index.php-Route, nur für die deutsche Seite.
-  if(isWpRestRoot(request.nextUrl.pathname,request.nextUrl.searchParams)&&(marketForHostname(requestHostname(request))??"de")==="de"){const rest=new URL(request.nextUrl.href);rest.pathname="/magazin/index.php";return NextResponse.rewrite(rest);}
+  if(isWpRestRoot(request.nextUrl.pathname,request.nextUrl.searchParams)&&(marketForHostname(requestHostname(request))??"de")==="de")return NextResponse.rewrite(restRewriteUrl(request.nextUrl.href,"/magazin/index.php"));
+  // Magazin-Endpunkt auf der deutschen Seite: Präfix /de entfernen und direkt umschreiben (der Resolver unten würde den Query-String ohne Wert-Parameter weitergeben).
+  if(isWpRestPath(request.nextUrl.pathname)&&(marketForHostname(requestHostname(request))??"de")==="de")return NextResponse.rewrite(restRewriteUrl(request.nextUrl.href,request.nextUrl.pathname.replace(/^\/de(?=\/)/,"")));
   const slashRedirect=trailingSlashRedirect(request);
   if(slashRedirect)return slashRedirect;
   const resolution=resolveMarketRequest(request.nextUrl.pathname,requestHostname(request));
