@@ -7,7 +7,8 @@
     "#markets": "./lib/markets.ts",
     "#magazine": "./lib/magazine.ts",
     "#magazine-store": "./lib/magazine-store.ts",
-    "#static-asset": "./lib/static-asset.ts"
+    "#static-asset": "./lib/static-asset.ts",
+    "#wp-rest-paths": "./lib/wp-rest-paths.ts"
   },
   "scripts": {
     "dev": "next dev",

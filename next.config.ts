@@ -47,7 +47,6 @@ export default function nextConfig(phase: string): NextConfig {
         ["/magazin/sitemap_index.xml", "/sitemap.xml"],
         ["/magazin/wp-login.php", "/magazin/"],
         ["/magazin/wp-admin/:path*", "/magazin/"],
-        ["/magazin/wp-json/:path*", "/magazin/"],
       ];
       return legacy.flatMap(([source, destination]) => [
         { source, destination, permanent: true },
