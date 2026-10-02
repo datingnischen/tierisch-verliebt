@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/wordpress";
+import { SITE_URL } from "@/lib/magazine";
 
 export default function robots(): MetadataRoute.Robots {
   return {

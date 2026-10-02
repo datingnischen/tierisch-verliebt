@@ -12,12 +12,10 @@ import {
   getMagazinePages,
   getMagazinePostsPage,
   stripHtml,
-} from "@/lib/wordpress";
+} from "@/lib/magazine";
 import "@/components/city-page/tier-city-page.css";
 import "@/components/city-page/tier-city-hub.css";
 import "./magazin-hub.css";
-
-export const revalidate = 300;
 
 type EntryPoint = {
   slug: string;

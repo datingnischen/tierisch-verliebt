@@ -42,3 +42,6 @@ next-env.d.ts
 
 # python
 __pycache__/
+
+# WordPress-Dump für den Einmal-Import (scripts/import_wordpress.py)
+.wp-cache/

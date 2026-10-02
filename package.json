@@ -5,7 +5,9 @@
   "type": "module",
   "imports": {
     "#markets": "./lib/markets.ts",
-    "#wordpress": "./lib/wordpress.ts"
+    "#magazine": "./lib/magazine.ts",
+    "#magazine-store": "./lib/magazine-store.ts",
+    "#static-asset": "./lib/static-asset.ts"
   },
   "scripts": {
     "dev": "next dev",
@@ -17,6 +19,7 @@
     "import:partnersuche": "python scripts/import_partnersuche.py"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "^16.3.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"

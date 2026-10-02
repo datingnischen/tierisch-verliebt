@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { getMagazineEntryBySlug, SITE_URL } from "@/lib/wordpress";
+import { getMagazineEntryBySlug, SITE_URL } from "@/lib/magazine";
 import { withTrailingSlash } from "@/lib/markets";
 
 export const ABOUT_OVERVIEW_PATH = "/ueber-uns";

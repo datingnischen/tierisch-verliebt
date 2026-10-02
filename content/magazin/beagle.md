@@ -1,0 +1,74 @@
+---
+title: "Der Beagle – Portrait einer freundlichen Hunderasse"
+slug: "beagle"
+type: page
+wpId: 404
+published: "2019-10-29T19:11:55"
+updated: "2026-09-22T13:53:14"
+author: "christian-m-haas"
+categories: []
+image: "/magazin/wp-content/uploads/2019/10/Beagle.jpg"
+imageAlt: "Beagle"
+seoTitle: "Der Beagle - Porträt"
+description: "Der fröhliche Beagle gehört zu den kleinen und mittelgroßen Rassen. Alle wichtigen Infos liest du hier: Charakter, Rassenmerkmale, Anschaffung und Pflege."
+excerpt: "<p>Der fröhliche Beagle gehört zu den kleinen und mittelgroßen Rassen. Als Schweißhund spürt er Hasen und Kleinwild bei der Jagd</p>"
+---
+
+<p>Der fröhliche Beagle gehört zu den kleinen und mittelgroßen Rassen. Als Schweißhund spürt er Hasen und Kleinwild bei der Jagd nach. Als intelligenter und freundlicher Frohsinn ist er ein spielfreudiger Geselle für Kinder.</p>
+
+<h2>Steckbrief</h2>
+<p><img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Lebenserwartung:</strong> 12 bis 15 Jahre<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Gewicht:</strong> 10 bis 18 kg<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Widerristhöhe:</strong> 33 bis 40 cm<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Charakter:</strong> abenteuerlustig, sanftmütig, ruhig, kontaktfreudig<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Farben:</strong> braun-weiß, rot-weiß, schwarz-weiß-braun<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>FCI-Gruppe:</strong> <a href="https://tierisch-verliebt.de/magazin/fci-gruppen/">FCI-Gruppe 6</a><br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Kosten:</strong> Zwischen 800 &amp; 1.200 Euro</p>
+<h2>Wesen &amp; Charakter&nbsp;</h2>
+<p>Der Beagle hat ein Portrait einer freundlichen Hunderasse, die mit ihrem lebhaften Wesen, ihrer ausgeprägten Spürnase und ihrem liebevollen Charakter überzeugt. Wegen ihrer ruhigen und harmonischen Art sind Beagles beliebte Familienhunde. Aggressivität liegt ihnen fern, lieber spielen sie in ihrer gut gelaunten Art eine Extra-Runde. Dabei darf es gern Leckerlis geben, denn diese Rasse futtert, was ihr vor die Schnauze kommt.</p>
+<p>Beagles sind ebenso beliebte <a href="https://tierisch-verliebt.de/magazin/jagdhunde/">Jagdhunde</a>. Inständig verfolgen sie Spuren. Sobald sie eine interessante Fährte aufgenommen haben, hilft kaum ein &#8216;Komm&#8217;, &#8216;Sitz&#8217;, oder &#8216;Bleib&#8217;. Verbote umgehen sie sehr gern. Der Beagle verfolgt aufgrund seiner Natur mit seinem exzellenten Geruchssinn jede Spur. So wird er als Spürhund genutzt. Kaum, dass er einer Fährte folgt, hört er nicht mehr auf seinen Menschen, obwohl er sehr gut hört.</p>
+<p>Sein Jagdtrieb herrscht vor. Zielstrebig und zäh verfolgt er seine Opfer. Im Team klappt die Jagd am besten, und so erbringen Beagles im Rudel prima Jagderfolge. Die Engländer erkannten die Anpassungsfähigkeit der Rasse sowie deren Laufdrang und züchteten sie zu Meutehunden.</p>
+<h2>Herkunft der Beagle</h2>
+<p>Die Ursprünge der Beagles könnte man seiner Statur nach und ähnlichen Eigenschaften gar in der Antike Griechenlands vermuten. Schon der Athener Philosoph Xenophon (431-354 v.C.) erwähnte in seinem Werk über die Jagdkunst einen dem Beagle ähnlichen Schnüfflerhund, der mit seinem guten Geruchssinn Hasen jagte. Von Griechenland aus sollte die Rasse später über Italien bis in die Normandie Frankreichs gelangen.</p>
+<p>Von der Normandie kam die Hunderasse 1066 mit der Familie Talbot unter Wilhelm, dem Eroberer nach England. Man nannte sie die &#8216;Chien St. Hubert&#8217;. In Großbritannien züchtete man nun die weiße Rasse &#8216;Talbot&#8217;. Mit ihrem feinen Geruchssinn konnten sie Hirsche im tiefsten Winter aufstöbern und wurden für die Jagd für Großwild gezüchtet. Diese doch langsame Rasse wurde mit Windhunden vermischt, damit sie schneller wurden.</p>
+<p>Die Talbots sind wohl Vorfahren des heutigen Beagles und Bluthundes. Aufgrund ihres Zweckmangels sowie der Notwendigkeit ständiger Pflege sind sie ausgestorben. Den Begriff &#8216;Talbot&#8217; gibt es noch heute in der Wappenkunde. In Subury, Suffolk, trägt das Wappen der Stadt, der Schule und Sportverein den Talbot. Etwa 100 Jahre später werden die &#8216;Northern Hounds&#8217; als schlank und schnell mit einem schrillen Spurlaut beschrieben.</p>
+<p><img decoding="async" class="alignnone wp-image-1965 " src="/magazin/wp-content/uploads/2023/03/Beagle-2-1024x680.jpg" alt="Beagle" width="577" height="383" srcset="/magazin/wp-content/uploads/2023/03/Beagle-2-1024x680.jpg 1024w, /magazin/wp-content/uploads/2023/03/Beagle-2-300x199.jpg 300w, /magazin/wp-content/uploads/2023/03/Beagle-2-768x510.jpg 768w, /magazin/wp-content/uploads/2023/03/Beagle-2-1536x1020.jpg 1536w, /magazin/wp-content/uploads/2023/03/Beagle-2.jpg 1920w" sizes="(max-width: 577px) 100vw, 577px" /></p>
+<h2>Geschichte</h2>
+<p>In der Gascogne Frankreichs wurde um 1400 eine jagdtüchtige Hunderasse beschrieben. Die Hunde waren auf weißem Fell schwarz-braun gecheckt, die &#8216;Southern Hounds&#8217;. Sie waren groß und robust, hatten einen quadratischen Kopf und lange, weiche, dreieckige Ohren. Der heutige Beagle soll eine Züchtung aus Southern und den weniger korpulent, mit spitzer Schnauze versehen und mit weniger Geruchssinn ausgestatteten, für die Jagd gezüchteten Northern Hounds sein.</p>
+<p>Die britische Aristokatie adoptierte ihn schließlich als &#8216;Taschenhund&#8217;. Er sollte während der Jagd seinen perfekten Einsatz vom Sattel der Reiter leisten. Seit 1890 ist er durch die Initiative des &#8216;Kennel Club&#8217; von England amtlich als Rasse anerkannt. Sein Namensursprung wird im französischen “becguele” bzw. “b&#8217;gueule” , was etwa &#8220;laute Kehle&#8221; bedeutet, zurückgeführt wohl auf sein typisches Bellen.</p>
+<p><iframe title="Beagle | Freundliche Jagdhunderasse voller Energie – Cinematic Kurzvideo" width="910" height="512" src="https://www.youtube.com/embed/QwDBc8ULnK8?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<h2>Beagle Zuhause</h2>
+<p>Ein hohes ökonomisches sowie zeitliches Budget, viel Platz, Auslauf und Gesellschaft. Diese Merkmale gilt es vor einem Beagle-Kauf zu überlegen. Die beste Voraussetzung für ein freudiges Beagle-Leben wäre eine Familie mit großem Garten. So kann er seiner Frohnatur nachkommen und draußen mit Kindern herumtollen.</p>
+<p>Beagle-Welpen müssen streng erzogen werden. Eigentlich lässt er sich nicht gern <a href="https://tierisch-verliebt.de/magazin/hunderziehung-grundlegendes/">erziehen</a>. Zu gern setzt er dickköpfig seinen eigenen Willen durch. Schlau ist er und überlistet kurzum seinen Menschen. Im Nu&#8217; wird er Rudelführer, sollte man ihm nicht schon von frühester Welpenzeit an zeigen, wer im Hause das Rudel führt.</p>
+<p>Man zahlt locker 1.000 Euro für einen Beagle von einem seriösen Züchter. Alltägliche Dinge wie Halsbänder, Leine, Korb, etc. sollte man natürlich auch bedenken, außerdem fallen Impf- Tierarzt- und Steuerkosten an. Der Beagle hat ständig Appetit und frisst am liebsten ununterbrochen. Somit kostet sein täglicher Gaumenschmaus viel <a href="https://tierisch-verliebt.de/magazin/unterhalt-eines-hundes/">Geld</a>.</p>
+<h2><img decoding="async" class="alignnone wp-image-1964 " src="/magazin/wp-content/uploads/2023/03/Beagle-3-1024x687.jpg" alt="Beagle" width="594" height="398" srcset="/magazin/wp-content/uploads/2023/03/Beagle-3-1024x687.jpg 1024w, /magazin/wp-content/uploads/2023/03/Beagle-3-300x201.jpg 300w, /magazin/wp-content/uploads/2023/03/Beagle-3-768x515.jpg 768w, /magazin/wp-content/uploads/2023/03/Beagle-3-1536x1030.jpg 1536w, /magazin/wp-content/uploads/2023/03/Beagle-3.jpg 1920w" sizes="(max-width: 594px) 100vw, 594px" /></h2>
+<h2>Aktivitäten für Beagle</h2>
+<p>Beagle-Besitzer sollten gern viel spazieren gehen. Der Beagle würde locker zwei Stunden laufen. Spannende Fährten findet er schnell, und noch schneller folgt er diesen. Seinem starken Bewegungsdrang kommt schnelles Laufen neben fahrradfahrenden Hundehaltern gut zu Pass. Und im <a href="https://tierisch-verliebt.de/magazin/spiele-fuer-hunde-zu-hause/">Spiel</a> mit anderen Hunden und mit Kindern kann er sich bestens austoben, obwohl er einst als Jagd- und Meutehund gezüchtet wurde. Er weist hervorragende Fähigkeiten als Spürhund auf. Als Jagdhund verfolgt er seine Beute beharrlich.</p>
+<p>Man zählt ihn zur &#8216;Hound Group&#8217;, deren Hunde dazu ausgebildet sind, Spuren nachzugehen, mit Lauten zu jagen, dann ihren Standort mit einem Laut zu bekunden. Er jagt ebenso bestens das Federwild, auch im Wasser. Der Beagle lernt hervorragend, doch ist er als Apportierhund ungeeignet. Aufgrund seines außerordentlichen Geruchssinns dient er bei der Suche nach illegaler Ware an Häfen und Flughäfen.</p>
+<p>Missbraucht wurden Beagles von Wissenschaftlern. Da Beagles von ihrer Statur her niedrig gebaut sind, wurden sie zu diversen Tests in Laboren gefangen gehalten. Viele starben an den Folgen greulich absurder Laborversuche.</p>
+<h2>Rassemerkmale der Beagle</h2>
+<p>Nach der Fédération Cynologique Internationale (FCI) gehört er zur Gruppe 6 der FCI, Sektion 1.3, Standard 161. Das sind Laufhunde.</p>
+<p>Der Beagle wird nahezu 40 Zentimeter groß und 18 kg schwer. Er kann 15 Jahre alt werden. Sein Fell ist meist zweifarbig: braun-weiß, beige-weiß, zitronengelb-weiß. Auch die dreifarbige Fellfarbenvariante &#8216;rot-weiß-schwarz&#8217; kommt vor. Seine Beine sind kurz, kräftig und muskulös. Seine Rute ist hochangesetzt, dick und dicht behaart, die weiße Spitze zeigt fröhlich nach oben. Er schaut mit sanftem Blick aus dunkelbraunen und haselnussbraunen Augen. Sein Kiefer ist kräftig. Seine langen Ohren hängen tief hinunter.</p>
+<h2><img decoding="async" class="alignnone wp-image-1966 " src="/magazin/wp-content/uploads/2023/03/Beagle-1-1024x683.jpg" alt="Beagle" width="647" height="431" srcset="/magazin/wp-content/uploads/2023/03/Beagle-1-1024x683.jpg 1024w, /magazin/wp-content/uploads/2023/03/Beagle-1-300x200.jpg 300w, /magazin/wp-content/uploads/2023/03/Beagle-1-768x512.jpg 768w, /magazin/wp-content/uploads/2023/03/Beagle-1-1536x1024.jpg 1536w, /magazin/wp-content/uploads/2023/03/Beagle-1.jpg 1920w" sizes="(max-width: 647px) 100vw, 647px" /></h2>
+<h2>Gesundheit der Beagle</h2>
+<p>Da die Form der Beagles-Ohren Luftwege versperren, bleiben sie feuchtnass. Deshalb können sie sich leicht infizieren. Regelmäßiges Säubern hilft. Seine Augen können an Grünstar und an Hornhautdystrophien erkranken.Manche Beagles leiden an Epilepsie und Schilddrüsenunterfunktion. Beides kann medikamentös behandelt werden.</p>
+<p>Bewegungsmangel führt bei Beagles zu Übergewicht. Daher könnten sie am Herz und an den Gelenken erkranken. Ihr <a href="https://tierisch-verliebt.de/magazin/getreidefreies-futter/">Futter</a> sollte aus niedriger Energiedichte bestehen, die Rationen gut berechnet werden.</p>
+<p>Lustig wirkt er leider aufgrund seiner schwachen Beinchen und seiner etwas gekrümmten Wirbelsäule. So denke man doch an Peanuts-&#8216;Snoopy&#8217;. Beim Gehen müssen Beagles auf ihren kurzen Beinchen ihr Gleichgewicht halten. Eine Folge darauf wären Bandscheibenvorfälle.</p>
+<p><img decoding="async" class="alignnone wp-image-2907" src="/magazin/wp-content/uploads/2025/01/ernaehrung-Beagle.webp" alt="ernaehrung-beagle" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/ernaehrung-Beagle.webp 1024w, /magazin/wp-content/uploads/2025/01/ernaehrung-Beagle-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/ernaehrung-Beagle-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/ernaehrung-Beagle-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<h2>FAQ</h2>
+<h3>1. Sind Beagle für Ersthundebesitzer geeignet?</h3>
+<p>Ja, Beagle können für Ersthundebesitzer geeignet sein, allerdings gibt es einige Aspekte, die beachtet werden sollten. Hier sind die wichtigsten Vor- und Nachteile:</p>
+<ul>
+<li>Vorteile: Freundliches Wesen, Mittlere Größe, Verspieltheit und Energie und Pflegeleichtes Fell</li>
+<li>Nachteile: Starker Jagdtrieb, Sturheit und Eigenwilligkeit, Hohe Energie und Lautstärke</li>
+</ul>
+<p>Mit der richtigen Vorbereitung und Geduld kann ein Beagle für Ersthundebesitzer eine tolle Wahl sein!</p>
+<h3>2. Wie trainiert man einen Beagle effektiv?</h3>
+<p>Beagle sind intelligente, aber auch eigenwillige Hunde, was das Training zu einer Herausforderung machen kann. Hier sind einige Tipps, wie man einen Beagle effektiv trainiert: positive Verstärkung verwenden, beim Kommandos und Regeln immer dieselben Wörter und Gesten verwenden, kurze und regelmäßige Trainingseinheiten, seinen Geruchssinn nutzen, Ablenkungen minimieren, Geduld bei Sturheit, frühe Sozialisation, Gehorsamstraining priorisieren, Langeweile vermeiden. Ein gut trainierter Beagle ist ein treuer, glücklicher Begleiter! Mit Geduld und Engagement wirst du viel Erfolg haben.</p>
+<h3>3. Wie viel kostet die Haltung eines Beagle im Durchschnitt pro Monat?</h3>
+<p>Die monatlichen Kosten für die Haltung eines Beagle können variieren, aber hier ist eine Übersicht über die typischen Ausgaben, damit du dir ein Bild machen kannst:</p>
+<p>Gesamtkosten pro Monat: 70–200 € ( Futterkosten: 30–60 €, Tierarztkosten: 10–40 €, Hundesteuer: 5–20 €, Haftpflichtversicherung: 5–15 €, Pflege und Hygiene: 5–15 €, Spielzeug und Zubehör: 5–15 €, Trainings- und Hundeschule (optional): 10–30 €, Sonstiges &#8211; Reisekosten, Leckerlis oder spezielle Ausrüstung: 5–20 € ).</p>
+<p>Die genauen Kosten hängen von den individuellen Bedürfnissen des Hundes und deinem Lebensstil ab. Ein finanzielles Polster für unvorhergesehene Ausgaben, wie Tierarztkosten, wird ebenfalls empfohlen.</p>
+<h3>4. Ist der Beagle für Allergiker geeignet?</h3>
+<p>Beagle sind in der Regel nicht ideal für Allergiker, da sie trotz ihres kurzen Fells regelmäßig Haare verlieren und Schuppen produzieren. Diese Schuppen, zusammen mit Speichel und Urin, sind die Hauptauslöser von Tierhaarallergien. Dennoch hängt die Verträglichkeit immer vom individuellen Allergiker und der Stärke der Allergie ab. Tipps, falls ein Allergiker einen Beagle halten möchte: häufiges Bürsten, saubere Umgebung, Hundehautpflege, Allergietests und zeitliche Probephase.</p>
+<p>Wenn du Allergiker bist und dir einen Beagle wünschst, solltest du die Situation sorgfältig abwägen und gegebenenfalls Rücksprache mit einem Allergologen halten.</p>

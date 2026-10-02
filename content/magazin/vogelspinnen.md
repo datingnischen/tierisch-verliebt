@@ -1,0 +1,39 @@
+---
+title: "Vogelspinnen – Die großen Spinnen im Überblick"
+slug: "vogelspinnen"
+type: post
+wpId: 2469
+published: "2023-09-12T09:53:11"
+updated: "2025-11-12T12:00:37"
+author: "christian-m-haas"
+categories: ["allgemein"]
+image: "/magazin/wp-content/uploads/2023/09/Vogelspinnen-1.jpg"
+imageAlt: "Vogelspinnen"
+seoTitle: "Vogelspinnen im Überblick"
+description: "Die Vogelspinne ist wahrlich ein faszinierendes Tier, dass zugleich auch angsteinflößend sein kann. Mehr zu der Haltung lesen Sie in unserem Artikel"
+excerpt: "<p>Vogelspinnen und was man über sie wissen muss Für die einen ist sie ein Graus, für die anderen ein sehr</p>"
+---
+
+<h2>Vogelspinnen und was man über sie wissen muss</h2>
+<p>Für die einen ist sie ein Graus, für die anderen ein sehr spannendes Haustier. Die Vogelspinne ist wahrlich ein faszinierendes Tier, dass zugleich auch angsteinflößend sein kann. Die große Spinne, die in zahlreichen Unterarten vorkommt, ist bereits seit mehr als 350 Millionen Jahren ein Teil dieser Erde. Wer einige Informationen über sie hat, fürchtet das Spinnentier vielleicht etwas weniger.</p>
+<h2>Wie viele Arten an Vogelspinnen gibt es und warum heißt das Tier Vogelspinne?</h2>
+<p>Gemeinhin ist uns die haarige Vogelspinne bekannt, die sogar bei einigen Spinnenfans im heimischen Terrarium lebt. Dabei gibt es mehr als 900 Arten der Theraphosidae. Ihren ungewöhnlichen Namen erhielten die Spinnentiere von Maria Sybilla Marian, einer bekannten Tierforscherin und Künstlerin, die nach einer Reise durch das südamerikanische Surinam Eindrücke in ihrem Hauptwerk veröffentlichte. Darunter war auch eine Zeichnung einer Vogelspinne zu sehen, die auf einem Kolibri sitzt. So wurde der Name fälschlicherweise geprägt, denn in der Regel gehören Vögel eher nicht zu den typischen Beutetieren der Vogelspinne.</p>
+<p><img decoding="async" class="alignnone size-large wp-image-2472" src="/magazin/wp-content/uploads/2023/09/Vogelspinnen-2-1024x682.jpg" alt="Vogelspinnen" width="910" height="606" srcset="/magazin/wp-content/uploads/2023/09/Vogelspinnen-2-1024x682.jpg 1024w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-2-300x200.jpg 300w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-2-768x512.jpg 768w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-2.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<h2>Wo leben Vogelspinnen?</h2>
+<p>Die Vogelspinne stammt ursprünglich aus tropischen und subtropischen Lebensräumen. So findet man die Spinnentiere in Afrika und Südamerika, aber auch in Australien und Amerika. In Europa findet man gemeinhin nur vier von mehr als 900 Arten. Überwiegend findet man die Vogelspinne im europäischen Raum in Gegenden mit hohen Temperaturen, wie Zypern, Spanien oder auch in Portugal. Aufgrund der Vielzahl der Unterarten zeigen sich Verschiedenheiten im Lebensraum der Tiere. So leben einige Vogelspinnen Arten auf tropischen Bäumen, während andere Unterarten sich Höhlen unter der Erde bauen oder auch im Gebüsch leben.</p>
+<h2>Wie alt kann eine Vogelspinne werden?</h2>
+<p>Wer sich eine junge Vogelspinne anschafft, wird sich auf eine lange, gemeinsame Zeit mit dem <a href="https://tierisch-verliebt.de/magazin/spinne/">Spinnentier</a> freuen können, denn Vogelspinnen, die unter guten Voraussetzungen in Terrarien gehalten werden, können durchaus bis zu 30 Jahre alt werden. Ein Durchschnittsalter der Weibchen wird bei guter Haltung mit 20 Jahren beschrieben, die Männchen werden durchschnittlich vier Jahre, selten sogar bis zu 13 Jahre alt.</p>
+<h2>Wie sieht die Vogelspinne aus?</h2>
+<p>Bei mehr als 900 Unterarten gibt es natürlich auch verschiedene Aussehen der Vogelspinne. Es gibt die Vogelspinne in unterschiedlichen Größen und in vielen verschiedenen Farben. Große Arten können eine Körperlänge von bis zu 13 Zentimetern aufweisen, während die kleinsten Unterarten gerade mal 2 Zentimeter groß werden. Das Tier besitzt 4 Beinpaare, sowie 2 Taster, die auch als Scheinbeine zu bezeichnen sind. Mit ihren parallel gestellten Kieferklauen können sie ihre Gegner erledigen und sich von ihnen ernähren.</p>
+<p><img decoding="async" class="alignnone size-large wp-image-2470" src="/magazin/wp-content/uploads/2023/09/Vogelspinnen-4-1024x682.jpg" alt="Vogelspinnen" width="910" height="606" srcset="/magazin/wp-content/uploads/2023/09/Vogelspinnen-4-1024x682.jpg 1024w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-4-300x200.jpg 300w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-4-768x512.jpg 768w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-4.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<h2>Wie jagt die Spinne und was frisst sie?</h2>
+<p>Die Vogelspinne jagt stets aus dem Hinterhalt. Sie versteckt sich und greift dann ihren Gegner anzugreifen. Erledigt werden die Insekten, die zu den häufigsten Speisen der Vogelspinne gehört, mit den starken Mundwerkzeugen. Auch kleine Wirbeltiere gehören hin und wieder zum Speiseplan der Spinnentiere. Ganz gleich, was die Spinne gejagt hat, sie kann ihre Opfer nur flüssig verdauen. Dazu speit sie ein giftiges Sekret auf ihre Beute, sodass das Opfer zersetzt wird. Im Anschluss kann die Vogelspinne ihre Opfer aufschlürfen und sich so von ihnen ernähren.</p>
+<h2>Hat die Vogelspinne auch Feinde?</h2>
+<p>Mit ihrem großen Körperbau und ihrem Gift sind sie ein gefährlicher Gegner für viele kleine Tiere, die sich im Lebensraum der Spinnen aufhalten. Nicht nur das Verdauungssekret kann für die Gegner gefährlich sein, einige Unterarten der Tiere haben am Hinterleib Brennhaare, die sich auf ihre Gegner schleudern können und sie so außer Gefecht setzen.</p>
+<p>Obwohl deutlich kleiner als die Vogelspinne ist die Wegweiser ein gefährlicher Gegner für die Vogelspinne. Mit einem giftigen Stachel kann die kleine Wespe die Spinne außer Gefecht setzen und für einige Zeit lähmen. In dieser Zeit legt die Wespe unbemerkt eine Larve auf den Körper der Spinne ab, die nach dem Schlüpfen damit beginnt, die Vogelspinne aufzufressen. Anschließend tötet die Wespe ihren Gegner.</p>
+<p><img decoding="async" class="alignnone size-large wp-image-2471" src="/magazin/wp-content/uploads/2023/09/Vogelspinnen-3-1024x683.jpg" alt="Vogelspinnen" width="910" height="607" srcset="/magazin/wp-content/uploads/2023/09/Vogelspinnen-3-1024x683.jpg 1024w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-3-300x200.jpg 300w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-3-768x512.jpg 768w, /magazin/wp-content/uploads/2023/09/Vogelspinnen-3.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<h2>Sind Vogelspinnen für Menschen gefährlich?</h2>
+<p>Auch wenn die Vogelspinne vielen Menschen schon beim Anblick einen Schauer über den Rücken jagt, gefährlich ist das Tier für den Menschen tatsächlich nicht. Zwar hängt es von individuellen Faktoren ab, wie der Mensch nach einem Biss der Spinne reagiert, och tödlich ist der Biss einer Vogelspinne meist nicht. Es können jedoch allergische Reaktionen auftreten, die man ärztlich behandeln lassen sollte.</p>
+<h2>Worauf muss man achten, wenn man eine Vogelspinne halten möchte?</h2>
+<p>Viele Fans lieben die behaarten Spinnentiere, die faszinierend auf Spinnenfans wirken. Grundsätzlich kann man Vogelspinnen in Terrarien mit Schiebetür oder auch mit Falttüren halten. Da die Vogelspinne ein warmes Zuhause bevorzugt, sollte man unbedingt auf einen trockenen Boden achten, der nicht schimmelt. Um die richtige Temperatur für das Tier erreichen zu können, müssen entsprechende Maßnahmen, wie zum Beispiel Heizstäbe oder Heizmatten und/oder Beleuchtung angebracht werden.</p>
+<p>Auch Möglichkeiten zum verstecken und Höhlen bauen müssen vorhanden sein. Als Futter eignen sich kleine Insekten, aber auch Heuschrecken schmecken den meisten Vogelspinnen. Als Kuscheltier ist die Spinne jedoch nicht geeignet. Das Tier meidet lieber Kontakte zu Menschen. Auch wenn ihr Biss nicht lebensgefährlich ist, sollte man diese verhindern.</p>

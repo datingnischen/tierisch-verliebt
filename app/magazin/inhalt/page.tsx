@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "@/components/link";
-import { SITE_URL, formatGermanDate, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/wordpress";
+import { SITE_URL, formatGermanDate, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/magazine";
 import { buildMagazineIndex, countIndexLinks } from "@/lib/magazine-index";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { MagazineIndexBrowser } from "./magazine-index-browser";
@@ -10,8 +10,6 @@ import "@/components/city-page/tier-city-page.css";
 import "@/components/city-page/tier-city-hub.css";
 import "../magazin-hub.css";
 import "./inhalt.css";
-
-export const revalidate = 300;
 
 const PAGE_URL = `${SITE_URL}/magazin/inhalt/`;
 const TITLE = "Inhaltsverzeichnis: alle Magazin-Beiträge & Seiten A–Z";

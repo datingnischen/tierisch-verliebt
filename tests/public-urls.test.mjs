@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readdir, readFile } from "node:fs/promises";
 import { LIVE_ORIGIN, publicUrl } from "../lib/markets.ts";
-import { SITE_URL } from "../lib/wordpress.ts";
+import { SITE_URL } from "../lib/magazine.ts";
 
 const repoRoot = new URL("../", import.meta.url);
 

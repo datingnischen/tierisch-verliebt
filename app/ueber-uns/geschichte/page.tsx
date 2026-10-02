@@ -4,9 +4,7 @@ import { AboutPolaroid, AboutShell } from "@/components/about/about-shell";
 import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, ABOUT_STORY_PATH, aboutStoryCanonical, getAboutStoryPage } from "@/lib/about-section";
-import { stripHtml } from "@/lib/wordpress";
-
-export const revalidate = 300;
+import { stripHtml } from "@/lib/magazine";
 
 export async function generateMetadata(): Promise<Metadata> {
   const entry = await getAboutStoryPage();

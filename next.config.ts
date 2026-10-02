@@ -28,6 +28,32 @@ export default function nextConfig(phase: string): NextConfig {
     trailingSlash: true,
     skipTrailingSlashRedirect: true,
     assetPrefix: isDev ? undefined : `${assetHost}${assetPathPrefix}`,
+    // Magazin-Inhalte liegen als Dateien im Repo; sie müssen in jede Serverless-Funktion gepackt werden.
+    outputFileTracingIncludes: {
+      "/**": ["./content/magazin/**/*", "./data/magazin/*.json"],
+    },
+    async redirects() {
+      // Alte WordPress-URLs unter /magazin/ (Autoren-Platzhalter, Archive, Feeds, Sitemaps, Admin).
+      // Auf der Live-Domain gelten die Pfade ohne Präfix, auf Vorschau-Hosts (vercel.app) liegt alles unter /de.
+      const legacy: Array<[string, string]> = [
+        ["/magazin/author/redaktion", "/magazin/christian/"],
+        ["/magazin/author/tierliebe", "/magazin/christian/"],
+        ["/magazin/category/:slug", "/magazin/thema/:slug/"],
+        ["/magazin/tag/:slug", "/magazin/"],
+        ["/magazin/feed", "/magazin/"],
+        ["/magazin/comments/feed", "/magazin/"],
+        ["/magazin/wp-sitemap.xml", "/sitemap.xml"],
+        ["/magazin/sitemap.xml", "/sitemap.xml"],
+        ["/magazin/sitemap_index.xml", "/sitemap.xml"],
+        ["/magazin/wp-login.php", "/magazin/"],
+        ["/magazin/wp-admin/:path*", "/magazin/"],
+        ["/magazin/wp-json/:path*", "/magazin/"],
+      ];
+      return legacy.flatMap(([source, destination]) => [
+        { source, destination, permanent: true },
+        { source: `/de${source}`, destination: destination.startsWith("/sitemap") ? destination : `/de${destination}`, permanent: true },
+      ]);
+    },
     async rewrites() {
       return [
         {

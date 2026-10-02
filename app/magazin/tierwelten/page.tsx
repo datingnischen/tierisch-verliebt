@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import Link from "@/components/link";
-import { SITE_URL, getAllMagazineEntries, type MagazineEntry } from "@/lib/wordpress";
+import { SITE_URL, getAllMagazineEntries, type MagazineEntry } from "@/lib/magazine";
 import { buildMagazineFaqGraph } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { TIERWELT_COUNT, TIERWELT_FAQ, TIERWELT_GROUPS, TIERWELT_MATCHES, findTierwelt } from "@/lib/tierwelten";
 import "./tierwelten.css";
-
-export const revalidate = 300;
 
 const PAGE_URL = `${SITE_URL}/magazin/tierwelten/`;
 const REGISTER_URL = "https://tierisch-verliebt.de/?AID=magazin";

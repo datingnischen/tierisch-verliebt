@@ -13,7 +13,7 @@ import {
 import { getMarketCityPages } from "@/lib/market-partnersuche";
 import { getMarket, MARKET_CODES } from "@/lib/markets";
 import { SEARCH_MAX_QUERY_LENGTH, searchDocuments, type SearchDocument } from "@/lib/site-search";
-import { getMagazineCategories, getMagazinePages, getMagazinePosts, stripHtml } from "@/lib/wordpress";
+import { getMagazineCategories, getMagazinePages, getMagazinePosts, stripHtml } from "@/lib/magazine";
 
 type PageProps = { searchParams: Promise<{ q?: string | string[] }> };
 

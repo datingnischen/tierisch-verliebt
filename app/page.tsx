@@ -4,7 +4,7 @@ import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
-import { formatUpdatedDate, getMagazineCategories, getMagazinePages, getMagazinePosts, SITE_URL, stripHtml } from "@/lib/wordpress";
+import { formatUpdatedDate, getMagazineCategories, getMagazinePages, getMagazinePosts, SITE_URL, stripHtml } from "@/lib/magazine";
 
 const HOME_HERO_IMAGE = staticAsset("/home/frontpage-visual-tierischverliebt.webp");
 

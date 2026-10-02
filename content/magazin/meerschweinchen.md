@@ -1,0 +1,46 @@
+---
+title: "Das Meerschweinchen und der Mensch"
+slug: "meerschweinchen"
+type: page
+wpId: 288
+published: "2019-10-07T13:31:14"
+updated: "2026-09-22T13:51:07"
+author: "christian-m-haas"
+categories: []
+image: "/magazin/wp-content/uploads/2019/10/meerschweinchen.jpg"
+imageAlt: "Braunes Meerscweinchen"
+seoTitle: "Das Meerschweinchen und der Mensch"
+description: "Du möchtest dir ein Meerschweinchen anschaffen, aber hast noch Fragen zum Wesen, Kosten oder der Haltung? Käfig oder Gehege? Hier die Antworten."
+noindex: true
+excerpt: "<p>Haustiere sind nicht nur bei Kindern, sondern auch bei Erwachsenen sehr beliebt. Ganz vorne mit dabei sind die niedliche quiekenden</p>"
+---
+
+<p>Haustiere sind nicht nur bei Kindern, sondern auch bei Erwachsenen sehr beliebt. Ganz vorne mit dabei sind die niedliche quiekenden Meerschweinchen. Diese kleinen Nager erobern schnell das Herz eines jeden Tierliebhabers. Kein Wunder, dass es immer mehr Meerschweinchen in deutschen Haushalten gibt. Doch was gibt es über die niedlichen Zwerge eigentlich zu wissen und was sollte bedacht werden, bevor Meerschweinchen in die Familie aufgenommen werden sollen?</p>
+<h2>Wesen und Charakter</h2>
+<p>Meerschweinchen sind sehr friedlichen und ausgeglichene Tiere. Da Meerschweinchen absolute Rudeltiere sind, sollten sie auf keinen Fall alleine gehalten werden. Dabei sollte sich entweder für zwei Weibchen, oder eine Mischung aus Weibchen und Männchen entschieden werden. Zwei Männchen dagegen, können schnell einmal aneinandergeraten. Sind die Meerschweinchen einmal an den Menschen gewohnt, sind sie sehr liebesbedürftige Familienmitglieder, die sowohl gerne kuscheln als auch spielen. Kinder und die Meerschweinchen haben meist einen riesen Spaß bei dem Bauen eines Labyrinths, welches das Meerschweinchen am Ende durchlaufen soll. Dabei steht für das Meerschweinchen natürlich die Belohnung in Form eines Leckerlies im Vordergrund. Meerschweinchen sind tatsächlich sehr intelligente Tiere, die sehr viel Freude an kleinen Spielchen haben. Sie werden verblüfft sein, wie schnell die kleinen Nager das Labyrinth durchkreuzen können. </p>
+<h3>Meerschweinchen und Mensch</h3>
+<p>Meerschweinchen sind sehr sensible Tiere und brauchen etwas Zeit sich an den Menschen zu gewöhnen. Daher sollten die kleinen Nager gerade am Anfang lieber erst einmal nur mit den Augen betrachtet, statt mit den Händen gestreichelt werden. Meerschweinchen empfinden vor allem das hochgehoben werden bei Menschen meist als eher stressvoll. Sie wehren sich zwar nicht, wie andere Tiere, verfallen jedoch in eine regelrechte Schockstarre. Meerschweine sind keine Kuscheltiere und das sollte sich immer wieder vor Augen geführt werden. Umso wichtiger ist es, dass die neuen Familienmitglieder erst einmal Vertrauen fassen und sich an sie gewöhnen. Dies kann eine Weile dauern, doch die Geduld wird sich am Ende auszahlen und sie werden umso mehr Freude an den kleinen Nagern haben. </p>
+<h2>Herkunft &#038; Geschichte</h2>
+<p>Die Meerschweinchen stammen tatsächlich aus dem entfernten Südamerika und sind dort nicht nur Haustiere, sondern in der freien Wildbahn unterwegs. Die kleinen Nager sind dort sowohl im Flachland, als im hohen Gebirge anzutreffen. Für hunderten von Jahren sind die Meerschweinchen dann mit spanischen Seefahrern nach Europa übergesiedelt. Durch die Übersiedlung auf hoher See, ist das Meerschweinchen tatsächlich auch zu dem ersten Wortteil seines Namens gekommen: Meer. Die Kombination aus Meer und Schweinchen, hat sich aus der Tatsache ergeben, dass das Quieken die Seemänner an ein richtiges Schwein erinnert hat. </p>
+<p>Heutzutage gibt es in Europa mehrere verschiedene Meerschwein Zuchten und sehr verschiedene Rassen. So können sowohl Meerschweinchen mit sehr kurzem, wie auch sehr langem Fell erworben werden. Die beliebteste Rasse sind dabei die Rosettenmeerschweinchen. Die Farbmusterung der Tierchen ist dabei sehr breit und kann von unifarben, über gepunktet oder auch gestreift reichen. Eine andere beliebte Rasse ist das Angorameerschweinchen, welches sehr langes Fell hat und daher besonders Pflegeaufwendig ist. </p>
+<h2>Überlegungen vor der Anschaffung</h2>
+<h4>Voraussetzungen</h4>
+<p>Oft werden Meerschweinchen als die idealen Einsteiger Haustiere für Kleinkinder gehalten. Diesem ist jedoch nicht so, natürlich eignen sich die kleinen Nager hervorragend um einem Kind Verantwortung und Einfühlungsvermögen zu lernen. Doch Meerschweinchen sind sehr zerbrechliche kleine Wesen, die auch einmal ihre Ruhe brauchen. Daher sollten der Käfig am besten an einem ruhigen Ort sein und damit ist nicht das Kinderzimmer gemeint. Im Idealfall sollte die Anschaffung von Meerschweinchen ein richtiges Familienprojekt sein, an dem alle gerne beteiligt sind. Wichtig ist auch, dass ein Plan für eventuelle Urlaube gemacht wird. Wer kümmert sich um die Meerschweinchen? Die Tiere müssen regelmäßig gefüttert und die Wasserflasche aufgefüllt werden. Diese Fragen sollten vorab geklärt werden und nicht wenn die Tierchen bereits bei Ihnen eingezogen sind. </p>
+<h4>Platzbedarf</h4>
+<p>Vor der Anschaffung der Meerschweinchen, sollte jedoch erst einmal das Kaufen des nötigen Equipments in Angriff genommen werden. Gerade zu Beginn sind die Meerschweinchen sehr aufgeregt und brauchen daher von Anfang an einen geeigneten Rückzugsort und somit ein geeignetes Gehege. Eine artgerechte Haltung steht hier im Mittelpunkt. Dazu gehört in erster Linie die Anschaffung von mindestens zwei Meerschweinchen. Ein Meerschweinchen Pärchen braucht einen Käfig mit einer Mindestgröße von 120 x 60 Zentimeter, dennoch gilt hier das Motto: Je größer, desto besser. </p>
+<h4>Equipment</h4>
+<p>Richten Sie den Käfig bereits vor der Ankunft der Meerschweinchen ein. Somit verhindern Sie, dass die Meerschweinchen unnötig lange in der kleinen Transportboy ausharren müssen. Der Käfig muss mit weicher Einstreu gefüllt werden, eine volle Wasserflasche, ein gefüllter Fressnapf und eine bestückte Heu Raufe gehören ebenfalls zur Grundausstattung. Natürlich brauchen die kleinen Nager auch ein Versteck und etwas zu spielen. Daher sollte sich auf jeden Fall ein kleines Häuschen und Spielzeug (zum Beispiel ein Tunnel oder Hängematte). </p>
+<h4>Kosten</h4>
+<p>Bei der Anschaffung sollte mit mindestens 300 Euro gerechnet werden. Selbst wenn die Meerschweinchen nur rund zwanzig bis dreißig Euro kosten, braucht es am Anfang einiges an Equipment. Lassen Sie sich daher am besten Zeit, mit der Anschaffung und kaufen Sie die Meerschweinchen erst dann, wenn auch genug Geld da ist, um das nötige Equipment zu kaufen. Wer in etwas besseres Equipment investieren möchte und den Meerschweinchen ein geeignetes Gehege aus Holz- statt Gitterkäfigen kaufen möchte, sollte mit Anschaffungskosten von rund 550 Euro rechnen. Auch die monatlichen Kosten sollten nicht unterschätzt werden. Für zwei Tiere sollten für die monatliche Haltung Kosten in Höhe von 60 Euro eingeplant werden. Hier sind Einstreu, Futter, Knabbersachen, Heu und eine kleine Rücklage für tierärztliche Untersuchungen enthalten. </p>
+<h2>Geeignete Ernährung</h2>
+<h4>Verdauungstrakt</h4>
+<p>Ein sehr wichtiger Punkt bei der Haltung von Meerschweinchen ist natürlich die artgerechte Ernährung. Der kleine Magen der Nager ist tatsächlich sehr empfindlich und umso wichtiger ist es, dass nur das richtige Futter gefüttert wird. Tatsächlich ist der Magen eines Meerschweinchens nur mit sehr wenig ausgeprägten Muskeln bestückt und kann die Nahrung daher nur geringfügig weitertragen. Daher sind Meerschweinchen auch ständig am Fressen, denn die neue Nahrungsaufnahme hilft dabei die alte Nahrung aus dem Magen in den Darm weiterzuschieben. </p>
+<h4>Grundnahrungsmittel</h4>
+<p>Das wichtigste Nahrungsmittel für Meerschweinchen ist Heu. Es hat sehr wenige Kalorien und kann daher in großen Mengen verzerrt werden. Somit ist es ideal für den Magen der Meerschweinchen und eine gesunde Verdauung geeignet. Heu versorgt die Meerschweinchen zusätzlich mit Mineralien und Vitaminen und hilft bei der Abreibung des Backenzahnes. Das Heu sollte in einer Heu Raufe bereitgestellt werden. Damit wird verhindert, dass die Meerschweinchen auf das Heu urinieren.</p>
+<h4>Weitere Nahrungsmittel</h4>
+<p>Neben dem Heu sollten vor allem Kerne und Samen verfüttert werden. Dies versorgt die Meerschweinchen mit nötigen Proteinen und Fetten. Hier eignen sich Sonnenblumenkerne, Grassamen, Leinsamen, Fenchelsamen, Hirse und auch Amaranth. Die Kerne sollten in einem kleinen Napf zur Verfügung gestellt werden. Pro Meerschweinchen empfiehlt sich ein halber Teelöffel jede Woche. </p>
+<p>Frische Kräuter, Blüten oder auch Blätter sind ein wahrer Gaumenschmaus für Meerschweinchen und liefert noch dazu Proteine, Vitamine und Mineralien. Diese können noch dazu ganz einfach selbst gepflückt werden. Pro Woche sollten rund 20 Gramm an Kräuter verfüttert werden. </p>
+<p>Meerschweinchen, die nicht regelmäßig grasen können, sollten außerdem ab und zu etwas frisches Obst und Gemüse erhalten. Gemüse kann gut und gerne zwei Mal täglich verfüttert werden. Eine Menge von 200 bis 300 Gramm für ein ausgewachsenen Tier ist hier ideal.  </p>
+<h2>Häufig gestellte Fragen</h2>
+<p><strong>Was heißt Meerschweinchen auf englisch?</strong><br />
+Meerschweinchen wird mit Guinea Pig übersetzt.                     </p>

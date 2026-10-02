@@ -18,7 +18,7 @@ import {
 } from "@/lib/about-section";
 import { getReviewsPage, getSocialMediaPage } from "@/lib/icony-static-pages";
 import { SOCIAL_CHANNELS } from "@/lib/social-channels";
-import { stripHtml } from "@/lib/wordpress";
+import { stripHtml } from "@/lib/magazine";
 
 export const revalidate = 3600;
 

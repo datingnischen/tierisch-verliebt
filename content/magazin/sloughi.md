@@ -1,0 +1,50 @@
+---
+title: "Der Sloughi – ein Kurzportrait"
+slug: "sloughi"
+type: page
+wpId: 2165
+published: "2023-07-24T15:02:00"
+updated: "2026-09-22T13:50:53"
+author: "christian-m-haas"
+categories: []
+image: "/magazin/wp-content/uploads/2023/07/sloughi.webp"
+imageAlt: "Sloughi"
+seoTitle: "Der Sloughi – ein Kurzportrait"
+description: "Sloughis gehören zu den Windhunden und werden seit Jahrtausenden für die Jagd gezüchtet. Mehr zu dieser Rasse lesen Sie in unserem Artikel"
+excerpt: "<p>Einleitung Sloughis gehören zu den Windhunden und werden seit Jahrtausenden für die Jagd gezüchtet. Die Tiere sind groß, langbeinig, stromlinienförmig</p>"
+---
+
+<h2>Einleitung</h2>
+<p>Sloughis gehören zu den <a href="https://tierisch-verliebt.de/magazin/windhunde/">Windhunden</a> und werden seit Jahrtausenden für die Jagd gezüchtet. Die Tiere sind groß, langbeinig, stromlinienförmig und perfekt für den Sprint geeignet. Sloughis sind anspruchsvolle Tiere, sie benötigen viel Zuwendung, Auslauf und eine gute Ausbildung. Hier kann man das Kurzportrait dieser Hunderasse finden.</p>
+<h2>Wesen und Charakter</h2>
+<p>Die Sloughis sind sensible, stolze und zurückhaltende Hunde. Gegenüber Menschen, denen sie vertrauen, verhalten sie sich äußerst loyal und treu. Laute Stimmen, grobe Behandlung oder harte Trainingsmethoden zerstören ihr Vertrauen, dann reagieren sie mit Angst oder Verweigerung. Sloughis sind sehr intelligent, selbständig und keine “willing-to-please&#8221; Tiere. Seit Jahrtausenden wurden sie als Jagd- oder Herdenschutzhund eingesetzt. Ein Sloughi ist kein Jagdgehilfe, sondern ein <a href="https://tierisch-verliebt.de/magazin/jagdhunde/">Jäger</a>, der das Wild selbst greift.</p>
+<p>Gegenüber Fremden verhält sich das Tier abwartend, auch neue Situationen betrachtet er reserviert und braucht eine gewisse Zeit. Sloughis müssen früh sozialisiert werden, um Vertrauen und ein ausgeglichenes Temperament entwickeln zu können. Dann lieben sie den engen Kontakt zur Familie.</p>
+<h2>Herkunft &amp; Geschichte</h2>
+<p>Der Berberwindhund gehört zu den ursprünglichen <a href="https://tierisch-verliebt.de/magazin/windhunde/">Windhunden</a>, stammt aus Nordafrika und wird dort seit Jahrtausenden gezüchtet. Auf dem Berg Djebel Ousselat in Tunesien ist der Hund auf Höhlenmalereien aus der Jungsteinzeit abgebildet. Sie wurden vor fünf- bis achttausend Jahre vor Christi Geburt angefertigt. Auf der anderen Seite der Sahara findet sich der Sloughi auf Hieroglyphen und römischen Mosaiken. Der Hund hat sich über Jahrtausende kaum verändert.</p>
+<p>Der Sloughi ist ein Jagdhund. In der kargen Umgebung Nordafrikas begleitete er Beduinen und jagte Hasen und kleine Gazellen. Die Hunde sind zum selbstständigen Arbeiten gezüchtet, nicht um Anweisungen zu befolgen. Angeblich waren einige Tiere bei Hannibals Alpenüberquerung dabei. Auf diesem Weg soll er nach Europa gekommen sein &#8211; allerdings hasst der Sloughi die Kälte.</p>
+<p><img decoding="async" class="alignnone size-large wp-image-2167" src="/magazin/wp-content/uploads/2023/07/Sloughi-1024x852.jpg" alt="Sloughi" width="910" height="757" srcset="/magazin/wp-content/uploads/2023/07/Sloughi-1024x852.jpg 1024w, /magazin/wp-content/uploads/2023/07/Sloughi-300x250.jpg 300w, /magazin/wp-content/uploads/2023/07/Sloughi-768x639.jpg 768w, /magazin/wp-content/uploads/2023/07/Sloughi-1536x1279.jpg 1536w, /magazin/wp-content/uploads/2023/07/Sloughi.jpg 1600w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<h2>Überlegungen vor der Anschaffung (Voraussetzungen, Kosten, Platzbedarf, etc.)</h2>
+<p>Die <a href="https://tierisch-verliebt.de/magazin/unterhalt-eines-hundes/">Kosten</a> für einen Sloughi vom Züchter beginnen bei knapp tausend Euro. Dazu kommt <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Futter</a>, die Ausrüstung für den Hund – Napf, Leine etc. &#8211; Versicherungen und die Kosten für den Tierarzt.</p>
+<p>Sloughis sind treu und zuverlässig, aber sehr selbstständig und unabhängig. Die Erziehung dieses eigenwilligen Tieres ist nicht einfach, sie erfordert Geduld und Einfühlungsvermögen. Sloughis sind deshalb keine idealen Hunde für Anfänger, es empfiehlt sich, bereits Erfahrung zu haben. Ein Sloughi muss, wegen seines ausgeprägten Jagdinstinktes, gründlich ausgebildet werden. Bei gutem Training wird er sehr gehorsam.</p>
+<p>Er ist intelligent, aber auch sehr verschmust und braucht seine tägliche Portion Liebe. Regelmäßige, ausgedehnte Fellpflege ist nicht notwendig, aber es verbessert die Bindung. Ein Sloughi benötigt Zeit und Zuwendung. Für Hundeliebhaber, die viel reisen oder beruflich sehr eingespannt sind, ist der zeitaufwendige Windhund nicht geeignet.</p>
+<p>Das Tier braucht viel Bewegung, aber der Sloughi ist kein Ausdauersportler und kann nicht mit dem Fahrrad ausgeführt werden. Er benötigt &#8211; neben dem täglichem Spaziergang &#8211; Auslauf beispielsweise in einem umzäunten Garten. Mindestens zweimal in der Woche sollte das Tier rennen können &#8211; auf einer Rennstrecke oder einem Hundeübungsplatz. Das Gelände muss geeignet sein, ohne Löcher und Gruben.</p>
+<p><img decoding="async" class="alignnone size-large wp-image-1881" src="/magazin/wp-content/uploads/2023/02/Insektenproteine-in-Hundefutter-1024x682.jpg" alt="Insektenproteine in Hundefutter" width="910" height="606" srcset="/magazin/wp-content/uploads/2023/02/Insektenproteine-in-Hundefutter-1024x682.jpg 1024w, /magazin/wp-content/uploads/2023/02/Insektenproteine-in-Hundefutter-300x200.jpg 300w, /magazin/wp-content/uploads/2023/02/Insektenproteine-in-Hundefutter-768x512.jpg 768w, /magazin/wp-content/uploads/2023/02/Insektenproteine-in-Hundefutter.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<h2>Geeignete Ernährung</h2>
+<p>Der Sloughi isst viel und soll nicht hungern, nur um das schlanke Bild zu wahren. Wird das Tier regelmäßig bewegt, bleibt er in Form. Der Hund benötigt sehr hochwertige Nahrung mit Fleisch. Der Proteingehalt des <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futters</a> darf nicht zu hoch sein, sonst kommt es zu Problemen mit den Nieren. Ein Sloughi soll nicht komplett auf Kohlenhydrate verzichten. Der Fettgehalt der Nahrung muss niedrig sein – auch bei Leckerlis oder andere Belohnungen. Ein übergewichtiger Sloughi bekommt Probleme mit den Gelenken.</p>
+<h2>Geeignete Aktivitäten</h2>
+<p>Ein Sloughi braucht seinen täglichen Spaziergang. Wegen seines ausgeprägten Jagd- und Hetztriebs muss er meistens an der Leine bleiben. Lange Fahrradausflüge, lange Wanderungen oder Joggingrunden entsprechen nicht seinem Naturell. Sloughis sind Sprinter, sie erreichen über Distanzen von 300 Metern über 50 Stundenkilometer. Damit gehören sie zu den schnellsten Landraubtieren der Erde. Sloughis eignen sich für Hunderennen und Coursing. Nach dem Training brauchen sie genügend Erholung.</p>
+<h2>Rassemerkmale</h2>
+<p>Der Sloughi ist ein Sichtjäger. Sein Sehvermögen ist ausgezeichnet, das Sichtfeld beträgt 270 Grad. Er kann Beute in 800 m Entfernung erspähen &#8211; schneller als jeder Hundebesitzer. So er ist eine stolze, elegante Erscheinung, optimal gebaut für hohe Geschwindigkeiten. Er ist schlank, athletisch und ein fantastischer, sehr wendiger Läufer.</p>
+<p>Die Beine sind lang, ausgeprägte Krallen graben sich tief in den Sand ein. Die Brust ist tief, die Rute dünn und lang auslaufend. Seine Widerristhöhe beträgt zwischen 60 bis 73 cm, die Rüden sind etwas größer. Sloughis wiegen bis zu 25 kg.</p>
+<p>Die Rasse hat einen langen, eleganten, schmalen Kopf mit spitzer, dunkler Schnauze und feinen, dreieckigen Hängeohren. Der V-förmige Schädelknochen soll bei hohen Geschwindigkeiten wie ein Windkanal wirken und den Kopf kühlen. Die Muskulatur ist ausgeprägt, Sloughis haben jedoch kaum Unterhautfettgewebe. Das <a href="https://tierisch-verliebt.de/magazin/pflege-von-fell-und-zaehnen-des-hundes/">Fell</a> ist kurz, fein und liegt glatt an. Die Fellfarben reichen von sandfarben bis dunkelbraun. Der Sloughi liebt die Sonne und ist sehr hitzeresistent.</p>
+<h2 data-pm-slice="1 1 []">FAQ`s</h2>
+<h3>Wie gut verträgt sich ein Sloughi mit anderen Haustieren?</h3>
+<p><img decoding="async" class="alignnone size-full wp-image-2862" src="/magazin/wp-content/uploads/2025/01/sloughi-katze-1.webp" alt="sloughi katze (1)" width="1024" height="1024" srcset="/magazin/wp-content/uploads/2025/01/sloughi-katze-1.webp 1024w, /magazin/wp-content/uploads/2025/01/sloughi-katze-1-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/sloughi-katze-1-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/sloughi-katze-1-768x768.webp 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>Aufgrund seines ausgeprägten Jagdinstinkts kann es Herausforderungen geben, insbesondere bei kleineren Tieren wie Katzen. Eine frühzeitige Sozialisierung ist wichtig.</p>
+<h3>Welche gesundheitlichen Probleme treten bei Sloughis häufig auf?</h3>
+<p>Sloughis sind im Allgemeinen robust, können aber wie viele Rassen zu bestimmten genetischen Erkrankungen neigen, wie z. B. Augenproblemen. Regelmäßige Tierarztbesuche sind wichtig.</p>
+<h3>Können Sloughis gut alleine bleiben?</h3>
+<p>Diese Hunde bauen eine starke Bindung zu ihrer Familie auf und fühlen sich unwohl, wenn sie zu lange alleine gelassen werden. Sie benötigen viel menschliche Nähe.</p>
+<h3>Sind Sloughis wetterempfindlich?</h3>
+<p><img decoding="async" class="alignnone size-full wp-image-2863" src="/magazin/wp-content/uploads/2025/01/Sloughi-mit-Mantel.webp" alt="Sloughi mit Mantel" width="1024" height="1024" srcset="/magazin/wp-content/uploads/2025/01/Sloughi-mit-Mantel.webp 1024w, /magazin/wp-content/uploads/2025/01/Sloughi-mit-Mantel-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/Sloughi-mit-Mantel-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/Sloughi-mit-Mantel-768x768.webp 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>Durch ihr kurzes Fell sind Sloughis empfindlich gegenüber Kälte und benötigen im Winter oft einen Mantel, während sie bei Hitze in schattigen Bereichen ruhen sollten.</p>

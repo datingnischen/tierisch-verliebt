@@ -18,7 +18,12 @@ ICONY bleibt Betreiber der Dating-Plattform; Next.js rendert nur die redaktionel
 Datenquellen:
 
 - **Stadtseiten:** `data/partnersuche-markets.json` (Import aus ICONY, siehe unten), gelesen von `lib/market-partnersuche.ts`. Die Übersichtstexte je Markt stehen dort in `HUB_COPY`.
-- **Magazin:** WordPress-REST-API unter `https://tierisch-verliebt.de/magazin/wp-json/wp/v2` (`lib/wordpress.ts`, ISR).
+- **Magazin:** Dateien im Repo, kein WordPress und kein Netzwerkzugriff zur Laufzeit/Build (`lib/magazine-store.ts`, `lib/magazine.ts`):
+  - `content/magazin/<slug>.md` – 262 Beiträge (`type: post`) und Seiten (`type: page`); Frontmatter mit `title`, `slug`, `published`, `updated` (Anzeige „Aktualisiert am …“, nur bei Artikeln), `author`, `categories`, `image`/`imageAlt`, `seoTitle` und `description` (aus AIOSEO), `noindex`, `excerpt`; der Inhalt darunter ist HTML wie in WordPress.
+  - `data/magazin/kategorien.json`, `autoren.json` (Redaktion/Tierliebe sind Christian M. Haas), `slugs.json` (Slug-Inventar der WordPress-Instanz).
+  - Bilder/Audio unter `public/magazin/wp-content/uploads/` (gleiche Pfade wie in WordPress, im Inhalt relativ gespeichert und zur Laufzeit auf den Asset-Host gesetzt).
+  - Neuer Artikel = Datei anlegen (Frontmatter von einem bestehenden kopieren), committen, pushen.
+  - Einmal-Import aus WordPress: `scripts/import_wordpress.py` (nicht erneut laufen lassen, sonst werden redaktionelle Änderungen überschrieben).
 - **Bewertungen / Social Media:** zur Laufzeit von der ICONY-Seite übernommen (`lib/icony-static-pages.ts`).
 - Assets kommen in Produktion vom Vercel-Host (`assetPrefix` in `next.config.ts`, `NEXT_PUBLIC_ASSET_HOST`).
 

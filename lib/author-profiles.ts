@@ -1,7 +1,5 @@
 import { cache } from "react";
-import { getMagazineEntryBySlug, getMagazinePosts, stripHtml } from "@/lib/wordpress";
-
-const AUTHOR_ARCHIVE_BASE = "https://tierisch-verliebt.de/magazin/author";
+import { getMagazineEntryBySlug, getMagazinePosts, stripHtml } from "@/lib/magazine";
 
 // Christians Autorenarchiv ist nur ein Alias: es kanonisiert auf /magazin/christian
 // und bleibt noindex — deshalb gehoert es auch nicht in die Sitemap.
@@ -128,18 +126,9 @@ export const getAuthorProfile = cache(async (slug: string): Promise<AuthorProfil
     };
   }
 
-  const url = `${AUTHOR_ARCHIVE_BASE}/${slug}/`;
-  const response = await fetch(url, {
-    headers: { "User-Agent": "Amigo tierisch-verliebt author profile sync" },
-    next: { revalidate: 300 },
-  } as RequestInit & { next: { revalidate: number } });
-
-  const html = response.ok ? await response.text() : "";
-  const name = stripHtml(firstMatch(html, /<h1 class="archive-title">[\s\S]*?<span>([\s\S]*?)<\/span>[\s\S]*?<\/h1>/i)) || "Redaktion";
-
   return {
     slug,
-    name,
+    name: "Redaktion",
     role: "Redaktion für tierliebe Singles, Ratgeber und Haustier-Themen",
     jobTitle: "Magazin-Redaktion",
     shortBio:

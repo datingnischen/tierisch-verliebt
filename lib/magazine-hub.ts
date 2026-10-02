@@ -1,4 +1,4 @@
-import { decodeHtmlEntities, stripHtml } from "#wordpress";
+import { decodeHtmlEntities, stripHtml } from "#magazine";
 
 export type HubLink = { slug: string; label: string };
 

@@ -1,4 +1,4 @@
-import { decodeHtmlEntities, stripHtml } from "#wordpress";
+import { decodeHtmlEntities, stripHtml } from "#magazine";
 
 export type MagazineFaqItem = {
   id: string;

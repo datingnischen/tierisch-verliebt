@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "@/components/link";
 import { notFound, redirect } from "next/navigation";
-import { MAGAZINE_POSTS_PER_PAGE, SITE_URL, formatUpdatedDate, getMagazinePostsPage, stripHtml } from "@/lib/wordpress";
+import { MAGAZINE_POSTS_PER_PAGE, SITE_URL, formatUpdatedDate, getMagazinePostsPage, stripHtml } from "@/lib/magazine";
 import { display } from "@/components/city-page/display-font";
 import { ClockIcon, PawIcon } from "@/components/city-page/tier-icons";
 import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
@@ -13,7 +13,13 @@ type PageProps = {
   params: Promise<{ page: string }>;
 };
 
-export const revalidate = 300;
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const { totalPages } = await getMagazinePostsPage(1, MAGAZINE_POSTS_PER_PAGE);
+  // Seite 1 leitet auf /magazin um und wird mit gebaut, damit die Umleitung bestehen bleibt.
+  return Array.from({ length: totalPages }, (_, index) => ({ page: String(index + 1) }));
+}
 
 function excerpt(text: string, length: number) {
   const plain = stripHtml(text);

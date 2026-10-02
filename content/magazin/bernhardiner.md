@@ -1,0 +1,63 @@
+---
+title: "Bernhardiner – Das Portrait"
+slug: "bernhardiner"
+type: page
+wpId: 479
+published: "2019-11-05T20:15:42"
+updated: "2026-09-22T13:52:59"
+author: "christian-m-haas"
+categories: []
+image: "/magazin/wp-content/uploads/2019/11/Bernhardiner.jpg"
+imageAlt: "Bernhardiner"
+seoTitle: "Bernhardiner - Das Portrait"
+description: "Hier findest du alles, was du über Bernhardiner wissen musst: Herkunft, Rassenmerkmale, Charakter sowie passende Ernährung und Aktivitäten"
+excerpt: "<p>Das Portrait des Bernhardiners zeigt eine sanftmütige und imposante Hunderasse, die für ihre Gutmütigkeit, ihre Schutzinstinkte und ihre enge Bindung</p>"
+---
+
+<p>Das Portrait des Bernhardiners zeigt eine sanftmütige und imposante Hunderasse, die für ihre Gutmütigkeit, ihre Schutzinstinkte und ihre enge Bindung zu ihrer Familie bekannt ist. Der Bernhardiner wird auch St. Bernhardshund genannt. Er ist eine von Seiten des FCI anerkannte Hunderasse und gehört in die Gruppe der Pinscher, Schnauzer, Molossoide und Schweizer Sennenhunde.</p>
+
+<h2>Steckbrief</h2>
+<p><img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Lebenserwartung:</strong> 8 bis 10 Jahre<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Gewicht:</strong> 65 bis 90 kg<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Widerristhöhe:</strong> 60 bis 90 cm<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Charakter:</strong> ruhig, wachsam, freundlich, geduldig, liebevoll<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Farben:</strong> rot, weiß, braun; mehrfarbig<br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>FCI-Gruppe:</strong> <a href="https://tierisch-verliebt.de/magazin/fci-gruppen/">FCI-Gruppe 2</a><br />
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Kosten:</strong> Zwischen 1000 &amp; 1500 Euro</p>
+<h2>Wesen und Charakter</h2>
+<p>Der Bernhardiner fällt zunächst durch seine massige Erscheinung auf. Dieser zum Trotz ist er aber vom Wesen her ein sehr sensibler und zuverlässiger Hund. Er überzeugt mit seinem Sanftmut und kann sehr liebevoll und anhänglich sein. Auch Fremden gegenüber verspürt er keine Aggressionen. Er ist der ideale Familienhund, da er sehr ruhig und ausgeglichen ist. Er braucht den Kontakt mit Menschen und die Familie in seinem Umfeld.</p>
+<p>Durch die enge Verbundenheit entwickelt er auch einen besonderen Schutzinstinkt. Er kann sehr wachsam sein. Dabei tritt er sehr selbstsicher auf. Er ist zudem sehr kinderlieb. Ein weiteres typisches Charakterium des Bernhardiners ist seine bei Zeiten auftretende Dickköpfigkeit. Andererseits ist er aber auch sehr geduldig und bellt eher wenig.</p>
+<h2><img decoding="async" class="alignnone size-large wp-image-2025" src="/magazin/wp-content/uploads/2023/05/Bernhardiner-3-1024x683.jpg" alt="Bernhardiner" width="910" height="607" srcset="/magazin/wp-content/uploads/2023/05/Bernhardiner-3-1024x683.jpg 1024w, /magazin/wp-content/uploads/2023/05/Bernhardiner-3-300x200.jpg 300w, /magazin/wp-content/uploads/2023/05/Bernhardiner-3-768x512.jpg 768w, /magazin/wp-content/uploads/2023/05/Bernhardiner-3-1536x1024.jpg 1536w, /magazin/wp-content/uploads/2023/05/Bernhardiner-3.jpg 1920w" sizes="(max-width: 910px) 100vw, 910px" /></h2>
+<h2>Herkunft &amp; Geschichte</h2>
+<p>Gegen 1050 wurde das Hospiz auf dem Großen St. Bernhard gegründet. Die Hunde, die dort lebten, bezeichnete man entsprechend als Bernhardiner. Gegen Ende des 17. Jahrhunderts dann gingen die Bernhardiner in den Dienst der Mönche. Zu dieser Zeit war die Zucht noch nicht in konstanter Weise möglich und die einzelnen Tiere wurden maximal 8 Jahre alt. Der damalige Bernhardiner hat optisch nicht viel gemein mit dem heutigen Bernhardiner. Zu klaren äußerlichen Merkmalen kam es erst gegen Ende des 19. Jahrhunderts. Zudem kamen nun Hunde mit langem Fell hinzu. In Deutschland war die Rasse unter dem Begriff „Alpenhund“ bekannt.</p>
+<p>Erst im Jahr 1887 wurde der Schweizer Standard eingeführt und anerkannt. Seinen Bekanntheitsgrad erlangte der Bernhardiner hauptsächlich durch seine Einsätze als Lawinenhund. Diese waren für das Hospiz auf dem Großen St. Bernhard im Einsatz und wurden von den Mönchen ausgebildet. Ein besonders bekannter Vertreter war der Bernhardiner Barry, welcher mehr als 40 Menschen das Leben rettete.</p>
+<p>Mit der Zeit haben sich die Rassemerkmale allerdings verändert, so dass der Bernhardiner nicht mehr so gut als Lawinenspürhund geeignet ist. Dies liegt vor allem an seiner Größe und seinem Gewicht. Einzelne Bernhardiner werden aber nach wie vor noch in der Fondation Barry in Martigny ausgebildet. Seit dem Jahr 1884 gilt er Bernhardiner zudem als Nationalhund der Schweiz. Er ist aber heutzutage meist nur noch Haus- und Begleithund.</p>
+<h2>Überlegungen vor der Anschaffung</h2>
+<p>Der Bernhardiner ist ein sehr großes Tier. Aus diesem Grund muss man sich vor der Anschaffung zum einen überlegen, ob die Räumlichkeiten genügend Platz bieten und man dem Tier auch ausreichend Auslauf garantieren kann. Auch sollte das Auto eine gewisse Größe mitbringen, um den Hund bei Bedarf auch problemlos mitführen zu können. Für die Haltung in der Wohnung ist der Bernhardiner nicht geeignet.</p>
+<p>Im Haus sollte man nicht zu viele glatte Böden haben. Zudem ist es nicht gut für die Gelenke des Bernhardiners, wenn er häufig Treppen steigen muss. Beim Spaziergang braucht der Bernhardiner keine außergewöhnlichen sportlichen Betätigungen. Er ist eher der gemütliche Vertreter. Trotzdem braucht er ausreichend Auslauf. Zudem sollte man eine gewisse Erfahrung im Umgang mit Hunden mitbringen.</p>
+<p><img decoding="async" class="alignnone size-large wp-image-2027" src="/magazin/wp-content/uploads/2023/05/Bernhardiner-1-1024x874.jpg" alt="Bernhardiner" width="910" height="777" srcset="/magazin/wp-content/uploads/2023/05/Bernhardiner-1-1024x874.jpg 1024w, /magazin/wp-content/uploads/2023/05/Bernhardiner-1-300x256.jpg 300w, /magazin/wp-content/uploads/2023/05/Bernhardiner-1-768x655.jpg 768w, /magazin/wp-content/uploads/2023/05/Bernhardiner-1-1536x1310.jpg 1536w, /magazin/wp-content/uploads/2023/05/Bernhardiner-1.jpg 1920w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p>Besonders große Hunde müssen richtig erzogen werden und bedürfen einer starken und kontrollierenden Hand. Das Herrchen oder Frauchen muss sich durchsetzen können. Dies ist bei dieser Rasse besonders wichtig, da Bernhardiner über eine gewisse Dickköpfigkeit verfügen. Gehorcht das Tier nicht, kann es schwer werden, einen Hund in dieser Größe zu halten oder zu bewegen.</p>
+<h3>Kosten</h3>
+<p>Ein großer Hund kostet natürlich auch entsprechend. Bei der Anschaffung eines Bernhardiners muss man etwa 1.000 Euro einkalkulieren. Hinzu kommen die <a href="https://tierisch-verliebt.de/magazin/unterhalt-eines-hundes/">Kosten</a> für die Erstausstattung wie ein Körbchen oder eine Hundehütte, Spielzeug, Fress- und Trinknäpfe sowie Halsband und Leine. Auch entsprechende Pflegeutensilien müssen angeschafft werden, da der Bernhardiner über ein langes Fell verfügt, welches regelmäßig gebürstet und gestriegelt werden muss. Nicht zuletzt sind es aber besonders die Kosten für das Futter, die hoch zu Buche schlagen. Ein Bernhardiner kann ein Gewicht von bis zu 120 Kilogramm erreichen.</p>
+<p>Entsprechend hoch ist auch sein Bedarf an Nahrung. Zudem sollte man auch immer die Kosten für einen notwendigen Tierarztbesuch mit einkalkulieren. Generell sollte man das Tier nicht zu häufig alleine lassen. Wer also ständig unterwegs ist, der sollte sich lieber keinen Hund anschaffen. Da der Bernhardiner ein familienfreundliches Tier ist, ist es aber kein Problem, wenn Kinder im Haushalt sind.</p>
+<h2>Geeignete Aktivitäten</h2>
+<p>Der Bernhardiner ist kein Hund, der besonders aktiv ist. Er ist eher gemütlich. Daher muss man hier keine besonderen Hundesportarten durchführen. Dreimal am Tag sollte er dennoch ausgeführt werden. Dabei reichen ausgiebige Spaziergänge. Einem Ball jagt der Bernhardiner nicht gerne hinterher.</p>
+<h2><img decoding="async" class="alignnone size-large wp-image-2026" src="/magazin/wp-content/uploads/2023/05/Bernhardiner-2-1024x798.jpg" alt="Bernhardiner" width="910" height="709" srcset="/magazin/wp-content/uploads/2023/05/Bernhardiner-2-1024x798.jpg 1024w, /magazin/wp-content/uploads/2023/05/Bernhardiner-2-300x234.jpg 300w, /magazin/wp-content/uploads/2023/05/Bernhardiner-2-768x598.jpg 768w, /magazin/wp-content/uploads/2023/05/Bernhardiner-2-1536x1197.jpg 1536w, /magazin/wp-content/uploads/2023/05/Bernhardiner-2.jpg 1920w" sizes="(max-width: 910px) 100vw, 910px" /></h2>
+<h2>Rassemerkmale</h2>
+<p>Der Bernhardiner ist der optimale Familienhund, da er sehr ruhig und gelassen ist sowie kinderlieb. Man muss sich allerdings gegen den Dickkopf durchsetzen können. Dabei darf man aber keine Härte anwenden. Ein konsequentes Verhalten ist das A und O. Grundsätzlich kann man mit einem Bernhardiner aber einen treuen Begleiter fürs Leben finden. Der Bernhardiner neigt zu gewissen rassetypischen Erkrankungen. Hierzu gehört vor allem ein Hautproblem, welches ein Resultat der Zucht ist. Weiter können die Tiere auch unter epileptischen Anfällen leiden.</p>
+<p>Ein Problem der Rasse ist das schnelle Wachstum. Der Körper kommt hier nicht so schnell hinterher, so dass sich auch hierdurch Probleme entwickeln können. Dadurch sinkt auch die Lebenserwartung. Viele Bernhardiner haben auch Probleme mit den Augen. Hier bilden sich häufig Hängeaugen aus. Diese müssen besonders gepflegt werden und können langfristig zu ernsthaften Schäden führen.</p>
+<p>Weitere rassetypische Krankheiten sind zudem Krebs oder auch eine Hüftgelenksdysplasie und andere Knochenprobleme. Die generelle Lebenserwartung eines Bernhardiners ist vergleichsweise gering und liegt zwischen 8 und 10 Jahren.</p>
+<h2>Geeignete Ernährung</h2>
+<p>Da die Junghunde sehr schnell wachsen, benötigen sie ein entsprechend nährstoffreiches Futter. Diese muss im Einklang mit der Bewegung des Hundes stehen, die nicht vernachlässigt werden darf. Bei der Wahl des Futters ist auf eine gute Qualität zu achten und auf ausreichende Mengen. Allerdings kann es bei ausgewachsenen Bernhardinern zu einer Magendehnung kommen. Daher sollte man lieber mehrere kleine Portionen verfüttern. Vor allem Fleisch sollte den Hauptanteil des Futters ausmachen. Ansonsten muss das Futter sehr nährstoffhaltig sein. Verfüttern kann man sowohl Trocken- als auch Nassfutter. Für die Gelenke empfehlen sich zudem Omega-3-Fettsäuren.</p>
+<p><img decoding="async" class="alignnone wp-image-2729" src="/magazin/wp-content/uploads/2024/09/bernhardiner-essen.webp" alt="bernhardiner-essen" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/bernhardiner-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/bernhardiner-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/bernhardiner-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/bernhardiner-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<h2>FAQ</h2>
+<p><strong>Wie viel Pflege benötigt ein Bernhardiner?</strong></p>
+<p>Bernhardiner haben ein dichtes Fell, das regelmäßiges Bürsten erfordert, um Verfilzungen zu verhindern und abgestorbene Haare zu entfernen. Besonders während des Fellwechsels sollten sie häufiger gebürstet werden.</p>
+<p><strong>Wie viel Bewegung braucht ein Bernhardiner?</strong></p>
+<p>Trotz ihrer Größe sind Bernhardiner relativ ruhige Hunde, die moderate Bewegung benötigen. Tägliche Spaziergänge und gelegentliche längere Ausflüge reichen aus, um sie fit und gesund zu halten.</p>
+<p><strong>Sind Bernhardiner familienfreundlich?</strong></p>
+<p>Ja, Bernhardiner sind bekannt für ihre Freundlichkeit und Geduld. Sie sind besonders gut für Familien geeignet und kommen gut mit Kindern und anderen Haustieren aus.</p>
+<p><strong>Welche gesundheitlichen Probleme können bei Bernhardinern auftreten?</strong></p>
+<p>Aufgrund ihrer Größe sind Bernhardiner anfällig für Hüft- und Ellbogendysplasie. Sie können auch Herzprobleme oder Magenprobleme (Magendrehung) entwickeln. Regelmäßige tierärztliche Untersuchungen sind wichtig.</p>
+<p><strong>Wie alt wird ein Bernhardiner?</strong></p>
+<p>Leider haben Bernhardiner eine relativ kurze Lebenserwartung im Vergleich zu anderen Hunderassen. Sie leben im Durchschnitt 8 bis 10 Jahre.</p>

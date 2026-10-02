@@ -22,7 +22,7 @@ import {
   relativizeInternalLinks,
   stripHtml,
   type MagazineEntry,
-} from "@/lib/wordpress";
+} from "@/lib/magazine";
 import { withTrailingSlash } from "@/lib/markets";
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
@@ -45,7 +45,19 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export const revalidate = 300;
+export async function generateStaticParams() {
+  const entries = await getAllMagazineEntries();
+  // Slugs mit Prozent-Kodierung (z. B. %d0%b5) kommen dekodiert an, so sind sie im Build vorhanden.
+  return [...new Set(entries.map((entry) => safeDecode(entry.slug)))].map((slug) => ({ slug }));
+}
+
+function safeDecode(value: string) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
 
 const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischverliebt&pc=c02e2e&aid=magazin";
 const UNLISTED_CATEGORY_SLUGS = new Set(["allgemein", "uncategorized"]);
@@ -179,7 +191,9 @@ function entryIntro(entry: MagazineEntry) {
 }
 
 function entryDescription(slug: string, entry: MagazineEntry) {
-  return slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : entryIntro(entry).slice(0, 155);
+  if (slug === "christian") return CHRISTIAN_PAGE_DESCRIPTION;
+  // Meta-Description aus AIOSEO (im Frontmatter), sonst Textanfang.
+  return entry.description || entryIntro(entry).slice(0, 155);
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -189,14 +203,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const description = entryDescription(slug, entry);
 
+  const seoTitle = entry.seoTitle || entry.title;
+
   return {
-    title: entry.title,
+    title: seoTitle,
     description,
     alternates: {
       canonical: `${SITE_URL}/magazin/${slug}/`,
     },
+    robots: entry.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
-      title: entry.title,
+      title: seoTitle,
       description,
       url: `${SITE_URL}/magazin/${slug}/`,
       type: entry.type === "post" ? "article" : "website",

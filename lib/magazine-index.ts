@@ -1,4 +1,4 @@
-import type { MagazineCategory, MagazineEntry } from "./wordpress";
+import type { MagazineCategory, MagazineEntry } from "./magazine";
 
 // Inhaltsverzeichnis für /magazin/inhalt: alle Beiträge und Seiten, gruppiert.
 // WordPress-Seiten sind flach (kein parent) – die Zuordnung zu Hunderassen, Katzenrassen

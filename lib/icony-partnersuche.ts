@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/wordpress";
+import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/magazine";
 import { withTrailingSlash } from "@/lib/markets";
 
 const SOURCE_BASE = "https://tierisch-verliebt.de";

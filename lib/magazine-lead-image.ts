@@ -1,4 +1,4 @@
-import { decodeHtmlEntities } from "#wordpress";
+import { decodeHtmlEntities } from "#magazine";
 
 export type LeadImage = { src: string; alt: string };
 

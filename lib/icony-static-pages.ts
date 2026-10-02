@@ -1,6 +1,6 @@
 import { cache } from "react";
 import { ABOUT_SOCIAL_MEDIA_PATH } from "@/lib/about-section";
-import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/wordpress";
+import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/magazine";
 import { withTrailingSlash } from "@/lib/markets";
 
 const SOURCE_URL = "https://tierisch-verliebt.de/social-media/";

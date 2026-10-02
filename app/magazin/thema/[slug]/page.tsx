@@ -13,7 +13,7 @@ import {
   getReadingMinutes,
   stripHtml,
   type MagazineEntry,
-} from "@/lib/wordpress";
+} from "@/lib/magazine";
 import { display } from "@/components/city-page/display-font";
 import { ClockIcon, HeartIcon, PawIcon } from "@/components/city-page/tier-icons";
 import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
@@ -26,14 +26,14 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export const revalidate = 300;
-
 const REGISTER_URL = "https://tierisch-verliebt.de/?AID=magazin";
 
 function teaser(post: MagazineEntry, length: number) {
   const text = stripHtml(post.excerpt || post.content);
   return text.length > length ? `${text.slice(0, length).replace(/\s+\S*$/, "")} …` : text;
 }
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const categories = await getMagazineCategories();
@@ -55,6 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `${SITE_URL}/magazin/thema/${slug}/`,
     },
+    robots: category.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
       title: category.name,
       description,

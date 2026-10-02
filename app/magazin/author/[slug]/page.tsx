@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "@/components/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { getAuthorPosts, getAuthorProfile, getKnownAuthorSlugs, isNoindexAuthorArchive } from "@/lib/author-profiles";
-import { SITE_URL, formatUpdatedDate, stripHtml } from "@/lib/wordpress";
+import { SITE_URL, formatUpdatedDate, stripHtml } from "@/lib/magazine";
 import { display } from "@/components/city-page/display-font";
 import { ClockIcon, PawIcon } from "@/components/city-page/tier-icons";
 import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
@@ -21,7 +21,7 @@ type StructuredData = Record<string, unknown>;
 
 const CHRISTIAN_CANONICAL_PATH = "/magazin/christian";
 
-export const revalidate = 300;
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const slugs = await getKnownAuthorSlugs();

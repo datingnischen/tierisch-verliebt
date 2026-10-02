@@ -1,0 +1,50 @@
+[
+  {
+    "id": 2,
+    "name": "Ratgeber Hund",
+    "slug": "ratgeber-hund",
+    "description": "",
+    "noindex": true,
+    "wpCount": 33
+  },
+  {
+    "id": 1,
+    "name": "Allgemein",
+    "slug": "allgemein",
+    "description": "",
+    "noindex": true,
+    "wpCount": 21
+  },
+  {
+    "id": 8,
+    "name": "Ratgeber Vögel",
+    "slug": "ratgeber-voegel",
+    "description": "",
+    "noindex": true,
+    "wpCount": 17
+  },
+  {
+    "id": 4,
+    "name": "Ratgeber Katze",
+    "slug": "ratgeber-katze",
+    "description": "",
+    "noindex": true,
+    "wpCount": 9
+  },
+  {
+    "id": 5,
+    "name": "Presse & Sponsoring",
+    "slug": "presse",
+    "description": "Alles zum Thema \"Presse & Sponsoring\"",
+    "noindex": true,
+    "wpCount": 4
+  },
+  {
+    "id": 7,
+    "name": "Apps",
+    "slug": "apps",
+    "description": "Tierische Apps für tierliebe Singles und Tierliebhaber",
+    "noindex": true,
+    "wpCount": 3
+  }
+]

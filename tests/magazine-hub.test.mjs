@@ -36,7 +36,7 @@ test("steckbrief facts and teaser", () => {
 });
 
 test("cover image fallback skips steckbrief check icons", async () => {
-  const { getEntryCoverImage } = await import("../lib/wordpress.ts");
+  const { getEntryCoverImage } = await import("../lib/magazine.ts");
   const icon = '<img alt="check" src="https://tierisch-verliebt.de/magazin/wp-content/uploads/2019/06/check-icon-16.png">';
   assert.equal(getEntryCoverImage({ content: `<p>${icon} Name</p>` }), undefined);
   assert.equal(getEntryCoverImage({ content: `<p>${icon}</p><img src="https://x.de/uploads/Korat.jpg" width="800">` }), "https://x.de/uploads/Korat.jpg");

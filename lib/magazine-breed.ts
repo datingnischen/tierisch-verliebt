@@ -1,4 +1,4 @@
-import { decodeHtmlEntities, stripHtml } from "#wordpress";
+import { decodeHtmlEntities, stripHtml } from "#magazine";
 
 export type BreedFact = {
   /** Klartext-Label, z. B. „Lebenserwartung“; leer bei Zeilen ohne „Label: Wert“. */
