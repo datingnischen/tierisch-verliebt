@@ -1,0 +1,47 @@
+.nl-brand { display: inline-flex; align-items: center; gap: 9px; color: #333; font-size: clamp(15px, 2vw, 24px); font-weight: 800; white-space: nowrap; }
+.nl-brand > svg { flex: 0 0 44px; }
+.nl-brand small { display: block; margin-top: 3px; font-size: 10px; font-weight: 500; letter-spacing: .02em; }
+.nl-brand-domain { color: #c02e2e; }
+.nl-brand-light { color: white; }
+.nl-brand-light .nl-brand-domain { color: #f5b7b7; }
+.nl-pilot-note { font-size: .86rem; line-height: 1.7; margin-top: 24px; opacity: .85; }
+.nl-breeds-section { padding-top: 50px; padding-bottom: 50px; }
+.nl-breed-grid { margin-top: 28px; }
+.nl-breed-grid .tvh-card-body > span:not(.tvh-card-go) { font-size: .85rem; line-height: 1.6; color: #686868; }
+.nl-profile-placeholder { border: 1px solid #edd8d8; background: #fff; border-radius: 28px; padding: clamp(24px, 5vw, 45px); text-align: center; box-shadow: 0 14px 35px #4212120d; }
+.nl-profile-placeholder > svg { width: 38px; height: 38px; color: #c02e2e; margin-bottom: 12px; }
+.nl-profile-placeholder h2 { margin-bottom: 12px; }
+.nl-profile-placeholder p { max-width: 660px; margin: 0 auto 20px; line-height: 1.8; }
+.nl-profile-placeholder a { color: #c02e2e; font-weight: 700; }
+.nl-breed-article .rich-content h2 { scroll-margin-top: 105px; }
+.nl-breed-article .rich-content img { max-width: 100%; height: auto; }
+.nl-breed-article .rich-content a { overflow-wrap: anywhere; }
+.nl-breed-article .rich-content table { display: block; max-width: 100%; overflow-x: auto; }
+.tvh-map-nl svg { max-height: 600px; }
+.nl-breed-grid .tvh-card-body { min-width: 0; }
+.nl-menu-login { display: none; }
+html[lang="nl-NL"] .tvc-hero-copy { min-width: 0; }
+html[lang="nl-NL"] .tvc-hero h1 { overflow-wrap: anywhere; hyphens: auto; }
+@media (max-width: 700px) {
+  .site-header-bar:has(.nl-brand) .login-link { display: none; }
+  .nl-menu-login { display: block; }
+}
+@media (max-width: 600px) {
+  .nl-brand > svg { flex-basis: 32px; width: 32px; height: 32px; }
+  .nl-brand { gap: 5px; font-size: 16px; }
+  .nl-brand small { font-size: 8px; }
+  .nl-breeds-section { padding-top: 30px; padding-bottom: 30px; }
+}
+@media (max-width: 400px) {
+  .nl-brand { font-size: 14px; }
+  .nl-brand > svg { flex-basis: 28px; width: 28px; height: 28px; }
+  .site-header-bar:has(.nl-brand) .header-register { font-size: 12px; padding-inline: 10px; }
+}
+@media (max-width: 360px) {
+  .nl-brand { font-size: 13px; }
+  .nl-brand > svg { flex-basis: 24px; width: 24px; height: 24px; }
+  .nl-brand small { font-size: 7px; }
+  html[lang="nl-NL"] .tvc-hero h1 { font-size: 32px; }
+  .site-header-bar:has(.nl-brand) .header-register { padding-inline: 8px; }
+  .site-header-bar:has(.nl-brand) .header-menu summary { width: 36px; min-width: 36px; }
+}

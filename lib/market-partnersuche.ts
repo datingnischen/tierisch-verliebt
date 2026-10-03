@@ -1,4 +1,6 @@
 import data from "../data/partnersuche-markets.json" with { type: "json" };
+import nlData from "../data/nl-partnersuche.json" with { type: "json" };
+import { staticAsset } from "#static-asset";
 import type { MarketCode } from "./markets.ts";
 
 export type MarketCityPage = {
@@ -53,7 +55,7 @@ type HubCopy = {
 
 const imports = data as Record<MarketCode, RawMarket>;
 
-const HUB_COPY: Record<MarketCode, HubCopy> = {
+const HUB_COPY: Record<Exclude<MarketCode, "nl">, HubCopy> = {
   de: {
     title: "Finde tierliebe Singles aus deiner Region",
     description: "Wähle deine Stadt und entdecke tierliebe Singles, lokale Treffpunkte und hilfreiche Tipps für einen entspannten Einstieg.",
@@ -164,7 +166,7 @@ const HUB_COPY: Record<MarketCode, HubCopy> = {
 };
 
 export function withPostcodeSearch(page: MarketCityPage): MarketCityPage {
-  const postcodePattern = page.market === "de" ? /^\d{5}$/ : /^\d{4}$/;
+  const postcodePattern = page.market === "nl" ? /^[1-9]\d{3}\s?[A-Z]{2}$/ : page.market === "de" ? /^\d{5}$/ : /^\d{4}$/;
   if (!postcodePattern.test(page.icony.zip)) {
     throw new Error(`Invalid postcode for ${page.market}/${page.slug}: ${page.icony.zip}`);
   }
@@ -180,22 +182,27 @@ export function withPostcodeSearch(page: MarketCityPage): MarketCityPage {
 }
 
 export function getMarketCityPages(market: MarketCode): MarketCityPage[] {
+  if (market === "nl") return nlCityPages();
   return imports[market].pages.map(withPostcodeSearch);
 }
 
 export function getMarketCityPage(market: MarketCode, slug: string): MarketCityPage | null {
+  if (market === "nl") return nlCityPages().find(page => page.slug === slug) ?? null;
   const page = imports[market].pages.find((entry) => entry.slug === slug);
   return page ? withPostcodeSearch(page) : null;
 }
 
 export function getMarketPartnersucheHub(market: MarketCode) {
-  const copy = HUB_COPY[market];
+  const copy: HubCopy = market === "nl" ? {
+    title: nlData.title, description: nlData.description,
+    editorial: { heroImageUrl: staticAsset("/home/frontpage-visual-tierischverliebt.webp"), heroImageAlt: "Dierenliefde en dating", introParagraphs: nlData.introParagraphs, sections: nlData.sections },
+  } : HUB_COPY[market];
   return {
     market,
     title: copy.title,
     description: copy.description,
     editorial: copy.editorial,
-    cities: imports[market].pages.map((page) => ({
+    cities: getMarketCityPages(market).map((page) => ({
       slug: page.slug,
       cityName: page.cityName,
       href: page.path,
@@ -204,4 +211,19 @@ export function getMarketPartnersucheHub(market: MarketCode) {
       description: page.description,
     })),
   };
+}
+
+function nlCityPages(): MarketCityPage[] {
+  return nlData.pages.map(page => withPostcodeSearch({
+    market: "nl", slug: page.slug, path: `/partnersuche/${page.slug}`,
+    sourceUrl: `https://tierisch-verliebt.nl/partnersuche/${page.slug}/`,
+    title: `Dating voor dierenliefhebbers in ${page.cityName}`,
+    cityName: page.cityName, description: page.description, lead: page.lead,
+    imageUrl: staticAsset(page.imageUrl), imageAlt: page.imageAlt,
+    // Municipal sources are linked in the guide; they are not credits for the brand photo.
+    contentHtml: page.contentHtml, sourceAttributionUrl: null,
+    registrationUrl: "https://tierisch-verliebt.nl/registration/?AID=location",
+    searchUrl: "https://tierisch-verliebt.nl/suche/?AID=location",
+    icony: { platformId: "", zip: page.postcode, country: 31, frameUrl: "" },
+  }));
 }

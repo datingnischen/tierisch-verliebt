@@ -1,4 +1,6 @@
-export const MARKET_CODES = ["de", "at", "ch"] as const;
+import { isNlEditorialPath } from "#nl-routes";
+
+export const MARKET_CODES = ["de", "at", "ch", "nl"] as const;
 export type MarketCode = (typeof MARKET_CODES)[number];
 export type RegionalMarket = Exclude<MarketCode, "de">;
 
@@ -6,7 +8,7 @@ export type MarketConfig = {
   code: MarketCode;
   countryName: string;
   domain: string;
-  locale: "de-DE" | "de-AT" | "de-CH";
+  locale: "de-DE" | "de-AT" | "de-CH" | "nl-NL";
   platformId: string;
 };
 
@@ -14,6 +16,8 @@ const MARKETS: Record<MarketCode, MarketConfig> = {
   de: { code: "de", countryName: "Deutschland", domain: "tierisch-verliebt.de", locale: "de-DE", platformId: "tierischverliebt" },
   at: { code: "at", countryName: "Österreich", domain: "tierisch-verliebt.at", locale: "de-AT", platformId: "tierischverliebtat" },
   ch: { code: "ch", countryName: "Schweiz", domain: "tierisch-verliebt.ch", locale: "de-CH", platformId: "tierischverliebtch" },
+  // The Dutch ICONY platform has not been provisioned: never request profiles under an invented ID.
+  nl: { code: "nl", countryName: "Nederland", domain: "tierisch-verliebt.nl", locale: "nl-NL", platformId: "" },
 };
 
 /**
@@ -77,13 +81,14 @@ export function previewPathForUrl(href: string): string | null {
   const market = marketForHostname(url.hostname);
   if (!market || url.search) return null;
   const path = url.pathname || "/";
-  const served = path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path);
+  const served = market === "nl" ? isNlEditorialPath(path) : path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path);
   return served ? `${previewPath(market, path)}${url.hash}` : null;
 }
 
 export type MarketRequestResolution =
   | { action: "pass" }
   | { action: "not-found" }
+  | { action: "nl-pilot"; market: "nl"; pathname: string }
   | { action: "rewrite"; market: "de"; pathname: string }
   | { action: "market-home"; market: RegionalMarket; pathname: string }
   | { action: "market-partnersuche"; market: RegionalMarket; pathname: string }
@@ -93,7 +98,7 @@ export type MarketRequestResolution =
   | { action: "redirect-platform"; market: RegionalMarket; url: string }
   | { action: "placeholder"; market: RegionalMarket; pathname: string; requestedPath: string };
 
-const INTERNAL_PATH = /^\/market-(?:home|partnersuche|placeholder|robots|sitemap)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
 const PLATFORM_PATH = /^\/(?:login|registration|suche)(?:\/|$)/;
 const PASS_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
 const STATIC_FILE = /\.(?:avif|css|gif|ico|jpe?g|js|json|map|png|svg|webp|woff2?)$/i;
@@ -110,6 +115,13 @@ export function marketForHostname(hostname = ""): MarketCode | null {
 function resolveRegional(market: RegionalMarket, requestedPath: string, productionHost: boolean): MarketRequestResolution {
   if (INTERNAL_PATH.test(requestedPath)) return { action: "not-found" };
   const path = requestedPath.length > 1 ? requestedPath.replace(/\/+$/, "") : requestedPath;
+  if (market === "nl") {
+    if (path === "/robots.txt") return { action: "market-robots", market, pathname: "/market-robots/nl" };
+    if (path === "/sitemap.xml") return { action: "market-sitemap", market, pathname: "/market-sitemap/nl" };
+    if (isNlEditorialPath(path)) return { action: "nl-pilot", market, pathname: `/market-nl${path === "/" ? "" : path}` };
+    if (PLATFORM_PATH.test(path) && !productionHost) return { action: "redirect-platform", market, url: publicUrl(market, path) };
+    return { action: "not-found" };
+  }
   if (path === "/") return { action: "market-home", market, pathname: `/market-home/${market}` };
   if (path === "/partnersuche") return { action: "market-partnersuche", market, pathname: `/market-partnersuche/${market}` };
   const city = path.match(/^\/partnersuche\/([a-z0-9-]+)$/)?.[1];
@@ -127,14 +139,14 @@ export function resolveMarketRequest(pathname: string, hostname = ""): MarketReq
 
   const hostMarket = marketForHostname(hostname);
   if (hostMarket) {
-    const prefixed = normalized.match(/^\/(?:de|at|ch)(\/.*)?$/);
+    const prefixed = normalized.match(/^\/(?:de|at|ch|nl)(\/.*)?$/);
     const hostPath = prefixed ? prefixed[1] || "/" : normalized;
     return hostMarket === "de"
       ? { action: "rewrite", market: "de", pathname: hostPath }
       : resolveRegional(hostMarket, hostPath, true);
   }
 
-  const match = normalized.match(/^\/(de|at|ch)(\/.*)?$/);
+  const match = normalized.match(/^\/(de|at|ch|nl)(\/.*)?$/);
   if (!match) return { action: "rewrite", market: "de", pathname: normalized };
   const market = match[1] as MarketCode;
   const requestedPath = match[2] || "/";

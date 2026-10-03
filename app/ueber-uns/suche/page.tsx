@@ -73,7 +73,7 @@ async function loadMagazineDocuments(): Promise<SearchDocument[]> {
 }
 
 function loadCityDocuments(): SearchDocument[] {
-  return MARKET_CODES.flatMap((market) =>
+  return MARKET_CODES.filter((market) => market !== "nl").flatMap((market) =>
     getMarketCityPages(market).map((city) => ({
       section: market === "de" ? "Stadt" : `Stadt · ${getMarket(market).countryName}`,
       title: city.title || `Partnersuche in ${city.cityName}`,

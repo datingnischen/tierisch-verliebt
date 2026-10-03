@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { MarketLink } from "@/components/market-link";
 import { getMarket, publicUrl, type MarketCode } from "@/lib/markets";
 import { staticAsset } from "@/lib/static-asset";
+import { NlFooter, NlHeader } from "@/components/nl/site-shell";
 
 type NavLink = { label: string; href: string; external?: boolean };
 type Props = { market?: MarketCode };
@@ -62,6 +63,7 @@ const deFooter: Array<{ title: string; links: NavLink[] }> = [
 ];
 
 const logoByMarket: Record<MarketCode, { src: string; alt: string }> = {
+  nl: { src: "", alt: "tierisch-verliebt.nl" },
   de: {
     src: "https://static2.icony-hosting.de/dyncontenta4a2c6ef760359a40c5972ce5e4dd552/img/tierischverliebt/logo.svg",
     alt: "tierisch-verliebt.de Logo",
@@ -128,6 +130,7 @@ function CheckIcon() {
 
 export function SiteHeader({ market = "de" }: Props) {
   const pathname = usePathname() || "/";
+  if (market === "nl") return <NlHeader />;
   const config = getMarket(market);
   const regional = market !== "de";
   const items = regional ? [{ label: "Start", href: "/" }, { label: "Partnersuche", href: "/partnersuche" }] : deHeader;
@@ -162,6 +165,7 @@ export function SiteHeader({ market = "de" }: Props) {
 
 export function SiteFooter({ market = "de" }: Props) {
   const pathname = usePathname() || "/";
+  if (market === "nl") return <NlFooter />;
   const config = getMarket(market);
   const regional = market !== "de";
   const register = registrationHref(market, pathname);
@@ -243,6 +247,7 @@ export function SiteFooter({ market = "de" }: Props) {
               <a href={marketSwitchHref(market, "de")} aria-current={market === "de" ? "true" : undefined}>DE</a>
               <a href={marketSwitchHref(market, "at")} aria-current={market === "at" ? "true" : undefined}>AT</a>
               <a href={marketSwitchHref(market, "ch")} aria-current={market === "ch" ? "true" : undefined}>CH</a>
+              <MarketLink market="nl" path="/">NL</MarketLink>
             </span>
           </div>
         </div>

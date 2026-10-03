@@ -14,7 +14,7 @@ import pathlib
 import urllib.request
 
 SOURCE = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson"
-MARKETS = {"de": "DEU", "at": "AUT", "ch": "CHE"}
+MARKETS = {"de": "DEU", "at": "AUT", "ch": "CHE", "nl": "NLD"}
 WIDTH = 1000
 PAD = 30
 OUT = pathlib.Path(__file__).resolve().parent.parent / "data" / "country-maps.json"
@@ -29,6 +29,8 @@ def main() -> None:
         geometry = features[code]["geometry"]
         polygons = geometry["coordinates"] if geometry["type"] == "MultiPolygon" else [geometry["coordinates"]]
         rings = [poly[0] for poly in polygons if len(poly[0]) > 12]  # nur Außenringe, Kleinstinseln weg
+        if market == "nl":
+            rings = [ring for ring in rings if all(lat > 49 for _, lat in ring)]
         lons = [p[0] for ring in rings for p in ring]
         lats = [p[1] for ring in rings for p in ring]
         lat0 = (min(lats) + max(lats)) / 2

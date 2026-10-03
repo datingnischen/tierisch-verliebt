@@ -1,4 +1,5 @@
 import { withTrailingSlash, type MarketCode } from "#markets";
+import nlData from "../data/nl-partnersuche.json" with { type: "json" };
 
 /**
  * Zerlegt den importierten ICONY-Stadttext in Kapitel, ohne ein Wort zu ändern:
@@ -31,13 +32,13 @@ export type CityGuide = {
 export type GuideAnimal = "hund" | "katze" | "pferd" | "kleintier" | "vogel";
 
 const TOPIC_RULES: [GuideTopic, RegExp][] = [
-  ["cat", /katze|katz\b|samtpfote/],
+  ["cat", /katze|katz\b|samtpfote|katten|kat\b/],
   ["groom", /friseur|fris[öo]r|frisur|salon|groomer|coiffeur|gestylt/],
   ["school", /schule|trainer|erziehung/],
-  ["vet", /tierarzt|tierärzt|klinik|dienstleist|service|versorg|anlaufstell|dienste|zahn zwickt/],
+  ["vet", /tierarzt|tierärzt|klinik|dienstleist|service|versorg|anlaufstell|dienste|zahn zwickt|dierenzorg|dierenarts/],
   ["stay", /hotel|pension|übernacht|unterbring|urlaub|berggasth/],
-  ["food", /café|cafe|restaurant|restaurand|lokal|gastronom|essen gehen|bistro|einkehr|genuss|terrasse|kulinar/],
-  ["walk", /gassi|route|spazier|park|wiese|wald|freilauf|auslauf|rhein|aare|see\b|forst|natur|wander|promenade|hundeplatz|hundepl|gehege|weg\b|bergmannsweg|pfänder|treffpunkt/],
+  ["food", /café|cafe|restaurant|restaurand|lokal|gastronom|essen gehen|bistro|einkehr|genuss|terrasse|kulinar|koffie|terras/],
+  ["walk", /gassi|route|spazier|park|wiese|wald|freilauf|auslauf|rhein|aare|see\b|forst|natur|wander|promenade|hundeplatz|hundepl|gehege|weg\b|bergmannsweg|pfänder|treffpunkt|wandelen|wandeling/],
   ["trip", /ausfl|sightseeing|zoo|tierpark|allee|hafen|garten|abend|flanier|entdeck|kaiserwerth|kö/],
   ["love", /fazit|single|verlieb|herz|date|flirt|gemeinsam|partner|glück|lieb/],
 ];
@@ -56,8 +57,8 @@ export const TOPIC_LABELS: Record<GuideTopic, string> = {
 };
 
 const ANIMAL_RULES: [GuideAnimal, RegExp, number][] = [
-  ["hund", /hund|vierbeiner|gassi|welpe/g, 2],
-  ["katze", /katze|katzen|samtpfote|kater/g, 1],
+  ["hund", /hund|vierbeiner|gassi|welpe|hond/g, 2],
+  ["katze", /katze|katzen|samtpfote|kater|katten|kat\b/g, 1],
   ["pferd", /pferd|reit(?:en|stall|hof)/g, 1],
   ["kleintier", /kaninchen|meerschwein|nager|hamster/g, 1],
   ["vogel", /vögel|vogel|wellensittich|papagei/g, 1],
@@ -72,7 +73,7 @@ export const ANIMAL_LABELS: Record<GuideAnimal, string> = {
 };
 
 const EMPTY_PARAGRAPH = /<p>(?:\s|&nbsp;| |<br\s*\/?>)*<\/p>/gi;
-const OWN_PAGE_LINK = /href="(https?:\/\/(?:www\.)?tierisch-verliebt\.(?:de|at|ch))(\/[^"]*)"/gi;
+const OWN_PAGE_LINK = /href="(https?:\/\/(?:www\.)?tierisch-verliebt\.(?:de|at|ch|nl))(\/[^"]*)"/gi;
 const CREDIT = /(?:<hr\s*\/?>\s*)?<p>\s*<small>\s*Bildquelle:?\s*([^<\s]+)\s*<\/small>\s*<\/p>/i;
 const HEADING = (level: 2 | 3) => new RegExp(`<h${level}\\b[^>]*>([\\s\\S]*?)</h${level}>`, "gi");
 const RELATED_HEADING = /könnten auch interessant/i;
@@ -114,7 +115,7 @@ function relatedLinks(html: string, market: MarketCode): RelatedCityLink[] {
   for (const match of html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
     try {
       const url = new URL(match[1], `https://tierisch-verliebt.${market}`);
-      if (!/(^|\.)tierisch-verliebt\.(de|at|ch)$/.test(url.hostname)) continue;
+      if (!/(^|\.)tierisch-verliebt\.(de|at|ch|nl)$/.test(url.hostname)) continue;
       const path = url.pathname.replace(/\/+$/, "");
       const name = plainText(match[2]);
       if (path.startsWith("/partnersuche/") && name) links.push({ name, path });
@@ -192,6 +193,7 @@ export function buildCityGuide(input: { market: MarketCode; path?: string; conte
 type Geo = { lat: number; lon: number; region: string };
 
 const GEO: Record<MarketCode, Record<string, Geo>> = {
+  nl: Object.fromEntries(nlData.pages.map(page => [page.slug, page.geo])),
   de: {
     berlin: { lat: 52.52, lon: 13.405, region: "Berlin" },
     duesseldorf: { lat: 51.2277, lon: 6.7735, region: "Nordrhein-Westfalen" },

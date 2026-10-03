@@ -5,6 +5,7 @@
   "type": "module",
   "imports": {
     "#markets": "./lib/markets.ts",
+    "#nl-routes": "./lib/nl-routes.ts",
     "#magazine": "./lib/magazine.ts",
     "#magazine-store": "./lib/magazine-store.ts",
     "#static-asset": "./lib/static-asset.ts",

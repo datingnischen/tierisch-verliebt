@@ -11,7 +11,7 @@ async function loadMarkets() {
 
 test("supports the three tierisch-verliebt public markets", async () => {
   const { MARKET_CODES, getMarket, publicUrl } = await loadMarkets();
-  assert.deepEqual(MARKET_CODES, ["de", "at", "ch"]);
+  assert.deepEqual(MARKET_CODES, ["de", "at", "ch", "nl"]);
   assert.equal(getMarket("de").domain, "tierisch-verliebt.de");
   assert.equal(getMarket("at").domain, "tierisch-verliebt.at");
   assert.equal(getMarket("ch").domain, "tierisch-verliebt.ch");

@@ -30,7 +30,7 @@ export default function nextConfig(phase: string): NextConfig {
     assetPrefix: isDev ? undefined : `${assetHost}${assetPathPrefix}`,
     // Magazin-Inhalte liegen als Dateien im Repo; sie müssen in jede Serverless-Funktion gepackt werden.
     outputFileTracingIncludes: {
-      "/**": ["./content/magazin/**/*", "./data/magazin/*.json"],
+      "/**": ["./content/magazin/**/*", "./content/nl/magazin/**/*", "./data/magazin/*.json"],
     },
     async redirects() {
       // Alte WordPress-URLs unter /magazin/ (Autoren-Platzhalter, Archive, Feeds, Sitemaps, Admin).

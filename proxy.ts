@@ -4,14 +4,14 @@ import { isWpRestPath, isWpRestRoot, restRewriteUrl } from "#wp-rest-paths";
 import { isMarketCode, marketForHostname, publicUrl, resolveMarketRequest, withTrailingSlash, type MarketCode } from "#markets";
 
 const INTERNAL_REWRITE_TOKEN = globalThis.crypto.randomUUID();
-const MARKET_HOSTS = new Set(["tierisch-verliebt.de", "tierisch-verliebt.at", "tierisch-verliebt.ch"]);
+const MARKET_HOSTS = new Set(["tierisch-verliebt.de", "tierisch-verliebt.at", "tierisch-verliebt.ch", "tierisch-verliebt.nl"]);
 
 function normalizeHost(value: string | null) { return value?.split(",")[0]?.trim().toLowerCase().replace(/:\d+$/, "").replace(/^www\./, "") ?? ""; }
 export function requestHostname(request: NextRequest) { const direct=normalizeHost(request.headers.get("host")),forwarded=normalizeHost(request.headers.get("x-forwarded-host")); if(MARKET_HOSTS.has(direct))return direct;if(MARKET_HOSTS.has(forwarded))return forwarded;return direct||forwarded||request.nextUrl.hostname; }
 function handoff(url:string){const escaped=url.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");return new NextResponse(`<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=${escaped}"><title>Weiterleitung</title></head><body><p>Weiter zur bestehenden Plattform: <a href="${escaped}">${escaped}</a></p><script>location.replace(${JSON.stringify(url)})</script></body></html>`,{status:200,headers:{"cache-control":"no-store","content-type":"text/html; charset=utf-8"}});}
 
 const NO_SLASH_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
-const INTERNAL_PATH = /^\/market-(?:home|partnersuche|placeholder|robots|sitemap)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
 
 // Seitenpfade enden immer auf "/" (wie die ICONY-Plattform). Ersetzt die eingebaute Slash-Umleitung von
 // Next.js (skipTrailingSlashRedirect): Die kennt nur den Upstream-Pfad. nginx ruft für tierisch-verliebt.at/faq
@@ -29,10 +29,16 @@ export function trailingSlashRedirect(request: NextRequest) {
   ) return null;
 
   const target = withTrailingSlash(pathname);
-  const prefixed = target.match(/^\/(de|at|ch)(\/.*)$/);
+  const prefixed = target.match(/^\/(de|at|ch|nl)(\/.*)$/);
   if (prefixed && isMarketCode(prefixed[1])) {
     // Auf einer Landesdomain entscheidet der Host über den Markt (wie in resolveMarketRequest).
     const market = marketForHostname(requestHostname(request)) ?? prefixed[1];
+    // NL is a pilot: prefix-preserving slash redirects must stay on the preview host.
+    if (market === "nl" && !marketForHostname(requestHostname(request))) {
+      const destination = new URL(request.nextUrl.href);
+      destination.pathname = target;
+      return NextResponse.redirect(destination, 308);
+    }
     return NextResponse.redirect(`${publicUrl(market, prefixed[2])}${search}`, 308);
   }
 
