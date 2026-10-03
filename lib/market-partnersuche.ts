@@ -14,6 +14,7 @@ export type MarketCityPage = {
   lead: string;
   imageUrl?: string | null;
   imageAlt?: string | null;
+  imageIsGenerated?: boolean;
   contentHtml: string;
   sourceAttributionUrl?: string | null;
   registrationUrl: string;
@@ -220,7 +221,8 @@ function nlCityPages(): MarketCityPage[] {
     title: `Dating voor dierenliefhebbers in ${page.cityName}`,
     cityName: page.cityName, description: page.description, lead: page.lead,
     imageUrl: staticAsset(page.imageUrl), imageAlt: page.imageAlt,
-    // Municipal sources are linked in the guide; they are not credits for the brand photo.
+    imageIsGenerated: page.imageIsGenerated,
+    // Municipal sources are linked in the guide; city illustrations are AI-generated.
     contentHtml: page.contentHtml, sourceAttributionUrl: null,
     registrationUrl: "https://tierisch-verliebt.nl/registration/?AID=location",
     searchUrl: "https://tierisch-verliebt.nl/suche/?AID=location",

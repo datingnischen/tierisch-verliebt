@@ -42,7 +42,7 @@ export function NlCityFinder({ market, cities, regions, regionLabel }: Props) {
           <li key={city.slug} style={{ ["--i" as string]: index }}>
             <MarketLink className="tvh-card" market={market} path={city.path}>
               <span className="tvh-card-media">
-                {city.imageUrl ? <img src={city.imageUrl} alt={`Dierenliefde en dating in ${city.name}`} loading="lazy" decoding="async" /> : <PawIcon />}
+                {city.imageUrl ? <img src={city.imageUrl} alt={city.imageAlt || `Stadsimpressie van ${city.name}`} loading="lazy" decoding="async" /> : <PawIcon />}
                 <span className="tvh-card-region"><PinIcon />{city.region}</span>
               </span>
               <span className="tvh-card-body">
@@ -60,6 +60,7 @@ export function NlCityFinder({ market, cities, regions, regionLabel }: Props) {
           </li>
         ))}
       </ul>
+      <p className="tvh-count">De stadsbeelden zijn AI-gegenereerde impressies.</p>
       {!visible.length ? <p className="tvh-empty">Geen stad gevonden. Probeer een andere naam of provincie.</p> : null}
     </div>
   );

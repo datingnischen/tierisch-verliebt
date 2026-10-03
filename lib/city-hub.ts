@@ -15,6 +15,7 @@ export type HubCity = {
   name: string;
   path: string;
   imageUrl: string | null;
+  imageAlt?: string | null;
   region: string;
   chapters: number;
   tips: number;
@@ -78,6 +79,7 @@ export function getCityHubData(market: MarketCode): CityHubData {
       name: page.cityName,
       path: page.path,
       imageUrl: page.imageUrl ?? null,
+      imageAlt: page.imageAlt ?? null,
       region: geo?.region ?? "",
       chapters: Math.max(guide.sections.length, 1),
       tips: guide.tipCount,

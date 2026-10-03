@@ -1,0 +1,84 @@
+{
+  "generator": "OpenAI built-in image_gen",
+  "generatedDate": "2026-10-03",
+  "format": "WebP",
+  "width": 1536,
+  "height": 1024,
+  "images": [
+    {
+      "city": "amsterdam",
+      "file": "public/nl/steden/amsterdam-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Amsterdam, Netherlands. Scene: A picturesque Amsterdam canal with historic narrow brick canal houses and a small arched bridge, Westerkerk tower visible in the distance, reflections on the water and a few bicycles along the canal."
+    },
+    {
+      "city": "rotterdam",
+      "file": "public/nl/steden/rotterdam-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Rotterdam, Netherlands. Scene: The recognizable white asymmetric Erasmus Bridge spanning the Nieuwe Maas in Rotterdam, viewed from a riverside promenade, with Rotterdam's modern skyline and De Rotterdam towers in the background."
+    },
+    {
+      "city": "den-haag",
+      "file": "public/nl/steden/den-haag-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Den Haag, Netherlands. Scene: The historic Binnenhof and its towers seen across the Hofvijver in The Hague, elegant Dutch architecture reflected in the pond, a calm green foreground and warm late-afternoon sky."
+    },
+    {
+      "city": "utrecht",
+      "file": "public/nl/steden/utrecht-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Utrecht, Netherlands. Scene: The Oudegracht canal in Utrecht with characteristic low waterside wharf cellars and old brick houses, the recognizable tall Gothic Dom Tower rising above the historic center. A small bridge and bicycles, warm reflections, green trees."
+    },
+    {
+      "city": "eindhoven",
+      "file": "public/nl/steden/eindhoven-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Eindhoven, Netherlands. Scene: The iconic Evoluon in Eindhoven, a large distinctive white concrete flying-saucer shaped modernist building supported above a broad landscaped lawn and reflecting pond, unmistakable 1960s Dutch architecture, welcoming park surroundings."
+    },
+    {
+      "city": "groningen",
+      "file": "public/nl/steden/groningen-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Groningen, Netherlands. Scene: Groningen's historic Grote Markt square with the tall recognizable Martinitoren tower and Martini Church rising on the right, elegant Dutch historic townhouses around a spacious stone-paved square, a few discreet distant pedestrians."
+    },
+    {
+      "city": "tilburg",
+      "file": "public/nl/steden/tilburg-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Tilburg, Netherlands. Scene: The Piushaven waterfront in Tilburg, a former industrial inland harbor with calm water, moored small boats, Dutch brick industrial warehouses converted to inviting waterside buildings, waterside walking promenade and trees. Emphasize a distinctive low-rise industrial harbor atmosphere, no canal-house skyline from Amsterdam."
+    },
+    {
+      "city": "almere",
+      "file": "public/nl/steden/almere-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Almere, Netherlands. Scene: The modern Almere city center waterfront on the Weerwater, with the distinctive KAF Kunstlinie modern theatre volume above the water and varied contemporary Dutch residential architecture in the skyline, a pleasant landscaped lakeside promenade. Modern geometric architecture, no historic canal houses or medieval church."
+    },
+    {
+      "city": "breda",
+      "file": "public/nl/steden/breda-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: Breda, Netherlands. Scene: Historic Breda seen beside the tranquil Singel canal, warm brick waterfront buildings and green trees, the slender Gothic tower of the Grote Kerk prominently rising over the old town, small boats and reflections, a calm walkable canalside scene."
+    },
+    {
+      "city": "nijmegen",
+      "file": "public/nl/steden/nijmegen-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: nijmegen, Netherlands. Scene: The Waal river and distinctive broad steel arch Waalbrug bridge, with the historic Nijmegen waterfront and old town skyline, warm brick buildings, inviting river promenade."
+    },
+    {
+      "city": "arnhem",
+      "file": "public/nl/steden/arnhem-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: arnhem, Netherlands. Scene: The John Frost bridge across the Lower Rhine, Arnhem riverfront brick town architecture with the Eusebius church tower in the distant skyline, calm water and green riverbanks."
+    },
+    {
+      "city": "haarlem",
+      "file": "public/nl/steden/haarlem-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: haarlem, Netherlands. Scene: The Grote Markt square in Haarlem with the massive Gothic Grote Kerk Saint Bavo prominently on the right, historic Dutch guild houses and brick townhouses, gently sunlit cobbled square."
+    },
+    {
+      "city": "maastricht",
+      "file": "public/nl/steden/maastricht-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: maastricht, Netherlands. Scene: The Sint Servaasbrug historic stone arched bridge across the Maas in Maastricht, distinctive old-town riverside architecture, mellow stone and red brick, calm river reflections, a welcoming riverbank promenade."
+    },
+    {
+      "city": "leiden",
+      "file": "public/nl/steden/leiden-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: leiden, Netherlands. Scene: The Rapenburg canal in Leiden, historic Dutch brick canal houses from the university quarter, trees and bicycles beside the canal, an elegant low arched bridge reflected in the water, quiet scholarly historic atmosphere."
+    },
+    {
+      "city": "zwolle",
+      "file": "public/nl/steden/zwolle-ai.webp",
+      "prompt": "Generate a single standalone landscape city image for a Dutch animal-lovers dating website. Photorealistic architectural travel-editorial style, natural warm late-afternoon light, believable Dutch urban setting, restrained colors, sharp detailed architecture, calm inviting atmosphere. Wide landscape 3:2 composition, landmark prominent in center/right; usable as both a full-width website hero with dark text overlay on the left and a city-card crop. No text, lettering, logo, border, collage, watermark, captions, animal mascot, staged couple, or artificial frame. This is an AI-created illustrative city view, not documentary photography. City: zwolle, Netherlands. Scene: The Sassenpoort medieval red-brick city gateway in Zwolle, its recognizable Gothic gatehouse with four pointed corner towers, seen from a cobbled old-town street with traditional Dutch brick buildings and greenery."
+    }
+  ]
+}

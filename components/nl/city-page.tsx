@@ -91,7 +91,7 @@ export function NlCityPage({ market, city, expert }: Props) {
             ) : null}
           </aside>
         </div>
-        {guide.imageCreditUrl ? <a className="tvc-credit" href={guide.imageCreditUrl} target="_blank" rel="nofollow noopener noreferrer">Foto: {guide.imageCreditUrl.includes("pixabay") ? "Pixabay" : "Bron"}</a> : null}
+        {city.imageIsGenerated ? <span className="tvc-credit">Beeld: AI-gegenereerde stadsimpressie</span> : guide.imageCreditUrl ? <a className="tvc-credit" href={guide.imageCreditUrl} target="_blank" rel="nofollow noopener noreferrer">Foto: {guide.imageCreditUrl.includes("pixabay") ? "Pixabay" : "Bron"}</a> : null}
       </section>
 
       <div className="tvc-wrap">

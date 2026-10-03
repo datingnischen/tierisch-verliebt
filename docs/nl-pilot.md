@@ -8,7 +8,7 @@ Die Vorschau liegt unter `/nl/` auf dem bestehenden Vercel-Projekt. Öffentliche
 - Amsterdam, Rotterdam, Den Haag, Utrecht, Eindhoven, Groningen, Tilburg, Almere, Breda, Nijmegen, Arnhem, Haarlem, Maastricht, Leiden und Zwolle.
 - Magazin, Hunde- und Katzenrassenübersicht sowie zehn vollständige übersetzte Rasseporträts.
 - 266 Originalabsätze, sämtliche Bilder, Bildvarianten, Videos, Überschriften, Tabellen und ursprüngliche Autor-/Datumsfelder der Rasseporträts erhalten.
-- Stadttexte nennen niederländische Orte und verlinken amtliche Informationen zu aktuellen Hunderegeln. Gemeindeseiten sind keine Fotobildnachweise; die verwendete Aufnahme stammt aus den bestehenden Markenassets.
+- Stadttexte nennen niederländische Orte und verlinken amtliche Informationen zu aktuellen Hunderegeln. Die 15 eigenen Stadtmotive liegen unter `public/nl/steden/` und werden auf den Stadtseiten als KI-generierte Stadtimpressionen gekennzeichnet. Prompts und Motive sind in `docs/nl-city-images-prompts.json` dokumentiert.
 
 ## Plattform und Indexierung
 
