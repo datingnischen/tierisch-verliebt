@@ -18,6 +18,16 @@ const content = `
 <p>Mit Suchspielen und Apportieraufgaben.</p>
 `;
 
+test("Dutch FAQ cards and schema keep the questions and use the Dutch locale", () => {
+  const html = renderMagazineFaqSection(content, "Bengaal", "nl-NL");
+  assert.match(html, /Veelgestelde vragen/);
+  assert.doesNotMatch(html, /Häufige Fragen|Die häufigsten Fragen/);
+  assert.equal((html.match(/<details /g) || []).length, getMagazineFaqItems(content).length);
+  const graph = buildMagazineFaqGraph({ items: getMagazineFaqItems(content), pageUrl: "https://tierisch-verliebt.nl/magazin/bengaal/", pageName: "Bengaal", language: "nl-NL" });
+  assert.equal(graph.inLanguage, "nl-NL");
+  assert.equal(graph.mainEntity[0].name, getMagazineFaqItems(content)[0].question);
+});
+
 test("extracts FAQ pairs from editorial content", () => {
   const items = getMagazineFaqItems(content);
   assert.equal(items.length, 2);

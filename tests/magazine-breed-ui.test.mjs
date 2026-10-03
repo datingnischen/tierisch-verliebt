@@ -28,7 +28,7 @@ test("breed pages derive quick highlights and jump navigation from editorial con
 
 test("FAQ content is transformed into a richer accordion block", async () => {
   const lib = await source("../lib/magazine-faq.ts");
-  assert.match(lib, /export function renderMagazineFaqSection\(html: string, subject: string\)/);
+  assert.match(lib, /export function renderMagazineFaqSection\(html: string, subject: string(?:, language = "de-DE")?\)/);
   assert.match(lib, /breed-faq-card/);
   assert.match(lib, /<details class="breed-faq-item"/);
   assert.match(lib, /Häufige Fragen/);

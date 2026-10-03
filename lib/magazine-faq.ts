@@ -11,6 +11,7 @@ type FaqGraphInput = {
   items: MagazineFaqItem[];
   pageUrl: string;
   pageName: string;
+  language?: string;
 };
 
 // „FAQ“, „FAQs“, „FAQ`s“, „FAQ's“, „Häufige Fragen zum Mops“, „Häufig gestellte Fragen“ …
@@ -110,7 +111,7 @@ export function getMagazineFaqItems(html: string): MagazineFaqItem[] {
   return findFaqSection(html)?.items ?? [];
 }
 
-export function renderMagazineFaqSection(html: string, subject: string) {
+export function renderMagazineFaqSection(html: string, subject: string, language = "de-DE") {
   const section = findFaqSection(html);
   if (!section || !section.items.length) return html;
 
@@ -118,8 +119,8 @@ export function renderMagazineFaqSection(html: string, subject: string) {
     '<section class="breed-faq-card" id="faq" aria-labelledby="faq-titel">',
     '  <div class="breed-faq-header">',
     '    <span class="eyebrow eyebrow-brand">FAQ</span>',
-    '    <h2 id="faq-titel">Häufige Fragen</h2>',
-    `    <p>Die häufigsten Fragen zum Thema „${escapeHtml(subject)}“ — kompakt beantwortet.</p>`,
+    `    <h2 id="faq-titel">${language === "nl-NL" ? "Veelgestelde vragen" : "Häufige Fragen"}</h2>`,
+    `    <p>${language === "nl-NL" ? `De meestgestelde vragen over ${escapeHtml(subject)}, kort beantwoord.` : `Die häufigsten Fragen zum Thema „${escapeHtml(subject)}“ — kompakt beantwortet.`}</p>`,
     '  </div>',
     '  <div class="breed-faq-list">',
     ...section.items.map((item, index) => [
@@ -136,7 +137,7 @@ export function renderMagazineFaqSection(html: string, subject: string) {
   return `${html.slice(0, section.start)}${preamble}${card}${html.slice(section.bodyEnd)}`;
 }
 
-export function buildMagazineFaqGraph({ items, pageUrl, pageName }: FaqGraphInput) {
+export function buildMagazineFaqGraph({ items, pageUrl, pageName, language = "de-DE" }: FaqGraphInput) {
   if (!items.length) return null;
 
   return {
@@ -145,7 +146,7 @@ export function buildMagazineFaqGraph({ items, pageUrl, pageName }: FaqGraphInpu
     "@id": `${pageUrl}#faq`,
     url: `${pageUrl}#faq`,
     name: pageName,
-    inLanguage: "de-DE",
+    inLanguage: language,
     mainEntity: items.map((item) => ({
       "@type": "Question",
       "@id": `${pageUrl}#${item.id}`,

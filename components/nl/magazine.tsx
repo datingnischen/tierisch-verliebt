@@ -4,6 +4,8 @@ import { PawIcon } from "@/components/city-page/tier-icons";
 import { display } from "@/components/city-page/display-font";
 import { getNlBreeds, type NlBreedEntry } from "@/lib/nl-magazine";
 import { publicUrl } from "@/lib/markets";
+import { staticAsset } from "#static-asset";
+import { buildMagazineFaqGraph } from "@/lib/magazine-faq";
 import "@/components/city-page/tier-city-page.css";
 import "@/components/city-page/tier-city-hub.css";
 import "@/app/magazin/[slug]/magazin-article.css";
@@ -24,7 +26,9 @@ export function NlMagazine({ animal }: { animal?: "dog" | "cat" }) {
 
 export function NlBreedPage({ entry }: { entry: NlBreedEntry }) {
   const animalPath = entry.animal === "dog" ? "/magazin/hondenrassen" : "/magazin/kattenrassen";
+  const faqGraph = buildMagazineFaqGraph({ items: entry.faqItems, pageUrl: publicUrl("nl", `/magazin/${entry.slug}/`), pageName: `Veelgestelde vragen over ${entry.name}`, language: "nl-NL" });
   return <main className={`tvc ${display.variable}`}>
+    {faqGraph ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqGraph).replace(/</g, "\\u003c") }}/> : null}
     <section className="tvc-hero tvm-article-hero tvm-breed-hero"><div className="tvc-wrap tvm-article-grid breed-hero-grid"><div className="tvc-hero-copy">
       <nav className="tvc-crumbs" aria-label="Broodkruimels"><MarketLink market="nl" path="/">Home</MarketLink><span>›</span><MarketLink market="nl" path="/magazin">Magazine</MarketLink><span>›</span><MarketLink market="nl" path={animalPath}>{entry.animal === "dog" ? "Hondenrassen" : "Kattenrassen"}</MarketLink></nav>
       <span className="tvc-badge"><PawIcon className="tvc-badge-paw"/>Rasportret · Profiel &amp; verzorging</span><h1>{entry.title}</h1><p className="tvc-lead">{entry.description}</p>
@@ -33,6 +37,10 @@ export function NlBreedPage({ entry }: { entry: NlBreedEntry }) {
     <div id="inhoud" className="shell shell-narrow magazine-detail-shell breed-detail-shell">
       <nav className="content-section content-section-tight breed-jump-nav-wrap" aria-label="Inhoud"><div className="breed-jump-nav"><span className="breed-jump-title">Inhoud</span>{entry.sections.map(section => <a className="breed-jump-link" key={section.id} href={`#${section.id}`}>{section.label}</a>)}</div></nav>
       <article className="content-section nl-breed-article"><div className="rich-content breed-rich-content" dangerouslySetInnerHTML={{ __html: entry.content }}/></article>
+      <section className="content-section nl-flirt-radar" aria-labelledby="nl-radar-title">
+        <MarketLink market="nl" path="/partnersuche" aria-label="Ontdek de stadsgidsen"><img src={staticAsset("/brand/flirtradar-nl.svg")} alt="Flirtradar voor dierenliefhebbers met gedeelde interesses" width={320} height={480} loading="lazy" decoding="async"/></MarketLink>
+        <div><span className="eyebrow eyebrow-brand">Met hart voor dieren</span><h2 id="nl-radar-title">Jouw flirtradar: samen begint bij dierenliefde</h2><p>{entry.animal === "cat" ? `Dol op ${entry.name} en op mensen die jouw liefde voor katten begrijpen?` : `Dol op ${entry.name} en op mensen die jouw liefde voor honden delen?`} Een gedeelde passie is een mooi begin voor een gesprek.</p><p>Het Nederlandse ledenplatform opent bij de lancering. Ontdek tot die tijd onze stadsgidsen en vind inspiratie voor een ontspannen eerste date.</p><MarketLink market="nl" path="/partnersuche" className="tvc-btn tvc-btn-primary">Ontdek dating in jouw stad →</MarketLink><small>Illustratie met voorbeeldportretten; geen actuele leden of afstanden.</small></div>
+      </section>
       <section className="content-section"><h2>Ontdek meer {entry.animal === "dog" ? "hondenrassen" : "kattenrassen"}</h2><BreedGrid animal={entry.animal}/></section>
     </div><PreviewLinkRewriter selector=".nl-breed-article"/>
   </main>;

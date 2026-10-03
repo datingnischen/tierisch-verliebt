@@ -7,6 +7,7 @@
     "#markets": "./lib/markets.ts",
     "#nl-routes": "./lib/nl-routes.ts",
     "#magazine": "./lib/magazine.ts",
+    "#magazine-faq": "./lib/magazine-faq.ts",
     "#magazine-store": "./lib/magazine-store.ts",
     "#static-asset": "./lib/static-asset.ts",
     "#wp-rest-paths": "./lib/wp-rest-paths.ts"

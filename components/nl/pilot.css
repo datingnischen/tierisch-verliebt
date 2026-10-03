@@ -45,3 +45,9 @@ html[lang="nl-NL"] .tvc-hero h1 { overflow-wrap: anywhere; hyphens: auto; }
   .site-header-bar:has(.nl-brand) .header-register { padding-inline: 8px; }
   .site-header-bar:has(.nl-brand) .header-menu summary { width: 36px; min-width: 36px; }
 }
+.nl-flirt-radar { display: grid; grid-template-columns: minmax(200px, 280px) minmax(0, 1fr); gap: 32px; align-items: center; padding: 28px; border: 1px solid #ead8c8; border-radius: 24px; background: #fffaf4; }
+.nl-flirt-radar > a img { width: 100%; height: auto; border-radius: 20px; }
+.nl-flirt-radar h2 { margin-top: 12px; }
+.nl-flirt-radar p { line-height: 1.7; }
+.nl-flirt-radar small { display: block; margin-top: 16px; color: #6e605b; }
+@media (max-width: 640px) { .nl-flirt-radar { grid-template-columns: 1fr; padding: 20px; gap: 20px; } .nl-flirt-radar > a { width: 100%; max-width: 280px; justify-self: center; } }
