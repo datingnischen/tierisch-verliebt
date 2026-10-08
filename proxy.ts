@@ -11,7 +11,7 @@ export function requestHostname(request: NextRequest) { const direct=normalizeHo
 function handoff(url:string){const escaped=url.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");return new NextResponse(`<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=${escaped}"><title>Weiterleitung</title></head><body><p>Weiter zur bestehenden Plattform: <a href="${escaped}">${escaped}</a></p><script>location.replace(${JSON.stringify(url)})</script></body></html>`,{status:200,headers:{"cache-control":"no-store","content-type":"text/html; charset=utf-8"}});}
 
 const NO_SLASH_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
-const INTERNAL_PATH = /^\/market-(?:home|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
 
 // Seitenpfade enden immer auf "/" (wie die ICONY-Plattform). Ersetzt die eingebaute Slash-Umleitung von
 // Next.js (skipTrailingSlashRedirect): Die kennt nur den Upstream-Pfad. nginx ruft für tierisch-verliebt.at/faq

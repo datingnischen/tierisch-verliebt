@@ -16,6 +16,7 @@ import {
   aboutOverviewCanonical,
   getAboutStoryPage,
 } from "@/lib/about-section";
+import { FAQ_PATH } from "@/lib/faq";
 import { getReviewsPage, getSocialMediaPage } from "@/lib/icony-static-pages";
 import { SOCIAL_CHANNELS } from "@/lib/social-channels";
 import { stripHtml } from "@/lib/magazine";
@@ -101,6 +102,7 @@ export default async function AboutOverviewPage() {
         <>
           <Link className="tvc-btn tvc-btn-primary" href={ABOUT_STORY_PATH}>Unsere Geschichte lesen</Link>
           <Link className="tvc-btn tvc-btn-ghost" href={ABOUT_REVIEWS_PATH}>Bewertungen ansehen</Link>
+          <Link className="tvc-btn tvc-btn-ghost" href={FAQ_PATH}>Häufige Fragen</Link>
         </>
       }
       aside={expert?.imageUrl ? <AboutPolaroid src={expert.imageUrl} alt={`${expert.name} – ${expert.jobTitle}`} caption={`${expert.name} · ${expert.jobTitle}`} /> : undefined}

@@ -54,6 +54,7 @@ const deFooter: Array<{ title: string; links: NavLink[] }> = [
     links: [
       { label: "Unsere Geschichte", href: "/ueber-uns/geschichte" },
       { label: "Bewertungen", href: "/ueber-uns/bewertungen" },
+      { label: "Häufige Fragen", href: "/faq" },
       { label: "Presse & Sponsoring", href: "/magazin/thema/presse" },
       { label: "Christian M. Haas", href: "/magazin/christian" },
       { label: "Social Media", href: "/ueber-uns/social-media" },
@@ -171,7 +172,7 @@ export function SiteFooter({ market = "de" }: Props) {
   const register = registrationHref(market, pathname);
   const columns = regional
     ? [
-        { title: "Partnersuche", links: [{ label: `Alle Städte in ${config.countryName}`, href: "/partnersuche" }] },
+        { title: "Partnersuche", links: [{ label: `Alle Städte in ${config.countryName}`, href: "/partnersuche" }, { label: "Häufige Fragen", href: "/faq" }] },
         { title: "Mitgliedschaft", links: [{ label: "Kostenlos registrieren", href: register, external: true }, { label: "Login", href: publicUrl(market, "/login/"), external: true }] },
       ]
     : deFooter;

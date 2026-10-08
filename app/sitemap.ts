@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ABOUT_OVERVIEW_PATH, ABOUT_REVIEWS_PATH, ABOUT_SOCIAL_MEDIA_PATH, ABOUT_STORY_PATH } from "@/lib/about-section";
 import { getKnownAuthorSlugs, isNoindexAuthorArchive } from "@/lib/author-profiles";
+import { FAQ_PATH } from "@/lib/faq";
 import { getMarketCityPages } from "@/lib/market-partnersuche";
 import { SITE_URL, getMagazineCategories, getMagazinePages, getMagazinePosts } from "@/lib/magazine";
 import { withTrailingSlash } from "@/lib/markets";
@@ -33,6 +34,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${SITE_URL}/partnersuche/`,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}${withTrailingSlash(FAQ_PATH)}`,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: `${SITE_URL}${withTrailingSlash(ABOUT_OVERVIEW_PATH)}`,

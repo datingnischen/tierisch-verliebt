@@ -68,8 +68,8 @@ export function previewPath(market: MarketCode, pathname = "/"): string {
   return withTrailingSlash(`/${market}${normalized}`);
 }
 
-const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns)(?:\/|$)/;
-const REGIONAL_NEXT_PAGE = /^\/partnersuche(?:\/[a-z0-9-]+)?\/?$/;
+const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns|faq)(?:\/|$)/;
+const REGIONAL_NEXT_PAGE = /^\/(?:partnersuche(?:\/[a-z0-9-]+)?|faq)\/?$/;
 
 /**
  * Live-URL einer Seite, die Next.js selbst rendert, auf den Vorschau-Pfad abbilden (für Links im
@@ -93,12 +93,13 @@ export type MarketRequestResolution =
   | { action: "market-home"; market: RegionalMarket; pathname: string }
   | { action: "market-partnersuche"; market: RegionalMarket; pathname: string }
   | { action: "market-partnersuche-city"; market: RegionalMarket; pathname: string; slug: string }
+  | { action: "market-faq"; market: RegionalMarket; pathname: string }
   | { action: "market-robots"; market: RegionalMarket; pathname: string }
   | { action: "market-sitemap"; market: RegionalMarket; pathname: string }
   | { action: "redirect-platform"; market: RegionalMarket; url: string }
   | { action: "placeholder"; market: RegionalMarket; pathname: string; requestedPath: string };
 
-const INTERNAL_PATH = /^\/market-(?:home|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
 const PLATFORM_PATH = /^\/(?:login|registration|suche)(?:\/|$)/;
 const PASS_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
 const STATIC_FILE = /\.(?:avif|css|gif|ico|jpe?g|js|json|map|png|svg|webp|woff2?)$/i;
@@ -124,6 +125,7 @@ function resolveRegional(market: RegionalMarket, requestedPath: string, producti
   }
   if (path === "/") return { action: "market-home", market, pathname: `/market-home/${market}` };
   if (path === "/partnersuche") return { action: "market-partnersuche", market, pathname: `/market-partnersuche/${market}` };
+  if (path === "/faq") return { action: "market-faq", market, pathname: `/market-faq/${market}` };
   const city = path.match(/^\/partnersuche\/([a-z0-9-]+)$/)?.[1];
   if (city) return { action: "market-partnersuche-city", market, pathname: `/market-partnersuche/${market}/${city}`, slug: city };
   if (path === "/robots.txt") return { action: "market-robots", market, pathname: `/market-robots/${market}` };

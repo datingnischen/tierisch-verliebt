@@ -10,6 +10,7 @@ import {
   ABOUT_SOCIAL_MEDIA_PATH,
   ABOUT_STORY_PATH,
 } from "@/lib/about-section";
+import { FAQ_PATH } from "@/lib/faq";
 import "@/components/city-page/tier-city-page.css";
 import "@/components/city-page/tier-city-hub.css";
 import "./about.css";
@@ -21,6 +22,7 @@ const SUBNAV = [
   { href: ABOUT_SOCIAL_MEDIA_PATH, label: "Social Media" },
   { href: ABOUT_PRESS_PATH, label: "Presse & Sponsoring" },
   { href: "/magazin/christian", label: "Christian M. Haas" },
+  { href: FAQ_PATH, label: "Häufige Fragen" },
   { href: ABOUT_SEARCH_PATH, label: "Suche" },
 ];
 
