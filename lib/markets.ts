@@ -68,7 +68,7 @@ export function previewPath(market: MarketCode, pathname = "/"): string {
   return withTrailingSlash(`/${market}${normalized}`);
 }
 
-const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns|bewertungen-und-erfahrungen)(?:\/|$)/;
+const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns)(?:\/|$)/;
 const REGIONAL_NEXT_PAGE = /^\/partnersuche(?:\/[a-z0-9-]+)?\/?$/;
 
 /**

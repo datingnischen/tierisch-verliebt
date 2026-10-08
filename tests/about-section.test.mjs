@@ -20,14 +20,12 @@ test("maps moved ueber-uns content to canonical about routes", async () => {
 });
 
 test("legacy about routes permanently redirect to the new about section", async () => {
-  const [legacyStory, legacySocial, legacyReviews] = await Promise.all([
+  const [legacyStory, legacySocial] = await Promise.all([
     readRepoFile("app/magazin/ueber-uns/page.tsx"),
     readRepoFile("app/social-media/page.tsx"),
-    readRepoFile("app/bewertungen-und-erfahrungen/page.tsx"),
   ]);
   assert.match(legacyStory, /permanentRedirect\(ABOUT_STORY_PATH\)/);
   assert.match(legacySocial, /permanentRedirect\(ABOUT_SOCIAL_MEDIA_PATH\)/);
-  assert.match(legacyReviews, /permanentRedirect\(ABOUT_REVIEWS_PATH\)/);
 });
 
 test("internal navigation and expert trust links use canonical Christian path", async () => {
