@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/02/christian-m-haas-tierisch-verliebt.png"
 imageAlt: "Christian M. Haas ist Neugründer der Seite"
-seoTitle: "Christian M. Haas – Datingexperte & Tierliebhaber"
+seoTitle: "Christian M. Haas – Datingexperte"
 excerpt: "<p>Über Christian Christian M. Haas beschäftigt sich seit vielen Jahren mit Online-Dating und der Entwicklung von themenspezifischen Singlebörsen. Die Idee</p>"
 ---
 

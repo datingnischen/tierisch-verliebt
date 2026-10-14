@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/mariagodfrida-parakeets-956851_1280.compr_.jpg"
 imageAlt: "Käfig oder Voliere? Welche Haltung ist artgerecht?"
-seoTitle: "Käfig oder Voliere? Welche Haltung ist artgerecht?"
+seoTitle: "Käfig oder Voliere: Was ist artgerecht?"
 description: "Welche Haltung ist es besser - Käfig oder Voliere? Entdecke Haltung, Platzbedarf, soziale Kontakte und Pflege für verschiedene Vogelarten - richtig informieren."
 excerpt: "<p>Wer Vögel als Haustiere hält, steht früher oder später vor der Frage: Reicht ein Käfig aus oder ist eine Voliere</p>"
 ---

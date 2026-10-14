@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/voegel-richtig-halten-Anfaenger-1.png"
 imageAlt: "Vögel richtig halten: Grundlagen für Anfänger"
-seoTitle: "Vögel richtig halten - Grundlagen für Anfänger"
+seoTitle: "Vögel richtig halten: Grundlagen"
 description: "Welche Vogelarten sind besonders gut für Einstieger? Hier kannst Du viele Ratschläge für den Anfang des Zusammenlebens mit Vögeln finden."
 excerpt: "<p>Vögel gehören zu den faszinierendsten Haustieren überhaupt. Ihr Gesang, ihre Farben und ihr lebhaftes Verhalten begeistern viele Menschen. Doch auch</p>"
 ---

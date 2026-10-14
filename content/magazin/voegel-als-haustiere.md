@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/01/voegel-als-haustiere.png"
 imageAlt: "Vögel als Haustiere"
-seoTitle: "Vögel als Haustiere – Welche Arten passen zu deinem Lebensstil?"
+seoTitle: "Vögel als Haustiere: Welche Art passt?"
 description: "Welche Vogelarten passen zu deinem Alltag? Entdecke Haltung, Platzbedarf, Lautstärke & Pflege von Wellensittich bis Papagei – jetzt informieren & richtig entscheiden."
 excerpt: "<p>Vögel faszinieren Menschen seit Jahrhunderten. Ihr Gesang, ihre Farben und ihr intelligentes Verhalten machen sie zu ganz besonderen Haustieren. Doch</p>"
 ---

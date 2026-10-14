@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/03/Spiele-fuer-Hunde-1.jpg"
 imageAlt: "Spiele für Hunde"
-seoTitle: "Spiele für Hunde, um Energie zu Hause zu verbrauchen"
+seoTitle: "Spiele für Hunde zu Hause: Ideen"
 description: "Es gibt viele Spiele, die man drinnen spielen kann, um den Hund zu beschäftigen und ihm helfen, seine Energie zu verbrauchen. Hier finden Sie Tipps und Tricks."
 excerpt: "<p>Wenn man einen Hund zu Hause hat, ist es wichtig, ihm genug Bewegung zu geben, um ihn gesund und glücklich</p>"
 ---

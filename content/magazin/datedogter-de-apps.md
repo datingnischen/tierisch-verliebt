@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["apps"]
 image: "/magazin/wp-content/uploads/2026/09/datedogter-de-apps-titelbild.jpg"
 imageAlt: "Zwei Hundemenschen begegnen sich mit ihren Hunden im Park"
-seoTitle: "Datedogter: Die Dating-App für Hundeliebhaber"
+seoTitle: "Datedogter: Dating-App für Hundefans"
 description: "| Hier kann man Informationen speziell für Hundehalter und Hundeliebhaber finden. Es ist nicht nur klassische Dating-App, sondern eher Social-Dating-App."
 excerpt: "<p>Für Hundebesitzer und Hundefreunde dreht sich ein großer Teil des eigenen Lebens um den eigenen Vierbeiner. Umso schöner ist es,</p>"
 ---

@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2025/12/Valentino-Sponsoring-Trinkflasche-Feloni-FV-Felsberg.png"
 imageAlt: "Das perfekte Match: tierisch-verliebt.de unterstützt die E-Jugend des FV Felsberg"
-seoTitle: "Das perfekte Match: Sponsoring der E-Jugend des FV Felsberg"
+seoTitle: "Sponsoring: E-Jugend des FV Felsberg"
 excerpt: "<p>PRESSEMITTEILUNG Felsberg, Dez, 2024 – Wer Tiere liebt, hat das Herz am rechten Fleck – und wer den Nachwuchssport unterstützt,</p>"
 ---
 

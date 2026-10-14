@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/laurarinke-parrots-2911077_1280.compr_.jpg"
 imageAlt: "Papageien gesund halten: Warnzeichen und erste Hilfe"
-seoTitle: "Papageien richtig gesund halten und schützen"
+seoTitle: "Papageien gesund halten: Warnzeichen"
 description: "Was gehört zu der Warnzeichen und schnellem Handeln beim Papageien? Hier kann man mehr Information über die kleine Veränderungen im Verhalten lesen."
 excerpt: "<p>Krankheiten früh erkennen und richtig handeln Papageien sind faszinierende, intelligente Tiere – aber auch Meister darin, Krankheiten zu verbergen. In</p>"
 ---

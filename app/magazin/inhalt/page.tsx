@@ -12,7 +12,8 @@ import "../magazin-hub.css";
 import "./inhalt.css";
 
 const PAGE_URL = `${SITE_URL}/magazin/inhalt/`;
-const TITLE = "Inhaltsverzeichnis: alle Magazin-Beiträge & Seiten A–Z";
+// Kurz halten: Vorlage hängt „| tierisch-verliebt.de“ an, Google schneidet ab ca. 580 px ab.
+const TITLE = "Inhaltsverzeichnis: Magazin A–Z";
 const DESCRIPTION =
   "Alle Ratgeber-Beiträge, Hunderassen, Katzenrassen und Kleintier-Seiten des tierisch-verliebt.de Magazins auf einen Blick – nach Thema sortiert und durchsuchbar.";
 

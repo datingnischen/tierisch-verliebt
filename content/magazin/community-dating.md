@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/05/community-dating.png"
 imageAlt: "A couple sitting on the grass in a park with their golden retriever between them, all smiling."
-seoTitle: "Community statt Swipe: Können Gruppen beim Dating ehrlicher verbinden?"
+seoTitle: "Community-Dating: Gruppen statt Swipe"
 excerpt: "<p>Gruppenbasierte Plattformen und KI-gestützte Communities können Dating persönlicher machen: weniger Profilbild, mehr Austausch über Alltag, Werte und gemeinsame Tierliebe.</p>"
 ---
 

@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/Vogel-und-Kinder.compr_.png"
 imageAlt: "Vögel und Kinder: Zusammenleben sicher gestalten"
-seoTitle: "Die harmonische Beziehungen zwischen Kinder und Vögel"
+seoTitle: "Vögel und Kinder: sicher zusammenleben"
 description: "Wie kann sich ein Vogel wohlfühlen, wenn es in der Wohnung auch Kinder gibt? Das Zusammenleben von Kindern und Vögeln kann für beiden Seiten bereichernd sein."
 excerpt: "<p>So entsteht eine sichere und liebevolle Beziehung Vögel und Kinder können wunderbare Gefährten sein. Viele Kinder sind fasziniert von den</p>"
 ---

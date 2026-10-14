@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/birlok-parrots-4235892_1280.compr_.jpg"
 imageAlt: "Giftliste für Papageien: Diese Lebensmittel sind tabu"
-seoTitle: "Zu der Grundausstattung jedes Papageienhalters gehört Giftliste"
+seoTitle: "Giftliste für Papageien: Was tabu ist"
 description: "Hier kann man mehr Information über die Giftliste für Papageien lesen. Was kann es gefährlich für den Vogel sein? Sind die Papageien empfindlich?"
 excerpt: "<p>Was Papageien auf keinen Fall fressen dürfen Papageien sind neugierig, verspielt – und oft sehr interessiert an dem, was wir</p>"
 ---

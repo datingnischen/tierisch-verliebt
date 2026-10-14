@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/mariagodfrida-parakeets-956864_1280.compr_.jpg"
 imageAlt: "Der perfekte Vogelkäfig: Größe, Material & Standort"
-seoTitle: "Der perfekte Vogelkäfig: Größe, Material & Standort"
+seoTitle: "Der perfekte Vogelkäfig: Größe & Standort"
 description: "Hier kann man mehr Informationen über die Vögelkäfige finden: welche Größe und Standarten sind passend für Zuhause, aus welchem Material ist der Käfig?"
 excerpt: "<p>Ein Vogelkäfig ist weit mehr als nur ein dekoratives Accessoire oder Schlafplatz – er ist Lebensraum, Rückzugsort und Sicherheitszone zugleich.</p>"
 ---

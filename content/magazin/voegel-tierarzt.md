@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/Voegel-beim-Tierarzt.compr_.png"
 imageAlt: "Vögel beim Tierarzt: Wann ein Besuch notwendig ist"
-seoTitle: "Vögel zum Tierarzt bringen - wie oft und wann?"
+seoTitle: "Vögel beim Tierarzt: wann und wie oft?"
 description: "Wann ist es den Besuch beim Tierarzt wichtig? Wie lange soll man warten, bis den Vögel zum Arzt bringt? Ein Gesundheitscheck kann helfen."
 excerpt: "<p>Warnzeichen erkennen und rechtzeitig handeln Vögel gehören zu den Tieren, die Krankheiten oft lange verbergen. In der freien Natur schützt</p>"
 ---

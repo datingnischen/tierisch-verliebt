@@ -8,7 +8,8 @@ import "./tierwelten.css";
 
 const PAGE_URL = `${SITE_URL}/magazin/tierwelten/`;
 const REGISTER_URL = "https://tierisch-verliebt.de/?AID=magazin";
-const TITLE = "Tierwelten: Katzen, Hunde, Vögel & Pferde für tierliebe Singles";
+// Kurz halten: Vorlage hängt „| tierisch-verliebt.de“ an, Google schneidet ab ca. 580 px ab.
+const TITLE = "Tierwelten: Katzen, Hunde, Vögel & Pferde";
 const DESCRIPTION =
   "Entdecke alle Tierwelten von tierisch-verliebt.de – von Perserkatze und Maine Coon über Havaneser bis zu Vögeln und Pferden. Rasseporträts, Haltungstipps und Singles mit derselben Tierliebe.";
 

@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/veverkolog-macaw-5717388_1280.compr_.jpg"
 imageAlt: "Aras richtig füttern: Ernährung für große Papageienarten"
-seoTitle: "Bewusste und abwechslungsreiche Ernährung der Papageien Ara"
+seoTitle: "Aras richtig füttern: Ernährungstipps"
 description: "Welche Ernährung passt zu dem großen Papageienart Ara? Hier kann man mehr Information über die gesunde und vielfältigen Ernährung der Aras lesen."
 excerpt: "<p>So bleiben große Papageien gesund, kräftig und ausgeglichen Aras zählen zu den größten und beeindruckendsten Papageienarten der Welt. Ihr kräftiger</p>"
 ---

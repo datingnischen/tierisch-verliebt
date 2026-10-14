@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/Voegel-in-der-Wohnung-richtig-halten.compr_.png"
 imageAlt: "Vögel in der Wohnung halten: Sicherheit und Raumgestaltung"
-seoTitle: "Wie soll man die Wohnung für Vögel einrichten?"
+seoTitle: "Vögel in der Wohnung halten: Tipps"
 description: "Hier kann man mehr Information über die Sicherheit und Raumgestaltung in der Wohnung für die Vögel finden - Verantwortung und Sicherheit."
 excerpt: "<p>So wird dein Zuhause zu einem sicheren Vogelparadies Viele Vogelarten wie Wellensittiche, Nymphensittiche oder Papageien werden in Wohnungen gehalten. Damit</p>"
 ---

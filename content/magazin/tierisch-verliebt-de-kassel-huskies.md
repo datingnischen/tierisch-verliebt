@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2024/11/tierisch-verliebt-del-kassel-partnerschaft.jpg"
 imageAlt: "Tierisch-verliebt.de unterstützt die Kassel Huskies auf ihrem Weg in die Unabhängigkeit"
-seoTitle: "Sponsoring der Kassel Huskies auf dem Weg in die Unabhängigkeit"
+seoTitle: "Sponsoring der Kassel Huskies"
 excerpt: "<p>Wir freuen uns, bekannt geben zu dürfen, dass tierisch-verliebt.de stolzer Sponsor der Kassel Huskies ist und mit ihnen gemeinsam das</p>"
 ---
 

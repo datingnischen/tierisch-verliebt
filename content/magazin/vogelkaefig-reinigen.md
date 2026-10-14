@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/03/xuanduongvan87-spring-6639524_1280.compr_.jpg"
 imageAlt: "Vogelkäfig richtig reinigen und pflegen"
-seoTitle: "Wie kann man Vogelkäfig richtig reinigen und pflegen?"
+seoTitle: "Vogelkäfig richtig reinigen und pflegen"
 description: "Wie oft soll man den Vogelkäfig reinigen? Ist es wichtig für die Vögel? Hier kann man mehr Information über die Reinigung und Pflege der Vogelkäfigen finden."
 excerpt: "<p>Hygiene als Grundlage für ein gesundes Vogelleben Ein sauberer Vogelkäfig ist keine Nebensache – er ist entscheidend für die Gesundheit</p>"
 ---
