@@ -24,14 +24,14 @@ import { stripHtml } from "@/lib/magazine";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Über tierisch-verliebt.de",
+  title: "Über uns",
   description:
     "Lerne tierisch-verliebt, die Geschichte der Marke, Presse- und Sponsoring-Themen und unsere offiziellen Social-Media-Kanäle in einer gebündelten Über-uns-Struktur kennen.",
   alternates: {
     canonical: aboutOverviewCanonical(),
   },
   openGraph: {
-    title: "Über tierisch-verliebt.de",
+    title: "Über uns",
     description:
       "Lerne tierisch-verliebt, die Geschichte der Marke, Presse- und Sponsoring-Themen und unsere offiziellen Social-Media-Kanäle in einer gebündelten Über-uns-Struktur kennen.",
     url: aboutOverviewCanonical(),

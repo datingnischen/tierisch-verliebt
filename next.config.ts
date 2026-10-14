@@ -34,6 +34,8 @@ export default function nextConfig(phase: string): NextConfig {
     },
     async redirects() {
       // Alte WordPress-URLs unter /magazin/ (Autoren-Platzhalter, Archive, Feeds, Sitemaps, Admin).
+      // Die Sitemap bleibt unter /magazin/sitemap.xml: Auf der Live-Domain reicht nginx nur /magazin/… an Vercel
+      // durch, /sitemap.xml beantwortet die ICONY-Plattform mit 404 (robots.txt dort verweist auf sitemap.php).
       // Auf der Live-Domain gelten die Pfade ohne Präfix, auf Vorschau-Hosts (vercel.app) liegt alles unter /de.
       const legacy: Array<[string, string]> = [
         ["/magazin/author/redaktion", "/magazin/christian/"],
@@ -42,15 +44,14 @@ export default function nextConfig(phase: string): NextConfig {
         ["/magazin/tag/:slug", "/magazin/"],
         ["/magazin/feed", "/magazin/"],
         ["/magazin/comments/feed", "/magazin/"],
-        ["/magazin/wp-sitemap.xml", "/sitemap.xml"],
-        ["/magazin/sitemap.xml", "/sitemap.xml"],
-        ["/magazin/sitemap_index.xml", "/sitemap.xml"],
+        ["/magazin/wp-sitemap.xml", "/magazin/sitemap.xml"],
+        ["/magazin/sitemap_index.xml", "/magazin/sitemap.xml"],
         ["/magazin/wp-login.php", "/magazin/"],
         ["/magazin/wp-admin/:path*", "/magazin/"],
       ];
       return legacy.flatMap(([source, destination]) => [
         { source, destination, permanent: true },
-        { source: `/de${source}`, destination: destination.startsWith("/sitemap") ? destination : `/de${destination}`, permanent: true },
+        { source: `/de${source}`, destination: `/de${destination}`, permanent: true },
       ]);
     },
     async rewrites() {

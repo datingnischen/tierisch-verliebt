@@ -456,12 +456,6 @@ export default async function MagazineDetailPage({ params }: PageProps) {
         </nav>
       ) : null}
 
-      {hub ? null : (
-        <section className="content-section magazine-mobile-conversion">
-          <MagazineConversionRail title={entry.title} variant={sidebarVariant} />
-        </section>
-      )}
-
       {/* Im neuen Hero stehen Thema und Breadcrumb schon oben – Chips nur, wenn es mehr zu zeigen gibt */}
       {entry.categories.length && (breedPage || entry.categories.length > 1) ? (
         <section className={`content-section${breedPage ? " content-section-tight" : ""}`}>
@@ -490,6 +484,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
               <div dangerouslySetInnerHTML={{ __html: schemaDedupedContent }} />
             </section>
           </div>
+          {/* Einmal im DOM: mobil rückt die Sidebar per CSS (order) vor den Text, der Radar dort bleibt der mobilen Sektion unten vorbehalten. */}
           <aside className="magazine-detail-side" aria-label="Singlebörse und Conversion-Module">
             <MagazineConversionRail title={entry.title} variant={sidebarVariant} showRadar />
           </aside>

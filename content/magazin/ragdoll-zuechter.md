@@ -44,8 +44,7 @@ Schillerstr. 11<br />
 <p><strong>Ishara</strong><br />
 Manuela Mörtel-Reviol<br />
 Herweghstr. 19<br />
-64546 Mörfelden-Walldorf (D &#8211; Hessen)<br />
-<a title="http://ishara-ragdolls.de" href="http://ishara-ragdolls.de">http://ishara-ragdolls.de</a></p>
+64546 Mörfelden-Walldorf (D &#8211; Hessen)</p>
 <p><strong>Sweet Fellow</strong><br />
 Dominique Fajkus<br />
 39104 Magdeburg (D &#8211; Sachsen-Anhalt)<br />

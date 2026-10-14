@@ -4,6 +4,12 @@ import type { MagazineCategory, MagazineEntry } from "./magazine";
 // WordPress-Seiten sind flach (kein parent) – die Zuordnung zu Hunderassen, Katzenrassen
 // usw. kommt aus den Linklisten der Hub-Seiten, deren Linktexte auch die Kurznamen liefern.
 
+// Seitenpfad wie canonicalMagazinePagePath in about-section.ts; hier ohne Import, damit die Datei
+// in den Node-Tests ohne Alias-Auflösung lädt. Die Seite „ueber-uns“ wohnt unter /ueber-uns/geschichte.
+function pagePath(slug: string) {
+  return slug === "ueber-uns" ? "/ueber-uns/geschichte" : `/magazin/${slug}`;
+}
+
 export type MagazineIndexLink = {
   label: string;
   href: string;
@@ -135,7 +141,7 @@ export function buildMagazineIndex({
       if (!page || assigned.has(page.slug)) continue;
       assigned.add(page.slug);
       parents.push(page.slug);
-      items.push({ label: link.label, href: `/magazin/${page.slug}`, children: [] });
+      items.push({ label: link.label, href: pagePath(page.slug), children: [] });
     }
     if (!items.length) continue;
     hubSections.push({
@@ -150,7 +156,7 @@ export function buildMagazineIndex({
     for (const { section, parents } of hubSections) {
       const index = parents.findIndex((parent) => page.slug.startsWith(`${parent}-`));
       if (index === -1) continue;
-      section.items[index].children.push({ label: page.title, href: `/magazin/${page.slug}` });
+      section.items[index].children.push({ label: page.title, href: pagePath(page.slug) });
       assigned.add(page.slug);
       break;
     }
@@ -164,7 +170,7 @@ export function buildMagazineIndex({
 
   const otherPages = pages
     .filter((page) => !assigned.has(page.slug) || MAGAZINE_INDEX_HUBS.some((hub) => hub.slug === page.slug))
-    .map((page) => ({ label: shortPageTitle(page.title), href: `/magazin/${page.slug}`, children: [] }))
+    .map((page) => ({ label: shortPageTitle(page.title), href: pagePath(page.slug), children: [] }))
     .sort(byLabel);
   if (otherPages.length) {
     sections.push({ id: OTHER_PAGES_ID, title: "Übersichten & weitere Seiten", emoji: "🐾", kind: "pages", items: otherPages });

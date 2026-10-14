@@ -50,7 +50,7 @@ excerpt: "<p>Beim Hund handelt es sich um eines der beliebtesten Haustiere, die 
 <h3>Versicherung</h3>
 <p>Ein letzter Punkt betrifft die Versicherungen. Ideal hierfür wäre eine Haftpflichtversicherung, falls mal etwas kaputtgehen sollte. Hiermit müssen zwischen 10 und 20 Euro im Monat gerechnet werden. In der Zusammenfassung sind das etwa 110 bis 250 Euro im Monat für den Unterhalt eines Hundes. Je nach Typ, Besitzer, etc. kann das etwas variieren.</p>
 <h2>Wie kann man seine Finanzen für Hunde reorganisieren?</h2>
-<p>Anhand der oben genannten Punkte kann man ganz gut erkennen, dass Hunde viel Geld kosten können. Das hängt natürlich ganz von ihrem Appetit sowie der Verletzungsanfälligkeit ab. Ein ebenfalls wichtiges Thema ist, wie man seine <a href="https://www.finanzbaum.de/finanzen-organisieren-anleitung-fuer-anfaenger/" target="_blank" rel="noopener">Finanzen</a> für Hunde reorganisieren kann. Hierzu ein paar Tipps &amp; Tricks, die jeder einhalten kann:</p>
+<p>Anhand der oben genannten Punkte kann man ganz gut erkennen, dass Hunde viel Geld kosten können. Das hängt natürlich ganz von ihrem Appetit sowie der Verletzungsanfälligkeit ab. Ein ebenfalls wichtiges Thema ist, wie man seine Finanzen für Hunde reorganisieren kann. Hierzu ein paar Tipps &amp; Tricks, die jeder einhalten kann:</p>
 <ul>
 <li>Budget erstellen</li>
 <li>Prioritäten setzen</li>

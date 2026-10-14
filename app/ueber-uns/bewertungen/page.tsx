@@ -9,17 +9,22 @@ import { getReviewsPage } from "@/lib/icony-static-pages";
 
 export const revalidate = 3600;
 
+// Eigener Titel und eigene Description: Die ICONY-Seite /bewertungen-und-erfahrungen/ bleibt online, gleiche Metadaten gälten als Dublette.
+const REVIEWS_TITLE = "Bewertungen & Erfahrungen";
+const REVIEWS_DESCRIPTION =
+  "Was Mitglieder über tierisch-verliebt.de sagen: Bewertungen und Erfahrungen aus der Singlebörse für Tierfreunde, dazu unser Trustpilot-Profil.";
+
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getReviewsPage();
   return {
-    title: page.title,
-    description: page.description,
+    title: REVIEWS_TITLE,
+    description: REVIEWS_DESCRIPTION,
     alternates: {
       canonical: aboutReviewsCanonical(),
     },
     openGraph: {
-      title: page.title,
-      description: page.description,
+      title: REVIEWS_TITLE,
+      description: REVIEWS_DESCRIPTION,
       url: aboutReviewsCanonical(),
       images: page.imageUrl ? [page.imageUrl] : undefined,
     },

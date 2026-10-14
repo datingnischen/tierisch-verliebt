@@ -11,17 +11,22 @@ import { SOCIAL_CHANNELS, SOCIAL_COMMUNITY_GROUP } from "@/lib/social-channels";
 
 export const revalidate = 3600;
 
+// Eigener Titel und eigene Description: Die ICONY-Seite /social-media/ bleibt online, gleiche Metadaten gälten als Dublette.
+const SOCIAL_TITLE = "Social Media";
+const SOCIAL_DESCRIPTION =
+  "tierisch-verliebt.de auf Instagram, TikTok, Facebook, YouTube und Pinterest: Folge den offiziellen Kanälen und bleib mit tierlieben Singles in Kontakt.";
+
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getSocialMediaPage();
   return {
-    title: page.title,
-    description: page.description,
+    title: SOCIAL_TITLE,
+    description: SOCIAL_DESCRIPTION,
     alternates: {
       canonical: aboutSocialMediaCanonical(),
     },
     openGraph: {
-      title: page.title,
-      description: page.description,
+      title: SOCIAL_TITLE,
+      description: SOCIAL_DESCRIPTION,
       url: aboutSocialMediaCanonical(),
       images: page.imageUrl ? [page.imageUrl] : undefined,
     },

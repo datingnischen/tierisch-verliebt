@@ -24,8 +24,8 @@ test("legacy about routes permanently redirect to the new about section", async 
     readRepoFile("app/magazin/ueber-uns/page.tsx"),
     readRepoFile("app/social-media/page.tsx"),
   ]);
-  assert.match(legacyStory, /permanentRedirect\(ABOUT_STORY_PATH\)/);
-  assert.match(legacySocial, /permanentRedirect\(ABOUT_SOCIAL_MEDIA_PATH\)/);
+  assert.match(legacyStory, /permanentRedirect\(withTrailingSlash\(ABOUT_STORY_PATH\)\)/);
+  assert.match(legacySocial, /permanentRedirect\(withTrailingSlash\(ABOUT_SOCIAL_MEDIA_PATH\)\)/);
 });
 
 test("internal navigation and expert trust links use canonical Christian path", async () => {

@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-vorne.jpg"
 imageAlt: "FV Felsberg mit Tierisch-verliebt.de als Sponsor"
-seoTitle: "Tierisch-verliebt.de unterstützt Felsberger Jugend"
+seoTitle: "Sponsoring für die Felsberger Jugend"
 description: "Tierisch-verliebt.de hat der F-Jugend des FV Felsberg insgesamt vier Teile gesponsert. Tierisch-verliebt.de ist auch ein Unterstützer von Sportvereinen."
 excerpt: "<p>[Felsberg, 28.11.2023] – Die F-Jugend des FV Felsberg darf sich über stylishe neue Sportoutfits freuen, dank der großzügigen Unterstützung von</p>"
 ---
@@ -20,5 +20,5 @@ excerpt: "<p>[Felsberg, 28.11.2023] – Die F-Jugend des FV Felsberg darf sich �
 <p><a href="https://tierisch-verliebt.de/magazin/das-perfekte-match-tierisch-verliebt-de-unterstuetzt-die-e-jugend-des-fv-felsberg/">Der FV Felsberg</a> ist nicht nur für sein sportliches Engagement bekannt, sondern auch für die Förderung von Teamgeist und Fairplay. Die neuen Outfits sollen nicht nur das Wir-Gefühl innerhalb der Mannschaft stärken, sondern auch die Identifikation mit dem Verein fördern.</p>
 <p>&#8220;Wir sind unglaublich dankbar für die großzügige Unterstützung von Tierisch-verliebt.de. Die Kinder strahlen vor Begeisterung in ihren neuen Outfits, und wir sind stolz, einen so tierlieben Sponsor an unserer Seite zu haben&#8221;, sagt Tobias Böge, einer der beiden Trainer der F-Jugend.</p>
 <h3>Über Tierisch-verliebt.de</h3>
-<p>Tierisch-verliebt.de ist nicht nur eine <a href="https://tierisch-verliebt.de/magazin/ueber-uns/">Singlebörse für Tierliebhaber</a>, sondern auch ein engagierter Unterstützer von lokalen Sportvereinen. Die Plattform bringt Menschen zusammen, die nicht nur ihre Liebe zu Tieren teilen, sondern auch das Bedürfnis nach Gemeinschaft und Zusammenhalt.</p>
+<p>Tierisch-verliebt.de ist nicht nur eine <a href="https://tierisch-verliebt.de/ueber-uns/geschichte/">Singlebörse für Tierliebhaber</a>, sondern auch ein engagierter Unterstützer von lokalen Sportvereinen. Die Plattform bringt Menschen zusammen, die nicht nur ihre Liebe zu Tieren teilen, sondern auch das Bedürfnis nach Gemeinschaft und Zusammenhalt.</p>
 <p><img decoding="async" class="alignnone size-large wp-image-2562" src="/magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-hinten-1024x736.jpg" alt="Tierisch-verliebt.de unterstützt Jugend-Fussball" width="910" height="654" srcset="/magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-hinten-1024x736.jpg 1024w, /magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-hinten-300x216.jpg 300w, /magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-hinten-768x552.jpg 768w, /magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-hinten-1536x1105.jpg 1536w, /magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-hinten-2048x1473.jpg 2048w" sizes="(max-width: 910px) 100vw, 910px" /></p>

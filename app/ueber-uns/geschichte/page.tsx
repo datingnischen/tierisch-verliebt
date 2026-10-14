@@ -6,17 +6,20 @@ import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, ABOUT_STORY_PATH, aboutStoryCanonical, getAboutStoryPage } from "@/lib/about-section";
 import { stripHtml } from "@/lib/magazine";
 
+// Kurzer Seitentitel (Vorlage hängt „| tierisch-verliebt.de“ an); die Überschrift bleibt der Seitentitel aus dem Magazin.
+const STORY_TITLE = "Unsere Geschichte";
+
 export async function generateMetadata(): Promise<Metadata> {
   const entry = await getAboutStoryPage();
   const description = stripHtml(entry.excerpt || entry.content).slice(0, 155);
   return {
-    title: entry.title,
+    title: STORY_TITLE,
     description,
     alternates: {
       canonical: aboutStoryCanonical(),
     },
     openGraph: {
-      title: entry.title,
+      title: STORY_TITLE,
       description,
       url: aboutStoryCanonical(),
       images: entry.featuredImage ? [entry.featuredImage] : undefined,

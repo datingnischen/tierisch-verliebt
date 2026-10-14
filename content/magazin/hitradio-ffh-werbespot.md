@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2025/07/tierisch-verliebt-ffh-radio.jpg"
 imageAlt: "Hit Radio FFH – Werbespot – Tierisch-Verliebt.de"
-seoTitle: "Hit Radio FFH – Werbespot – Tierisch-Verliebt.de"
+seoTitle: "Hit Radio FFH: Unser Werbespot im Radio"
 excerpt: "<p>Tierisch verliebt jetzt auch im Radio – Unser Spot bei HIT RADIO FFH Wir freuen uns sehr, euch mitteilen zu</p>"
 ---
 

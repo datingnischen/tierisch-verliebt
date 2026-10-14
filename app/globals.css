@@ -2814,7 +2814,13 @@ body {
     padding: 32px 24px 26px;
   }
 
+  /* Sidebar einmal im DOM: mobil vor den Artikeltext, nicht klebend; der Radar kommt unten als eigene Sektion. */
   .magazine-detail-side {
+    position: static;
+    order: -1;
+  }
+
+  .magazine-detail-side .magazine-radar-card {
     display: none;
   }
 

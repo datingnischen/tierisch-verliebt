@@ -83,4 +83,4 @@ excerpt: "<p>Vögel gehören zu den faszinierendsten Haustieren überhaupt. Ihr 
 <p>Denn richtig gehaltene Vögel sind nicht nur Haustiere – sie werden zu echten Gefährten im Alltag.</p>
 <hr>
 <blockquote><p><strong>Tierfreunde verbinden</strong><br />
-Wer Vögel hält, weiß: Geduld, Verantwortung und Einfühlungsvermögen gehören zum Alltag. Genau diese Werte verbinden auch viele Singles auf <a href="&quot;/'">Tierisch-Verliebt.de</a> &#8211; der Plattform für Menschen, die ihre Liebe zu Tieren teilen und Gleichgesinnte kennenlernen möchten.</p></blockquote>
+Wer Vögel hält, weiß: Geduld, Verantwortung und Einfühlungsvermögen gehören zum Alltag. Genau diese Werte verbinden auch viele Singles auf <a href="https://tierisch-verliebt.de/">Tierisch-Verliebt.de</a> &#8211; der Plattform für Menschen, die ihre Liebe zu Tieren teilen und Gleichgesinnte kennenlernen möchten.</p></blockquote>

@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2024/11/tierisch-verliebt-del-kassel-partnerschaft.jpg"
 imageAlt: "Tierisch-verliebt.de unterstützt die Kassel Huskies auf ihrem Weg in die Unabhängigkeit"
-seoTitle: "Tierisch-verliebt.de unterstützt die Kassel Huskies auf ihrem Weg in die Unabhängigkeit"
+seoTitle: "Sponsoring der Kassel Huskies auf dem Weg in die Unabhängigkeit"
 excerpt: "<p>Wir freuen uns, bekannt geben zu dürfen, dass tierisch-verliebt.de stolzer Sponsor der Kassel Huskies ist und mit ihnen gemeinsam das</p>"
 ---
 
@@ -20,5 +20,5 @@ excerpt: "<p>Wir freuen uns, bekannt geben zu dürfen, dass tierisch-verliebt.de
 <p><iframe title="tierisch-verliebt.de unterstützt die Kassel Huskies | Sponsoring 2024/2025 #133" width="910" height="512" src="https://www.youtube.com/embed/fDMu_EZ2mf4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 <p>Neben der digitalen Präsenz auf der LED-Wall erhalten die Unterstützer des Independence Pakets auch analoge Anerkennungen, wie die Nennung auf Ehrentafeln und Aufwärmtrikots sowie auf speziell gestalteten Bechern. Dazu gibt es ein exklusives jährliches Weihnachtsfest auf dem Eis mit den Huskies – eine besondere Gelegenheit, sich bei den Fans zu bedanken und die Gemeinschaft zu feiern.</p>
 <p>Um den Sponsoren eine bleibende Erinnerung an ihr Engagement zu bieten, fertigt die Firma Freigang hochwertige Puzzleteile aus Stahl an, die als Schlüsselanhänger oder Halskette getragen werden können.</p>
-<p>Wir sind stolz darauf, ein Teil dieses Projekts zu sein und freuen uns darauf, gemeinsam mit den Kassel Huskies den Weg in eine erfolgreiche und unabhängige Zukunft zu gestalten. Mehr über die Plattform und ihre Entwicklung erfahrt ihr auf unserer Seite <a href="https://tierisch-verliebt.de/magazin/ueber-uns/">Über uns</a>.</p>
+<p>Wir sind stolz darauf, ein Teil dieses Projekts zu sein und freuen uns darauf, gemeinsam mit den Kassel Huskies den Weg in eine erfolgreiche und unabhängige Zukunft zu gestalten. Mehr über die Plattform und ihre Entwicklung erfahrt ihr auf unserer Seite <a href="https://tierisch-verliebt.de/ueber-uns/geschichte/">Über uns</a>.</p>
 <p>Für weitere Informationen oder <a href="https://www.kassel-huskies.de/independence-paket">Interesse am Independence Paket, besucht bitte die Website der Kassel Huskies</a> oder kontaktiert sie per E-Mail.</p>
