@@ -95,10 +95,6 @@ function registrationHref(market: MarketCode, pathname: string) {
   return publicUrl(market, isCityPage(pathname) ? "/registration/?AID=location" : "/?AID=magazin");
 }
 
-function marketSwitchHref(currentMarket: MarketCode, targetMarket: MarketCode) {
-  return currentMarket === targetMarket ? "/" : `/${targetMarket}/`;
-}
-
 function Brand({ market }: { market: MarketCode }) {
   const logo = logoByMarket[market];
   return localLink(
@@ -245,10 +241,9 @@ export function SiteFooter({ market = "de" }: Props) {
             <a href={publicUrl(market, "/datenschutz.html")}>Datenschutz</a>
             <a href={publicUrl(market, "/impressum.html")}>Impressum</a>
             <span className="tv-footer-markets" aria-label="Land wählen">
-              <a href={marketSwitchHref(market, "de")} aria-current={market === "de" ? "true" : undefined}>DE</a>
-              <a href={marketSwitchHref(market, "at")} aria-current={market === "at" ? "true" : undefined}>AT</a>
-              <a href={marketSwitchHref(market, "ch")} aria-current={market === "ch" ? "true" : undefined}>CH</a>
-              <MarketLink market="nl" path="/">NL</MarketLink>
+              <a href={publicUrl("de")} aria-current={market === "de" ? "true" : undefined}>DE</a>
+              <a href={publicUrl("at")} aria-current={market === "at" ? "true" : undefined}>AT</a>
+              <a href={publicUrl("ch")} aria-current={market === "ch" ? "true" : undefined}>CH</a>
             </span>
           </div>
         </div>
