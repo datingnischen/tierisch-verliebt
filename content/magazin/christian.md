@@ -34,6 +34,7 @@ excerpt: "<p>Über Christian Christian M. Haas beschäftigt sich seit vielen Jah
 <ul>
 <li><a href="https://datingnischen.de/christian" target="_blank" rel="noopener">Vita auf Datingnischen.de</a></li>
 <li><a href="https://www.linkedin.com/in/christian-m-haas-457323379" target="_blank" rel="noopener">LinkedIn-Profil</a></li>
+<li><a href="https://www.amazon.com/author/christian-m-haas" target="_blank" rel="noopener">Autorenseite bei Amazon</a></li>
 <li><a href="https://gravatar.com/automatic8c1daff973" target="_blank" rel="noopener">Gravatar-Profil</a></li>
 <li><a href="https://graupapagei.com/" target="_blank" rel="noopener">Graupapageien-Ratgeber auf graupapagei.com</a></li>
 </ul>

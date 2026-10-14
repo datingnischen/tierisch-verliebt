@@ -85,6 +85,7 @@ export const getAuthorProfile = cache(async (slug: string): Promise<AuthorProfil
         "https://www.linkedin.com/in/christian-m-haas-457323379",
         "https://www.xing.com/profile/ChristianM_Haas/web_profiles",
         "https://gravatar.com/automatic8c1daff973",
+        "https://www.amazon.com/author/christian-m-haas",
       ],
       profileFacts: [
         { label: "Rolle", value: "Gründer von tierisch-verliebt.de, Datingexperte und Autor" },
@@ -120,6 +121,7 @@ export const getAuthorProfile = cache(async (slug: string): Promise<AuthorProfil
         { label: "Ausführliche Vita", href: "/magazin/christian" },
         { label: "Datingnischen.de", href: "https://datingnischen.de/christian", external: true },
         { label: "LinkedIn-Profil", href: "https://www.linkedin.com/in/christian-m-haas-457323379", external: true },
+        { label: "Amazon-Autorenseite", href: "https://www.amazon.com/author/christian-m-haas", external: true },
       ],
       quote:
         "Menschen lernen sich oft leichter kennen, wenn Tiere im Alltag nicht erklärt werden müssen, sondern selbstverständlich dazugehören.",
