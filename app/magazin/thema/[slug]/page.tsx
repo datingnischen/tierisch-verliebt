@@ -152,21 +152,21 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
           </div>
 
           {featured ? (
-            <Link className="tvm-feature" href={`/magazin/${featured.slug}`}>
+            <div className="tvm-feature">
               <span className="tvm-feature-pin" aria-hidden="true"><HeartIcon /></span>
               {getEntryCoverImage(featured) ? (
                 <span className="tvm-feature-media"><CoverImage post={featured} eager /></span>
               ) : null}
               <span className="tvm-feature-body">
                 <span className="tvm-kicker">Neuester Artikel</span>
-                <strong>{featured.title}</strong>
+                <strong><Link className="card-link" href={`/magazin/${featured.slug}`}>{featured.title}</Link></strong>
                 <span className="tvm-feature-excerpt">{teaser(featured, 130)}</span>
                 <span className="tvm-feature-meta">
                   <span>{getReadingMinutes(featured.content)} Min. Lesezeit</span>
                   <span className="tvm-go">Jetzt lesen <span aria-hidden="true">→</span></span>
                 </span>
               </span>
-            </Link>
+            </div>
           ) : null}
         </div>
       </section>
@@ -197,10 +197,10 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
           <ul className="tvm-posts">
             {rest.map((post) => (
               <li key={post.id}>
-                <Link className="tvh-card tvm-post" href={`/magazin/${post.slug}`}>
+                <div className="tvh-card tvm-post">
                   <span className="tvh-card-media"><CoverImage post={post} /></span>
                   <span className="tvh-card-body">
-                    <strong>{post.title}</strong>
+                    <strong><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></strong>
                     <span className="tvm-post-excerpt">{teaser(post, 120)}</span>
                     <span className="tvm-post-date">
                       <ClockIcon />
@@ -208,7 +208,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
                     </span>
                     <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
                   </span>
-                </Link>
+                </div>
               </li>
             ))}
           </ul>

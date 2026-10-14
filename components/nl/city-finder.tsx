@@ -40,14 +40,13 @@ export function NlCityFinder({ market, cities, regions, regionLabel }: Props) {
       <ul className="tvh-grid">
         {visible.map((city, index) => (
           <li key={city.slug} style={{ ["--i" as string]: index }}>
-            <MarketLink className="tvh-card" market={market} path={city.path}>
+            <div className="tvh-card">
               <span className="tvh-card-media">
                 {city.imageUrl ? <img src={city.imageUrl} alt={city.imageAlt || `Stadsimpressie van ${city.name}`} loading="lazy" decoding="async" /> : <PawIcon />}
                 <span className="tvh-card-region"><PinIcon />{city.region}</span>
               </span>
               <span className="tvh-card-body">
-                <small>Singles met hart voor dieren in</small>
-                <strong>{city.name}</strong>
+                <MarketLink className="card-link card-link-block" market={market} path={city.path}><small>Singles met hart voor dieren in</small>{" "}<strong>{city.name}</strong></MarketLink>
                 <span className="tvh-card-meta">{city.chapters} hoofdstukken{city.tips ? ` · ${city.tips} tips` : ""}</span>
                 {city.topics.length ? (
                   <span className="tvh-card-topics">
@@ -56,7 +55,7 @@ export function NlCityFinder({ market, cities, regions, regionLabel }: Props) {
                 ) : null}
                 <span className="tvh-card-go">Naar de wandelgids <span aria-hidden="true">→</span></span>
               </span>
-            </MarketLink>
+            </div>
           </li>
         ))}
       </ul>

@@ -116,18 +116,18 @@ export default async function MagazinePaginationPage({ params }: PageProps) {
         <ul className="tvm-posts">
           {posts.map((post) => (
             <li key={post.id}>
-              <Link className="tvh-card tvm-post" href={`/magazin/${post.slug}`}>
+              <div className="tvh-card tvm-post">
                 <span className="tvh-card-media">
                   {post.featuredImage ? <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" /> : <PawIcon />}
                   {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
                 </span>
                 <span className="tvh-card-body">
-                  <strong>{post.title}</strong>
+                  <strong><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></strong>
                   <span className="tvm-post-excerpt">{excerpt(post.excerpt || post.content, 120)}</span>
                   {formatUpdatedDate(post) ? <span className="tvm-post-date"><ClockIcon />{formatUpdatedDate(post)}</span> : null}
                   <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
                 </span>
-              </Link>
+              </div>
             </li>
           ))}
         </ul>

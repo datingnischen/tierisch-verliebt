@@ -10,7 +10,7 @@ categories: []
 image: "/magazin/wp-content/uploads/2021/09/Kaninchen-e1632724210819.jpg"
 imageAlt: "Kaninchen"
 seoTitle: "Kaninchen anschaffen"
-description: "Du möchtest dir ein Kaninchen anschaffen, aber hast noch Fragen zum Wesen, Ernährung und Haltung? In der Wohnung oder im Außengehege? Hier die Antworten."
+description: "Du möchtest ein Kaninchen halten? Antworten zu Wesen, Ernährung und Haltung in der Wohnung oder im Außengehege."
 excerpt: "<p>Kaninchen sind nach Hunden und Katzen die drittbeliebtesten Haustiere für deutsche Tierhalter. Diese werden gern als bescheidene und pflegeleichte Tiere</p>"
 ---
 

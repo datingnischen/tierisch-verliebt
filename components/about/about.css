@@ -101,6 +101,7 @@
 }
 
 .tva-tile {
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;
@@ -112,7 +113,7 @@
 }
 
 .tva-tile:hover,
-.tva-tile:focus-visible {
+.tva-tile:focus-within {
   transform: translateY(-4px) rotate(-0.6deg);
   box-shadow: 0 22px 40px rgba(70, 30, 20, 0.16), inset 0 0 0 2px var(--tvc-green);
 }

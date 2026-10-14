@@ -3269,3 +3269,27 @@ body {
     transition: none;
   }
 }
+
+/* Karten: verlinkt ist nur der Titel (kurzer Linktext für Suchmaschinen), die gestreckte Fläche
+   macht die ganze Karte klickbar. Die Karte braucht position: relative. */
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-link-block {
+  display: grid;
+  gap: inherit;
+}
+
+.card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.card-link:focus-visible {
+  outline: none;
+}

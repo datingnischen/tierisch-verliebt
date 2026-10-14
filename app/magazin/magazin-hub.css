@@ -40,7 +40,7 @@
 }
 
 .tvm-feature:hover,
-.tvm-feature:focus-visible {
+.tvm-feature:focus-within {
   transform: rotate(0deg) translateY(-4px);
   box-shadow: 0 40px 80px rgba(30, 8, 8, 0.5);
 }

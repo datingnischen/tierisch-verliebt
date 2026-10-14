@@ -10,7 +10,7 @@ categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/09/reiter-partnersuche-titelbild.jpg"
 imageAlt: "Paar mit Pferd auf einer sonnigen Koppel"
 seoTitle: "Die Partnersuche für Pferdefreunde"
-description: "Die Partnersuche für Pferdeliebhaber gestaltet sich gewöhnlich speziell. Reiter-Singlebörsen bringen hingegen Menschen zusammen, welche dieselbe Leidenschaft teilen."
+description: "Partnersuche für Pferdeliebhaber: Wie Reiter-Singlebörsen Menschen mit derselben Leidenschaft zusammenbringen."
 excerpt: "<p>Partnersuche für Pferdeliebhaber &#8211; die Reiter Singlebörse Liebe zum Reitsport ist mehr als lediglich ein Hobby – sie ist ein</p>"
 ---
 

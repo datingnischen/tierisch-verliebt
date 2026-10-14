@@ -15,7 +15,7 @@ const PAGE_URL = `${SITE_URL}/magazin/inhalt/`;
 // Kurz halten: Vorlage hängt „| tierisch-verliebt.de“ an, Google schneidet ab ca. 580 px ab.
 const TITLE = "Inhaltsverzeichnis: Magazin A–Z";
 const DESCRIPTION =
-  "Alle Ratgeber-Beiträge, Hunderassen, Katzenrassen und Kleintier-Seiten des tierisch-verliebt.de Magazins auf einen Blick – nach Thema sortiert und durchsuchbar.";
+  "Alle Ratgeber, Hunderassen, Katzenrassen und Kleintier-Seiten des Magazins von tierisch-verliebt.de auf einen Blick, nach Thema sortiert.";
 
 export const metadata: Metadata = {
   title: TITLE,

@@ -26,14 +26,14 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Über uns",
   description:
-    "Lerne tierisch-verliebt, die Geschichte der Marke, Presse- und Sponsoring-Themen und unsere offiziellen Social-Media-Kanäle in einer gebündelten Über-uns-Struktur kennen.",
+    "Über tierisch-verliebt.de: Geschichte der Marke, Presse und Sponsoring, Bewertungen und unsere offiziellen Social-Media-Kanäle auf einen Blick.",
   alternates: {
     canonical: aboutOverviewCanonical(),
   },
   openGraph: {
     title: "Über uns",
     description:
-      "Lerne tierisch-verliebt, die Geschichte der Marke, Presse- und Sponsoring-Themen und unsere offiziellen Social-Media-Kanäle in einer gebündelten Über-uns-Struktur kennen.",
+      "Über tierisch-verliebt.de: Geschichte der Marke, Presse und Sponsoring, Bewertungen und unsere offiziellen Social-Media-Kanäle auf einen Blick.",
     url: aboutOverviewCanonical(),
   },
 };
@@ -132,17 +132,17 @@ export default async function AboutOverviewPage() {
         </div>
         <div className="tva-tiles">
           {tiles.map((tile) => (
-            <Link key={tile.href} className="tva-tile" href={tile.href}>
+            <div key={tile.href} className="tva-tile">
               <span className="tva-tile-media">
                 {tile.image ? <img src={tile.image} alt={tile.title} loading="lazy" decoding="async" /> : <PawIcon />}
               </span>
               <span className="tva-tile-body">
                 <small>{tile.kicker}</small>
-                <strong>{tile.title}</strong>
+                <strong><Link className="card-link" href={tile.href}>{tile.title}</Link></strong>
                 <span>{tile.text}</span>
                 <em>{tile.cta} →</em>
               </span>
-            </Link>
+            </div>
           ))}
         </div>
       </section>

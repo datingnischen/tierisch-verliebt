@@ -86,7 +86,7 @@ export default async function MagazineOverviewPage() {
           </div>
 
           {featuredPost ? (
-            <Link className="tvm-feature" href={`/magazin/${featuredPost.slug}`}>
+            <div className="tvm-feature">
               <span className="tvm-feature-pin" aria-hidden="true"><HeartIcon /></span>
               {featuredPost.featuredImage ? (
                 <span className="tvm-feature-media">
@@ -95,14 +95,14 @@ export default async function MagazineOverviewPage() {
               ) : null}
               <span className="tvm-feature-body">
                 <span className="tvm-kicker">Gerade beliebt</span>
-                <strong>{featuredPost.title}</strong>
+                <strong><Link className="card-link" href={`/magazin/${featuredPost.slug}`}>{featuredPost.title}</Link></strong>
                 <span className="tvm-feature-excerpt">{excerpt(featuredPost.excerpt || featuredPost.content, 130)}</span>
                 <span className="tvm-feature-meta">
                   {featuredPost.authorName ? <span>Von {featuredPost.authorName}</span> : null}
                   <span className="tvm-go">Jetzt lesen <span aria-hidden="true">→</span></span>
                 </span>
               </span>
-            </Link>
+            </div>
           ) : null}
         </div>
       </section>
@@ -157,18 +157,18 @@ export default async function MagazineOverviewPage() {
         <ul className="tvm-posts">
           {latestPosts.map((post) => (
             <li key={post.id}>
-              <Link className="tvh-card tvm-post" href={`/magazin/${post.slug}`}>
+              <div className="tvh-card tvm-post">
                 <span className="tvh-card-media">
                   {post.featuredImage ? <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} loading="lazy" decoding="async" /> : <PawIcon />}
                   {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
                 </span>
                 <span className="tvh-card-body">
-                  <strong>{post.title}</strong>
+                  <strong><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></strong>
                   <span className="tvm-post-excerpt">{excerpt(post.excerpt || post.content, 120)}</span>
                   {formatUpdatedDate(post) ? <span className="tvm-post-date"><ClockIcon />{formatUpdatedDate(post)}</span> : null}
                   <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
                 </span>
-              </Link>
+              </div>
             </li>
           ))}
         </ul>

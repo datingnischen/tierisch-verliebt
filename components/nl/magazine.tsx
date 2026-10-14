@@ -12,10 +12,10 @@ import "@/app/magazin/[slug]/magazin-article.css";
 
 export function BreedGrid({ animal }: { animal?: "dog" | "cat" }) {
   return <ul className="tvh-grid nl-breed-grid">{getNlBreeds(animal).map(breed => <li key={breed.slug}>
-    <MarketLink market="nl" path={`/magazin/${breed.slug}`} className="tvh-card">
+    <div className="tvh-card">
       <span className="tvh-card-media"><img src={breed.image} alt={breed.imageAlt} loading="lazy" decoding="async"/><span className="tvh-card-region">{breed.animal === "dog" ? "Hondenrassen" : "Kattenrassen"}</span></span>
-      <span className="tvh-card-body"><small>Rasportret</small><strong>{breed.name}</strong><span>{breed.description}</span><span className="tvh-card-go">Lees het rasportret <span aria-hidden="true">→</span></span></span>
-    </MarketLink>
+      <span className="tvh-card-body"><small>Rasportret</small><strong><MarketLink className="card-link" market="nl" path={`/magazin/${breed.slug}`}>{breed.name}</MarketLink></strong><span>{breed.description}</span><span className="tvh-card-go">Lees het rasportret <span aria-hidden="true">→</span></span></span>
+    </div>
   </li>)}</ul>;
 }
 

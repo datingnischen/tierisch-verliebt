@@ -10,7 +10,7 @@ categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/joshandye_picture-bird-7673605_1280.compr_.jpg"
 imageAlt: "Gefahren im Vogelkäfig: Giftige Materialien und Spielzeuge"
 seoTitle: "Gefahren im Vogelkäfig: giftige Materialien"
-description: "Hier kann man Information über die gefährliche Vogelkäfige lesen - Auswahl der richtigen Materialien, Beschichtigungen und geeigneten Spielzeugen schtützt die Vögel."
+description: "Gefahren im Vogelkäfig: Welche Materialien, Beschichtungen und Spielzeuge Vögeln schaden und wie du den Käfig sicher einrichtest."
 excerpt: "<p>Ein Vogelkäfig soll ein sicherer Lebensraum sein – doch genau dort lauern oft unterschätzte Gefahren. Viele Materialien, Beschichtungen oder Spielzeuge</p>"
 ---
 

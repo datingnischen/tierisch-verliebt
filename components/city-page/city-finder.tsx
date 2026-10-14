@@ -40,14 +40,13 @@ export function CityFinder({ market, cities, regions, regionLabel }: Props) {
       <ul className="tvh-grid">
         {visible.map((city, index) => (
           <li key={city.slug} style={{ ["--i" as string]: index }}>
-            <MarketLink className="tvh-card" market={market} path={city.path}>
+            <div className="tvh-card">
               <span className="tvh-card-media">
                 {city.imageUrl ? <img src={city.imageUrl} alt={`Tierfreundliches ${city.name}`} loading="lazy" decoding="async" /> : <PawIcon />}
                 <span className="tvh-card-region"><PinIcon />{city.region}</span>
               </span>
               <span className="tvh-card-body">
-                <small>Tierliebe Singles in</small>
-                <strong>{city.name}</strong>
+                <MarketLink className="card-link card-link-block" market={market} path={city.path}><small>Tierliebe Singles in</small>{" "}<strong>{city.name}</strong></MarketLink>
                 <span className="tvh-card-meta">{city.chapters} Kapitel{city.tips ? ` · ${city.tips} Adressen` : ""}</span>
                 {city.topics.length ? (
                   <span className="tvh-card-topics">
@@ -56,7 +55,7 @@ export function CityFinder({ market, cities, regions, regionLabel }: Props) {
                 ) : null}
                 <span className="tvh-card-go">Zum Gassi-Guide <span aria-hidden="true">→</span></span>
               </span>
-            </MarketLink>
+            </div>
           </li>
         ))}
       </ul>

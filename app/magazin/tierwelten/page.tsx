@@ -11,7 +11,7 @@ const REGISTER_URL = "https://tierisch-verliebt.de/?AID=magazin";
 // Kurz halten: Vorlage hängt „| tierisch-verliebt.de“ an, Google schneidet ab ca. 580 px ab.
 const TITLE = "Tierwelten: Katzen, Hunde, Vögel & Pferde";
 const DESCRIPTION =
-  "Entdecke alle Tierwelten von tierisch-verliebt.de – von Perserkatze und Maine Coon über Havaneser bis zu Vögeln und Pferden. Rasseporträts, Haltungstipps und Singles mit derselben Tierliebe.";
+  "Alle Tierwelten von tierisch-verliebt.de: Katzen, Hunde, Vögel und Pferde mit Rasseporträts, Haltungstipps und Singles mit derselben Tierliebe.";
 
 export const metadata: Metadata = {
   title: TITLE,

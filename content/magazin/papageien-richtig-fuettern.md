@@ -10,7 +10,7 @@ categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/hans-parakeets-406637_1280.compr_.jpg"
 imageAlt: "Papageien richtig füttern: Grundernährung und Futterplan"
 seoTitle: "Papageien richtig füttern: Futterplan"
-description: "Was ist ausgewogene Ernährung für Papageien? Hier kann man Information über die Futter der Vögeln lesen, damit sie gesundheitliche Problemen vermeiden können."
+description: "Ausgewogene Ernährung für Papageien: Was in den Futterplan gehört, warum frisches Wasser wichtig ist und wie du Krankheiten vorbeugst."
 excerpt: "<p>So bleibt dein Papagei gesund und vital Die richtige Ernährung ist einer der wichtigsten Bausteine für ein langes, gesundes Papageienleben.</p>"
 ---
 

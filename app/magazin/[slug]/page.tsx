@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { clampMetaDescription } from "@/lib/meta-description";
 import Link from "@/components/link";
 import { notFound } from "next/navigation";
 import { AuthorProfileFacts } from "@/components/author-profile-facts";
@@ -62,7 +63,7 @@ function safeDecode(value: string) {
 const ONLINE_IFRAME_SRC = "https://js.icony.com/frame/?w=300&h=300&id=tierischverliebt&pc=c02e2e&aid=magazin";
 const UNLISTED_CATEGORY_SLUGS = new Set(["allgemein", "uncategorized"]);
 const CHRISTIAN_PAGE_DESCRIPTION =
-  "Christian M. Haas ist Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber. Erfahre mehr über seine Tierverbundenheit, Dating-Erfahrung und redaktionellen Schwerpunkte.";
+  "Christian M. Haas ist Gründer von tierisch-verliebt.de, Datingexperte und Tierliebhaber: seine Tierverbundenheit, Dating-Erfahrung und Schwerpunkte.";
 
 const HUB_EMOJI: Record<string, string> = { katze: "🐱", hund: "🐶", vogel: "🐦", pferd: "🐴" };
 
@@ -193,7 +194,7 @@ function entryIntro(entry: MagazineEntry) {
 function entryDescription(slug: string, entry: MagazineEntry) {
   if (slug === "christian") return CHRISTIAN_PAGE_DESCRIPTION;
   // Meta-Description aus AIOSEO (im Frontmatter), sonst Textanfang.
-  return entry.description || entryIntro(entry).slice(0, 155);
+  return clampMetaDescription(entry.description || entryIntro(entry));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
