@@ -38,7 +38,8 @@ test("posts: Teaser-Abruf wie bei ICONY liefert drei Beiträge im WordPress-Form
     assert.equal(post.link, `https://tierisch-verliebt.de/magazin/${post.slug}/`, "kanonische Live-URL der Domain");
 
     const media = post._embedded["wp:featuredmedia"][0];
-    assert.match(media.source_url, /^https:\/\/tierisch-verliebt\.de\/magazin\/wp-content\/uploads\//, "eigene Domain (CSP der ICONY-Startseite)");
+    // Teaserbild ohne Dateiendung im wp-json-Bereich (lib/teaser-image.ts): nginx reicht .jpg/.png nicht an Vercel durch, CSP erlaubt nur die eigene Domain
+    assert.match(media.source_url, /^https:\/\/tierisch-verliebt\.de\/magazin\/wp-json\/datingnischen\/v1\/bild\/magazin\/wp-content\/uploads\/.+~[a-z]+$/, "eigene Domain, ohne Dateiendung");
     assert.equal(media.media_details.sizes.medium.source_url, media.source_url);
     assert.ok(media.media_details.width > 0 && media.media_details.height > 0);
     assert.ok(media.alt_text.trim(), "Alt-Text nie leer");
@@ -65,7 +66,7 @@ test("Auszüge sind vollständige Sätze, Beitragsbilder haben Alt-Text und Maß
     if (!media) continue;
     assert.ok(media.alt_text.trim(), `${post.slug}: leerer Alt-Text`);
     assert.ok(media.media_details.width > 0, `${post.slug}: Bildmaße fehlen (node scripts/magazin-bildmasse.mjs)`);
-    const upload = media.source_url.match(/\/magazin\/wp-content\/uploads\/.+$/)[0];
+    const upload = media.source_url.match(/\/magazin\/wp-content\/uploads\/.+$/)[0].replace(/~([a-z0-9]+)$/i, ".$1");
     const real = imageSize(readFileSync(new URL(`public${upload}`, root)));
     assert.deepEqual(sizes[upload], real, upload);
   }

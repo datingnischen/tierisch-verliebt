@@ -4,6 +4,7 @@ import { loadMagazineStore } from "#magazine-store";
 import type { MagazineEntry } from "#magazine";
 import { publicUrl } from "#markets";
 
+import { teaserImageUrl } from "#teaser-image";
 /**
  * WordPress-kompatibler REST-Endpunkt für die Magazin-BEITRÄGE, erzeugt aus den Dateien im Repo.
  *
@@ -152,7 +153,7 @@ function buildSource(): WpSource {
           alt: (entry.featuredImageAlt || "").trim() || plainText(entry.title),
           // Eigene Domain statt Asset-Host: Die CSP der ICONY-Startseiten lässt Teaserbilder nur von der eigenen Domain zu (Heiko, 2026-10-14);
           // Vercel liefert public/magazin/wp-content/uploads auch unter diesem Pfad, nginx muss ihn durchreichen.
-          url: `${publicUrl("de").replace(/\/$/, "")}${upload}`,
+          url: teaserImageUrl(`${publicUrl("de").replace(/\/$/, "")}/magazin/wp-json`, upload),
           file: upload.replace("/magazin/wp-content/uploads/", ""),
           mime: /\.png$/i.test(upload) ? "image/png" : /\.webp$/i.test(upload) ? "image/webp" : /\.gif$/i.test(upload) ? "image/gif" : "image/jpeg",
           width,
@@ -240,7 +241,7 @@ function mediaObject(media: WpMedia): Json {
       height: media.height,
       file: media.file,
       // medium/large sind Aliase derselben Datei, damit ICONY unabhängig von der gewählten Größe ein Bild bekommt
-      sizes: Object.fromEntries(["medium", "large", "full"].map((name) => [name, { file: path.basename(media.file), width: media.width, height: media.height, mime_type: media.mime, source_url: media.url }])),
+      sizes: Object.fromEntries(["thumbnail", "medium", "medium_large", "large", "full"].map((name) => [name, { file: path.basename(media.file), width: media.width, height: media.height, mime_type: media.mime, source_url: media.url }])),
     },
     post: media.post,
     source_url: media.url,

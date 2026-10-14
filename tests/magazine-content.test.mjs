@@ -115,7 +115,7 @@ test("the app no longer talks to WordPress at runtime or build time", () => {
   const offenders = [];
   for (const file of [...sourceFiles("app"), ...sourceFiles("lib"), ...sourceFiles("components"), "proxy.ts"]) {
     // Der WP-kompatible REST-Endpunkt für ICONY (docs/wp-rest-endpunkt.md) darf die Adressen nennen.
-    if (/^(?:lib[\\/]wp-rest-(?:compat|paths)\.ts|app[\\/]magazin[\\/](?:wp-json|index\.php)[\\/].*)$/.test(file)) continue;
+    if (/^(?:lib[\\/](?:wp-rest-(?:compat|paths)|teaser-image)\.ts|app[\\/]magazin[\\/](?:wp-json|index\.php)[\\/].*)$/.test(file)) continue;
     const source = readFileSync(join(ROOT, file), "utf8");
     if (/wp-json|WORDPRESS_|wp\/v2|fetchWp/.test(source)) offenders.push(file);
     if (/tierisch-verliebt\.de\/magazin\/author\//.test(source) && /fetch\(/.test(source)) offenders.push(`${file}: Autorenarchiv-Abruf`);

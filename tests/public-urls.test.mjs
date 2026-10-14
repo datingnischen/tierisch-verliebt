@@ -7,7 +7,8 @@ import { SITE_URL } from "../lib/magazine.ts";
 const repoRoot = new URL("../", import.meta.url);
 
 // Nur hier darf der Vercel-Host stehen: Asset-Host und Vorschau-Erkennung.
-const VERCEL_ALLOWED = new Set(["lib/static-asset.ts", "lib/markets.ts", "components/market-link.tsx"]);
+// lib/teaser-image.ts: Abrufziel der Teaserbilder auf dem Server (nie gerendert, nie Canonical/Sitemap)
+const VERCEL_ALLOWED = new Set(["lib/static-asset.ts", "lib/markets.ts", "components/market-link.tsx", "lib/teaser-image.ts"]);
 
 async function listSourceFiles(dir) {
   const entries = await readdir(new URL(`${dir}/`, repoRoot), { withFileTypes: true });
