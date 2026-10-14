@@ -38,7 +38,8 @@ test("posts: Teaser-Abruf wie bei ICONY liefert drei Beiträge im WordPress-Form
     assert.equal(post.link, `https://tierisch-verliebt.de/magazin/${post.slug}/`, "kanonische Live-URL der Domain");
 
     const media = post._embedded["wp:featuredmedia"][0];
-    assert.match(media.source_url, /^https:\/\/tierisch-verliebt\.vercel\.app\/app-assets\/magazin\/wp-content\/uploads\//, "Asset-Host");
+    assert.match(media.source_url, /^https:\/\/tierisch-verliebt\.de\/magazin\/wp-content\/uploads\//, "eigene Domain (CSP der ICONY-Startseite)");
+    assert.equal(media.media_details.sizes.medium.source_url, media.source_url);
     assert.ok(media.media_details.width > 0 && media.media_details.height > 0);
     assert.ok(media.alt_text.trim(), "Alt-Text nie leer");
     assert.ok(post._embedded["wp:term"][0].length > 0);
