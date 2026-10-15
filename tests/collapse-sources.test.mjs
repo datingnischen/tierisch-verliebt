@@ -85,3 +85,9 @@ test("Artikelseite nutzt den Quellenblock und sein Stylesheet", () => {
   assert.match(css, /summary:focus-visible \{[^}]*outline:/);
   assert.match(css, /\.magazine-sources__body p,[^{]*\{[^}]*font-size: 13px;/);
 });
+
+test("Über-uns-Geschichte (Magazininhalt ueber-uns) klappt ihre Quellen ebenfalls ein", () => {
+  const page = readFileSync(new URL("../app/ueber-uns/geschichte/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /collapseSourceSections\(entry\.content\)/);
+  assert.match(page, /magazine-sources\.css/);
+});

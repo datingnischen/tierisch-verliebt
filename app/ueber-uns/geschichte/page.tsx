@@ -5,6 +5,8 @@ import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, ABOUT_STORY_PATH, aboutStoryCanonical, getAboutStoryPage } from "@/lib/about-section";
 import { stripHtml } from "@/lib/magazine";
+import { collapseSourceSections } from "@/lib/collapse-sources";
+import "@/app/magazin/[slug]/magazine-sources.css";
 
 // Kurzer Seitentitel (Vorlage hängt „| tierisch-verliebt.de“ an); die Überschrift bleibt der Seitentitel aus dem Magazin.
 const STORY_TITLE = "Unsere Geschichte";
@@ -60,7 +62,7 @@ export default async function AboutStoryPage() {
       ) : null}
 
       <section className="rich-content">
-        <div dangerouslySetInnerHTML={{ __html: entry.content }} />
+        <div dangerouslySetInnerHTML={{ __html: collapseSourceSections(entry.content) }} />
       </section>
 
       {authorProfile ? (
