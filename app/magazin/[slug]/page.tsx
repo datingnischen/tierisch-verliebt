@@ -11,6 +11,7 @@ import { MagazineHubGrid } from "@/components/magazine-hub-grid";
 import "@/components/city-page/tier-city-page.css";
 import "../magazin-hub.css";
 import "./magazin-article.css";
+import "./magazine-sources.css";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
 import {
@@ -27,6 +28,7 @@ import {
 import { withTrailingSlash } from "@/lib/markets";
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
+import { collapseSourceSections } from "@/lib/collapse-sources";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { buildMagazineArticleGraph } from "@/lib/site-entities";
 import { detectMagazineAnimal, getMagazineSidebarVariant, type MagazineSidebarVariant } from "@/lib/magazine-animal";
@@ -244,7 +246,8 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   const enhancedContent = bodyBreedProfile ? enhanceBreedContent(bodyBreedProfile, breedName) : bodyContent;
   const faqItems = getMagazineFaqItems(entry.content);
   const renderedContent = renderMagazineFaqSection(enhancedContent, getMagazineFaqSubject(entry.title));
-  const schemaDedupedContent = relativizeInternalLinks(stripPublishedBookSchema(renderedContent));
+  // Quellen und Bildnachweise: klein und zugeklappt als eigener Block am Beitragsende.
+  const schemaDedupedContent = collapseSourceSections(relativizeInternalLinks(stripPublishedBookSchema(renderedContent)));
   const breedKeyFacts = breedProfile ? pickKeyFacts(breedProfile.facts) : [];
   const breedSections = breedPage ? getBreedSectionLinks(entry.content, breedName) : [];
   const profileGraph = buildChristianBookProfileGraph({

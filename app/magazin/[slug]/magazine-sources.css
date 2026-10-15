@@ -1,0 +1,88 @@
+/* Quellen und Bildnachweise im Magazin: natives details, standardmäßig zu, klein und dezent am Beitragsende. */
+.rich-content details.magazine-sources {
+  margin: 2.5rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.rich-content details.magazine-sources > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0 4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  list-style: none;
+}
+
+.rich-content details.magazine-sources > summary::-webkit-details-marker {
+  display: none;
+}
+
+.rich-content details.magazine-sources > summary::before {
+  content: "\25B8";
+  font-size: 11px;
+  transition: transform 0.15s ease;
+}
+
+.rich-content details.magazine-sources[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.rich-content details.magazine-sources > summary:hover,
+.rich-content details.magazine-sources > summary:focus-visible {
+  color: var(--brand-dark);
+}
+
+.rich-content details.magazine-sources > summary:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.rich-content .magazine-sources__body {
+  padding: 6px 0 0;
+}
+
+.rich-content .magazine-sources__body p,
+.rich-content .magazine-sources__body li,
+.rich-content .magazine-sources__body small {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.rich-content .magazine-sources__body ul,
+.rich-content .magazine-sources__body ol {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.rich-content .magazine-sources__label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.rich-content .magazine-sources__body a {
+  color: var(--muted);
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  overflow-wrap: anywhere;
+}
+
+.rich-content .magazine-sources__body a:hover,
+.rich-content .magazine-sources__body a:focus-visible {
+  color: var(--brand-dark);
+}
+
+.rich-content .magazine-sources__body p,
+.rich-content .magazine-sources__body small {
+  overflow-wrap: anywhere;
+}
