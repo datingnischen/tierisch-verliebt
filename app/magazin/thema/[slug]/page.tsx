@@ -136,14 +136,14 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
             <h1>{category.name}</h1>
             <p className="tvc-lead">{intro}</p>
             <ul className="tvh-stats" aria-label={`${category.name} in Zahlen`}>
-              <li><strong>{posts.length}</strong><span>Artikel</span></li>
+              <li><span className="sx-strong">{posts.length}</span><span>Artikel</span></li>
               {latestUpdate ? (
                 <li>
-                  <strong>{new Intl.DateTimeFormat("de-DE", { month: "short", year: "numeric" }).format(new Date(latestUpdate))}</strong>
+                  <span className="sx-strong">{new Intl.DateTimeFormat("de-DE", { month: "short", year: "numeric" }).format(new Date(latestUpdate))}</span>
                   <span>Zuletzt aktualisiert</span>
                 </li>
               ) : null}
-              <li><strong>0 €</strong><span>Zum Start</span></li>
+              <li><span className="sx-strong">0 €</span><span>Zum Start</span></li>
             </ul>
             <div className="tvc-actions">
               <a className="tvc-btn tvc-btn-primary" href="#artikel">Artikel entdecken</a>
@@ -159,7 +159,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
               ) : null}
               <span className="tvm-feature-body">
                 <span className="tvm-kicker">Neuester Artikel</span>
-                <strong><Link className="card-link" href={`/magazin/${featured.slug}`}>{featured.title}</Link></strong>
+                <span className="sx-strong"><Link className="card-link" href={`/magazin/${featured.slug}`}>{featured.title}</Link></span>
                 <span className="tvm-feature-excerpt">{teaser(featured, 130)}</span>
                 <span className="tvm-feature-meta">
                   <span>{getReadingMinutes(featured.content)} Min. Lesezeit</span>
@@ -181,7 +181,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
               aria-current={item.slug === slug ? "page" : undefined}
             >
               <span className="tvm-topic-icon" aria-hidden="true"><MagazineCategoryIcon slug={item.slug} /></span>
-              <span><strong>{item.name}</strong><small>{item.count} {item.count === 1 ? "Beitrag" : "Beiträge"}</small></span>
+              <span><span className="sx-strong">{item.name}</span><small>{item.count} {item.count === 1 ? "Beitrag" : "Beiträge"}</small></span>
             </Link>
           ))}
         </nav>
@@ -200,7 +200,7 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
                 <div className="tvh-card tvm-post">
                   <span className="tvh-card-media"><CoverImage post={post} /></span>
                   <span className="tvh-card-body">
-                    <strong><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></strong>
+                    <span className="sx-strong"><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></span>
                     <span className="tvm-post-excerpt">{teaser(post, 120)}</span>
                     <span className="tvm-post-date">
                       <ClockIcon />
@@ -229,21 +229,21 @@ export default async function MagazineCategoryPage({ params }: PageProps) {
           <Link className="thema-info-link" href="/magazin">
             <span aria-hidden="true">📚</span>
             <span>
-              <strong>Alle Magazin-Themen</strong>
+              <span className="sx-strong">Alle Magazin-Themen</span>
               <small>Zur Magazin-Übersicht</small>
             </span>
           </Link>
           <Link className="thema-info-link" href="/magazin/tierwelten">
             <span aria-hidden="true">🐾</span>
             <span>
-              <strong>Tierwelten</strong>
+              <span className="sx-strong">Tierwelten</span>
               <small>Rassen, Haltung und Singles mit derselben Tierliebe</small>
             </span>
           </Link>
           <Link className="thema-info-link" href="/magazin/christian">
             <span aria-hidden="true">💬</span>
             <span>
-              <strong>Unser Datingexperte</strong>
+              <span className="sx-strong">Unser Datingexperte</span>
               <small>Christian M. Haas schreibt für das Magazin</small>
             </span>
           </Link>

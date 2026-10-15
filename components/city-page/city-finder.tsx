@@ -46,7 +46,7 @@ export function CityFinder({ market, cities, regions, regionLabel }: Props) {
                 <span className="tvh-card-region"><PinIcon />{city.region}</span>
               </span>
               <span className="tvh-card-body">
-                <MarketLink className="card-link card-link-block" market={market} path={city.path}><small>Tierliebe Singles in</small>{" "}<strong>{city.name}</strong></MarketLink>
+                <MarketLink className="card-link card-link-block" market={market} path={city.path}><small>Tierliebe Singles in</small>{" "}<span className="sx-strong">{city.name}</span></MarketLink>
                 <span className="tvh-card-meta">{city.chapters} Kapitel{city.tips ? ` · ${city.tips} Adressen` : ""}</span>
                 {city.topics.length ? (
                   <span className="tvh-card-topics">

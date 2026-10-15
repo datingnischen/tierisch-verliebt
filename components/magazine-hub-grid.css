@@ -61,6 +61,7 @@
 }
 
 .hub-tile {
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
   border-radius: 24px;
@@ -70,6 +71,11 @@
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   scroll-margin-top: 90px;
+}
+
+.hub-tile:focus-within {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
 }
 
 .hub-tile:hover {
@@ -130,12 +136,14 @@
   padding: 18px 18px 16px;
 }
 
-.hub-tile-body h3 {
+.hub-tile-body .hub-tile-title {
+  display: block;
   font-size: 1.2rem;
+  font-weight: 700;
   line-height: 1.2;
 }
 
-.hub-tile-body h3 a:hover {
+.hub-tile:hover .hub-tile-title a {
   color: var(--brand);
 }
 
@@ -185,8 +193,8 @@
   transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 
-.hub-tile-cta:hover,
-.hub-tile-cta:focus-visible {
+.hub-tile:hover .hub-tile-cta,
+.hub-tile:focus-within .hub-tile-cta {
   background: var(--brand);
   color: #fff;
   transform: translateY(-1px);
@@ -196,7 +204,7 @@
   transition: transform 0.18s ease;
 }
 
-.hub-tile-cta:hover span {
+.hub-tile:hover .hub-tile-cta span {
   transform: translateX(4px);
 }
 
@@ -222,7 +230,7 @@
     padding: 14px 14px 12px;
   }
 
-  .hub-tile-body h3 {
+  .hub-tile-body .hub-tile-title {
     font-size: 1.02rem;
   }
 

@@ -1,9 +1,9 @@
 /* Magazin-Startseite: Gassi-Guide-Look, baut auf tier-city-page.css und tier-city-hub.css auf */
 
 .tvm h2,
-.tvm-feature strong,
-.tvm-topic strong,
-.tvm-tile strong {
+.tvm-feature strong, .tvm-feature .sx-strong,
+.tvm-topic strong, .tvm-topic .sx-strong,
+.tvm-tile strong, .tvm-tile .sx-strong {
   font-family: var(--tvc-display), "Open Sans", sans-serif;
 }
 
@@ -97,7 +97,7 @@
   text-transform: uppercase;
 }
 
-.tvm-feature strong {
+.tvm-feature strong, .tvm-feature .sx-strong {
   font-size: 1.45rem;
   line-height: 1.12;
   text-wrap: balance;
@@ -174,7 +174,7 @@
   height: 22px;
 }
 
-.tvm-topic strong {
+.tvm-topic strong, .tvm-topic .sx-strong {
   display: block;
   font-size: 0.98rem;
   line-height: 1.2;
@@ -237,7 +237,7 @@
 }
 
 .tvm-tile:hover,
-.tvm-tile:focus-visible {
+.tvm-tile:focus-within {
   transform: rotate(0deg) translateY(-4px);
   box-shadow: 0 26px 48px rgba(70, 30, 20, 0.24);
 }
@@ -258,6 +258,7 @@
 
 .tvm-tile img {
   position: absolute;
+  z-index: -1;
   inset: 0;
   width: 100%;
   height: 100%;
@@ -272,6 +273,7 @@
 .tvm-tile::after {
   content: "";
   position: absolute;
+  z-index: -1;
   inset: 0;
   background: linear-gradient(0deg, rgba(40, 10, 10, 0.88) 0%, rgba(40, 10, 10, 0.35) 48%, transparent 75%);
 }
@@ -301,20 +303,19 @@
   height: 24px;
 }
 
+/* Unpositioniert, damit .card-link::after die ganze Kachel abdeckt; Bild und Verlauf liegen per z-index: -1 dahinter. */
 .tvm-tile-copy {
-  position: relative;
-  z-index: 1;
   display: grid;
   flex: 1;
   gap: 4px;
 }
 
-.tvm-tile strong {
+.tvm-tile strong, .tvm-tile .sx-strong {
   font-size: 1.35rem;
   line-height: 1.05;
 }
 
-.tvm-tile-big strong {
+.tvm-tile-big strong, .tvm-tile-big .sx-strong {
   font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
 
@@ -350,7 +351,7 @@
   list-style: none;
 }
 
-.tvm-post .tvh-card-body strong {
+.tvm-post .tvh-card-body strong, .tvm-post .tvh-card-body .sx-strong {
   font-size: 1.22rem;
   text-wrap: balance;
 }

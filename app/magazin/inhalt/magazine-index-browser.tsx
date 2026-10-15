@@ -89,7 +89,7 @@ export function MagazineIndexBrowser({ sections, total }: { sections: MagazineIn
               </h2>
               {section.href ? (
                 <Link href={section.href} className="magazine-index-section-more">
-                  {section.kind === "posts" ? "Zum Thema" : "Zur Übersicht"} →
+                  {section.kind === "posts" ? "Zum Thema" : "Zur Übersicht"} {section.title} <span aria-hidden="true">→</span>
                 </Link>
               ) : null}
             </header>

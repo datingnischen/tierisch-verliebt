@@ -101,7 +101,7 @@
   backdrop-filter: blur(6px);
 }
 
-.thema-hero-stats strong {
+.thema-hero-stats strong, .thema-hero-stats .sx-strong {
   font-size: 1.5rem;
   line-height: 1.15;
 }
@@ -527,7 +527,7 @@
     border-radius: 16px;
   }
 
-  .thema-hero-stats strong {
+  .thema-hero-stats strong, .thema-hero-stats .sx-strong {
     font-size: 1.1rem;
   }
 

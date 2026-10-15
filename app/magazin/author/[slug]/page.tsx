@@ -245,7 +245,7 @@ export default async function MagazineAuthorPage({ params }: PageProps) {
                     {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
                   </span>
                   <span className="tvh-card-body">
-                    <strong><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></strong>
+                    <span className="sx-strong"><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></span>
                     <span className="tvm-post-excerpt">{stripHtml(post.excerpt || post.content).slice(0, 140)}…</span>
                     {formatUpdatedDate(post) ? <span className="tvm-post-date"><ClockIcon />{formatUpdatedDate(post)}</span> : null}
                     <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>

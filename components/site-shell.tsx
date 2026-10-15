@@ -25,7 +25,7 @@ const deFooter: Array<{ title: string; links: NavLink[] }> = [
   {
     title: "Hunde",
     links: [
-      { label: "Ratgeber", href: "/magazin/thema/ratgeber-hund" },
+      { label: "Ratgeber Hund", href: "/magazin/thema/ratgeber-hund" },
       { label: "Labrador Retriever", href: "/magazin/labrador-retriever" },
       { label: "Französische Bulldogge", href: "/magazin/franzoesische-bulldogge" },
       { label: "Beliebteste Hunderassen", href: "/magazin/beliebtesten-hunderassen" },
@@ -34,7 +34,7 @@ const deFooter: Array<{ title: string; links: NavLink[] }> = [
   {
     title: "Katzen",
     links: [
-      { label: "Ratgeber", href: "/magazin/thema/ratgeber-katze" },
+      { label: "Ratgeber Katze", href: "/magazin/thema/ratgeber-katze" },
       { label: "Katzenrassen", href: "/magazin/katzenrassen" },
       { label: "Britisch Kurzhaar", href: "/magazin/britisch-kurzhaar" },
       { label: "Beliebteste Katzenrassen", href: "/magazin/beliebtesten-katzenrassen" },
@@ -95,6 +95,11 @@ function registrationHref(market: MarketCode, pathname: string) {
   return publicUrl(market, isCityPage(pathname) ? "/registration/?AID=location" : "/?AID=magazin");
 }
 
+// Städteseiten führen zur Registrierung, alle anderen zur Startseite: je Ziel ein eigener Linktext (Seobility).
+function registerLabel(pathname: string) {
+  return isCityPage(pathname) ? "Zur Registrierung" : "Registrieren";
+}
+
 function Brand({ market }: { market: MarketCode }) {
   const logo = logoByMarket[market];
   return localLink(
@@ -139,7 +144,7 @@ export function SiteHeader({ market = "de" }: Props) {
         <Brand market={market} />
         <div className="header-actions compact-header-actions" aria-label="Nutzeraktionen">
           <a className="login-link" href={publicUrl(market, "/login/")}>Login</a>
-          <a className="header-register header-register-primary" href={register}>Registrieren</a>
+          <a className="header-register header-register-primary" href={register}>{registerLabel(pathname)}</a>
           <details className="header-menu">
             <summary aria-label="Menü öffnen">
               <span className="menu-icon" aria-hidden="true"><span /><span /><span /></span>
@@ -181,11 +186,11 @@ export function SiteFooter({ market = "de" }: Props) {
           <PawIcon className="tv-footer-cta-paw tv-footer-cta-paw-small" />
           <div className="tv-footer-cta-copy">
             <p className="tv-footer-kicker">Tierliebe Partnersuche</p>
-            <h2>Finde tierliebe Singles, bei denen Hund, Katze & Co. wirklich dazugehören.</h2>
+            <p className="tv-footer-cta-title">Finde tierliebe Singles, bei denen Hund, Katze & Co. wirklich dazugehören.</p>
             <p>Regionale Tipps und echte Profilvorschauen führen direkt zu passenden Kontakten in {config.countryName}.</p>
           </div>
           <a className="tv-footer-cta-button" href={register}>
-            Jetzt kostenlos starten
+            {isCityPage(pathname) ? "Jetzt kostenlos Profil anlegen" : "Jetzt kostenlos starten"}
             <span aria-hidden="true">→</span>
           </a>
         </section>
@@ -220,7 +225,7 @@ export function SiteFooter({ market = "de" }: Props) {
           <nav className={`tv-footer-nav${regional ? " tv-footer-nav-compact" : ""}`} aria-label="Footer Navigation">
             {columns.map((column) => (
               <div className="tv-footer-column" key={column.title}>
-                <h2>{column.title}</h2>
+                <p className="tv-footer-title">{column.title}</p>
                 <ul>
                   {column.links.map((link) => (
                     <li key={link.label}>
@@ -236,7 +241,7 @@ export function SiteFooter({ market = "de" }: Props) {
         <div className="tv-footer-bottom">
           <span>© {new Date().getFullYear()} tierisch-verliebt.{market} · Dating für Tierfreunde mit Herz</span>
           <div className="tv-footer-legal">
-            <a href={register}>Registrieren</a>
+            <a href={register}>{registerLabel(pathname)}</a>
             {market === "de" ? localLink(market, "/magazin", "Magazin") : null}
             <a href={publicUrl(market, "/datenschutz.html")}>Datenschutz</a>
             <a href={publicUrl(market, "/impressum.html")}>Impressum</a>

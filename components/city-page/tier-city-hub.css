@@ -60,7 +60,7 @@
   backdrop-filter: blur(6px);
 }
 
-.tvh-stats strong {
+.tvh-stats strong, .tvh-stats .sx-strong {
   font-family: var(--tvc-display), sans-serif;
   font-size: 2rem;
   font-weight: 800;
@@ -367,7 +367,7 @@
   font-size: 0.76rem;
 }
 
-.tvh-card-body strong {
+.tvh-card-body strong, .tvh-card-body .sx-strong {
   font-family: var(--tvc-display), sans-serif;
   font-size: 1.35rem;
   line-height: 1.1;
@@ -449,7 +449,7 @@
   transform: rotate(1deg);
 }
 
-.tvh-inside-card strong {
+.tvh-inside-card strong, .tvh-inside-card .sx-strong {
   font-family: var(--tvc-display), sans-serif;
   font-size: 1.3rem;
 }
@@ -628,7 +628,7 @@
     padding: 10px 12px;
   }
 
-  .tvh-stats strong {
+  .tvh-stats strong, .tvh-stats .sx-strong {
     font-size: 1.6rem;
   }
 
@@ -662,7 +662,7 @@
     padding: 12px 12px 14px;
   }
 
-  .tvh-card-body strong {
+  .tvh-card-body strong, .tvh-card-body .sx-strong {
     font-size: 1.1rem;
   }
 

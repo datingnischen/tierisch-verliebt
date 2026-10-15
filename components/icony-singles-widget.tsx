@@ -54,7 +54,7 @@ export function IconySinglesWidget(props: Props) {
       <div className={styles.copy}>
         <p className={styles.eyebrow}>Singles entdecken</p>
         <h2 id={`singles-${props.zip}`}>Neue tierliebe Singles in {props.city}</h2>
-        <p>Wähle Frauen oder Männer und entdecke echte Profilvorschauen aus deiner Region.</p>
+        <p>Wähle Frauen oder Männer und entdecke echte Profilvorschauen aus {props.city} und Umgebung.</p>
       </div>
       <fieldset className={styles.controls}>
         <legend>Profile auswählen</legend>
@@ -67,7 +67,7 @@ export function IconySinglesWidget(props: Props) {
       </fieldset>
       <div className={styles.framePanel}>
         <strong>{selectedLabel} aus {props.city}</strong>
-        <p>Die Profilvorschauen werden geladen, sobald du diesen Bereich ansiehst.</p>
+        <p>Die Profilvorschauen aus {props.city} werden geladen, sobald du diesen Bereich ansiehst.</p>
         <iframe key={gender} className={styles.frame} title={`${selectedLabel} aus ${props.city}`} srcDoc={srcDoc} loading="lazy" referrerPolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" />
       </div>
       <div className={styles.actions}>

@@ -23,6 +23,8 @@ export type MagazineEntry = {
   date?: string;
   modified?: string;
   title: string;
+  /** Längere H1 aus dem Frontmatter (`h1`), wenn der Titel als Überschrift zu kurz ist; Karten und Linktexte nutzen `title`. */
+  heading?: string;
   excerpt: string;
   content: string;
   featuredImage?: string;

@@ -10,7 +10,7 @@ categories: []
 image: "/magazin/wp-content/uploads/2022/09/Ragdoll-zuechter.jpg"
 imageAlt: "Ragdoll Katzen Züchter in Deutschland"
 seoTitle: "Ragdoll Züchter in Deutschland"
-description: "Hier findest du einige Ragdoll Katzen Züchter aus Deutschland."
+description: "Ragdoll Züchter in Deutschland: eine Auswahl an Zuchten für die sanfte Katzenrasse mit den blauen Augen, dazu weitere Artikel rund um die Ragdoll."
 excerpt: "<p>Hier findest du einige Ragdoll Katzen Züchter aus Deutschland.</p>"
 ---
 

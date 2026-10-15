@@ -42,7 +42,7 @@ export default async function PartnersucheCityPage({ params }: PageProps) {
     <TierCityPage
       market="de"
       city={city}
-      expert={expert ? <ExpertTrustCard profile={expert} eyebrow="Unser Datingexperte" title={`Christian begleitet tierliebe Dating-Themen und regionale Einstiege auch für ${city.cityName}.`} primaryLabel="Zum Expertenprofil" registrationHref={city.registrationUrl} /> : null}
+      expert={expert ? <ExpertTrustCard profile={expert} eyebrow="Unser Datingexperte" title={`Christian begleitet tierliebe Dating-Themen und regionale Einstiege auch für ${city.cityName}.`} primaryLabel="Zum Expertenprofil" registrationHref={city.registrationUrl} registrationLabel="Kostenlos Profil anlegen" variant="compact" /> : null}
     />
     <PreviewLinkRewriter selector=".tvc-rich" />
     </>

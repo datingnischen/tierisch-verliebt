@@ -75,9 +75,9 @@ export default async function MagazineOverviewPage() {
               denen Tiere zur Familie gehören.
             </p>
             <ul className="tvh-stats">
-              <li><strong>{totalItems}</strong><span>Beiträge</span></li>
-              <li><strong>{categories.length}</strong><span>Themen</span></li>
-              <li><strong>{pages.length}</strong><span>Porträts &amp; Ratgeber</span></li>
+              <li><span className="sx-strong">{totalItems}</span><span>Beiträge</span></li>
+              <li><span className="sx-strong">{categories.length}</span><span>Themen</span></li>
+              <li><span className="sx-strong">{pages.length}</span><span>Porträts &amp; Ratgeber</span></li>
             </ul>
             <div className="tvc-actions">
               <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
@@ -95,7 +95,7 @@ export default async function MagazineOverviewPage() {
               ) : null}
               <span className="tvm-feature-body">
                 <span className="tvm-kicker">Gerade beliebt</span>
-                <strong><Link className="card-link" href={`/magazin/${featuredPost.slug}`}>{featuredPost.title}</Link></strong>
+                <span className="sx-strong"><Link className="card-link" href={`/magazin/${featuredPost.slug}`}>{featuredPost.title}</Link></span>
                 <span className="tvm-feature-excerpt">{excerpt(featuredPost.excerpt || featuredPost.content, 130)}</span>
                 <span className="tvm-feature-meta">
                   {featuredPost.authorName ? <span>Von {featuredPost.authorName}</span> : null}
@@ -110,13 +110,13 @@ export default async function MagazineOverviewPage() {
       <nav className="tvc-wrap tvm-topics" aria-label="Magazin-Themen">
         <Link className="tvm-topic tvm-topic-index" href="/magazin/inhalt">
           <span className="tvm-topic-icon" aria-hidden="true"><PawIcon /></span>
-          <span><strong>Alles von A–Z</strong><small>Beiträge &amp; Seiten durchsuchen</small></span>
+          <span><span className="sx-strong">Alles von A–Z</span><small>Beiträge &amp; Seiten durchsuchen</small></span>
         </Link>
         {categories.slice(0, 6).map((category) => (
           <Link key={category.slug} className="tvm-topic" href={`/magazin/thema/${category.slug}`}>
             <span className="tvm-topic-icon" aria-hidden="true"><MagazineCategoryIcon slug={category.slug} /></span>
             <span>
-              <strong>{category.name}</strong>
+              <span className="sx-strong">{category.name}</span>
               {category.count > 0 ? <small>{category.count} {category.count === 1 ? "Beitrag" : "Beiträge"}</small> : null}
             </span>
           </Link>
@@ -131,20 +131,19 @@ export default async function MagazineOverviewPage() {
         </div>
         <div className="tvm-bento">
           {entryPoints.map((entry, index) => (
-            <Link
+            <div
               key={entry.slug}
-              href={entry.href}
               className={["tvm-tile", entry.size ? `tvm-tile-${entry.size}` : "", entry.image ? "" : "tvm-tile-plain"].filter(Boolean).join(" ")}
               style={{ ["--tilt" as string]: `${index % 2 ? 0.8 : -0.8}deg` }}
             >
               {entry.image ? <img src={entry.image} alt={`${entry.label} im tierisch-verliebt Magazin`} loading="lazy" decoding="async" /> : null}
               <span className="tvm-tile-icon" aria-hidden="true">{entry.icon}</span>
               <span className="tvm-tile-copy">
-                <strong>{entry.label}</strong>
+                <span className="sx-strong"><Link className="card-link" href={entry.href}>{entry.label}</Link></span>
                 <small>{entry.teaser}</small>
               </span>
               <span className="tvm-tile-arrow" aria-hidden="true">→</span>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
@@ -163,7 +162,7 @@ export default async function MagazineOverviewPage() {
                   {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
                 </span>
                 <span className="tvh-card-body">
-                  <strong><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></strong>
+                  <span className="sx-strong"><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></span>
                   <span className="tvm-post-excerpt">{excerpt(post.excerpt || post.content, 120)}</span>
                   {formatUpdatedDate(post) ? <span className="tvm-post-date"><ClockIcon />{formatUpdatedDate(post)}</span> : null}
                   <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
@@ -176,7 +175,7 @@ export default async function MagazineOverviewPage() {
           <span>Seite 1 von {totalPages} · {totalItems} Beiträge</span>
           <div className="tvm-more-actions">
             <Link className="tvm-more-link" href="/magazin/inhalt">Alle Beiträge &amp; Seiten von A–Z</Link>
-            {totalPages > 1 ? <Link className="tvc-btn tvc-btn-primary" href="/magazin/page/2">Ältere Beiträge <span aria-hidden="true">→</span></Link> : null}
+            {totalPages > 1 ? <Link className="tvc-btn tvc-btn-primary" href="/magazin/page/2">Ältere Beiträge (Seite 2) <span aria-hidden="true">→</span></Link> : null}
           </div>
         </div>
       </section>

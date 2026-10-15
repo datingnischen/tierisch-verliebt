@@ -3,6 +3,8 @@ import path from "node:path";
 import matter from "gray-matter";
 import { assetBaseUrl } from "#static-asset";
 import type { MagazineCategory, MagazineEntry } from "#magazine";
+import { cleanMagazineHtml } from "#html-cleanup";
+import { withUniqueLinkTargets } from "#link-targets";
 
 /**
  * Magazin-Inhalte aus Dateien (kein WordPress, kein Netzwerk):
@@ -73,6 +75,8 @@ function build(): MagazineStore {
       .filter((category): category is MagazineCategory => Boolean(category));
     const type = data.type === "page" ? "page" : "post";
     if (type === "post") for (const category of entryCategories) category.count += 1;
+    const title = String(data.title);
+    const heading = typeof data.h1 === "string" && data.h1 ? data.h1 : undefined;
 
     entries.push({
       id: Number(data.wpId) || 0,
@@ -80,9 +84,11 @@ function build(): MagazineStore {
       type,
       date: data.published ? String(data.published) : undefined,
       modified: data.updated ? String(data.updated) : undefined,
-      title: String(data.title),
+      title,
+      heading,
       excerpt: typeof data.excerpt === "string" ? data.excerpt : "",
-      content: withAssetHost(parsed.content.trim()),
+      // Seobility: leere/übersprungene Überschriften, H1-Wiederholung, zu viele Strong-Tags (lib/html-cleanup.ts).
+      content: cleanMagazineHtml(withAssetHost(parsed.content.trim()), heading || title),
       featuredImage: asset(typeof data.image === "string" ? data.image : undefined),
       featuredImageAlt: typeof data.imageAlt === "string" && data.imageAlt ? data.imageAlt : undefined,
       authorName: author?.name,
@@ -95,8 +101,9 @@ function build(): MagazineStore {
   }
 
   const byDateDesc = (a: MagazineEntry, b: MagazineEntry) => (b.date || "").localeCompare(a.date || "");
-  const posts = entries.filter((entry) => entry.type === "post").sort(byDateDesc);
-  const pages = entries
+  const unique = withUniqueLinkTargets(entries);
+  const posts = unique.filter((entry) => entry.type === "post").sort(byDateDesc);
+  const pages = unique
     .filter((entry) => entry.type === "page")
     .sort((a, b) => a.title.localeCompare(b.title, "de"));
 

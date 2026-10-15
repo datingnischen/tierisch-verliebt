@@ -1,5 +1,6 @@
 ---
 title: "Katzenrassen"
+h1: "Katzenrassen von A bis Z im Überblick"
 slug: "katzenrassen"
 type: page
 wpId: 645
@@ -9,7 +10,7 @@ author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/katzenrassen-kaetzchen-auf-der-wiese.jpg"
 imageAlt: "Fünf Kätzchen in verschiedenen Fellfarben auf einer Wiese"
-seoTitle: "Liste aller Katzenrassen"
+seoTitle: "Alle Katzenrassen von A bis Z"
 description: "Erkunden Sie eine umfassende Sammlung von Katzenrassen. Erfahren Sie alles über die einzigartigen Eigenschaften und Persönlichkeiten jeder Rasse."
 excerpt: "<p>Katzen faszinieren uns Menschen seit jeher mit ihrer anmutigen Eleganz, ihrem unabhängigen Wesen und ihrer vielseitigen Persönlichkeit. Die Vielfalt der</p>"
 ---

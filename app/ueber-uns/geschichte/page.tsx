@@ -42,7 +42,7 @@ export default async function AboutStoryPage() {
       actions={
         <>
           <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/registration/?AID=location">
-            Kostenlos registrieren
+            Kostenlos Profil anlegen
           </Link>
           <Link className="tvc-btn tvc-btn-ghost" href={ABOUT_OVERVIEW_PATH}>
             Zur Über-uns-Übersicht
@@ -72,6 +72,7 @@ export default async function AboutStoryPage() {
             eyebrow="Unser Datingexperte"
             title="Die Über-uns-Seiten von tierisch-verliebt bleiben an echte Inhalte, nachvollziehbare Historie und sichtbare Ansprechpartner geknüpft."
             primaryLabel="Zum Expertenprofil"
+            variant="compact"
           />
         </section>
       ) : null}

@@ -39,7 +39,9 @@ test("the compact bio is written copy, never a truncated CMS excerpt", async () 
   const card = await source("../components/expert-trust-card.tsx");
 
   assert.match(profiles, /shortBio:/);
-  assert.match(card, /\{compact \? profile\.shortBio : profile\.bio\}/);
+  // Kompakte Karte ohne Bio: der gleiche Text unter allen Artikeln galt bei Seobility als Duplicate Content.
+  assert.match(card, /<p className="author-box-bio">\{profile\.bio\}<\/p>/);
+  assert.doesNotMatch(card, /profile\.shortBio/);
   // The CMS excerpt cut at 280 chars produced "Über Christian Christian M. Haas … Die Idee".
   assert.doesNotMatch(profiles, /shortBio:\s*\n?\s*bio\b/);
 });

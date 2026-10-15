@@ -57,13 +57,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Tier-Magazin – Seite ${pageNumber}`,
-    description: `Weitere Magazin-Beiträge und Tierwelten für tierliebe Singles auf Seite ${pageNumber}.`,
+    description: `Seite ${pageNumber} des tierisch-verliebt Magazins: weitere Ratgeber, Rasseporträts und Geschichten rund um Hund, Katze und Co. für tierliebe Singles.`,
     alternates: {
       canonical: `${SITE_URL}/magazin/page/${pageNumber}/`,
     },
     openGraph: {
       title: `Tier-Magazin – Seite ${pageNumber}`,
-      description: `Weitere Magazin-Beiträge und Tierwelten für tierliebe Singles auf Seite ${pageNumber}.`,
+      description: `Seite ${pageNumber} des tierisch-verliebt Magazins: weitere Ratgeber, Rasseporträts und Geschichten rund um Hund, Katze und Co. für tierliebe Singles.`,
       url: `${SITE_URL}/magazin/page/${pageNumber}/`,
     },
   };
@@ -91,14 +91,14 @@ export default async function MagazinePaginationPage({ params }: PageProps) {
               <span aria-current="page">Seite {pageNumber}</span>
             </nav>
             <span className="tvc-badge"><PawIcon className="tvc-badge-paw" />Tier-Magazin · Seite {pageNumber} von {totalPages}</span>
-            <h1>Weitere Magazin-Beiträge</h1>
+            <h1>Weitere Beiträge aus dem Magazin</h1>
             <p className="tvc-lead">
-              Hier findest du weitere Artikel, Geschichten und Ratgeber aus dem Magazin – ideal zum Stöbern nach Hunde-,
+              Seite {pageNumber} von {totalPages}: weitere Artikel, Geschichten und Ratgeber aus dem Magazin – ideal zum Stöbern nach Hunde-,
               Katzen- und Tierwelten-Themen.
             </p>
             <ul className="tvh-stats">
-              <li><strong>{totalItems}</strong><span>Beiträge</span></li>
-              <li><strong>{pageNumber}/{totalPages}</strong><span>Seite</span></li>
+              <li><span className="sx-strong">{totalItems}</span><span>Beiträge</span></li>
+              <li><span className="sx-strong">{pageNumber}/{totalPages}</span><span>Seite</span></li>
             </ul>
             <div className="tvc-actions">
               <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
@@ -122,7 +122,7 @@ export default async function MagazinePaginationPage({ params }: PageProps) {
                   {post.categories[0] ? <span className="tvh-card-region"><MagazineCategoryIcon slug={post.categories[0].slug} />{post.categories[0].name}</span> : null}
                 </span>
                 <span className="tvh-card-body">
-                  <strong><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></strong>
+                  <span className="sx-strong"><Link className="card-link" href={`/magazin/${post.slug}`}>{post.title}</Link></span>
                   <span className="tvm-post-excerpt">{excerpt(post.excerpt || post.content, 120)}</span>
                   {formatUpdatedDate(post) ? <span className="tvm-post-date"><ClockIcon />{formatUpdatedDate(post)}</span> : null}
                   <span className="tvh-card-go">Weiterlesen <span aria-hidden="true">→</span></span>
@@ -133,7 +133,7 @@ export default async function MagazinePaginationPage({ params }: PageProps) {
         </ul>
 
         <nav className="tvm-pager" aria-label="Seitennavigation Magazin">
-          {pageNumber > 1 ? <Link className="tvm-pager-step" href={pageHref(pageNumber - 1)}>← Neuere Beiträge</Link> : <span />}
+          {pageNumber > 1 ? <Link className="tvm-pager-step" href={pageHref(pageNumber - 1)}><span aria-hidden="true">←</span> Neuere Beiträge (Seite {pageNumber - 1})</Link> : <span />}
           <ol className="tvm-pager-pages">
             {pageWindow(pageNumber, totalPages).map((page, index) =>
               page === null ? (
@@ -149,7 +149,7 @@ export default async function MagazinePaginationPage({ params }: PageProps) {
               ),
             )}
           </ol>
-          {pageNumber < totalPages ? <Link className="tvm-pager-step tvm-pager-next" href={pageHref(pageNumber + 1)}>Ältere Beiträge →</Link> : <span />}
+          {pageNumber < totalPages ? <Link className="tvm-pager-step tvm-pager-next" href={pageHref(pageNumber + 1)}>Ältere Beiträge (Seite {pageNumber + 1}) <span aria-hidden="true">→</span></Link> : <span />}
         </nav>
       </section>
     </main>

@@ -77,6 +77,7 @@ test("subject keeps the topic without the editorial title suffix", () => {
   assert.equal(getMagazineFaqSubject("Labrador Retriever – Das Portrait"), "Labrador Retriever");
   assert.equal(getMagazineFaqSubject("Barsoi &#8211; Das Portrait"), "Barsoi");
   assert.equal(getMagazineFaqSubject("Katzen im Alltag"), "Katzen im Alltag");
+  assert.equal(getMagazineFaqSubject("Portrait zu Hunderasse: Magyar Vizsla"), "Magyar Vizsla");
 });
 
 test("magazine detail pages render the FAQ card and its schema for every article", async () => {

@@ -110,15 +110,15 @@ export default async function TierweltenPage() {
         </div>
         <ul className="tierwelten-hero-stats" aria-label="Tierwelten in Zahlen">
           <li>
-            <strong>{TIERWELT_COUNT}</strong>
+            <span className="sx-strong">{TIERWELT_COUNT}</span>
             <span>Tierwelten</span>
           </li>
           <li>
-            <strong>{TIERWELT_GROUPS.length}</strong>
+            <span className="sx-strong">{TIERWELT_GROUPS.length}</span>
             <span>Tierfamilien</span>
           </li>
           <li>
-            <strong>0 €</strong>
+            <span className="sx-strong">0 €</span>
             <span>zum Start</span>
           </li>
         </ul>

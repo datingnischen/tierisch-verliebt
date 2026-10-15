@@ -9,6 +9,8 @@ type ExpertTrustCardProps = {
   primaryLabel?: string;
   primaryHref?: string;
   registrationHref?: string;
+  /** Städteseiten führen zur Registrierung, das Magazin zur Startseite: eigener Text je Ziel (eindeutige Linktexte). */
+  registrationLabel?: string;
   variant?: "full" | "compact";
 };
 
@@ -19,6 +21,7 @@ export function ExpertTrustCard({
   primaryLabel = "Zum Autorenprofil",
   primaryHref,
   registrationHref = "https://tierisch-verliebt.de/?AID=magazin",
+  registrationLabel = "Kostenlos registrieren",
   variant = "full",
 }: ExpertTrustCardProps) {
   const compact = variant === "compact";
@@ -52,25 +55,25 @@ export function ExpertTrustCard({
           {compact ? <span className="eyebrow eyebrow-brand">{eyebrow}</span> : null}
 
           <div className="author-box-identity">
-            <h3>
+            <p className="author-box-name">
               <Link href={profilePath}>{profile.name}</Link>
-            </h3>
+            </p>
             <span className="author-box-jobtitle">{profile.jobTitle}</span>
           </div>
 
           {compact ? null : <p className="expert-role">{profile.role}</p>}
 
-          <p className="author-box-bio">
-            {compact ? profile.shortBio : profile.bio}
-            {compact ? (
-              <>
-                {" "}
-                <Link className="author-box-bio-link" href={profilePath}>
-                  {primaryLabel} <span aria-hidden="true">›</span>
-                </Link>
-              </>
-            ) : null}
-          </p>
+          {/* Kompakt (unter Artikeln und auf Städteseiten) ohne Bio: derselbe Text auf Hunderten Seiten wäre Duplicate Content.
+              Die ausführliche Bio steht auf der Profilseite. */}
+          {compact ? (
+            <p className="author-box-bio">
+              <Link className="author-box-bio-link" href={profilePath}>
+                {primaryLabel} <span aria-hidden="true">›</span>
+              </Link>
+            </p>
+          ) : (
+            <p className="author-box-bio">{profile.bio}</p>
+          )}
 
           {profile.topics.length ? (
             <ul className="author-box-topics" aria-label={`Schwerpunkte von ${profile.name}`}>
@@ -114,7 +117,7 @@ export function ExpertTrustCard({
                 </Link>
               )}
               <Link className={`button ${compact ? "button-primary button-small" : "button-secondary"}`} href={registrationHref}>
-                Kostenlos registrieren
+                {registrationLabel}
               </Link>
             </div>
           </div>

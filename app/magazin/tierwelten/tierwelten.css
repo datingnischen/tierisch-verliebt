@@ -104,7 +104,7 @@
   backdrop-filter: blur(6px);
 }
 
-.tierwelten-hero-stats strong {
+.tierwelten-hero-stats strong, .tierwelten-hero-stats .sx-strong {
   font-size: 1.8rem;
   line-height: 1.1;
 }
@@ -532,7 +532,7 @@
     padding: 10px 12px;
   }
 
-  .tierwelten-hero-stats strong {
+  .tierwelten-hero-stats strong, .tierwelten-hero-stats .sx-strong {
     font-size: 1.4rem;
   }
 

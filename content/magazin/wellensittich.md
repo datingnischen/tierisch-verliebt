@@ -1,5 +1,6 @@
 ---
 title: "Der Wellensittich"
+h1: "Der Wellensittich: Charakter, Haltung und Ernährung"
 slug: "wellensittich"
 type: page
 wpId: 742

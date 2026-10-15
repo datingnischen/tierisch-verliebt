@@ -1,5 +1,6 @@
 ---
 title: "Vögel"
+h1: "Vögel als Haustiere: Haltung, Ernährung und Pflege"
 slug: "voegel-uebersicht"
 type: page
 wpId: 3622

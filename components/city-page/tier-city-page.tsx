@@ -77,7 +77,7 @@ export function TierCityPage({ market, city, expert }: Props) {
           <aside className="tvc-tag" aria-label={`Steckbrief ${city.cityName}`}>
             <span className="tvc-tag-hole" aria-hidden="true" />
             <span className="tvc-tag-kicker">Tierischer Steckbrief</span>
-            <strong className="tvc-tag-city">{city.cityName}</strong>
+            <span className="sx-strong tvc-tag-city">{city.cityName}</span>
             <dl className="tvc-tag-stats">
               <div><dt>Kapitel</dt><dd>{guide.sections.length || 1}</dd></div>
               {guide.tipCount ? <div><dt>Adressen</dt><dd>{guide.tipCount}</dd></div> : null}
@@ -95,10 +95,10 @@ export function TierCityPage({ market, city, expert }: Props) {
 
       <div className="tvc-wrap">
         <ul className="tvc-facts">
-          <li><PinIcon /><span><small>Suchort</small><strong>{city.cityName}{geo ? `, ${geo.region}` : ""}</strong></span></li>
-          {nearby[0] ? <li><PawIcon /><span><small>Nächste Stadtseite</small><strong>{nearby[0].cityName} · {nearby[0].km} km</strong></span></li> : null}
-          <li><ClockIcon /><span><small>Lesezeit Guide</small><strong>ca. {guide.readingMinutes} Minuten</strong></span></li>
-          <li><HeartIcon /><span><small>Anmeldung</small><strong>kostenlos</strong></span></li>
+          <li><PinIcon /><span><small>Suchort</small><span className="sx-strong">{city.cityName}{geo ? `, ${geo.region}` : ""}</span></span></li>
+          {nearby[0] ? <li><PawIcon /><span><small>Nächste Stadtseite</small><span className="sx-strong">{nearby[0].cityName} · {nearby[0].km} km</span></span></li> : null}
+          <li><ClockIcon /><span><small>Lesezeit Guide</small><span className="sx-strong">ca. {guide.readingMinutes} Minuten</span></span></li>
+          <li><HeartIcon /><span><small>Anmeldung</small><span className="sx-strong">kostenlos</span></span></li>
         </ul>
       </div>
 
@@ -111,13 +111,13 @@ export function TierCityPage({ market, city, expert }: Props) {
           <div className="tvc-head">
             <span className="tvc-eyebrow">Mit Herz und Pfote</span>
             <h2 id="tvc-ideas-title">Date-Ideen mit Tier in {city.cityName}</h2>
-            <p>Aus unserem Stadt-Guide abgeleitet: Orte, an denen sich Tierfreunde ganz natürlich begegnen.</p>
+            <p>Aus unserem Stadt-Guide für {city.cityName} abgeleitet: Orte, an denen sich Tierfreunde ganz natürlich begegnen.</p>
           </div>
           <div className="tvc-ideas-grid">
             {ideas.map((idea, index) => (
               <a key={idea.topic} className={`tvc-idea tvc-t-${idea.topic}`} href={`#${idea.section!.id}`} style={{ "--tilt": `${index % 2 ? 1.2 : -1.2}deg` } as CSSProperties}>
                 <span className="tvc-idea-icon"><TopicIcon topic={idea.topic} /></span>
-                <strong>{idea.title}</strong>
+                <span className="sx-strong">{idea.title}</span>
                 <span>{idea.text}</span>
                 <em>{idea.cta} <span aria-hidden="true">→</span></em>
               </a>
@@ -130,7 +130,7 @@ export function TierCityPage({ market, city, expert }: Props) {
         {guide.sections.length > 1 ? (
           <aside className="tvc-toc">
             <span className="tvc-toc-kicker"><PawIcon />Gassi-Guide</span>
-            <strong>Tierfreundliches {city.cityName}</strong>
+            <span className="sx-strong">Tierfreundliches {city.cityName}</span>
             <ol>
               {guide.sections.map((section, index) => (
                 <li key={section.id}><a href={`#${section.id}`}><TopicIcon topic={section.topic} /><span>{section.heading}</span><small>{pad(index + 1)}</small></a></li>
@@ -167,7 +167,7 @@ export function TierCityPage({ market, city, expert }: Props) {
               <li key={entry.slug}>
                 <MarketLink className="tvc-near-row" market={market} path={entry.path}>
                   {entry.imageUrl ? <img src={entry.imageUrl} alt={entry.imageAlt || `Partnersuche in ${entry.cityName}`} loading="lazy" decoding="async" /> : <span className="tvc-near-ph"><PawIcon /></span>}
-                  <span className="tvc-near-name"><small>Tierliebe Singles in</small><strong>{entry.cityName}</strong></span>
+                  <span className="tvc-near-name"><small>Tierliebe Singles in</small><span className="sx-strong">{entry.cityName}</span></span>
                   <span className="tvc-near-bar" aria-hidden="true"><i style={{ width: `${Math.max(18, (entry.km / maxKm) * 100)}%` }} /></span>
                   <span className="tvc-near-km">{entry.km} km</span>
                 </MarketLink>

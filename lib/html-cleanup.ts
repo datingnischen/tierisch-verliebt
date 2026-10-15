@@ -1,0 +1,68 @@
+// Bereinigung der Magazin-Inhalte für Seobility (Crawl 14.10.2026). Sichtbarer Text bleibt, nur Auszeichnung ändert sich.
+
+const plain = (html: string) =>
+  html
+    .replace(/<[^>]+>/g, "")
+    .replace(/&#(\d+);/g, (_, code: string) => String.fromCharCode(Number(code)))
+    .replace(/&amp;/g, "&")
+    .replace(/&nbsp;| /g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+// Überschriften ohne Text (z. B. <h3>&nbsp;</h3>) entfallen; Seobility meldet sie als „leere Überschrift“.
+// Steckt nur ein Bild darin, bleibt das Bild als Absatz erhalten.
+export function withoutEmptyHeadings(html: string): string {
+  return html.replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (match, _level: string, inner: string) => {
+    if (plain(inner)) return match;
+    return /<img\b/i.test(inner) ? `<p>${inner.trim()}</p>` : "";
+  });
+}
+
+// Zwischenüberschrift, die wörtlich die H1 wiederholt (Seobility „doppelte Überschrift“), entfällt; der Text darunter bleibt.
+export function withoutH1Repeat(html: string, h1: string): string {
+  const key = plain(h1).toLowerCase();
+  if (!key) return html;
+  return html.replace(/<h([2-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (match, _level: string, inner: string) =>
+    plain(inner).toLowerCase() === key ? "" : match);
+}
+
+// Seobility „Strukturproblem“: keine übersprungenen Ebenen (h2 → h4). Die H1 kommt aus der Vorlage, der Inhalt beginnt
+// deshalb mit h2. Gleich tiefe Geschwister bleiben gleich tief (h2, h4, h4, h3 → h2, h3, h3, h3).
+export function withoutHeadingSkips(html: string, base = 1): string {
+  const stack: Array<{ original: number; level: number }> = [];
+  let open = 0;
+  return html.replace(/<(\/?)h([1-6])\b([^>]*)>/gi, (_match, close: string, levelText: string, attrs: string) => {
+    // Überschriften verschachteln sich nicht: das schließende Tag gehört zur zuletzt geöffneten.
+    if (close) return `</h${open}>`;
+    const original = Number(levelText);
+    while (stack.length && stack[stack.length - 1].original >= original) stack.pop();
+    const parent = stack.length ? stack[stack.length - 1].level : base;
+    open = Math.max(2, Math.min(original, parent + 1));
+    stack.push({ original, level: open });
+    return `<h${open}${attrs}>`;
+  });
+}
+
+// Seobility „Probleme mit Strong-/Bold-Tags“ (viele, leere, zu lange, doppelte): höchstens `max` Hervorhebungen bleiben
+// <strong>; weitere, doppelte und lange werden zu <span class="em-strong"> (gleiche Optik per CSS), leere entfallen.
+export function limitStrong(html: string, max = 4): string {
+  const seen = new Set<string>();
+  let kept = 0;
+  return html.replace(/<(strong|b)\b([^>]*)>([\s\S]*?)<\/\1>/gi, (match, _tag: string, attrs: string, inner: string) => {
+    const text = plain(inner);
+    // Leer: Tag entfällt, ein enthaltenes Leerzeichen bleibt (sonst kleben die Nachbarwörter zusammen).
+    if (!text) return inner.replace(/&nbsp;| /g, " ").trim() ? inner : /\s|&nbsp;/.test(inner) ? " " : "";
+    const key = text.toLowerCase();
+    const keep = kept < max && text.length <= 70 && !seen.has(key);
+    seen.add(key);
+    if (keep) {
+      kept += 1;
+      return match;
+    }
+    return `<span class="em-strong"${attrs.replace(/\sclass="[^"]*"/i, "")}>${inner}</span>`;
+  });
+}
+
+export function cleanMagazineHtml(html: string, h1: string): string {
+  return limitStrong(withoutHeadingSkips(withoutH1Repeat(withoutEmptyHeadings(html), h1)));
+}

@@ -48,7 +48,7 @@ So entstand zusätzlich ein <strong>Magazin</strong>, das wir kontinuierlich aus
 dass man sich darauf verlassen kann.</p>
 <h2>Pinterest &amp; YouTube – Tierliebe sichtbar machen</h2>
 <p>Heute wächst Tierisch-verliebt nicht nur auf der Website, sondern auch über weitere Kanäle.<br />
-Wir bauen unseren <a href="/social-media/"><strong>Pinterest-Kanal</strong> und unseren <strong>YouTube-Kanal</strong> </a>kontinuierlich aus,<br />
+Wir bauen unseren <a href="/ueber-uns/social-media/"><strong>Pinterest-Kanal</strong> und unseren <strong>YouTube-Kanal</strong> </a>kontinuierlich aus,<br />
 um Tierwissen und Inspiration dorthin zu bringen, wo Menschen täglich unterwegs sind.</p>
 <p>Besonders bei Hunderassen und Tier-Themen zeigt sich immer wieder:<br />
 Wer Tiere liebt, liest nicht nur – er fühlt mit. Und genau diese Mischung aus Information und Emotion<br />

@@ -1,5 +1,6 @@
 ---
 title: "Mäuse als Haustiere"
+h1: "Mäuse als Haustiere: Haltung, Kosten und Ernährung"
 slug: "maus"
 type: page
 wpId: 1582

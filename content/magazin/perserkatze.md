@@ -1,5 +1,6 @@
 ---
 title: "Perserkatze"
+h1: "Perserkatze: Charakter, Herkunft und Pflege der Rasse"
 slug: "perserkatze"
 type: page
 wpId: 303
@@ -9,7 +10,7 @@ author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/perserkatze.jpg"
 imageAlt: "Perserkatze in weiß"
-seoTitle: "Perserkatze - Portrait"
+seoTitle: "Perserkatze: Charakter & Pflege"
 description: "Du hast Fragen zu einer Perserkatze? Alles zu Herkunft, Rassenmekmalen, Charakter, Haltung, Pflege und Ernährung liest du hier."
 excerpt: "<p>Die Perserkatze gehörten zu den beliebtesten und den ältesten Rasse-Katzen. Sie ist eine typische Vertreterin der Langhaarkatzen. Durch deutliche, spezifische</p>"
 ---

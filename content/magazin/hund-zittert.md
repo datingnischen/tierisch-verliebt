@@ -10,7 +10,7 @@ categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2019/06/hund-zittert.jpg"
 imageAlt: "Zittern bei Kälte durch Decke verhindern"
 seoTitle: "Hund zittert"
-description: "Dein Hund zittert? Hier liest über Mögliche Ursachen dieser Reaktion."
+description: "Dein Hund zittert? Freude, Angst, Überanstrengung, Schmerzen oder Kälte: So erkennst du die Ursache und weißt, wann du besser zum Tierarzt gehst."
 excerpt: "<p>Kälte, Freude, Anstrengung oder doch Angst? Die Ursachen für das Zittern eines Hundes können nicht unterschiedlicher sein. Dennoch ist es</p>"
 ---
 

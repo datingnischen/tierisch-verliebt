@@ -47,9 +47,9 @@ export function TierCityHub({ market }: { market: MarketCode }) {
             <h1>{hub.title}</h1>
             <p className="tvc-lead">{hub.description}</p>
             <ul className="tvh-stats">
-              <li><strong>{data.totals.cities}</strong><span>Gassi-Guides</span></li>
-              <li><strong>{data.totals.regions}</strong><span>{regionLabel.many}</span></li>
-              <li><strong>{data.totals.tips}</strong><span>Adressen &amp; Tipps</span></li>
+              <li><span className="sx-strong">{data.totals.cities}</span><span>Gassi-Guides</span></li>
+              <li><span className="sx-strong">{data.totals.regions}</span><span>{regionLabel.many}</span></li>
+              <li><span className="sx-strong">{data.totals.tips}</span><span>Adressen &amp; Tipps</span></li>
             </ul>
             <div className="tvc-actions">
               <a className="tvc-btn tvc-btn-primary" href={registrationUrl}>Kostenlos tierliebe Singles finden</a>
@@ -110,7 +110,7 @@ export function TierCityHub({ market }: { market: MarketCode }) {
           {GUIDE_CONTENT.map((entry) => (
             <div key={entry.topic} className={`tvh-inside-card tvc-t-${entry.topic}`}>
               <span className="tvc-idea-icon"><TopicIcon topic={entry.topic} /></span>
-              <strong>{TOPIC_LABELS[entry.topic]}</strong>
+              <span className="sx-strong">{TOPIC_LABELS[entry.topic]}</span>
               <p>{entry.text}</p>
               {data.totals.topicCounts[entry.topic] ? <em>in {data.totals.topicCounts[entry.topic]} von {data.totals.cities} Städten</em> : null}
             </div>

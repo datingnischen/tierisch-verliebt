@@ -1,5 +1,6 @@
 ---
 title: "Kaninchen"
+h1: "Kaninchen als Haustiere: Ernährung, Pflege und Haltung"
 slug: "kaninchen"
 type: page
 wpId: 1563
@@ -9,7 +10,7 @@ author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/09/Kaninchen-e1632724210819.jpg"
 imageAlt: "Kaninchen"
-seoTitle: "Kaninchen anschaffen"
+seoTitle: "Kaninchen als Haustiere: Pflege & Haltung"
 description: "Du möchtest ein Kaninchen halten? Antworten zu Wesen, Ernährung und Haltung in der Wohnung oder im Außengehege."
 excerpt: "<p>Kaninchen sind nach Hunden und Katzen die drittbeliebtesten Haustiere für deutsche Tierhalter. Diese werden gern als bescheidene und pflegeleichte Tiere</p>"
 ---

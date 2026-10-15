@@ -131,7 +131,7 @@ function MagazineConversionRail({
 
       <div className="magazine-conversion-card magazine-conversion-card-online">
         <span className="eyebrow eyebrow-muted">Gerade online</span>
-        <h3>Wer ist gerade auf tierisch-verliebt.de online?</h3>
+        <p className="magazine-conversion-title">Wer ist gerade auf tierisch-verliebt.de online?</p>
         <div className="magazine-online-frame-wrap">
           <iframe
             title="Gerade online auf tierisch-verliebt.de"
@@ -145,7 +145,7 @@ function MagazineConversionRail({
 
       <div className="magazine-conversion-card magazine-conversion-card-reasons">
         <span className="eyebrow eyebrow-muted">Warum hier?</span>
-        <h3>Gute Gründe für den Einstieg</h3>
+        <p className="magazine-conversion-title">Gute Gründe für den Einstieg</p>
         <ul className="magazine-reason-list" aria-label="Vorteile der Singlebörse">
           <li>
             <span className="magazine-reason-icon" aria-hidden="true">🐾</span>
@@ -355,7 +355,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                   <span className="tvm-badge-icon" aria-hidden="true"><MagazineCategoryIcon slug={magazineAnimal} /></span>
                   {BREED_EYEBROW[magazineAnimal] ?? "Rasseporträt"} · Steckbrief &amp; Ratgeber
                 </span>
-                <h1>{entry.title}</h1>
+                <h1>{entry.heading || entry.title}</h1>
                 <p className="tvc-lead">{truncateAtWord(entryIntro(entry), 230)}</p>
                 <div className="tvm-article-meta">
                   {entry.authorName ? (
@@ -411,7 +411,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                 <span className="tvm-badge-icon" aria-hidden="true">{articleCategory ? <MagazineCategoryIcon slug={articleCategory.slug} /> : <PawIcon />}</span>
                 {articleCategory ? decodeHtmlEntities(articleCategory.name) : entry.type === "post" ? "Magazin-Artikel" : "Magazin-Seite"}
               </span>
-              <h1>{entry.title}</h1>
+              <h1>{entry.heading || entry.title}</h1>
               <p className="tvc-lead">{slug === "christian" ? CHRISTIAN_PAGE_DESCRIPTION : heroLead(entry)}</p>
               <div className="tvm-article-meta">
                 {entry.authorName ? (

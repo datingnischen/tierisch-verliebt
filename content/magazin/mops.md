@@ -1,5 +1,6 @@
 ---
 title: "Mops – Das Portrait"
+h1: "Mops im Portrait: Charakter, Aktivitäten und Ernährung"
 slug: "mops"
 type: page
 wpId: 355

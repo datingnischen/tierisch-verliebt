@@ -61,7 +61,7 @@ export function getFaqTopics(market: FaqMarket): FaqTopic[] {
         {
           question: "Kostet die Registrierung etwas?",
           answer: "Nein, die Registrierung ist kostenlos. Welche weiteren Funktionen es gibt und zu welchen Bedingungen, siehst du direkt auf der Plattform während und nach der Anmeldung.",
-          links: [{ label: "Kostenlos registrieren", path: "/registration/?AID=location", platform: true }],
+          links: [{ label: "Kostenlos Profil anlegen", path: "/registration/?AID=location", platform: true }],
         },
         {
           question: "Wie melde ich mich an?",

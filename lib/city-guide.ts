@@ -1,4 +1,5 @@
 import { withTrailingSlash, type MarketCode } from "#markets";
+import { limitStrong } from "#html-cleanup";
 import nlData from "../data/nl-partnersuche.json" with { type: "json" };
 
 /**
@@ -131,17 +132,22 @@ function countAnimals(text: string): GuideAnimal[] {
   return ANIMAL_RULES.filter(([, rule, min]) => (value.match(rule)?.length ?? 0) >= min).map(([animal]) => animal);
 }
 
-export function buildCityGuide(input: { market: MarketCode; path?: string; contentHtml: string; imageUrl?: string | null; sourceAttributionUrl?: string | null }): CityGuide {
+export function buildCityGuide(input: { market: MarketCode; path?: string; title?: string; contentHtml: string; imageUrl?: string | null; sourceAttributionUrl?: string | null }): CityGuide {
   let html = stripHeroImage(input.contentHtml, input.imageUrl);
   const credit = html.match(CREDIT);
   html = html.replace(CREDIT, "").replace(EMPTY_PARAGRAPH, "").replace(/<hr\s*\/?>\s*$/i, "").trim();
   // Eigene Seiten-URLs im ICONY-Text enden auf "/" (spart die 308-Umleitung), Dateien bleiben unverändert.
   html = html.replace(OWN_PAGE_LINK, (_, origin: string, path: string) => `href="${origin}${withTrailingSlash(path)}"`);
+  // Seobility „viele Strong-Tags“: weitere Hervorhebungen als <span class="em-strong"> (gleiche Optik).
+  html = limitStrong(html);
 
   const parts: { heading: string | null; html: string }[] = [{ heading: null, html: "" }];
   let cursor = 0;
   // Manche Texte (z. B. Innsbruck) gliedern nur mit h3: dann wird dort geteilt
   const hasH2 = [...html.matchAll(HEADING(2))].some((match) => plainText(match[1]));
+  // „Diese Städte könnten auch interessant für Sie sein“ steht manchmal als h3 in einem Kapitel: als eigenes Kapitel
+  // behandeln, damit die Vorlage die Liste ersetzt (sonst doppelte Überschrift und Linkliste).
+  if (hasH2) html = html.replace(/<h([3-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (match, _level: string, inner: string) => (RELATED_HEADING.test(plainText(inner)) ? `<h2>${inner}</h2>` : match));
   for (const match of html.matchAll(HEADING(hasH2 ? 2 : 3))) {
     parts[parts.length - 1].html += html.slice(cursor, match.index);
     cursor = (match.index ?? 0) + match[0].length;
@@ -159,10 +165,14 @@ export function buildCityGuide(input: { market: MarketCode; path?: string; conte
   const sections: GuideSection[] = [];
   const usedIds = new Set<string>();
   for (const part of parts.slice(1)) {
-    const heading = plainText(part.heading ?? "");
+    let heading = plainText(part.heading ?? "");
     if (RELATED_HEADING.test(heading)) {
       related = relatedLinks(part.html, input.market).filter((link) => link.path !== input.path);
       continue;
+    }
+    // Kapitel, das wörtlich die H1 wiederholt („Tierfreundliche Stadt Köln“): Seobility „doppelte Überschrift“.
+    if (input.title && heading.toLowerCase() === plainText(input.title).toLowerCase()) {
+      heading = /^Tierfreundliche Stadt /i.test(heading) ? heading.replace(/^Tierfreundliche Stadt /i, "Tierfreundliches ") : `${heading} im Überblick`;
     }
     let id = slugify(heading) || `abschnitt-${sections.length + 1}`;
     while (usedIds.has(id)) id = `${id}-${sections.length + 1}`;

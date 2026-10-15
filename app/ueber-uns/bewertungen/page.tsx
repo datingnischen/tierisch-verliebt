@@ -6,6 +6,7 @@ import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, ABOUT_REVIEWS_PATH, aboutReviewsCanonical } from "@/lib/about-section";
 import { getReviewsPage } from "@/lib/icony-static-pages";
+import { limitStrong } from "@/lib/html-cleanup";
 
 export const revalidate = 3600;
 
@@ -56,7 +57,8 @@ export default async function AboutReviewsPage() {
       <SiteJsonLd page={{ type: "AboutPage", url: aboutReviewsCanonical(), name: page.title, description: page.description }} />
       <div className="tvc-wrap tva-body">
       <section className="rich-content">
-        <div dangerouslySetInnerHTML={{ __html: page.contentHtml }} />
+        {/* ICONY-Text nennt die Marke viermal fett: Seobility „doppelte Strong-Tags“. */}
+        <div dangerouslySetInnerHTML={{ __html: limitStrong(page.contentHtml) }} />
       </section>
 
       {expert ? (
@@ -66,6 +68,7 @@ export default async function AboutReviewsPage() {
             eyebrow="Unser Datingexperte"
             title="Echte Bewertungen, unabhängige Vergleichsportale und ein sichtbarer Experte: So kannst du tierisch-verliebt einschätzen, bevor du dich anmeldest."
             primaryLabel="Zum Expertenprofil"
+            variant="compact"
           />
         </section>
       ) : null}

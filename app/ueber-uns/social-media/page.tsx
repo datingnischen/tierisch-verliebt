@@ -108,6 +108,7 @@ export default async function AboutSocialMediaPage() {
             eyebrow="Unser Datingexperte"
             title="Bleib über die offiziellen Social-Media-Kanäle von tierisch-verliebt mit der Community, neuen Geschichten und tierlieben Themen in Kontakt."
             primaryLabel="Zum Expertenprofil"
+            variant="compact"
           />
         </section>
       ) : null}

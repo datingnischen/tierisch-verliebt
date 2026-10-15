@@ -11,7 +11,9 @@
     "#magazine-store": "./lib/magazine-store.ts",
     "#static-asset": "./lib/static-asset.ts",
     "#wp-rest-paths": "./lib/wp-rest-paths.ts",
-    "#teaser-image": "./lib/teaser-image.ts"
+    "#teaser-image": "./lib/teaser-image.ts",
+    "#html-cleanup": "./lib/html-cleanup.ts",
+    "#link-targets": "./lib/link-targets.ts"
   },
   "scripts": {
     "dev": "next dev",

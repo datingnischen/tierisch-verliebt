@@ -35,7 +35,8 @@ function escapeHtml(text: string) {
 
 export function getMagazineFaqSubject(title: string) {
   const plain = decodeHtmlEntities(title).trim();
-  const [subject] = plain.split(/\s+[–—|]\s+|\s*:\s+/);
+  const [subject, rest] = plain.split(/\s+[–—|]\s+|\s*:\s+/);
+  if (rest && /^(portrait|porträt) zu\b/i.test(subject)) return rest.trim();
   return (subject || plain).trim();
 }
 

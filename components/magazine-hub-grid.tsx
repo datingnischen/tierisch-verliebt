@@ -36,6 +36,9 @@ export function MagazineHubGrid({ links, entries, title, emoji, promo }: Props) 
     };
   });
   const letters = [...new Set(tiles.map((tile) => tile.letter))];
+  // Kleine Serien (z. B. Ragdoll-Charakter, -Ernährung, -Haltung) zeigen dieselben Anrisse auf jeder Serienseite:
+  // Seobility wertet das als Duplicate Content. Anrisse daher nur in den großen Übersichten.
+  const showTeasers = tiles.length >= 12;
 
   return (
     <section className="hub-grid-section" aria-labelledby="hub-grid-titel">
@@ -68,19 +71,20 @@ export function MagazineHubGrid({ links, entries, title, emoji, promo }: Props) 
           return (
             <Fragment key={tile.slug}>
             <article className="hub-tile" id={firstOfLetter ? `hub-${tile.letter.toLowerCase()}` : undefined}>
-              <Link href={href} className="hub-tile-media" tabIndex={-1} aria-hidden="true">
+              {/* Verlinkt ist nur der Name (eindeutiger, kurzer Linktext); .card-link::after macht die Kachel klickbar. */}
+              <span className="hub-tile-media" aria-hidden="true">
                 {tile.image ? (
                   <img src={tile.image} alt={tile.label} loading="lazy" decoding="async" />
                 ) : (
                   <span className="hub-tile-fallback">{emoji}</span>
                 )}
                 {tile.badge ? <span className="hub-tile-badge">{tile.badge}</span> : null}
-              </Link>
+              </span>
               <div className="hub-tile-body">
-                <h3>
-                  <Link href={href}>{tile.label}</Link>
-                </h3>
-                {tile.teaser ? <p>{tile.teaser}</p> : null}
+                <span className="hub-tile-title">
+                  <Link className="card-link" href={href}>{tile.label}</Link>
+                </span>
+                {showTeasers && tile.teaser ? <p>{tile.teaser}</p> : null}
                 {tile.traits.length ? (
                   <ul className="hub-tile-traits" aria-label={`Eckdaten ${tile.label}`}>
                     {tile.traits.map((trait) => (
@@ -88,23 +92,23 @@ export function MagazineHubGrid({ links, entries, title, emoji, promo }: Props) 
                     ))}
                   </ul>
                 ) : null}
-                <Link className="hub-tile-cta" href={href}>
-                  Porträt lesen <span aria-hidden="true">→</span>
-                </Link>
+                <span className="hub-tile-cta" aria-hidden="true">
+                  Porträt lesen <span>→</span>
+                </span>
               </div>
             </article>
             {index === PROMO_AFTER - 1 ? (
-              <a className="hub-tile hub-tile-promo" href={promo.href}>
+              <div className="hub-tile hub-tile-promo">
                 <span className="hub-tile-media">
                   <img src={promo.image} alt={promo.imageAlt} loading="lazy" decoding="async" />
                 </span>
                 <span className="hub-tile-body">
                   <span className="eyebrow">Singlebörse</span>
-                  <strong>Lieber mit jemandem teilen?</strong>
+                  <strong><a className="card-link" href={promo.href}>Lieber mit jemandem teilen?</a></strong>
                   <span>Hier triffst du {promo.audience}.</span>
-                  <span className="button button-primary">Kostenlos registrieren</span>
+                  <span className="button button-primary" aria-hidden="true">Kostenlos registrieren</span>
                 </span>
-              </a>
+              </div>
             ) : null}
             </Fragment>
           );
