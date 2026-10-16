@@ -46,3 +46,7 @@ test("one link text points to one target across the magazine", () => {
   // Externe Links bleiben unberührt.
   assert.equal(c.content, '<a href="https://example.com/">Futter</a>');
 });
+
+test("doppelt verschachtelte Hervorhebungen ergeben gültiges HTML", () => {
+  assert.equal(limitStrong("<strong>a</strong><strong>a</strong><strong><strong>T</strong></strong>"), "<strong>a</strong><span class=\"em-strong\">a</span><strong>T</strong>");
+});
