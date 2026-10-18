@@ -2,6 +2,7 @@ import { cache } from "react";
 import { ABOUT_SOCIAL_MEDIA_PATH } from "@/lib/about-section";
 import { SITE_URL, decodeHtmlEntities, stripHtml } from "@/lib/magazine";
 import { withTrailingSlash } from "@/lib/markets";
+import { REVIEWS_SNAPSHOT_HTML } from "@/lib/icony-reviews-snapshot";
 
 const SOURCE_URL = "https://tierisch-verliebt.de/social-media/";
 const REVIEWS_SOURCE_URL = "https://tierisch-verliebt.de/bewertungen-und-erfahrungen/";
@@ -109,8 +110,9 @@ function originalImageUrl(url?: string) {
   return url?.replace(/(static-cms\.icony-hosting\.de\/cms\/[0-9A-F]+)\/400\//, "$1/");
 }
 
+// Die ICONY-Quelle ist seit 15.10.2026 weg (410); ein Live-Abruf ließ /ueber-uns/ und /ueber-uns/bewertungen/ mit 500 ausfallen.
 export const getReviewsPage = cache(async (): Promise<ImportedStaticPage> => {
-  const html = await fetchText(REVIEWS_SOURCE_URL);
+  const html = REVIEWS_SNAPSHOT_HTML;
   const title = getTitle(html) || "Bewertung und Erfahrungen zu tierisch-verliebt.de";
   const normalized = removeEmojiOnlyParagraphs(normalizeImportedHtml(extractPanelAfterH1(html)));
   const { imageUrl, imageAlt } = extractFirstImage(normalized);
