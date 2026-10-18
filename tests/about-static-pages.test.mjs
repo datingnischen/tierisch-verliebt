@@ -7,7 +7,9 @@ import { access, readFile } from "node:fs/promises";
 // /ueber-uns/ und /ueber-uns/bewertungen/ mit 500 (live hinter nginx: 502).
 
 const repoRoot = new URL("../", import.meta.url);
-const readRepoFile = (relativePath) => readFile(new URL(relativePath, repoRoot), "utf8");
+// Git checkt auf Windows mit CRLF aus; die Prüfungen arbeiten mit LF.
+const readRepoFile = (relativePath) =>
+  readFile(new URL(relativePath, repoRoot), "utf8").then((text) => text.replace(/\r\n/g, "\n"));
 const exists = (relativePath) => access(new URL(relativePath, repoRoot)).then(() => true, () => false);
 
 function frontmatter(markdown) {
