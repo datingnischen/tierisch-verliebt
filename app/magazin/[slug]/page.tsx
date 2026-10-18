@@ -12,6 +12,7 @@ import "@/components/city-page/tier-city-page.css";
 import "../magazin-hub.css";
 import "./magazin-article.css";
 import "./magazine-sources.css";
+import "./magazine-press.css";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { staticAsset } from "@/lib/static-asset";
 import {

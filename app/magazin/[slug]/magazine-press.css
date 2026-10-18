@@ -1,0 +1,111 @@
+/* Sammelseite Bekannt aus (/magazin/bekannt-aus/): Presseerwähnungen als Karten. */
+.rich-content .press-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 8px 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.rich-content .press-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 12px;
+  margin: 0;
+  padding: 20px 22px 18px;
+  border-top: 5px solid #c02e2e;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 12px 26px rgba(70, 30, 20, 0.08), inset 0 0 0 1px #eadcd0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rich-content .press-card::before,
+.rich-content .press-card::marker {
+  display: none;
+  content: none;
+}
+
+.rich-content .press-card:hover,
+.rich-content .press-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 36px rgba(70, 30, 20, 0.14), inset 0 0 0 1px #eadcd0;
+}
+
+.rich-content .press-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+
+.rich-content .press-outlet {
+  color: #4a1414;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.rich-content .press-card-head time {
+  margin-left: auto;
+  color: #635656;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.rich-content .press-quote {
+  color: #2f2424;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.rich-content .press-link {
+  justify-self: start;
+  color: #29842c;
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.rich-content .press-link:hover,
+.rich-content .press-link:focus-visible {
+  text-decoration: underline;
+}
+
+.rich-content .press-link--none {
+  color: #635656;
+  font-weight: 600;
+}
+
+.rich-content .press-cards--archive .press-card {
+  border-top-color: #b9a99b;
+  background: #fbf6ef;
+  box-shadow: inset 0 0 0 1px #eadcd0;
+}
+
+.rich-content .press-cards--archive .press-outlet {
+  color: #5b4a44;
+}
+
+.rich-content .press-badge {
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: #eadcd0;
+  color: #5b4a44;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rich-content .press-archive-note {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 480px) {
+  .rich-content .press-cards {
+    grid-template-columns: 1fr;
+  }
+}
