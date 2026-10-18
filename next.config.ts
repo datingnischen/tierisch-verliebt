@@ -36,7 +36,7 @@ export default function nextConfig(phase: string): NextConfig {
       // Alte WordPress-URLs unter /magazin/ (Autoren-Platzhalter, Archive, Feeds, Sitemaps, Admin).
       // Die Sitemap bleibt unter /magazin/sitemap.xml: Auf der Live-Domain reicht nginx nur /magazin/… an Vercel
       // durch, /sitemap.xml beantwortet die ICONY-Plattform mit 404 (robots.txt dort verweist auf sitemap.php).
-      // Auf der Live-Domain gelten die Pfade ohne Präfix, auf Vorschau-Hosts (vercel.app) liegt alles unter /de.
+      // Auf der Live-Domain gelten die Pfade ohne Präfix; nginx reicht sie intern als /de/… an Vercel weiter.
       const legacy: Array<[string, string]> = [
         ["/magazin/author/redaktion", "/magazin/christian/"],
         ["/magazin/author/tierliebe", "/magazin/christian/"],
@@ -53,7 +53,8 @@ export default function nextConfig(phase: string): NextConfig {
       ];
       return legacy.flatMap(([source, destination]) => [
         { source, destination, permanent: true },
-        { source: `/de${source}`, destination: `/de${destination}`, permanent: true },
+        // nginx ruft Vercel live mit /de/… auf; das Ziel bleibt ohne Präfix, sonst landet der Besucher auf /de/… (404).
+        { source: `/de${source}`, destination, permanent: true },
       ]);
     },
     async rewrites() {
