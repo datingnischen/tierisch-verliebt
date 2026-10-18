@@ -48,6 +48,8 @@ export default function nextConfig(phase: string): NextConfig {
         ["/magazin/sitemap_index.xml", "/magazin/sitemap.xml"],
         ["/magazin/wp-login.php", "/magazin/"],
         ["/magazin/wp-admin/:path*", "/magazin/"],
+        // Einzelbeitrag vom 18.10.2026 in der Sammelseite „Bekannt aus“ aufgegangen.
+        ["/magazin/meinbezirk-gastbeitrag-tierliebe-singles", "/magazin/bekannt-aus/"],
       ];
       return legacy.flatMap(([source, destination]) => [
         { source, destination, permanent: true },
