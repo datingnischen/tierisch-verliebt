@@ -21,8 +21,8 @@ function sourceFiles(dir) {
   });
 }
 
-test("every WordPress slug (84 posts, 178 pages) exists as a content file with the same type", () => {
-  assert.equal(slugs.posts.length, 84);
+test("every WordPress slug (85 posts, 178 pages) exists as a content file with the same type", () => {
+  assert.equal(slugs.posts.length, 85);
   assert.equal(slugs.pages.length, 178);
   const byType = { post: new Set(), page: new Set() };
   for (const doc of docs) byType[doc.data.type].add(doc.data.slug);
@@ -33,12 +33,12 @@ test("every WordPress slug (84 posts, 178 pages) exists as a content file with t
 
 test("the store serves the same entries and finds the percent-encoded slug decoded", () => {
   const store = loadMagazineStore();
-  assert.equal(store.posts.length, 84);
+  assert.equal(store.posts.length, 85);
   assert.equal(store.pages.length, 178);
   assert.ok(store.bySlug.get("sichere-spielzeug%d0%b5-fuer-den-hund"));
   assert.equal(store.bySlug.get("sichere-spielzeugе-fuer-den-hund")?.slug, "sichere-spielzeug%d0%b5-fuer-den-hund");
   const counted = store.categories.reduce((sum, category) => sum + category.count, 0);
-  assert.equal(counted, 87);
+  assert.equal(counted, 88);
 });
 
 test("posts are sorted newest first and carry a modified date for 'Aktualisiert am'", () => {

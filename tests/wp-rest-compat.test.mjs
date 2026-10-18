@@ -11,7 +11,7 @@ const root = new URL("../", import.meta.url);
 const source = (path) => readFileSync(new URL(path, root), "utf8");
 const get = (route, query = "") => handleWpRest(route, new URLSearchParams(query));
 const POSTS = (await getMagazinePosts()).length;
-assert.equal(POSTS, 84);
+assert.equal(POSTS, 85);
 assert.equal((await getMagazinePages()).length, 178);
 
 test("posts: Teaser-Abruf wie bei ICONY liefert drei Beiträge im WordPress-Format mit Gesamtzahl-Headern", () => {
