@@ -17,7 +17,6 @@ import {
   getAboutStoryPage,
 } from "@/lib/about-section";
 import { FAQ_PATH } from "@/lib/faq";
-import { formatPressDate, PRESS_MENTIONS } from "@/lib/press-mentions";
 import { getReviewsPage, getSocialMediaPage } from "@/lib/icony-static-pages";
 import { SOCIAL_CHANNELS } from "@/lib/social-channels";
 import { stripHtml } from "@/lib/magazine";
@@ -147,37 +146,6 @@ export default async function AboutOverviewPage() {
           ))}
         </div>
       </section>
-
-      {PRESS_MENTIONS.length > 0 ? (
-        <section className="tvc-wrap tva-section" aria-labelledby="tva-press-title">
-          <div className="tvc-head">
-            <span className="tvc-eyebrow">Veröffentlichungen</span>
-            <h2 id="tva-press-title">Unsere Beiträge in Medien</h2>
-            <p>Ratgeberbeiträge von tierisch-verliebt, die in Nachrichten- und Community-Portalen erschienen sind. Gastbeiträge kennzeichnen wir als solche.</p>
-          </div>
-          <ul className="tva-press">
-            {PRESS_MENTIONS.map((item) => (
-              <li key={item.url} className="tva-press-item">
-                <div className="tva-press-meta">
-                  <strong>{item.outlet}</strong>
-                  <span className="tva-press-label">{item.label}</span>
-                  <time dateTime={item.publishedOn}>{formatPressDate(item.publishedOn)}</time>
-                </div>
-                <h3>{item.title}</h3>
-                <p>{item.summary}</p>
-                {item.online ? (
-                  <a className="tva-press-link" href={item.url} target="_blank" rel="noopener nofollow">Beitrag lesen →</a>
-                ) : item.archiveUrl ? (
-                  <>
-                    <a className="tva-press-link" href={item.archiveUrl} target="_blank" rel="noopener nofollow">Archivierte Fassung ansehen →</a>
-                    <small className="tva-press-note">Original nicht mehr online{item.archivedOn ? ` · gesichert am ${formatPressDate(item.archivedOn)} von der Wayback Machine` : ""}</small>
-                  </>
-                ) : null}
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
 
       <section className="tvc-wrap tva-section" aria-label="Social Media">
         <div className="tva-social">
