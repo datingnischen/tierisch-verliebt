@@ -5,12 +5,13 @@ import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, ABOUT_REVIEWS_PATH, aboutReviewsCanonical } from "@/lib/about-section";
-import { getReviewsPage } from "@/lib/icony-static-pages";
+import { getReviewsPage } from "@/lib/about-pages";
 import { limitStrong } from "@/lib/html-cleanup";
 
 export const revalidate = 3600;
 
-// Eigener Titel und eigene Description: Die ICONY-Seite /bewertungen-und-erfahrungen/ bleibt online, gleiche Metadaten gälten als Dublette.
+// Eigener Titel und eigene Description (kürzer als die H1 aus content/ueber-uns/bewertungen.md); der Text selbst stammt von der
+// inzwischen gelöschten ICONY-Seite /bewertungen-und-erfahrungen/.
 const REVIEWS_TITLE = "Bewertungen & Erfahrungen";
 const REVIEWS_DESCRIPTION =
   "Was Mitglieder über tierisch-verliebt.de sagen: Bewertungen und Erfahrungen aus der Singlebörse für Tierfreunde, dazu unser Trustpilot-Profil.";

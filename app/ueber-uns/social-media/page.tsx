@@ -6,7 +6,7 @@ import { ExpertTrustCard } from "@/components/expert-trust-card";
 import { SiteJsonLd } from "@/components/site-json-ld";
 import { getAuthorProfile } from "@/lib/author-profiles";
 import { ABOUT_OVERVIEW_PATH, ABOUT_SOCIAL_MEDIA_PATH, aboutSocialMediaCanonical } from "@/lib/about-section";
-import { getSocialMediaPage } from "@/lib/icony-static-pages";
+import { getSocialMediaPage } from "@/lib/about-pages";
 import { SOCIAL_CHANNELS, SOCIAL_COMMUNITY_GROUP } from "@/lib/social-channels";
 
 export const revalidate = 3600;

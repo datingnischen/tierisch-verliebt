@@ -17,7 +17,7 @@ import {
   getAboutStoryPage,
 } from "@/lib/about-section";
 import { FAQ_PATH } from "@/lib/faq";
-import { getReviewsPage, getSocialMediaPage } from "@/lib/icony-static-pages";
+import { getReviewsPage, getSocialMediaPage } from "@/lib/about-pages";
 import { SOCIAL_CHANNELS } from "@/lib/social-channels";
 import { stripHtml } from "@/lib/magazine";
 
