@@ -6,6 +6,7 @@
   "imports": {
     "#markets": "./lib/markets.ts",
     "#nl-routes": "./lib/nl-routes.ts",
+    "#it-routes": "./lib/it-routes.ts",
     "#magazine": "./lib/magazine.ts",
     "#magazine-faq": "./lib/magazine-faq.ts",
     "#magazine-store": "./lib/magazine-store.ts",

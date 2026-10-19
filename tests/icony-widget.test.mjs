@@ -13,7 +13,8 @@ test("implements the safe elFlirt-style dynamic ICONY widget", async () => {
   assert.match(component, /sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"/);
   assert.match(component, /referrerPolicy="no-referrer"/);
   assert.match(component, /meta name="referrer" content="no-referrer"/);
-  assert.match(component, /Ausführlicher in \{props\.city\} suchen/);
+  assert.match(component, /Ausführlicher in \$\{city\} suchen/);
+  assert.match(component, /Cerca in modo dettagliato vicino a \$\{city\}/);
   assert.match(component, /Für Profilvorschauen bitte JavaScript aktivieren/);
   assert.doesNotMatch(component, /allow-same-origin/);
 });

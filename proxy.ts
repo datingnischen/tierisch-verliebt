@@ -11,7 +11,7 @@ export function requestHostname(request: NextRequest) { const direct=normalizeHo
 function handoff(url:string){const escaped=url.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");return new NextResponse(`<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=${escaped}"><title>Weiterleitung</title></head><body><p>Weiter zur bestehenden Plattform: <a href="${escaped}">${escaped}</a></p><script>location.replace(${JSON.stringify(url)})</script></body></html>`,{status:200,headers:{"cache-control":"no-store","content-type":"text/html; charset=utf-8"}});}
 
 const NO_SLASH_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
-const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it)(?:\/|$)/;
 
 // Seitenpfade enden immer auf "/" (wie die ICONY-Plattform). Ersetzt die eingebaute Slash-Umleitung von
 // Next.js (skipTrailingSlashRedirect): Die kennt nur den Upstream-Pfad. nginx ruft für tierisch-verliebt.at/faq
@@ -33,8 +33,9 @@ export function trailingSlashRedirect(request: NextRequest) {
   if (prefixed && isMarketCode(prefixed[1])) {
     // Auf einer Landesdomain entscheidet der Host über den Markt (wie in resolveMarketRequest).
     const market = marketForHostname(requestHostname(request)) ?? prefixed[1];
-    // NL is a pilot: prefix-preserving slash redirects must stay on the preview host.
-    if (market === "nl" && !marketForHostname(requestHostname(request))) {
+    // NL und die italienische Variante (/ch/it/) sind Piloten: Auf dem Vorschau-Host bleibt die Umleitung dort.
+    const pilot = market === "nl" || (market === "ch" && /^\/it(?:\/|$)/.test(prefixed[2]));
+    if (pilot && !marketForHostname(requestHostname(request))) {
       const destination = new URL(request.nextUrl.href);
       destination.pathname = target;
       return NextResponse.redirect(destination, 308);

@@ -17,6 +17,7 @@ const REGION_LABEL: Record<MarketCode, { one: string; many: string }> = {
   nl: { one: "provincie", many: "Provincies" },
   at: { one: "Bundesland", many: "Bundesländer" },
   ch: { one: "Kanton", many: "Kantone" },
+  it: { one: "regione", many: "Regioni" },
 };
 
 const GUIDE_CONTENT: { topic: GuideTopic; text: string }[] = [

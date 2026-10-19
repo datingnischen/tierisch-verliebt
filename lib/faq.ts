@@ -11,7 +11,7 @@ export type FaqLink = { label: string; path: string; platform?: boolean; deOnly?
 export type FaqItem = { question: string; answer: string; links?: FaqLink[] };
 export type FaqTopic = { id: string; title: string; items: FaqItem[] };
 
-export type FaqMarket = Exclude<MarketCode, "nl">;
+export type FaqMarket = Exclude<MarketCode, "nl" | "it">;
 
 export function isFaqMarket(value: string): value is FaqMarket {
   return value === "de" || value === "at" || value === "ch";

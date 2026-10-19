@@ -1,6 +1,8 @@
 import data from "../data/partnersuche-markets.json" with { type: "json" };
 import nlData from "../data/nl-partnersuche.json" with { type: "json" };
+import itData from "../data/it-partnersuche.json" with { type: "json" };
 import { staticAsset } from "#static-asset";
+import { IT_PLATFORM } from "#it-routes";
 import type { MarketCode } from "./markets.ts";
 
 export type MarketCityPage = {
@@ -56,7 +58,7 @@ type HubCopy = {
 
 const imports = data as Record<MarketCode, RawMarket>;
 
-const HUB_COPY: Record<Exclude<MarketCode, "nl">, HubCopy> = {
+const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
   de: {
     title: "Finde tierliebe Singles aus deiner Region",
     description: "Wähle deine Stadt und entdecke tierliebe Singles, lokale Treffpunkte und hilfreiche Tipps für einen entspannten Einstieg.",
@@ -184,11 +186,13 @@ export function withPostcodeSearch(page: MarketCityPage): MarketCityPage {
 
 export function getMarketCityPages(market: MarketCode): MarketCityPage[] {
   if (market === "nl") return nlCityPages();
+  if (market === "it") return itCityPages();
   return imports[market].pages.map(withPostcodeSearch);
 }
 
 export function getMarketCityPage(market: MarketCode, slug: string): MarketCityPage | null {
   if (market === "nl") return nlCityPages().find(page => page.slug === slug) ?? null;
+  if (market === "it") return itCityPages().find(page => page.slug === slug) ?? null;
   const page = imports[market].pages.find((entry) => entry.slug === slug);
   return page ? withPostcodeSearch(page) : null;
 }
@@ -197,6 +201,9 @@ export function getMarketPartnersucheHub(market: MarketCode) {
   const copy: HubCopy = market === "nl" ? {
     title: nlData.title, description: nlData.description,
     editorial: { heroImageUrl: staticAsset("/home/frontpage-visual-tierischverliebt.webp"), heroImageAlt: "Dierenliefde en dating", introParagraphs: nlData.introParagraphs, sections: nlData.sections },
+  } : market === "it" ? {
+    title: itData.title, description: itData.description,
+    editorial: { heroImageUrl: null, heroImageAlt: null, introParagraphs: itData.introParagraphs, sections: itData.sections },
   } : HUB_COPY[market];
   return {
     market,
@@ -228,4 +235,23 @@ function nlCityPages(): MarketCityPage[] {
     searchUrl: "https://tierisch-verliebt.nl/suche/?AID=location",
     icony: { platformId: "", zip: page.postcode, country: 31, frameUrl: "" },
   }));
+}
+
+
+
+function itCityPages(): MarketCityPage[] {
+  return itData.pages.map(page => withPostcodeSearch({
+    market: "it", slug: page.slug, path: `/${page.slug}`,
+    sourceUrl: `https://tierisch-verliebt.ch/it/${page.slug}/`,
+    title: page.title, cityName: page.cityName, description: page.description, lead: page.lead,
+    imageUrl: null, imageAlt: null,
+    contentHtml: page.contentHtml, sourceAttributionUrl: null,
+    registrationUrl: IT_PLATFORM.registrationUrl,
+    searchUrl: IT_PLATFORM.searchUrl,
+    icony: { platformId: "tierischverliebtch", zip: page.postcode, country: 41, frameUrl: "" },
+  }));
+}
+
+export function getItFaq() {
+  return itData.faq;
 }

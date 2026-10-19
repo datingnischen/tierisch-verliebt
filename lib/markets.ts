@@ -1,6 +1,8 @@
 import { isNlEditorialPath } from "#nl-routes";
+import { isItEditorialPath } from "#it-routes";
 
-export const MARKET_CODES = ["de", "at", "ch", "nl"] as const;
+// "it" ist kein eigenes Land, sondern die italienischsprachige Variante unter tierisch-verliebt.ch/it/.
+export const MARKET_CODES = ["de", "at", "ch", "nl", "it"] as const;
 export type MarketCode = (typeof MARKET_CODES)[number];
 export type RegionalMarket = Exclude<MarketCode, "de">;
 
@@ -8,8 +10,10 @@ export type MarketConfig = {
   code: MarketCode;
   countryName: string;
   domain: string;
-  locale: "de-DE" | "de-AT" | "de-CH" | "nl-NL";
+  locale: "de-DE" | "de-AT" | "de-CH" | "nl-NL" | "it-CH";
   platformId: string;
+  /** Pfadpräfix auf der Domain, nur bei Sprachvarianten (it → /it). */
+  basePath?: string;
 };
 
 const MARKETS: Record<MarketCode, MarketConfig> = {
@@ -18,6 +22,8 @@ const MARKETS: Record<MarketCode, MarketConfig> = {
   ch: { code: "ch", countryName: "Schweiz", domain: "tierisch-verliebt.ch", locale: "de-CH", platformId: "tierischverliebtch" },
   // The Dutch ICONY platform has not been provisioned: never request profiles under an invented ID.
   nl: { code: "nl", countryName: "Nederland", domain: "tierisch-verliebt.nl", locale: "nl-NL", platformId: "" },
+  // Italienischer Pilot für das Tessin: gleiche Schweizer ICONY-Plattform und Mitglieder wie .ch.
+  it: { code: "it", countryName: "Svizzera italiana", domain: "tierisch-verliebt.ch", locale: "it-CH", platformId: "tierischverliebtch", basePath: "/it" },
 };
 
 /**
@@ -53,7 +59,8 @@ export function withTrailingSlash(pathname: string): string {
 /** Absolute URL auf der Live-Domain des Markts, Seitenpfade mit Schrägstrich am Ende. */
 export function publicUrl(market: MarketCode, pathname = "/"): string {
   const trimmed = pathname.replace(/^\/+/, "");
-  return `https://${getMarket(market).domain}${withTrailingSlash(`/${trimmed}`)}`;
+  const { domain, basePath = "" } = getMarket(market);
+  return `https://${domain}${withTrailingSlash(`${basePath}/${trimmed}`)}`;
 }
 
 /** Vorschau-Hosts (lokal, Vercel): Dort liegen alle Märkte unter /de, /at, /ch. */
@@ -65,7 +72,8 @@ export function isPreviewHost(hostname = ""): boolean {
 /** Pfad einer Next.js-Seite auf dem Vorschau-Host, z. B. ("ch", "/partnersuche/zuerich") → "/ch/partnersuche/zuerich/". */
 export function previewPath(market: MarketCode, pathname = "/"): string {
   const normalized = pathname === "/" ? "" : `/${pathname.replace(/^\/+/, "")}`;
-  return withTrailingSlash(`/${market}${normalized}`);
+  // Die italienische Variante liegt auf der Vorschau wie live unter der Schweizer Seite: /ch/it/…
+  return withTrailingSlash(`/${market === "it" ? "ch/it" : market}${normalized}`);
 }
 
 const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns|faq)(?:\/|$)/;
@@ -81,6 +89,8 @@ export function previewPathForUrl(href: string): string | null {
   const market = marketForHostname(url.hostname);
   if (!market || url.search) return null;
   const path = url.pathname || "/";
+  const italian = market === "ch" ? path.match(/^\/it(\/.*)?$/) : null;
+  if (italian) return isItEditorialPath(italian[1] || "/") ? `${previewPath("it", italian[1] || "/")}${url.hash}` : null;
   const served = market === "nl" ? isNlEditorialPath(path) : path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path);
   return served ? `${previewPath(market, path)}${url.hash}` : null;
 }
@@ -89,6 +99,7 @@ export type MarketRequestResolution =
   | { action: "pass" }
   | { action: "not-found" }
   | { action: "nl-pilot"; market: "nl"; pathname: string }
+  | { action: "it-pilot"; market: "it"; pathname: string }
   | { action: "rewrite"; market: "de"; pathname: string }
   | { action: "market-home"; market: RegionalMarket; pathname: string }
   | { action: "market-partnersuche"; market: RegionalMarket; pathname: string }
@@ -99,7 +110,7 @@ export type MarketRequestResolution =
   | { action: "redirect-platform"; market: RegionalMarket; url: string }
   | { action: "placeholder"; market: RegionalMarket; pathname: string; requestedPath: string };
 
-const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it)(?:\/|$)/;
 const PLATFORM_PATH = /^\/(?:login|registration|suche)(?:\/|$)/;
 const PASS_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
 const STATIC_FILE = /\.(?:avif|css|gif|ico|jpe?g|js|json|map|png|svg|webp|woff2?)$/i;
@@ -110,12 +121,19 @@ function shouldPass(pathname: string) {
 
 export function marketForHostname(hostname = ""): MarketCode | null {
   const normalized = hostname.toLowerCase().split(",")[0].trim().replace(/:\d+$/, "").replace(/^www\./, "");
-  return MARKET_CODES.find((market) => getMarket(market).domain === normalized) ?? null;
+  // "it" teilt sich die Domain mit "ch" und wird über den Pfad /it/ erkannt, nie über den Host.
+  return MARKET_CODES.find((market) => market !== "it" && getMarket(market).domain === normalized) ?? null;
 }
 
 function resolveRegional(market: RegionalMarket, requestedPath: string, productionHost: boolean): MarketRequestResolution {
   if (INTERNAL_PATH.test(requestedPath)) return { action: "not-found" };
   const path = requestedPath.length > 1 ? requestedPath.replace(/\/+$/, "") : requestedPath;
+  const italian = market === "ch" ? path.match(/^\/it(\/.*)?$/) : null;
+  if (italian) {
+    const rest = italian[1] || "/";
+    if (INTERNAL_PATH.test(rest) || !isItEditorialPath(rest)) return { action: "not-found" };
+    return { action: "it-pilot", market: "it", pathname: `/market-it${rest === "/" ? "" : rest}` };
+  }
   if (market === "nl") {
     if (path === "/robots.txt") return { action: "market-robots", market, pathname: "/market-robots/nl" };
     if (path === "/sitemap.xml") return { action: "market-sitemap", market, pathname: "/market-sitemap/nl" };

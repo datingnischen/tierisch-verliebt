@@ -1,6 +1,7 @@
 import { withTrailingSlash, type MarketCode } from "#markets";
 import { limitStrong } from "#html-cleanup";
 import nlData from "../data/nl-partnersuche.json" with { type: "json" };
+import itData from "../data/it-partnersuche.json" with { type: "json" };
 
 /**
  * Zerlegt den importierten ICONY-Stadttext in Kapitel, ohne ein Wort zu ändern:
@@ -33,15 +34,15 @@ export type CityGuide = {
 export type GuideAnimal = "hund" | "katze" | "pferd" | "kleintier" | "vogel";
 
 const TOPIC_RULES: [GuideTopic, RegExp][] = [
-  ["cat", /katze|katz\b|samtpfote|katten|kat\b/],
+  ["cat", /katze|katz\b|samtpfote|katten|kat\b|gatt/],
   ["groom", /friseur|fris[öo]r|frisur|salon|groomer|coiffeur|gestylt/],
   ["school", /schule|trainer|erziehung/],
-  ["vet", /tierarzt|tierärzt|klinik|dienstleist|service|versorg|anlaufstell|dienste|zahn zwickt|dierenzorg|dierenarts/],
+  ["vet", /tierarzt|tierärzt|klinik|dienstleist|service|versorg|anlaufstell|dienste|zahn zwickt|dierenzorg|dierenarts|veterinar|servizi/],
   ["stay", /hotel|pension|übernacht|unterbring|urlaub|berggasth/],
-  ["food", /café|cafe|restaurant|restaurand|lokal|gastronom|essen gehen|bistro|einkehr|genuss|terrasse|kulinar|koffie|terras/],
-  ["walk", /gassi|route|spazier|park|wiese|wald|freilauf|auslauf|rhein|aare|see\b|forst|natur|wander|promenade|hundeplatz|hundepl|gehege|weg\b|bergmannsweg|pfänder|treffpunkt|wandelen|wandeling/],
-  ["trip", /ausfl|sightseeing|zoo|tierpark|allee|hafen|garten|abend|flanier|entdeck|kaiserwerth|kö/],
-  ["love", /fazit|single|verlieb|herz|date|flirt|gemeinsam|partner|glück|lieb/],
+  ["food", /café|cafe|restaurant|restaurand|lokal|gastronom|essen gehen|bistro|einkehr|genuss|terrasse|kulinar|koffie|terras|caff/],
+  ["walk", /gassi|route|spazier|park|wiese|wald|freilauf|auslauf|rhein|aare|see\b|forst|natur|wander|promenade|hundeplatz|hundepl|gehege|weg\b|bergmannsweg|pfänder|treffpunkt|wandelen|wandeling|passegg|lungolago|argine|sentier/],
+  ["trip", /ausfl|sightseeing|zoo|tierpark|allee|hafen|garten|abend|flanier|entdeck|kaiserwerth|kö|gite|gita|escursion/],
+  ["love", /fazit|single|verlieb|herz|date|flirt|gemeinsam|partner|glück|lieb|incontr|amant/],
 ];
 
 export const TOPIC_LABELS: Record<GuideTopic, string> = {
@@ -58,8 +59,8 @@ export const TOPIC_LABELS: Record<GuideTopic, string> = {
 };
 
 const ANIMAL_RULES: [GuideAnimal, RegExp, number][] = [
-  ["hund", /hund|vierbeiner|gassi|welpe|hond/g, 2],
-  ["katze", /katze|katzen|samtpfote|kater|katten|kat\b/g, 1],
+  ["hund", /hund|vierbeiner|gassi|welpe|hond|\bcan[ei]\b/g, 2],
+  ["katze", /katze|katzen|samtpfote|kater|katten|kat\b|gatt/g, 1],
   ["pferd", /pferd|reit(?:en|stall|hof)/g, 1],
   ["kleintier", /kaninchen|meerschwein|nager|hamster/g, 1],
   ["vogel", /vögel|vogel|wellensittich|papagei/g, 1],
@@ -204,6 +205,7 @@ type Geo = { lat: number; lon: number; region: string };
 
 const GEO: Record<MarketCode, Record<string, Geo>> = {
   nl: Object.fromEntries(nlData.pages.map(page => [page.slug, page.geo])),
+  it: Object.fromEntries(itData.pages.map(page => [page.slug, page.geo])),
   de: {
     berlin: { lat: 52.52, lon: 13.405, region: "Berlin" },
     duesseldorf: { lat: 51.2277, lon: 6.7735, region: "Nordrhein-Westfalen" },
