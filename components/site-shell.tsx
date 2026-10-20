@@ -68,15 +68,15 @@ const logoByMarket: Record<MarketCode, { src: string; alt: string }> = {
   nl: { src: "", alt: "tierisch-verliebt.nl" },
   it: { src: "", alt: "tierisch-verliebt.ch" },
   de: {
-    src: "https://static2.icony-hosting.de/dyncontenta4a2c6ef760359a40c5972ce5e4dd552/img/tierischverliebt/logo.svg",
+    src: staticAsset("/brand/tierisch-verliebt-logo-de.svg"),
     alt: "tierisch-verliebt.de Logo",
   },
   at: {
-    src: "https://static2.icony-hosting.de/dyncontentcb72a5051616a0d0a687530951e79ac2/img/tierischverliebtat/logo.svg",
+    src: staticAsset("/brand/tierisch-verliebt-logo-at.svg"),
     alt: "tierisch-verliebt.at Logo",
   },
   ch: {
-    src: "https://static2.icony-hosting.de/dyncontent36672bdefe632c6e08d5c1e307546c4d/img/tierischverliebtch/logo.svg",
+    src: staticAsset("/brand/tierisch-verliebt-logo-ch.svg"),
     alt: "tierisch-verliebt.ch Logo",
   },
 };

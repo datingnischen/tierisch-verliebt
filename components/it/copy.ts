@@ -1,4 +1,5 @@
 import type { GuideAnimal, GuideTopic } from "@/lib/city-guide";
+import { staticAsset } from "@/lib/static-asset";
 
 export const ANIMAL_LABELS: Record<GuideAnimal, string> = {
   hund: "Cani", katze: "Gatti", pferd: "Cavalli", kleintier: "Piccoli animali", vogel: "Uccelli",
@@ -10,5 +11,5 @@ export const TOPIC_LABELS: Record<GuideTopic, string> = {
   trip: "Gite", love: "Amore e animali", paw: "In giro con l'animale",
 };
 
-/** Logo der Schweizer Plattform (ICONY), die italienische Variante gehört zu tierisch-verliebt.ch. */
-export const CH_LOGO = "https://static2.icony-hosting.de/dyncontent36672bdefe632c6e08d5c1e307546c4d/img/tierischverliebtch/logo.svg";
+/** Logo der Schweizer Plattform (Kopie im Repo, nicht vom ICONY-CMS), die italienische Variante gehört zu tierisch-verliebt.ch. */
+export const CH_LOGO = staticAsset("/brand/tierisch-verliebt-logo-ch.svg");

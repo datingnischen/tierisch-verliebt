@@ -63,8 +63,7 @@ const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
     title: "Finde tierliebe Singles aus deiner Region",
     description: "Wähle deine Stadt und entdecke tierliebe Singles, lokale Treffpunkte und hilfreiche Tipps für einen entspannten Einstieg.",
     editorial: {
-      heroImageUrl:
-        "https://static-cms.icony-hosting.de/cms/75D08CAE0856CA78597236DA7F19D9C1E4E994C46AA6489BD4C63826D5115870/1000/tierisch-de-partnersuche.jpg",
+      heroImageUrl: staticAsset("/cities/de/partnersuche-deutschland.jpg"),
       heroImageAlt: "Partnersuche für Tierfreunde in Deutschland",
       introParagraphs: [
         "Willkommen bei tierisch-verliebt.de – deiner Anlaufstelle für Singles, die ihre Liebe zu Tieren teilen. Wenn du auf der Suche nach einem Partner bist, der deine Leidenschaft für Tiere teilt, bist du bei uns genau richtig. Unsere Plattform bringt tierliebe Menschen zusammen, die mehr als nur eine gemeinsame Leidenschaft suchen.",
@@ -79,8 +78,7 @@ const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
     title: "Tierliebe Partnersuche in Österreich",
     description: "Entdecke tierliebe Singles und regionale Tipps in 15 österreichischen Städten – von Wien und Graz bis Bregenz und Eisenstadt.",
     editorial: {
-      heroImageUrl:
-        "https://static-cms.icony-hosting.de/cms/E809EBFBFA864125E7101AEB73EB50425F0461196A297D9FFFD4D82726A88CFE/1000/tierisch-at-partnersuche.jpg",
+      heroImageUrl: staticAsset("/cities/at/partnersuche-oesterreich.jpg"),
       heroImageAlt: "Partnersuche für Tierfreunde in Österreich",
       introParagraphs: [
         "Du bist Single, liebst Tiere und suchst nach Gleichgesinnten, mit denen du schöne Stunden verbringen kannst – am besten gemeinsam mit deinem Hund, deiner Katze oder einfach mit Tierliebe im Herzen? Dann bist du bei tierisch-verliebt.at genau richtig. Wir zeigen dir, wo Dating mit tierischem Bezug in deiner Stadt oder Region besonders gut funktioniert.",
@@ -90,8 +88,7 @@ const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
       sections: [
         {
           heading: "Warum Dating mit Tieren oft besser funktioniert",
-          imageUrl:
-            "https://static-cms.icony-hosting.de/cms/7A958FDE538DEF0EAA89FC110B6F9D1E060A50BA3C8BF3CD7E06F2B79BB48875/1000/tierisch-verliebt-at-(1).jpg",
+          imageUrl: staticAsset("/cities/at/partnersuche-dating-mit-tieren.jpg"),
           imageAlt: "Dating mit Hund und Tierliebe in Österreich",
           paragraphs: [
             "Tiere sind ehrliche Wesen – sie zeigen uns bedingungslose Zuneigung, sind treue Begleiter und bringen Ruhe in unseren oft hektischen Alltag. Wer mit Tieren lebt, hat meist gelernt, Rücksicht zu nehmen, Verantwortung zu tragen und echte Nähe zuzulassen. Eigenschaften, die auch in einer Partnerschaft wertvoll sind.",
@@ -107,8 +104,7 @@ const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
         },
         {
           heading: "Unser Versprechen: Liebe mit Herz und Pfote",
-          imageUrl:
-            "https://static-cms.icony-hosting.de/cms/FE7A88F29A7F1DE6C5213BCEAA9D14C7C092941BF7AA96F1C9FB663039052E1F/1000/tierisch-verliebt-at-(2).jpg",
+          imageUrl: staticAsset("/cities/at/partnersuche-liebe-mit-herz-und-pfote.jpg"),
           imageAlt: "Tierliebe Begegnung in Österreich",
           paragraphs: [
             "Bei tierisch-verliebt.at steht echte Verbindung im Mittelpunkt. Wir glauben daran, dass Partnerschaft mehr ist als ein Algorithmus – sie beginnt oft mit einem Lächeln, einem tierischen Funken oder dem Gefühl, verstanden zu werden. Unsere Plattform bringt genau diese Menschen zusammen.",
@@ -122,8 +118,7 @@ const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
     title: "Tierliebe Partnersuche in der Schweiz",
     description: "Entdecke tierliebe Singles und regionale Tipps in 15 Schweizer Städten – von Zürich und Bern bis Genf, Chur und Aarau.",
     editorial: {
-      heroImageUrl:
-        "https://static-cms.icony-hosting.de/cms/5BA07DAF93245C2C145137C1977BDBFA13787F3628246FC95A0DE52450366E3F/1000/tierish-ch-partnersuche.jpg",
+      heroImageUrl: staticAsset("/cities/ch/partnersuche-schweiz.jpg"),
       heroImageAlt: "Partnersuche für Tierfreunde in der Schweiz",
       introParagraphs: [
         "Die Liebe ist schon kompliziert genug – noch schwieriger wird’s, wenn man Haustiere hat und den oder die Richtige sucht, der oder die dieselbe Leidenschaft für Tiere teilt. Genau dafür gibt es Tierisch Verliebt CH: Wir bringen Singles mit Herz für Fellnasen, Federvieh und Co. zusammen. In vielen Schweizer Städten haben wir bereits Artikel mit Tipps, Inspirationen und Möglichkeiten zur Partnersuche speziell für Tierfreunde veröffentlicht.",
@@ -134,8 +129,7 @@ const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
       sections: [
         {
           heading: "Flirten mit Herz und Pfote: So klappt’s bei Tierfreunden",
-          imageUrl:
-            "https://static-cms.icony-hosting.de/cms/EA9AA871A3B9A9A221AB9EF499517D23A51ED91184ACF14670847179E5D138A3/1000/tierisch-verliebt-ch-(1).jpg",
+          imageUrl: staticAsset("/cities/ch/partnersuche-flirten-mit-herz-und-pfote.jpg"),
           imageAlt: "Tierfreunde beim Kennenlernen in der Schweiz",
           paragraphs: [
             "Flirten unter Tierfreunden hat einen entscheidenden Vorteil: Das Eis ist durch die gemeinsame Liebe zu Tieren meist schnell gebrochen. Ein Gespräch über Haustiere ist ein perfekter Einstieg, denn es wirkt authentisch, zeigt Einfühlungsvermögen und sorgt für gemeinsame Themen. Erwähne charmant Anekdoten über dein Tier, ohne dabei zu übertreiben, und zeige echtes Interesse an den Geschichten deines Gegenübers.",
@@ -184,17 +178,30 @@ export function withPostcodeSearch(page: MarketCityPage): MarketCityPage {
   return { ...page, searchUrl: url.toString() };
 }
 
+/**
+ * Bilder der DE/AT/CH-Stadtseiten liegen im Repo unter public/cities/<land>/ (Regel 2026-10-20: keine Bilder
+ * aus dem ICONY-CMS laden). Die Daten speichern Pfade wie "/cities/at/wien.jpg"; hier werden sie – auch im
+ * Fließtext – zur Adresse auf dem Asset-Host.
+ */
+function withLocalImages(page: MarketCityPage): MarketCityPage {
+  return {
+    ...page,
+    imageUrl: page.imageUrl ? staticAsset(page.imageUrl) : page.imageUrl,
+    contentHtml: page.contentHtml.replace(/(<img\b[^>]*\bsrc=")(\/[^"]+)"/gi, (_, prefix: string, src: string) => `${prefix}${staticAsset(src)}"`),
+  };
+}
+
 export function getMarketCityPages(market: MarketCode): MarketCityPage[] {
   if (market === "nl") return nlCityPages();
   if (market === "it") return itCityPages();
-  return imports[market].pages.map(withPostcodeSearch);
+  return imports[market].pages.map((page) => withPostcodeSearch(withLocalImages(page)));
 }
 
 export function getMarketCityPage(market: MarketCode, slug: string): MarketCityPage | null {
   if (market === "nl") return nlCityPages().find(page => page.slug === slug) ?? null;
   if (market === "it") return itCityPages().find(page => page.slug === slug) ?? null;
   const page = imports[market].pages.find((entry) => entry.slug === slug);
-  return page ? withPostcodeSearch(page) : null;
+  return page ? withPostcodeSearch(withLocalImages(page)) : null;
 }
 
 export function getMarketPartnersucheHub(market: MarketCode) {
