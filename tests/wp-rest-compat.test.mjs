@@ -189,10 +189,12 @@ test("proxy: wp-json und ?rest_route= antworten ohne Umleitung, auf Live-Domain 
   for (const path of ["/magazin/wp-json/wp/v2/posts?per_page=3&_embed", "/magazin/index.php?rest_route=/wp/v2/posts&_embed", "/magazin/?rest_route=/wp/v2/posts&_embed"]) {
     assert.match(proxy(new NextRequest(`https://tierisch-verliebt.vercel.app${path}`)).headers.get("x-middleware-rewrite") || "", /[?&]_embed=1/, path);
   }
-  // Das normale Magazin bleibt unberührt, andere Länderdomains haben keinen Endpunkt.
+  // Das normale Magazin bleibt unberührt.
   assert.equal(run("https://tierisch-verliebt.de/magazin/voegel-tierarzt").headers.get("location"), "https://tierisch-verliebt.de/magazin/voegel-tierarzt/");
   assert.doesNotMatch(run("https://tierisch-verliebt.de/magazin/").headers.get("x-middleware-rewrite") || "", /index\.php/);
-  assert.doesNotMatch(run("https://tierisch-verliebt.at/magazin/?rest_route=/wp/v2/posts").headers.get("x-middleware-rewrite") || "", /index\.php/);
+  // .at/.ch haben seit 2026-10-20 einen eigenen Länderknoten (tests/wp-market-teasers.test.mjs), .nl keinen Endpunkt.
+  assert.match(run("https://tierisch-verliebt.at/magazin/?rest_route=/wp/v2/posts").headers.get("x-middleware-rewrite") || "", /index\.php\?.*tv_market=at/);
+  assert.doesNotMatch(run("https://tierisch-verliebt.nl/magazin/?rest_route=/wp/v2/posts").headers.get("x-middleware-rewrite") || "", /index\.php/);
 });
 
 test("Routen: wp-json, index.php und Tracing sind verdrahtet; kein users-Endpunkt im Quelltext", () => {

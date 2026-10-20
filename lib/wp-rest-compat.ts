@@ -585,10 +585,10 @@ export function wpRestPreflight(): Response {
 }
 
 /** Gemeinsamer Einstieg für die index.php-/?rest_route=-Routen. */
-export function handleRestRouteQuery(url: string, method: string, fallbackLocation: string): Response {
+export function handleRestRouteQuery(url: string, method: string, fallbackLocation: string, source?: WpSource): Response {
   const params = new URL(url).searchParams;
   const route = params.get("rest_route");
   if (!route) return new Response(null, { status: 308, headers: { Location: fallbackLocation } });
   params.delete("rest_route");
-  return wpRestResponse(handleWpRest(route, params), method);
+  return wpRestResponse(handleWpRest(route, params, source), method);
 }

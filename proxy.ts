@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server.js";
 import { NextResponse } from "next/server.js";
-import { isWpRestPath, isWpRestRoot, restRewriteUrl } from "#wp-rest-paths";
+import { MARKET_TEASER_PARAM, isWpRestPath, isWpRestRoot, restRewriteUrl } from "#wp-rest-paths";
 import { isMarketCode, marketForHostname, publicUrl, resolveMarketRequest, withTrailingSlash, type MarketCode } from "#markets";
 
 const INTERNAL_REWRITE_TOKEN = globalThis.crypto.randomUUID();
@@ -49,13 +49,28 @@ export function trailingSlashRedirect(request: NextRequest) {
   return NextResponse.redirect(destination, 308);
 }
 
+// WordPress-kompatibler Magazin-Endpunkt (lib/wp-rest-compat.ts, Pfade in lib/wp-rest-paths.ts) direkt umschreiben (der Resolver unten würde den Query-String ohne Wert-Parameter
+// weitergeben). nginx ruft Vercel mit Host vercel.app und Länderpräfix auf (tierisch-verliebt.at/magazin/… →
+// /at/magazin/…); eine Landesdomain als Host entscheidet vor dem Präfix. Für .at/.ch hängt der Rewrite
+// tv_market an: Der Länderknoten liefert statt der .de-Beiträge die drei größten Städteseiten (lib/wp-market-teasers.ts).
+// Bei .de wird ein von außen gesetzter tv_market entfernt.
+export function wpRestRewrite(request: NextRequest) {
+  const { pathname, searchParams, href } = request.nextUrl;
+  const root = isWpRestRoot(pathname, searchParams);
+  if (!root && !isWpRestPath(pathname)) return null;
+  const market = marketForHostname(requestHostname(request)) ?? pathname.match(/^\/(de|at|ch)(?=\/|$)/)?.[1] ?? "de";
+  if (market !== "de" && market !== "at" && market !== "ch") return null;
+  const destination = restRewriteUrl(href, root ? "/magazin/index.php" : pathname.replace(/^\/(?:de|at|ch)(?=\/)/, ""));
+  if (destination.searchParams.has(MARKET_TEASER_PARAM)) destination.searchParams.delete(MARKET_TEASER_PARAM);
+  if (market !== "de") destination.searchParams.set(MARKET_TEASER_PARAM, market);
+  return NextResponse.rewrite(destination);
+}
+
 export function proxy(request: NextRequest) {
   const destinationHeader=request.headers.get("x-tv-rewrite-destination"),token=request.headers.get("x-tv-rewrite-token");
   if(token===INTERNAL_REWRITE_TOKEN&&destinationHeader===request.nextUrl.pathname)return NextResponse.next();
-  // /magazin/?rest_route=… (WordPress ohne schöne Permalinks) beantwortet die index.php-Route, nur für die deutsche Seite.
-  if(isWpRestRoot(request.nextUrl.pathname,request.nextUrl.searchParams)&&(marketForHostname(requestHostname(request))??"de")==="de")return NextResponse.rewrite(restRewriteUrl(request.nextUrl.href,"/magazin/index.php"));
-  // Magazin-Endpunkt auf der deutschen Seite: Präfix /de entfernen und direkt umschreiben (der Resolver unten würde den Query-String ohne Wert-Parameter weitergeben).
-  if(isWpRestPath(request.nextUrl.pathname)&&(marketForHostname(requestHostname(request))??"de")==="de")return NextResponse.rewrite(restRewriteUrl(request.nextUrl.href,request.nextUrl.pathname.replace(/^\/de(?=\/)/,"")));
+  const wpRest=wpRestRewrite(request);
+  if(wpRest)return wpRest;
   const slashRedirect=trailingSlashRedirect(request);
   if(slashRedirect)return slashRedirect;
   const resolution=resolveMarketRequest(request.nextUrl.pathname,requestHostname(request));

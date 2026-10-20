@@ -8,6 +8,12 @@
  *   /magazin/?rest_route=/wp/v2/posts
  */
 
+/**
+ * Länderknoten .at/.ch (lib/wp-market-teasers.ts): proxy.ts hängt beim Rewrite tv_market=at|ch an. Query-Parameter
+ * statt Header, damit der CDN-Cache die Länder getrennt hält.
+ */
+export const MARKET_TEASER_PARAM = "tv_market";
+
 const MARKET_PREFIX = /^\/(?:de|at|ch)(?=\/|$)/;
 const REST_PATH = /^\/magazin\/(?:wp-json(?:\/|$)|index\.php\/?$)/;
 const MAGAZINE_ROOT = /^\/magazin\/?$/;
