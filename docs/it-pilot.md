@@ -7,6 +7,8 @@ Test, ob sich italienischsprachige Schweizer über eine eigene Sprachvariante ge
 - Startseite `/it/` mit Städteübersicht, drei Ratgeberabschnitten und FAQ (FAQPage-JSON-LD).
 - Fünf Stadtseiten: `/it/lugano/`, `/it/bellinzona/`, `/it/locarno/`, `/it/mendrisio/`, `/it/chiasso/`, jeweils mit ICONY-Profilvorschau über die Tessiner Postleitzahl (6900, 6500, 6600, 6850, 6830) und Italienisch beschrifteten Widget-Texten.
 - Inhalte in `data/it-partnersuche.json`. Ortsangaben nur mit Beleg: Regolamento cantonale sui cani (RCani, 30.12.2025), Hundeverordnung Lugano und Dog Park Pregassona, Hundeparcours am Ticino in Bellinzona (Molinazzo–Pratocarasso, ca. 900 m, seit 2017), Leinenpflicht und Freilauffläche am Maggia-Damm in Locarno (Hinweis der Stadt vom 3.2.2026), Hundeverordnung Mendrisio, Urin-Regel in Chiasso seit August 2026 (RSI).
+- Seit 20.10.2026 hat jede Stadtseite einen belegten Stadtführer (`pages[].guide`, Komponente `components/it/city-guide.tsx`): Kennzahlen (STATPOP 31.12.2024, USTAT „Il Ticino in cifre 2026“ Bezirkswerte, registrierte Hunde laut Messaggio 8534), Hundezonen mit Adresse, Gemeinde- und Kantonsregeln, Spazierwege, Tierheime/Tierschutz, Tierarzt-Notdienst (OVT, ohne Telefonnummern), Termine, Bahnzeiten mit SBB-Hunderegel, FAQ (auch FAQPage-JSON-LD) und eingeklappte Quellen am Seitenende. `tests/it-pilot.test.mjs` sichert den Mindestumfang.
+- Offene Lücken der Recherche: in Mendrisio keine öffentliche Hundezone (nur Rahmen der Verordnung), Chiasso ohne Hundezahl, Termine teils nur aus Vorjahren belegt (Daten jährlich prüfen).
 - Noch keine eigenen Stadtbilder. Das Bild der Schweizer Partnersuche enthält deutschen Text und wird deshalb nicht verwendet. Motive wären eine Aufgabe für Codex.
 
 ## Technik

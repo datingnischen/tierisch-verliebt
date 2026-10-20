@@ -3,7 +3,8 @@ import type { CSSProperties } from "react";
 import { IconySinglesWidget } from "@/components/icony-singles-widget";
 import { MarketLink } from "@/components/market-link";
 import { buildCityGuide, cityGeo, nearestCities, type GuideTopic } from "@/lib/city-guide";
-import { getMarketCityPages, type MarketCityPage } from "@/lib/market-partnersuche";
+import { getItCityGuide, getMarketCityPages, type MarketCityPage } from "@/lib/market-partnersuche";
+import { ItCityFacts, ItCityGuideSections, ItCitySources } from "./city-guide";
 import { ANIMAL_LABELS, TOPIC_LABELS } from "./copy";
 import { AnimalIcon, ClockIcon, HeartIcon, PawIcon, PinIcon, TopicIcon } from "../city-page/tier-icons";
 import { display } from "../city-page/display-font";
@@ -24,6 +25,7 @@ function pad(value: number) {
 export function ItCityPage({ city }: { city: MarketCityPage }) {
   const market = "it" as const;
   const guide = buildCityGuide(city);
+  const facts = getItCityGuide(city.slug);
   const pages = getMarketCityPages(market);
   const geo = cityGeo(market, city.slug);
   const nearby = nearestCities(market, city.slug, pages, 4);
@@ -73,6 +75,7 @@ export function ItCityPage({ city }: { city: MarketCityPage }) {
         </div>
       </section>
 
+      {facts ? <ItCityFacts city={city.cityName} guide={facts} /> : (
       <div className="tvc-wrap">
         <ul className="tvc-facts">
           <li><PinIcon /><span><small>Luogo</small><strong>{city.cityName}{geo ? `, ${geo.region}` : ""}</strong></span></li>
@@ -81,6 +84,7 @@ export function ItCityPage({ city }: { city: MarketCityPage }) {
           <li><HeartIcon /><span><small>Iscrizione</small><strong>gratuita</strong></span></li>
         </ul>
       </div>
+      )}
 
       <div className="tvc-wrap tvc-widget">
         <IconySinglesWidget locale="it" city={city.cityName} zip={city.icony.zip} country={city.icony.country} platformId={city.icony.platformId} registrationUrl={city.registrationUrl} searchUrl={city.searchUrl} />
@@ -135,12 +139,14 @@ export function ItCityPage({ city }: { city: MarketCityPage }) {
         </div>
       </section>
 
+      {facts ? <ItCityGuideSections city={city.cityName} guide={facts} /> : null}
+
       {nearby.length ? (
         <section className="tvc-wrap tvc-near" aria-labelledby="tvc-near-title">
           <div className="tvc-head">
             <span className="tvc-eyebrow">Città vicine</span>
             <h2 id="tvc-near-title">Altre città in Ticino</h2>
-            <p>Le guide più vicine, in linea d'aria da {city.cityName}.</p>
+            <p>Le guide più vicine, in linea d&apos;aria da {city.cityName}.</p>
           </div>
           <ol className="tvc-near-list">
             {nearby.map((entry) => (
@@ -156,6 +162,8 @@ export function ItCityPage({ city }: { city: MarketCityPage }) {
           </ol>
         </section>
       ) : null}
+
+      {facts ? <ItCitySources guide={facts} /> : null}
     </main>
   );
 }

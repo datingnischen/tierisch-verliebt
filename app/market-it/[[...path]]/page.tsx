@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ItCityPage } from "@/components/it/city-page";
 import { ItHome } from "@/components/it/home";
-import { getItFaq, getMarketCityPage, getMarketCityPages, getMarketPartnersucheHub } from "@/lib/market-partnersuche";
+import { getItCityGuide, getItFaq, getMarketCityPage, getMarketCityPages, getMarketPartnersucheHub } from "@/lib/market-partnersuche";
 import { IT_PILOT_INDEXABLE } from "@/lib/it-routes";
 import { publicUrl } from "@/lib/markets";
 import { serializeJsonLd } from "@/lib/json-ld";
@@ -45,13 +45,14 @@ export default async function ItPilot({ params }: Props) {
   const page = resolve(parts);
   const url = publicUrl("it", parts.join("/"));
   const home = publicUrl("it");
+  const cityFaq = page.kind === "city" ? getItCityGuide(page.city.slug)?.faq ?? [] : [];
   const graph = { "@context": "https://schema.org", "@graph": [
     { "@type": "WebPage", "@id": `${url}#webpage`, url, name: page.title, description: page.description, inLanguage: "it-CH", isPartOf: { "@id": `${publicUrl("ch")}#website` } },
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "Svizzera italiana", item: home },
       ...(page.kind === "city" ? [{ "@type": "ListItem", position: 2, name: page.city.cityName, item: url }] : []),
     ] },
-    ...(page.kind === "home" ? [{ "@type": "FAQPage", "@id": `${url}#faq`, inLanguage: "it-CH", mainEntity: getItFaq().map((entry) => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })) }] : []),
+    ...(page.kind === "home" || cityFaq.length ? [{ "@type": "FAQPage", "@id": `${url}#faq`, inLanguage: "it-CH", mainEntity: (page.kind === "home" ? getItFaq() : cityFaq).map((entry) => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })) }] : []),
   ] };
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(graph) }} />

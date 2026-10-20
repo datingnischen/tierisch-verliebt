@@ -1,0 +1,343 @@
+/* Stadtführer der italienischen Tessiner Seiten: belegte Orte, Regeln, Termine, Bahn, FAQ, Quellen. */
+
+.itg-facts {
+  margin-top: 34px;
+}
+
+.itg-facts-title {
+  margin: 0 0 12px;
+  color: var(--tvc-red-dark);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.itg-facts dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.itg-facts dl > div {
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--tvc-line);
+}
+
+.itg-facts dt {
+  color: var(--tvc-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.itg-facts dd {
+  display: grid;
+  gap: 4px;
+  margin: 6px 0 0;
+}
+
+.itg-facts dd strong {
+  color: var(--tvc-red);
+  font-family: var(--tvc-display), sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.itg-facts dd small {
+  color: var(--tvc-muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.itg-block {
+  margin-top: 72px;
+}
+
+.itg-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.itg-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.itg-cards-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.itg-card {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 22px 22px 20px;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--tvc-line);
+}
+
+.itg-card strong {
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.itg-card strong a {
+  color: inherit;
+  text-decoration-color: rgba(192, 46, 46, 0.4);
+  text-underline-offset: 3px;
+}
+
+.itg-card p,
+.itg-rules p,
+.itg-events p,
+.itg-faq p {
+  margin: 0;
+  color: #4f4545;
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+
+.itg-where {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  color: var(--tvc-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.itg-where svg {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+  color: var(--tvc-red);
+}
+
+.itg-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+}
+
+.itg-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.itg-green { background: #e5f0e5; color: var(--tvc-green-dark); }
+.itg-red { background: #fbe7e4; color: var(--tvc-red); }
+.itg-sky { background: #e3f0f6; color: var(--tvc-sky); }
+
+.itg-card-vet {
+  background: #f6fafc;
+}
+
+.itg-rules {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 22px 24px;
+  border-radius: 26px;
+  background: var(--tvc-sand);
+  list-style: none;
+  counter-reset: itg-rule;
+}
+
+.itg-rules li {
+  position: relative;
+  padding-left: 38px;
+  counter-increment: itg-rule;
+}
+
+.itg-rules li::before {
+  content: counter(itg-rule);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--tvc-wine);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.itg-rules strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.itg-events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.itg-events li {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 20px 22px;
+  border-left: 4px solid var(--tvc-amber);
+  border-radius: 0 22px 22px 0;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--tvc-line);
+}
+
+.itg-events strong a {
+  color: inherit;
+}
+
+.itg-when {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--tvc-amber);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.itg-when svg {
+  width: 16px;
+  height: 16px;
+}
+
+.itg-train {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.itg-train li {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--tvc-line);
+}
+
+.itg-train li > span:last-child {
+  display: grid;
+  gap: 2px;
+}
+
+.itg-train small {
+  color: var(--tvc-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.itg-train-min {
+  flex: none;
+  min-width: 74px;
+  color: var(--tvc-muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.itg-train-min strong {
+  display: block;
+  color: var(--tvc-green-dark);
+  font-family: var(--tvc-display), sans-serif;
+  font-size: 1.35rem;
+}
+
+.itg-faq {
+  display: grid;
+  gap: 12px;
+}
+
+.itg-faq details {
+  padding: 18px 22px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--tvc-line);
+}
+
+.itg-faq summary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.itg-faq summary svg {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  color: var(--tvc-red);
+}
+
+.itg-faq p {
+  margin-top: 10px;
+}
+
+.itg-sources {
+  margin: 56px 0 24px;
+  color: var(--tvc-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.itg-sources summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.itg-sources p {
+  margin: 8px 0;
+}
+
+.itg-sources ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.itg-sources a {
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 860px) {
+  .itg-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .itg-block {
+    margin-top: 52px;
+  }
+
+  .itg-cards,
+  .itg-cards-3,
+  .itg-events,
+  .itg-train {
+    grid-template-columns: 1fr;
+  }
+}

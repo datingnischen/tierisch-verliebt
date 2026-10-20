@@ -68,3 +68,49 @@ test("Pilot bleibt noindex, bis ICONY die italienische Registrierung ausliefert"
   const page = await readFile(new URL("../app/market-it/[[...path]]/page.tsx", import.meta.url), "utf8");
   assert.match(page, /robots: \{ index: IT_PILOT_INDEXABLE, follow: true \}/);
 });
+
+test("Stadtführer mit belegten Angaben: Kennzahlen, Hundezonen, Regeln, Wege, Tierschutz, Termine, Bahn, FAQ und Quellen", async () => {
+  for (const page of data.pages) {
+    const { guide } = page;
+    assert.ok(guide, `${page.slug}: Stadtführer fehlt`);
+    assert.ok(guide.facts.length >= 4, `${page.slug}: Kennzahlen`);
+    for (const fact of guide.facts) {
+      assert.ok(fact.value && fact.note, `${page.slug}: ${fact.label} ohne Wert/Stand`);
+      assert.match(fact.source, /^https:\/\//);
+    }
+    assert.ok(guide.dogAreas.length >= 2, `${page.slug}: Hundezonen`);
+    assert.ok(guide.rules.length >= 2, `${page.slug}: Regeln`);
+    assert.ok(guide.walks.length >= 4, `${page.slug}: Spazierwege/Treffpunkte`);
+    assert.ok(guide.shelters.length >= 2, `${page.slug}: Tierheime/Tierschutz`);
+    for (const place of [...guide.dogAreas, ...guide.shelters]) {
+      assert.match(place.address, /\d{4}\s+\S/, `${page.slug}: ${place.name} ohne PLZ/Ort`);
+    }
+    for (const entry of [...guide.dogAreas, ...guide.walks, ...guide.shelters, ...guide.rules, ...guide.events]) {
+      assert.ok(entry.text.length >= 60, `${page.slug}: ${entry.name ?? entry.title} zu knapp`);
+      if (entry.url) assert.match(entry.url, /^https:\/\//);
+    }
+    assert.ok(guide.vet.text.length >= 60, `${page.slug}: Tierarzt-Notdienst`);
+    assert.ok(guide.events.length >= 3, `${page.slug}: Termine`);
+    assert.ok(guide.transport.length >= 3, `${page.slug}: Bahnverbindungen`);
+    for (const train of guide.transport) assert.match(train.minutes, /^\d+(?:–\d+)?$/);
+    assert.match(guide.trainNote, /FFS|SBB/);
+    assert.ok(guide.faq.length >= 4, `${page.slug}: FAQ`);
+    assert.ok(guide.sources.length >= 6, `${page.slug}: Quellen`);
+    for (const source of guide.sources) assert.match(source.url, /^https?:\/\//);
+    assert.match(guide.checked, /^\d{1,2} \S+ 20\d\d$/);
+    // Keine Telefonnummern im Stadtführer (keine Privatnummern, Notdienst nur als Institution).
+    assert.doesNotMatch(JSON.stringify(guide), /\+41|0\d{2} \d{3} \d{2} \d{2}/, `${page.slug}: Telefonnummer`);
+    // Fließtext nennt Konkretes: jeder Abschnitt mit Link oder Zahl.
+    for (const chunk of page.contentHtml.split("<h2>").slice(1)) assert.match(chunk, /<a href="https:|\d/, `${page.slug}: Abschnitt ohne Beleg`);
+  }
+  const guideComponent = await readFile(new URL("../components/it/city-guide.tsx", import.meta.url), "utf8");
+  // Quellen eingeklappt (details ohne open), 13 px, am Seitenende.
+  assert.match(guideComponent, /<details className="itg-sources">/);
+  assert.doesNotMatch(guideComponent, /<details[^>]*\bopen\b/);
+  const css = await readFile(new URL("../components/it/it-city-guide.css", import.meta.url), "utf8");
+  assert.match(css, /\.itg-sources \{[^}]*font-size: 13px/);
+  const cityPage = await readFile(new URL("../components/it/city-page.tsx", import.meta.url), "utf8");
+  assert.ok(cityPage.indexOf("<ItCitySources") > cityPage.indexOf("tvc-near"), "Quellen stehen am Seitenende");
+  const route = await readFile(new URL("../app/market-it/[[...path]]/page.tsx", import.meta.url), "utf8");
+  assert.match(route, /cityFaq/, "FAQPage-JSON-LD auch auf Stadtseiten");
+});

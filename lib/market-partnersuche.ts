@@ -259,6 +259,28 @@ function itCityPages(): MarketCityPage[] {
   }));
 }
 
+type ItLink = { url?: string | null };
+/** Belegter Stadtführer der Tessiner Seiten (data/it-partnersuche.json, pages[].guide). */
+export type ItCityGuide = {
+  facts: { label: string; value: string; note: string; source: string }[];
+  dogAreas: ({ name: string; address: string; text: string } & ItLink)[];
+  rules: ({ title: string; text: string } & ItLink)[];
+  walks: ({ name: string; where: string; text: string } & ItLink)[];
+  shelters: ({ name: string; address: string; text: string } & ItLink)[];
+  vet: { text: string } & ItLink;
+  events: ({ name: string; when: string; text: string } & ItLink)[];
+  transport: { to: string; minutes: string; text: string }[];
+  trainNote: string;
+  faq: { question: string; answer: string }[];
+  sources: { title: string; url: string }[];
+  checked: string;
+};
+
+export function getItCityGuide(slug: string): ItCityGuide | null {
+  const page = itData.pages.find((entry) => entry.slug === slug) as { guide?: ItCityGuide } | undefined;
+  return page?.guide ?? null;
+}
+
 export function getItFaq() {
   return itData.faq;
 }
