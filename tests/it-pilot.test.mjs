@@ -91,13 +91,16 @@ test("Stadtführer mit belegten Angaben: Kennzahlen, Hundezonen, Regeln, Wege, T
     }
     assert.ok(guide.vet.text.length >= 60, `${page.slug}: Tierarzt-Notdienst`);
     assert.ok(guide.events.length >= 3, `${page.slug}: Termine`);
-    assert.ok(guide.transport.length >= 3, `${page.slug}: Bahnverbindungen`);
-    for (const train of guide.transport) assert.match(train.minutes, /^\d+(?:–\d+)?$/);
-    assert.match(guide.trainNote, /FFS|SBB/);
+    assert.ok(guide.rules.some((rule) => /FFS/.test(rule.text)), `${page.slug}: Regel für Hunde im Zug`);
     assert.ok(guide.faq.length >= 4, `${page.slug}: FAQ`);
     assert.ok(guide.sources.length >= 6, `${page.slug}: Quellen`);
     for (const source of guide.sources) assert.match(source.url, /^https?:\/\//);
-    assert.match(guide.checked, /^\d{1,2} \S+ 20\d\d$/);
+    // Dauerhaft gültige Inhalte: keine Fahrzeiten, kein Prüfdatum, keine Jahresangaben ab 2025 in Texten (Statistik-Stichtage nur in Kennzahlen und Quellen).
+    assert.equal(guide.transport, undefined, `${page.slug}: Bahnzeiten`);
+    assert.equal(guide.checked, undefined, `${page.slug}: Prüfdatum`);
+    const text = JSON.stringify({ html: page.contentHtml, lead: page.lead, dogAreas: guide.dogAreas, rules: guide.rules, walks: guide.walks, shelters: guide.shelters, vet: guide.vet, events: guide.events, faq: guide.faq });
+    assert.doesNotMatch(text.replace(/Ticino in cifre 2026|https?:[^"\s]+/g, ""), /20(?:2[5-9]|[3-9]\d)/, `${page.slug}: Jahresangabe`);
+    assert.doesNotMatch(text, /\d+\s*minuti di treno|a \d+ minuti/, `${page.slug}: Fahrzeit`);
     // Keine Telefonnummern im Stadtführer (keine Privatnummern, Notdienst nur als Institution).
     assert.doesNotMatch(JSON.stringify(guide), /\+41|0\d{2} \d{3} \d{2} \d{2}/, `${page.slug}: Telefonnummer`);
     // Fließtext nennt Konkretes: jeder Abschnitt mit Link oder Zahl.

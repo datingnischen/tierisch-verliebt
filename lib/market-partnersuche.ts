@@ -269,11 +269,8 @@ export type ItCityGuide = {
   shelters: ({ name: string; address: string; text: string } & ItLink)[];
   vet: { text: string } & ItLink;
   events: ({ name: string; when: string; text: string } & ItLink)[];
-  transport: { to: string; minutes: string; text: string }[];
-  trainNote: string;
   faq: { question: string; answer: string }[];
   sources: { title: string; url: string }[];
-  checked: string;
 };
 
 export function getItCityGuide(slug: string): ItCityGuide | null {

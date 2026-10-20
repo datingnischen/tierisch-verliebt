@@ -113,22 +113,6 @@ export function ItCityGuideSections({ city, guide }: { city: string; guide: ItCi
         </ol>
       </section>
 
-      <section className="tvc-wrap itg-block" aria-labelledby="itg-train-title">
-        <div className="tvc-head">
-          <span className="tvc-eyebrow">In treno con il cane</span>
-          <h2 id="itg-train-title">Da {city} alle altre città ticinesi</h2>
-          <p>{guide.trainNote}</p>
-        </div>
-        <ul className="itg-train">
-          {guide.transport.map((train) => (
-            <li key={train.to}>
-              <span className="itg-train-min"><strong>{train.minutes}</strong> min</span>
-              <span><strong>{train.to}</strong><small>{train.text}</small></span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
       <section className="tvc-wrap itg-block" aria-labelledby="itg-faq-title">
         <div className="tvc-head">
           <span className="tvc-eyebrow">Domande frequenti</span>
@@ -153,7 +137,7 @@ export function ItCitySources({ guide }: { guide: ItCityGuide }) {
     <div className="tvc-wrap">
       <details className="itg-sources">
         <summary>Fonti e verifiche ({guide.sources.length})</summary>
-        <p>Dati verificati il {guide.checked}. Regole e orari possono cambiare: fa fede l&apos;indicazione ufficiale sul posto.</p>
+        <p>Regole, tariffe e orari possono cambiare: fa fede l&apos;indicazione ufficiale sul posto.</p>
         <ul>
           {guide.sources.map((source) => <li key={source.url}><a href={source.url} rel="noopener">{source.title}</a></li>)}
         </ul>

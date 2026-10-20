@@ -56,7 +56,7 @@
         "lon": 8.9511,
         "region": "Luganese"
       },
-      "contentHtml": "<h2>Single e amanti degli animali a Lugano: i numeri</h2><p>Lugano conta 63.629 residenti permanenti (fine 2024). Nel distretto il 41,6 % delle economie domestiche è formato da una sola persona e il 45,0 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). Con 4.981 cani registrati, circa il 15 % di tutti i cani del Cantone vive a Lugano (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio del Consiglio di Stato n. 8534</a>): chi esce con il cane incontra quindi spesso altri proprietari.</p><p>tierisch-verliebt.ch è una piattaforma per tutta la Svizzera; con la ricerca per codice postale 6900 ti concentri sui profili del Luganese.</p><h2>Passeggiate e dog park a Lugano</h2><p>La Città gestisce tre aree di svago recintate: al Parco Tassino vicino alla stazione, nella zona Rugì a Pregassona (aperta dal 2017) e a Barbengo. Vi accedono i residenti con cane notificato; dentro il cane può correre libero, all'entrata e all'uscita va al guinzaglio. Nel resto della città il guinzaglio è obbligatorio su vie, piazze e nei parchi pubblici, come prevede l'<a href=\"https://www.lugano.ch/law/16176713\">ordinanza comunale sui cani</a>.</p><p>Per un primo appuntamento all'aperto il lungolago verso il Parco Ciani o il Sentiero dell'olivo da Castagnola a Gandria (circa 1 ora e 10 minuti) sono percorsi facili, da fare con il cane al guinzaglio.</p><h2>Gite con il cane nei dintorni</h2><p>Sulla funicolare del Monte Brè i cani piccoli viaggiano gratis, quelli di taglia media o grande pagano 8.50 franchi la corsa semplice. Al Parco botanico San Grato di Carona i cani sono ammessi al guinzaglio, ma non nelle aree giochi. Dettagli e fonti per ogni meta trovi più sotto.</p><h2>Regole e servizi per chi ha un cane</h2><p>A Lugano la tassa sul cane è di 115 franchi all'anno; chi non raccoglie gli escrementi paga almeno 300 franchi. Dal 1° settembre 2026 chi prende il primo cane deve seguire prima un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>; per alcune razze serve inoltre un'autorizzazione dell'Ufficio del veterinario cantonale (<a href=\"https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12647\">Regolamento sui cani</a>).</p>",
+      "contentHtml": "<h2>Single e amanti degli animali a Lugano: i numeri</h2><p>Lugano conta 63.629 residenti permanenti (fine 2024). Nel distretto il 41,6 % delle economie domestiche è formato da una sola persona e il 45,0 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). Con 4.981 cani registrati, circa il 15 % di tutti i cani del Cantone vive a Lugano (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio del Consiglio di Stato n. 8534</a>): chi esce con il cane incontra quindi spesso altri proprietari.</p><p>tierisch-verliebt.ch è una piattaforma per tutta la Svizzera; con la ricerca per codice postale 6900 ti concentri sui profili del Luganese.</p><h2>Passeggiate e dog park a Lugano</h2><p>La Città gestisce tre aree di svago recintate: al Parco Tassino vicino alla stazione, nella zona Rugì a Pregassona (aperta dal 2017) e a Barbengo. Vi accedono i residenti con cane notificato; dentro il cane può correre libero, all'entrata e all'uscita va al guinzaglio. Nel resto della città il guinzaglio è obbligatorio su vie, piazze e nei parchi pubblici, come prevede l'<a href=\"https://www.lugano.ch/law/16176713\">ordinanza comunale sui cani</a>.</p><p>Per un primo appuntamento all'aperto il lungolago verso il Parco Ciani o il Sentiero dell'olivo da Castagnola a Gandria (circa 1 ora e 10 minuti) sono percorsi facili, da fare con il cane al guinzaglio.</p><h2>Gite con il cane nei dintorni</h2><p>Sulla funicolare del Monte Brè i cani piccoli viaggiano gratis, per quelli di taglia media o grande si paga un supplemento. Al Parco botanico San Grato di Carona i cani sono ammessi al guinzaglio, ma non nelle aree giochi. Dettagli e fonti per ogni meta trovi più sotto.</p><h2>Regole e servizi per chi ha un cane</h2><p>A Lugano la tassa sul cane è di 115 franchi all'anno; chi non raccoglie gli escrementi paga almeno 300 franchi. Chi prende il primo cane deve seguire prima un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>; per alcune razze serve inoltre un'autorizzazione dell'Ufficio del veterinario cantonale (<a href=\"https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12647\">Regolamento sui cani</a>).</p>",
       "guide": {
         "facts": [
           {
@@ -137,9 +137,14 @@
             "url": "https://www.lugano.ch/vivere-lugano/cultura-e-tempo-libero/parchi-aree-gioco/dog-park"
           },
           {
-            "title": "Corso teorico obbligatorio dal 1° settembre 2026",
+            "title": "Corso teorico obbligatorio prima del primo cane",
             "text": "Chi prende un cane per la prima volta, o non ne ha avuto uno negli ultimi dieci anni, deve frequentare prima un corso teorico di almeno 6 ore presso un istruttore autorizzato dal Cantone (circa 120 franchi). L'attestato va presentato al Comune al momento della registrazione in AMICUS.",
             "url": "https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio"
+          },
+          {
+            "title": "Con il cane sul treno FFS",
+            "text": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino, come bagaglio a mano. Per i cani più grandi serve un biglietto a metà prezzo di 2ª classe oppure una carta giornaliera per cani; il cane sta sotto il sedile senza ostacolare il passaggio.",
+            "url": "https://www.sbb.ch/it/informazioni-viaggio/esigenze-individuali/viaggiare-cane.html"
           }
         ],
         "walks": [
@@ -152,7 +157,7 @@
           {
             "name": "Monte Brè con la funicolare",
             "where": "Stazione a valle Lugano (Cassarate), Via Pico 8, 6900 Lugano; si sale fino al Monte Brè passando da Suvigliana.",
-            "text": "Sulla funicolare i cani piccoli viaggiano gratis. Per i cani di taglia media o grande la corsa semplice costa CHF 8.50 e quella di andata e ritorno CHF 13.00. Le altre condizioni sono nel regolamento del gestore sul trasporto di animali.",
+            "text": "Sulla funicolare i cani piccoli viaggiano gratis. Per i cani di taglia media o grande si paga un supplemento secondo le tariffe del gestore. Le altre condizioni sono nel regolamento del gestore sul trasporto di animali.",
             "url": "https://www.montebre.ch/tariffe-orari/"
           },
           {
@@ -201,7 +206,7 @@
         "events": [
           {
             "name": "Lugano a 4 zampe",
-            "when": "Inizio settembre; la 7ª edizione si è svolta il 6 e 7 settembre 2025",
+            "when": "Di norma a inizio settembre",
             "text": "È una manifestazione cinofila di beneficenza al Parco Ciani, organizzata dall'associazione no profit Forza Rescue Dog. Il ricavato è destinato a un nuovo rifugio. Il programma si trova su luganoa4zampe.ch.",
             "url": "https://www.laregione.ch/cantone/luganese/1865724/servizi"
           },
@@ -213,44 +218,11 @@
           },
           {
             "name": "Fiera di San Martino a Mendrisio",
-            "when": "Novembre, attorno all'11 (nel 2026: 11–15 novembre)",
+            "when": "Ogni anno a novembre, attorno all'11",
             "text": "Fiera sui prati di San Martino documentata dal 1684, nata come mercato del bestiame; la Gioventù Rurale del Mendrisiotto vi presenta mucche, asini, capre, conigli e cavalli.",
             "url": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/La-Fiera-di-San-Martino-una-tradizione-che-non-stanca-mai--2347146.html"
           }
         ],
-        "transport": [
-          {
-            "to": "Bellinzona",
-            "minutes": "14–18",
-            "text": "Ca. 15 minuti con IC/EC senza cambio attraverso la galleria di base del Ceneri; ca. 18 minuti con TILO S10."
-          },
-          {
-            "to": "Locarno",
-            "minutes": "33",
-            "text": "Ca. 33 minuti con il TILO RE80 diretto."
-          },
-          {
-            "to": "Mendrisio",
-            "minutes": "16–21",
-            "text": "Ca. 16 minuti con RE80, ca. 21 minuti con S10."
-          },
-          {
-            "to": "Chiasso",
-            "minutes": "24–34",
-            "text": "Ca. 24 minuti con RE80 o EC, fino a ca. 34 minuti con S10."
-          },
-          {
-            "to": "Milano Centrale",
-            "minutes": "75",
-            "text": "Ca. 1 ora e 15 minuti con il TILO RE80 diretto."
-          },
-          {
-            "to": "Zurigo HB",
-            "minutes": "113–117",
-            "text": "Poco meno di 2 ore con IC/EC diretto attraverso il San Gottardo."
-          }
-        ],
-        "trainNote": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (dal 13 dicembre 2026: 27 franchi). Tempi di percorrenza indicativi secondo l'orario FFS.",
         "faq": [
           {
             "question": "Dove può correre libero il cane a Lugano?",
@@ -262,7 +234,7 @@
           },
           {
             "question": "I cani possono salire sulla funicolare del Monte Brè?",
-            "answer": "Sì. I cani piccoli viaggiano gratis, mentre per quelli di taglia media o grande si paga CHF 8.50 la corsa semplice e CHF 13.00 andata e ritorno (tariffe del gestore)."
+            "answer": "Sì. I cani piccoli viaggiano gratis, mentre per quelli di taglia media o grande si paga un supplemento secondo le tariffe del gestore della funicolare."
           },
           {
             "question": "Quanto costa la tassa sui cani a Lugano?",
@@ -271,10 +243,6 @@
           {
             "question": "A chi rivolgersi per un'urgenza veterinaria di notte o nei festivi?",
             "answer": "L'Ordine dei Veterinari del Canton Ticino pubblica un servizio aggiornato per trovare il veterinario di picchetto della propria regione. Il Cantone rimanda a questo servizio."
-          },
-          {
-            "question": "Come viaggia il cane in treno da Lugano?",
-            "answer": "Sì. Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (27 franchi dal 13 dicembre 2026)."
           }
         ],
         "sources": [
@@ -390,8 +358,7 @@
             "title": "USAV – Viaggiare con cani, gatti e furetti",
             "url": "https://www.blv.admin.ch/blv/it/home/tiere/reisen-mit-heimtieren/hunde-katzen-und-frettchen.html"
           }
-        ],
-        "checked": "20 ottobre 2026"
+        ]
       }
     },
     {
@@ -406,7 +373,7 @@
         "lon": 9.0244,
         "region": "Bellinzonese"
       },
-      "contentHtml": "<h2>Single e amanti degli animali a Bellinzona: i numeri</h2><p>Bellinzona conta 45.305 residenti permanenti (fine 2024). Nel distretto il 39,0 % delle economie domestiche è formato da una sola persona e il 45,6 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). In città sono registrati 3.955 cani, l'11 % del totale cantonale (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio n. 8534</a>).</p><p>Con la ricerca per codice postale 6500 su tierisch-verliebt.ch trovi profili nel Bellinzonese e in tutta la Svizzera.</p><h2>Passeggiate lungo il fiume Ticino</h2><p>Sulla sponda sinistra del Ticino, tra il campeggio di Molinazzo e la passerella di Pratocarasso, la Città ha destinato dal 2017 circa 900 metri di golena (circa 25.000 m²) ai cani senza guinzaglio. È l'unica area di svago cittadina: altrove nei luoghi pubblici il cane resta al guinzaglio, come ricorda la <a href=\"https://www.bellinzona.ch\">Città di Bellinzona</a>.</p><p>Il Parco della Golena vicino al Ponte della Torretta, con sentieri e aree picnic, si presta a una passeggiata più tranquilla, con il cane al guinzaglio.</p><h2>Gite con il cane nei dintorni</h2><p>La funivia Monte Carasso–Mornera trasporta anche cani (5 franchi) e porta verso Curzútt e il Ponte Tibetano Carasc, lungo 270 metri. Per cani allenati c'è l'anello della Valle Morobbia da Carena: 18,6 km e quasi 7 ore di cammino.</p><h2>Per chi ama i gatti</h2><p>La Società protezione animali di Bellinzona (SPAB) gestisce in Via Greina 9 un Parco gatti, separato dal rifugio di Gorduno; alla giornata di porte aperte del 2023 sono arrivati circa 600 visitatori. Un buon posto per capire se l'altra persona condivide la tua passione per i gatti.</p><h2>Regole e servizi per chi ha un cane</h2><p>Con la nuova ordinanza municipale del 2026 la tassa sul cane a Bellinzona è di 110 franchi all'anno. Dal 1° settembre 2026 chi prende il primo cane deve seguire prima un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>.</p>",
+      "contentHtml": "<h2>Single e amanti degli animali a Bellinzona: i numeri</h2><p>Bellinzona conta 45.305 residenti permanenti (fine 2024). Nel distretto il 39,0 % delle economie domestiche è formato da una sola persona e il 45,6 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). In città sono registrati 3.955 cani, l'11 % del totale cantonale (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio n. 8534</a>).</p><p>Con la ricerca per codice postale 6500 su tierisch-verliebt.ch trovi profili nel Bellinzonese e in tutta la Svizzera.</p><h2>Passeggiate lungo il fiume Ticino</h2><p>Sulla sponda sinistra del Ticino, tra il campeggio di Molinazzo e la passerella di Pratocarasso, la Città ha destinato dal 2017 circa 900 metri di golena (circa 25.000 m²) ai cani senza guinzaglio. È l'unica area di svago cittadina: altrove nei luoghi pubblici il cane resta al guinzaglio, come ricorda la <a href=\"https://www.bellinzona.ch\">Città di Bellinzona</a>.</p><p>Il Parco della Golena vicino al Ponte della Torretta, con sentieri e aree picnic, si presta a una passeggiata più tranquilla, con il cane al guinzaglio.</p><h2>Gite con il cane nei dintorni</h2><p>La funivia Monte Carasso–Mornera trasporta anche cani, con una tariffa dedicata, e porta verso Curzútt e il Ponte Tibetano Carasc, lungo 270 metri. Per cani allenati c'è l'anello della Valle Morobbia da Carena: 18,6 km e quasi 7 ore di cammino.</p><h2>Per chi ama i gatti</h2><p>La Società protezione animali di Bellinzona (SPAB) gestisce in Via Greina 9 un Parco gatti, separato dal rifugio di Gorduno; alle giornate di porte aperte si possono visitare la struttura e i gatti ospitati. Un buon posto per capire se l'altra persona condivide la tua passione per i gatti.</p><h2>Regole e servizi per chi ha un cane</h2><p>Secondo l'ordinanza municipale la tassa sul cane a Bellinzona è di 110 franchi all'anno. Chi prende il primo cane deve seguire prima un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>.</p>",
       "guide": {
         "facts": [
           {
@@ -467,7 +434,7 @@
           },
           {
             "title": "Annuncio del cane e tassa",
-            "text": "Ogni cane va annunciato alla Polizia comunale tramite formulario. Con la nuova ordinanza municipale del 2026, adeguata alla Legge cantonale sui cani in vigore dal 1° gennaio 2026, la tassa annua è di 110 franchi per cane.",
+            "text": "Ogni cane va annunciato alla Polizia comunale tramite formulario. Secondo l'ordinanza municipale, adeguata alla Legge cantonale sui cani, la tassa annua è di 110 franchi per cane.",
             "url": "https://www.tio.ch/ticino/attualita/1931309/cani-franchi-legge-ordinanza-tassa-regole-chiare"
           },
           {
@@ -476,9 +443,14 @@
             "url": "https://www.laregione.ch/cantone/bellinzonese/1931435/franchi-vigore-tassa-cani-spettanza"
           },
           {
-            "title": "Corso teorico obbligatorio dal 1° settembre 2026",
+            "title": "Corso teorico obbligatorio prima del primo cane",
             "text": "Chi acquisisce un cane per la prima volta, o non ne ha detenuto uno negli ultimi dieci anni, deve frequentare prima dell'acquisizione un corso teorico di 6 ore in due incontri presso istruttori autorizzati. L'attestato va presentato al Comune di domicilio al momento della registrazione nella banca dati Amicus.",
             "url": "https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio"
+          },
+          {
+            "title": "Con il cane sul treno FFS",
+            "text": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino, come bagaglio a mano. Per i cani più grandi serve un biglietto a metà prezzo di 2ª classe oppure una carta giornaliera per cani; il cane sta sotto il sedile senza ostacolare il passaggio.",
+            "url": "https://www.sbb.ch/it/informazioni-viaggio/esigenze-individuali/viaggiare-cane.html"
           }
         ],
         "walks": [
@@ -497,7 +469,7 @@
           {
             "name": "Curzútt e Ponte Tibetano Carasc",
             "where": "Collina tra Monte Carasso e Sementina; funivia da Via I Fracc 1, 6513 Monte Carasso",
-            "text": "Il giro circolare del Ponte Tibetano (270 m) richiede circa 3 ore e 30 minuti con 400 m di dislivello; a piedi da Monte Carasso o Sementina il ponte si raggiunge in circa un'ora e mezza. La funivia Monte Carasso–Mornera trasporta anche cani, con una tariffa dedicata di 5 franchi.",
+            "text": "Il giro circolare del Ponte Tibetano (270 m) richiede circa 3 ore e 30 minuti con 400 m di dislivello; a piedi da Monte Carasso o Sementina il ponte si raggiunge in circa un'ora e mezza. La funivia Monte Carasso–Mornera trasporta anche cani, con una tariffa dedicata.",
             "url": "https://www.mornera.ch/my-product/ponte-tibetano/"
           },
           {
@@ -551,29 +523,6 @@
             "url": "https://www.tio.ch/agenda/day/20240511/49219"
           }
         ],
-        "transport": [
-          {
-            "to": "Lugano",
-            "minutes": "14",
-            "text": "Diretto con EC/IC in 14 minuti attraverso la galleria di base del Ceneri; con il TILO S10 circa 19 minuti."
-          },
-          {
-            "to": "Locarno",
-            "minutes": "23",
-            "text": "Diretto con IR in 23 minuti oppure TILO S20 in 26 minuti."
-          },
-          {
-            "to": "Mendrisio",
-            "minutes": "41",
-            "text": "Diretto con TILO S10 in 41 minuti; con cambio a Lugano (IC + RE80) circa 34 minuti."
-          },
-          {
-            "to": "Chiasso",
-            "minutes": "41",
-            "text": "Diretto con EC in 41 minuti; con TILO S10 circa 50 minuti."
-          }
-        ],
-        "trainNote": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (dal 13 dicembre 2026: 27 franchi). Tempi di percorrenza indicativi secondo l'orario FFS.",
         "faq": [
           {
             "question": "Dove posso lasciare libero il mio cane a Bellinzona?",
@@ -581,23 +530,19 @@
           },
           {
             "question": "Quanto costa la tassa sul cane a Bellinzona?",
-            "answer": "Con la nuova ordinanza municipale del 2026 la tassa annua è di 110 franchi per cane: 45 franchi al Comune, 40 al Cantone e 25 al Fondo cantonale soccorso degli animali."
+            "answer": "Secondo l'ordinanza municipale la tassa annua è di 110 franchi per cane: 45 franchi al Comune, 40 al Cantone e 25 al Fondo cantonale soccorso degli animali."
           },
           {
             "question": "Devo seguire un corso prima di prendere un cane?",
-            "answer": "Sì, dal 1° settembre 2026 in Ticino chi prende un cane per la prima volta, o non ne ha avuto uno negli ultimi dieci anni, deve frequentare prima un corso teorico di 6 ore. L'attestato va presentato al Comune al momento della registrazione."
+            "answer": "Sì, in Ticino chi prende un cane per la prima volta, o non ne ha avuto uno negli ultimi dieci anni, deve frequentare prima un corso teorico di 6 ore. L'attestato va presentato al Comune al momento della registrazione."
           },
           {
             "question": "Posso portare il cane sulla funivia per Curzútt e il Ponte Tibetano?",
-            "answer": "La funivia Monte Carasso–Mornera trasporta anche cani con una tariffa di 5 franchi, da indicare insieme ai passeggeri al momento della prenotazione. Le regole specifiche per il passaggio sul ponte vanno verificate presso la Fondazione Curzútt."
+            "answer": "La funivia Monte Carasso–Mornera trasporta anche cani con una tariffa dedicata, da indicare insieme ai passeggeri al momento della prenotazione. Le regole specifiche per il passaggio sul ponte vanno verificate presso la Fondazione Curzútt."
           },
           {
             "question": "Dove posso adottare un animale nel Bellinzonese?",
             "answer": "La Società protezione animali di Bellinzona (SPAB) gestisce il rifugio in Via Cantonale 36 a Gorduno e il Parco gatti in Via Greina 9 a Bellinzona. Prima di una visita o di un'adozione conviene informarsi direttamente presso la SPAB."
-          },
-          {
-            "question": "Come viaggia il cane in treno da Bellinzona?",
-            "answer": "Sì. Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (27 franchi dal 13 dicembre 2026)."
           }
         ],
         "sources": [
@@ -717,8 +662,7 @@
             "title": "USAV – Viaggiare con cani, gatti e furetti",
             "url": "https://www.blv.admin.ch/blv/it/home/tiere/reisen-mit-heimtieren/hunde-katzen-und-frettchen.html"
           }
-        ],
-        "checked": "20 ottobre 2026"
+        ]
       }
     },
     {
@@ -733,7 +677,7 @@
         "lon": 8.7995,
         "region": "Locarnese"
       },
-      "contentHtml": "<h2>Single e amanti degli animali a Locarno: i numeri</h2><p>Locarno conta 16.374 residenti permanenti (fine 2024). Nel distretto il 45,2 % delle economie domestiche è formato da una sola persona, più della media cantonale del 42,1 %; il 41,9 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). In città risultano registrati 1.085 cani (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio n. 8534</a>).</p><p>Con la ricerca per codice postale 6600 trovi su tierisch-verliebt.ch profili nel Locarnese e in tutta la Svizzera.</p><h2>Passeggiate sul lago e lungo la Maggia</h2><p>Sulla sponda destra della Maggia, tra il vecchio e il nuovo ponte stradale, c'è dal 2014 un'area dove i cani possono stare senza guinzaglio; prosegue nelle zone cani di Losone. Sul resto dell'argine vale l'obbligo del guinzaglio: lo ha ricordato la Città nell'<a href=\"https://www.locarno.ch/files/news/Interventi_di_tipo_edile_lungo_argine_fiume_Maggia_-_Accessibilit%C3%A0_area_cani_-_03-02-2026.pdf\">avviso del 3 febbraio 2026</a>, quando l'area è rimasta chiusa per lavori dal 4 al 20 febbraio.</p><p>Sul lungolago tra Minusio e Locarno, riservato a pedoni e ciclisti, il cane resta al guinzaglio. Dal 25 ottobre al 25 marzo si può camminare anche sul Sentiero delle Rive tra Tenero e Gordola.</p><h2>Gite con il cane nei dintorni</h2><p>La funivia Orselina–Cardada e la seggiovia fino alla Cimetta trasportano anche cani: quelli oltre 30 cm al garrese pagano 10 franchi (tariffe fino all'8 novembre 2026). Le Bolle di Magadino, riserva di 660 ettari alla foce del Ticino, si visitano lungo sentieri didattici; le Isole di Brissago (aprile–novembre) ammettono i cani al guinzaglio.</p><h2>Regole e servizi per chi ha un cane</h2><p>Dal 1° settembre 2026 chi prende il primo cane in Ticino deve seguire prima un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>. La tassa annua è fissata dal Comune tra 75 e 125 franchi (<a href=\"https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12421\">Legge cantonale sui cani</a>).</p>",
+      "contentHtml": "<h2>Single e amanti degli animali a Locarno: i numeri</h2><p>Locarno conta 16.374 residenti permanenti (fine 2024). Nel distretto il 45,2 % delle economie domestiche è formato da una sola persona, più della media cantonale del 42,1 %; il 41,9 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). In città risultano registrati 1.085 cani (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio n. 8534</a>).</p><p>Con la ricerca per codice postale 6600 trovi su tierisch-verliebt.ch profili nel Locarnese e in tutta la Svizzera.</p><h2>Passeggiate sul lago e lungo la Maggia</h2><p>Sulla sponda destra della Maggia, tra il vecchio e il nuovo ponte stradale, c'è dal 2014 un'area dove i cani possono stare senza guinzaglio; prosegue nelle zone cani di Losone. Sul resto dell'argine vale l'obbligo del guinzaglio: lo ricorda la Città in un <a href=\"https://www.locarno.ch/files/news/Interventi_di_tipo_edile_lungo_argine_fiume_Maggia_-_Accessibilit%C3%A0_area_cani_-_03-02-2026.pdf\">avviso sull'area cani</a>. Durante lavori sull'argine l'area può essere chiusa temporaneamente.</p><p>Sul lungolago tra Minusio e Locarno, riservato a pedoni e ciclisti, il cane resta al guinzaglio. Dal 25 ottobre al 25 marzo si può camminare anche sul Sentiero delle Rive tra Tenero e Gordola.</p><h2>Gite con il cane nei dintorni</h2><p>La funivia Orselina–Cardada e la seggiovia fino alla Cimetta trasportano anche cani; per quelli oltre 30 cm al garrese si paga un supplemento. Le Bolle di Magadino, riserva di 660 ettari alla foce del Ticino, si visitano lungo sentieri didattici; le Isole di Brissago (aprile–novembre) ammettono i cani al guinzaglio.</p><h2>Regole e servizi per chi ha un cane</h2><p>Chi prende il primo cane in Ticino deve seguire prima un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>. La tassa annua è fissata dal Comune tra 75 e 125 franchi (<a href=\"https://m3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/pdfatto/atto/12421\">Legge cantonale sui cani</a>).</p>",
       "guide": {
         "facts": [
           {
@@ -771,7 +715,7 @@
           {
             "name": "Area cani liberi sulla sponda destra della Maggia",
             "address": "Argine destro del fiume Maggia, tra il vecchio e il nuovo ponte stradale, 6600 Locarno",
-            "text": "Sull'argine sommergibile della sponda destra i cani possono muoversi senza guinzaglio, in continuità con l'area di Losone. Il detentore deve sorvegliare e saper richiamare il cane e raccogliere sempre gli escrementi. Dal 4 al 20 febbraio 2026 l'area è rimasta chiusa per lavori.",
+            "text": "Sull'argine sommergibile della sponda destra i cani possono muoversi senza guinzaglio, in continuità con l'area di Losone. Il detentore deve sorvegliare e saper richiamare il cane e raccogliere sempre gli escrementi. Durante lavori sull'argine l'area può essere chiusa temporaneamente.",
             "url": "https://www.locarno.ch/files/news/Interventi_di_tipo_edile_lungo_argine_fiume_Maggia_-_Accessibilit%C3%A0_area_cani_-_03-02-2026.pdf"
           },
           {
@@ -815,9 +759,14 @@
             "url": "https://www.ascona-locarno.com/en/what-s-on/stories/4-legged-friend"
           },
           {
-            "title": "Corso teorico obbligatorio dal 1° settembre 2026",
+            "title": "Corso teorico obbligatorio prima del primo cane",
             "text": "Chi prende un cane per la prima volta, o non ne ha avuto uno negli ultimi dieci anni, deve frequentare prima un corso teorico di almeno 6 ore presso un istruttore autorizzato dal Cantone (circa 120 franchi). L'attestato va presentato al Comune al momento della registrazione in AMICUS.",
             "url": "https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio"
+          },
+          {
+            "title": "Con il cane sul treno FFS",
+            "text": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino, come bagaglio a mano. Per i cani più grandi serve un biglietto a metà prezzo di 2ª classe oppure una carta giornaliera per cani; il cane sta sotto il sedile senza ostacolare il passaggio.",
+            "url": "https://www.sbb.ch/it/informazioni-viaggio/esigenze-individuali/viaggiare-cane.html"
           }
         ],
         "walks": [
@@ -836,7 +785,7 @@
           {
             "name": "Cardada e Cimetta",
             "where": "Funivia Orselina–Cardada e seggiovia Cardada–Cimetta, sopra Locarno",
-            "text": "Sopra Locarno la funivia porta a Cardada e la seggiovia prosegue fino alla Cimetta. Nelle tariffe valide dal 20.12.2025 all'8.11.2026 i cani oltre 30 cm al garrese pagano 10 franchi; il regolamento d'uso è pubblicato sul sito.",
+            "text": "Sopra Locarno la funivia porta a Cardada e la seggiovia prosegue fino alla Cimetta. I cani sono ammessi; per quelli oltre 30 cm al garrese si paga un supplemento secondo le tariffe in vigore, pubblicate con il regolamento d'uso sul sito.",
             "url": "https://www.cardada.ch/it/orari-e-tariffe/tariffe"
           },
           {
@@ -873,8 +822,8 @@
         "events": [
           {
             "name": "Benedizione degli animali a Golino",
-            "when": "a metà gennaio, nella domenica vicina a Sant'Antonio abate (nel 2025 il 12 gennaio)",
-            "text": "Sul sagrato della chiesa di San Giorgio a Golino, nelle Centovalli, il consiglio parrocchiale ripropone ogni anno la benedizione degli animali. Nel 2025 vi hanno partecipato cani, gatti, asini e capre.",
+            "when": "A metà gennaio, la domenica vicina a Sant'Antonio abate (17 gennaio)",
+            "text": "Sul sagrato della chiesa di San Giorgio a Golino, nelle Centovalli, il consiglio parrocchiale ripropone ogni anno la benedizione degli animali. Vi partecipano cani, gatti e anche animali da cortile come asini e capre.",
             "url": "https://www.laregione.ch/cantone/locarnese/1808674/animali-golino-benedizione-locarnese-piano"
           },
           {
@@ -886,7 +835,7 @@
           {
             "name": "Eventi e giornate al rifugio SPALV",
             "when": "date secondo il calendario pubblicato dalla SPALV",
-            "text": "La Società Protezione Animali Locarno e Valli propone eventi e giornate al rifugio di Gordola; per il centenario del 2025 ha organizzato anche porte aperte e un pomeriggio dedicato ai bambini.",
+            "text": "La Società Protezione Animali Locarno e Valli propone eventi e giornate al rifugio di Gordola; il calendario aggiornato è pubblicato sul sito della società.",
             "url": "https://www.spalv.ch/it/"
           },
           {
@@ -896,29 +845,6 @@
             "url": "https://www.tio.ch/ticino/attualita/1636938/quattro-zampe-amici-gennaio-animali"
           }
         ],
-        "transport": [
-          {
-            "to": "Bellinzona",
-            "minutes": "22",
-            "text": "Diretto con IR in 22 minuti oppure TILO S20 in 26 minuti."
-          },
-          {
-            "to": "Lugano",
-            "minutes": "32",
-            "text": "Diretto con TILO RE80 in 32 minuti, ogni mezz'ora."
-          },
-          {
-            "to": "Mendrisio",
-            "minutes": "49",
-            "text": "Diretto con TILO RE80 in 49–56 minuti."
-          },
-          {
-            "to": "Chiasso",
-            "minutes": "57",
-            "text": "Diretto con TILO RE80 in 57–64 minuti."
-          }
-        ],
-        "trainNote": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (dal 13 dicembre 2026: 27 franchi). Tempi di percorrenza indicativi secondo l'orario FFS.",
         "faq": [
           {
             "question": "Dove può correre libero il mio cane a Locarno?",
@@ -930,7 +856,7 @@
           },
           {
             "question": "Il cane può salire sulla funivia di Cardada?",
-            "answer": "Sì. Secondo le tariffe valide fino all'8 novembre 2026, i cani oltre 30 cm al garrese pagano 10 franchi; le altre condizioni sono nel regolamento pubblicato da Cardada."
+            "answer": "Sì. I cani oltre 30 cm al garrese pagano un supplemento secondo le tariffe in vigore; le altre condizioni sono nel regolamento pubblicato da Cardada."
           },
           {
             "question": "A chi mi rivolgo per adottare un animale nel Locarnese?",
@@ -939,10 +865,6 @@
           {
             "question": "Cosa rischia chi lascia il cane senza guinzaglio dove è vietato?",
             "answer": "Secondo quanto riportato da laRegione e da una mozione comunale, a Locarno la violazione dell'obbligo del guinzaglio può essere punita con una multa fino a 20'000 franchi."
-          },
-          {
-            "question": "Posso portare il cane in treno da Locarno a Lugano o Bellinzona?",
-            "answer": "Sì. Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (27 franchi dal 13 dicembre 2026)."
           }
         ],
         "sources": [
@@ -1046,8 +968,7 @@
             "title": "USAV – Viaggiare con cani, gatti e furetti",
             "url": "https://www.blv.admin.ch/blv/it/home/tiere/reisen-mit-heimtieren/hunde-katzen-und-frettchen.html"
           }
-        ],
-        "checked": "20 ottobre 2026"
+        ]
       }
     },
     {
@@ -1062,7 +983,7 @@
         "lon": 8.9817,
         "region": "Mendrisiotto"
       },
-      "contentHtml": "<h2>Single e amanti degli animali a Mendrisio: i numeri</h2><p>Mendrisio conta 15.085 residenti permanenti (fine 2024). Nel distretto il 43,1 % delle economie domestiche è formato da una sola persona e il 43,4 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). In città sono registrati 1.484 cani, circa il 5 % del Cantone (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio n. 8534</a>).</p><p>Chiasso è a 8 minuti di treno, Lugano a circa 16: con la ricerca per codice postale 6850 trovi profili in tutto il Mendrisiotto.</p><h2>Passeggiate tra vigneti e colline</h2><p>L'<a href=\"https://mendrisio.ch/dam/jcr:480d428b-3aa9-4783-9a48-186b1e76c680/5.50.90.02%20Ordinanza%20municipale%20concernente%20la%20custodia%20e%20le%20aree%20di%20svago%20e%20di%20sfogo%20dei%20cani.pdf\">ordinanza municipale sui cani</a> (in vigore dal 1° luglio 2026) prevede il guinzaglio su vie, piazze, parchi e giardini pubblici e permette alla Città di istituire aree di svago recintate. Per un primo incontro all'aperto si prestano i tre itinerari ad anello tra i vigneti del Mendrisiotto (circa 4 ore ciascuno) o il sentiero del Monte San Giorgio da Meride (13,5 km).</p><h2>Gite con il cane nei dintorni</h2><p>Sul treno a cremagliera del Monte Generoso, da Capolago, i cani piccoli viaggiano gratis in braccio; per quelli di taglia media o grande c'è un forfait di 9 franchi al giorno. In vetta i cani sono benvenuti anche al Fiore di pietra.</p><h2>Per chi ama i gatti</h2><p>A Castel San Pietro l'associazione La Pepina di Gatt recupera gatti randagi e cerca casa per i gattini; nel Mendrisiotto la società protezione animali riconosciuta è Casa Margherita a Melano (Via Cantonale 99).</p><h2>Regole e servizi per chi ha un cane</h2><p>Dal 1° luglio 2026 la tassa annua a Mendrisio è di 115 franchi (per il 2026 vale una tassa transitoria di 95 franchi). Una revisione dell'ordinanza, pubblicata fino al 26 ottobre 2026, prevede l'obbligo di sciacquare la pipì del cane. Dal 1° settembre 2026 chi prende il primo cane deve seguire un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>.</p>",
+      "contentHtml": "<h2>Single e amanti degli animali a Mendrisio: i numeri</h2><p>Mendrisio conta 15.085 residenti permanenti (fine 2024). Nel distretto il 43,1 % delle economie domestiche è formato da una sola persona e il 43,4 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>). In città sono registrati 1.484 cani, circa il 5 % del Cantone (<a href=\"https://www3.ti.ch/COMUNICAZIONI/248312/M8534.pdf\">Messaggio n. 8534</a>).</p><p>Mendrisio, Chiasso e Lugano sono collegate dalla stessa linea ferroviaria: con la ricerca per codice postale 6850 trovi profili in tutto il Mendrisiotto.</p><h2>Passeggiate tra vigneti e colline</h2><p>L'<a href=\"https://mendrisio.ch/dam/jcr:480d428b-3aa9-4783-9a48-186b1e76c680/5.50.90.02%20Ordinanza%20municipale%20concernente%20la%20custodia%20e%20le%20aree%20di%20svago%20e%20di%20sfogo%20dei%20cani.pdf\">ordinanza municipale sui cani</a> prevede il guinzaglio su vie, piazze, parchi e giardini pubblici e permette alla Città di istituire aree di svago recintate. Per un primo incontro all'aperto si prestano i tre itinerari ad anello tra i vigneti del Mendrisiotto (circa 4 ore ciascuno) o il sentiero del Monte San Giorgio da Meride (13,5 km).</p><h2>Gite con il cane nei dintorni</h2><p>Sul treno a cremagliera del Monte Generoso, da Capolago, i cani piccoli viaggiano gratis in braccio; per quelli di taglia media o grande c'è un biglietto giornaliero per cani. In vetta i cani sono benvenuti anche al Fiore di pietra.</p><h2>Per chi ama i gatti</h2><p>A Castel San Pietro l'associazione La Pepina di Gatt recupera gatti randagi e cerca casa per i gattini; nel Mendrisiotto la società protezione animali riconosciuta è Casa Margherita a Melano (Via Cantonale 99).</p><h2>Regole e servizi per chi ha un cane</h2><p>Secondo l'ordinanza municipale la tassa annua a Mendrisio è di 115 franchi. Con la campagna «Tirami su» la Città invita a portare sacchetti e una bottiglietta d'acqua per sciacquare la pipì del cane. Chi prende il primo cane deve seguire un <a href=\"https://www4.ti.ch/dss/dsp/uvc/temi/tenuta-di-animali/cani/corso-teorico-obbligatorio\">corso teorico di 6 ore</a>.</p>",
       "guide": {
         "facts": [
           {
@@ -1092,7 +1013,7 @@
           {
             "label": "Tassa annua sui cani",
             "value": "CHF 115",
-            "note": "dal 1° luglio 2026 (2026: tassa transitoria CHF 95)",
+            "note": "secondo l'ordinanza municipale sui cani",
             "source": "https://mendrisio.ch/dam/jcr:480d428b-3aa9-4783-9a48-186b1e76c680/5.50.90.02%20Ordinanza%20municipale%20concernente%20la%20custodia%20e%20le%20aree%20di%20svago%20e%20di%20sfogo%20dei%20cani.pdf"
           }
         ],
@@ -1123,20 +1044,25 @@
           },
           {
             "title": "Raccogliere gli escrementi e sciacquare la pipì",
-            "text": "Gli escrementi vanno raccolti subito anche su prati e pascoli agricoli. Una revisione dell'art. 17, pubblicata fino al 26 ottobre 2026, aggiunge l'obbligo di sciacquare le urine con acqua; la campagna «Tirami su» del 2025 indicava una multa minima di 250 franchi per gli escrementi non raccolti.",
+            "text": "Gli escrementi vanno raccolti subito anche su prati e pascoli agricoli. Con la campagna «Tirami su» la Città invita anche a sciacquare le urine con acqua; per gli escrementi non raccolti sono previste multe.",
             "url": "https://www.laregione.ch/cantone/mendrisiotto/1953474/pipi-dei-cani-anche-mendrisio-introduce-la-bottiglietta"
           },
           {
             "title": "Registrazione, corso e assicurazione",
             "text": "Ogni cane deve avere il microchip ed essere annunciato al Comune. Chi detiene un cane per la prima volta deve aver frequentato il corso di base, ed è obbligatoria un'assicurazione RC di almeno CHF 3 milioni (art. 3–6 OMCani).",
             "url": "https://mendrisio.ch/dam/jcr:480d428b-3aa9-4783-9a48-186b1e76c680/5.50.90.02%20Ordinanza%20municipale%20concernente%20la%20custodia%20e%20le%20aree%20di%20svago%20e%20di%20sfogo%20dei%20cani.pdf"
+          },
+          {
+            "title": "Con il cane sul treno FFS",
+            "text": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino, come bagaglio a mano. Per i cani più grandi serve un biglietto a metà prezzo di 2ª classe oppure una carta giornaliera per cani; il cane sta sotto il sedile senza ostacolare il passaggio.",
+            "url": "https://www.sbb.ch/it/informazioni-viaggio/esigenze-individuali/viaggiare-cane.html"
           }
         ],
         "walks": [
           {
             "name": "Monte Generoso in treno a cremagliera",
             "where": "Partenza da Capolago (quartiere di Mendrisio) fino alla vetta",
-            "text": "Sulla Ferrovia Monte Generoso i cani sono ammessi: quelli piccoli viaggiano gratis in braccio, per i cani di taglia media o grande si paga un forfait di CHF 9 al giorno. Sono benvenuti anche al Camping, al Buffet Bellavista e al Fiore di pietra.",
+            "text": "Sulla Ferrovia Monte Generoso i cani sono ammessi: quelli piccoli viaggiano gratis in braccio, per i cani di taglia media o grande c'è un biglietto giornaliero per cani. Sono benvenuti anche al Camping, al Buffet Bellavista e al Fiore di pietra.",
             "url": "https://www.montegeneroso.ch/it/faq"
           },
           {
@@ -1179,46 +1105,23 @@
         "events": [
           {
             "name": "Fiera di San Martino",
-            "when": "11–15 novembre 2026 (ogni anno attorno all'11 novembre)",
+            "when": "Ogni anno a novembre, attorno all'11",
             "text": "Fiera sui prati di San Martino a Mendrisio, documentata dal 1684 e nata come mercato del bestiame. Oggi la Gioventù Rurale del Mendrisiotto allestisce un'area con mucche, maiali, asini, capre, conigli e cavalli.",
             "url": "https://mendrisio.ch/en/home/vivere-e-visitare/eventi/iniziative-cittadine/fiera-di-san-martino.html"
           },
           {
             "name": "Benedizione degli animali per Sant'Antonio abate a Genestrerio",
             "when": "a metà gennaio, attorno al 17 gennaio (data annuale da verificare)",
-            "text": "Nel quartiere di Genestrerio (Mendrisio) la fiera di Sant'Antonio abate prevede la tradizionale benedizione di animali e automobili sul sagrato. Nel gennaio 2025 la benedizione è iniziata alle 15.45, preceduta da una vendita di dolci.",
+            "text": "Nel quartiere di Genestrerio (Mendrisio) la fiera di Sant'Antonio abate prevede la tradizionale benedizione di animali e automobili sul sagrato. La benedizione è preceduta da una vendita di dolci fatti in casa.",
             "url": "https://www.tio.ch/ticino/attualita/1810175/ecco-la-benedizione-degli-animali"
           },
           {
             "name": "Walking Mendrisiotto – categoria Walk&Dog",
-            "when": "primavera (edizione 2026: 26 aprile)",
+            "when": "In primavera",
             "text": "Camminata non competitiva con partenza dal Mercato Coperto di Mendrisio. Oltre al walking e al nordic walking prevede la categoria Walk&Dog per chi partecipa con il proprio cane.",
             "url": "https://mendrisio.ch/de/home/vivere-e-visitare/eventi/agenda-della-citta/2026/aprile/2026-04-26-Walking-Mendrisiotto.html"
           }
         ],
-        "transport": [
-          {
-            "to": "Lugano",
-            "minutes": "16–20",
-            "text": "Treno diretto RE80 (circa 16–17 min) o TILO S10 (circa 20 min)."
-          },
-          {
-            "to": "Chiasso",
-            "minutes": "8–10",
-            "text": "Treno diretto RE80, S10 o S40."
-          },
-          {
-            "to": "Bellinzona",
-            "minutes": "35–39",
-            "text": "TILO S10 diretta (circa 39 min) oppure RE80 con cambio (circa 35 min)."
-          },
-          {
-            "to": "Locarno",
-            "minutes": "50–57",
-            "text": "RE80 diretto."
-          }
-        ],
-        "trainNote": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (dal 13 dicembre 2026: 27 franchi). Tempi di percorrenza indicativi secondo l'orario FFS.",
         "faq": [
           {
             "question": "Devo tenere il cane al guinzaglio a Mendrisio?",
@@ -1226,11 +1129,11 @@
           },
           {
             "question": "Quanto costa la tassa sui cani a Mendrisio?",
-            "answer": "Dal 1° luglio 2026 la tassa annua è di CHF 115 per ogni cane registrato a partire dal terzo mese di età. Per il 2026 è prevista una tassa transitoria di CHF 95."
+            "answer": "Secondo l'ordinanza municipale la tassa annua è di CHF 115 per ogni cane registrato a partire dal terzo mese di età."
           },
           {
             "question": "Devo pulire anche la pipì del cane a Mendrisio?",
-            "answer": "Una revisione dell'ordinanza, pubblicata fino al 26 ottobre 2026, introduce l'obbligo di sciacquare le urine con acqua. Già la campagna «Tirami su» raccomandava di portare sacchetti e una bottiglietta d'acqua."
+            "answer": "La campagna «Tirami su» della Città raccomanda di portare sacchetti e una bottiglietta d'acqua per sciacquare le urine; verifica l'ordinanza in vigore per gli obblighi esatti."
           },
           {
             "question": "A chi mi rivolgo se trovo un animale abbandonato nel Mendrisiotto?",
@@ -1238,11 +1141,7 @@
           },
           {
             "question": "Posso portare il cane sul treno del Monte Generoso?",
-            "answer": "Sì. I cani piccoli viaggiano gratis in braccio, per quelli di taglia media o grande c'è un biglietto forfettario di 9 franchi al giorno. In vetta i cani sono benvenuti anche al Fiore di pietra."
-          },
-          {
-            "question": "Posso portare il cane in treno da Mendrisio a Lugano o Bellinzona?",
-            "answer": "Sì. Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (27 franchi dal 13 dicembre 2026)."
+            "answer": "Sì. I cani piccoli viaggiano gratis in braccio, per quelli di taglia media o grande c'è un biglietto giornaliero per cani. In vetta i cani sono benvenuti anche al Fiore di pietra."
           }
         ],
         "sources": [
@@ -1350,8 +1249,7 @@
             "title": "USAV – Viaggiare con cani, gatti e furetti",
             "url": "https://www.blv.admin.ch/blv/it/home/tiere/reisen-mit-heimtieren/hunde-katzen-und-frettchen.html"
           }
-        ],
-        "checked": "20 ottobre 2026"
+        ]
       }
     },
     {
@@ -1366,7 +1264,7 @@
         "lon": 9.0313,
         "region": "Mendrisiotto"
       },
-      "contentHtml": "<h2>Single e amanti degli animali a Chiasso: i numeri</h2><p>Chiasso conta 7.564 residenti permanenti (fine 2024) ed è il secondo comune del distretto di Mendrisio, dove il 43,1 % delle economie domestiche è formato da una sola persona e il 43,4 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>).</p><p>Mendrisio è a 7–10 minuti di treno, Lugano a circa 24: con la ricerca per codice postale 6830 trovi profili in tutto il Mendrisiotto.</p><h2>Passeggiate nel Parco del Penz</h2><p>Il Parco del Penz tra Chiasso e Pedrinate offre circa 245 ettari di bosco e oltre 30 km di sentieri, tra cui un percorso didattico di 2,4 km. In via Sottopenz il Comune ha istituito nel 2013 un'area di sgambamento recintata di circa 663 m², aperta dalle 7 alle 22 ai residenti con cane notificato.</p><p>Sul resto del territorio comunale il cane va tenuto sempre al guinzaglio; il Bosco della Selva a Pedrinate è vietato ai cani.</p><h2>Gite con il cane nei dintorni</h2><p>Il Sentiero delle Guardie parte vicino alla dogana e porta sulla collina di Pedrinate, al punto più a sud della Svizzera. Da Sagno (6839) il Sentiero Panoramico sale al Monte Bisbino, con vista fino al Lago di Como.</p><h2>Regole e servizi per chi ha un cane</h2><p>Dal 18 agosto 2026 a Chiasso chi porta fuori il cane deve avere con sé una bottiglietta d'acqua e sciacquare subito la pipì: dopo un ammonimento la multa è di 100 franchi, mentre per gli escrementi non raccolti è di almeno 200 franchi. Ne ha parlato anche la <a href=\"https://www.rsi.ch/info/ticino-grigioni-e-insubria/Chiasso-i-padroni-di-cani-devono-pulire-anche-la-pip%C3%AC--3904819.html\">RSI</a>. La tassa annua è di 115 franchi.</p>",
+      "contentHtml": "<h2>Single e amanti degli animali a Chiasso: i numeri</h2><p>Chiasso conta 7.564 residenti permanenti (fine 2024) ed è il secondo comune del distretto di Mendrisio, dove il 43,1 % delle economie domestiche è formato da una sola persona e il 43,4 % della popolazione è celibe o nubile (<a href=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/volume/tic_2026.pdf\">USTAT, Il Ticino in cifre 2026</a>).</p><p>Chiasso, Mendrisio e Lugano sono collegate dalla stessa linea ferroviaria: con la ricerca per codice postale 6830 trovi profili in tutto il Mendrisiotto.</p><h2>Passeggiate nel Parco del Penz</h2><p>Il Parco del Penz tra Chiasso e Pedrinate offre circa 245 ettari di bosco e oltre 30 km di sentieri, tra cui un percorso didattico di 2,4 km. In via Sottopenz il Comune ha istituito nel 2013 un'area di sgambamento recintata di circa 663 m², aperta dalle 7 alle 22 ai residenti con cane notificato.</p><p>Sul resto del territorio comunale il cane va tenuto sempre al guinzaglio; il Bosco della Selva a Pedrinate è vietato ai cani.</p><h2>Gite con il cane nei dintorni</h2><p>Il Sentiero delle Guardie parte vicino alla dogana e porta sulla collina di Pedrinate, al punto più a sud della Svizzera. Da Sagno (6839) il Sentiero Panoramico sale al Monte Bisbino, con vista fino al Lago di Como.</p><h2>Regole e servizi per chi ha un cane</h2><p>A Chiasso chi porta fuori il cane deve avere con sé una bottiglietta d'acqua e sciacquare subito la pipì: dopo un ammonimento la multa è di 100 franchi, mentre per gli escrementi non raccolti è di almeno 200 franchi. Ne ha parlato anche la <a href=\"https://www.rsi.ch/info/ticino-grigioni-e-insubria/Chiasso-i-padroni-di-cani-devono-pulire-anche-la-pip%C3%AC--3904819.html\">RSI</a>. La tassa annua è di 115 franchi.</p>",
       "guide": {
         "facts": [
           {
@@ -1427,13 +1325,18 @@
           },
           {
             "title": "Bottiglietta d'acqua obbligatoria",
-            "text": "Dal 18 agosto 2026 i detentori devono sciacquare subito la pipì del cane e portare sempre con sé acqua, oltre ai sacchetti. Dopo un ammonimento la multa è di 100 franchi, mentre per gli escrementi non raccolti è di almeno 200 franchi.",
+            "text": "I detentori devono sciacquare subito la pipì del cane e portare sempre con sé acqua, oltre ai sacchetti. Dopo un ammonimento la multa è di 100 franchi, mentre per gli escrementi non raccolti è di almeno 200 franchi.",
             "url": "https://www.chiasso.ch/wp-content/uploads/2026/09/CS_Ordinanza-cani_campagna-Can-Can-Yoga.pdf"
           },
           {
             "title": "Tassa, registrazione e corso",
-            "text": "Il Comune preleva una tassa annua di 115 franchi per ogni cane oltre i 3 mesi registrato in AMICUS. Arrivi, decessi e cambi d'indirizzo vanno notificati alla Polizia comunale; dal 1° settembre 2026 chi prende un cane per la prima volta deve seguire un corso teorico di base.",
+            "text": "Il Comune preleva una tassa annua di 115 franchi per ogni cane oltre i 3 mesi registrato in AMICUS. Arrivi, decessi e cambi d'indirizzo vanno notificati alla Polizia comunale; chi prende un cane per la prima volta deve seguire prima un corso teorico di base.",
             "url": "https://www.chiasso.ch/wp-content/uploads/2026/08/Cani_informazioni-procedura_2026_2.pdf"
+          },
+          {
+            "title": "Con il cane sul treno FFS",
+            "text": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino, come bagaglio a mano. Per i cani più grandi serve un biglietto a metà prezzo di 2ª classe oppure una carta giornaliera per cani; il cane sta sotto il sedile senza ostacolare il passaggio.",
+            "url": "https://www.sbb.ch/it/informazioni-viaggio/esigenze-individuali/viaggiare-cane.html"
           }
         ],
         "walks": [
@@ -1483,56 +1386,23 @@
         "events": [
           {
             "name": "Fiera di San Martino",
-            "when": "11–15 novembre 2026 (ogni anno attorno all'11 novembre)",
+            "when": "Ogni anno a novembre, attorno all'11",
             "text": "Fiera sui prati di San Martino a Mendrisio, documentata dal 1684 e nata come mercato del bestiame. Oggi la Gioventù Rurale del Mendrisiotto allestisce un'area con mucche, maiali, asini, capre, conigli e cavalli.",
             "url": "https://mendrisio.ch/en/home/vivere-e-visitare/eventi/iniziative-cittadine/fiera-di-san-martino.html"
           },
           {
             "name": "Benedizione degli animali per Sant'Antonio abate a Genestrerio",
             "when": "a metà gennaio, attorno al 17 gennaio (data annuale da verificare)",
-            "text": "Nel quartiere di Genestrerio (Mendrisio) la fiera di Sant'Antonio abate prevede la tradizionale benedizione di animali e automobili sul sagrato. Nel gennaio 2025 la benedizione è iniziata alle 15.45, preceduta da una vendita di dolci.",
+            "text": "Nel quartiere di Genestrerio (Mendrisio) la fiera di Sant'Antonio abate prevede la tradizionale benedizione di animali e automobili sul sagrato. La benedizione è preceduta da una vendita di dolci fatti in casa.",
             "url": "https://www.tio.ch/ticino/attualita/1810175/ecco-la-benedizione-degli-animali"
           },
           {
             "name": "Walking Mendrisiotto – categoria Walk&Dog",
-            "when": "primavera (edizione 2026: 26 aprile)",
+            "when": "In primavera",
             "text": "Camminata non competitiva con partenza dal Mercato Coperto di Mendrisio. Oltre al walking e al nordic walking prevede la categoria Walk&Dog per chi partecipa con il proprio cane.",
             "url": "https://mendrisio.ch/de/home/vivere-e-visitare/eventi/agenda-della-citta/2026/aprile/2026-04-26-Walking-Mendrisiotto.html"
           }
         ],
-        "transport": [
-          {
-            "to": "Mendrisio",
-            "minutes": "7–10",
-            "text": "Ca. 7 minuti con TILO RE80, 8–10 minuti con S10/S40."
-          },
-          {
-            "to": "Lugano",
-            "minutes": "24–34",
-            "text": "Ca. 24 minuti con RE80 o EC, fino a ca. 34 minuti con S10."
-          },
-          {
-            "to": "Bellinzona",
-            "minutes": "41–53",
-            "text": "Ca. 41 minuti con EC diretto, ca. 50 minuti con S10."
-          },
-          {
-            "to": "Locarno",
-            "minutes": "57–64",
-            "text": "Circa un'ora con il TILO RE80 diretto."
-          },
-          {
-            "to": "Como San Giovanni",
-            "minutes": "20",
-            "text": "Ca. 20 minuti con RE80 oltre il confine."
-          },
-          {
-            "to": "Milano Centrale",
-            "minutes": "46",
-            "text": "Meno di un'ora con il TILO RE80 diretto."
-          }
-        ],
-        "trainNote": "Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (dal 13 dicembre 2026: 27 franchi). Tempi di percorrenza indicativi secondo l'orario FFS.",
         "faq": [
           {
             "question": "Dove può correre il cane senza guinzaglio a Chiasso?",
@@ -1540,7 +1410,7 @@
           },
           {
             "question": "Perché a Chiasso serve una bottiglietta d'acqua quando si porta a spasso il cane?",
-            "answer": "Dal 18 agosto 2026 l'ordinanza obbliga a sciacquare subito la pipì del cane sulle aree pubbliche. Chi non lo fa riceve prima un ammonimento e poi una multa di 100 franchi."
+            "answer": "L'ordinanza obbliga a sciacquare subito la pipì del cane sulle aree pubbliche. Chi non lo fa riceve prima un ammonimento e poi una multa di 100 franchi."
           },
           {
             "question": "Posso portare il cane nel Parco del Penz?",
@@ -1553,10 +1423,6 @@
           {
             "question": "Dove trovo la mappa con fontane e distributori di sacchetti?",
             "answer": "Nel pieghevole «Can-Can Yoga» del Comune, disponibile agli sportelli comunali e come PDF su chiasso.ch. La mappa segna fontane, distributori di sacchetti, aree vietate e aree di svago per cani."
-          },
-          {
-            "question": "Posso portare il cane in treno da Chiasso a Lugano o Bellinzona?",
-            "answer": "Sì. Sui treni FFS i cani fino a 30 cm al garrese viaggiano gratis in un trasportino; per quelli più grandi si paga metà prezzo di 2ª classe oppure la carta giornaliera cane da 25 franchi (27 franchi dal 13 dicembre 2026)."
           }
         ],
         "sources": [
@@ -1664,8 +1530,7 @@
             "title": "USAV – Viaggiare con cani, gatti e furetti",
             "url": "https://www.blv.admin.ch/blv/it/home/tiere/reisen-mit-heimtieren/hunde-katzen-und-frettchen.html"
           }
-        ],
-        "checked": "20 ottobre 2026"
+        ]
       }
     }
   ]

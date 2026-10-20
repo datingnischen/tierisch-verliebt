@@ -221,51 +221,6 @@
   height: 16px;
 }
 
-.itg-train {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.itg-train li {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  padding: 16px 20px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: inset 0 0 0 1px var(--tvc-line);
-}
-
-.itg-train li > span:last-child {
-  display: grid;
-  gap: 2px;
-}
-
-.itg-train small {
-  color: var(--tvc-muted);
-  font-size: 0.85rem;
-  line-height: 1.4;
-}
-
-.itg-train-min {
-  flex: none;
-  min-width: 74px;
-  color: var(--tvc-muted);
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-.itg-train-min strong {
-  display: block;
-  color: var(--tvc-green-dark);
-  font-family: var(--tvc-display), sans-serif;
-  font-size: 1.35rem;
-}
-
 .itg-faq {
   display: grid;
   gap: 12px;
@@ -336,8 +291,7 @@
 
   .itg-cards,
   .itg-cards-3,
-  .itg-events,
-  .itg-train {
+  .itg-events {
     grid-template-columns: 1fr;
   }
 }
