@@ -53,7 +53,8 @@ export function trailingSlashRedirect(request: NextRequest) {
 // weitergeben). nginx ruft Vercel mit Host vercel.app und Länderpräfix auf (tierisch-verliebt.at/magazin/… →
 // /at/magazin/…); eine Landesdomain als Host entscheidet vor dem Präfix. Für .at/.ch hängt der Rewrite
 // tv_market an: Der Länderknoten liefert statt der .de-Beiträge die drei größten Städteseiten (lib/wp-market-teasers.ts).
-// Bei .de wird ein von außen gesetzter tv_market entfernt.
+// Bei .de wird ein von außen gesetzter tv_market mit "de" überschrieben: Vercel übernimmt beim Rewrite die Parameter
+// der Originalanfrage, ein bloßes Entfernen wirkt dort nicht.
 export function wpRestRewrite(request: NextRequest) {
   const { pathname, searchParams, href } = request.nextUrl;
   const root = isWpRestRoot(pathname, searchParams);
@@ -61,8 +62,7 @@ export function wpRestRewrite(request: NextRequest) {
   const market = marketForHostname(requestHostname(request)) ?? pathname.match(/^\/(de|at|ch)(?=\/|$)/)?.[1] ?? "de";
   if (market !== "de" && market !== "at" && market !== "ch") return null;
   const destination = restRewriteUrl(href, root ? "/magazin/index.php" : pathname.replace(/^\/(?:de|at|ch)(?=\/)/, ""));
-  if (destination.searchParams.has(MARKET_TEASER_PARAM)) destination.searchParams.delete(MARKET_TEASER_PARAM);
-  if (market !== "de") destination.searchParams.set(MARKET_TEASER_PARAM, market);
+  if (market !== "de" || destination.searchParams.has(MARKET_TEASER_PARAM)) destination.searchParams.set(MARKET_TEASER_PARAM, market);
   return NextResponse.rewrite(destination);
 }
 

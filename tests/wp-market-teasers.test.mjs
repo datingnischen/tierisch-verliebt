@@ -89,7 +89,7 @@ test("proxy: nginx-Upstream /at|/ch/… und Landesdomain landen beim Endpunkt mi
   }
 });
 
-test("proxy: .de bleibt beim Magazin, ein von außen gesetzter tv_market wird entfernt", () => {
+test("proxy: .de bleibt beim Magazin, ein von außen gesetzter tv_market wird mit de überschrieben", () => {
   for (const url of [
     `https://tierisch-verliebt.vercel.app/de/magazin/wp-json/wp/v2/posts?per_page=3&${MARKET_TEASER_PARAM}=at`,
     `https://tierisch-verliebt.vercel.app/magazin/wp-json/wp/v2/posts?per_page=3&${MARKET_TEASER_PARAM}=at`,
@@ -97,7 +97,8 @@ test("proxy: .de bleibt beim Magazin, ein von außen gesetzter tv_market wird en
     `https://tierisch-verliebt.de/magazin/?rest_route=/wp/v2/posts&${MARKET_TEASER_PARAM}=ch`,
   ]) {
     const target = rewrite(url);
-    assert.equal(target.searchParams.has(MARKET_TEASER_PARAM), false, url);
+    // Vercel übernimmt beim Rewrite die Originalparameter: überschreiben statt entfernen.
+    assert.deepEqual(target.searchParams.getAll(MARKET_TEASER_PARAM), ["de"], url);
     assert.doesNotMatch(target.pathname, /^\/(?:de|at|ch)\//, url);
   }
   const plain = rewrite("https://tierisch-verliebt.vercel.app/de/magazin/wp-json/wp/v2/posts?per_page=3");
