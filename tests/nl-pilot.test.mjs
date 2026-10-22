@@ -80,7 +80,7 @@ test("NL pages link registration and login to tierisch-verliebt.de, never to the
 test("NL footer links the live domains with flags; live DE/AT/CH footers link NL only after release", async () => {
   const fs = await import("node:fs");
   const nl = fs.readFileSync(new URL("../components/nl/site-shell.tsx", import.meta.url), "utf8");
-  assert.match(nl, /<Flag market=\{market\}\/>/);
+  assert.match(nl, /<MarketFlag market=\{market\}\/>/);
   assert.match(nl, /aria-label=\{`\$\{COUNTRY_NL\[market\]\}: \$\{getMarket\(market\)\.domain\}`\}/);
   assert.doesNotMatch(nl, /<MarketLink market="nl" path="\/">NL<\/MarketLink>/);
   const live = fs.readFileSync(new URL("../components/site-shell.tsx", import.meta.url), "utf8");

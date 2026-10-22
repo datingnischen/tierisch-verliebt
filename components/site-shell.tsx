@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { MarketLink } from "@/components/market-link";
+import { MenuMarketFlag } from "@/components/market-flag";
 import { getMarket, publicUrl, type MarketCode } from "@/lib/markets";
 import { staticAsset } from "@/lib/static-asset";
 import { NlFooter, NlHeader } from "@/components/nl/site-shell";
@@ -159,7 +160,7 @@ export function SiteHeader({ market = "de" }: Props) {
                 {items.map((item) => <span key={item.href}>{localLink(market, item.href, item.label)}</span>)}
                 {/* Nur auf sehr schmalen Handys sichtbar – dort weicht „Login“ aus der Kopfzeile ins Menü. */}
                 <span className="menu-login"><a href={publicUrl(market, "/login/")}>Login</a></span>
-                {regional ? <span className="menu-market-label">{config.countryName}</span> : null}
+                {regional ? <MenuMarketFlag market={market} label={config.countryName}/> : null}
               </nav>
             </div>
           </details>

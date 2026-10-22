@@ -1,6 +1,7 @@
 "use client";
 
 import { MarketLink } from "@/components/market-link";
+import { MenuMarketFlag } from "@/components/market-flag";
 import { IT_CITIES, IT_PLATFORM } from "@/lib/it-routes";
 import { CH_LOGO } from "./copy";
 
@@ -22,7 +23,7 @@ export function ItHeader() {
           <span><MarketLink market="it" path="/">Home</MarketLink></span>
           {CITIES.map((city) => <span key={city.path}><MarketLink market="it" path={city.path}>{city.name}</MarketLink></span>)}
           <span className="nl-menu-login"><a href={IT_PLATFORM.loginUrl}>Accedi</a></span>
-          <span className="menu-market-label">Svizzera italiana</span>
+          <MenuMarketFlag market="it" label="Svizzera italiana"/>
         </nav></div>
       </details>
     </div>
