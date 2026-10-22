@@ -255,7 +255,7 @@ export function SiteFooter({ market = "de" }: Props) {
               <a href={publicUrl("de")} aria-current={market === "de" ? "true" : undefined}>DE</a>
               <a href={publicUrl("at")} aria-current={market === "at" ? "true" : undefined}>AT</a>
               <a href={publicUrl("ch")} aria-current={market === "ch" ? "true" : undefined}>CH</a>
-              {NL_IN_LIVE_FOOTERS ? <a href={publicUrl("nl")} hrefLang="nl-NL" title="Nederland">NL</a> : null}
+              {NL_IN_LIVE_FOOTERS ? <a href={publicUrl("nl")} hrefLang="nl-NL" title="Niederlande: tierisch-verliebt.nl (im Aufbau)" aria-label="Niederlande: tierisch-verliebt.nl, im Aufbau">NL</a> : null}
             </span>
           </div>
         </div>

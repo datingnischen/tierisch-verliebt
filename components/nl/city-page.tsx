@@ -104,7 +104,7 @@ export function NlCityPage({ market, city, expert }: Props) {
       </div>
 
       <div className="tvc-wrap tvc-widget">
-        <section className="nl-profile-placeholder"><PawIcon /><h2>Singles met hart voor dieren in {city.cityName}</h2><p>Een Nederlands ledenplatform volgt nog. Aanmelden kan al gratis via ons Duitstalige platform tierisch-verliebt.de; tot die tijd vind je hier de stadsgids en het magazine.</p><MarketLink market="nl" path="/magazin">Ontdek het magazine →</MarketLink></section>
+        <section className="nl-profile-placeholder"><PawIcon /><h2>Singles met hart voor dieren in {city.cityName}</h2><p>tierisch-verliebt.nl is nog in opbouw. Aanmelden kan op dit moment alleen gratis op onze Duitse site tierisch-verliebt.de, in het Duits. Hier vind je alvast de stadsgids en het magazine.</p><MarketLink market="nl" path="/magazin">Ontdek het magazine →</MarketLink></section>
       </div>
 
       {ideas.length >= 2 ? (

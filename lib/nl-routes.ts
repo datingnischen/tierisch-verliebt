@@ -18,8 +18,8 @@ export const NL_BREEDS = [
  */
 export const NL_PILOT_INDEXABLE = true;
 
-/** NL-Link in den Live-Footern DE/AT/CH: unabhängig von der Indexierung, nur nach Christians ausdrücklicher Freigabe. */
-export const NL_IN_LIVE_FOOTERS = false;
+/** NL-Link in den Live-Footern DE/AT/CH: unabhängig von der Indexierung, von Christian am 22.10.2026 freigegeben (mit Hinweis „im Aufbau“). */
+export const NL_IN_LIVE_FOOTERS = true;
 
 /** Search-Console-Bestätigung der URL-Präfix-Property https://tierisch-verliebt.nl/ (m-perfect-Konto) – nie entfernen. */
 export const NL_GOOGLE_SITE_VERIFICATION = "n7jzrUTPJliP0Vj7rho6yp3q2IDmpbzAnoa0Fb-WEMo";

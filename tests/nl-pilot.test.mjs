@@ -77,7 +77,7 @@ test("NL pages link registration and login to tierisch-verliebt.de, never to the
   for (const needle of ["Vercel Web Analytics", "24 uur", "youtube-nocookie", "Autoriteit Persoonsgegevens"]) assert.ok(privacy.includes(needle), needle);
 });
 
-test("NL footer links the live domains with flags; live DE/AT/CH footers link NL only after release", async () => {
+test("NL footer links the live domains with flags; live DE/AT/CH footers link NL as under construction", async () => {
   const fs = await import("node:fs");
   const nl = fs.readFileSync(new URL("../components/nl/site-shell.tsx", import.meta.url), "utf8");
   assert.match(nl, /<MarketFlag market=\{market\}\/>/);
@@ -86,7 +86,10 @@ test("NL footer links the live domains with flags; live DE/AT/CH footers link NL
   const live = fs.readFileSync(new URL("../components/site-shell.tsx", import.meta.url), "utf8");
   assert.match(live, /NL_IN_LIVE_FOOTERS \? <a href=\{publicUrl\("nl"\)\}/);
   const { NL_IN_LIVE_FOOTERS } = await import("../lib/nl-routes.ts");
-  assert.equal(NL_IN_LIVE_FOOTERS, false, "NL ist Pilot: kein Link aus den Live-Footern, bis Christian die Domain freigibt");
+  // Von Christian am 22.10.2026 freigegeben; der Link nennt NL als „im Aufbau“.
+  assert.equal(NL_IN_LIVE_FOOTERS, true);
+  assert.match(live, /title="Niederlande: tierisch-verliebt\.nl \(im Aufbau\)"/);
+  assert.match(nl, /nog in opbouw/);
 });
 
 test("NL analytics URLs get the /nl prefix only on the .nl host", async () => {

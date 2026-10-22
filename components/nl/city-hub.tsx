@@ -100,7 +100,7 @@ export function NlCityHub({ market }: { market: MarketCode }) {
             <p>Ontdek wandelroutes, ideeën voor een date en praktische tips voor dierenliefhebbers in jouw stad.</p>
           </div>
           <NlCityFinder market={market} cities={data.cities} regions={data.regions} regionLabel={regionLabel.one} />
-          <p className="nl-pilot-note">Aanmelden gaat voorlopig via ons Duitstalige platform tierisch-verliebt.de. Een Nederlandse versie van het ledenplatform volgt; tot die tijd vind je hier al alle stadsgidsen.</p>
+          <p className="nl-pilot-note">tierisch-verliebt.nl is nog in opbouw: aanmelden kan op dit moment alleen op onze Duitse site tierisch-verliebt.de, in het Duits. De stadsgidsen vind je hier al volledig.</p>
         </div>
       </section>
 

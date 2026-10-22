@@ -97,8 +97,8 @@ function About() {
       </div>
     </section>
     <section id="platform">
-      <h2>Waarom aanmelden voorlopig in het Duits gaat</h2>
-      <p>Een Nederlandse versie van het ledenplatform bestaat nog niet. Tot die tijd gaan <a href={nlRegistrationUrl("location")} hrefLang="de-DE">aanmelden</a> en <a href={NL_PLATFORM.loginUrl} hrefLang="de-DE">inloggen</a> via het Duitstalige platform tierisch-verliebt.de. De menu&apos;s en berichten daar zijn in het Duits. Zodra er een Nederlandse versie is, passen we de links op alle pagina&apos;s aan.</p>
+      <h2>In opbouw: waarom aanmelden nu nog in het Duits gaat</h2>
+      <p>tierisch-verliebt.nl is nog in opbouw en een Nederlandse versie van het ledenplatform bestaat nog niet. Op dit moment gaan <a href={nlRegistrationUrl("location")} hrefLang="de-DE">aanmelden</a> en <a href={NL_PLATFORM.loginUrl} hrefLang="de-DE">inloggen</a> via het Duitstalige platform tierisch-verliebt.de. De menu&apos;s en berichten daar zijn in het Duits, en als woonplaats kun je op dit moment alleen een plaats in Duitsland, Oostenrijk of Zwitserland kiezen. Zodra er een Nederlandse versie is, passen we de links op alle pagina&apos;s aan.</p>
     </section>
     <section>
       <h2>Contact en meldingen</h2>
