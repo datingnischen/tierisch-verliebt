@@ -13,7 +13,7 @@ function Brand({ light = false }: { light?: boolean }) {
 
 export function NlHeader() {
   const items = [{ label: "Home", path: "/" }, { label: "Dating", path: "/partnersuche" }, { label: "Magazine", path: "/magazin" }, { label: "Hondenrassen", path: "/magazin/hondenrassen" }, { label: "Kattenrassen", path: "/magazin/kattenrassen" }, { label: "Over ons", path: "/over-ons" }];
-  return <header className="site-header-shell"><div className="site-header-bar compact-header-bar"><Brand />
+  return <><header className="site-header-shell"><div className="site-header-bar compact-header-bar"><Brand />
     <div className="header-actions compact-header-actions" aria-label="Je account">
       <a className="login-link" href={NL_PLATFORM.loginUrl}>Inloggen</a>
       <a className="header-register header-register-primary" href={nlRegistrationUrl("location")}>Aanmelden</a>
@@ -21,7 +21,7 @@ export function NlHeader() {
         <div className="header-menu-panel"><nav className="main-nav compact-menu-nav" aria-label="Hoofdnavigatie">{items.map(item => <span key={item.path}><MarketLink market="nl" path={item.path}>{item.label}</MarketLink></span>)}<span className="nl-menu-login"><a href={NL_PLATFORM.loginUrl}>Inloggen</a></span><span className="menu-market-label">Nederland</span></nav></div>
       </details>
     </div>
-  </div>{NL_PLATFORM_DUTCH ? null : <p className="nl-platform-notice">Aanmelden en inloggen gaan voorlopig via ons Duitstalige platform <strong>tierisch-verliebt.de</strong>. Een Nederlandse versie volgt. <MarketLink market="nl" path="/over-ons#platform">Meer informatie</MarketLink></p>}</header>;
+  </div></header>{NL_PLATFORM_DUTCH ? null : <p className="nl-platform-notice">Aanmelden en inloggen gaan voorlopig via ons Duitstalige platform <strong>tierisch-verliebt.de</strong>. Een Nederlandse versie volgt. <MarketLink market="nl" path="/over-ons#platform">Meer informatie</MarketLink></p>}</>;
 }
 
 export function NlFooter() {
