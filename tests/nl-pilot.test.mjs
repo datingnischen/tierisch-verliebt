@@ -77,10 +77,11 @@ test("NL pages link registration and login to tierisch-verliebt.de, never to the
   for (const needle of ["Vercel Web Analytics", "24 uur", "youtube-nocookie", "Autoriteit Persoonsgegevens"]) assert.ok(privacy.includes(needle), needle);
 });
 
-test("NL footer names the live domains; live DE/AT/CH footers link NL only after release", async () => {
+test("NL footer links the live domains with flags; live DE/AT/CH footers link NL only after release", async () => {
   const fs = await import("node:fs");
   const nl = fs.readFileSync(new URL("../components/nl/site-shell.tsx", import.meta.url), "utf8");
-  assert.match(nl, /getMarket\(market\)\.domain/);
+  assert.match(nl, /<Flag market=\{market\}\/>/);
+  assert.match(nl, /aria-label=\{`\$\{COUNTRY_NL\[market\]\}: \$\{getMarket\(market\)\.domain\}`\}/);
   assert.doesNotMatch(nl, /<MarketLink market="nl" path="\/">NL<\/MarketLink>/);
   const live = fs.readFileSync(new URL("../components/site-shell.tsx", import.meta.url), "utf8");
   assert.match(live, /NL_PILOT_INDEXABLE \? <a href=\{publicUrl\("nl"\)\}/);
