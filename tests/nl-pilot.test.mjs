@@ -96,3 +96,13 @@ test("NL analytics URLs get the /nl prefix only on the .nl host", async () => {
   assert.equal(nlAnalyticsUrl("https://tierisch-verliebt.vercel.app/nl/over-ons/"), "https://tierisch-verliebt.vercel.app/nl/over-ons/");
   assert.equal(nlAnalyticsUrl("https://tierisch-verliebt.at/"), "https://tierisch-verliebt.at/");
 });
+
+test("NL host answers /favicon.ico from its own domain", async () => {
+  const response = proxy(new NextRequest("https://tierisch-verliebt.nl/favicon.ico", { headers: { host: "tierisch-verliebt.nl" } }));
+  assert.match(response.headers.get("x-middleware-rewrite"), /\/brand\/favicon\.ico$/);
+  const other = proxy(new NextRequest("https://tierisch-verliebt.vercel.app/favicon.ico"));
+  assert.equal(other.headers.get("x-middleware-rewrite"), null);
+  const fs = await import("node:fs");
+  assert.ok(fs.existsSync(new URL("../public/brand/favicon.ico", import.meta.url)));
+  assert.ok(fs.existsSync(new URL("../public/brand/icon-144.png", import.meta.url)));
+});

@@ -69,6 +69,8 @@ export function wpRestRewrite(request: NextRequest) {
 export function proxy(request: NextRequest) {
   const destinationHeader=request.headers.get("x-tv-rewrite-destination"),token=request.headers.get("x-tv-rewrite-token");
   if(token===INTERNAL_REWRITE_TOKEN&&destinationHeader===request.nextUrl.pathname)return NextResponse.next();
+  // tierisch-verliebt.nl läuft direkt auf Vercel: Google übernimmt Favicons nur von derselben Domain.
+  if(request.nextUrl.pathname==="/favicon.ico"&&marketForHostname(requestHostname(request))==="nl"){const icon=request.nextUrl.clone();icon.pathname="/brand/favicon.ico";return NextResponse.rewrite(icon);}
   const wpRest=wpRestRewrite(request);
   if(wpRest)return wpRest;
   const slashRedirect=trailingSlashRedirect(request);
