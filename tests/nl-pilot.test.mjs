@@ -88,3 +88,11 @@ test("NL footer links the live domains with flags; live DE/AT/CH footers link NL
   const { NL_IN_LIVE_FOOTERS } = await import("../lib/nl-routes.ts");
   assert.equal(NL_IN_LIVE_FOOTERS, false, "NL ist Pilot: kein Link aus den Live-Footern, bis Christian die Domain freigibt");
 });
+
+test("NL analytics URLs get the /nl prefix only on the .nl host", async () => {
+  const { nlAnalyticsUrl } = await import("../lib/nl-routes.ts");
+  assert.equal(nlAnalyticsUrl("https://tierisch-verliebt.nl/"), "https://tierisch-verliebt.nl/nl");
+  assert.equal(nlAnalyticsUrl("https://www.tierisch-verliebt.nl/partnersuche/amsterdam/?x=1"), "https://www.tierisch-verliebt.nl/nl/partnersuche/amsterdam/?x=1");
+  assert.equal(nlAnalyticsUrl("https://tierisch-verliebt.vercel.app/nl/over-ons/"), "https://tierisch-verliebt.vercel.app/nl/over-ons/");
+  assert.equal(nlAnalyticsUrl("https://tierisch-verliebt.at/"), "https://tierisch-verliebt.at/");
+});

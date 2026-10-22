@@ -16,7 +16,7 @@ export const NL_BREEDS = [
  * Indexierung erst freigeben, wenn tierisch-verliebt.nl registriert ist und auf Vercel zeigt (Canonicals
  * zeigen schon dorthin). Dann: indexierbar, NL-Sitemap mit allen Seiten, robots erlaubt.
  */
-export const NL_PILOT_INDEXABLE = false;
+export const NL_PILOT_INDEXABLE = true;
 
 /** NL-Link in den Live-Footern DE/AT/CH: unabhängig von der Indexierung, nur nach Christians ausdrücklicher Freigabe. */
 export const NL_IN_LIVE_FOOTERS = false;
@@ -56,4 +56,22 @@ export function isNlEditorialPath(pathname: string): boolean {
     || ["/magazin", "/magazin/hondenrassen", "/magazin/kattenrassen"].includes(path)
     || NL_BREEDS.some((breed) => path === `/magazin/${breed.slug}`)
     || NL_INFO_PAGES.some((page) => path === `/${page}`);
+}
+
+const NL_HOSTS = new Set(["tierisch-verliebt.nl", "www.tierisch-verliebt.nl"]);
+
+/**
+ * Vercel Web Analytics (components/site-analytics.tsx): Auf tierisch-verliebt.nl kommen die Pfade ohne
+ * Länderpräfix an und mischten sich mit AT/CH (die Query kennt keinen Host-Filter). Darum bekommen sie wie
+ * auf der Vorschau ein /nl davor; das Controlling trennt NL über startswith(requestPath,'/nl').
+ */
+export function nlAnalyticsUrl(url: string): string {
+  try {
+    const parsed = new URL(url);
+    if (!NL_HOSTS.has(parsed.hostname) || /^\/nl(?:\/|$)/.test(parsed.pathname)) return url;
+    parsed.pathname = `/nl${parsed.pathname === "/" ? "" : parsed.pathname}`;
+    return parsed.toString();
+  } catch {
+    return url;
+  }
 }

@@ -16,14 +16,14 @@ Stand 22.10.2026 (Trello-Karte oakoqYXw „Niederländer Projekt – Pilot Liveg
 
 - **Aanmelden/Inloggen** führen auf die deutschsprachige Plattform tierisch-verliebt.de (`NL_PLATFORM`, `nlRegistrationUrl()` in `lib/nl-routes.ts`). Ein schmaler Hinweis unter der Kopfzeile, Footer, Stadtseiten und Over ons sagen das offen. `/registration/`, `/login/` und `/suche/` unter `/nl/` bzw. auf der .nl-Domain leiten dorthin. Sobald ICONY eine niederländische Oberfläche liefert: `NL_PLATFORM` umstellen und `NL_PLATFORM_DUTCH = true` (blendet den Hinweis aus). Offen: ob die deutsche Plattform niederländische Postcodes annimmt, bei ICONY klären.
 - **Eigene Seiten**: `/over-ons/` (Redaktion, Arbeitsweise, Autor Christian M. Haas, Kontakt, FAQ; AboutPage/Person/FAQPage-JSON-LD), `/privacy/` (Vercel-Hosting, Vercel Web Analytics, YouTube im erweiterten Datenschutzmodus, Rechte) und `/colofon/` in `components/nl/info-pages.tsx`. Betreibername nur in Privacy und Colofon (immer noindex), wie bei single-cristiani.ch. YouTube-Einbettungen der Rasseporträts laufen über youtube-nocookie.com mit `loading="lazy"` (`lib/nl-magazine.ts`).
-- **Indexierung**: `NL_PILOT_INDEXABLE = false`. Solange bleiben alle Seiten `noindex, follow`, robots sperrt, die NL-Sitemap ist leer und der DE/AT/CH-Footer zeigt keinen NL-Link. `/partnersuche/` hat die Startseite als Canonical (gleiche Stadtübersicht).
+- **Indexierung**: seit 22.10.2026 `NL_PILOT_INDEXABLE = true` (Domain gekauft, bei Internex, DNS auf Vercel). Vorher galt: Solange bleiben alle Seiten `noindex, follow`, robots sperrt, die NL-Sitemap ist leer und der DE/AT/CH-Footer zeigt keinen NL-Link. `/partnersuche/` hat die Startseite als Canonical (gleiche Stadtübersicht).
 
 Für den Livegang nach dem Domainkauf:
 
 1. tierisch-verliebt.nl (+ www) im Vercel-Projekt tierisch-verliebt anlegen, DNS beim Registrar auf Vercel. Die .nl-Domain läuft direkt auf Vercel (kein ICONY-nginx davor), robots und Sitemap liefert die App.
 2. `NL_PILOT_INDEXABLE = true`: Seiten indexierbar (außer Privacy/Colofon), Sitemap mit allen Seiten, robots erlaubt, NL-Link im DE/AT/CH-Footer nur über den eigenen Schalter `NL_IN_LIVE_FOOTERS` (nur nach Christians Freigabe).
 3. GSC-Property für https://tierisch-verliebt.nl/ anlegen, Sitemap einreichen, Indexierung von / und den Stadtseiten beantragen.
-4. Controlling: Teilprojekt in `vercel-project-splits.json` (Filter auf `/market-nl`) und own-sites.json.
+4. Controlling: Teilprojekt in `vercel-project-splits.json` mit Filter `startswith(requestPath,'/nl')` und own-sites.json. Auf der .nl-Domain setzt `components/site-analytics.tsx` (`nlAnalyticsUrl`) das /nl-Präfix vor die Analytics-Pfade, sonst mischten sie sich mit AT/CH.
 
 ## Bewusst erhaltene Quellprobleme
 
