@@ -21,7 +21,7 @@ Stand 22.10.2026 (Trello-Karte oakoqYXw „Niederländer Projekt – Pilot Liveg
 Für den Livegang nach dem Domainkauf:
 
 1. tierisch-verliebt.nl (+ www) im Vercel-Projekt tierisch-verliebt anlegen, DNS beim Registrar auf Vercel. Die .nl-Domain läuft direkt auf Vercel (kein ICONY-nginx davor), robots und Sitemap liefert die App.
-2. `NL_PILOT_INDEXABLE = true`: Seiten indexierbar (außer Privacy/Colofon), Sitemap mit allen Seiten, robots erlaubt, NL-Link im DE/AT/CH-Footer.
+2. `NL_PILOT_INDEXABLE = true`: Seiten indexierbar (außer Privacy/Colofon), Sitemap mit allen Seiten, robots erlaubt, NL-Link im DE/AT/CH-Footer nur über den eigenen Schalter `NL_IN_LIVE_FOOTERS` (nur nach Christians Freigabe).
 3. GSC-Property für https://tierisch-verliebt.nl/ anlegen, Sitemap einreichen, Indexierung von / und den Stadtseiten beantragen.
 4. Controlling: Teilprojekt in `vercel-project-splits.json` (Filter auf `/market-nl`) und own-sites.json.
 

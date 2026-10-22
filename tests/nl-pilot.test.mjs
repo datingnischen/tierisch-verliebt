@@ -84,7 +84,7 @@ test("NL footer links the live domains with flags; live DE/AT/CH footers link NL
   assert.match(nl, /aria-label=\{`\$\{COUNTRY_NL\[market\]\}: \$\{getMarket\(market\)\.domain\}`\}/);
   assert.doesNotMatch(nl, /<MarketLink market="nl" path="\/">NL<\/MarketLink>/);
   const live = fs.readFileSync(new URL("../components/site-shell.tsx", import.meta.url), "utf8");
-  assert.match(live, /NL_PILOT_INDEXABLE \? <a href=\{publicUrl\("nl"\)\}/);
-  const { NL_PILOT_INDEXABLE } = await import("../lib/nl-routes.ts");
-  assert.equal(NL_PILOT_INDEXABLE, false, "NL ist Pilot: kein Link aus den Live-Footern, bis Christian die Domain freigibt");
+  assert.match(live, /NL_IN_LIVE_FOOTERS \? <a href=\{publicUrl\("nl"\)\}/);
+  const { NL_IN_LIVE_FOOTERS } = await import("../lib/nl-routes.ts");
+  assert.equal(NL_IN_LIVE_FOOTERS, false, "NL ist Pilot: kein Link aus den Live-Footern, bis Christian die Domain freigibt");
 });

@@ -7,7 +7,7 @@ import { getMarket, publicUrl, type MarketCode } from "@/lib/markets";
 import { staticAsset } from "@/lib/static-asset";
 import { NlFooter, NlHeader } from "@/components/nl/site-shell";
 import { ItFooter, ItHeader } from "@/components/it/site-shell";
-import { NL_PILOT_INDEXABLE } from "@/lib/nl-routes";
+import { NL_IN_LIVE_FOOTERS } from "@/lib/nl-routes";
 
 type NavLink = { label: string; href: string; external?: boolean };
 type Props = { market?: MarketCode };
@@ -255,7 +255,7 @@ export function SiteFooter({ market = "de" }: Props) {
               <a href={publicUrl("de")} aria-current={market === "de" ? "true" : undefined}>DE</a>
               <a href={publicUrl("at")} aria-current={market === "at" ? "true" : undefined}>AT</a>
               <a href={publicUrl("ch")} aria-current={market === "ch" ? "true" : undefined}>CH</a>
-              {NL_PILOT_INDEXABLE ? <a href={publicUrl("nl")} hrefLang="nl-NL" title="Nederland">NL</a> : null}
+              {NL_IN_LIVE_FOOTERS ? <a href={publicUrl("nl")} hrefLang="nl-NL" title="Nederland">NL</a> : null}
             </span>
           </div>
         </div>

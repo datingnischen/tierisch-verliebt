@@ -18,6 +18,9 @@ export const NL_BREEDS = [
  */
 export const NL_PILOT_INDEXABLE = false;
 
+/** NL-Link in den Live-Footern DE/AT/CH: unabhängig von der Indexierung, nur nach Christians ausdrücklicher Freigabe. */
+export const NL_IN_LIVE_FOOTERS = false;
+
 /** Over ons ist indexierbar; Privacy und Colofon bleiben immer noindex. */
 export const NL_INFO_PAGES = ["over-ons", "privacy", "colofon"] as const;
 export type NlInfoPage = (typeof NL_INFO_PAGES)[number];
