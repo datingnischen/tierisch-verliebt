@@ -12,11 +12,18 @@ Die Vorschau liegt unter `/nl/` auf dem bestehenden Vercel-Projekt. Öffentliche
 
 ## Plattform und Indexierung
 
-Eine NL-ICONY-Plattform-ID ist im Projekt nicht bekannt. Es werden deshalb keine Aktivitäten oder Profile unter einer erfundenen ID angefragt. Der entsprechende Stadtbereich erklärt, dass Mitgliederprofile bei der Lancierung folgen. Registrierung, Login und Rechtliches verlinken absolut auf die künftige Landesdomain; sie sind noch keine nutzbare niederländische Plattform.
+Stand 22.10.2026 (Trello-Karte oakoqYXw „Niederländer Projekt – Pilot Livegang“): Die Domain tierisch-verliebt.nl ist noch nicht registriert (Kauf macht Christian), eine NL-ICONY-Plattform gibt es nicht. Es werden deshalb keine Aktivitäten oder Profile unter einer erfundenen ID angefragt.
 
-Alle Pilotseiten haben `noindex, follow`. Die NL-robots sperrt die Indexierung; die NL-Sitemap enthält vor der Freischaltung keine indexierbaren URLs. DE/AT/CH behalten ihre bisherige Indexierung. Der Pilot wird nicht in die deutsche Seitensuche aufgenommen.
+- **Aanmelden/Inloggen** führen auf die deutschsprachige Plattform tierisch-verliebt.de (`NL_PLATFORM`, `nlRegistrationUrl()` in `lib/nl-routes.ts`). Ein schmaler Hinweis unter der Kopfzeile, Footer, Stadtseiten und Over ons sagen das offen. `/registration/`, `/login/` und `/suche/` unter `/nl/` bzw. auf der .nl-Domain leiten dorthin. Sobald ICONY eine niederländische Oberfläche liefert: `NL_PLATFORM` umstellen und `NL_PLATFORM_DUTCH = true` (blendet den Hinweis aus). Offen: ob die deutsche Plattform niederländische Postcodes annimmt, bei ICONY klären.
+- **Eigene Seiten**: `/over-ons/` (Redaktion, Arbeitsweise, Autor Christian M. Haas, Kontakt, FAQ; AboutPage/Person/FAQPage-JSON-LD), `/privacy/` (Vercel-Hosting, Vercel Web Analytics, YouTube im erweiterten Datenschutzmodus, Rechte) und `/colofon/` in `components/nl/info-pages.tsx`. Betreibername nur in Privacy und Colofon (immer noindex), wie bei single-cristiani.ch. YouTube-Einbettungen der Rasseporträts laufen über youtube-nocookie.com mit `loading="lazy"` (`lib/nl-magazine.ts`).
+- **Indexierung**: `NL_PILOT_INDEXABLE = false`. Solange bleiben alle Seiten `noindex, follow`, robots sperrt, die NL-Sitemap ist leer und der DE/AT/CH-Footer zeigt keinen NL-Link. `/partnersuche/` hat die Startseite als Canonical (gleiche Stadtübersicht).
 
-Für den späteren Start: Domain und ICONY-Landesplattform einrichten, echte Plattform-ID und Suchparameter prüfen, die Plattformaktionen testen und dann die Pilotkennzeichnung samt Indexierung/Sitemap bewusst umstellen.
+Für den Livegang nach dem Domainkauf:
+
+1. tierisch-verliebt.nl (+ www) im Vercel-Projekt tierisch-verliebt anlegen, DNS beim Registrar auf Vercel. Die .nl-Domain läuft direkt auf Vercel (kein ICONY-nginx davor), robots und Sitemap liefert die App.
+2. `NL_PILOT_INDEXABLE = true`: Seiten indexierbar (außer Privacy/Colofon), Sitemap mit allen Seiten, robots erlaubt, NL-Link im DE/AT/CH-Footer.
+3. GSC-Property für https://tierisch-verliebt.nl/ anlegen, Sitemap einreichen, Indexierung von / und den Stadtseiten beantragen.
+4. Controlling: Teilprojekt in `vercel-project-splits.json` (Filter auf `/market-nl`) und own-sites.json.
 
 ## Bewusst erhaltene Quellprobleme
 

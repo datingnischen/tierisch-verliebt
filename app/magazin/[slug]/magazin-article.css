@@ -333,3 +333,9 @@
     padding-left: 38px;
   }
 }
+
+
+.nl-author-box { margin-block: 2rem; padding: clamp(20px, 4vw, 30px); border: 1px solid #dacdd1; border-left: 4px solid #863347; border-radius: 20px; background: #fff8f4; color: #43252f; overflow-wrap: anywhere; }
+.nl-author-box h2 { font-size: clamp(23px, 3vw, 30px); margin: .5rem 0 1rem; }
+.nl-author-box p { margin-bottom: 1rem; line-height: 1.65; }
+.nl-author-box a { color: inherit; text-underline-offset: .2em; }

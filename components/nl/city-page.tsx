@@ -99,12 +99,12 @@ export function NlCityPage({ market, city, expert }: Props) {
           <li><PinIcon /><span><small>Locatie</small><strong>{city.cityName}{geo ? `, ${geo.region}` : ""}</strong></span></li>
           {nearby[0] ? <li><PawIcon /><span><small>Dichtstbijzijnde stad</small><strong>{nearby[0].cityName} · {nearby[0].km} km</strong></span></li> : null}
           <li><ClockIcon /><span><small>Leestijd</small><strong>ongeveer {guide.readingMinutes} minuten</strong></span></li>
-          <li><HeartIcon /><span><small>Aanmelden</small><strong>bij de lancering</strong></span></li>
+          <li><HeartIcon /><span><small>Aanmelden</small><strong>gratis, voorlopig in het Duits</strong></span></li>
         </ul>
       </div>
 
       <div className="tvc-wrap tvc-widget">
-        <section className="nl-profile-placeholder"><PawIcon /><h2>Singles met hart voor dieren in {city.cityName}</h2><p>Het Nederlandse ledenplatform opent bij de lancering. Tot die tijd kun je alvast onze stadsgids en het magazine ontdekken.</p><MarketLink market="nl" path="/magazin">Ontdek het magazine →</MarketLink></section>
+        <section className="nl-profile-placeholder"><PawIcon /><h2>Singles met hart voor dieren in {city.cityName}</h2><p>Een Nederlands ledenplatform volgt nog. Aanmelden kan al gratis via ons Duitstalige platform tierisch-verliebt.de; tot die tijd vind je hier de stadsgids en het magazine.</p><MarketLink market="nl" path="/magazin">Ontdek het magazine →</MarketLink></section>
       </div>
 
       {ideas.length >= 2 ? (

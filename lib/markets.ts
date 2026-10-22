@@ -1,4 +1,4 @@
-import { isNlEditorialPath } from "#nl-routes";
+import { NL_PLATFORM, isNlEditorialPath } from "#nl-routes";
 import { isItEditorialPath } from "#it-routes";
 
 // "it" ist kein eigenes Land, sondern die italienischsprachige Variante unter tierisch-verliebt.ch/it/.
@@ -138,7 +138,8 @@ function resolveRegional(market: RegionalMarket, requestedPath: string, producti
     if (path === "/robots.txt") return { action: "market-robots", market, pathname: "/market-robots/nl" };
     if (path === "/sitemap.xml") return { action: "market-sitemap", market, pathname: "/market-sitemap/nl" };
     if (isNlEditorialPath(path)) return { action: "nl-pilot", market, pathname: `/market-nl${path === "/" ? "" : path}` };
-    if (PLATFORM_PATH.test(path) && !productionHost) return { action: "redirect-platform", market, url: publicUrl(market, path) };
+    // Ohne NL-Plattform liegen Login und Registrierung auf tierisch-verliebt.de (NL_PLATFORM), auch auf der .nl-Domain.
+    if (PLATFORM_PATH.test(path)) return { action: "redirect-platform", market, url: `${NL_PLATFORM.origin}${withTrailingSlash(path)}` };
     return { action: "not-found" };
   }
   if (path === "/") return { action: "market-home", market, pathname: `/market-home/${market}` };

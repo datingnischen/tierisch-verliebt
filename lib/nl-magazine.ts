@@ -19,6 +19,8 @@ export function getNlBreed(slug: string): NlBreedEntry | null {
   const sections: NlBreedEntry["sections"] = [];
   const content = renderMagazineFaqSection(parsed.content, breed.name, "nl-NL")
     .replace(/(?<=["'\s,(])\/magazin\/wp-content\/uploads\//g, `${staticAsset("/magazin/wp-content/uploads/")}`)
+    // YouTube im erweiterten Datenschutzmodus und erst beim Scrollen laden (so in der NL-Privacy beschrieben).
+    .replace(/<iframe\b([^>]*?)src="https:\/\/www\.youtube\.com\/embed\//gi, '<iframe loading="lazy"$1src="https://www.youtube-nocookie.com/embed/')
     .replace(/<h2\b([^>]*)>([\s\S]*?)<\/h2>/gi, (_, attributes: string, html: string) => {
       const label = html.replace(/<[^>]+>/g, "").trim();
       if (!label) return `<h2${attributes}>${html}</h2>`;

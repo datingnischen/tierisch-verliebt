@@ -4,7 +4,8 @@ import type { GuideTopic } from "@/lib/city-guide";
 import { ANIMAL_LABELS, TOPIC_LABELS } from "./copy";
 import { getCityHubData } from "@/lib/city-hub";
 import { getMarketPartnersucheHub } from "@/lib/market-partnersuche";
-import { getMarket, publicUrl, type MarketCode } from "@/lib/markets";
+import { getMarket, type MarketCode } from "@/lib/markets";
+import { nlRegistrationUrl } from "@/lib/nl-routes";
 import { NlCityFinder } from "./city-finder";
 import { AnimalIcon, HeartIcon, PawIcon, TopicIcon } from "../city-page/tier-icons";
 import { display } from "../city-page/display-font";
@@ -32,7 +33,7 @@ export function NlCityHub({ market }: { market: MarketCode }) {
   const data = getCityHubData(market);
   const config = getMarket(market);
   const regionLabel = REGION_LABEL[market];
-  const registrationUrl = publicUrl(market, "/registration/?AID=location");
+  const registrationUrl = nlRegistrationUrl("location");
   const [firstSection, ...moreSections] = hub.editorial.sections;
 
   return (
@@ -99,7 +100,7 @@ export function NlCityHub({ market }: { market: MarketCode }) {
             <p>Ontdek wandelroutes, ideeën voor een date en praktische tips voor dierenliefhebbers in jouw stad.</p>
           </div>
           <NlCityFinder market={market} cities={data.cities} regions={data.regions} regionLabel={regionLabel.one} />
-          <p className="nl-pilot-note">Deze Nederlandse pilot laat alvast zien hoe tierisch-verliebt.nl eruit gaat zien. Aanmelden en ledenprofielen volgen bij de lancering.</p>
+          <p className="nl-pilot-note">Aanmelden gaat voorlopig via ons Duitstalige platform tierisch-verliebt.de. Een Nederlandse versie van het ledenplatform volgt; tot die tijd vind je hier al alle stadsgidsen.</p>
         </div>
       </section>
 

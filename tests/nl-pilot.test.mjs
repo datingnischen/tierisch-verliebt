@@ -39,3 +39,40 @@ test("NL slash normalization stays on preview and recognizes forwarded productio
   assert.match(response.headers.get("x-middleware-rewrite"), /\/market-nl\/magazin\/poedel/);
   assert.equal(response.headers.get("x-middleware-request-x-tv-market"), "nl");
 });
+
+test("NL info pages resolve on preview and production host; platform paths go to tierisch-verliebt.de", async () => {
+  for (const path of ["/over-ons/", "/privacy/", "/colofon/"]) {
+    assert.deepEqual(resolveMarketRequest(`/nl${path}`, "tierisch-verliebt.vercel.app"), resolveMarketRequest(path, "tierisch-verliebt.nl"));
+    assert.equal(resolveMarketRequest(path, "tierisch-verliebt.nl").action, "nl-pilot");
+  }
+  for (const [path, host] of [["/nl/registration", "tierisch-verliebt.vercel.app"], ["/registration/", "tierisch-verliebt.nl"], ["/login", "tierisch-verliebt.nl"]]) {
+    const resolution = resolveMarketRequest(path, host);
+    assert.equal(resolution.action, "redirect-platform");
+    assert.match(resolution.url, /^https:\/\/tierisch-verliebt\.de\/(?:registration|login)\/$/);
+  }
+});
+
+test("NL indexing switch: noindex, robots and sitemap stay closed until the domain is live", async () => {
+  const { NL_PILOT_INDEXABLE, nlSitemapPaths } = await import("../lib/nl-routes.ts");
+  const paths = nlSitemapPaths(["amsterdam"]);
+  if (NL_PILOT_INDEXABLE) {
+    assert.ok(paths.includes("/over-ons") && paths.includes("/partnersuche/amsterdam"));
+    assert.ok(!paths.includes("/privacy") && !paths.includes("/colofon") && !paths.includes("/partnersuche"));
+  } else assert.deepEqual(paths, []);
+  const fs = await import("node:fs");
+  const page = fs.readFileSync(new URL("../app/market-nl/[[...path]]/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /index: indexable/);
+  assert.match(page, /NL_LEGAL_PAGES\.includes/);
+});
+
+test("NL pages link registration and login to tierisch-verliebt.de, never to the unregistered .nl platform", async () => {
+  const fs = await import("node:fs");
+  for (const file of ["components/nl/site-shell.tsx", "components/nl/city-hub.tsx", "components/nl/city-page.tsx", "components/nl/magazine.tsx", "components/nl/info-pages.tsx", "components/sticky-cta-button.tsx", "lib/market-partnersuche.ts"]) {
+    const source = fs.readFileSync(new URL(`../${file}`, import.meta.url), "utf8");
+    assert.doesNotMatch(source, /tierisch-verliebt\.nl\/(?:registration|login|suche|datenschutz|impressum)/, file);
+    assert.doesNotMatch(source, /publicUrl\("nl", "\/(?:registration|login|datenschutz|impressum)/, file);
+    assert.doesNotMatch(source, /bij de lancering/, file);
+  }
+  const privacy = fs.readFileSync(new URL("../components/nl/info-pages.tsx", import.meta.url), "utf8");
+  for (const needle of ["Vercel Web Analytics", "24 uur", "youtube-nocookie", "Autoriteit Persoonsgegevens"]) assert.ok(privacy.includes(needle), needle);
+});

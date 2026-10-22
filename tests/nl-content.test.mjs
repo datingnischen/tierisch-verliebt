@@ -37,7 +37,8 @@ test("15 Dutch cities have regional geography, valid search links and honest pro
     const geo = cityGeo("nl", city.slug);
     assert.ok(geo.lat > 50 && geo.lat < 54 && geo.lon > 3 && geo.lon < 8);
     const url = new URL(city.searchUrl);
-    assert.equal(url.hostname, "tierisch-verliebt.nl");
+    // Ohne NL-Plattform liegt die Suche vorerst auf tierisch-verliebt.de (NL_PLATFORM).
+    assert.equal(url.hostname, "tierisch-verliebt.de");
     assert.equal(url.searchParams.get("plz"), city.icony.zip);
     assert.equal(city.icony.platformId, "");
     assert.equal(city.icony.frameUrl, "");

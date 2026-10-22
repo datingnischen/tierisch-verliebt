@@ -3,6 +3,7 @@ import nlData from "../data/nl-partnersuche.json" with { type: "json" };
 import itData from "../data/it-partnersuche.json" with { type: "json" };
 import { staticAsset } from "#static-asset";
 import { IT_PLATFORM } from "#it-routes";
+import { NL_PLATFORM, nlRegistrationUrl } from "#nl-routes";
 import type { MarketCode } from "./markets.ts";
 
 export type MarketCityPage = {
@@ -238,8 +239,8 @@ function nlCityPages(): MarketCityPage[] {
     imageIsGenerated: page.imageIsGenerated,
     // Municipal sources are linked in the guide; city illustrations are AI-generated.
     contentHtml: page.contentHtml, sourceAttributionUrl: null,
-    registrationUrl: "https://tierisch-verliebt.nl/registration/?AID=location",
-    searchUrl: "https://tierisch-verliebt.nl/suche/?AID=location",
+    registrationUrl: nlRegistrationUrl("location"),
+    searchUrl: NL_PLATFORM.searchUrl,
     icony: { platformId: "", zip: page.postcode, country: 31, frameUrl: "" },
   }));
 }

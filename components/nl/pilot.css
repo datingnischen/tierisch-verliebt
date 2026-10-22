@@ -51,3 +51,23 @@ html[lang="nl-NL"] .tvc-hero h1 { overflow-wrap: anywhere; hyphens: auto; }
 .nl-flirt-radar p { line-height: 1.7; }
 .nl-flirt-radar small { display: block; margin-top: 16px; color: #6e605b; }
 @media (max-width: 640px) { .nl-flirt-radar { grid-template-columns: 1fr; padding: 20px; gap: 20px; } .nl-flirt-radar > a { width: 100%; max-width: 280px; justify-self: center; } }
+
+/* Hinweis: Aanmelden vorerst auf tierisch-verliebt.de (NL_PLATFORM_DUTCH = false) */
+.nl-platform-notice { max-width: 1240px; margin: 8px auto 0; padding: 7px 14px; border-radius: 12px; background: #fff4ec; color: #5b3a2c; font-size: 13px; line-height: 1.5; text-align: center; }
+.nl-platform-notice a { color: #a52727; font-weight: 700; white-space: nowrap; }
+
+/* Over ons, Privacy, Colofon */
+.nl-info-hero { padding-bottom: 30px; }
+.nl-info-body { max-width: 860px; padding-top: 10px; padding-bottom: 60px; }
+.nl-info-body .rich-content { overflow-wrap: anywhere; }
+.nl-info-body section { margin-bottom: 2rem; }
+.nl-info-body a { color: #a52727; text-underline-offset: .2em; }
+.nl-about-author { display: grid; grid-template-columns: 160px 1fr; gap: 26px; align-items: start; padding: clamp(20px, 4vw, 30px); border: 1px solid #edd8d8; border-left: 4px solid #c02e2e; border-radius: 22px; background: #fff8f4; }
+.nl-about-author img { width: 160px; height: auto; border-radius: 16px; }
+.nl-about-author h2 { margin-top: 0; }
+.nl-about-role { margin-top: -6px; color: #6e605b; font-weight: 700; }
+.nl-about-links { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; list-style: none; }
+.nl-about-faq details { border-bottom: 1px solid #edd8d8; padding: 12px 0; }
+.nl-about-faq summary { cursor: pointer; font-weight: 700; }
+.nl-about-faq details p { margin: 10px 0 0; }
+@media (max-width: 640px) { .nl-about-author { grid-template-columns: 1fr; } .nl-about-author img { width: 130px; } }
