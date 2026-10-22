@@ -75,3 +75,4 @@ html[lang="nl-NL"] .tvc-hero h1 { overflow-wrap: anywhere; hyphens: auto; }
 .nl-footer-domains { gap: 6px; }
 .nl-footer-domains a { display: inline-flex; min-width: 0; padding: 6px 8px; }
 .nl-footer-domains svg { display: block; width: 27px; height: 18px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25); }
+.nl-menu-flag svg { display: inline-block; width: 27px; height: 18px; vertical-align: middle; border-radius: 3px; box-shadow: 0 0 0 1px var(--line); }

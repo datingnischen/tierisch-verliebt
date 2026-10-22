@@ -6,11 +6,12 @@ import { getMarket, publicUrl } from "@/lib/markets";
 import { NL_BREEDS, NL_PLATFORM, NL_PLATFORM_DUTCH, nlRegistrationUrl } from "@/lib/nl-routes";
 
 const COUNTRY_NL = { de: "Duitsland", at: "Oostenrijk", ch: "Zwitserland" } as const;
+const FLAG_STRIPES = { de: ["#000", "#dd0000", "#ffce00"], at: ["#c8102e", "#fff", "#c8102e"], nl: ["#ae1c28", "#fff", "#21468b"] } as const;
 
-/** Landesflaggen der Live-Domains im Footer (SVG statt Emoji, Windows zeigt keine Flaggen-Emojis). */
-function Flag({ market }: { market: keyof typeof COUNTRY_NL }) {
+/** Landesflaggen: Live-Domains im Footer, NL im Menü (SVG statt Emoji, Windows zeigt keine Flaggen-Emojis). */
+function Flag({ market }: { market: keyof typeof COUNTRY_NL | "nl" }) {
   if (market === "ch") return <svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#d52b1e"/><path d="M13 4h4v4h4v4h-4v4h-4v-4H9V8h4z" fill="#fff"/></svg>;
-  const stripes = market === "at" ? ["#c8102e", "#fff", "#c8102e"] : ["#000", "#dd0000", "#ffce00"];
+  const stripes = FLAG_STRIPES[market];
   return <svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true">{stripes.map((fill, i) => <rect key={i} y={i * 20 / 3} width="30" height={20 / 3 + 0.1} fill={fill}/>)}</svg>;
 }
 
@@ -28,7 +29,7 @@ export function NlHeader() {
       <a className="login-link" href={NL_PLATFORM.loginUrl}>Inloggen</a>
       <a className="header-register header-register-primary" href={nlRegistrationUrl("location")}>Aanmelden</a>
       <details className="header-menu"><summary aria-label="Menu openen"><span className="menu-icon" aria-hidden="true"><span/><span/><span/></span><span className="sr-only">Menu</span></summary>
-        <div className="header-menu-panel"><nav className="main-nav compact-menu-nav" aria-label="Hoofdnavigatie">{items.map(item => <span key={item.path}><MarketLink market="nl" path={item.path}>{item.label}</MarketLink></span>)}<span className="nl-menu-login"><a href={NL_PLATFORM.loginUrl}>Inloggen</a></span><span className="menu-market-label">Nederland</span></nav></div>
+        <div className="header-menu-panel"><nav className="main-nav compact-menu-nav" aria-label="Hoofdnavigatie">{items.map(item => <span key={item.path}><MarketLink market="nl" path={item.path}>{item.label}</MarketLink></span>)}<span className="nl-menu-login"><a href={NL_PLATFORM.loginUrl}>Inloggen</a></span><span className="menu-market-label nl-menu-flag" title="Nederland"><Flag market="nl"/><span className="sr-only">Nederland</span></span></nav></div>
       </details>
     </div>
   </div></header>{NL_PLATFORM_DUTCH ? null : <p className="nl-platform-notice">Aanmelden en inloggen gaan voorlopig via ons Duitstalige platform <strong>tierisch-verliebt.de</strong>. Een Nederlandse versie volgt. <MarketLink market="nl" path="/over-ons#platform">Meer informatie</MarketLink></p>}</>;
