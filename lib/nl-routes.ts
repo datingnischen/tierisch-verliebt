@@ -21,6 +21,9 @@ export const NL_PILOT_INDEXABLE = true;
 /** NL-Link in den Live-Footern DE/AT/CH: unabhängig von der Indexierung, nur nach Christians ausdrücklicher Freigabe. */
 export const NL_IN_LIVE_FOOTERS = false;
 
+/** Search-Console-Bestätigung der URL-Präfix-Property https://tierisch-verliebt.nl/ (m-perfect-Konto) – nie entfernen. */
+export const NL_GOOGLE_SITE_VERIFICATION = "n7jzrUTPJliP0Vj7rho6yp3q2IDmpbzAnoa0Fb-WEMo";
+
 /** Over ons ist indexierbar; Privacy und Colofon bleiben immer noindex. */
 export const NL_INFO_PAGES = ["over-ons", "privacy", "colofon"] as const;
 export type NlInfoPage = (typeof NL_INFO_PAGES)[number];
