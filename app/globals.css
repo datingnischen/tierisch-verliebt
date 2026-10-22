@@ -930,6 +930,20 @@ a.social-bubble:hover {
   background: #fff0f0;
 }
 
+/* Land bzw. Sprachvariante (AT, CH, NL, IT) als dezente Fußzeile des Menüs */
+.menu-market-label {
+  display: block;
+  margin-top: 6px;
+  padding: 10px 14px 2px;
+  border-top: 1px solid var(--line);
+  color: #8a7470;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .menu-login {
   display: none;
 }
