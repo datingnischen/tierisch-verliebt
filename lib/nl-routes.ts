@@ -24,8 +24,8 @@ export const NL_IN_LIVE_FOOTERS = true;
 /** Search-Console-Bestätigung der URL-Präfix-Property https://tierisch-verliebt.nl/ (m-perfect-Konto) – nie entfernen. */
 export const NL_GOOGLE_SITE_VERIFICATION = "n7jzrUTPJliP0Vj7rho6yp3q2IDmpbzAnoa0Fb-WEMo";
 
-/** Over ons ist indexierbar; Privacy und Colofon bleiben immer noindex. */
-export const NL_INFO_PAGES = ["over-ons", "privacy", "colofon"] as const;
+/** Over ons und die FAQ sind indexierbar; Privacy und Colofon bleiben immer noindex. */
+export const NL_INFO_PAGES = ["over-ons", "veelgestelde-vragen", "privacy", "colofon"] as const;
 export type NlInfoPage = (typeof NL_INFO_PAGES)[number];
 export const NL_LEGAL_PAGES: readonly NlInfoPage[] = ["privacy", "colofon"];
 
@@ -50,7 +50,7 @@ export function nlRegistrationUrl(aid: "location" | "magazin" = "location"): str
 export function nlSitemapPaths(citySlugs: readonly string[]): string[] {
   if (!NL_PILOT_INDEXABLE) return [];
   return ["/", ...citySlugs.map((slug) => `/dating/${slug}`),
-    "/magazine", "/magazine/hondenrassen", "/magazine/kattenrassen", ...NL_BREEDS.map((breed) => `/magazine/${breed.slug}`), "/over-ons"];
+    "/magazine", "/magazine/hondenrassen", "/magazine/kattenrassen", ...NL_BREEDS.map((breed) => `/magazine/${breed.slug}`), "/over-ons", "/veelgestelde-vragen"];
 }
 
 /**

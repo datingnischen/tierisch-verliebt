@@ -119,3 +119,16 @@ test("NL legacy German paths redirect permanently to the Dutch paths", () => {
   assert.equal(response.status, 308);
   assert.equal(response.headers.get("location"), "https://tierisch-verliebt.nl/dating/rotterdam/");
 });
+
+test("NL FAQ (/veelgestelde-vragen/) answers the status questions and is linked from notice, menu and footer", async () => {
+  assert.equal(resolveMarketRequest("/veelgestelde-vragen/", "tierisch-verliebt.nl").action, "nl-pilot");
+  const { nlSitemapPaths } = await import("../lib/nl-routes.ts");
+  assert.ok(nlSitemapPaths([]).includes("/veelgestelde-vragen"));
+  const fs = await import("node:fs");
+  const info = fs.readFileSync(new URL("../components/nl/info-pages.tsx", import.meta.url), "utf8");
+  for (const needle of ["Waarom staat er dat de site nog in opbouw is?", "Kan ik me vanuit Nederland aanmelden?", "Duitsland, Oostenrijk of Zwitserland"]) assert.ok(info.includes(needle), needle);
+  const shell = fs.readFileSync(new URL("../components/nl/site-shell.tsx", import.meta.url), "utf8");
+  assert.equal((shell.match(/path(?:=|: )"\/veelgestelde-vragen"/g) || []).length, 3);
+  const page = fs.readFileSync(new URL("../app/market-nl/[[...path]]/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /page\.page === "veelgestelde-vragen" \? \[\s*\{ "@type": "FAQPage"/);
+});

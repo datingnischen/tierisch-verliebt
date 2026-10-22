@@ -6,7 +6,7 @@ import { NlBreedPage, NlMagazine } from "@/components/nl/magazine";
 import { PreviewLinkRewriter } from "@/components/preview-link-rewriter";
 import { getMarketCityPage, getMarketCityPages, getMarketPartnersucheHub } from "@/lib/market-partnersuche";
 import { getNlBreed } from "@/lib/nl-magazine";
-import { NlInfoPageView, NL_ABOUT_FAQ, NL_AUTHOR, NL_INFO_META } from "@/components/nl/info-pages";
+import { NlInfoPageView, NL_AUTHOR, NL_FAQ_ENTRIES, NL_INFO_META } from "@/components/nl/info-pages";
 import { NL_BREEDS, NL_GOOGLE_SITE_VERIFICATION, NL_INFO_PAGES, NL_LEGAL_PAGES, NL_PILOT_INDEXABLE, type NlInfoPage } from "@/lib/nl-routes";
 import { staticAsset } from "#static-asset";
 import { publicUrl } from "@/lib/markets";
@@ -71,7 +71,9 @@ export default async function NlPilot({ params }: Props) {
     { "@type": page.kind === "info" && page.page === "over-ons" ? "AboutPage" : "WebPage", "@id": `${url}#webpage`, url, name: page.title, description: page.description, inLanguage: "nl-NL", isPartOf: { "@id": `${publicUrl("nl")}#website` } },
     ...(page.kind === "info" && page.page === "over-ons" ? [
       { "@type": "Person", "@id": `${url}#person`, name: NL_AUTHOR.name, jobTitle: NL_AUTHOR.jobTitle, image: staticAsset(NL_AUTHOR.image), url, sameAs: NL_AUTHOR.sameAs },
-      { "@type": "FAQPage", "@id": `${url}#faq`, mainEntity: NL_ABOUT_FAQ.map(entry => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })) },
+    ] : []),
+    ...(page.kind === "info" && page.page === "veelgestelde-vragen" ? [
+      { "@type": "FAQPage", "@id": `${url}#faq`, inLanguage: "nl-NL", mainEntity: NL_FAQ_ENTRIES.map(entry => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })) },
     ] : []),
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: publicUrl("nl") }, ...parts.map((part, index) => ({ "@type": "ListItem", position: index + 2, name: index === parts.length - 1 ? (page.kind === "info" ? NL_INFO_META[page.page].badge : page.title) : part === "dating" ? "Dating" : "Magazine", item: publicUrl("nl", parts.slice(0, index + 1).join("/")) }))] },
   ] };

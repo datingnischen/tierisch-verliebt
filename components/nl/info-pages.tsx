@@ -25,6 +25,12 @@ export const NL_INFO_META: Record<NlInfoPage, { title: string; description: stri
     badge: "Privacy",
     h1: "Privacyverklaring",
   },
+  "veelgestelde-vragen": {
+    title: "Veelgestelde vragen over tierisch-verliebt.nl",
+    description: "Antwoorden over tierisch-verliebt.nl: waarom de site in opbouw is, waarom aanmelden nu alleen in het Duits kan, wat het kost en hoe je ons bereikt.",
+    badge: "Veelgestelde vragen",
+    h1: "Veelgestelde vragen",
+  },
   colofon: {
     title: "Colofon",
     description: "Colofon van tierisch-verliebt.nl: verantwoordelijke voor de inhoud, contact, het platform tierisch-verliebt.de en aansprakelijkheid voor inhoud en links.",
@@ -52,12 +58,35 @@ const AUTHOR_LINKS = [
   { label: "Biografie op datingnischen.de (Duits)", href: NL_AUTHOR.sameAs[3], hrefLang: "de-DE" },
 ];
 
-export const NL_ABOUT_FAQ = [
-  { question: "Is tierisch-verliebt.nl gratis?", answer: "Ja. De stadsgidsen en het magazine zijn gratis en zonder account te lezen. Ook aanmelden op het platform is gratis; betaalde functies worden daar duidelijk vermeld voordat je iets koopt." },
-  { question: "Wie verwerkt mijn gegevens als ik me aanmeld?", answer: "Je meldt je aan op tierisch-verliebt.de. Je profielgegevens verwerkt de ICONY GmbH volgens haar eigen privacyverklaring. Op tierisch-verliebt.nl zelf is er geen aanmelding; welke gegevens deze website verwerkt, lees je in onze privacyverklaring." },
-  { question: "Betalen parken, dierenartsen of cafés om in de gidsen te staan?", answer: "Nee. We kiezen plekken en tips op basis van hun nut voor dierenliefhebbers. Geen enkele vermelding is gesponsord en we publiceren geen betaalde recensies." },
-  { question: "Kan ik een plek of een fout melden?", answer: "Graag. Stuur ons een e-mail met de naam, de plaats en een korte omschrijving. We controleren elke melding en passen de gids zo nodig snel aan." },
+export type NlFaqEntry = { question: string; answer: string };
+
+/** FAQ (/veelgestelde-vragen/): Status der Seite, Anmeldung, Inhalte, Daten. Auch FAQPage-JSON-LD. */
+export const NL_FAQ: { title: string; entries: NlFaqEntry[] }[] = [
+  { title: "Over de site en de status", entries: [
+    { question: "Wat is tierisch-verliebt.nl?", answer: "tierisch-verliebt.nl is de Nederlandstalige gids van tierisch-verliebt, het datingplatform voor dierenliefhebbers uit Duitsland, Oostenrijk en Zwitserland. Je vindt hier stadsgidsen voor vijftien Nederlandse steden en een magazine met portretten van vijf hondenrassen en vijf kattenrassen." },
+    { question: "Waarom staat er dat de site nog in opbouw is?", answer: "De Nederlandse versie is in oktober 2026 online gegaan. De stadsgidsen en het magazine zijn al volledig te lezen, maar een Nederlandstalig ledenplatform met profielen en berichten is er nog niet." },
+    { question: "Komt er een Nederlands ledenplatform?", answer: "Daar is nog geen datum voor. We kijken eerst hoe de Nederlandse gidsen gevonden en gelezen worden. Verandert er iets aan het aanmelden, dan staat dat op deze site." },
+    { question: "Zijn er al leden uit Nederland?", answer: "Nee. De leden van tierisch-verliebt wonen in Duitsland, Oostenrijk en Zwitserland. Daarom tonen we op de Nederlandse stadspagina's geen profielen en geen afstanden tot leden." },
+  ] },
+  { title: "Aanmelden", entries: [
+    { question: "Kan ik me vanuit Nederland aanmelden?", answer: "Op dit moment niet met een woonplaats in Nederland. Aanmelden gaat via het Duitstalige platform tierisch-verliebt.de, en daar kun je als woonplaats alleen een plaats in Duitsland, Oostenrijk of Zwitserland kiezen." },
+    { question: "Waarom gaat aanmelden alleen in het Duits?", answer: "Het ledenplatform wordt beheerd door de ICONY GmbH en is er tot nu toe alleen in het Duits. Menu's, e-mails en berichten zijn daar dus Duitstalig." },
+    { question: "Is tierisch-verliebt gratis?", answer: "De stadsgidsen en het magazine zijn gratis en zonder account te lezen. Ook aanmelden op het platform is gratis; betaalde functies worden daar duidelijk vermeld voordat je iets koopt." },
+    { question: "Wie verwerkt mijn gegevens als ik me aanmeld?", answer: "Je meldt je aan op tierisch-verliebt.de. Je profielgegevens verwerkt de ICONY GmbH volgens haar eigen privacyverklaring. Op tierisch-verliebt.nl zelf is er geen aanmelding; welke gegevens deze website verwerkt, lees je in onze privacyverklaring." },
+  ] },
+  { title: "Stadsgidsen en magazine", entries: [
+    { question: "Waar komen de tips in de stadsgidsen vandaan?", answer: "We kiezen parken, wandelroutes en plekken voor een eerste date op basis van hun nut voor dierenliefhebbers. Voor regels rond honden, zoals losloopgebieden en opruimplicht, verwijzen we naar de actuele informatie van de gemeente zelf." },
+    { question: "Betalen parken, dierenartsen of cafés om in de gidsen te staan?", answer: "Nee. Geen enkele vermelding is gesponsord en we publiceren geen betaalde recensies." },
+    { question: "Waarom zijn de rasportretten vertalingen?", answer: "De tien rasportretten zijn Nederlandse vertalingen van onze Duitse artikelen. Prijzen en sommige voedingsadviezen gaan daarom uit van de Duitse situatie; we controleren ze en werken beide taalversies samen bij." },
+    { question: "Zijn de foto's van de steden echt?", answer: "Nee. De stadsimpressies boven de stadsgidsen zijn met kunstmatige intelligentie gemaakt en als zodanig gemarkeerd. Ze tonen geen echte personen en geen leden." },
+  ] },
+  { title: "Contact", entries: [
+    { question: "Kan ik een plek of een fout melden?", answer: "Graag. Stuur ons een e-mail met de naam, de plaats en een korte omschrijving. We controleren elke melding en passen de gids zo nodig snel aan." },
+    { question: "Hoe bereik ik jullie?", answer: "Per e-mail via kontakt[a]m-perfect.de, in het Nederlands, Duits of Engels. Voor vragen over je account of abonnement neem je contact op met tierisch-verliebt.de, want deze website heeft geen toegang tot ledengegevens." },
+  ] },
 ];
+
+export const NL_FAQ_ENTRIES: NlFaqEntry[] = NL_FAQ.flatMap((group) => group.entries);
 
 const OPERATOR = <p>
   Christian Mogge Internetdienstleistungen<br />
@@ -105,9 +134,9 @@ function About() {
       <p>Klopt er iets niet meer, is een link verouderd of ken je een plek die in een stadsgids thuishoort? Schrijf ons, in het Nederlands, Duits of Engels: <strong>kontakt[a]m-perfect.de</strong>. We controleren elke melding en passen de gids zo snel mogelijk aan.</p>
       <p>Voor vragen over je account, abonnement of profielgegevens neem je direct contact op met tierisch-verliebt.de: deze website heeft geen toegang tot ledengegevens.</p>
     </section>
-    <section className="nl-about-faq" aria-labelledby="vragen-site">
-      <h2 id="vragen-site">Veelgestelde vragen over deze website</h2>
-      {NL_ABOUT_FAQ.map((entry) => <details key={entry.question}><summary>{entry.question}</summary><p>{entry.answer}</p></details>)}
+    <section>
+      <h2>Nog vragen?</h2>
+      <p>Wat de status van de site betekent, wie je gegevens verwerkt en hoe aanmelden werkt, lees je bij de <MarketLink market="nl" path="/veelgestelde-vragen">veelgestelde vragen</MarketLink>.</p>
     </section>
   </>;
 }
@@ -163,7 +192,17 @@ function Privacy() {
   </>;
 }
 
-const BODY: Record<NlInfoPage, () => ReactNode> = { "over-ons": About, privacy: Privacy, colofon: Colofon };
+function Faq() {
+  return <>
+    {NL_FAQ.map((group) => <section className="nl-about-faq" key={group.title}>
+      <h2>{group.title}</h2>
+      {group.entries.map((entry) => <details key={entry.question}><summary>{entry.question}</summary><p>{entry.answer}</p></details>)}
+    </section>)}
+    <p>Staat je vraag er niet bij? Lees meer <MarketLink market="nl" path="/over-ons">over ons</MarketLink> of mail ons via kontakt[a]m-perfect.de.</p>
+  </>;
+}
+
+const BODY: Record<NlInfoPage, () => ReactNode> = { "over-ons": About, "veelgestelde-vragen": Faq, privacy: Privacy, colofon: Colofon };
 
 export function NlInfoPageView({ page }: { page: NlInfoPage }) {
   const meta = NL_INFO_META[page];
@@ -173,7 +212,7 @@ export function NlInfoPageView({ page }: { page: NlInfoPage }) {
       <nav className="tvc-crumbs" aria-label="Broodkruimels"><MarketLink market="nl" path="/">Home</MarketLink><span aria-hidden="true">›</span><span aria-current="page">{meta.badge}</span></nav>
       <span className="tvc-badge"><PawIcon className="tvc-badge-paw" />{meta.badge}</span>
       <h1>{meta.h1}</h1>
-      {page === "over-ons" ? <p className="tvc-lead">tierisch-verliebt.nl is een gids voor singles in Nederland bij wie hond, kat en co. bij de familie horen. Hier lees je wie de gidsen maakt, hoe we werken en hoe aanmelden werkt.</p> : null}
+      {page === "over-ons" ? <p className="tvc-lead">tierisch-verliebt.nl is een gids voor singles in Nederland bij wie hond, kat en co. bij de familie horen. Hier lees je wie de gidsen maakt, hoe we werken en hoe aanmelden werkt.</p> : page === "veelgestelde-vragen" ? <p className="tvc-lead">tierisch-verliebt.nl is nog in opbouw. Hier beantwoorden we de belangrijkste vragen over de status van de site, het aanmelden en onze gidsen.</p> : null}
     </div></section>
     <div className="tvc-wrap nl-info-body"><article className="rich-content">
       <Body />
