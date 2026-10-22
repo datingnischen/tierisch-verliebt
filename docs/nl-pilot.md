@@ -22,7 +22,7 @@ Für den Livegang nach dem Domainkauf:
 
 1. tierisch-verliebt.nl (+ www) im Vercel-Projekt tierisch-verliebt anlegen, DNS beim Registrar auf Vercel. Die .nl-Domain läuft direkt auf Vercel (kein ICONY-nginx davor), robots und Sitemap liefert die App.
 2. `NL_PILOT_INDEXABLE = true`: Seiten indexierbar (außer Privacy/Colofon), Sitemap mit allen Seiten, robots erlaubt, NL-Link im DE/AT/CH-Footer nur über den eigenen Schalter `NL_IN_LIVE_FOOTERS` (nur nach Christians Freigabe).
-3. GSC-Property für https://tierisch-verliebt.nl/ anlegen, Sitemap einreichen, Indexierung von / und den Stadtseiten beantragen.
+3. Erledigt 22.10.2026: GSC-URL-Präfix-Property https://tierisch-verliebt.nl/ (m-perfect-Konto /u/1/), bestätigt per Meta-Tag `NL_GOOGLE_SITE_VERIFICATION` (nie entfernen), Sitemap eingereicht, Indexierung der Startseite beantragt.
 4. Controlling: Teilprojekt in `vercel-project-splits.json` mit Filter `startswith(requestPath,'/nl')` und own-sites.json. Auf der .nl-Domain setzt `components/site-analytics.tsx` (`nlAnalyticsUrl`) das /nl-Präfix vor die Analytics-Pfade, sonst mischten sie sich mit AT/CH.
 
 ## Bewusst erhaltene Quellprobleme
