@@ -4,14 +4,15 @@ import { usePathname } from "next/navigation";
 import { MarketLink } from "@/components/market-link";
 import { MarketFlag, MenuMarketFlag } from "@/components/market-flag";
 import { getMarket, publicUrl } from "@/lib/markets";
+import { staticAsset } from "@/lib/static-asset";
 import { NL_BREEDS, NL_PLATFORM, NL_PLATFORM_DUTCH, nlRegistrationUrl } from "@/lib/nl-routes";
 
 const COUNTRY_NL = { de: "Duitsland", at: "Oostenrijk", ch: "Zwitserland" } as const;
 
+/** Logo wie DE/AT/CH (Myriad Pro, Endung .nl, niederländischer Claim); helle Fassung im dunklen Footer. */
 function Brand({ light = false }: { light?: boolean }) {
-  return <MarketLink market="nl" path="/" className={`brand-lockup nl-brand${light ? " nl-brand-light" : ""}`}>
-    <svg viewBox="0 0 64 64" width="48" height="48" aria-hidden="true"><path fill="#c02e2e" d="M32 56 7 32C-8 14 13-4 32 13 51-4 72 14 57 32Z"/><g fill="white"><ellipse cx="19" cy="26" rx="4" ry="5"/><ellipse cx="28" cy="21" rx="4" ry="5"/><ellipse cx="38" cy="21" rx="4" ry="5"/><ellipse cx="47" cy="26" rx="4" ry="5"/><path d="M22 40c0-7 7-12 11-12s11 5 11 12c0 7-7 3-11 3s-11 4-11-3"/></g></svg>
-    <span>tierisch-verliebt<span className="nl-brand-domain">.nl</span><small>Met liefde voor dierenliefhebbers</small></span>
+  return <MarketLink market="nl" path="/" className={light ? "tv-footer-logo nl-brand" : "brand-lockup brand-lockup-header nl-brand"}>
+    <img className={light ? undefined : "brand-logo-image"} src={staticAsset(`/brand/tierisch-verliebt-logo-${light ? "light-" : ""}nl.svg`)} alt="tierisch-verliebt.nl Logo" width="216" height="80"/>
   </MarketLink>;
 }
 

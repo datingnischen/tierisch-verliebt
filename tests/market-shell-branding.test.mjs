@@ -37,3 +37,13 @@ test("footer keeps legal links on live market domains and market switch links ab
   assert.doesNotMatch(shell, /marketSwitchHref/);
   assert.doesNotMatch(shell, /<MarketLink market="nl"/);
 });
+
+test("NL uses its own logo files like DE/AT/CH (header and light footer variant)", async () => {
+  const nl = await source("../components/nl/site-shell.tsx");
+  assert.match(nl, /staticAsset\(`\/brand\/tierisch-verliebt-logo-\$\{light \? "light-" : ""\}nl\.svg`\)/);
+  for (const file of ["tierisch-verliebt-logo-nl.svg", "tierisch-verliebt-logo-light-nl.svg"]) {
+    const svg = await source(`../public/brand/${file}`);
+    assert.match(svg, /^<svg [^>]*viewBox=/, file);
+    assert.ok(svg.length > 20000, `${file}: Wortmarke und Claim als Pfade`);
+  }
+});
