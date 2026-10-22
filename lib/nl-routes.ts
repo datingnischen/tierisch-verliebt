@@ -46,18 +46,30 @@ export function nlRegistrationUrl(aid: "location" | "magazin" = "location"): str
   return `${NL_PLATFORM.origin}/registration/?AID=${aid}`;
 }
 
-/** Pfade der NL-Sitemap: leer bis zur Freigabe, danach alle Seiten außer Privacy, Colofon und /partnersuche (Canonical = Startseite). */
+/** Pfade der NL-Sitemap: leer bis zur Freigabe, danach alle Seiten außer Privacy, Colofon und /dating (Canonical = Startseite). */
 export function nlSitemapPaths(citySlugs: readonly string[]): string[] {
   if (!NL_PILOT_INDEXABLE) return [];
-  return ["/", ...citySlugs.map((slug) => `/partnersuche/${slug}`),
-    "/magazin", "/magazin/hondenrassen", "/magazin/kattenrassen", ...NL_BREEDS.map((breed) => `/magazin/${breed.slug}`), "/over-ons"];
+  return ["/", ...citySlugs.map((slug) => `/dating/${slug}`),
+    "/magazine", "/magazine/hondenrassen", "/magazine/kattenrassen", ...NL_BREEDS.map((breed) => `/magazine/${breed.slug}`), "/over-ons"];
+}
+
+/**
+ * Bis 22.10.2026 lagen die NL-Seiten unter den deutschen Pfaden /partnersuche/ und /magazin/. Sie leiten per 308
+ * auf /dating/ und /magazine/ (nur wenn das Ziel existiert); sonst null.
+ */
+export function nlLegacyPath(pathname: string): string | null {
+  const path = pathname.replace(/\/+$/, "") || "/";
+  const match = path.match(/^\/(partnersuche|magazin)(\/[a-z0-9-]+)?$/);
+  if (!match) return null;
+  const target = `/${match[1] === "partnersuche" ? "dating" : "magazine"}${match[2] ?? ""}`;
+  return isNlEditorialPath(target) ? target : null;
 }
 
 export function isNlEditorialPath(pathname: string): boolean {
   const path = pathname.replace(/\/+$/, "") || "/";
-  return path === "/" || /^\/partnersuche(?:\/[a-z0-9-]+)?$/.test(path)
-    || ["/magazin", "/magazin/hondenrassen", "/magazin/kattenrassen"].includes(path)
-    || NL_BREEDS.some((breed) => path === `/magazin/${breed.slug}`)
+  return path === "/" || /^\/dating(?:\/[a-z0-9-]+)?$/.test(path)
+    || ["/magazine", "/magazine/hondenrassen", "/magazine/kattenrassen"].includes(path)
+    || NL_BREEDS.some((breed) => path === `/magazine/${breed.slug}`)
     || NL_INFO_PAGES.some((page) => path === `/${page}`);
 }
 

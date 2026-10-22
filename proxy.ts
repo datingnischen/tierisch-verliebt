@@ -79,6 +79,7 @@ export function proxy(request: NextRequest) {
   if(resolution.action==="pass")return NextResponse.next();
   if(resolution.action==="not-found")return new NextResponse("Not found",{status:404});
   if(resolution.action==="redirect-platform")return handoff(resolution.url);
+  if(resolution.action==="redirect-permanent")return NextResponse.redirect(new URL(resolution.url,request.url),308);
   const destination=request.nextUrl.clone();destination.pathname=resolution.pathname;
   if(resolution.action==="placeholder")destination.searchParams.set("requestedPath",resolution.requestedPath);
   const headers=new Headers(request.headers);headers.set("x-tv-rewrite-destination",destination.pathname);headers.set("x-tv-rewrite-token",INTERNAL_REWRITE_TOKEN);headers.set("x-tv-market",resolution.market as MarketCode);

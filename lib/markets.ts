@@ -1,4 +1,4 @@
-import { NL_PLATFORM, isNlEditorialPath } from "#nl-routes";
+import { NL_PLATFORM, isNlEditorialPath, nlLegacyPath } from "#nl-routes";
 import { isItEditorialPath } from "#it-routes";
 
 // "it" ist kein eigenes Land, sondern die italienischsprachige Variante unter tierisch-verliebt.ch/it/.
@@ -108,6 +108,7 @@ export type MarketRequestResolution =
   | { action: "market-robots"; market: RegionalMarket; pathname: string }
   | { action: "market-sitemap"; market: RegionalMarket; pathname: string }
   | { action: "redirect-platform"; market: RegionalMarket; url: string }
+  | { action: "redirect-permanent"; market: RegionalMarket; url: string }
   | { action: "placeholder"; market: RegionalMarket; pathname: string; requestedPath: string };
 
 const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it)(?:\/|$)/;
@@ -137,6 +138,8 @@ function resolveRegional(market: RegionalMarket, requestedPath: string, producti
   if (market === "nl") {
     if (path === "/robots.txt") return { action: "market-robots", market, pathname: "/market-robots/nl" };
     if (path === "/sitemap.xml") return { action: "market-sitemap", market, pathname: "/market-sitemap/nl" };
+    const legacy = nlLegacyPath(path);
+    if (legacy) return { action: "redirect-permanent", market, url: productionHost ? publicUrl(market, legacy) : previewPath(market, legacy) };
     if (isNlEditorialPath(path)) return { action: "nl-pilot", market, pathname: `/market-nl${path === "/" ? "" : path}` };
     // Ohne NL-Plattform liegen Login und Registrierung auf tierisch-verliebt.de (NL_PLATFORM), auch auf der .nl-Domain.
     if (PLATFORM_PATH.test(path)) return { action: "redirect-platform", market, url: `${NL_PLATFORM.origin}${withTrailingSlash(path)}` };

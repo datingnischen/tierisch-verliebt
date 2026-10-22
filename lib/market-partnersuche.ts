@@ -231,8 +231,8 @@ export function getMarketPartnersucheHub(market: MarketCode) {
 
 function nlCityPages(): MarketCityPage[] {
   return nlData.pages.map(page => withPostcodeSearch({
-    market: "nl", slug: page.slug, path: `/partnersuche/${page.slug}`,
-    sourceUrl: `https://tierisch-verliebt.nl/partnersuche/${page.slug}/`,
+    market: "nl", slug: page.slug, path: `/dating/${page.slug}`,
+    sourceUrl: `https://tierisch-verliebt.nl/dating/${page.slug}/`,
     title: `Dating voor dierenliefhebbers in ${page.cityName}`,
     cityName: page.cityName, description: page.description, lead: page.lead,
     imageUrl: staticAsset(page.imageUrl), imageAlt: page.imageAlt,

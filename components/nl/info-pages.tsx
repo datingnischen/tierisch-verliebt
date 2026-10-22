@@ -71,7 +71,7 @@ function About() {
   return <>
     <section>
       <h2>Een gids, geen apart datingplatform</h2>
-      <p>tierisch-verliebt.nl is de Nederlandse tak van tierisch-verliebt, het datingplatform voor dierenliefhebbers uit Duitsland, Oostenrijk en Zwitserland. Hier publiceren we <MarketLink market="nl" path="/partnersuche">stadsgidsen voor vijftien Nederlandse steden</MarketLink> met parken, wandelroutes, ideeën voor een eerste date en praktische tips voor het leven met dieren, en een <MarketLink market="nl" path="/magazin">magazine met rasportretten</MarketLink> over honden en katten.</p>
+      <p>tierisch-verliebt.nl is de Nederlandse tak van tierisch-verliebt, het datingplatform voor dierenliefhebbers uit Duitsland, Oostenrijk en Zwitserland. Hier publiceren we <MarketLink market="nl" path="/dating">stadsgidsen voor vijftien Nederlandse steden</MarketLink> met parken, wandelroutes, ideeën voor een eerste date en praktische tips voor het leven met dieren, en een <MarketLink market="nl" path="/magazine">magazine met rasportretten</MarketLink> over honden en katten.</p>
       <p>Profielen, berichten en abonnementen staan niet op deze website, maar op het platform tierisch-verliebt.de, dat de ICONY GmbH beheert. De knoppen „Aanmelden” en „Inloggen” brengen je daarheen. De gegevens van de verantwoordelijke vind je in het <MarketLink market="nl" path="/colofon">colofon</MarketLink>.</p>
     </section>
     <section>

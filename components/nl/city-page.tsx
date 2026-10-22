@@ -57,7 +57,7 @@ export function NlCityPage({ market, city, expert }: Props) {
             <nav className="tvc-crumbs" aria-label="Broodkruimels">
               <MarketLink market={market} path="/">Home</MarketLink>
               <span aria-hidden="true">›</span>
-              <MarketLink market={market} path="/partnersuche">Dating</MarketLink>
+              <MarketLink market={market} path="/dating">Dating</MarketLink>
               <span aria-hidden="true">›</span>
               <span aria-current="page">{city.cityName}</span>
             </nav>
@@ -104,7 +104,7 @@ export function NlCityPage({ market, city, expert }: Props) {
       </div>
 
       <div className="tvc-wrap tvc-widget">
-        <section className="nl-profile-placeholder"><PawIcon /><h2>Singles met hart voor dieren in {city.cityName}</h2><p>tierisch-verliebt.nl is nog in opbouw. Aanmelden kan op dit moment alleen gratis op onze Duitse site tierisch-verliebt.de, in het Duits. Hier vind je alvast de stadsgids en het magazine.</p><MarketLink market="nl" path="/magazin">Ontdek het magazine →</MarketLink></section>
+        <section className="nl-profile-placeholder"><PawIcon /><h2>Singles met hart voor dieren in {city.cityName}</h2><p>tierisch-verliebt.nl is nog in opbouw. Aanmelden kan op dit moment alleen gratis op onze Duitse site tierisch-verliebt.de, in het Duits. Hier vind je alvast de stadsgids en het magazine.</p><MarketLink market="nl" path="/magazine">Ontdek het magazine →</MarketLink></section>
       </div>
 
       {ideas.length >= 2 ? (
@@ -182,7 +182,7 @@ export function NlCityPage({ market, city, expert }: Props) {
         <h2 id="tvc-related-title">Misschien vind je deze steden ook interessant:</h2>
         <ul>
           {related.map((link) => <li key={link.path}><MarketLink market={market} path={link.path}><PawIcon />{link.name}</MarketLink></li>)}
-          <li><MarketLink className="tvc-related-all" market={market} path="/partnersuche">Alle {pages.length} steden <span aria-hidden="true">→</span></MarketLink></li>
+          <li><MarketLink className="tvc-related-all" market={market} path="/dating">Alle {pages.length} steden <span aria-hidden="true">→</span></MarketLink></li>
         </ul>
       </section>
 

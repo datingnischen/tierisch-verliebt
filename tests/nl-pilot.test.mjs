@@ -7,11 +7,11 @@ import { proxy, trailingSlashRedirect } from "../proxy.ts";
 test("NL pilot has a Dutch locale and public domain", () => {
   assert.equal(marketForHostname("www.tierisch-verliebt.nl"), "nl");
   assert.equal(getMarket("nl").locale, "nl-NL");
-  assert.equal(publicUrl("nl", "/magazin/poedel"), "https://tierisch-verliebt.nl/magazin/poedel/");
+  assert.equal(publicUrl("nl", "/magazine/poedel"), "https://tierisch-verliebt.nl/magazine/poedel/");
 });
 
 test("NL previews and production host resolve to the same pilot pages", () => {
-  for (const path of ["/", "/partnersuche/", "/partnersuche/amsterdam/", "/magazin/", "/magazin/poedel/", "/magazin/hondenrassen/"]) {
+  for (const path of ["/", "/dating/", "/dating/amsterdam/", "/magazine/", "/magazine/poedel/", "/magazine/hondenrassen/"]) {
     assert.deepEqual(resolveMarketRequest(`/nl${path}`, "tierisch-verliebt.vercel.app"),
       resolveMarketRequest(path, "tierisch-verliebt.nl"));
     assert.equal(resolveMarketRequest(`/nl${path}`).market, "nl");
@@ -20,23 +20,23 @@ test("NL previews and production host resolve to the same pilot pages", () => {
 });
 
 test("NL article links stay in preview and platform links stay on the public domain", () => {
-  assert.equal(previewPathForUrl("https://tierisch-verliebt.nl/magazin/poedel/"), "/nl/magazin/poedel/");
+  assert.equal(previewPathForUrl("https://tierisch-verliebt.nl/magazine/poedel/"), "/nl/magazine/poedel/");
   assert.equal(previewPathForUrl("https://tierisch-verliebt.nl/login/"), null);
-  assert.equal(previewPathForUrl("https://tierisch-verliebt.nl/magazin/missing/"), null);
+  assert.equal(previewPathForUrl("https://tierisch-verliebt.nl/magazine/missing/"), null);
   assert.equal(resolveMarketRequest("/market-nl/partnersuche/").action, "not-found");
   assert.equal(resolveMarketRequest("/nl/market-nl/").action, "not-found");
   assert.equal(resolveMarketRequest("/nl/onbekend/").action, "not-found");
 });
 
 test("NL slash normalization stays on preview and recognizes forwarded production hosts", () => {
-  const preview = new NextRequest("https://tierisch-verliebt.vercel.app/nl/partnersuche");
-  assert.equal(trailingSlashRedirect(preview).headers.get("location"), "https://tierisch-verliebt.vercel.app/nl/partnersuche/");
-  const production = new NextRequest("https://tierisch-verliebt.vercel.app/nl/partnersuche", {
+  const preview = new NextRequest("https://tierisch-verliebt.vercel.app/nl/dating");
+  assert.equal(trailingSlashRedirect(preview).headers.get("location"), "https://tierisch-verliebt.vercel.app/nl/dating/");
+  const production = new NextRequest("https://tierisch-verliebt.vercel.app/nl/dating", {
     headers: { host: "tierisch-verliebt.vercel.app", "x-forwarded-host": "tierisch-verliebt.nl" },
   });
-  assert.equal(trailingSlashRedirect(production).headers.get("location"), "https://tierisch-verliebt.nl/partnersuche/");
-  const response = proxy(new NextRequest("https://tierisch-verliebt.vercel.app/nl/magazin/poedel/"));
-  assert.match(response.headers.get("x-middleware-rewrite"), /\/market-nl\/magazin\/poedel/);
+  assert.equal(trailingSlashRedirect(production).headers.get("location"), "https://tierisch-verliebt.nl/dating/");
+  const response = proxy(new NextRequest("https://tierisch-verliebt.vercel.app/nl/magazine/poedel/"));
+  assert.match(response.headers.get("x-middleware-rewrite"), /\/market-nl\/magazine\/poedel/);
   assert.equal(response.headers.get("x-middleware-request-x-tv-market"), "nl");
 });
 
@@ -56,8 +56,8 @@ test("NL indexing switch: noindex, robots and sitemap stay closed until the doma
   const { NL_PILOT_INDEXABLE, nlSitemapPaths } = await import("../lib/nl-routes.ts");
   const paths = nlSitemapPaths(["amsterdam"]);
   if (NL_PILOT_INDEXABLE) {
-    assert.ok(paths.includes("/over-ons") && paths.includes("/partnersuche/amsterdam"));
-    assert.ok(!paths.includes("/privacy") && !paths.includes("/colofon") && !paths.includes("/partnersuche"));
+    assert.ok(paths.includes("/over-ons") && paths.includes("/dating/amsterdam"));
+    assert.ok(!paths.includes("/privacy") && !paths.includes("/colofon") && !paths.includes("/dating"));
   } else assert.deepEqual(paths, []);
   const fs = await import("node:fs");
   const page = fs.readFileSync(new URL("../app/market-nl/[[...path]]/page.tsx", import.meta.url), "utf8");
@@ -108,4 +108,14 @@ test("NL host answers /favicon.ico from its own domain", async () => {
   const fs = await import("node:fs");
   assert.ok(fs.existsSync(new URL("../public/brand/favicon.ico", import.meta.url)));
   assert.ok(fs.existsSync(new URL("../public/brand/icon-144.png", import.meta.url)));
+});
+
+test("NL legacy German paths redirect permanently to the Dutch paths", () => {
+  assert.deepEqual(resolveMarketRequest("/partnersuche/amsterdam/", "tierisch-verliebt.nl"), { action: "redirect-permanent", market: "nl", url: "https://tierisch-verliebt.nl/dating/amsterdam/" });
+  assert.deepEqual(resolveMarketRequest("/nl/magazin/poedel/", "tierisch-verliebt.vercel.app"), { action: "redirect-permanent", market: "nl", url: "/nl/magazine/poedel/" });
+  assert.equal(resolveMarketRequest("/magazin/", "tierisch-verliebt.nl").url, "https://tierisch-verliebt.nl/magazine/");
+  assert.equal(resolveMarketRequest("/magazin/onbekend/", "tierisch-verliebt.nl").action, "not-found");
+  const response = proxy(new NextRequest("https://tierisch-verliebt.nl/partnersuche/rotterdam/", { headers: { host: "tierisch-verliebt.nl" } }));
+  assert.equal(response.status, 308);
+  assert.equal(response.headers.get("location"), "https://tierisch-verliebt.nl/dating/rotterdam/");
 });

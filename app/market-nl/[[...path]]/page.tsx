@@ -16,11 +16,11 @@ import "@/components/nl/pilot.css";
 type Props = { params: Promise<{ path?: string[] }> };
 
 function resolve(parts: string[] = []) {
-  if (!parts.length || (parts.length === 1 && parts[0] === "partnersuche")) {
+  if (!parts.length || (parts.length === 1 && parts[0] === "dating")) {
     const hub = getMarketPartnersucheHub("nl");
     return { kind: "hub" as const, title: hub.title, description: hub.description };
   }
-  if (parts.length === 2 && parts[0] === "partnersuche") {
+  if (parts.length === 2 && parts[0] === "dating") {
     const city = getMarketCityPage("nl", parts[1]);
     if (!city) notFound();
     return { kind: "city" as const, title: city.title, description: city.description, city };
@@ -29,7 +29,7 @@ function resolve(parts: string[] = []) {
     const page = parts[0] as NlInfoPage;
     return { kind: "info" as const, page, title: NL_INFO_META[page].title, description: NL_INFO_META[page].description };
   }
-  if (parts[0] === "magazin" && parts.length <= 2) {
+  if (parts[0] === "magazine" && parts.length <= 2) {
     if (!parts[1] || ["hondenrassen", "kattenrassen"].includes(parts[1])) {
       const animal = parts[1] === "hondenrassen" ? "dog" as const : parts[1] === "kattenrassen" ? "cat" as const : undefined;
       return { kind: "magazine" as const, animal, title: animal === "dog" ? "Hondenrassen" : animal === "cat" ? "Kattenrassen" : "Magazine voor dierenliefhebbers", description: "Ontdek vijf hondenrassen en vijf kattenrassen: karakter, verzorging, herkomst en het leven met je huisdier." };
@@ -42,15 +42,15 @@ function resolve(parts: string[] = []) {
 }
 
 export function generateStaticParams() {
-  return [{ path: [] }, { path: ["partnersuche"] }, ...getMarketCityPages("nl").map(city => ({ path: ["partnersuche", city.slug] })),
-    { path: ["magazin"] }, { path: ["magazin", "hondenrassen"] }, { path: ["magazin", "kattenrassen"] },
-    ...NL_BREEDS.map(breed => ({ path: ["magazin", breed.slug] })), ...NL_INFO_PAGES.map(page => ({ path: [page] }))];
+  return [{ path: [] }, { path: ["dating"] }, ...getMarketCityPages("nl").map(city => ({ path: ["dating", city.slug] })),
+    { path: ["magazine"] }, { path: ["magazine", "hondenrassen"] }, { path: ["magazine", "kattenrassen"] },
+    ...NL_BREEDS.map(breed => ({ path: ["magazine", breed.slug] })), ...NL_INFO_PAGES.map(page => ({ path: [page] }))];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const parts = (await params).path || [];
   const page = resolve(parts);
-  // /partnersuche/ zeigt dieselbe Stadtübersicht wie die Startseite: Canonical auf die Startseite.
+  // /dating/ zeigt dieselbe Stadtübersicht wie die Startseite: Canonical auf die Startseite.
   const canonical = publicUrl("nl", page.kind === "hub" ? "/" : parts.join("/"));
   const indexable = NL_PILOT_INDEXABLE && !(page.kind === "info" && NL_LEGAL_PAGES.includes(page.page));
   return { title: { absolute: `${page.title} | tierisch-verliebt.nl` }, description: page.description,
@@ -73,7 +73,7 @@ export default async function NlPilot({ params }: Props) {
       { "@type": "Person", "@id": `${url}#person`, name: NL_AUTHOR.name, jobTitle: NL_AUTHOR.jobTitle, image: staticAsset(NL_AUTHOR.image), url, sameAs: NL_AUTHOR.sameAs },
       { "@type": "FAQPage", "@id": `${url}#faq`, mainEntity: NL_ABOUT_FAQ.map(entry => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })) },
     ] : []),
-    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: publicUrl("nl") }, ...parts.map((part, index) => ({ "@type": "ListItem", position: index + 2, name: index === parts.length - 1 ? (page.kind === "info" ? NL_INFO_META[page.page].badge : page.title) : part === "partnersuche" ? "Dating" : "Magazine", item: publicUrl("nl", parts.slice(0, index + 1).join("/")) }))] },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: publicUrl("nl") }, ...parts.map((part, index) => ({ "@type": "ListItem", position: index + 2, name: index === parts.length - 1 ? (page.kind === "info" ? NL_INFO_META[page.page].badge : page.title) : part === "dating" ? "Dating" : "Magazine", item: publicUrl("nl", parts.slice(0, index + 1).join("/")) }))] },
   ] };
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(graph) }}/>
     {page.kind === "info" ? <NlInfoPageView page={page.page}/> : page.kind === "hub" ? <NlCityHub market="nl"/> : page.kind === "city" ? <NlCityPage market="nl" city={page.city}/> : page.kind === "magazine" ? <NlMagazine animal={page.animal}/> : <NlBreedPage entry={page.entry}/>}

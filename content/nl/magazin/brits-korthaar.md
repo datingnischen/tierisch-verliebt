@@ -19,7 +19,7 @@ locale: "nl-NL"
 ---
 
 <h2>Korte beschrijving</h2>
-<p>Kattenliefhebbers hebben deze zachtaardige huiskatten te danken aan verschillende foklijnen van oude <a href="https://tierisch-verliebt.de/magazin/hauskatze/">huiskatten</a> en aan het toeval. De geïsoleerde ligging, het bijzondere klimaat en voldoende tijd boden de katten van de Britse eilanden de kans om een heel bijzonder ras te worden. Het wordt ook &#8220;<a href="https://tierisch-verliebt.nl/magazin/brits-korthaar/"><strong>British Shorthair</strong></a>&#8221; (Brits Korthaar) genoemd en behoort wereldwijd tot de <a href="https://tierisch-verliebt.de/magazin/beliebtesten-katzenrassen/">populairste kattenrassen</a>. In Duitsland staat het zelfs op nummer 1.</p>
+<p>Kattenliefhebbers hebben deze zachtaardige huiskatten te danken aan verschillende foklijnen van oude <a href="https://tierisch-verliebt.de/magazin/hauskatze/">huiskatten</a> en aan het toeval. De geïsoleerde ligging, het bijzondere klimaat en voldoende tijd boden de katten van de Britse eilanden de kans om een heel bijzonder ras te worden. Het wordt ook &#8220;<a href="https://tierisch-verliebt.nl/magazine/brits-korthaar/"><strong>British Shorthair</strong></a>&#8221; (Brits Korthaar) genoemd en behoort wereldwijd tot de <a href="https://tierisch-verliebt.de/magazin/beliebtesten-katzenrassen/">populairste kattenrassen</a>. In Duitsland staat het zelfs op nummer 1.</p>
 
 <h2>Rasprofiel</h2>
 <p><img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Naam</strong>: Brits Korthaar (afkorting: BKH)<br />
