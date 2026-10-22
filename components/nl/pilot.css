@@ -72,3 +72,5 @@ html[lang="nl-NL"] .tvc-hero h1 { overflow-wrap: anywhere; hyphens: auto; }
 .nl-about-faq details p { margin: 10px 0 0; }
 @media (max-width: 640px) { .nl-about-author { grid-template-columns: 1fr; } .nl-about-author img { width: 130px; } }
 @media (max-width: 640px) { .nl-platform-notice { margin: 8px 12px; font-size: 12.5px; } }
+.nl-footer-domains { flex-wrap: wrap; border-radius: 18px; }
+.nl-footer-domains a { min-width: 0; font-weight: 700; }

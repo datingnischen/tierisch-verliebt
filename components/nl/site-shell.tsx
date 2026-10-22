@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { MarketLink } from "@/components/market-link";
+import { getMarket, publicUrl } from "@/lib/markets";
 import { NL_BREEDS, NL_PLATFORM, NL_PLATFORM_DUTCH, nlRegistrationUrl } from "@/lib/nl-routes";
 
 function Brand({ light = false }: { light?: boolean }) {
@@ -34,6 +35,6 @@ export function NlFooter() {
         {(["dog", "cat"] as const).map(animal => <div className="tv-footer-column" key={animal}><h2><MarketLink market="nl" path={`/magazin/${animal === "dog" ? "hondenrassen" : "kattenrassen"}`}>{animal === "dog" ? "Hondenrassen" : "Kattenrassen"}</MarketLink></h2><ul>{NL_BREEDS.filter(breed => breed.animal === animal).map(breed => <li key={breed.slug}><MarketLink market="nl" path={`/magazin/${breed.slug}`}>{breed.name}</MarketLink></li>)}</ul></div>)}
       </nav>
     </div>
-    <div className="tv-footer-bottom"><span>© {new Date().getFullYear()} tierisch-verliebt.nl · Met hart voor dieren</span><div className="tv-footer-legal"><MarketLink market="nl" path="/privacy">Privacy</MarketLink><MarketLink market="nl" path="/colofon">Colofon</MarketLink><span className="tv-footer-markets" aria-label="Land kiezen"><MarketLink market="de" path="/">DE</MarketLink><MarketLink market="at" path="/">AT</MarketLink><MarketLink market="ch" path="/">CH</MarketLink><MarketLink market="nl" path="/">NL</MarketLink></span></div></div>
+    <div className="tv-footer-bottom"><span>© {new Date().getFullYear()} tierisch-verliebt.nl · Met hart voor dieren</span><div className="tv-footer-legal"><MarketLink market="nl" path="/privacy">Privacy</MarketLink><MarketLink market="nl" path="/colofon">Colofon</MarketLink><span className="tv-footer-markets nl-footer-domains" aria-label="tierisch-verliebt in andere landen">{(["de", "at", "ch"] as const).map(market => <a key={market} href={publicUrl(market)} hrefLang={getMarket(market).locale}>{getMarket(market).domain}</a>)}</span></div></div>
   </div></footer>;
 }
