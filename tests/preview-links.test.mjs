@@ -20,6 +20,6 @@ test("keeps ICONY platform pages on the live domain", () => {
   assert.equal(previewPathForUrl("https://tierisch-verliebt.ch/registration/?AID=location"), null);
   assert.equal(previewPathForUrl("https://tierisch-verliebt.ch/suche/"), null);
   assert.equal(previewPathForUrl("https://tierisch-verliebt.at/impressum.html"), null);
-  assert.equal(previewPathForUrl("https://tierisch-verliebt.ch/magazin/"), null);
+  assert.equal(previewPathForUrl("https://tierisch-verliebt.ch/magazin/"), "/ch/magazin/");
   assert.equal(previewPathForUrl("https://example.com/partnersuche/"), null);
 });

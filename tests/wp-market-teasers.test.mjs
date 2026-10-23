@@ -9,11 +9,11 @@ import { teaserImagePath } from "../lib/teaser-image.ts";
 import { proxy } from "../proxy.ts";
 
 // Heiko (2026-10-20): ICONY ruft für die .at/.ch-Startseiten https://tierisch-verliebt.at|ch/magazin/wp-json/wp/v2/posts
-// auf. Ein Länder-Magazin gibt es nicht: Der Länderknoten liefert die drei größten Städteseiten des Landes.
+// auf. AT nutzt Städte, CH liefert seit dem Magazinstart eigene Artikel.
 const root = new URL("../", import.meta.url);
 const EXPECTED = { at: ["wien", "graz", "linz"], ch: ["zuerich", "genf", "basel"] };
 
-for (const [market, slugs] of Object.entries(EXPECTED)) {
+for (const [market, slugs] of Object.entries(EXPECTED).filter(([market]) => market === "at")) {
   test(`${market}: drei größte Städteseiten im WordPress-Format, Link und Bild auf der Landesdomain`, () => {
     const result = handleWpRest("/wp/v2/posts/", new URLSearchParams("per_page=3&_embed=1"), loadMarketTeaserSource(market));
     assert.equal(result.status, 200);
@@ -51,7 +51,7 @@ test("Konfiguration: genau drei Städte je Land", () => {
 test("Route: tv_market wählt den Länderknoten und wird aus den Parametern entfernt; sonst .de-Magazin", () => {
   const params = new URLSearchParams(`per_page=3&${MARKET_TEASER_PARAM}=ch`);
   const source = marketTeaserSourceFor(params);
-  assert.equal(source.posts[0].slug, "zuerich");
+  assert.equal(source.posts[0].slug, "erstes-date-mit-hund");
   assert.equal(params.has(MARKET_TEASER_PARAM), false);
   assert.equal(marketTeaserSourceFor(new URLSearchParams("per_page=3")), undefined);
   assert.equal(marketTeaserSourceFor(new URLSearchParams(`${MARKET_TEASER_PARAM}=nl`)), undefined);
@@ -60,12 +60,33 @@ test("Route: tv_market wählt den Länderknoten und wird aus den Parametern entf
   for (const post of de.body) assert.match(post.link, /^https:\/\/tierisch-verliebt\.de\/magazin\//);
 });
 
+test("CH-Plattform bekommt drei Schweizer Magazinartikel mit echten PNG-Covern", () => {
+  const result = handleWpRest("/wp/v2/posts/", new URLSearchParams("per_page=3&_embed=1"), loadMarketTeaserSource("ch"));
+  assert.equal(result.status, 200);
+  assert.deepEqual(result.body.map(post => post.slug).sort(), ["erstes-date-mit-hund", "neuer-partner-und-katze", "zwei-singles-zwei-hunde"].sort());
+  for (const post of result.body) {
+    assert.equal(post.link, `https://tierisch-verliebt.ch/magazin/${post.slug}/`);
+    const [media] = post._embedded["wp:featuredmedia"];
+    assert.equal(media.source_url, `https://tierisch-verliebt.ch/magazin/wp-json/datingnischen/v1/bild/magazin/media/ch/${post.slug}~png`);
+    assert.deepEqual(imageSize(readFileSync(new URL(`public/magazin/media/ch/${post.slug}.png`, root))), [1200, 800]);
+    assert.deepEqual([media.media_details.width, media.media_details.height], [1200, 800]);
+    assert.equal(teaserImagePath(["datingnischen", "v1", "bild", "magazin", "media", "ch", `${post.slug}~png`]), `/magazin/media/ch/${post.slug}.png`);
+  }
+});
+
 const rewrite = (url, headers = {}) => {
   const response = proxy(new NextRequest(url, { headers }));
   assert.equal(response.status, 200, url);
   assert.equal(response.headers.get("location"), null, url);
   return new URL(response.headers.get("x-middleware-rewrite") || "about:blank");
 };
+
+test("REST-Markt wird zusätzlich als vertrauenswürdiger Request-Header übertragen", () => {
+  for (const [path, market] of [["/ch/magazin/wp-json/wp/v2/posts", "ch"], ["/de/magazin/wp-json/wp/v2/posts", "de"]]) {
+    const response = proxy(new NextRequest(`https://tierisch-verliebt.vercel.app${path}`, { headers: { "x-tv-rest-market": "at" } }));
+    assert.equal(response.headers.get("x-middleware-request-x-tv-rest-market"), market);
+  }
+});
 
 test("proxy: nginx-Upstream /at|/ch/… und Landesdomain landen beim Endpunkt mit tv_market, auch mit Slash, ?_embed ohne Wert und ?rest_route", () => {
   for (const market of ["at", "ch"]) {

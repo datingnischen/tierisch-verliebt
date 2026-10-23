@@ -1,6 +1,8 @@
 import data from "../data/partnersuche-markets.json" with { type: "json" };
 import { publicUrl } from "#markets";
 import { teaserImageUrl } from "#teaser-image";
+import { getChArticles } from "#ch-magazine";
+import { berlinToUtc } from "#wp-rest-compat";
 import type { WpMedia, WpPost, WpSource } from "./wp-rest-compat.ts";
 import { MARKET_TEASER_PARAM } from "#wp-rest-paths";
 
@@ -9,8 +11,8 @@ import { MARKET_TEASER_PARAM } from "#wp-rest-paths";
  *
  * Hintergrund (Heiko, 2026-10-20): Die .at/.ch-Startseiten von ICONY holten ihre drei Magazin-Teaser von der
  * .de-Schnittstelle. Die Bilder kamen dann von tierisch-verliebt.de, die CSP der ICONY-Startseiten (`img-src 'self'`)
- * blockte sie, und die Links führten ins .de-Magazin. Ein eigenes Magazin je Land gibt es nicht. Der Länderknoten
- * liefert darum die drei größten Städteseiten des Landes (nach Einwohnern) als „Beiträge“: Link, Bild und Text auf
+ * blockte sie, und die Links führten ins .de-Magazin. Seit 23.10.2026 liefert CH eigene Magazinbeiträge.
+ * AT liefert weiterhin die drei größten Städteseiten des Landes (nach Einwohnern) als „Beiträge“: Link, Bild und Text auf
  * der Landesdomain. Die Bilder liegen als Kopie unter public/cities/<land>/ (Original: ICONY-CMS der Stadtseite).
  *
  * proxy.ts hängt dafür den Query-Parameter tv_market=at|ch an (Query statt Header, damit der CDN-Cache die Länder
@@ -52,6 +54,28 @@ const escapeHtml = (value: string) => value.replace(/&/g, "&amp;").replace(/</g,
 const cleanExcerpt = (value: string) => value.replace(/\s*(?:Lesen Sie w(?:e)?iter hier|Hier finden Sie weitere Informationen)\.?\s*$/i, "").trim();
 
 function buildMarketSource(market: MarketTeaserCode): WpSource {
+  if (market === "ch") {
+    const posts = getChArticles().map((article, index): WpPost => {
+      const id = 930_001 + index;
+      const date = `${article.published}T12:00:00`;
+      const dateGmt = berlinToUtc(date);
+      const modified = `${article.updated}T12:00:00`;
+      const modifiedGmt = berlinToUtc(modified);
+      return {
+        id, slug: article.slug, date, dateGmt, modified, modifiedGmt,
+        title: escapeHtml(article.title), content: article.content,
+        excerpt: `<p>${escapeHtml(article.teaser)}</p>\n`, author: 1, categories: [],
+        link: publicUrl("ch", `/magazin/${article.slug}`),
+        media: {
+          id: MEDIA_ID_OFFSET + id, slug: article.slug, title: escapeHtml(article.title),
+          date, dateGmt, modified, modifiedGmt, author: 1, post: id, alt: article.imageAlt,
+          url: teaserImageUrl(publicUrl("ch", "/magazin/wp-json"), article.image),
+          file: article.image.replace(/^\//, ""), mime: "image/png", width: article.imageWidth, height: article.imageHeight,
+        },
+      };
+    });
+    return { posts, categories: [] };
+  }
   const pages = (data as unknown as Record<string, { pages: CityPage[] }>)[market].pages;
   const restRoot = publicUrl(market, "/magazin/wp-json");
   const posts = TEASER_CITIES[market].map((teaser, index): WpPost => {

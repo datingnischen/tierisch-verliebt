@@ -11,7 +11,7 @@ export function requestHostname(request: NextRequest) { const direct=normalizeHo
 function handoff(url:string){const escaped=url.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");return new NextResponse(`<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="refresh" content="0;url=${escaped}"><title>Weiterleitung</title></head><body><p>Weiter zur bestehenden Plattform: <a href="${escaped}">${escaped}</a></p><script>location.replace(${JSON.stringify(url)})</script></body></html>`,{status:200,headers:{"cache-control":"no-store","content-type":"text/html; charset=utf-8"}});}
 
 const NO_SLASH_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
-const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it|ch-magazin)(?:\/|$)/;
 
 // Seitenpfade enden immer auf "/" (wie die ICONY-Plattform). Ersetzt die eingebaute Slash-Umleitung von
 // Next.js (skipTrailingSlashRedirect): Die kennt nur den Upstream-Pfad. nginx ruft für tierisch-verliebt.at/faq
@@ -63,7 +63,11 @@ export function wpRestRewrite(request: NextRequest) {
   if (market !== "de" && market !== "at" && market !== "ch") return null;
   const destination = restRewriteUrl(href, root ? "/magazin/index.php" : pathname.replace(/^\/(?:de|at|ch)(?=\/)/, ""));
   if (market !== "de" || destination.searchParams.has(MARKET_TEASER_PARAM)) destination.searchParams.set(MARKET_TEASER_PARAM, market);
-  return NextResponse.rewrite(destination);
+  // Next.js kann beim internen Rewrite request.url mit der Originalquery bereitstellen.
+  // Den aufgelösten Markt deshalb zusätzlich per überschriebenem Request-Header übertragen.
+  const headers = new Headers(request.headers);
+  headers.set("x-tv-rest-market", market);
+  return NextResponse.rewrite(destination, { request: { headers } });
 }
 
 export function proxy(request: NextRequest) {

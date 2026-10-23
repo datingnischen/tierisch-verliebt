@@ -15,6 +15,8 @@ ICONY bleibt Betreiber der Dating-Plattform; Next.js rendert nur die redaktionel
 | de | Startseite `/`, `/partnersuche/` + 20 Stadtseiten, Magazin `/magazin/…` (Artikel, Themen, Tierwelten, Autoren, Inhaltsverzeichnis), `/ueber-uns/` + Unterseiten (u. a. `/ueber-uns/bewertungen/`, `/ueber-uns/social-media/`) |
 | at, ch | Startseite, `/partnersuche/` + je 15 Stadtseiten, `robots.txt`, `sitemap.xml` (intern `app/market-*`); alle anderen Pfade zeigen einen Platzhalter mit `noindex` |
 
+Seit 23.10.2026 hat **ch** zusätzlich ein eigenes Magazin: `/magazin/` und drei Ratgeber. Dateien: `content/ch/magazin/*.md` (Frontmatter + HTML), Loader/Schema: `lib/ch-magazine.ts`, interne Route: `app/market-ch-magazin/[[...path]]`. Neue Slugs auch in `CH_MAGAZINE_SLUGS` in `lib/markets.ts` ergänzen. Die Schweizer Sitemap ist zusätzlich unter `/magazin/sitemap.xml` erreichbar (für ICONYs nginx). Menü, Footer und die CH-REST-Teaser verweisen auf die Schweizer Artikel. Deutsche Beiträge werden nicht übernommen; AT behält die Städte-Teaser. Illustrationen: `public/magazin/media/ch/`, reproduzierbar mit `node scripts/ch-magazine-covers.mjs`.
+
 Datenquellen:
 
 - **Stadtseiten:** `data/partnersuche-markets.json` (Import aus ICONY, siehe unten), gelesen von `lib/market-partnersuche.ts`. Die Übersichtstexte je Markt stehen dort in `HUB_COPY`.

@@ -8,6 +8,8 @@
     "#nl-routes": "./lib/nl-routes.ts",
     "#it-routes": "./lib/it-routes.ts",
     "#magazine": "./lib/magazine.ts",
+    "#ch-magazine": "./lib/ch-magazine.ts",
+    "#wp-rest-compat": "./lib/wp-rest-compat.ts",
     "#magazine-faq": "./lib/magazine-faq.ts",
     "#magazine-store": "./lib/magazine-store.ts",
     "#static-asset": "./lib/static-asset.ts",

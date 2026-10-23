@@ -79,6 +79,13 @@ export function previewPath(market: MarketCode, pathname = "/"): string {
 const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns|faq)(?:\/|$)/;
 const REGIONAL_NEXT_PAGE = /^\/(?:partnersuche(?:\/[a-z0-9-]+)?|faq)\/?$/;
 
+/** Schweizer Redaktion: bewusst getrennt vom deutschen Magazin. */
+export const CH_MAGAZINE_SLUGS = ["erstes-date-mit-hund", "neuer-partner-und-katze", "zwei-singles-zwei-hunde"] as const;
+export function isChMagazinePath(path: string): boolean {
+  const normalized = path.replace(/\/+$/, "");
+  return normalized === "/magazin" || CH_MAGAZINE_SLUGS.some(slug => normalized === `/magazin/${slug}`) || normalized === "/magazin/sitemap.xml";
+}
+
 /**
  * Live-URL einer Seite, die Next.js selbst rendert, auf den Vorschau-Pfad abbilden (für Links im
  * importierten HTML). ICONY-Seiten (Login, Suche, Impressum …) bleiben null und damit live.
@@ -91,7 +98,7 @@ export function previewPathForUrl(href: string): string | null {
   const path = url.pathname || "/";
   const italian = market === "ch" ? path.match(/^\/it(\/.*)?$/) : null;
   if (italian) return isItEditorialPath(italian[1] || "/") ? `${previewPath("it", italian[1] || "/")}${url.hash}` : null;
-  const served = market === "nl" ? isNlEditorialPath(path) : path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path);
+  const served = market === "nl" ? isNlEditorialPath(path) : path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path) || (market === "ch" && isChMagazinePath(path));
   return served ? `${previewPath(market, path)}${url.hash}` : null;
 }
 
@@ -100,6 +107,7 @@ export type MarketRequestResolution =
   | { action: "not-found" }
   | { action: "nl-pilot"; market: "nl"; pathname: string }
   | { action: "it-pilot"; market: "it"; pathname: string }
+  | { action: "ch-magazine"; market: "ch"; pathname: string }
   | { action: "rewrite"; market: "de"; pathname: string }
   | { action: "market-home"; market: RegionalMarket; pathname: string }
   | { action: "market-partnersuche"; market: RegionalMarket; pathname: string }
@@ -111,7 +119,7 @@ export type MarketRequestResolution =
   | { action: "redirect-permanent"; market: RegionalMarket; url: string }
   | { action: "placeholder"; market: RegionalMarket; pathname: string; requestedPath: string };
 
-const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it|ch-magazin)(?:\/|$)/;
 const PLATFORM_PATH = /^\/(?:login|registration|suche)(?:\/|$)/;
 const PASS_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
 const STATIC_FILE = /\.(?:avif|css|gif|ico|jpe?g|js|json|map|png|svg|webp|woff2?)$/i;
@@ -144,6 +152,12 @@ function resolveRegional(market: RegionalMarket, requestedPath: string, producti
     // Ohne NL-Plattform liegen Login und Registrierung auf tierisch-verliebt.de (NL_PLATFORM), auch auf der .nl-Domain.
     if (PLATFORM_PATH.test(path)) return { action: "redirect-platform", market, url: `${NL_PLATFORM.origin}${withTrailingSlash(path)}` };
     return { action: "not-found" };
+  }
+  if (market === "ch" && path === "/magazin/sitemap.xml") return { action: "market-sitemap", market, pathname: "/market-sitemap/ch" };
+  if (market === "ch" && /^\/magazin(?:\/|$)/.test(path)) {
+    return isChMagazinePath(path)
+      ? { action: "ch-magazine", market: "ch", pathname: path.replace(/^\/magazin/, "/market-ch-magazin") }
+      : { action: "not-found" };
   }
   if (path === "/") return { action: "market-home", market, pathname: `/market-home/${market}` };
   if (path === "/partnersuche") return { action: "market-partnersuche", market, pathname: `/market-partnersuche/${market}` };
