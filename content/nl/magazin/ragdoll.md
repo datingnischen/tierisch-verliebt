@@ -4,7 +4,7 @@ slug: "ragdoll"
 type: page
 wpId: 672
 published: "2019-12-16T19:12:45"
-updated: "2026-09-27T22:45:57"
+updated: "2026-10-23T15:00:00+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Ragdoll.jpg"
@@ -28,7 +28,7 @@ locale: "nl-NL"
 <img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Gewicht</strong>: 4,5 &#8211; 6,5 kg<br />
 <img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Vachtkleuren</strong>: wit, zwart, chocoladebruin, lilac, rood; meerkleurig<br />
 <img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Karakter</strong>: beleefd, zachtaardig, standvastig, speels, aanhankelijk<br />
-<img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Kosten</strong>: Tussen 500 &amp; 800 euro</p>
+<img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Kosten</strong>: Verschillend per aanbieder en inbegrepen diensten; <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">prijsvoorbeelden en aankoopadvies voor Duitsland</a></p>
 <p>Dit wordt echter niet door ziekte veroorzaakt, maar gebeurt vanzelf wanneer de Ragdoll zich prettig voelt. Hij bereikt als het ware het hoogste ontspanningsniveau en laat zich helemaal gaan. Dit vriendelijke kattenras kan dan urenlang op de schoot van zijn eigenaar blijven zitten. De Ragdoll is in alle opzichten een mooi ras dat veel liefde uitstraalt. Lees nu meer over deze lieve kat en zijn eigenschappen.</p>
 <h2>Aard en karakter van de Ragdoll</h2>
 <p>Ragdolls hebben een evenwichtig <a href="https://tierisch-verliebt.de/magazin/ragdoll-charakter/">karakter</a> en zijn erg zachtaardig. Het liefst volgen ze hun mensen overal. Het ras heeft een groot lichaam en oogt erg fors, maar beweegt elegant en behendig door de woning. De Ragdoll kan als buitenkat of binnenkat worden gehouden. Aandacht en bezigheid zijn voor de kat belangrijker dan naar buiten kunnen.</p>
@@ -41,7 +41,7 @@ locale: "nl-NL"
 <p>De vacht lijkt veel <a href="https://tierisch-verliebt.de/magazin/ragdoll-pflege/">verzorging</a> nodig te hebben. Dat is echter een misvatting, want ondanks de lengte vervilt de vacht nauwelijks en ontstaan er geen klitten. Af en toe de Ragdoll verwennen met een borstel is voldoende. Tijdens de rui is dagelijks borstelen aan te raden om losse haren te verwijderen.</p>
 <p>Omdat de kat erg groot is, moeten de spullen voor de Ragdoll ook voldoende stevig zijn. Het ras heeft de neiging aan te komen, vooral rond de buik. Daarom moet het gewicht regelmatig worden gecontroleerd. Door hun grootte hebben vooral de katers aanleg voor hartziekten.</p>
 <p>Een Ragdoll moet altijd afkomstig zijn van een betrouwbare fokker, want inteelt kan de gezondheid van de kat schaden. Erfelijke aandoeningen zoals bloedarmoede, hartziekten of oogziekten kunnen het gevolg zijn. Deze aandoeningen komen uiteraard slechts bij sommige katten voor en niet bij allemaal. Een erkende <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">fokkerij</a> kan helpen om bepaalde ziekten te voorkomen, maar geeft natuurlijk nooit een garantie.</p>
-<p>De ouderdieren moeten door de <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">Ragdoll-fokker</a> op deze erfelijke aandoeningen worden getest en alleen bij een negatieve uitslag voor de fok worden ingezet. Het spreekt vanzelf dat de kittens voldoende gevaccineerd, gechipt en ontwormd zijn. Bij een verantwoordelijke fokker moet je voor de aanschaf van een Ragdoll rekenen op ongeveer 700 euro.</p>
+<p>De ouderdieren moeten door de <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">Ragdoll-fokker</a> op deze erfelijke aandoeningen worden getest en alleen bij een negatieve uitslag voor de fok worden ingezet. Het spreekt vanzelf dat de kittens voldoende gevaccineerd, gechipt en ontwormd zijn. Vraag de fokker naar de actuele aankoopprijs en de inbegrepen diensten.</p>
 <h2>Geschikte activiteiten voor de Ragdoll</h2>
 <p>De Ragdoll hoeft niet per se naar buiten te kunnen. Toch heeft dit ras bezigheid nodig. Veel katten vinden het al erg fijn om een uitkijkplek bij het raam te hebben vanwaar ze alles kunnen bekijken. De Ragdoll kan zich snel vervelen en heeft voortdurend bezigheid nodig.</p>
 <p>Naar buiten gaan vinden ze natuurlijk ook fijn, maar de Ragdoll wil vooral samen met zijn mens zijn. Zelfs een wandeling aan de lijn is voor dit kattenras een prettige activiteit. Wie niet voortdurend voor zijn kat beschikbaar kan zijn, moet zeker een tweede kat aanschaffen. De Ragdoll heeft geen sterke jachtdrift, maar doet heel graag mee aan intensieve spelletjes.</p>
@@ -62,7 +62,7 @@ locale: "nl-NL"
 <h3>Is de Ragdoll een binnenkat?</h3>
 <p>Ja, hij is rustig en zachtaardig en erg geschikt voor een leven binnenshuis. Omdat hij weinig angst kent, is onbeveiligd buitenlopen minder geschikt.</p>
 <h3>Wat kost een Ragdoll?</h3>
-<p>Kittens kosten bij fokkers meestal tussen 500 en 800 euro.</p>
+<p>De aankoopprijs hangt af van de fokker en de inbegrepen diensten. Concrete gepubliceerde prijsvoorbeelden vind je in ons hierboven gelinkte aankoopadvies voor Duitsland.</p>
 <h2>Meer artikelen over Ragdoll katten</h2>
 <ul>
 <li><a href="https://tierisch-verliebt.de/magazin/ragdoll-charakter/">Karakter van een Ragdoll kat</a></li>

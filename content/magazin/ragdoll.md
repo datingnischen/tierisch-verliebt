@@ -4,7 +4,7 @@ slug: "ragdoll"
 type: page
 wpId: 672
 published: "2019-12-16T19:12:45"
-updated: "2026-09-27T22:45:57"
+updated: "2026-10-23T15:00:00+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Ragdoll.jpg"
@@ -24,7 +24,7 @@ excerpt: "<p>Die Ragdoll zählt mit zu einer der schönsten Katzenrassen. Sie is
 <img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Gewicht</strong>: 4,5 &#8211; 6,5 kg<br />
 <img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Fellfarben</strong>: weiß, schwarz, schockoladenbraun, lilac, rot; mehrfarbig<br />
 <img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Charakter</strong>: höflich, sanft, charakterfest, verspielt, anhänglich<br />
-<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Kosten</strong>: Zwischen 500 &amp; 800 Euro</p>
+<img decoding="async" alt="check" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Kosten</strong>: Je nach Anbieter und enthaltenen Leistungen unterschiedlich; <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">aktuelle Preisbeispiele und Kaufhilfe</a></p>
 <p>Dies ist aber nicht krankheitsbedingt, sondern passiert automatisch, wenn sich die Ragdoll wohlfühlt. Sie erreicht sozusagen das höchste Entspannungslevel und lässt sich völlig gehen. Die freundliche Katzenrasse kann dann stundenlang auf dem Schoß ihres Besitzers verweilen. Rundum ist die Ragdoll eine schöne Rasse, die so viel Liebe versprüht. Erfahre nun mehr über diese liebevolle Katze und ihre Eigenschaften.</p>
 <h2>Wesen und Charakter der Ragdoll</h2>
 <p>Ragdolls haben einen ausgeglichenen <a href="https://tierisch-verliebt.de/magazin/ragdoll-charakter/">Charakter</a> und sind sehr sanftmütig. Am liebsten folgen sie ihren Menschen überall hin. Die Rasse hat einen großen Körper und wirkt sehr massiv, sie bewegt sich aber elegant und geschickt durch die Wohnung. Die Ragdoll kann als Freilandkatze oder als Wohnungskatze gehalten werden. Wichtiger als der Freigang ist für die Katze Aufmerksamkeit und Beschäftigung.</p>
@@ -37,7 +37,7 @@ excerpt: "<p>Die Ragdoll zählt mit zu einer der schönsten Katzenrassen. Sie is
 <p>Das Fell wirkt so, als würde es viel <a href="https://tierisch-verliebt.de/magazin/ragdoll-pflege/">Pflege</a> benötigen. Das ist aber ein Trugschluss, denn das Fell verfilzt obwohl der Länge kaum und bildet keine Knötchen. Gelegentlich mit der Bürste die Ragdoll verwöhnen reicht vollkommen aus. Beim Fellwechsel ist ein tägliches Bürsten ratsam um die losen Haare zu entfernen.</p>
 <p>Da die Katze sehr groß ist sollte die Ausstattung für die Ragdoll auch entsprechend stabil ist. Die Rasse tendiert dazu, Gewicht zuzulegen, vor allem im Bauchbereich. Daher sollte das Gewicht regelmäßig kontrolliert werden. Durch ihre Größe haben vor allem die Kater eine Veranlagung zu Herzkrankheiten.</p>
 <p>Eine Ragdoll sollte immer aus gesicherter Zucht gekauft werden, denn bei Inzucht kann die Gesundheit der Katze drunter leiden. Erbkrankheiten wie Anämie, Herzkrankheiten oder Augenkrankheiten können die Folge sein. Natürlich treten diese Krankheiten vereinzelt und nicht bei allen Katzen auf. Eine anerkannte <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">Zuchtstelle</a> kann dabei helfen, einige Krankheiten zu vermeiden, gibt aber natürlich nie eine Garantie.</p>
-<p>Elternteile sollten vom <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">Ragdoll-Züchter</a> auf diese Erbkrankheiten getestet werden und nur bei negativem Ergebnis zur Zucht freigegeben werden. Natürlich versteht es sich, dass die kleinen Katzen ausreichend geimpft, gechipt und entwurmt sind. Man sollte bei einem seriösen Züchter mit rund 700€ zur Anschaffung einer Ragdoll rechnen.</p>
+<p>Elternteile sollten vom <a href="https://tierisch-verliebt.de/magazin/ragdoll-zuechter/">Ragdoll-Züchter</a> auf diese Erbkrankheiten getestet werden und nur bei negativem Ergebnis zur Zucht freigegeben werden. Natürlich versteht es sich, dass die kleinen Katzen ausreichend geimpft, gechipt und entwurmt sind. Den aktuellen Kaufpreis und die enthaltenen Leistungen solltest du direkt mit der Zucht klären.</p>
 <h2>Geeignete Aktivitäten für Ragdoll</h2>
 <p>Die Ragdoll braucht nicht unbedingt Freigang. Beschäftigung braucht die Rasse aber trotzdem. Viele Katzen finden es schonmal sehr gut, wenn sie einen Aussichtsplatz am Fenster haben und von dort aus alles beobachten können. Der Ragdoll kann schnell langweilig werden und sie braucht konstante Beschäftigung.</p>
 <p>Freigang nehmen sie natürlich auch gerne an, aber am meisten ist die Ragdoll daran interessiert mit ihrem Menschen zusammen zu sein. Selbst ein Spaziergang an der Leine ist für diese Katzenrasse eine angenehme Aktivität. Wer nicht andauernd für seine Katze da sein kann, der sollte sich auf jeden Fall eine Zweitkatze zulegen. Die Ragdoll hat zwar keinen ausgeprägten Jagdtrieb, sie lässt sich aber sehr gerne auf intensive Spiele ein.</p>
@@ -58,7 +58,7 @@ excerpt: "<p>Die Ragdoll zählt mit zu einer der schönsten Katzenrassen. Sie is
 <h3>Ist die Ragdoll eine Wohnungskatze?</h3>
 <p>Ja, sie ist ruhig, sanft und eignet sich sehr gut für die Wohnung. Weil sie wenig Scheu kennt, ist ungesicherter Freigang eher nichts für sie.</p>
 <h3>Was kostet eine Ragdoll?</h3>
-<p>Kitten kosten bei Züchtern meist zwischen 500 und 800 Euro.</p>
+<p>Der Kaufpreis hängt von der Zucht und den enthaltenen Leistungen ab. Konkrete veröffentlichte Preisbeispiele findest du in unserer oben verlinkten Kaufhilfe.</p>
 <h2>Weitere Artikel zu Ragoll Katzen</h2>
 <ul>
 <li><a href="https://tierisch-verliebt.de/magazin/ragdoll-charakter/">Charakter einer Ragdoll Katze</a></li>
