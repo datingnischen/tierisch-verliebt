@@ -125,3 +125,13 @@ test("enhanced content renders the facts card and anchors every section", () => 
     assert.match(html, new RegExp(`id="${link.id}"`));
   }
 });
+
+test("breed navigation omits source sections whose heading is collapsed away", () => {
+  const html = `<h2>Haltung</h2><p>Alltag</p>
+    <h2>Quellen und Einordnung</h2><p>Belege</p>
+    <h2>Genutzte Quellen</h2><p>Weitere Belege</p>
+    <h2>Welche Quellen sind verlässlich?</h2><p>Inhaltliche Frage</p>`;
+  assert.deepEqual(getBreedSectionLinks(html, "Husky").map(link => link.label), [
+    "Haltung", "Welche Quellen sind verlässlich?",
+  ]);
+});
