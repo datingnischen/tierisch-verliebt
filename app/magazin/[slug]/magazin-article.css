@@ -1,5 +1,50 @@
 /* Magazin-Artikel und -Seiten: Gassi-Guide-Look (Hero aus tier-city-page.css), Rassenseiten ausgenommen */
 
+.rich-content .japanese-breeds-comparison {
+  max-width: 100%;
+  margin-block: 20px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.rich-content .japanese-breeds-comparison:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 3px;
+}
+
+.japanese-breeds-comparison table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.japanese-breeds-comparison caption {
+  padding: 14px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.japanese-breeds-comparison th,
+.japanese-breeds-comparison td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid var(--line);
+}
+
+.japanese-breeds-comparison thead th {
+  background: #f9f0ec;
+  color: var(--foreground);
+}
+
+.japanese-breeds-comparison tbody tr:nth-child(even) {
+  background: #fffbf8;
+}
+
 .tvm-article {
   --tvm-paw: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 34c-8.5 0-16 8.6-16 15.2 0 4.5 3.6 6.8 8 6.8 3.3 0 5.3-1.6 8-1.6s4.7 1.6 8 1.6c4.4 0 8-2.3 8-6.8C48 42.6 40.5 34 32 34Z'/%3E%3Cellipse cx='13' cy='27' rx='6' ry='7.6'/%3E%3Cellipse cx='24.5' cy='15' rx='6' ry='8'/%3E%3Cellipse cx='39.5' cy='15' rx='6' ry='8'/%3E%3Cellipse cx='51' cy='27' rx='6' ry='7.6'/%3E%3C/svg%3E");
   padding-bottom: 0;
