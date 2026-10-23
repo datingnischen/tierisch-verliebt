@@ -81,7 +81,7 @@ export default async function ChMagazine({ params }: Props) {
             <section className="ch-audio" aria-label="Artikel als Audio-Kurzfassung">
               <span className="ch-kicker">Für deine nächste Gassi-Runde</span>
               <h2>Lieber zuhören?</h2>
-              <p>Die wichtigsten Gedanken als Audio-Kurzfassung. KI-Stimme, erstellt mit ElevenLabs.</p>
+              <p>Die wichtigsten Gedanken als Audio-Kurzfassung.</p>
               <audio controls preload="none" aria-label={`Audio-Kurzfassung: ${article.title}`}>
                 <source src={staticAsset(`/magazin/media/ch/${article.slug}-audio.mp3`)} type="audio/mpeg" />
                 Dein Browser unterstützt den Audioplayer nicht. <a href={staticAsset(`/magazin/media/ch/${article.slug}-audio.mp3`)}>MP3 öffnen</a>
