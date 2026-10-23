@@ -70,7 +70,7 @@ function buildMarketSource(market: MarketTeaserCode): WpSource {
           id: MEDIA_ID_OFFSET + id, slug: article.slug, title: escapeHtml(article.title),
           date, dateGmt, modified, modifiedGmt, author: 1, post: id, alt: article.imageAlt,
           url: teaserImageUrl(publicUrl("ch", "/magazin/wp-json"), article.image),
-          file: article.image.replace(/^\//, ""), mime: "image/png", width: article.imageWidth, height: article.imageHeight,
+          file: article.image.replace(/^\//, ""), mime: /\.jpe?g$/i.test(article.image) ? "image/jpeg" : "image/png", width: article.imageWidth, height: article.imageHeight,
         },
       };
     });

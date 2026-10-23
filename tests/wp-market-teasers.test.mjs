@@ -60,17 +60,17 @@ test("Route: tv_market wählt den Länderknoten und wird aus den Parametern entf
   for (const post of de.body) assert.match(post.link, /^https:\/\/tierisch-verliebt\.de\/magazin\//);
 });
 
-test("CH-Plattform bekommt drei Schweizer Magazinartikel mit echten PNG-Covern", () => {
+test("CH-Plattform bekommt drei Schweizer Magazinartikel mit fotorealistischen JPEG-Covern", () => {
   const result = handleWpRest("/wp/v2/posts/", new URLSearchParams("per_page=3&_embed=1"), loadMarketTeaserSource("ch"));
   assert.equal(result.status, 200);
   assert.deepEqual(result.body.map(post => post.slug).sort(), ["erstes-date-mit-hund", "neuer-partner-und-katze", "zwei-singles-zwei-hunde"].sort());
   for (const post of result.body) {
     assert.equal(post.link, `https://tierisch-verliebt.ch/magazin/${post.slug}/`);
     const [media] = post._embedded["wp:featuredmedia"];
-    assert.equal(media.source_url, `https://tierisch-verliebt.ch/magazin/wp-json/datingnischen/v1/bild/magazin/media/ch/${post.slug}~png`);
-    assert.deepEqual(imageSize(readFileSync(new URL(`public/magazin/media/ch/${post.slug}.png`, root))), [1200, 800]);
+    assert.equal(media.source_url, `https://tierisch-verliebt.ch/magazin/wp-json/datingnischen/v1/bild/magazin/media/ch/${post.slug}-foto~jpg`);
+    assert.deepEqual(imageSize(readFileSync(new URL(`public/magazin/media/ch/${post.slug}-foto.jpg`, root))), [1200, 800]);
     assert.deepEqual([media.media_details.width, media.media_details.height], [1200, 800]);
-    assert.equal(teaserImagePath(["datingnischen", "v1", "bild", "magazin", "media", "ch", `${post.slug}~png`]), `/magazin/media/ch/${post.slug}.png`);
+    assert.equal(teaserImagePath(["datingnischen", "v1", "bild", "magazin", "media", "ch", `${post.slug}-foto~jpg`]), `/magazin/media/ch/${post.slug}-foto.jpg`);
   }
 });
 

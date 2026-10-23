@@ -71,7 +71,7 @@ export default async function ChMagazine({ params }: Props) {
         <p className="tvc-lead">{article?.description || "Wenn aus deinem Alltag unser Alltag wird: Ideen fürs Kennenlernen, für eure Beziehung und für die Tiere, die dazugehören. Mit Blick auf das Leben in der Schweiz."}</p>
         {article ? <p className="ch-meta">Redaktion tierisch-verliebt.ch · Aktualisiert am <time dateTime={article.updated}>{new Intl.DateTimeFormat("de-CH", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Zurich" }).format(new Date(`${article.updated}T12:00:00Z`))}</time> · {article.readingMinutes} Min. Lesezeit</p> : <div className="ch-hero-tags"><a href="#beitraege">Unsere ersten drei Ratgeber <span aria-hidden="true">↓</span></a><span>Hund · Katze · Partnerschaft</span></div>}
       </div>
-      {article ? <figure className="ch-hero-picture"><img src={staticAsset(article.image)} alt={article.imageAlt} width={1200} height={800} fetchPriority="high" /><figcaption>Illustration · tierisch-verliebt.ch</figcaption></figure> : null}
+      {article ? <figure className="ch-hero-picture"><img src={staticAsset(article.image)} alt={article.imageAlt} width={1200} height={800} fetchPriority="high" /><figcaption>KI-generiertes Symbolbild · tierisch-verliebt.ch</figcaption></figure> : null}
     </div></section>
     <div className="tvc-wrap ch-body">
       {article ? <>

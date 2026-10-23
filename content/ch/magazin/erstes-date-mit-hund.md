@@ -6,8 +6,8 @@ teaser: 'Eine kurze Quartierrunde, klare Absprachen und ein Hund, der selbst Nä
 category: 'Dating mit Hund'
 published: '2026-10-23'
 updated: '2026-10-23'
-image: '/magazin/media/ch/erstes-date-mit-hund.png'
-imageAlt: 'Illustration: Zwei Menschen gehen mit Abstand neben einem angeleinten Hund spazieren.'
+image: '/magazin/media/ch/erstes-date-mit-hund-foto.jpg'
+imageAlt: 'KI-generiertes Symbolbild: Zwei Menschen gehen mit Abstand neben einem angeleinten Hund spazieren.'
 imageWidth: 1200
 imageHeight: 800
 ---
@@ -43,4 +43,4 @@ imageHeight: 800
 <details><summary>Ist ein Café eine gute Idee?</summary><p>Nur wenn dein Hund solche Situationen bereits entspannt bewältigt, Hunde erlaubt sind und genug Platz vorhanden ist. Plane den Cafébesuch nicht als Pflichtteil ein.</p></details>
 <details><summary>Was, wenn mein Date unbedingt streicheln möchte?</summary><p>Erkläre die vereinbarte Grenze freundlich und klar. Der Hund darf ausweichen. Wenn dein Gegenüber das nicht akzeptiert, beendet ihr den Kontakt zum Hund.</p></details>
 
-<details class="ch-sources"><summary>Quellen und redaktionelle Hinweise</summary><p>Fachliche Grundlagen: <a href="https://www.battersea.org.uk/pet-advice/dog-advice/how-approach-dog" target="_blank" rel="noopener noreferrer">Battersea: How to approach a dog</a>, <a href="https://www.dogstrust.org.uk/dog-advice/understanding-your-dog/signs-your-dog-may-be-stressed" target="_blank" rel="noopener noreferrer">Dogs Trust: Stress und grosse Gefühle</a>. Regionale Regel: <a href="https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html" target="_blank" rel="noopener noreferrer">Kanton Zürich: Hunde</a>. Geprüft am 23. Oktober 2026. Treffpunkt- und Zeitvorschläge sind redaktionelle Empfehlungen, keine fachlich festgelegten Grenzwerte. Illustration: tierisch-verliebt.ch.</p></details>
+<details class="ch-sources"><summary>Quellen und redaktionelle Hinweise</summary><p>Fachliche Grundlagen: <a href="https://www.battersea.org.uk/pet-advice/dog-advice/how-approach-dog" target="_blank" rel="noopener noreferrer">Battersea: How to approach a dog</a>, <a href="https://www.dogstrust.org.uk/dog-advice/understanding-your-dog/signs-your-dog-may-be-stressed" target="_blank" rel="noopener noreferrer">Dogs Trust: Stress und grosse Gefühle</a>. Regionale Regel: <a href="https://www.zh.ch/de/umwelt-tiere/tiere/haustiere-heimtiere/hunde.html" target="_blank" rel="noopener noreferrer">Kanton Zürich: Hunde</a>. Geprüft am 23. Oktober 2026. Treffpunkt- und Zeitvorschläge sind redaktionelle Empfehlungen, keine fachlich festgelegten Grenzwerte. Bild: KI-generiertes Symbolbild, erstellt mit OpenAI für tierisch-verliebt.ch.</p></details>

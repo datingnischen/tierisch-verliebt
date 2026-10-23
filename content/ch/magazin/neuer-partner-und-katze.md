@@ -6,8 +6,8 @@ teaser: 'Erst Besuch, dann Alltag: Wie ihr Nähe aufbaut, die Wohnung vorbereite
 category: 'Beziehung mit Katze'
 published: '2026-10-23'
 updated: '2026-10-23'
-image: '/magazin/media/ch/neuer-partner-und-katze.png'
-imageAlt: 'Illustration: Eine Katze beobachtet zwei Menschen von ihrem erhöhten Rückzugsplatz aus.'
+image: '/magazin/media/ch/neuer-partner-und-katze-foto.jpg'
+imageAlt: 'KI-generiertes Symbolbild: Eine getigerte Katze sitzt auf einem erhöhten Fensterplatz; im Hintergrund sitzt ein Paar auf dem Sofa.'
 imageWidth: 1200
 imageHeight: 800
 ---
@@ -45,4 +45,4 @@ imageHeight: 800
 <details><summary>Soll mein Partner die Katze mit Futter anlocken?</summary><p>Verzichtet auf Futter als Druckmittel für Körperkontakt. Wenn Futter eingesetzt wird, bleibt es zur normalen Ernährung passend und die Katze kann Abstand halten.</p></details>
 <details><summary>Dürfen wir die Katze anfangs aus dem Schlafzimmer ausschliessen?</summary><p>Klärt eure Schlafsituation vor dem Zusammenziehen. Ändert bisherige Zugänge schrittweise und schafft verlässliche Alternativen. Bestraft die Katze nicht dafür, dass sie ihren gewohnten Platz aufsucht.</p></details>
 
-<details class="ch-sources"><summary>Quellen und redaktionelle Hinweise</summary><p><a href="https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/meeting-other-people" target="_blank" rel="noopener noreferrer">Cats Protection: Katzen und neue Menschen</a>; <a href="https://www.cats.org.uk/help-and-advice/getting-a-cat/bringing-a-cat-home" target="_blank" rel="noopener noreferrer">Cats Protection: Ankommen im neuen Zuhause</a>; <a href="https://www.battersea.org.uk/pet-advice/cat-advice/reducing-your-cats-stress" target="_blank" rel="noopener noreferrer">Battersea: Stress bei Katzen reduzieren</a>; <a href="https://www.mieterverband.ch/news/miettipp-haustierhaltung/" target="_blank" rel="noopener noreferrer">Mieterinnen- und Mieterverband: Haustierhaltung</a>. Geprüft am 23. Oktober 2026. Das Beispiel Bern–Thun ist ein redaktionelles Planungsszenario. Illustration: tierisch-verliebt.ch.</p></details>
+<details class="ch-sources"><summary>Quellen und redaktionelle Hinweise</summary><p><a href="https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/meeting-other-people" target="_blank" rel="noopener noreferrer">Cats Protection: Katzen und neue Menschen</a>; <a href="https://www.cats.org.uk/help-and-advice/getting-a-cat/bringing-a-cat-home" target="_blank" rel="noopener noreferrer">Cats Protection: Ankommen im neuen Zuhause</a>; <a href="https://www.battersea.org.uk/pet-advice/cat-advice/reducing-your-cats-stress" target="_blank" rel="noopener noreferrer">Battersea: Stress bei Katzen reduzieren</a>; <a href="https://www.mieterverband.ch/news/miettipp-haustierhaltung/" target="_blank" rel="noopener noreferrer">Mieterinnen- und Mieterverband: Haustierhaltung</a>. Geprüft am 23. Oktober 2026. Das Beispiel Bern–Thun ist ein redaktionelles Planungsszenario. Bild: KI-generiertes Symbolbild, erstellt mit OpenAI für tierisch-verliebt.ch.</p></details>

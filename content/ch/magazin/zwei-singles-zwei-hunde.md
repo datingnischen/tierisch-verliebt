@@ -6,8 +6,8 @@ teaser: 'Getrennt ankommen, nebeneinander spazieren und rechtzeitig aufhören: E
 category: 'Dating mit Hund'
 published: '2026-10-23'
 updated: '2026-10-23'
-image: '/magazin/media/ch/zwei-singles-zwei-hunde.png'
-imageAlt: 'Illustration: Zwei angeleinte Hunde gehen mit ihren Menschen auf parallelen Wegen mit Abstand.'
+image: '/magazin/media/ch/zwei-singles-zwei-hunde-foto.jpg'
+imageAlt: 'KI-generiertes Symbolbild: Zwei Menschen gehen mit je einem angeleinten Hund und seitlichem Abstand auf einem breiten Parkweg.'
 imageWidth: 1200
 imageHeight: 800
 ---
@@ -51,4 +51,4 @@ imageHeight: 800
 <details><summary>Ist Freilauf für das Kennenlernen besser?</summary><p>Nicht pauschal. Ob er überhaupt infrage kommt, hängt von den Hunden, sicherer Führbarkeit, Umgebung und geltenden Regeln ab. Nutzt Freilauf nicht als Versuch, eine schwierige Leinensituation einfach aufzulösen.</p></details>
 <details><summary>Was bedeutet es für unsere Beziehung, wenn die Hunde sich nicht mögen?</summary><p>Eine schwierige Begegnung ist kein Urteil über euch. Verändert die Bedingungen, holt bei Bedarf Beratung und plant getrennte Betreuung. Ein gemeinsamer Haushalt lässt sich daraus noch nicht ableiten.</p></details>
 
-<details class="ch-sources"><summary>Quellen und redaktionelle Hinweise</summary><p><a href="https://www.rspca.org.uk/documents/1494939/7712578/Introducing%2Bdogs%2B%28PDF%2B104%2BKB%29.pdf/ca3d2082-525a-9160-e1d7-ecf4bdc20d9b?t=1559136160936&amp;version=2.0" target="_blank" rel="noopener noreferrer">RSPCA: Introducing dogs (PDF)</a>; <a href="https://www.dogstrust.org.uk/dog-advice/understanding-your-dog/body-language" target="_blank" rel="noopener noreferrer">Dogs Trust: Körpersprache</a>; <a href="https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/at-home/introducing-new-puppy" target="_blank" rel="noopener noreferrer">Dogs Trust: Neue Hunde zusammenführen</a>; <a href="https://www.sbb.ch/de/reiseinformationen/individuelle-beduerfnisse/reisen-mit-hund.html" target="_blank" rel="noopener noreferrer">SBB: Reisen mit Hunden</a>. Geprüft am 23. Oktober 2026. Ortsbeispiele und Ablauf sind redaktionelle Planungshilfen. Illustration: tierisch-verliebt.ch.</p></details>
+<details class="ch-sources"><summary>Quellen und redaktionelle Hinweise</summary><p><a href="https://www.rspca.org.uk/documents/1494939/7712578/Introducing%2Bdogs%2B%28PDF%2B104%2BKB%29.pdf/ca3d2082-525a-9160-e1d7-ecf4bdc20d9b?t=1559136160936&amp;version=2.0" target="_blank" rel="noopener noreferrer">RSPCA: Introducing dogs (PDF)</a>; <a href="https://www.dogstrust.org.uk/dog-advice/understanding-your-dog/body-language" target="_blank" rel="noopener noreferrer">Dogs Trust: Körpersprache</a>; <a href="https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/at-home/introducing-new-puppy" target="_blank" rel="noopener noreferrer">Dogs Trust: Neue Hunde zusammenführen</a>; <a href="https://www.sbb.ch/de/reiseinformationen/individuelle-beduerfnisse/reisen-mit-hund.html" target="_blank" rel="noopener noreferrer">SBB: Reisen mit Hunden</a>. Geprüft am 23. Oktober 2026. Ortsbeispiele und Ablauf sind redaktionelle Planungshilfen. Bild: KI-generiertes Symbolbild, erstellt mit OpenAI für tierisch-verliebt.ch.</p></details>
