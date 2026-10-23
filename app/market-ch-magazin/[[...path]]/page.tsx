@@ -8,6 +8,7 @@ import { getChArticle, getChArticles, chMagazineGraph, type ChArticle } from "@/
 import { publicUrl } from "@/lib/markets";
 import { staticAsset } from "@/lib/static-asset";
 import { serializeJsonLd } from "@/lib/json-ld";
+import audioTexts from "@/docs/ch-magazin-audio.json";
 import "@/components/city-page/tier-city-page.css";
 import "./magazine.css";
 
@@ -76,7 +77,19 @@ export default async function ChMagazine({ params }: Props) {
     <div className="tvc-wrap ch-body">
       {article ? <>
         <div className="ch-article-layout"><nav className="ch-toc" aria-label="Inhaltsverzeichnis"><span className="ch-kicker">In diesem Beitrag</span><ol>{article.sections.map(section => <li key={section.id}><a href={`#${section.id}`}>{section.label}</a></li>)}</ol></nav>
-          <article className="ch-prose" aria-label={article.title} dangerouslySetInnerHTML={{ __html: article.content }} />
+          <article className="ch-prose" aria-label={article.title}>
+            <section className="ch-audio" aria-label="Artikel als Audio-Kurzfassung">
+              <span className="ch-kicker">Für deine nächste Gassi-Runde</span>
+              <h2>Lieber zuhören?</h2>
+              <p>Die wichtigsten Gedanken als Audio-Kurzfassung. KI-Stimme, erstellt mit ElevenLabs.</p>
+              <audio controls preload="none" aria-label={`Audio-Kurzfassung: ${article.title}`}>
+                <source src={staticAsset(`/magazin/media/ch/${article.slug}-audio.mp3`)} type="audio/mpeg" />
+                Dein Browser unterstützt den Audioplayer nicht. <a href={staticAsset(`/magazin/media/ch/${article.slug}-audio.mp3`)}>MP3 öffnen</a>
+              </audio>
+              <details><summary>Hörtext lesen</summary><p>{audioTexts[article.slug as keyof typeof audioTexts]}</p></details>
+            </section>
+            <div dangerouslySetInnerHTML={{ __html: article.content }} />
+          </article>
         </div>
         <DatingCta />
         <section className="ch-more" aria-labelledby="ch-more-title"><span className="ch-kicker">Weiterlesen</span><h2 id="ch-more-title">Mehr Raum für euch und eure Tiere</h2><ArticleCards articles={articles.filter(entry => entry.slug !== article.slug)} /></section>
