@@ -21,7 +21,7 @@ test("Schweiz übernimmt keine deutschen Artikel und interne Magazinroute bleibt
   assert.deepEqual(resolveMarketRequest("/market-ch-magazin/erstes-date-mit-hund/"), { action: "not-found" });
   assert.equal(previewPathForUrl("https://tierisch-verliebt.ch/magazin/labrador-retriever/"), null);
   assert.deepEqual(resolveMarketRequest("/de/magazin/labrador-retriever/"), { action: "rewrite", market: "de", pathname: "/magazin/labrador-retriever/" });
-  assert.equal(resolveMarketRequest("/at/magazin/").action, "placeholder");
+  assert.equal(resolveMarketRequest("/at/magazin/").action, "at-magazine");
 });
 
 test("Proxy schreibt CH-Magazin mit Landesheader um, interne Route nicht öffentlich", () => {

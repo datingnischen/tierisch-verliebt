@@ -80,6 +80,11 @@ const DE_NEXT_PAGE = /^\/(?:partnersuche|magazin|ueber-uns|faq)(?:\/|$)/;
 const REGIONAL_NEXT_PAGE = /^\/(?:partnersuche(?:\/[a-z0-9-]+)?|faq)\/?$/;
 
 /** Schweizer Redaktion: bewusst getrennt vom deutschen Magazin. */
+export const AT_MAGAZINE_SLUGS = ["gassi-date", "neuer-partner-und-katze", "ausflug-mit-hund"] as const;
+export function isAtMagazinePath(path: string): boolean {
+  const normalized = path.replace(/\/+$/, "");
+  return normalized === "/magazin" || AT_MAGAZINE_SLUGS.some(slug => normalized === "/magazin/" + slug) || normalized === "/magazin/sitemap.xml";
+}
 export const CH_MAGAZINE_SLUGS = ["erstes-date-mit-hund", "neuer-partner-und-katze", "zwei-singles-zwei-hunde"] as const;
 export function isChMagazinePath(path: string): boolean {
   const normalized = path.replace(/\/+$/, "");
@@ -98,7 +103,7 @@ export function previewPathForUrl(href: string): string | null {
   const path = url.pathname || "/";
   const italian = market === "ch" ? path.match(/^\/it(\/.*)?$/) : null;
   if (italian) return isItEditorialPath(italian[1] || "/") ? `${previewPath("it", italian[1] || "/")}${url.hash}` : null;
-  const served = market === "nl" ? isNlEditorialPath(path) : path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path) || (market === "ch" && isChMagazinePath(path));
+  const served = market === "nl" ? isNlEditorialPath(path) : path === "/" || (market === "de" ? DE_NEXT_PAGE : REGIONAL_NEXT_PAGE).test(path) || (market === "ch" && isChMagazinePath(path)) || (market === "at" && isAtMagazinePath(path));
   return served ? `${previewPath(market, path)}${url.hash}` : null;
 }
 
@@ -107,6 +112,7 @@ export type MarketRequestResolution =
   | { action: "not-found" }
   | { action: "nl-pilot"; market: "nl"; pathname: string }
   | { action: "it-pilot"; market: "it"; pathname: string }
+  | { action: "at-magazine"; market: "at"; pathname: string }
   | { action: "ch-magazine"; market: "ch"; pathname: string }
   | { action: "rewrite"; market: "de"; pathname: string }
   | { action: "market-home"; market: RegionalMarket; pathname: string }
@@ -119,7 +125,7 @@ export type MarketRequestResolution =
   | { action: "redirect-permanent"; market: RegionalMarket; url: string }
   | { action: "placeholder"; market: RegionalMarket; pathname: string; requestedPath: string };
 
-const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it|ch-magazin)(?:\/|$)/;
+const INTERNAL_PATH = /^\/market-(?:home|faq|partnersuche|placeholder|robots|sitemap|nl|it|ch-magazin|at-magazin)(?:\/|$)/;
 const PLATFORM_PATH = /^\/(?:login|registration|suche)(?:\/|$)/;
 const PASS_PREFIXES = ["/_next/", "/app-assets/", "/api/", "/.well-known/"];
 const STATIC_FILE = /\.(?:avif|css|gif|ico|jpe?g|js|json|map|png|svg|webp|woff2?)$/i;
@@ -153,6 +159,12 @@ function resolveRegional(market: RegionalMarket, requestedPath: string, producti
     if (PLATFORM_PATH.test(path)) return { action: "redirect-platform", market, url: `${NL_PLATFORM.origin}${withTrailingSlash(path)}` };
     return { action: "not-found" };
   }
+  if (market === "at" && path === "/magazin/sitemap.xml") return { action: "market-sitemap", market, pathname: "/market-sitemap/at" };
+  if (market === "at" && /^\/magazin(?:\/|$)/.test(path)) {
+    return isAtMagazinePath(path)
+      ? { action: "at-magazine", market: "at", pathname: path.replace(/^\/magazin/, "/market-at-magazin") }
+      : { action: "not-found" };
+  }
   if (market === "ch" && path === "/magazin/sitemap.xml") return { action: "market-sitemap", market, pathname: "/market-sitemap/ch" };
   if (market === "ch" && /^\/magazin(?:\/|$)/.test(path)) {
     return isChMagazinePath(path)
@@ -179,6 +191,7 @@ export function resolveMarketRequest(pathname: string, hostname = ""): MarketReq
   if (hostMarket) {
     const prefixed = normalized.match(/^\/(?:de|at|ch|nl)(\/.*)?$/);
     const hostPath = prefixed ? prefixed[1] || "/" : normalized;
+    if (INTERNAL_PATH.test(hostPath)) return { action: "not-found" };
     return hostMarket === "de"
       ? { action: "rewrite", market: "de", pathname: hostPath }
       : resolveRegional(hostMarket, hostPath, true);

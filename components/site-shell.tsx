@@ -140,7 +140,7 @@ export function SiteHeader({ market = "de" }: Props) {
   if (market === "it") return <ItHeader />;
   const config = getMarket(market);
   const regional = market !== "de";
-  const items = regional ? [{ label: "Start", href: "/" }, { label: "Partnersuche", href: "/partnersuche" }, ...(market === "ch" ? [{ label: "Magazin", href: "/magazin" }] : [])] : deHeader;
+  const items = regional ? [{ label: "Start", href: "/" }, { label: "Partnersuche", href: "/partnersuche" }, ...((market === "ch" || market === "at") ? [{ label: "Magazin", href: "/magazin" }] : [])] : deHeader;
   const register = registrationHref(market, pathname);
 
   return (
@@ -179,7 +179,7 @@ export function SiteFooter({ market = "de" }: Props) {
   const register = registrationHref(market, pathname);
   const columns = regional
     ? [
-        { title: "Partnersuche", links: [{ label: `Alle Städte in ${config.countryName}`, href: "/partnersuche" }, { label: "Häufige Fragen", href: "/faq" }, ...(market === "ch" ? [{ label: "Magazin", href: "/magazin" }] : [])] },
+        { title: "Partnersuche", links: [{ label: `Alle Städte in ${config.countryName}`, href: "/partnersuche" }, { label: "Häufige Fragen", href: "/faq" }, ...((market === "ch" || market === "at") ? [{ label: "Magazin", href: "/magazin" }] : [])] },
         { title: "Mitgliedschaft", links: [{ label: "Kostenlos registrieren", href: register, external: true }, { label: "Login", href: publicUrl(market, "/login/"), external: true }] },
       ]
     : deFooter;

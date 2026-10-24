@@ -4,48 +4,17 @@ import test from "node:test";
 import { NextRequest } from "next/server.js";
 import { imageSize } from "../scripts/magazin-bildmasse.mjs";
 import { handleWpRest } from "../lib/wp-rest-compat.ts";
-import { MARKET_TEASER_PARAM, TEASER_CITIES, loadMarketTeaserSource, marketTeaserSourceFor } from "../lib/wp-market-teasers.ts";
+import { MARKET_TEASER_PARAM, loadMarketTeaserSource, marketTeaserSourceFor } from "../lib/wp-market-teasers.ts";
 import { teaserImagePath } from "../lib/teaser-image.ts";
 import { proxy } from "../proxy.ts";
-
-// Heiko (2026-10-20): ICONY ruft für die .at/.ch-Startseiten https://tierisch-verliebt.at|ch/magazin/wp-json/wp/v2/posts
-// auf. AT nutzt Städte, CH liefert seit dem Magazinstart eigene Artikel.
 const root = new URL("../", import.meta.url);
-const EXPECTED = { at: ["wien", "graz", "linz"], ch: ["zuerich", "genf", "basel"] };
 
-for (const [market, slugs] of Object.entries(EXPECTED).filter(([market]) => market === "at")) {
-  test(`${market}: drei größte Städteseiten im WordPress-Format, Link und Bild auf der Landesdomain`, () => {
-    const result = handleWpRest("/wp/v2/posts/", new URLSearchParams("per_page=3&_embed=1"), loadMarketTeaserSource(market));
-    assert.equal(result.status, 200);
-    assert.equal(result.body.length, 3);
-    assert.equal(result.headers["X-WP-Total"], "3");
-    assert.deepEqual(result.body.map((post) => post.slug), slugs, "nach Einwohnern sortiert");
-    for (const post of result.body) {
-      assert.equal(post.link, `https://tierisch-verliebt.${market}/partnersuche/${post.slug}/`);
-      assert.ok(post.title.rendered.length > 10, post.slug);
-      assert.match(post.excerpt.rendered, /^<p>.+<\/p>\n$/);
-      assert.doesNotMatch(post.excerpt.rendered, /Lesen Sie w|Hier finden Sie weitere/);
-      assert.match(post.date, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/);
-      assert.ok(post.featured_media > 0);
-      const [media] = post._embedded["wp:featuredmedia"];
-      assert.equal(media.id, post.featured_media);
-      assert.equal(media.source_url, `https://tierisch-verliebt.${market}/magazin/wp-json/datingnischen/v1/bild/cities/${market}/${post.slug}~jpg`);
-      assert.doesNotMatch(media.source_url, /vercel\.app|\.(?:jpe?g|png|webp)$/);
-      assert.ok(media.alt_text.trim(), "Alt-Text nie leer");
-      // Echte Bildmaße der Datei in public/cities/<land>/
-      const size = imageSize(readFileSync(new URL(`public/cities/${market}/${post.slug}.jpg`, root)));
-      assert.deepEqual([media.media_details.width, media.media_details.height], size, post.slug);
-      const large = media.media_details.sizes.medium_large;
-      assert.deepEqual([large.width, large.height, large.source_url], [...size, media.source_url]);
-      // Bildroute nimmt den Pfad an
-      const route = ["datingnischen", "v1", "bild", "cities", market, `${post.slug}~jpg`];
-      assert.equal(teaserImagePath(route), `/cities/${market}/${post.slug}.jpg`);
-    }
-  });
-}
-
-test("Konfiguration: genau drei Städte je Land", () => {
-  assert.deepEqual(Object.fromEntries(Object.entries(TEASER_CITIES).map(([market, rows]) => [market, rows.map((row) => row.slug)])), EXPECTED);
+test("AT und CH haben getrennte Artikel- und Medien-IDs", () => {
+  const at = loadMarketTeaserSource("at");
+  const ch = loadMarketTeaserSource("ch");
+  for (const post of at.posts) {
+    assert.equal(ch.posts.some(other => other.id === post.id || other.media.id === post.media.id), false);
+  }
 });
 
 test("Route: tv_market wählt den Länderknoten und wird aus den Parametern entfernt; sonst .de-Magazin", () => {

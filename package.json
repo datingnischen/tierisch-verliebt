@@ -9,6 +9,7 @@
     "#it-routes": "./lib/it-routes.ts",
     "#magazine": "./lib/magazine.ts",
     "#ch-magazine": "./lib/ch-magazine.ts",
+    "#at-magazine": "./lib/at-magazine.ts",
     "#wp-rest-compat": "./lib/wp-rest-compat.ts",
     "#magazine-faq": "./lib/magazine-faq.ts",
     "#magazine-store": "./lib/magazine-store.ts",
