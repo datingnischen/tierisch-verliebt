@@ -7,6 +7,8 @@ import { getMarketCityPages, type MarketCityPage } from "@/lib/market-partnersuc
 import type { MarketCode } from "@/lib/markets";
 import { AnimalIcon, ClockIcon, HeartIcon, PawIcon, PinIcon, TopicIcon } from "../city-page/tier-icons";
 import { display } from "../city-page/display-font";
+import { NlAudioSummary } from "./audio-summary";
+import { getNlAudio } from "@/lib/nl-audio";
 import "../city-page/tier-city-page.css";
 
 
@@ -101,6 +103,7 @@ export function NlCityPage({ market, city, expert }: Props) {
           <li><ClockIcon /><span><small>Leestijd</small><strong>ongeveer {guide.readingMinutes} minuten</strong></span></li>
           <li><HeartIcon /><span><small>Aanmelden</small><strong>gratis, voorlopig in het Duits</strong></span></li>
         </ul>
+        <NlAudioSummary audio={getNlAudio(`dating/${city.slug}`)} heading={`${city.cityName} in één minuut`} />
       </div>
 
       <div className="tvc-wrap tvc-widget">

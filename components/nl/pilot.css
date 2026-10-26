@@ -66,3 +66,15 @@ html[lang="nl-NL"] .tvc-hero h1 { overflow-wrap: anywhere; hyphens: auto; }
 .nl-footer-domains { gap: 6px; }
 .nl-footer-domains a { display: inline-flex; min-width: 0; padding: 6px 8px; }
 .nl-footer-domains svg { display: block; width: 27px; height: 18px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25); }
+/* Audio-samenvatting (components/nl/audio-summary.tsx) */
+.nl-audio { margin: 28px 0 0; padding: clamp(18px, 3.4vw, 28px) clamp(18px, 4vw, 34px); border: 1px solid #edd8d8; border-radius: 24px; background: radial-gradient(circle at 0% 0%, #c02e2e14, transparent 45%), linear-gradient(135deg, #fff, #fffaf4); box-shadow: 0 14px 35px #4212120d; }
+.nl-audio-head { display: flex; align-items: center; gap: 14px; }
+.nl-audio-icon { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #c02e2e; color: #fff; }
+.nl-audio-icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.nl-audio-kicker { margin: 0 0 4px; color: #c02e2e; font-size: 13px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.nl-audio h2 { margin: 0; font-size: clamp(20px, 2.4vw, 26px); }
+.nl-audio-player { display: block; width: 100%; margin: 18px 0 0; accent-color: #c02e2e; }
+.nl-audio-note { margin: 10px 0 0; font-size: 13px; color: #686868; }
+.nl-audio-transcript { margin: 10px 0 0; font-size: 13px; color: #686868; }
+.nl-audio-transcript summary { cursor: pointer; font-weight: 700; color: #c02e2e; }
+.nl-audio-transcript p { margin: 8px 0 0; font-size: 15px; line-height: 1.7; color: #303030; }

@@ -7,6 +7,8 @@ import { publicUrl } from "@/lib/markets";
 import { nlRegistrationUrl } from "@/lib/nl-routes";
 import { staticAsset } from "#static-asset";
 import { buildMagazineFaqGraph } from "@/lib/magazine-faq";
+import { NlAudioSummary } from "@/components/nl/audio-summary";
+import { getNlAudio } from "@/lib/nl-audio";
 import "@/components/city-page/tier-city-page.css";
 import "@/components/city-page/tier-city-hub.css";
 import "@/app/magazin/[slug]/magazin-article.css";
@@ -36,6 +38,7 @@ export function NlBreedPage({ entry }: { entry: NlBreedEntry }) {
       <p className="tvm-article-meta">Door <MarketLink market="nl" path="/over-ons">Christian M. Haas</MarketLink> · Nederlandse vertaling</p><div className="tvc-actions"><a className="tvc-btn tvc-btn-primary" href={nlRegistrationUrl("magazin")}>Dierenliefhebbers ontmoeten</a><a className="tvc-btn tvc-btn-ghost" href="#inhoud">Naar het rasportret ↓</a></div>
     </div><figure className="tvm-article-photo"><img src={entry.image} alt={entry.imageAlt} fetchPriority="high" decoding="async"/><figcaption><PawIcon/>{entry.name}</figcaption></figure></div></section>
     <div id="inhoud" className="shell shell-narrow magazine-detail-shell breed-detail-shell">
+      <NlAudioSummary audio={getNlAudio(`magazine/${entry.slug}`)} heading={`${entry.name} in één minuut`} />
       <nav className="content-section content-section-tight breed-jump-nav-wrap" aria-label="Inhoud"><div className="breed-jump-nav"><span className="breed-jump-title">Inhoud</span>{entry.sections.map(section => <a className="breed-jump-link" key={section.id} href={`#${section.id}`}>{section.label}</a>)}</div></nav>
       <article className="content-section nl-breed-article"><div className="rich-content breed-rich-content" dangerouslySetInnerHTML={{ __html: entry.content }}/></article>
       <aside className="content-section nl-author-box" aria-label="Over de auteur">
