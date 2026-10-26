@@ -19,20 +19,20 @@ locale: "nl-NL"
 ---
 
 <h2>Korte beschrijving</h2>
-<p>Kattenliefhebbers hebben deze zachtaardige huiskatten te danken aan verschillende foklijnen van oude <a href="https://tierisch-verliebt.de/magazin/hauskatze/">huiskatten</a> en aan het toeval. De geïsoleerde ligging, het bijzondere klimaat en voldoende tijd boden de katten van de Britse eilanden de kans om een heel bijzonder ras te worden. Het wordt ook &#8220;<a href="https://tierisch-verliebt.nl/magazine/brits-korthaar/"><strong>British Shorthair</strong></a>&#8221; (Brits Korthaar) genoemd en behoort wereldwijd tot de <a href="https://tierisch-verliebt.de/magazin/beliebtesten-katzenrassen/">populairste kattenrassen</a>. In Duitsland staat het zelfs op nummer 1.</p>
+<p>Kattenliefhebbers hebben deze zachtaardige huiskatten te danken aan verschillende foklijnen van oude <a href="https://tierisch-verliebt.de/magazin/hauskatze/">huiskatten</a> en aan het toeval. De geïsoleerde ligging, het bijzondere klimaat en voldoende tijd boden de katten van de Britse eilanden de kans om een heel bijzonder ras te worden. Het wordt ook &#8220;<a href="https://tierisch-verliebt.nl/magazine/brits-korthaar/"><strong>British Shorthair</strong></a>&#8221; (Brits Korthaar) genoemd en behoort wereldwijd tot de <a href="https://tierisch-verliebt.de/magazin/beliebtesten-katzenrassen/">populairste kattenrassen</a>.</p>
 
 <h2>Rasprofiel</h2>
 <p><img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Naam</strong>: Brits Korthaar (afkorting: BKH)<br />
 <img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Wetenschappelijke naam</strong>: Felis catus<br />
-<img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Herkomst</strong>: Engeland (Groot-Brittannië)<br />
+<img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Herkomst</strong>: Groot-Brittannië<br />
 <img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Levensverwachting</strong>: 12 tot 18 jaar<br />
-<img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Gewicht</strong>: 3 &#8211; 7 kg<br />
+<img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Gewicht</strong>: katers 4 &#8211; 8 kg, poezen 3 &#8211; 5 kg<br />
 <img decoding="async" alt="vinkje" src="/magazin/wp-content/uploads/2019/06/check-icon-16.png"> <strong>Karakter</strong>: rustig, tevreden, weinig veeleisend, geduldig, ontspannen</p>
 <h2>Aard en karakter</h2>
 <p>Zachtaardig, geduldig, gemoedelijk en rustig: zo beschrijven eigenaren hun lievelingen. Ze zijn uitstekend geschikt als huiskat en binnenkat, maar hebben zeker ook uitdaging nodig door te spelen en te ravotten. Ze krabben en bijten niet vaak en hebben een dikke huid, zowel letterlijk als figuurlijk &#8211; gezinnen met kinderen waarderen die eigenschappen.</p>
 <p>Brits Kortharen zijn meestal individualisten die af en toe aandacht van hun gezin zoeken. Tegenover vreemden zijn ze wantrouwend, tegenover hun eigen gezelschap erg aanhankelijk en knuffelig. Ze hebben echter ook rustige plekken nodig waar ze zich kunnen terugtrekken. Bijna niets brengt ze van hun stuk; ze zijn eerder de bankhangers onder de katten. Eigenaren schrijven verschillende <a href="https://tierisch-verliebt.de/magazin/britisch-kurzhaar-katze-charakter/">karaktereigenschappen</a> toe aan de verschillende kleurcombinaties: bicolour Brits Kortharen zouden temperamentvol zijn, rode eerder aanhankelijk en blauwe koel en afstandelijk. Brits Kortharen passen zich erg goed aan.</p>
 <h2>Kleuren en kleurcombinaties bij de Brits Korthaar</h2>
-<p>Dit ras onderscheidt zich door verschillende kleurcombinaties in de vacht en de ogen. De bekendste vertegenwoordigers zijn waarschijnlijk het model uit de Sheba-reclame, de Cheshire Cat uit ‘Alice in Wonderland’ en de Gelaarsde Kat uit ‘Shrek’.</p>
+<p>Dit ras onderscheidt zich door verschillende kleurcombinaties in de vacht en de ogen. De bekendste vertegenwoordigers zijn waarschijnlijk het model uit de Sheba-reclame, en de Cheshire Cat uit ‘Alice in Wonderland’: de illustraties van John Tenniel zouden door de typische ‘glimlach’ van dit ras zijn geïnspireerd.</p>
 <p>De Brits Korthaar houdt van aaien. Vooral kriebelen op de kop vindt hij heerlijk.<br />
 <iframe src="https://www.youtube.com/embed/DKGbNSLoSe0" width="330" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <p><strong>De volgende kleur- en patrooncombinaties zijn kenmerkend voor de Brits Korthaar:</strong></p>
@@ -52,10 +52,10 @@ locale: "nl-NL"
 <h2>Herkomst en geschiedenis van de Brits Korthaar</h2>
 <p>Dit opvallend statige ras hebben we vermoedelijk te danken aan de Romeinen, die eeuwen geleden tijdens hun veroveringstochten de Britse eilanden onder de vlag van Rome koloniseerden. Natuurlijk reisden gezinnen en huisdieren mee. Zo konden ze in het buitenland een stukje thuis bij zich hebben. Door de relatief geïsoleerde ligging van de eilanden kreeg de natuur de kans om wat te experimenteren. De huiskatten bleven onder elkaar; op de eilanden waren maar weinig wilde katten. Halverwege de 19e eeuw begon men de katten vervolgens te fokken op hun eigenschappen en bijzondere kleuren.</p>
 <p>De eerste exemplaren van deze foklijnen werden in 1871 getoond op een tentoonstelling in het Crystal Palace in Londen. Na het gewenste succes werd verder met deze katten gefokt. Door de wereldoorlogen nam hun aantal echter sterk af en moesten andere rassen worden betrokken.</p>
-<p>Perzen en Chartreux werden daarbij in de fokkerij gebruikt. Als gevolg daarvan voegde de fokvereniging FIFe (Fédération International Féline) in 1970 de Chartreux en de Brits Korthaar samen tot één ras, vanwege de toenemende overeenkomsten en het inkruisen van verschillende eigenschappen. Daarbij werd vastgelegd dat alle blauwe vertegenwoordigers Chartreux werden genoemd en de andere kleurcombinaties Brits Korthaar. Na protesten werd dit besluit in 1977 weer ingetrokken.</p>
+<p>Onder meer Perzen, Russisch Blauw en Chartreux werden daarbij in de fokkerij gebruikt. Als gevolg daarvan voegde de fokvereniging FIFe (Fédération Internationale Féline) in 1970 de Chartreux en de Brits Korthaar samen tot één ras, vanwege de toenemende overeenkomsten en het inkruisen van verschillende eigenschappen. Daarbij werd vastgelegd dat alle blauwe vertegenwoordigers Chartreux werden genoemd en de andere kleurcombinaties Brits Korthaar. Na protesten werd dit besluit in 1977 weer ingetrokken.</p>
 <p><img decoding="async" class="alignnone size-large wp-image-3252" src="/magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar-1024x682.jpg" alt="Brits Korthaar" width="910" height="606" srcset="/magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar-1024x682.jpg 1024w, /magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar-300x200.jpg 300w, /magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar-768x512.jpg 768w, /magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
 <h2>Raskenmerken</h2>
-<p>Ook tegenwoordig voegen sommige verenigingen beide rassen samen, terwijl het niet zo moeilijk is om een Chartreux en een Brits Korthaar te onderscheiden:</p>
+<p>Ook tegenwoordig worden beide rassen nog weleens verward, terwijl het niet zo moeilijk is om een Chartreux en een Brits Korthaar te onderscheiden:</p>
 <h3>Brits Korthaar</h3>
 <ul class="ultv">
 <li>grote, ronde poten</li>
@@ -66,8 +66,8 @@ locale: "nl-NL"
 <li>grote kop</li>
 <li>oren die ver uit elkaar staan</li>
 <li>grote, ronde ogen</li>
-<li>gemiddeld na twee jaar volgroeid, met een gewicht tussen 4 en 8 kg</li>
-<li>niet bang voor water</li>
+<li>gemiddeld na twee jaar volgroeid; katers wegen ongeveer 4 tot 8 kg, poezen 3 tot 5 kg</li>
+<li>korte, dichte vacht die als pluche aanvoelt</li>
 <li>neiging tot overgewicht</li>
 </ul>
 <h3>Chartreux</h3>
@@ -95,19 +95,19 @@ locale: "nl-NL"
 <p>Om je kat goed te kunnen inschatten, moet je zijn aard kennen. De <a href="https://tierisch-verliebt.de/magazin/britisch-kurzhaar-katze-haltung/">eigenaar</a> kan zich daar dan makkelijker op instellen en een huisgenoot vinden die het beste bij hem past. Een levendige kat past niet per se bij een heel rustig mens die niet graag met haar bezig is. Hier komt de Brits Korthaar in beeld. Hij is zachtaardig en erg geduldig. In vrijwel elke situatie reageert hij volgens zijn aard gemoedelijk tot rustig. Dat betekent ook dat hij zelden krabt of bijt. Bovendien past hij zich heel goed aan.</p>
 <h2><img decoding="async" class="alignnone size-large wp-image-3253" src="/magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar2-1024x683.png" alt="Brits Korthaar 2" width="910" height="607" srcset="/magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar2-1024x683.png 1024w, /magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar2-300x200.png 300w, /magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar2-768x512.png 768w, /magazin/wp-content/uploads/2025/05/Britisch-Kurzhaar2.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></h2>
 <h2>Overwegingen vóór de aanschaf van een Brits Korthaar</h2>
-<p>Raskatten zijn geen goedkope aangelegenheid. Een fokker kan voor een raszuivere Brits Korthaar met een goede <a href="https://tierisch-verliebt.de/magazin/stammbaum/">stamboom</a> zomaar 500 euro vragen voor zo'n klein bolletje vacht.</p>
-<p>Bedenk ook dat je deze dierlijke huisgenoot bij goede verzorging en zonder ziekten tot 18 jaar aan je zijde hebt. Hij heeft behoeften waar je rekening mee moet houden en heeft verzorging en gezelschap nodig. Als je werk veel van je vraagt, kun je de aanschaf van een Brits Korthaar beter nog eens overwegen. De kosten voor spullen zoals een krabpaal, mandje en speelgoed, maar ook voor voer en de dierenarts, kunnen enkele honderden euro's per maand bedragen.</p>
-<p>Bij het fokken kan bovendien inteelt voorkomen, met bijbehorende aandoeningen. Verantwoordelijke, betrouwbare fokkers onderzoeken hun dieren vóór het fokken op mogelijke ziekten en allergieën om die niet door te geven.</p>
-<h2>De volgende aandoeningen komen vaker voor bij fokkatten en zijn erfelijk:</h2>
+<p>Raskatten zijn geen goedkope aangelegenheid. Een fokker vraagt voor een raszuivere Brits Korthaar met een goede <a href="https://tierisch-verliebt.de/magazin/stammbaum/">stamboom</a> al snel 500 euro of meer voor zo'n klein bolletje vacht; dat is een richtprijs en kan afwijken.</p>
+<p>Bedenk ook dat je deze dierlijke huisgenoot bij goede verzorging en zonder ziekten tot 18 jaar aan je zijde hebt. Hij heeft behoeften waar je rekening mee moet houden en heeft verzorging en gezelschap nodig. Als je werk veel van je vraagt, kun je de aanschaf van een Brits Korthaar beter nog eens overwegen. Reken naast de eenmalige kosten voor spullen zoals een krabpaal, mandje en speelgoed ook op vaste maandelijkse kosten voor voer en kattenbakvulling, en op rekeningen van de dierenarts.</p>
+<p>Bij het fokken kan bovendien inteelt voorkomen, met bijbehorende aandoeningen. Verantwoordelijke, betrouwbare fokkers laten hun dieren vóór het fokken onderzoeken, bijvoorbeeld met een DNA-test op PKD en met hartonderzoek op HCM, om erfelijke aandoeningen niet door te geven.</p>
+<h2>Erfelijke aandoeningen bij de Brits Korthaar</h2>
 <ul class="ultv">
-<li>hypertrofische cardiomyopathie</li>
-<li>een ziekelijke vervorming van het hart die gepaard gaat met symptomen zoals meer hijgen na inspanning, een grotere rustbehoefte, ongewone hartgeluiden en hartkloppingen</li>
-<li>als de ziekte vroeg genoeg wordt herkend, kan je kat met medicijnen een lang en relatief onbezorgd kattenleven hebben</li>
+<li>hypertrofische cardiomyopathie (HCM)</li>
+<li>een verdikking van de hartspier die kan samengaan met symptomen zoals hijgen na inspanning, een grotere rustbehoefte, ongewone hartgeluiden en hartkloppingen</li>
+<li>als de ziekte vroeg wordt herkend, kan de dierenarts met medicijnen klachten verlichten en het verloop soms vertragen</li>
 <li>als de aandoening gepaard gaat met trombose, kan deze soms worden vastgesteld wanneer verlammingsverschijnselen optreden</li>
 <li>dieren die eerder geen opvallende symptomen hadden, kunnen plotseling aan hartfalen overlijden</li>
-<li>Polycystic Kidney Disease (PKD)</li>
-<li>hierbij ontstaan meerdere cysten in organen, waarbij meestal verschillende organen zijn aangetast</li>
-<li>komt het vaakst voor bij Perzische rassen en kruisingen daarmee</li>
+<li>polycysteuze nierziekte (PKD)</li>
+<li>hierbij ontstaan cysten in de nieren, die de nierfunctie geleidelijk kunnen aantasten</li>
+<li>komt het vaakst voor bij Perzen en verwante rassen; voor fokdieren bestaat een DNA-test</li>
 <li>deze aandoening treedt meestal pas bij volwassen dieren op</li>
 </ul>
 <p>Voordat je een <strong>Brits Korthaar</strong> in huis haalt, moet je je uitgebreid informeren over mogelijke fokkers en verkopers. Bekijk de dieren en het huis van je toekomstige kat zorgvuldig. Let op transparantie, netheid en hygiëne. Praat met buren van de fokker, andere kopers en eigenaren over hun dieren. Vraag gerust advies aan de dierenarts of het dierenasiel in de buurt.</p>
