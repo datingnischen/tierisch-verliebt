@@ -19,3 +19,11 @@ Die Originaldateien liegen in diesem Ordner, die ausgelieferten Zuschnitte unter
 - **Motiv:** Paar mit braunem Pferd am Koppelzaun
 - **Quelle:** Titelbild des Beitrags `/magazin/reiter-partnersuche/` (`public/magazin/wp-content/uploads/2026/09/reiter-partnersuche-titelbild.jpg`, aus dem WordPress-Bestand übernommen)
 - **Bearbeitung:** auf 1024 × 577 zugeschnitten (Seitenverhältnis wie die übrigen Sidebar-Bilder), als WebP (Qualität 80) gespeichert, 30.10.2026
+
+
+## Pferdeliebe-Motivserie (2026-10-30)
+
+- Eigene KI-generierte Fotos (eingebautes Imagegen), von Christian zur zusätzlichen Website-Verwendung freigegeben. Keine Stockbilder, keine echten Personen als Referenz. Details/Quellrepo: `../pferdeliebe-webbilder.md`.
+- `public/magazin/wp-content/uploads/2026/10/pferdeliebe-stallalltag.webp` und `pferdeliebe-ausritt-zu-zweit.webp`: Reiter-Ratgeber `/magazin/reiter-partnersuche/`.
+- `public/home/pferdeliebe-koppel-detail.webp`: neue Pferde-Sidebar in `lib/magazine-animal.ts`. Ersetzt die Verwendung von `sidebar-paar-pferd.webp`; der historische Herkunftsnachweis oben bleibt erhalten.
+- WebP, 1080×1080, Qualität 83; quadratische Ausschnitte der geprüften Anzeigenmotive.

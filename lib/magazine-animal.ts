@@ -149,9 +149,9 @@ export const MAGAZINE_SIDEBAR_VARIANTS: Record<MagazineAnimal, MagazineSidebarVa
     },
   },
   pferd: {
-    // Zuschnitt des Titelbilds aus /magazin/reiter-partnersuche/ – siehe docs/bildquellen/README.md
-    image: "/home/sidebar-paar-pferd.webp",
-    imageAlt: "Paar mit Pferd am Koppelzaun – Reiter-Singles auf tierisch-verliebt.de kennenlernen",
+    // Eigene KI-Motivserie – siehe docs/bildquellen/README.md
+    image: "/home/pferdeliebe-koppel-detail.webp",
+    imageAlt: "Zwei Menschen streicheln ein Pferd am Koppelzaun",
     audience: "jemanden, der Stallzeiten, Turniertage und Pferdeliebe genauso versteht wie du",
     cta: {
       hero: "Kostenlos Reiter-Singles finden",

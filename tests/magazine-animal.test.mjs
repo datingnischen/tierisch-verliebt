@@ -31,7 +31,7 @@ test("every variant resolves to an image", () => {
 
 test("horse pages get their own image and rider CTA texts", () => {
   const variant = getMagazineSidebarVariant("pferd");
-  assert.equal(variant.image, "/home/sidebar-paar-pferd.webp");
+  assert.equal(variant.image, "/home/pferdeliebe-koppel-detail.webp");
   assert.match(variant.cta.hero, /Reiter/);
   assert.equal(variant.cta.railPoints.length, 3);
   assert.equal(getMagazineSidebarVariant("allgemein").cta.hero, "Kostenlos registrieren");

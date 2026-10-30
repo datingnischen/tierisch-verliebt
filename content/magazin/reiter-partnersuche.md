@@ -24,7 +24,7 @@ excerpt: "<p>Wecker um halb sechs, Heu im Haar, Turnier statt Brunch: Wer reitet
 <li><span aria-hidden="true">🐴</span><strong>Dein Pferd hat Vorrang.</strong> Lahmt es oder kommt der Hufschmied, wird das Abendessen eben verschoben. Nicht aus Desinteresse, sondern aus Verantwortung.</li>
 </ul>
 <p>Wer das kennt, weiß: Die Partnerin oder der Partner muss diesen Alltag nicht unbedingt teilen. Aber verstehen sollte sie oder er ihn. Und genau da wird die Partnersuche für Pferdeliebhaber speziell.</p>
-<figure id="attachment_3826" aria-describedby="caption-attachment-3826" style="width: 600px" class="wp-caption alignnone"><img decoding="async" class="wp-image-3826" src="/magazin/wp-content/uploads/2026/09/reiter-paar-strand-sonnenuntergang-1024x576.jpg" alt="Zwei Reiter bei Sonnenuntergang am Strand" width="600" height="338" srcset="/magazin/wp-content/uploads/2026/09/reiter-paar-strand-sonnenuntergang-1024x576.jpg 1024w, /magazin/wp-content/uploads/2026/09/reiter-paar-strand-sonnenuntergang-300x169.jpg 300w, /magazin/wp-content/uploads/2026/09/reiter-paar-strand-sonnenuntergang-768x432.jpg 768w, /magazin/wp-content/uploads/2026/09/reiter-paar-strand-sonnenuntergang-1536x864.jpg 1536w, /magazin/wp-content/uploads/2026/09/reiter-paar-strand-sonnenuntergang-1360x765.jpg 1360w, /magazin/wp-content/uploads/2026/09/reiter-paar-strand-sonnenuntergang.jpg 1920w" sizes="(max-width: 600px) 100vw, 600px" /><figcaption id="caption-attachment-3826" class="wp-caption-text">Gemeinsam ausreiten: Mit jemandem, der die Liebe zu Pferden teilt, werden solche Momente noch schöner.</figcaption></figure>
+<figure><img src="/magazin/wp-content/uploads/2026/10/pferdeliebe-stallalltag.webp" alt="Frau putzt ein Pferd im warmen Morgenlicht des Stalls" width="1080" height="1080" loading="lazy" decoding="async" /><figcaption>Pferdeliebe zeigt sich im Alltag: beim Putzen, Versorgen und Zeitnehmen.</figcaption></figure>
 <h2>Warum Pferdemenschen anders lieben</h2>
 <p>Wer jeden Tag mit einem Tier von 500 Kilo arbeitet, lernt Dinge, die auch in einer Beziehung zählen: Geduld, feine Signale lesen, Verlässlichkeit und die Bereitschaft, bei Regen und Frost trotzdem rauszugehen. Pferdemenschen sind selten Schönwetter-Partner.</p>
 <p>Gleichzeitig bringt die Leidenschaft echte Reibungspunkte mit sich:</p>
@@ -64,6 +64,7 @@ excerpt: "<p>Wecker um halb sechs, Heu im Haar, Turnier statt Brunch: Wer reitet
 <li>„Ehrliche Frage: Wie viel Heu findest du nach dem Stall noch in deiner Jacke?“</li>
 </ul>
 <h2>Date-Ideen für Reiter-Singles</h2>
+<figure><img src="/magazin/wp-content/uploads/2026/10/pferdeliebe-ausritt-zu-zweit.webp" alt="Zwei Reiter mit Helm auf einem herbstlichen Feldweg" width="1080" height="1080" loading="lazy" decoding="async" /><figcaption>Gemeinsam unterwegs: Ein Ausritt passt, wenn Erfahrung, Pferde und Begleitung stimmen.</figcaption></figure>
 <p>Kino und Restaurant gehen immer. Für Pferdemenschen gibt es aber Dates, bei denen ihr euch schneller wirklich kennenlernt:</p>
 <ul class="tvm-horse-grid">
 <li><span aria-hidden="true">☕</span><strong>Stallbesuch mit Thermoskanne.</strong> Zeig deinem Date dein Pferd, putzt gemeinsam und trinkt danach Kaffee auf der Bank vor der Sattelkammer. Entspannter wird es nicht.</li>
