@@ -152,6 +152,14 @@ export function TierCityPage({ market, city, expert }: Props) {
               {section.html ? <div className="rich-content tvc-rich" dangerouslySetInnerHTML={{ __html: section.html }} /> : null}
             </article>
           ))}
+          {city.sources?.length ? (
+            <details className="tvc-sources">
+              <summary>Quellen</summary>
+              <ul>
+                {city.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}
+              </ul>
+            </details>
+          ) : null}
         </div>
       </section>
 

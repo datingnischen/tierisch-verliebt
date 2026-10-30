@@ -1,6 +1,7 @@
 import data from "../data/partnersuche-markets.json" with { type: "json" };
 import nlData from "../data/nl-partnersuche.json" with { type: "json" };
 import itData from "../data/it-partnersuche.json" with { type: "json" };
+import ownData from "../data/partnersuche-eigene-staedte.json" with { type: "json" };
 import { staticAsset } from "#static-asset";
 import { IT_PLATFORM } from "#it-routes";
 import { NL_PLATFORM, nlRegistrationUrl } from "#nl-routes";
@@ -28,6 +29,8 @@ export type MarketCityPage = {
     country: number;
     frameUrl: string;
   };
+  /** Nur eigene Stadtseiten (data/partnersuche-eigene-staedte.json): Belege, zugeklappt unter dem Guide. */
+  sources?: { title: string; url: string }[];
 };
 
 export type MarketHubSection = {
@@ -58,6 +61,16 @@ type HubCopy = {
 };
 
 const imports = data as Record<MarketCode, RawMarket>;
+
+/**
+ * Eigene Stadtseiten ohne ICONY-Vorlage (z. B. Kassel, 2026-10-30). Eigene Datei, damit ein Re-Import mit
+ * scripts/import_partnersuche.py sie nicht überschreibt; sie stehen hinter den importierten Städten.
+ */
+const ownPages = ownData as unknown as Partial<Record<MarketCode, MarketCityPage[]>>;
+
+function rawCityPages(market: "de" | "at" | "ch"): MarketCityPage[] {
+  return [...imports[market].pages, ...(ownPages[market] ?? [])];
+}
 
 const HUB_COPY: Record<Exclude<MarketCode, "nl" | "it">, HubCopy> = {
   de: {
@@ -195,13 +208,13 @@ function withLocalImages(page: MarketCityPage): MarketCityPage {
 export function getMarketCityPages(market: MarketCode): MarketCityPage[] {
   if (market === "nl") return nlCityPages();
   if (market === "it") return itCityPages();
-  return imports[market].pages.map((page) => withPostcodeSearch(withLocalImages(page)));
+  return rawCityPages(market).map((page) => withPostcodeSearch(withLocalImages(page)));
 }
 
 export function getMarketCityPage(market: MarketCode, slug: string): MarketCityPage | null {
   if (market === "nl") return nlCityPages().find(page => page.slug === slug) ?? null;
   if (market === "it") return itCityPages().find(page => page.slug === slug) ?? null;
-  const page = imports[market].pages.find((entry) => entry.slug === slug);
+  const page = rawCityPages(market).find((entry) => entry.slug === slug);
   return page ? withPostcodeSearch(withLocalImages(page)) : null;
 }
 

@@ -227,6 +227,7 @@ const GEO: Record<MarketCode, Record<string, Geo>> = {
     bielefeld: { lat: 52.0302, lon: 8.5325, region: "Nordrhein-Westfalen" },
     bonn: { lat: 50.7374, lon: 7.0982, region: "Nordrhein-Westfalen" },
     muenster: { lat: 51.9607, lon: 7.6261, region: "Nordrhein-Westfalen" },
+    kassel: { lat: 51.3127, lon: 9.4797, region: "Hessen" },
   },
   at: {
     graz: { lat: 47.0707, lon: 15.4395, region: "Steiermark" },

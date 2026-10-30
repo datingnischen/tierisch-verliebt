@@ -1080,3 +1080,65 @@
     transition: none;
   }
 }
+
+/* Quellen eigener Stadtseiten (z. B. Kassel): natives details, standardmäßig zu, 13 px. */
+.tvc-sources {
+  margin: 8px 0 0;
+  padding: 0 4px;
+  border-top: 1px solid var(--tvc-line);
+  color: var(--tvc-muted);
+  font-size: 13px;
+}
+
+.tvc-sources > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0 4px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  list-style: none;
+}
+
+.tvc-sources > summary::-webkit-details-marker {
+  display: none;
+}
+
+.tvc-sources > summary::before {
+  content: "B8";
+  font-size: 11px;
+  transition: transform 0.15s ease;
+}
+
+.tvc-sources[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.tvc-sources > summary:focus-visible {
+  outline: 2px solid var(--tvc-red);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.tvc-sources ul {
+  margin: 4px 0 8px;
+  padding-left: 18px;
+}
+
+.tvc-sources li {
+  margin: 0 0 6px;
+  line-height: 1.55;
+}
+
+.tvc-sources a {
+  color: var(--tvc-muted);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  overflow-wrap: anywhere;
+}
+
+.tvc-sources a:hover,
+.tvc-sources a:focus-visible {
+  color: var(--tvc-red-dark);
+}
