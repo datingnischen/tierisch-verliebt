@@ -148,7 +148,8 @@ export const TIERWELT_GROUPS: TierweltGroup[] = [
         teaser: "Partnersuche für Reiterinnen, Reiter und Pferdefreunde – mit Tipps, wie Stall und Beziehung zusammenpassen.",
         traits: ["Reitsport", "Stallalltag", "Partnersuche"],
         cta: "Reiterwelt besuchen",
-        domains: ["reitersingles.de"],
+        // reitersingles.de ist seit 2026-10-30 eine eigene Landingpage (Zubringer zur Registrierung), keine Weiterleitung mehr.
+        domains: [],
       },
     ],
   },
@@ -179,7 +180,7 @@ export const TIERWELT_FAQ = [
       "Nein. Viele Mitglieder haben ein Haustier, andere wünschen sich eines oder lieben Tiere einfach. Entscheidend ist, dass Tiere in deinem Leben einen festen Platz haben sollen.",
   },
   {
-    question: "Warum führen Adressen wie ragdoll.de oder reitersingles.de hierher?",
+    question: "Warum führen Adressen wie ragdoll.de oder perser-katze.de hierher?",
     answer:
       "Das sind thematische Einstiegsadressen unseres Netzwerks. Sie führen direkt in die passende Tierwelt; Inhalte und Community liegen zentral auf tierisch-verliebt.de.",
   },

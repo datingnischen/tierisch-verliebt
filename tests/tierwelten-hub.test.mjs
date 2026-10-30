@@ -23,9 +23,12 @@ test("tierwelten matcher only points to existing worlds", () => {
 
 test("tierwelten hub keeps the network domains and transparency note", async () => {
   const domains = TIERWELT_GROUPS.flatMap((group) => group.worlds.flatMap((world) => world.domains));
-  for (const domain of ["perser-katze.de", "ragdoll.de", "mainecoonkatzen.at", "wildkatze.ch", "reitersingles.de"]) {
+  for (const domain of ["perser-katze.de", "ragdoll.de", "mainecoonkatzen.at", "wildkatze.ch"]) {
     assert.ok(domains.includes(domain), `${domain} fehlt`);
   }
+  // reitersingles.de ist eine eigene Landingpage und darf nicht als Weiterleitung auftauchen.
+  assert.ok(!domains.includes("reitersingles.de"));
+  assert.doesNotMatch(JSON.stringify(TIERWELT_FAQ), /reitersingles\.de/);
   const page = await source("../app/magazin/tierwelten/page.tsx");
   assert.match(page, /Transparenz-Hinweis zu unserem Netzwerk/);
 });
