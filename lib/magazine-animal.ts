@@ -62,6 +62,33 @@ export type MagazineSidebarVariant = {
   image?: string;
   imageAlt: string;
   audience: string;
+  /** Eigene CTA-Texte je Tier; fehlen sie, gelten die allgemeinen aus MAGAZINE_CTA_DEFAULT. */
+  cta?: Partial<MagazineCtaTexts>;
+};
+
+export type MagazineCtaTexts = {
+  /** Button im Artikel-Hero */
+  hero: string;
+  railEyebrow: string;
+  railTitle: string;
+  railPoints: [string, string, string];
+  railButton: string;
+  reasons: { icon: string; strong: string; text: string }[];
+  reasonsButton: string;
+};
+
+export const MAGAZINE_CTA_DEFAULT: MagazineCtaTexts = {
+  hero: "Kostenlos registrieren",
+  railEyebrow: "Singlebörse",
+  railTitle: "Tierliebe Singles statt nur weiterlesen",
+  railPoints: ["Kostenlos starten", "Tierliebe Singles", "Direkter Einstieg"],
+  railButton: "Kostenlos registrieren",
+  reasons: [
+    { icon: "🐾", strong: "Echte Tierliebe", text: "statt austauschbarer Flirts" },
+    { icon: "📖", strong: "Direkter Einstieg", text: "aus Magazin, Tierwelt und Ratgeber" },
+    { icon: "💚", strong: "Kostenlos starten", text: "und passende Kontakte entdecken" },
+  ],
+  reasonsButton: "Jetzt Singles entdecken",
 };
 
 export const MAGAZINE_SIDEBAR_DEFAULT_IMAGE = "/home/frontpage-visual-tierischverliebt.webp";
@@ -83,8 +110,23 @@ export const MAGAZINE_SIDEBAR_VARIANTS: Record<MagazineAnimal, MagazineSidebarVa
     audience: "Menschen mit derselben Liebe zu Vögeln",
   },
   pferd: {
-    imageAlt: "Tierisch verliebt – Pferdefreunde und Reiter-Singles kennenlernen",
-    audience: "Menschen mit derselben Liebe zu Pferden",
+    // Zuschnitt des Titelbilds aus /magazin/reiter-partnersuche/ – siehe docs/bildquellen/README.md
+    image: "/home/sidebar-paar-pferd.webp",
+    imageAlt: "Paar mit Pferd am Koppelzaun – Reiter-Singles auf tierisch-verliebt.de kennenlernen",
+    audience: "jemanden, der Stallzeiten, Turniertage und Pferdeliebe genauso versteht wie du",
+    cta: {
+      hero: "Kostenlos Reiter-Singles finden",
+      railEyebrow: "Reiter-Singles",
+      railTitle: "Aufsatteln statt nur weiterlesen",
+      railPoints: ["Kostenlos starten", "Pferdemenschen in deiner Nähe", "Stallzeiten? Verständnis inklusive"],
+      railButton: "Jetzt kostenlos aufsatteln",
+      reasons: [
+        { icon: "🐴", strong: "Pferdeliebe", text: "statt Erklärungen, warum du schon wieder im Stall bist" },
+        { icon: "🌾", strong: "Gemeinsame Welt", text: "von Ausritt bis Turnierwochenende" },
+        { icon: "💚", strong: "Kostenlos starten", text: "und Reiterinnen und Reiter entdecken" },
+      ],
+      reasonsButton: "Pferdefreunde kennenlernen",
+    },
   },
   allgemein: {
     image: MAGAZINE_SIDEBAR_DEFAULT_IMAGE,
@@ -93,7 +135,13 @@ export const MAGAZINE_SIDEBAR_VARIANTS: Record<MagazineAnimal, MagazineSidebarVa
   },
 };
 
-export function getMagazineSidebarVariant(animal: MagazineAnimal): Required<MagazineSidebarVariant> {
+export type ResolvedMagazineSidebarVariant = Required<Omit<MagazineSidebarVariant, "cta">> & { cta: MagazineCtaTexts };
+
+export function getMagazineSidebarVariant(animal: MagazineAnimal): ResolvedMagazineSidebarVariant {
   const variant = MAGAZINE_SIDEBAR_VARIANTS[animal];
-  return { ...variant, image: variant.image ?? MAGAZINE_SIDEBAR_DEFAULT_IMAGE };
+  return {
+    ...variant,
+    image: variant.image ?? MAGAZINE_SIDEBAR_DEFAULT_IMAGE,
+    cta: { ...MAGAZINE_CTA_DEFAULT, ...variant.cta },
+  };
 }

@@ -32,7 +32,7 @@ import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, rend
 import { collapseSourceSections } from "@/lib/collapse-sources";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { buildMagazineArticleGraph } from "@/lib/site-entities";
-import { detectMagazineAnimal, getMagazineSidebarVariant, type MagazineSidebarVariant } from "@/lib/magazine-animal";
+import { detectMagazineAnimal, getMagazineSidebarVariant, type ResolvedMagazineSidebarVariant } from "@/lib/magazine-animal";
 import { splitHubLinkList } from "@/lib/magazine-hub";
 import { extractLeadImage } from "@/lib/magazine-lead-image";
 import { findTierwelt } from "@/lib/tierwelten";
@@ -100,7 +100,7 @@ function MagazineConversionRail({
   showRadar = false,
 }: {
   title: string;
-  variant: Required<MagazineSidebarVariant>;
+  variant: ResolvedMagazineSidebarVariant;
   showRadar?: boolean;
 }) {
   return (
@@ -110,19 +110,19 @@ function MagazineConversionRail({
           <img src={staticAsset(variant.image)} alt={variant.imageAlt} loading="lazy" decoding="async" />
         </figure>
         <div className="magazine-conversion-body">
-          <span className="eyebrow eyebrow-brand">Singlebörse</span>
-          <h2>Tierliebe Singles statt nur weiterlesen</h2>
+          <span className="eyebrow eyebrow-brand">{variant.cta.railEyebrow}</span>
+          <h2>{variant.cta.railTitle}</h2>
           <p>
             Wer bei {title} landet, sucht oft mehr als Infos — nämlich {variant.audience}.
           </p>
           <ul className="magazine-conversion-points" aria-label="Einstiegsvorteile">
-            <li>Kostenlos starten</li>
-            <li>Tierliebe Singles</li>
-            <li>Direkter Einstieg</li>
+            {variant.cta.railPoints.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
           </ul>
           <div className="button-row">
             <Link className="button button-primary" href="https://tierisch-verliebt.de/?AID=magazin">
-              Kostenlos registrieren
+              {variant.cta.railButton}
             </Link>
           </div>
         </div>
@@ -148,21 +148,15 @@ function MagazineConversionRail({
         <span className="eyebrow eyebrow-muted">Warum hier?</span>
         <p className="magazine-conversion-title">Gute Gründe für den Einstieg</p>
         <ul className="magazine-reason-list" aria-label="Vorteile der Singlebörse">
-          <li>
-            <span className="magazine-reason-icon" aria-hidden="true">🐾</span>
-            <span><strong>Echte Tierliebe</strong> statt austauschbarer Flirts</span>
-          </li>
-          <li>
-            <span className="magazine-reason-icon" aria-hidden="true">📖</span>
-            <span><strong>Direkter Einstieg</strong> aus Magazin, Tierwelt und Ratgeber</span>
-          </li>
-          <li>
-            <span className="magazine-reason-icon" aria-hidden="true">💚</span>
-            <span><strong>Kostenlos starten</strong> und passende Kontakte entdecken</span>
-          </li>
+          {variant.cta.reasons.map((reason) => (
+            <li key={reason.strong}>
+              <span className="magazine-reason-icon" aria-hidden="true">{reason.icon}</span>
+              <span><strong>{reason.strong}</strong> {reason.text}</span>
+            </li>
+          ))}
         </ul>
         <Link className="button button-primary magazine-reason-button" href="https://tierisch-verliebt.de/?AID=magazin">
-          Jetzt Singles entdecken
+          {variant.cta.reasonsButton}
         </Link>
       </div>
     </div>
@@ -368,7 +362,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                   {formatUpdatedDate(entry) ? <span>{formatUpdatedDate(entry)}</span> : null}
                 </div>
                 <div className="tvc-actions">
-                  <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
+                  <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">{sidebarVariant.cta.hero}</Link>
                   <a className="tvc-btn tvc-btn-ghost" href="#steckbrief">Zum Steckbrief <span aria-hidden="true">↓</span></a>
                 </div>
               </div>
@@ -425,7 +419,7 @@ export default async function MagazineDetailPage({ params }: PageProps) {
                 {entry.type === "post" ? <span className="tvm-article-read"><ClockIcon />{getReadingMinutes(entry.content)} Min. Lesezeit</span> : null}
               </div>
               <div className="tvc-actions">
-                <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">Kostenlos registrieren</Link>
+                <Link className="tvc-btn tvc-btn-primary" href="https://tierisch-verliebt.de/?AID=magazin">{sidebarVariant.cta.hero}</Link>
                 <a className="tvc-btn tvc-btn-ghost" href="#inhalt">{entry.type === "post" ? "Zum Artikel" : "Zum Inhalt"} <span aria-hidden="true">↓</span></a>
               </div>
             </div>

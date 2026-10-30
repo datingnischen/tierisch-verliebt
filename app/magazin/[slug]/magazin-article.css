@@ -384,3 +384,98 @@
 .nl-author-box h2 { font-size: clamp(23px, 3vw, 30px); margin: .5rem 0 1rem; }
 .nl-author-box p { margin-bottom: 1rem; line-height: 1.65; }
 .nl-author-box a { color: inherit; text-underline-offset: .2em; }
+
+/* ---------- Pferde-Bausteine (reiter-partnersuche) ---------- */
+
+.tvm-article .rich-content ul.tvm-horse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin: 20px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.tvm-article .rich-content ul.tvm-horse-grid li {
+  margin: 0;
+  padding: 18px 18px 16px;
+  border: 1px solid var(--tvc-line);
+  border-radius: 18px;
+  background: var(--tvc-cream);
+  line-height: 1.55;
+}
+
+.tvm-article .rich-content ul.tvm-horse-grid li > span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.tvm-article .rich-content ul.tvm-horse-grid li > strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--tvc-red-dark);
+}
+
+.tvm-article .rich-content ul.tvm-horse-openers {
+  margin: 16px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.tvm-article .rich-content ul.tvm-horse-openers li {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 12px 16px 12px 44px;
+  border-radius: 18px 18px 18px 4px;
+  background: #fbeaea;
+  font-style: italic;
+}
+
+.tvm-article .rich-content ul.tvm-horse-openers li::before {
+  content: "💬";
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  font-style: normal;
+}
+
+.tvm-article .rich-content .tvm-horse-cta {
+  margin: 28px 0;
+  padding: 24px 26px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--tvc-red), var(--tvc-red-dark));
+  color: #fff;
+}
+
+.tvm-article .rich-content .tvm-horse-cta p {
+  margin: 0 0 12px;
+  color: #fff;
+}
+
+.tvm-article .rich-content .tvm-horse-cta .tvm-horse-cta-title {
+  font-family: var(--tvc-display), "Open Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.tvm-article .rich-content .tvm-horse-cta p:last-child {
+  margin-bottom: 0;
+}
+
+.tvm-article .rich-content .tvm-horse-cta a.tvm-horse-cta-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--tvc-red-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.tvm-article .rich-content .tvm-horse-cta a.tvm-horse-cta-button:hover,
+.tvm-article .rich-content .tvm-horse-cta a.tvm-horse-cta-button:focus-visible {
+  background: #fff3e8;
+}

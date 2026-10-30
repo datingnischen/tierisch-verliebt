@@ -29,6 +29,14 @@ test("every variant resolves to an image", () => {
   assert.equal(getMagazineSidebarVariant("allgemein").image, MAGAZINE_SIDEBAR_DEFAULT_IMAGE);
 });
 
+test("horse pages get their own image and rider CTA texts", () => {
+  const variant = getMagazineSidebarVariant("pferd");
+  assert.equal(variant.image, "/home/sidebar-paar-pferd.webp");
+  assert.match(variant.cta.hero, /Reiter/);
+  assert.equal(variant.cta.railPoints.length, 3);
+  assert.equal(getMagazineSidebarVariant("hund").cta.hero, "Kostenlos registrieren");
+});
+
 test("cat pages use the couple-with-cat image", () => {
   assert.equal(getMagazineSidebarVariant("katze").image, "/home/sidebar-paar-katze.webp");
 });
