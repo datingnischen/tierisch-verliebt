@@ -99,15 +99,54 @@ export const MAGAZINE_SIDEBAR_VARIANTS: Record<MagazineAnimal, MagazineSidebarVa
     image: "/home/sidebar-paar-katze.webp",
     imageAlt: "Tierisch verliebt – Singles mit Katzenliebe kennenlernen",
     audience: "Menschen mit derselben Liebe zu Katzen",
+    cta: {
+      hero: "Kostenlos Katzenfreunde finden",
+      railEyebrow: "Katzen-Singles",
+      railTitle: "Schnurren lassen statt nur weiterlesen",
+      railPoints: ["Kostenlos starten", "Katzenmenschen in deiner Nähe", "Katzenhaare? Kein Thema"],
+      railButton: "Jetzt Katzenfreunde treffen",
+      reasons: [
+        { icon: "🐱", strong: "Katzenliebe", text: "statt Diskussionen, wer aufs Sofa darf" },
+        { icon: "🏡", strong: "Gemeinsames Zuhause", text: "mit Kratzbaum statt Kompromiss" },
+        { icon: "💚", strong: "Kostenlos starten", text: "und Katzenmenschen entdecken" },
+      ],
+      reasonsButton: "Katzenmenschen kennenlernen",
+    },
   },
   hund: {
     image: MAGAZINE_SIDEBAR_DEFAULT_IMAGE,
     imageAlt: "Tierisch verliebt – Singles mit Hund kennenlernen",
     audience: "Menschen mit derselben Liebe zu Hunden",
+    cta: {
+      hero: "Kostenlos Hundefreunde finden",
+      railEyebrow: "Hunde-Singles",
+      railTitle: "Gassi zu zweit statt nur weiterlesen",
+      railPoints: ["Kostenlos starten", "Hundemenschen in deiner Nähe", "Hund willkommen, immer"],
+      railButton: "Jetzt Gassi-Partner finden",
+      reasons: [
+        { icon: "🐶", strong: "Hundeliebe", text: "statt Diskussionen, wer mit ins Bett darf" },
+        { icon: "🌳", strong: "Gemeinsame Runden", text: "vom Morgen-Gassi bis zum Wochenendausflug" },
+        { icon: "💚", strong: "Kostenlos starten", text: "und Hundemenschen entdecken" },
+      ],
+      reasonsButton: "Hundemenschen kennenlernen",
+    },
   },
   vogel: {
     imageAlt: "Tierisch verliebt – Singles mit Vogelliebe kennenlernen",
     audience: "Menschen mit derselben Liebe zu Vögeln",
+    cta: {
+      hero: "Kostenlos Vogelfreunde finden",
+      railEyebrow: "Vogelfreunde",
+      railTitle: "Ausfliegen statt nur weiterlesen",
+      railPoints: ["Kostenlos starten", "Vogelfreunde in deiner Nähe", "Morgenkonzert inklusive"],
+      railButton: "Jetzt Vogelfreunde treffen",
+      reasons: [
+        { icon: "🐦", strong: "Vogelliebe", text: "statt Augenrollen beim Zwitschern am Morgen" },
+        { icon: "🪺", strong: "Gemeinsames Nest", text: "mit Platz für Voliere und Freiflug" },
+        { icon: "💚", strong: "Kostenlos starten", text: "und Vogelfreunde entdecken" },
+      ],
+      reasonsButton: "Vogelfreunde kennenlernen",
+    },
   },
   pferd: {
     // Zuschnitt des Titelbilds aus /magazin/reiter-partnersuche/ – siehe docs/bildquellen/README.md

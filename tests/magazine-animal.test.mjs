@@ -34,9 +34,15 @@ test("horse pages get their own image and rider CTA texts", () => {
   assert.equal(variant.image, "/home/sidebar-paar-pferd.webp");
   assert.match(variant.cta.hero, /Reiter/);
   assert.equal(variant.cta.railPoints.length, 3);
-  assert.equal(getMagazineSidebarVariant("hund").cta.hero, "Kostenlos registrieren");
+  assert.equal(getMagazineSidebarVariant("allgemein").cta.hero, "Kostenlos registrieren");
 });
 
 test("cat pages use the couple-with-cat image", () => {
   assert.equal(getMagazineSidebarVariant("katze").image, "/home/sidebar-paar-katze.webp");
+});
+
+test("every animal has its own CTA texts, only the generic variant uses the default", () => {
+  const heroes = ["katze", "hund", "vogel", "pferd"].map((animal) => getMagazineSidebarVariant(animal).cta.hero);
+  assert.equal(new Set(heroes).size, 4);
+  for (const hero of heroes) assert.notEqual(hero, "Kostenlos registrieren");
 });
