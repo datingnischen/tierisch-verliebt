@@ -101,6 +101,12 @@ test("eigene Stadtseite Kassel: belegt, Quellen zugeklappt, nicht im ICONY-Impor
   assert.equal(page.icony.zip, "34117");
   assert.match(page.contentHtml, /Wolfsanger/);
   assert.match(page.contentHtml, /href="https:\/\/tierisch-verliebt\.de\/magazin\/tierisch-verliebt-de-kassel-huskies\/"/);
+  // Redaktioneller Hinweis auf das Kassel-Quiz (2026-11-03): nur Kassel, am Ende des Guides, ohne sponsored/nofollow.
+  const quizLink = page.contentHtml.match(/<a [^>]*href="https:\/\/kasseler-singles\.de\/#quiz"[^>]*>Kassel-Single-Check<\/a>/);
+  assert.ok(quizLink, "Quiz-Hinweis fehlt");
+  assert.doesNotMatch(quizLink[0], /sponsored|nofollow/);
+  assert.ok(page.contentHtml.lastIndexOf("<h2>") < page.contentHtml.indexOf("kasseler-singles.de/#quiz"), "Hinweis gehört ins letzte Kapitel");
+  assert.ok(!getMarketCityPage("de", "berlin").contentHtml.includes("kasseler-singles.de"), "Quiz-Hinweis nur auf Kassel");
   const imported = JSON.parse(readFileSync(new URL("../data/partnersuche-markets.json", import.meta.url), "utf8"));
   assert.ok(!imported.de.pages.some((entry) => entry.slug === "kassel"), "Kassel gehört in data/partnersuche-eigene-staedte.json");
   const view = readFileSync(new URL("../components/city-page/tier-city-page.tsx", import.meta.url), "utf8");
