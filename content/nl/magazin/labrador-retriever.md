@@ -4,7 +4,7 @@ slug: "labrador-retriever"
 type: page
 wpId: 72
 published: "2019-06-13T15:31:13"
-updated: "2026-09-22T13:51:18"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/Labrador-Retriever.jpg"
@@ -69,7 +69,7 @@ locale: "nl-NL"
 <p>Voor labradorpups is de juiste <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">voeding</a> bijzonder belangrijk, omdat puppy’s een gevoelige spijsvertering hebben. De fokker hoort je normaal gesproken te vertellen welk voer de jonge hond tot dan toe heeft gekregen. Het beste kun je daar in het begin bij blijven, omdat de pup eerst aan zijn nieuwe thuis moet wennen.</p>
 <p>Wel moet je goed nadenken over de voeding daarna. Een evenwichtige verhouding tussen energie en mineralen zorgt voor een gelijkmatige groei. Bij de labrador is dat bijzonder belangrijk, omdat dit ras een bepaald risico op gewrichtsproblemen heeft.</p>
 <p>Ben je niet tevreden over het huidige <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">voer</a>, verander het dan niet abrupt. Idealiter verhoog je geleidelijk het aandeel nieuw voer in de mengeling met het oude voer, zodat de overgang na vier dagen is voltooid.</p>
-<p><img decoding="async" class="alignnone wp-image-3011 " src="/magazin/wp-content/uploads/2025/02/ernaehrung-Labrador-Retriever.webp" alt="Voeding van de labrador retriever" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Labrador-Retriever.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Labrador-Retriever-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Labrador-Retriever-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Labrador-Retriever-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/labrador-retriever-futter-alltag.webp" alt="Labrador retriever bij de dagelijkse verzorging en voeding." width="1536" height="1024" /></p>
 <h2>Video’s van de labrador retriever</h2>
 <p>Een labrador heeft behoorlijk veel beweging nodig. In deze video zie je hoe een zwarte labrador zich uitleeft op het strand.<br />
 <iframe src="https://www.youtube.com/embed/mdhwp9z4XCQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
@@ -93,3 +93,7 @@ Met katten kan hij een hechte vriendschap opbouwen als hij er vroeg aan gewend r
 Bij kleine huisdieren is voorzichtigheid geboden, maar met training kan hij leren ze te accepteren.<br />
 Vroege socialisatie en duidelijke regels zorgen voor een harmonieus samenleven!</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Beeldverantwoording: De in november 2026 vernieuwde beelden zijn met AI-ondersteuning door Codex gemaakt. De foto’s zijn symbolische afbeeldingen en tonen geen echte leden.</p>
+<!-- /audit-visual-credit -->

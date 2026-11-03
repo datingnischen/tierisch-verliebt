@@ -1,0 +1,95 @@
+[
+  {
+    "id": 101,
+    "slug": "bengal-katze",
+    "oldAsset": "/magazin/wp-content/uploads/2025/05/Bengalkatze2-1024x683.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/bengalkatze-alltagsnaehe.webp",
+    "articles": [
+      "bengal-katze"
+    ],
+    "alt": "Eine Bengalkatze reibt ihre Wange an der entspannten Hand einer lesenden Frau auf dem Sofa.",
+    "urls": [],
+    "generatorSource": "C:/Users/christian.mogge/.codex/generated_images/01a1a048-0150-7e93-b3d9-4fd030e19a52/exec-c588ddf9-f3b1-41f5-b313-594b6ea01f47.png",
+    "photo": true,
+    "checks": [
+      "Motiv und Text visuell geprüft",
+      "Logo ohne Claim bei Infografiken",
+      "WebP konvertiert"
+    ],
+    "prompt": "Use case: photorealistic-natural. Create one landscape 3:2 editorial photograph for a German Bengal cat magazine. A candid quiet afternoon in an ordinary lived-in German apartment, an adult brown rosetted Bengal cat standing with all four paws naturally on a worn grey sofa arm, voluntarily leaning its cheek against the loose relaxed hand of a woman about 40 sitting alongside reading a book. Cat is main subject, woman partly framed from shoulders down so no posed smiling face. Clearly authentic Bengal rosettes, normal domestic cat proportions, believable joints, paws and whiskers. Slightly imperfect everyday room with one folded blanket and book; background softly legible, not a showroom. Neutral overcast window daylight, accurate muted colors, visible natural skin and fabric texture. Documentary family snapshot feeling, eye level, medium close shot, 50mm lens at f/4, not glossy advertising. Emotional intimacy through a small voluntary gesture. No warm amber filter, no beauty smoothing, no dramatic rim light, no excessively shallow depth, no posing, no hugging or lifting cat, no text, no logo, no watermark. This is a new scene, not an edit of the prior artificial portrait."
+  },
+  {
+    "id": 51,
+    "slug": "ara-futter",
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/ara-futter-infografik-1024x683.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/ara-futterbausteine.webp",
+    "articles": [
+      "ara-futter"
+    ],
+    "alt": "Futterbausteine für Aras: geeignetes Grundfutter, Frischkost, bedarfsabhängige Nüsse und frisches Wasser; Avocado, Schokolade, Koffein und Alkohol vermeiden.",
+    "urls": [
+      "https://vcahospitals.com/know-your-pet/macaws-feeding"
+    ],
+    "generatorSource": "C:/Users/christian.mogge/.codex/generated_images/01a1a048-0150-7e93-b3d9-4fd030e19a52/exec-8442b1eb-3fa5-427a-8eed-55b4d5f80faa.png",
+    "photo": false,
+    "checks": [
+      "Motiv und Text visuell geprüft",
+      "Logo ohne Claim bei Infografiken",
+      "WebP konvertiert"
+    ],
+    "prompt": "Create one high-quality German editorial explanatory infographic, landscape 3:2. Title exactly \"Aras füttern: auf die Mischung kommt es an\". Secondary short text \"Bausteine statt pauschaler Prozentformeln\". Main content mostly beautiful precise illustrations of food, very little text. Large central blue-and-yellow macaw, elegant anatomically believable scientific editorial illustration perched on natural wood, wings folded, tail visible. Around it four separate attractive food still-life vignettes joined with fine green lines, generous negative space: upper left a ceramic bowl of clearly identifiable formulated brown pellets with heading \"Geeignete Pellets\" and short caption \"Mögliche Futterbasis\"; lower left washed red pepper, broccoli and carrot, apple wedge, heading \"Gemüse & etwas Obst\" and short caption \"Frisch ergänzen\"; upper right three recognizable walnuts and an almond on a small dish, heading \"Nüsse\" and short caption \"Art und Bedarf beachten\"; lower right a clean water bowl with visible water and small droplet, heading \"Frisches Wasser\" and short caption \"Täglich sauber anbieten\". No proportions, no numeric portions, no pie chart, no quantities, no misleading equal-size food allocation or depicted complete daily ration. The vignettes show ingredient types only. Beneath main diagram an elegant terracotta exclusion strip with four simple clearly recognizable miniature illustrations: avocado, chocolate, coffee cup, wine glass. Small crossed-circle symbol applied to each, caption exactly \"Nicht verfüttern: Avocado, Schokolade, Koffein, Alkohol\". Bottom line \"Ration und Umstellung mit einer vogelkundigen Praxis abstimmen.\" Footer in small readable lettering \"Quelle: VCA Animal Hospitals, Macaws – Feeding · tierisch-verliebt.de\". Warm ivory background, dark forest-green large humanist sans-serif labels, sage, ochre, red restrained accents. Clean sophisticated flat-meets-naturalistic editorial illustration with fine detail in macaw feathers and food, no fake parchment, no heavy texture, no photoreal CGI room, no text cards, no dense paragraphs. Label spelling must be exact. Do not add any other foods, percentages or claims. Professional magazine quality, truly visual and easily scannable.",
+    "brandPrompt": "Edit image 1. Keep the entire successful illustrated Ara food diagram, composition, macaw anatomy, ingredient arrangements and ALL German wording exactly intact. Image 2 is the tierisch-verliebt.de ORIGINAL logo reference for bottom right footer. Apply this brand refinement only: main title red #c02e2e; dark charcoal #333333 body and subheadings; green #429a45 connector lines and accents; subtitle soft green #e5f0e5 brush underline. Change the existing terracotta \"Nicht verfüttern\" warning bar to clear brand red #c02e2e with white lettering and keep the four food exclusion illustrations and crosses. Warm near-white #faf8f3 background with very subtle soft-green #e5f0e5 and soft-red #faeaea curved background accents. Do not change or add claims, portions, figures or statistics. Give footer more height if needed and keep source left \"Quelle: VCA Animal Hospitals, Macaws – Feeding\" and on right the supplied logo with its authentic red paw-heart, white dog and cat outlines, taupe wordmark, no invented replacement. The logo can occupy about 350–380px in a 1536px-wide image and must have clear breathing room. Remove old plain \"tierisch-verliebt.de\" text from source line since logo contains domain. Preserve the bottom advisory sentence \"Ration und Umstellung mit einer vogelkundigen Praxis abstimmen.\" exactly and unobstructed. All lettering must be precise, source and logo must not collide. Visual diagram stays beautifully illustrated and not text-heavy, no extra paragraphs, no new decorative items.",
+    "revisionPrompts": [
+      "Edit only the tiny bottom-right brand logo area of the infographic. Remove the slogan/claim 'Hier verlieben sich tierliebe Singles!' completely from underneath the tierisch-verliebt.de logo. Keep the red paw-heart with white dog/cat profiles and taupe tierisch-verliebt.de wordmark; the logo should be the compact no-claim version. Retain generous footer padding. Do not change any other part, text, colors, subject or layout of this approved infographic. No extra text. All source credits remain.",
+      "Edit ONLY bottom right logo of image 1. Replace it with the EXACT original no-claim brand logo supplied in image 2: wordmark 'tierisch-' left, large paw/heart in the MIDDLE, wordmark 'verliebt.de' right. DO NOT move the paw to the left of the full wordmark. Preserve original integrated middle-heart composition and no slogan underneath. Everything else in image 1 must remain unchanged, including exact German text, macaw, food, colors, warning strip and source credit. Logo must be authentic shape and placement as image 2, scaled proportionally into the existing footer."
+    ]
+  },
+  {
+    "id": 564,
+    "slug": "papageien-gesundheit",
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/papageien-gesundheit-warnzeichen-infografik-1024x683.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/papageien-warnzeichen.webp",
+    "articles": [
+      "papageien-gesundheit"
+    ],
+    "alt": "Warnzeichen bei Papageien: ungewöhnliche Ruhe, veränderter Appetit, Gefieder oder Stimme; bei Atemnot, starker Blutung oder fehlender Sitzfähigkeit sofort zum Notdienst.",
+    "urls": [
+      "https://www.tiho-hannover.de/kliniken-institute/kliniken/klinik-fuer-heimtiere-reptilien-und-voegel/notfaelle/voegel",
+      "https://www.vetmeduni.ac.at/interne-kleintiere/ueber-uns/ambulanzen/voegel-reptilien"
+    ],
+    "generatorSource": "C:/Users/christian.mogge/.codex/generated_images/01a1a048-0150-7e93-b3d9-4fd030e19a52/exec-0f23394f-0956-40f2-a9f2-14188841517c.png",
+    "photo": false,
+    "checks": [
+      "Motiv und Text visuell geprüft",
+      "Logo ohne Claim bei Infografiken",
+      "WebP konvertiert"
+    ],
+    "prompt": "Use case infographic-diagram. Create a German illustrated health infographic for tierisch-verliebt.de, landscape 3:2. The attached image is ONLY the exact brand logo reference: retain its red paw-heart with white dog/cat outlines and taupe lettering and slogan, place it small but readable at bottom right in a dedicated clear footer, never invent a different logo. Brand palette: primary red #c02e2e, brand green #429a45, soft red #faeaea, soft green #e5f0e5, background warm near-white #faf8f3, body dark grey #333333. Do not make dark forest green the dominant brand color. Editorial illustration, tasteful, clear, visually expressive, about 75% illustration. Main title exactly \"Papageien: Warnzeichen erkennen\". Subtitle \"Veränderungen früh bemerken und Hilfe holen\". Central large accurate African grey parrot illustration with red tail and feet gripping a branch, natural posture with slightly ruffled feathers, no gruesome injury, no fake anatomical disease diagram. On left, two small illustrated observation details connected to appropriate central areas by fine green lines: top left an attentive eye with a small sleep/closed-eye vignette and heading \"Ungewöhnlich ruhig\" caption \"Mehr Schlaf, weniger Aktivität\"; bottom left a small empty food dish and heading \"Appetit verändert\" caption \"Frisst weniger als sonst\". Right, upper a couple of loose grey feathers and heading \"Gefieder auffällig\" caption \"Anhaltend aufgeplustert\"; lower a simple clean sound-wave symbol and heading \"Stimme verändert\" caption \"Klingt anders als gewohnt\". Four short labels only, no text card grid. In lower quarter prominent RED horizontal pathway: red warning triangle then three short symptom labels \"Atemnot\" / \"Starke Blutung\" / \"Kann nicht sitzen\" followed by clear arrow to \"Sofort zum Notdienst\". Distinctly emergency only for the red pathway, do not imply every mild symptom is an emergency. Above this pathway small green action line exactly \"Andere Veränderungen: vogelkundige Praxis kontaktieren.\" Footer left small but readable exact text \"Quellen: TiHo Hannover; Vetmeduni Wien\". Footer right original attached logo, with enough breathing room, no duplication of domain name outside logo. All German text precisely spelled, large modern humanist sans-serif. Simplified imagery makes observation and emergency action easy to scan. Avoid decorative medical devices, unnecessary numbers, invented statistics, clutter or long paragraphs.",
+    "revisionPrompts": [
+      "Edit only the tiny bottom-right brand logo area of the infographic. Remove the slogan/claim 'Hier verlieben sich tierliebe Singles!' completely from underneath the tierisch-verliebt.de logo. Keep the red paw-heart with white dog/cat profiles and taupe tierisch-verliebt.de wordmark; the logo should be the compact no-claim version. Retain generous footer padding. Do not change any other part, text, colors, subject or layout of this approved infographic. No extra text. All source credits remain."
+    ]
+  },
+  {
+    "id": 742,
+    "slug": "voegel-als-haustiere",
+    "oldAsset": "/magazin/wp-content/uploads/2026/01/infografik-welcher-vogel-fuer-deinen-alltag-1024x683.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/vogelhaltung-lebensraum.webp",
+    "articles": [
+      "voegel-als-haustiere"
+    ],
+    "alt": "Vogelfreundlicher Lebensraum mit Artgenossen, sicherem Flugraum, Beschäftigung sowie Futter und frischem Wasser.",
+    "urls": [
+      "https://www.lgl.bayern.de/tiergesundheit/tierschutz/tierhaltung_heimtiere/ziervoegel/index.htm",
+      "https://www.tierschutzbund.de/tiere-themen/haustiere/andere-haustiere/wellensittiche/"
+    ],
+    "generatorSource": "C:/Users/christian.mogge/.codex/generated_images/01a1a048-0150-7e93-b3d9-4fd030e19a52/exec-5db3b489-958f-45c4-897d-60ecbabf9d59.png",
+    "photo": false,
+    "checks": [
+      "Motiv und Text visuell geprüft",
+      "Logo ohne Claim bei Infografiken",
+      "WebP konvertiert"
+    ],
+    "prompt": "Use case: infographic-diagram. Create a beautiful German editorial infographic for tierisch-verliebt.de, landscape 3:2, high resolution. It must be a genuinely visual explanatory diagram, NOT a poster made of text boxes. About 75% illustration, very little perfectly spelled text. Title at top left exactly \"So wird dein Zuhause vogelfreundlich\". Central large attractive cutaway illustration of a normal airy apartment room transformed into a safe bird habitat: two correctly drawn budgerigars together on a substantial natural branching perch, one other budgie flying freely across the room along a gently dotted flight path; a broad, generous uncluttered flying area with no visible small cage; window closed and glass made visible by a light curtain; food and fresh water dishes on a low safe clean shelf, bird-safe branch toys. No open external door/window, no kitchen, no candles, no cats or dogs. Soft contemporary editorial illustration, precise organic shapes, limited gentle shading, natural feather details, crisp background, warm off-white paper, forest green, muted sage, restrained ochre and terracotta. Elegant magazine art direction, delightful but not childish, lots of space, no watercolor parchment texture.\nFour short callouts integrated around the central room with thin curved leader lines pointing to their actual meaning. Each label one heading and tiny short sublabel:\n\"Artgenossen\" / \"Gemeinsam statt allein\" pointed to pair.\n\"Flugraum\" / \"Freie Bahn im Zimmer\" pointed to flight path.\n\"Beschäftigung\" / \"Entdecken und knabbern\" pointed to branch toys.\n\"Versorgung\" / \"Futter und frisches Wasser\" pointed to bowls.\nTypography large dark green modern humanist sans serif, strong contrast, readable mobile. Numbered circles 1–4 small, no card grid, no big body paragraphs. Under title small exact subtitle \"Vier Bedürfnisse auf einen Blick\". Bottom discrete exact text \"Schematische Darstellung · keine Maßstabszeichnung\". Footer exact text \"Quellen: Bayerisches LGL; Deutscher Tierschutzbund · tierisch-verliebt.de\". No invented numbers, no percentages, no additional text, no logos, no watermark. It should communicate safe flight, companionship, enrichment and daily provisioning visually even without reading text.",
+    "brandPrompt": "Edit image 1, preserving its successful composition, all three budgerigars, large central natural perch, flight path, enrichment objects, exact German text and four informative callouts. Image 2 is the ORIGINAL tierisch-verliebt.de logo to use in footer. Make exactly these refinements: remove ALL ornamental houseplants completely including trailing vines and potted plants in left foreground, background and on the right shelf, replace with clear uncluttered space so this bird-habitat illustration cannot suggest unsafe decorative plants. Keep the branch perch and wooden toys, with no live leaves. Rebrand the infographic using the website palette: primary red #c02e2e for the main title and numbered circles; brand green #429a45 for leader lines, flight path and selected accents; charcoal #333333 for body and callout text; warm near-white background and restrained soft green #e5f0e5 / soft red #faeaea accents. No overall forest-green brand. Retain all German spelling precisely: title \"So wird dein Zuhause vogelfreundlich\", subtitle \"Vier Bedürfnisse auf einen Blick\"; \"Artgenossen\" \"Gemeinsam statt allein\"; \"Flugraum\" \"Freie Bahn im Zimmer\"; \"Beschäftigung\" \"Entdecken und knabbern\"; \"Versorgung\" \"Futter und frisches Wasser\". Give bottom a neat dedicated near-white footer with source text left \"Quellen: Bayerisches LGL; Deutscher Tierschutzbund\", below small \"Schematische Darstellung · keine Maßstabszeichnung\", and ORIGINAL logo from image 2 at bottom right about 360px wide in the 1536px canvas, preserving heart/paw and dog/cat outlines and wording, enough clear breathing room, not touching sources. Remove the old plain domain footer text. No new claims or numbers. Keep visual quality and all well-drawn subjects, no heavy decorative border."
+  }
+]

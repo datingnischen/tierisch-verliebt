@@ -4,7 +4,7 @@ slug: "savannah-katze"
 type: page
 wpId: 686
 published: "2019-12-18T21:10:05"
-updated: "2026-09-27T22:45:56"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Savannah-Katze.jpg"
@@ -35,7 +35,7 @@ excerpt: "<p>Eine Savannah-Katze ist eine seltene Katzenrasse, welche noch nicht
 <p>Im Normalfall gibt es keine Probleme eine Savannah Katze an andere Haustiere zu gewöhnen. Auch mit Kindern kommt diese Rasse gut klar und zeigt eine gewisse Geduldigkeit. Ein weiterer Wesenszug solch einer Katze ist, dass sie sehr neugierig ist und auch gerne nach Abenteuern sucht.</p>
 <p>Wie andere Katzen hat eine Savannah Katze ihren eigenen Kopf und ein sehr starkes Durchsetzungsvermögen. Trotzdem zeigen sie auch einen sehr liebevollen Charakter und können eine enge Bindung zu ihrem Besitzer aufbauen. Aber es sollten Anfänger beachten, dass diese Rasse durch ihr Temperament nicht für sie geeignet ist. Demzufolge ist sie eher was für Katzenhalter mit Erfahrung.</p>
 <p>Mit der richtigen Haltung und Ernährung können diese Fellnasen bis zu zwanzig Jahre alt werden.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2572" src="/magazin/wp-content/uploads/2023/12/frau-mit-savanna-katze.png" alt="frau mit Savannah Katze " width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/savannah-katze-gesicherte-terrasse.webp" alt="Savannah-Katze nähert sich einer sitzenden Frau in einem gesicherten Außengehege." width="1536" height="1024" /></p>
 <h2>Herkunft und Geschichte</h2>
 <p>Wie schon oben erwähnt, ist die Savannah Katze aus einer Kreuzung einer <a href="https://tierisch-verliebt.de/magazin/hauskatze/">Hauskatze</a> und einem Serval entstanden. Der Serval ist eine <a href="https://tierisch-verliebt.de/magazin/wildkatze/">Wildkatze</a> und seine Herkunft ist Afrika. Die erste Kreuzung entstand im Jahr 1986 und war eher ein Versehen. Zu dem Zeitpunkt sollte der Servalkater eine Servalkatze decken. Doch wurde dieser Kater zusammen mit einer Siamkatze untergebracht. Das führte dann zu einer Paarung und der ersten Savannah Katze.</p>
 <p>Im Anschluss daran erfolgte eine Züchtung dieser Rasse durch die Besitzerin des Servalkaters. Im Jahr 1996 gab es dann den ersten Rassestandard. Dieser wurde von Patrick Kelley und Joyce Sroufe verfasst. Es erfolgte im Jahr 2001 eine Anerkennung der Rasse durch die TICA (The International Cat Association). Ein Jahr später hat die Savannah Katze sogar den Championship Status erhalten.</p>
@@ -68,3 +68,7 @@ excerpt: "<p>Eine Savannah-Katze ist eine seltene Katzenrasse, welche noch nicht
 <p>Die Lebenserwartung liegt bei etwa 12 bis 16 Jahren.</p>
 <h3>Was kostet eine Savannah-Katze?</h3>
 <p>Die Preise reichen von etwa 1.000 Euro für spätere Generationen bis zu 15.000 Euro für frühe Generationen mit hohem Servalanteil.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

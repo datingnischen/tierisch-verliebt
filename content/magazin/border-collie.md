@@ -4,7 +4,7 @@ slug: "border-collie"
 type: page
 wpId: 400
 published: "2019-10-29T18:46:41"
-updated: "2026-09-22T13:53:15"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Border-Collie.jpg"
@@ -48,7 +48,7 @@ excerpt: "<p>Der Border Collie gehört nicht nur zu den schönsten Hunden weltwe
 <p><img decoding="async" class="alignnone wp-image-2735" src="/magazin/wp-content/uploads/2024/09/border-collie-spazieren.webp" alt="border-collie-spazieren" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/border-collie-spazieren.webp 1024w, /magazin/wp-content/uploads/2024/09/border-collie-spazieren-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/border-collie-spazieren-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/border-collie-spazieren-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
 <h2>Die geeignete Ernährung</h2>
 <p>Border Collies, die richtig ausgelastet werden, haben einen hohen Energieverbrauch, sodass sie einen hohen Nährstoffbedarf haben. Je aktiver der Hund, desto kalorienreicher sollte die Ernährung sein. Das richtige Futter setzt sich somit aus dem Aktivitätsniveau, der Größe und dem Gewicht des Hundes und den individuellen biologischen und physiologischen Voraussetzungen zusammen. Sehr aktive Hunde sollten fett- und eiweißreiches Futter erhalten.</p>
-<p><img decoding="async" class="alignnone wp-image-2737" src="/magazin/wp-content/uploads/2024/09/border-collie-ernaehrung.webp" alt="ernaehrung-border-collie" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/border-collie-ernaehrung.webp 1024w, /magazin/wp-content/uploads/2024/09/border-collie-ernaehrung-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/border-collie-ernaehrung-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/border-collie-ernaehrung-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/border-collie-futter-alltag.webp" alt="Border Collie wartet beim Abmessen von Trockenfutter (KI-Symbolbild)" width="1536" height="1024" /></p>
 <p>&nbsp;</p>
 <h2>FAQ</h2>
 <p><strong>Wie viel Pflege benötigt ein Border Collie?</strong></p>
@@ -61,3 +61,7 @@ excerpt: "<p>Der Border Collie gehört nicht nur zu den schönsten Hunden weltwe
 <p>Ja, Border Collies können gute Familienhunde sein, aber sie brauchen eine aktive Familie, die ihnen viel Zeit für Bewegung und mentale Herausforderungen bietet. Sie sind bekannt dafür, gut mit Kindern auszukommen, wenn sie richtig sozialisiert sind.</p>
 <p><strong>Welche gesundheitlichen Probleme können bei Border Collies auftreten?</strong></p>
 <p>Zu den häufigsten gesundheitlichen Problemen gehören Hüftdysplasie und Augenkrankheiten wie die progressive Retinaatrophie (PRA). Regelmäßige tierärztliche Untersuchungen sind wichtig, um mögliche Probleme frühzeitig zu erkennen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

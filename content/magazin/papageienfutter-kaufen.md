@@ -4,7 +4,7 @@ slug: "papageienfutter-kaufen"
 type: post
 wpId: 3572
 published: "2026-03-03T20:59:34"
-updated: "2026-09-26T00:54:42"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/susan_oh-new-1948698_1280.compr_.jpg"
@@ -89,7 +89,8 @@ excerpt: "<p>Worauf du beim Kauf wirklich achten solltest Papageienfutter ist ni
 <li>Getrocknete Kräuter</li>
 </ul>
 <p>Diese sollten jedoch als Ergänzung dienen – nicht als Ersatz für Frischkost.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3775" src="/magazin/wp-content/uploads/2026/09/papageienfutter-kaufen-infografik-1024x683.png" alt="Infografik: Worauf man beim Kauf von Papageienfutter achten sollte" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/09/papageienfutter-kaufen-infografik-1024x683.png 1024w, /magazin/wp-content/uploads/2026/09/papageienfutter-kaufen-infografik-300x200.png 300w, /magazin/wp-content/uploads/2026/09/papageienfutter-kaufen-infografik-768x512.png 768w, /magazin/wp-content/uploads/2026/09/papageienfutter-kaufen-infografik.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageienfutter-kaufen-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageienfutter-kaufen-schaubild.webp" alt="Futterkauf: genauer hinsehen lohnt sich; Für welche Vogelart?; Was steckt drin?; Frisch und trocken?; Passt es zum Futterplan?" width="1536" height="1024" /></a></p>
+<!-- graphic-text-576 --><details><summary>Grafik als Text lesen</summary><ul><li>Für welche Vogelart?</li><li>Was steckt drin?</li><li>Frisch und trocken?</li><li>Passt es zum Futterplan?</li></ul></details><!-- /graphic-text-576 -->
 <hr>
 <h2>Preis vs. Qualität</h2>
 <p>Hochwertiges Papageienfutter ist meist etwas teurer. Doch langfristig spart gute Qualität Tierarztkosten und sorgt für ein gesünderes Tier. Billigfutter kann auf Dauer teuer werden.</p>
@@ -99,3 +100,8 @@ excerpt: "<p>Worauf du beim Kauf wirklich achten solltest Papageienfutter ist ni
 <p>Wer bewusst einkauft und auf natürliche Zusammensetzung achtet, schafft die Grundlage für ein langes, gesundes Papageienleben.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/new-parrot-birds-everland-green-1948698/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.vetmed.uni-leipzig.de/fileadmin/Fakult%C3%A4t_VMF/Klinik_V%C3%B6gel_Reptilien/Flyer/F%C3%BCtterungsempfehlungen_Graupapagei_200618.pdf" target="_blank" rel="noopener noreferrer">www.vetmed.uni-leipzig.de</a>, <a href="https://vcahospitals.com/know-your-pet/macaws-feeding" target="_blank" rel="noopener noreferrer">vcahospitals.com</a>.</p>
+<!-- /audit-visual-credit -->

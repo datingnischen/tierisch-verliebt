@@ -4,7 +4,7 @@ slug: "golden-retriever"
 type: page
 wpId: 264
 published: "2019-09-27T11:37:35"
-updated: "2026-09-22T13:51:09"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Golden-Retriever-1.jpg"
@@ -58,7 +58,7 @@ De puppy’s zijn bijzonder schattig.</p>
 <p>Een van de raskenmerken is de goudkleurige, zachte <a href="https://tierisch-verliebt.de/magazin/pflege-von-fell-und-zaehnen-des-hundes/">vacht</a>. Andere kenmerken zijn de trouwe blik en het open karakter.</p>
 <h2>Geschikte voeding</h2>
 <p>De golden retriever is actief. Zijn voeding moet evenwichtig en voedzaam zijn. Wie veel beweegt, heeft meestal een flinke eetlust. Toch moet je oppassen met te rijke <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">voeding</a>, want deze blonde honden zijn gevoelig voor overgewicht. Vooral bij oudere honden van dit ras merk je dat. Overgewicht kan schadelijk zijn voor de gezondheid, dus extra kilo’s moeten worden vermeden. Voor eigenaren is het echter niet eenvoudig om zich aan het voedingsplan te houden. De honden hebben de neiging om te bedelen en zelfs een streng baasje kan hun lieve blik moeilijk weerstaan.</p>
-<p><img decoding="async" class="alignnone wp-image-2978" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever.webp" alt="Voeding van de golden retriever" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/golden-retriever-futter-alltag.webp" alt="Golden retriever bij de dagelijkse verzorging en voeding." width="1536" height="1024" /></p>
 <p>Voor een volwassen hond zijn twee porties per dag aan te raden: één in de ochtend en één aan het einde van de middag. Bij het opstellen van het voedingsplan moet je rekening houden met de individuele behoeften van de hond, want niet iedere hond van hetzelfde ras is gelijk. Voor een volwassen hond is een gezonde combinatie van droogvoer en natvoer aan te raden. Let bij natvoer op de toevoegingen, omdat sommige honden intoleranties ontwikkelen. Ook kun je het <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">voer</a> verrijken met zacht gegaard vlees.</p>
 <p><img decoding="async" class="alignnone size-large wp-image-269" src="/magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-1024x683.jpg" alt="Volwassen golden retriever" width="910" height="607" srcset="/magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-1024x683.jpg 1024w, /magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-300x200.jpg 300w, /magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-768x512.jpg 768w" sizes="(max-width: 910px) 100vw, 910px" /></p>
 <h2>Veelgestelde vragen</h2>
@@ -82,3 +82,7 @@ Wie een golden retriever heeft, moet zich bewust zijn van de mogelijke gezondhei
 <p>Nee, de golden retriever is niet geschikt voor mensen met allergieën.<br />
 Dit ras verliest het hele jaar door haar en produceert veel huidschilfers, die allergische reacties kunnen veroorzaken. Bovendien heeft het een dichte, dubbele vacht die allergenen vasthoudt.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Beeldverantwoording: De in november 2026 vernieuwde beelden zijn met AI-ondersteuning door Codex gemaakt. De foto’s zijn symbolische afbeeldingen en tonen geen echte leden.</p>
+<!-- /audit-visual-credit -->

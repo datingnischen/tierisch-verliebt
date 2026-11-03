@@ -4,7 +4,7 @@ slug: "american-bully"
 type: page
 wpId: 1659
 published: "2021-12-13T08:01:39"
-updated: "2026-09-22T13:51:37"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/12/American-Bully.jpg"
@@ -33,7 +33,7 @@ excerpt: "<p>Das Portrait des American Bully beschreibt eine muskulöse und selb
 <p>Allgemein gehört der American Bully zu den Hybridhunden. Laut ABKC war die Absicht einen Hund mit geringem Antrieb und einem ruhigen Charakter zu züchten, der jedoch eine einschüchternde Ausstrahlung haben soll. Obwohl diese Rasse zu den Kampfhunden gehören könnte, wird der American Bully nicht dazu gezählt. Gerichtlich wurde noch nicht entschieden, was mit dieser Rasse passieren soll. Trotz allem wird er nämlich immer noch als &#8220;gefährlich&#8221; eingestuft.</p>
 <h2>Überlegungen vor der Anschaffung</h2>
 <p>Bevor man sich einen American Bully anschafft, sollte man sich bei den jeweiligen Behörden gut informieren, ob es in den Bundesland bestimmte Auflagen für die Haltung eines American Bullys gibt. Die Rasse wird inoffiziell den Kampfhunden zugeordnet, sodass eine Erlaubnis beantragt werden muss. Es kann sogar sein, dass die Ortspolizeibehörde darüber entscheiden muss, ob der Bully Kampfhundeigenschaften aufweist oder nicht.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2579" src="/magazin/wp-content/uploads/2023/12/frau-mit-american-bulldog.png" alt="frau mit american bully" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/american-bully-spazierpause.webp" alt="American Bully mit naturbelassenen Ohren bei einer ruhigen Spazierpause mit einem Mann." width="1536" height="1024" /></p>
 <p>Wer die Erlaubnis bestätigt bekommen hat, muss diese immer mit sich führen und darf diese nicht zu Hause vergessen, da sonst ein Bußgeld bezahlt werden muss. Folgende Dinge sollten noch beachtet werden:</p>
 <ul>
 <li>Gefahren für Gesundheit, Eigentum, Besitz oder Leben müssen ausgeschlossen sein</li>
@@ -57,7 +57,7 @@ excerpt: "<p>Das Portrait des American Bully beschreibt eine muskulöse und selb
 <h2><strong>Geeignete Ernährung für </strong>American Bully</h2>
 <p>Diese Hunderasse hat einen starken Appetit und sollte sich proteinreich ernähren und dabei auf <a href="https://tierisch-verliebt.de/magazin/getreidefreies-futter/">Getreide</a> verzichten. Es ist ganz egal, ob man dem Hund Nass- oder Trockenfutter gibt &#8211; wichtig ist dabei nur die Masse, denn es darf nicht zu wenig und nicht zu viel sein. Große Koketten regen beispielsweise zum Kauen an.</p>
 <p>Als Besitzer sollte darauf geachtet werden, dass der Hund aufgrund seiner Gelenke schlank bleibt. Deshalb sollte man ihn regelmäßig wiegen. Im Erwachsenenalter sollten aufgrund seines Appetits, die Rationen reduziert werden. Auch Knochen können den Hund auf längere Zeit beschäftigen und gleichzeitig die Zähne reinigen. Ochsenziemer, Beweisstücke und Pansen werden empfohlen, beziehungsweise Spielzeuge aus Hartgummi, die mit Leckereien jederzeit befüllt werden können.</p>
-<p><img decoding="async" class="alignnone wp-image-2878" src="/magazin/wp-content/uploads/2025/01/American-Bully-beim-Essen.webp" alt="ernaehrung-american-bully" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/American-Bully-beim-Essen.webp 1024w, /magazin/wp-content/uploads/2025/01/American-Bully-beim-Essen-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/American-Bully-beim-Essen-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/American-Bully-beim-Essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/american-bully-futter-alltag.webp" alt="American Bully wartet neben seinem Menschen beim Abmessen des Futters (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>Fazit:</h2>
 <p>Der American Bully ist ein treuer Begleiter fürs ganze Leben und wird die Familie mit Herz und Seele beschützen. Er ist ein liebevolles Kraftpaket, das immer gerne überall mitgenommen werden will. Er schläft viel und braucht nicht allzu viel Bewegung. Am liebsten verbringt er Zeit mit seinem Herrchen oder Frauchen und genießt die Zweisamkeit. Wer sich rechtzeitig über die Auflagen informiert und den geeigneten Züchter gefunden hat, der kann seine Ideen sofort in die Tat umsetzen, denn der American Bully ist ein unkomplizierter und vertrauenswürdiger Hund. Egal, ob Pocket oder XXL Bully: Der Hund wird seinen Halter oder Halterin über alles lieben.</p>
 <h2>FAQ</h2>
@@ -78,3 +78,7 @@ excerpt: "<p>Das Portrait des American Bully beschreibt eine muskulöse und selb
 <p>&#8211; Nachbetreuung und Rückgaberecht</p>
 <p>&#8211; Kostenbewusstsein</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

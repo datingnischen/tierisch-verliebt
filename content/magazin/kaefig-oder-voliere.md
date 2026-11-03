@@ -4,7 +4,7 @@ slug: "kaefig-oder-voliere"
 type: post
 wpId: 3499
 published: "2026-02-20T08:38:45"
-updated: "2026-09-26T00:54:44"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/mariagodfrida-parakeets-956851_1280.compr_.jpg"
@@ -16,7 +16,8 @@ excerpt: "<p>Wer Vögel als Haustiere hält, steht früher oder später vor der 
 
 <p>Wer Vögel als Haustiere hält, steht früher oder später vor der Frage: Reicht ein Käfig aus oder ist eine Voliere die bessere Wahl? Die Antwort hängt von mehreren Faktoren ab – Vogelart, Platzangebot, Zeit für Freiflug und natürlich dem eigenen Anspruch an artgerechte Haltung. Klar ist jedoch: Je mehr Platz und Bewegungsfreiheit ein Vogel bekommt, desto besser wirkt sich das auf Gesundheit, Verhalten und Wohlbefinden aus.</p>
 <p>Eine durchdachte Unterbringung ist deshalb eine der wichtigsten Grundlagen verantwortungsvoller Vogelhaltung.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3769" src="/magazin/wp-content/uploads/2026/09/kaefig-oder-voliere-infografik-1024x683.png" alt="Infografik: Käfig oder Voliere – Vor- und Nachteile im Vergleich" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/09/kaefig-oder-voliere-infografik-1024x683.png 1024w, /magazin/wp-content/uploads/2026/09/kaefig-oder-voliere-infografik-300x200.png 300w, /magazin/wp-content/uploads/2026/09/kaefig-oder-voliere-infografik-768x512.png 768w, /magazin/wp-content/uploads/2026/09/kaefig-oder-voliere-infografik.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/kaefig-oder-voliere-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/kaefig-oder-voliere-schaubild.webp" alt="Vögel brauchen Raum zum Fliegen; Kleiner Käfig: zu wenig Flugraum; Großzügige Voliere; Zusätzlicher Freiflug" width="1536" height="1024" /></a></p>
+<!-- graphic-text-444 --><details><summary>Grafik als Text lesen</summary><ul><li>Kleiner Käfig: zu wenig Flugraum</li><li>Großzügige Voliere</li><li>Zusätzlicher Freiflug</li></ul></details><!-- /graphic-text-444 -->
 <hr>
 <h2>Der klassische Käfig – sinnvoll, aber mit Grenzen</h2>
 <p>Ein Käfig ist für viele Halter der Einstieg in die Vogelhaltung. Gerade kleinere Arten wie Wellensittiche oder Kanarienvögel können darin gut leben – vorausgesetzt, der Käfig ist ausreichend groß und Freiflug gehört zum Alltag.</p>
@@ -77,3 +78,10 @@ excerpt: "<p>Wer Vögel als Haustiere hält, steht früher oder später vor der 
 <p>Wer Vögel hält, sollte daher möglichst großzügig planen. Denn echte artgerechte Haltung orientiert sich immer an den Bedürfnissen des Tieres – nicht an der minimalen Lösung.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/parakeets-little-parrots-birds-pets-956851/</small>&gt;</p>
+
+<p>Die Volierenzeichnung ist schematisch und nicht maßstabsgetreu. Größe und Ausstattung müssen zur Vogelart und zur Zahl der Tiere passen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.lgl.bayern.de/tiergesundheit/tierschutz/tierhaltung_heimtiere/ziervoegel/index.htm" target="_blank" rel="noopener noreferrer">www.lgl.bayern.de</a>, <a href="https://www.tierschutzbund.de/tiere-themen/haustiere/andere-haustiere/wellensittiche/" target="_blank" rel="noopener noreferrer">www.tierschutzbund.de</a>.</p>
+<!-- /audit-visual-credit -->

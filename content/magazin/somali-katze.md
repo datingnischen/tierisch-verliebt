@@ -4,11 +4,11 @@ slug: "somali-katze"
 type: page
 wpId: 778
 published: "2020-02-06T13:13:01"
-updated: "2026-09-27T22:45:50"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/somali-katze-titelbild.jpg"
-imageAlt: "Somali-Katze mit langem rotbraunem Fell"
+image: "/magazin/wp-content/uploads/2026/11/somali-katze-karton.webp"
+imageAlt: "Rötlich getickte Somali-Katze mit buschigem Schwanz sitzt neugierig neben einem offenen Karton."
 seoTitle: "Somali Katze"
 description: "Alle wichtigen Infos zur Somali Katze: Herkunft, Charakter, Anschaffung, Gesundheit und Ernährung."
 excerpt: "<p>Eine außergewöhnliche Katzenrasse mit interessanter Namensgebung Die Somalikatze stellt eine außergewöhnliche Katzenrasse dar. Um der Namensgebung auf die Spur zu</p>"
@@ -48,3 +48,7 @@ excerpt: "<p>Eine außergewöhnliche Katzenrasse mit interessanter Namensgebung 
 <p>Trotz des halblangen Fells neigt es kaum zum Verfilzen. Ein- bis zweimal Bürsten pro Woche reicht meist aus.</p>
 <h3>Was kostet eine Somali-Katze?</h3>
 <p>Bei Züchtern liegt der Preis meist zwischen 500 und 900 Euro.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

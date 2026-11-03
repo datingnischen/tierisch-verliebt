@@ -4,11 +4,11 @@ slug: "american-wirehair"
 type: page
 wpId: 1133
 published: "2020-04-06T09:44:34"
-updated: "2026-09-26T00:54:50"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/american-wirehair-titelbild.jpg"
-imageAlt: "American-Wirehair-Katze mit drahtigem Fell"
+image: "/magazin/wp-content/uploads/2026/11/american-wirehair-flur.webp"
+imageAlt: "American Wirehair mit drahtigem Tabbyfell auf einem Holzboden neben einem Papierball."
 seoTitle: "American Wirehair"
 description: "Du hast Fragen zu einer American Wirehair? Alles zu Charakter, Herkunft, Kosten, Haltung, geeigneter Ernährung und Aktivitäten liest du hier."
 excerpt: "<p>Die American Wirehair wird auch Amerikanische Drahthaarkatze genannt. Die ist eine Hauskatzen-Rasse, welche in New York entstand. Da es nicht</p>"
@@ -59,3 +59,7 @@ excerpt: "<p>Die American Wirehair wird auch Amerikanische Drahthaarkatze genann
 <h3 data-start="1636" data-end="1799">Wie alt werden American Wirehair Katzen im Durchschnitt?</h3>
 <p data-start="1636" data-end="1799">Mit guter Pflege und artgerechter Haltung erreichen sie in der Regel ein Alter von 14 bis 16 Jahren.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

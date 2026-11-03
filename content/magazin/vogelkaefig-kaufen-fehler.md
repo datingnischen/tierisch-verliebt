@@ -4,7 +4,7 @@ slug: "vogelkaefig-kaufen-fehler"
 type: post
 wpId: 3505
 published: "2026-02-28T13:56:55"
-updated: "2026-09-22T13:50:36"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/tonybarajas-bird-6010008_1280.compr_.jpg"
@@ -16,7 +16,8 @@ excerpt: "<p>Ein Vogelkäfig ist nicht einfach nur Zubehör – er ist Lebensrau
 
 <p>Ein Vogelkäfig ist nicht einfach nur Zubehör – er ist Lebensraum, Rückzugsort und Sicherheitszone für deinen gefiederten Mitbewohner. Gerade beim ersten Kauf unterschätzen viele Halter, wie wichtig Größe, Material, Standort und Ausstattung wirklich sind. Die Folge: Unzufriedene Tiere, gesundheitliche Probleme oder ein erneuter Käfigkauf nach kurzer Zeit.</p>
 <p>Damit dir das nicht passiert, solltest du die häufigsten Fehler kennen – und bewusst vermeiden.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3507" src="/magazin/wp-content/uploads/2026/02/Vogelkaefig-kaufen-Fehler-vermeiden.compr_-1024x683.png" alt="Vogelkaefig kaufen – Fehler vermeiden.compr." width="910" height="607" srcset="/magazin/wp-content/uploads/2026/02/Vogelkaefig-kaufen-Fehler-vermeiden.compr_-1024x683.png 1024w, /magazin/wp-content/uploads/2026/02/Vogelkaefig-kaufen-Fehler-vermeiden.compr_-300x200.png 300w, /magazin/wp-content/uploads/2026/02/Vogelkaefig-kaufen-Fehler-vermeiden.compr_-768x512.png 768w, /magazin/wp-content/uploads/2026/02/Vogelkaefig-kaufen-Fehler-vermeiden.compr_.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-kaufen-fehler-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-kaufen-fehler-schaubild.webp" alt="Beim Käfigkauf: Flugraum statt Deko; Keine schmale Turmform; Horizontale Flugstrecke; Passend zur Vogelart" width="1536" height="1024" /></a></p>
+<!-- graphic-text-754 --><details><summary>Grafik als Text lesen</summary><ul><li>Keine schmale Turmform</li><li>Horizontale Flugstrecke</li><li>Passend zur Vogelart</li></ul></details><!-- /graphic-text-754 -->
 <hr>
 <h2>Fehler Nr. 1: Der Käfig ist zu klein</h2>
 <p>Der wohl häufigste Fehler ist ein zu kleiner Käfig. Viele orientieren sich am Preis, an der Optik oder daran, wo der Käfig in der Wohnung Platz findet. Doch entscheidend ist einzig das Bewegungsbedürfnis des Vogels.</p>
@@ -77,3 +78,8 @@ excerpt: "<p>Ein Vogelkäfig ist nicht einfach nur Zubehör – er ist Lebensrau
 <p>Denke immer daran: Nicht der Käfig muss zur Wohnung passen – sondern zum Vogel.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/bird-animal-animals-birds-nature-6010008/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.lgl.bayern.de/tiergesundheit/tierschutz/tierhaltung_heimtiere/ziervoegel/index.htm" target="_blank" rel="noopener noreferrer">www.lgl.bayern.de</a>, <a href="https://www.bv-tierschutz.de/uploads/Tierschutzwidriges%20Zubeh%C3%B6r%20f%C3%BCr%20Haustiere.pdf" target="_blank" rel="noopener noreferrer">www.bv-tierschutz.de</a>.</p>
+<!-- /audit-visual-credit -->

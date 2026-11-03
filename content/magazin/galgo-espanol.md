@@ -4,7 +4,7 @@ slug: "galgo-espanol"
 type: page
 wpId: 2159
 published: "2023-07-20T16:52:23"
-updated: "2026-09-22T13:50:54"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/Galgo-Espanol-3.jpg"
@@ -34,7 +34,7 @@ excerpt: "<p>Kurzbeschreibung Der Galgo Espanol ist eine anerkannte spanische Hu
 <p><img decoding="async" class="wp-image-2149 aligncenter" src="/magazin/wp-content/uploads/2023/07/Galgo-Espanol-1-768x1024.jpg" alt="Galgo Espanol" width="433" height="577" srcset="/magazin/wp-content/uploads/2023/07/Galgo-Espanol-1-768x1024.jpg 768w, /magazin/wp-content/uploads/2023/07/Galgo-Espanol-1-225x300.jpg 225w, /magazin/wp-content/uploads/2023/07/Galgo-Espanol-1.jpg 960w" sizes="(max-width: 433px) 100vw, 433px" /></p>
 <h2>Geeignete Ernährung des Galgo Espanol</h2>
 <p>An erster Stelle sollte wie bei allen anderen Hunderassen auch Fleisch stehen. Es sollte nicht zu viel Fett enthalten, aber eiweißreich muss es sein. Auf Zucker und Getreide sollte ganz verzichtet werden, wenn möglich. Jedenfalls sollte das <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Futter</a> hochwertig und mit allen wichtigen Nährstoffen versehen sein, daher unbedingt auf die Zusammensetzung achten. Trocken- oder Nassfutter bleibt jedem selbst überlassen, jedoch muss immer frisches Wasser zur Verfügung stehen.</p>
-<p><img decoding="async" class="alignnone wp-image-2976" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Galgo-Espanol.webp" alt="ernaehrung-galgo-espanol" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Galgo-Espanol.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Galgo-Espanol-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Galgo-Espanol-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Galgo-Espanol-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/galgo-espanol-futter-alltag.webp" alt="Galgo Español frisst ruhig aus einem schlichten Napf im Wohnbereich." width="1536" height="1024" /></p>
 <h2>Erziehung / Spiele /Spielzeuge</h2>
 <p>Da diese Rasse sehr wissbegierig und intelligent ist erleichtert es die <a href="https://tierisch-verliebt.de/magazin/hunderziehung-grundlegendes/">Erziehung</a> des Galgos Espanol immens. Diese Eigenschaften sollten ausgenutzt werden, um ihn zu erziehen, denn er versteht sehr schnell, wie weit er gehen darf oder auch nicht. Jedoch sollte nicht außer Acht gelassen werden, dass er sanft und positiv erzogen wird.</p>
 <p><a href="https://tierisch-verliebt.de/magazin/sichere-spielzeug%d0%b5-fuer-den-hund/">Spielzeuge</a> in Form eines Balles sind immer beliebt, man wirft oder versteckt ihn, was das Interesse des Hundes fördert. Mit einem Frisbee kann die Rennbereitschaft ebenso gefördert werden, ebenso sind sie überall mitzunehmen. Das wichtigste für den Galgo Espanol sind jedoch seine Bezugspersonen, denen sie immer gefallen wollen und ihre Aufmerksamkeit suchen.</p>
@@ -57,3 +57,7 @@ Diese Rasse ist von Natur aus ruhig, gelassen und zurückhaltend, weshalb sie nu
 <p>Galgos Españoles sind gegenüber Fremden meist zurückhaltend und vorsichtig, aber nicht aggressiv.<br />
 Diese Rasse ist sanft, sensibel und ruhig, weshalb sie in neuen oder ungewohnten Situationen zunächst eher distanziert bleibt.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

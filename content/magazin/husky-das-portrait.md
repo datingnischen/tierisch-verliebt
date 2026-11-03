@@ -4,7 +4,7 @@ slug: "husky-das-portrait"
 type: page
 wpId: 638
 published: "2019-11-22T18:38:29"
-updated: "2026-10-23T16:00:00+02:00"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Husky.jpg"
@@ -76,7 +76,7 @@ excerpt: "<p>Ein Husky braucht mehr als Begeisterung für sein Aussehen. Hier er
 <h2>Gesundheit: Welche Nachweise solltest du erfragen?</h2>
 <p>Frage bei einer Zucht nach nachvollziehbaren Untersuchungsergebnissen der Elterntiere. Der Siberian Husky Club of America nennt in seiner Gesundheitserklärung Augenuntersuchungen, eine Untersuchung auf Hüftgelenksdysplasie sowie Gentests auf SPS1 und SHPN1. Das sind Empfehlungen beziehungsweise Anforderungen dieses amerikanischen Rasseclubs; welche Regeln für eine deutsche Zucht gelten, klärst du beim zuständigen Verein.</p>
 <p>Lass dir erklären, welcher Hund wann mit welchem Ergebnis untersucht wurde. Ein DNA-Test ersetzt weder Hüft- noch Augenuntersuchungen. Auch ein vollständiger Satz von Nachweisen verspricht kein lebenslang gesundes Tier. Die Einordnung einzelner Befunde und notwendiger Vorsorge gehört in tierärztliche Hände.</p>
-<p><img decoding="async" class="alignnone wp-image-2987" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Siberian-Husky.webp" alt="Illustration zur Ernährung eines Siberian Husky" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Siberian-Husky.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Siberian-Husky-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Siberian-Husky-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Siberian-Husky-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/husky-das-portrait-futter-alltag.webp" alt="Sibirischer Husky frisst ruhig aus einem schlichten Napf im Wohnbereich." width="1536" height="1024" /></p>
 <h2>Ernährung: bedarfsgerecht statt pauschaler Futterformel</h2>
 <p>Wähle ein als Alleinfuttermittel gekennzeichnetes Futter, das zu Lebensphase, Gesundheit und Aktivität deines Hundes passt. Ein sportlich arbeitender Husky kann einen anderen Energiebedarf haben als ein weniger aktiver Familienhund. Futtermenge, Leckerchen und Körperkondition sollten zusammen betrachtet werden.</p>
 <p>Die WSAVA unterscheidet vollständige Nahrung von Ergänzungsfutter: Nicht jedes Fertigfutter ist zur alleinigen Versorgung geeignet. Eine selbst zubereitete Ration wird auch durch „Fleisch plus ein Drittel Gemüse oder Getreide“ nicht automatisch ausgewogen. Lass solche Rationen fachlich berechnen, statt dich auf eine einfache Mischregel zu verlassen.</p>
@@ -117,3 +117,7 @@ excerpt: "<p>Ein Husky braucht mehr als Begeisterung für sein Aussehen. Hier er
 <li>Deutscher Tierschutzbund: <a href="https://www.tierschutzbund.de/tiere-themen/haustiere/hunde/hundehaltung/">Hundehaltung und Anschaffung</a>; <a href="https://www.tierschutzbund.de/fileadmin/Seiten/tierschutzbund.de/Downloads/Broschueren/Broschuere_Hund_aus_zweiter_Hand.pdf">Ein Hund aus zweiter Hand (PDF)</a>; <a href="https://www.tierschutzbund.de/ueber-uns/aktuelles/presse/meldung/default-fe0a5d2b74730a655f6f98a55ee4652a/">Tiere vor Hitze schützen</a></li>
 <li><a href="https://wsava.org/wp-content/uploads/2020/01/Frequently-Asked-Questions-and-Myths.pdf">WSAVA: vollständige Nahrung und Ergänzungsfutter (PDF)</a></li>
 </ul>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

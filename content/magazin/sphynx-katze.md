@@ -4,7 +4,7 @@ slug: "sphynx-katze"
 type: page
 wpId: 755
 published: "2020-01-20T13:01:57"
-updated: "2026-09-27T22:45:52"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Sphynx-Katze.jpg"
@@ -31,7 +31,7 @@ excerpt: "<p>Sphynx sind eine recht junge Katzenrasse, deren Aussehen etwas gew�
 <h2>Herkunft &amp; Geschichte</h2>
 <p>Haarlose Katzen waren schon bei den Azteken bekannt. Die heutige Sphynx ist allerdings eine in Kanada entstandene Rasse, die auch Canadian Sphynx oder Canadian Hairless genannt wird. 1971 wurde sie als Rasse anerFelis silvestris catuskannt. Die Geschichte der Sphynx Katze begann 1966 in Ontario mit dem Kater Prune. Durch eine Genmutation kamen im Wurf einer <a href="https://tierisch-verliebt.de/magazin/hauskatze/">Hauskatze </a>auch einige haarlose Kätzchen zur Welt. Darunter befand sich auch Kater Prune, der nach Toronto veräußert wurde. Später verpaarte man ihn mit seiner Mutter.</p>
 <p>Durch die Rückverpaarung kamen Nacktkatzen sowie behaarte Kätzchen, die Träger der rezessiv vererbten Haarlosigkeit waren, zur Welt. Weitere Rückverpaarungen und Verpaarungen zwischen nackten Katzen führten zu einigen haarlosen Nachkommen. Ein in die Niederlande abgegebener Nachkomme von Prune wurde mit einer Devon Rex Katze gekreuzt, um den begrenzten Genpool der Sphynx Katzen zu vergrößern.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2571" src="/magazin/wp-content/uploads/2023/12/frau-mit-sphinx.png" alt="frau mit Sphynx Katze" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/sphynx-katze-fleecedecke.webp" alt="Sphynx-Katze ruht auf einer Fleecedecke neben einer lesenden Frau." width="1536" height="1024" /></p>
 <h2>Überlegungen vor der Anschaffung</h2>
 <p>Eine Katze ist ein Lebewesen, das täglich Zuwendung braucht. Überlege Dir vor dem Kauf, ob Du genug Zeit für den Stubentiger hast. Kannst Du 10 bis 15 Jahre für die Katze da sein? Gibt es jemanden, der die Katze betreut, wenn Du längere Zeit verreist? Hast Du an die Kosten gedacht, die eine Katze verursacht?</p>
 <p>Für eine Sphynx Katze kannst Du mit Preisen zwischen 600 und 900 Euro rechnen. Neben der Erstausstattung mit Katzenkorb, Transportbox, Futter- und Wassernapf kommen Kosten für Futter auf Dich zu. Regelmäßig musst Du Katzenstreu kaufen. Auch Tierarztbesuche und Medikamente sind zu bezahlen.</p>
@@ -59,3 +59,7 @@ excerpt: "<p>Sphynx sind eine recht junge Katzenrasse, deren Aussehen etwas gew�
 <p>Die Zucht ist umstritten. Vielen Sphynx fehlen die Tasthaare, die Katzen zur Orientierung brauchen. Tiere ohne Tasthaare gelten in Deutschland als Qualzucht – wer eine Sphynx möchte, sollte auf vorhandene Schnurrhaare achten.</p>
 <h3>Was kostet eine Sphynx-Katze?</h3>
 <p>Bei Züchtern werden meist zwischen 600 und 1.000 Euro verlangt. Hinzu kommen laufende Kosten für Pflegeprodukte und energiereicheres Futter.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

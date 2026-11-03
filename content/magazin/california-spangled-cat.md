@@ -4,11 +4,11 @@ slug: "california-spangled-cat"
 type: page
 wpId: 1168
 published: "2020-04-15T09:47:14"
-updated: "2026-09-26T00:54:49"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/california-spangled-cat-titelbild.jpg"
-imageAlt: "California Spangled Cat mit geflecktem Fell"
+image: "/magazin/wp-content/uploads/2026/11/california-spangled-cat-kratzpodest.webp"
+imageAlt: "California Spangled Cat mit dunklen Tupfen ruht aufmerksam auf einem Kratzpodest."
 seoTitle: "California Spangled Cat"
 description: "Alles, was du vor Anschaffung einer California Spangled Katze zu wissen brauchst: Herkunft, Geschichte, Wesen, Charakter, Rassenmerkmale und Haltung."
 excerpt: "<p>Die California Spangled Cat ist eine Katzenrasse, die optisch stark einer Wildkatze, wie zum Beispiel einem Leoparden ähnelt. Sie ist</p>"
@@ -40,7 +40,7 @@ excerpt: "<p>Die California Spangled Cat ist eine Katzenrasse, die optisch stark
 <p>Da sich die Katze gerne mit allen möglichen Dingen beschäftigt ist auch etwas Katzenspielzeug von Vorteil bzw. eine geeignete Aktivität.</p>
 <p>Da die Katze zudem sehr wissbegierig und schlau ist, kann man ihr auch kleine Tricks beibringen, um sich auch psychisch auszulasten. In ruhigen Minuten können auch einfache Kuschel- oder Streicheleinheiten als geeignete Aktivität herhalten.</p>
 <p>Auch ein Garten mit viel Auslauf und einigen Klettermöglichkeiten oder andere Haustiere genügen, damit sich die Katze beschäftigen und sie spielen kann.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-3265" src="/magazin/wp-content/uploads/2025/05/California-Spangled-Cat2.png" alt="Frau kuschelt mit einer California Spangled Cat" width="1024" height="1024" srcset="/magazin/wp-content/uploads/2025/05/California-Spangled-Cat2.png 1024w, /magazin/wp-content/uploads/2025/05/California-Spangled-Cat2-300x300.png 300w, /magazin/wp-content/uploads/2025/05/California-Spangled-Cat2-150x150.png 150w, /magazin/wp-content/uploads/2025/05/California-Spangled-Cat2-768x768.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/california-spangled-cat-entdeckung.webp" alt="California Spangled Cat untersucht neben einem sitzenden Mann eine offene Papiertüte ohne Henkel." width="1536" height="1024" /></p>
 <h2>Rassenmerkmale der California Spangled Cat</h2>
 <p>Folgende Rassenmerkmale zeichnen eine California Spangled Cat aus:</p>
 <ol>
@@ -67,3 +67,7 @@ excerpt: "<p>Die California Spangled Cat ist eine Katzenrasse, die optisch stark
 <p data-start="1433" data-end="1659">Ja, solange genug Platz, Abwechslung, Kletter- und Spielmöglichkeiten vorhanden sind. Ein gesicherter Balkon oder Freigang im Garten ist ein zusätzliches Plus.</p>
 <h3 data-start="1661" data-end="1949">Wie erkennt man einen seriösen Züchter dieser seltenen Rasse?</h3>
 <p data-start="1661" data-end="1949">Ein seriöser Züchter gibt Einblick in Haltung, Zuchtbedingungen und Elterntiere, stellt Gesundheitsnachweise zur Verfügung und stellt viele Fragen an den potenziellen Käufer, um das Wohlergehen der Tiere sicherzustellen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

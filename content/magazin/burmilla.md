@@ -4,7 +4,7 @@ slug: "burmilla"
 type: page
 wpId: 1109
 published: "2020-03-26T13:15:19"
-updated: "2026-09-22T13:52:06"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/Burmilla.jpeg"
@@ -41,7 +41,7 @@ excerpt: "<p>Die Burmilla ist eine Kurzhaarkatze, die ursprünglich aus Großbri
 <p>Da die Burmilla sehr schlau und wissbegierig ist, kann man zu Hause versuchen, ihnen kleine Tricks beizubringen. Außerdem ist ein Kratzbaum in den Räumlichkeiten sehr gut geeignet, damit sich die Katze alleine beschäftigen kann.</p>
 <p>Ebenso können verschiedene Trainingsprogramme wie Clickertraining oder Cat-Agility dafür sorgen und dem Besitzer helfen, den Alltag der Katze sehr abwechslungsreich gestalten zu können.</p>
 <p>Falls ein Garten vorhanden ist, sind auch Klettermöglichkeiten dort gut geeignet, um die Katze zu beschäftigen. Natürlich sind auch alltägliche Dinge wie Wollknäuel, verschiedene Formen von Bällen, Wurfspielzeug oder auch Laserpointer und Taschenlampen, um zusammen mit der Katze zu spielen und diese somit dauerhaft glücklich zu machen.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3262" src="/magazin/wp-content/uploads/2025/05/Katzenrasse-Burmilla2-1024x683.png" alt="Katzenrasse Burmilla2" width="910" height="607" srcset="/magazin/wp-content/uploads/2025/05/Katzenrasse-Burmilla2-1024x683.png 1024w, /magazin/wp-content/uploads/2025/05/Katzenrasse-Burmilla2-300x200.png 300w, /magazin/wp-content/uploads/2025/05/Katzenrasse-Burmilla2-768x512.png 768w, /magazin/wp-content/uploads/2025/05/Katzenrasse-Burmilla2.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/burmilla-lesepause.webp" alt="Silberne Burmilla sitzt während einer Lesepause neben den Füßen einer älteren Frau." width="1536" height="1024" /></p>
 <h2>Rassenmerkmale</h2>
 <p>Folgende Rassenmerkmale zeichnen die Burmilla aus:</p>
 <ol>
@@ -66,3 +66,7 @@ excerpt: "<p>Die Burmilla ist eine Kurzhaarkatze, die ursprünglich aus Großbri
 <p data-start="1165" data-end="1407">Ein paar Stunden sind in Ordnung – längere Alleinzeiten sollte man vermeiden oder durch einen Katzenpartner kompensieren. Die Burmilla liebt Gesellschaft und leidet schnell unter Einsamkeit.</p>
 <h3 data-start="1409" data-end="1656">Gibt es rassetypische Erbkrankheiten?</h3>
 <p data-start="1409" data-end="1656">Die Burmilla gilt als robuste Rasse. Dennoch sollte auf seriöse Züchter geachtet werden, die Gesundheitsnachweise vorlegen können – insbesondere in Bezug auf genetisch bedingte Nieren- oder Zahnprobleme.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

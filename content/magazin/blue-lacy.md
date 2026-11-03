@@ -4,7 +4,7 @@ slug: "blue-lacy"
 type: page
 wpId: 1663
 published: "2021-12-16T20:06:29"
-updated: "2026-09-22T13:51:36"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/12/Blue-Lacy.jpg"
@@ -49,7 +49,7 @@ excerpt: "<p>Hundebesitzer, die einen robusten und agilen Hund suchen, sind mit 
 <h2>Geeignete Ernährung</h2>
 <p>Für Blue Lacys eignet sich vor allem selbst zusammengestelltes, frisches Futter. In diesem Fall sollte jedoch immer ein Tierarzt zu Rate gezogen werden, damit die Tiere alles bekommen, was sie für ihren leistungsbereiten Alltag brauchen. Da die Tiere zu Hauterkrankungen und Allergien neigen, sollte darauf geachtet werden, dass sie nur Futter bekommen, das sie vertragen und auf das sie nicht allergisch reagieren.</p>
 <p>Abgesehen von den, teilweise erblich bedingten, Hauterkrankungen sind bei dieser Rasse jedoch keine weiteren Krankheiten bekannt, die häufiger auftreten.</p>
-<p><img decoding="async" class="alignnone wp-image-2731" src="/magazin/wp-content/uploads/2024/09/blue-lacy-essen.webp" alt="blue-lacy-essen" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/blue-lacy-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/blue-lacy-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/blue-lacy-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/blue-lacy-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/blue-lacy-futter-alltag.webp" alt="Blue Lacy geht zu einem schlichten Futternapf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie viel Pflege benötigt ein Blue Lacy?</strong></p>
 <p>Der Blue Lacy hat ein kurzes, pflegeleichtes Fell. Regelmäßiges Bürsten ist ausreichend, um das Fell sauber und glänzend zu halten. Baden ist nur bei Bedarf notwendig.</p>
@@ -61,3 +61,7 @@ excerpt: "<p>Hundebesitzer, die einen robusten und agilen Hund suchen, sind mit 
 <p>Blue Lacys gelten als gesunde Rasse, aber wie bei vielen aktiven Hunden können Gelenkprobleme auftreten, insbesondere bei unzureichender Bewegung. Regelmäßige tierärztliche Kontrollen sind wichtig, um gesundheitliche Probleme frühzeitig zu erkennen.</p>
 <p><strong>Sind Blue Lacys leicht zu trainieren?</strong></p>
 <p>Ja, Blue Lacys sind intelligent und lernfreudig. Sie reagieren gut auf positives Training und klare, konsistente Anweisungen. Ihre Arbeitsfreude macht sie zu ausgezeichneten Begleithunden.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

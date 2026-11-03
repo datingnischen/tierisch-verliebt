@@ -3,6 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { NL_BREEDS } from "#nl-routes";
 import { staticAsset } from "#static-asset";
+import { collapseSourceSections } from "#collapse-sources";
 import { getMagazineFaqItems, renderMagazineFaqSection, type MagazineFaqItem } from "#magazine-faq";
 
 export type NlBreedEntry = (typeof NL_BREEDS)[number] & {
@@ -35,7 +36,7 @@ export function getNlBreed(slug: string): NlBreedEntry | null {
   return {
     ...breed, title: String(parsed.data.title), description: String(parsed.data.description),
     image: staticAsset(String(parsed.data.image)), imageAlt: String(parsed.data.imageAlt || breed.name),
-    content, sections, faqItems: getMagazineFaqItems(parsed.content),
+    content: collapseSourceSections(content, "Bronnen en beeldverantwoording"), sections, faqItems: getMagazineFaqItems(parsed.content),
   };
 }
 

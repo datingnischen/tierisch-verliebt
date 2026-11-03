@@ -4,7 +4,7 @@ slug: "cairn-terrier"
 type: page
 wpId: 682
 published: "2019-12-17T19:36:24"
-updated: "2026-09-26T09:39:20"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Cairn-Terrier.jpg"
@@ -58,7 +58,7 @@ excerpt: "<p>Von den schottischen Terrier-Hunden ist der Cairn Terrier die älte
 <p>Darüber hinaus ist die Hunderasse sehr robust. Es gibt keine typischen Krankheiten, lediglich sollten die Gelenke, wie bei den meisten kleinen Hunden, bezüglich einer Patellaluxation beobachtet werden. Da die Rasse sehr robust ist, erreichen die Cairn Terrier oft ein Alter von über 15 Jahren. Sie bleiben bis ins hohe Alter fit und lebensfroh.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Es gibt keine besonderen Hinweise, die bezüglich der <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> des Cairn Terrier beachtet werden müssen. Hier kommt es eher auf die individuellen Vorlieben des Hundes beziehungsweise des Besitzers an.</p>
-<p><img decoding="async" class="alignnone wp-image-2804" src="/magazin/wp-content/uploads/2024/12/cairn-terrier-beim-essen.webp" alt="Cairn-Terrier-beim-essen" width="599" height="599" srcset="/magazin/wp-content/uploads/2024/12/cairn-terrier-beim-essen.webp 1024w, /magazin/wp-content/uploads/2024/12/cairn-terrier-beim-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/12/cairn-terrier-beim-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/12/cairn-terrier-beim-essen-768x768.webp 768w" sizes="(max-width: 599px) 100vw, 599px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/cairn-terrier-futter-alltag.webp" alt="Cairn Terrier schaut beim Abtrocknen des Napfes zu (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3><strong>Wie pflegeintensiv ist der Cairn Terrier?</strong></h3>
 <p>Der Cairn Terrier hat ein wetterfestes Fell, das regelmäßiges Bürsten benötigt, um Verfilzungen zu vermeiden. Gelegentliches Trimmen hilft, das Fell in Form zu halten.</p>
@@ -74,3 +74,7 @@ excerpt: "<p>Von den schottischen Terrier-Hunden ist der Cairn Terrier die älte
 <p>Cairn Terrier sind eine robuste Rasse, aber wie bei vielen Hunden können sie anfällig für bestimmte genetische Erkrankungen wie Hüftdysplasie oder Augenprobleme sein. Regelmäßige tierärztliche Kontrollen sind wichtig.</p>
 <h3><strong>Wie intelligent ist der Cairn Terrier?</strong></h3>
 <p>Cairn Terrier sind sehr intelligent und lernen schnell, können aber auch stur sein. Konsequentes Training mit positiver Verstärkung ist entscheidend.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

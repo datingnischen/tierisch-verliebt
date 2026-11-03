@@ -4,7 +4,7 @@ slug: "dobermann"
 type: page
 wpId: 345
 published: "2019-10-22T20:47:58"
-updated: "2026-09-22T13:53:24"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Dobermann.jpg"
@@ -32,7 +32,7 @@ excerpt: "<p>Der Dobermann ist eine Rasse, die Kraft und Eleganz vereint, genann
 <p>Seinen Namen erhielt der Dobermann durch den ersten bekannten Züchter dieser Rasse, Friedrich Louis Dobermann, welcher aus der Stadt Apolda in Thüringen stammte und von 1834 bis 1894 lebte. Ihm war es ein Anliegen einen Hund zu züchten, der seinen Ansprüchen gerecht wird. Als Steuereintreiber übte er einen zur damaligen Zeit sehr gefährlichen Beruf aus &#8211; und auch seine Tätigkeit als Nachtpolizist ließ in ihm den Wunsch nach einem imposanten, aber auch zuverlässigen Schutzhund aufkommen. Da ein weiterer seiner Berufe auch der des Hundefängers war, dienten ihm verschiedenste Hunde damit, den Grundstein für die Rasse, die wir heute als Dobermann kennen, zu legen.</p>
 <p>Allerdings gibt es keine exakten Aufzeichnungen darüber, welche Hunde genau für seine Züchtung verwendet wurden. Eine wichtige Rolle hierfür haben wohl die &#8220;Fleischerhunde&#8221;, welche einen zur damaligen Zeit guten Zuchtstand hatten und als Vorläufer der heutigen Rottweiler gelten. Auch sollen Greyhounds in die Zucht eingeflossen sein, um der Rasse ein schlankeres Aussehen zu verleihen.</p>
 <p>Durch und durch entstand eine Hunderasse, die als Gebrauchs-, Arbeits- und Wachhund eingesetzt werden konnte. Wegen des bereits frühen Einsatzes als Polizeihund nannte man den Dobermann auch &#8220;Gendarmenhund&#8221;. Im Bereich der Jagd setzt man ihn hauptsächlich zur Bekämpfung von Raubwild ein. Auch in beiden Weltkriegen spielte der Dobermann eine Rolle. Dort fand man im deutschen Heer für ihn Verwendung als Melde-, Minensuch- und Sanitätshund. Zusätzlich zu Schäferhunden und Airedale-Terriern zählten sie zu den bevorzugten Diensthunden in Konzentrationslagern.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2568" src="/magazin/wp-content/uploads/2023/12/frau-mit-doberman-hund.png" alt="frau mit dobermann hund" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/dobermann-heimkehr.webp" alt="Dobermann mit unkupierten Ohren und langer Rute wartet im Flur, während eine Frau ihre Stiefel auszieht." width="1536" height="1024" /></p>
 <h2>Überlegungen vor der Anschaffung</h2>
 <p>Die wichtigste Überlegung vor Anschaffung eines Dobermanns sollte eine große Portion an Selbstreflexion beinhalten. Als temperamentvoller und arbeitswilliger Hund braucht der Dobermann einen Besitzer, der ihm körperliche und geistige Auslastung bieten kann. Mit <a href="https://tierisch-verliebt.de/magazin/spiele-fuer-hunde-zu-hause/">Ballspielen</a> und Spaziergängen alleine wird diese Hunderasse kaum ihre benötige Auslastung erreichen und unausgeglichen werden.</p>
 <p>Außerdem ist es wichtig, dem Dobermann die nötige Konsequenz entgegenzubringen. Er braucht Menschen, die in seinem Rudel als klarer Alpha auftreten. Unsichere Menschen tun sich selbst und vor allem auch dem Dobermann keinen Gefallen. Auch nimmt diese Rasse sehr viel Zeit in Anspruch.</p>
@@ -47,7 +47,7 @@ excerpt: "<p>Der Dobermann ist eine Rasse, die Kraft und Eleganz vereint, genann
 <p><img decoding="async" class="alignnone size-large wp-image-2233" src="/magazin/wp-content/uploads/2023/08/Dobermann-2-1024x709.jpg" alt="Dobermann" width="910" height="630" srcset="/magazin/wp-content/uploads/2023/08/Dobermann-2-1024x709.jpg 1024w, /magazin/wp-content/uploads/2023/08/Dobermann-2-300x208.jpg 300w, /magazin/wp-content/uploads/2023/08/Dobermann-2-768x532.jpg 768w, /magazin/wp-content/uploads/2023/08/Dobermann-2.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
 <h2>Geeignete Ernährung</h2>
 <p>Gerade aufgrund seines hohen Drangs nach Aktivität braucht der Dobermann eine gute <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a>. Diese kann sowohl mit Nassfutter, als auch mit Trockenfutter oder gar BARF stattfinden. Das Wichtigste dabei ist, dass die Inhaltsstoffe qualitativ hochwertig und alle benötigten Nährstoffe enthalten sind. Als ideal gelten ein hoher Fleischanteil sowie kein Zucker und keine Farb- und Konservierungsstoffe. Weist ein Dobermann Übergewicht auf, dann wird dieser weder richtig ernährt noch bekommt er artgerechte Bewegung.</p>
-<p><img decoding="async" class="alignnone wp-image-2954" src="/magazin/wp-content/uploads/2025/01/ernaehrung-Dobermann-pinscher-1.webp" alt="ernaehrung-dobermann" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/ernaehrung-Dobermann-pinscher-1.webp 1024w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dobermann-pinscher-1-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dobermann-pinscher-1-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dobermann-pinscher-1-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/dobermann-futter-alltag.webp" alt="Dobermann ruht daneben, während ein Mensch den Metallnapf ausspült." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>1. Sind Deutsche Doggen für Ersthundebesitzer geeignet?</h3>
 <p>Deutsche Doggen sind sanftmütig und lernwillig, aber ihre Größe und speziellen Bedürfnisse machen sie für Ersthundebesitzer anspruchsvoll. Mit konsequenter Erziehung, viel Platz, Zeit und der richtigen Vorbereitung kann aber auch ein Anfänger mit einer Dogge glücklich werden. Wer bereit ist, sich dieser Verantwortung zu stellen, wird mit einem treuen und liebevollen sanften Riesen belohnt.</p>
@@ -60,3 +60,7 @@ excerpt: "<p>Der Dobermann ist eine Rasse, die Kraft und Eleganz vereint, genann
 <h3>5. Wie viel Platz benötigt ein Dobermann?</h3>
 <p>Dobermänner brauchen keine riesigen Wohnräume, aber sie benötigen täglich viel Bewegung und Platz zum Laufen. Eine Wohnung ist möglich, wenn genügend Auslauf gegeben ist. Ideal ist ein Haus mit Garten, aber nur, wenn der Hund nicht einfach draußen &#8220;geparkt&#8221; wird. Ohne genügend Bewegung kann ein Dobermann unruhig oder destruktiv werden.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -5,7 +5,7 @@ slug: "perserkatze"
 type: page
 wpId: 303
 published: "2019-10-08T13:29:35"
-updated: "2026-09-27T22:45:59"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/perserkatze.jpg"
@@ -31,7 +31,7 @@ Diese Individualisten haben aber in der Regel ein sehr sanftes Wesen. Sie wissen
 Diesen zurückhaltenden Zug kann man auch beobachten, wenn Fremde zu Besuch kommen. Erst nach mehreren Besuchen wird der Fremde zum Familien- und Freundeskreis integriert, und die Perserkatze zeigt sich dem Fremden.</p>
 <p>Es sei denn, irgendwas erregt so sehr ihr missfallen, dass sie sofort darauf mit Abwehr reagiert. Für eine Katze gibt es eben keine allgemeingültigen Regeln.<br />
 Dennoch ist eine Perserkatze eher eine sehr menschenbezogene Katze, die ungern für mehrere Stunden allein bleibt. Deshalb ist es für eine Perserkatze weniger geeignet, wenn man den ganzen Tag arbeiten geht, und sie alleine bleibt. Es denn, sie hat Gesellschaft.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2573" src="/magazin/wp-content/uploads/2023/12/frau-mit-persian-katze.png" alt="frau mit Perserkatze" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/perserkatze-sanfte-fellpflege.webp" alt="Ältere Frau bürstet eine entspannt liegende Perserkatze mit langem cremefarbenem Fell." width="1536" height="1024" /></p>
 <h2>Herkunft und Geschichte</h2>
 <p>Übrigens ist der Name Perser-Katze etwas verwirrend. Ursprünglich dachte man, dass diese oft mehrfarbigen Langhaarkatzen aus dem Nahen Osten stammen, etwa der Türkei oder dem Iran. Aber über die Geschichte der Herkunft der ersten Perserkatzen gibt es verschiedenen Thesen, von denen noch keine endgültig bewiesen werden konnte.</p>
 <p>Ob sie nun tatsächlich irgendwo aus dem Nahen Osten stammt, russische Langhaarkatzen als Stammeltern hat oder doch nur aus verschiedenen Zufalls- und gezielten Kreuzungen in England entstanden ist, bleibt also weiterhin die spannende Frage.</p>
@@ -90,3 +90,7 @@ Achtsamkeit bei Katzen, insbesondere bei Persern, erfordern Symptome des sogenan
 <p>Die Lebenserwartung liegt bei etwa 10 bis 17 Jahren, abhängig von Gesundheit und Pflege.</p>
 <h3>Ist die Perserkatze für Anfänger geeignet?</h3>
 <p>Vom Wesen her ja, sie ist ausgeglichen und anhänglich. Den täglichen Pflegeaufwand und mögliche Tierarztkosten sollte man aber realistisch einplanen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

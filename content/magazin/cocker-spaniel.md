@@ -4,7 +4,7 @@ slug: "cocker-spaniel"
 type: page
 wpId: 425
 published: "2019-10-30T20:23:09"
-updated: "2026-09-22T13:53:11"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/cocker-spaniel.jpg"
@@ -46,7 +46,7 @@ excerpt: "<p>Bei einem Cocker Spaniel handelt es sich um einen kleinen bis mitte
 <h2>Geeignete Ernährung</h2>
 <p>Der Cocker Spaniel liegt eine ausgewogene Ernährung aus Gemüse, Fleisch, <a href="https://tierisch-verliebt.de/magazin/obst-und-gemuese-die-die-hunde-essen/">Obst</a> sowie Getreide und eventuell Nudeln oder Reis. Dabei sollte der Fleischanteil ungefähr bei einem Drittel bei einem ausgewachsenen Hund liegen. Was die Zubereitung anbelangt, so sollte das Futter nicht zu heiß aber auch nicht eiskalt sein. Während des Fressens sollte der Hund seine Ruhe haben, weil hier zu viele Störungen das Fressverhalten negativ beeinflussen.</p>
 <p>Die <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Fütterung</a> sollte zu festen Zeiten erfolgen. Hin und wieder ein Kauknochen dient zu Reinigung des Gebisses. Der Futternapf sollte immer nach der Fütterung gereinigt werden und der Hund sollte frisches Wasser erhalten. Auch sollte in regelmäßigen Abständen das Gewicht des Hundes kontrolliert werden, damit hier dann kein Übergewicht entstehen kann.</p>
-<p><img decoding="async" class="alignnone wp-image-2923" src="/magazin/wp-content/uploads/2025/01/essen-Cocker-Spaniel.webp" alt="ernaehrung-cocker-spaniel" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/essen-Cocker-Spaniel.webp 1024w, /magazin/wp-content/uploads/2025/01/essen-Cocker-Spaniel-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/essen-Cocker-Spaniel-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/essen-Cocker-Spaniel-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/cocker-spaniel-futter-alltag.webp" alt="Cocker Spaniel wartet neben seinem Menschen bei der Napfreinigung (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>1. Sind Cocker Spaniel für Ersthundebesitzer geeignet?</h3>
 <p>Cocker Spaniel sind freundliche, lernwillige und anpassungsfähige Hunde, die auch für Ersthundebesitzer geeignet sind. Allerdings sollten sich Anfänger über den Pflegeaufwand, den Jagdtrieb und den hohen Bewegungsbedarf im Klaren sein. Wer bereit ist, sich mit Erziehung und Pflege auseinanderzusetzen, wird mit einem treuen und liebevollen Begleiter belohnt.</p>
@@ -57,3 +57,7 @@ excerpt: "<p>Bei einem Cocker Spaniel handelt es sich um einen kleinen bis mitte
 <h3>4. Wie kann man einen Cocker Spaniel geistig auslasten?</h3>
 <p>Cocker Spaniel sind intelligente, neugierige und aktive Hunde. Sie brauchen nicht nur Bewegung, sondern auch geistige Auslastung! Schnüffelspiele, Denkaufgaben, Apportieren, Tricktraining und abwechslungsreiche Spaziergänge sind ideal, um ihren schlauen Kopf zu fordern. Ein ausgelasteter Cocker Spaniel ist ein glücklicher und ausgeglichener Begleiter!</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

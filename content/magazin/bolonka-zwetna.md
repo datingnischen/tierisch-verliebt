@@ -4,7 +4,7 @@ slug: "bolonka-zwetna"
 type: page
 wpId: 577
 published: "2019-11-09T17:06:17"
-updated: "2026-09-22T13:52:54"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Bolonka-Zwetna.jpg"
@@ -46,7 +46,7 @@ excerpt: "<p>Bolonka heißt Schoßhund auf Russisch. Zwetna bedeutet farbig. Das
 <p>Zunächst sollte für einen Bolonka wie für alle Hunde immer frisches Trinkwasser bereitstehen. Was sein Futter betrifft, stellt das Zarenhündchen keine besonderen Ansprüche. Seine Ernährung sollte jedoch vollwertig sein. Empfehlenswert ist Hundefutter mit einem hohen Fleischanteil, welches mit Gemüse kombiniert wird. Letztendlich entscheidet der Hundehalter, ob er lieber Fertigfutter oder frisches Futter gibt. Beim Fertigfutter kann er zwischen Trocken- oder Nassfutter wählen. Möchte er das Hundefutter lieber selbst zubereiten, kann er für seinen Bolonka kochen. Oder er kann rohes Fleisch mit Gemüse geben („barfen“).</p>
 <p>Tipps zur Ernährung geben auch Züchter und Tierarzt. Bolonkawelpen sollten anfangs das gleiche Futter bekommen wie beim Züchter. Plötzliche Futterumstellungen vertragen Welpen schlecht. Beim Bolonka Zwetna ist es besser, mehrmals täglich kleine Portionen zu füttern. Das ist für Kleinhunderassen bekömmlicher als nur eine große Ration am Tag.</p>
 <p>Leckerchen sollte der kleine Schoßhund nur in Maßen bekommen. Sie müssen entsprechend der Größe des Hündchens kleiner ausfallen. Andernfalls leidet er rasch an Übergewicht. Speisen, die Menschen gerne essen, gehören nicht in den Futternapf. Für Menschen verträgliche Nahrungsmittel können der Gesundheit des Schoßhündchens schaden.</p>
-<p><img decoding="async" class="alignnone wp-image-2733" src="/magazin/wp-content/uploads/2024/09/bolonka-zwetna-essen.webp" alt="bolonka-zwetna-essen" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/bolonka-zwetna-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/bolonka-zwetna-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/bolonka-zwetna-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/bolonka-zwetna-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/bolonka-zwetna-futter-alltag.webp" alt="Bolonka Zwetna neben seinem Menschen beim Ausspülen des Napfes (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie pflegeintensiv ist das Fell des Bolonka Zwetna?</strong></p>
 <p>Das Fell des Bolonka Zwetna ist lang und seidig, was regelmäßiges Bürsten erfordert, um Verfilzungen zu vermeiden. Viele Besitzer lassen das Fell auch scheren, um die Pflege zu erleichtern.</p>
@@ -58,3 +58,7 @@ excerpt: "<p>Bolonka heißt Schoßhund auf Russisch. Zwetna bedeutet farbig. Das
 <p>Bolonka Zwetnas sind sozial und kommen in der Regel gut mit anderen Haustieren aus, insbesondere wenn sie von klein auf sozialisiert wurden.</p>
 <p><strong>Wie alt wird ein Bolonka Zwetna?</strong></p>
 <p>Bolonka Zwetnas haben eine relativ lange Lebenserwartung und können oft 9 bis 15 Jahre alt werden.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -4,7 +4,7 @@ slug: "papageien-gesundheit"
 type: post
 wpId: 3586
 published: "2026-03-04T23:53:13"
-updated: "2026-09-26T00:54:41"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/laurarinke-parrots-2911077_1280.compr_.jpg"
@@ -28,7 +28,7 @@ excerpt: "<p>Krankheiten früh erkennen und richtig handeln Papageien sind faszi
 <li>gleichmäßige Atmung</li>
 </ul>
 <p>Schon kleine Veränderungen können ein Hinweis auf gesundheitliche Probleme sein.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3778" src="/magazin/wp-content/uploads/2026/09/papageien-gesundheit-warnzeichen-infografik-1024x683.png" alt="Infografik: Warnzeichen und erste Hilfe bei Papageien" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/09/papageien-gesundheit-warnzeichen-infografik-1024x683.png 1024w, /magazin/wp-content/uploads/2026/09/papageien-gesundheit-warnzeichen-infografik-300x200.png 300w, /magazin/wp-content/uploads/2026/09/papageien-gesundheit-warnzeichen-infografik-768x512.png 768w, /magazin/wp-content/uploads/2026/09/papageien-gesundheit-warnzeichen-infografik.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-warnzeichen.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-warnzeichen.webp" alt="Warnzeichen bei Papageien: ungewöhnliche Ruhe, veränderter Appetit, Gefieder oder Stimme; bei Atemnot, starker Blutung oder fehlender Sitzfähigkeit sofort zum Notdienst." width="1536" height="1024" /></a></p>
 <hr>
 <h2>Häufige Warnzeichen bei Papageien</h2>
 <p>Bestimmte Symptome sollten immer ernst genommen werden. Dazu gehören:</p>
@@ -64,23 +64,24 @@ excerpt: "<p>Krankheiten früh erkennen und richtig handeln Papageien sind faszi
 <li>ungewöhnlicher Kot</li>
 <li>veränderte Farbe oder Konsistenz</li>
 </ul>
-<p>Wenn mehrere dieser Symptome gleichzeitig auftreten, sollte schnell gehandelt werden.</p>
+<p>Schon eine auffällige Veränderung ist ein Anlass, eine vogelkundige Praxis zu kontaktieren. Warte nicht darauf, dass mehrere Symptome zusammenkommen.</p>
 <hr>
 <h2>Erste Hilfe bei gesundheitlichen Problemen</h2>
-<p>Wenn ein Papagei plötzlich krank wirkt, sind einige Sofortmaßnahmen hilfreich:</p>
+<p>Wenn ein Papagei plötzlich krank wirkt, kontaktiere eine vogelkundige Praxis und kläre das weitere Vorgehen. Bei Atemnot, starker Blutung oder fehlender Sitzfähigkeit ist sofortige Hilfe im Notdienst nötig. Bis dahin:</p>
 <ul>
-<li>Vogel warm halten</li>
+<li>Temperatur und Transport mit der Praxis abstimmen; keine eigenmächtige starke Wärmezufuhr</li>
 <li>Stress vermeiden</li>
 <li>ruhige Umgebung schaffen</li>
 <li>frisches Wasser bereitstellen</li>
 <li>Futter leicht erreichbar anbieten</li>
 </ul>
-<p>Wichtig: Erste Hilfe ersetzt keinen Tierarzt. Sie dient nur dazu, den Vogel zu stabilisieren.</p>
+<p>Wichtig: Diese Schritte ersetzen keine Untersuchung. Verabreiche keine Medikamente oder Hausmittel ohne tierärztliche Anweisung.</p>
 <hr>
 <h2>Wann sofort zum Tierarzt?</h2>
 <p>Ein vogelkundiger Tierarzt sollte schnell aufgesucht werden bei:</p>
 <ul>
-<li>Atemproblemen</li>
+<li>Atemnot</li>
+<li>Unfähigkeit, auf einer Stange zu sitzen</li>
 <li>Krampfanfällen</li>
 <li>Verletzungen oder Blutungen</li>
 <li>starkem Durchfall</li>
@@ -111,3 +112,8 @@ excerpt: "<p>Krankheiten früh erkennen und richtig handeln Papageien sind faszi
 <p>Mit guter Pflege, ausgewogener Ernährung und regelmäßiger Beobachtung lässt sich die Gesundheit deines Papageis langfristig schützen.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/parrots-bird-couple-multicoloured-2911077/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.tiho-hannover.de/kliniken-institute/kliniken/klinik-fuer-heimtiere-reptilien-und-voegel/notfaelle/voegel" target="_blank" rel="noopener noreferrer">www.tiho-hannover.de</a>, <a href="https://www.vetmeduni.ac.at/interne-kleintiere/ueber-uns/ambulanzen/voegel-reptilien" target="_blank" rel="noopener noreferrer">www.vetmeduni.ac.at</a>.</p>
+<!-- /audit-visual-credit -->

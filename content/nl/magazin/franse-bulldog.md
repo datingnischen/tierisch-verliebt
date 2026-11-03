@@ -4,7 +4,7 @@ slug: "franse-bulldog"
 type: page
 wpId: 77
 published: "2019-06-16T11:43:30"
-updated: "2026-09-22T13:51:17"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/06/franzoesische-bulldogge.jpg"
@@ -47,7 +47,7 @@ locale: "nl-NL"
 <p>De korte, vrij platte neus kan bij sommige honden gezondheidsproblemen veroorzaken. Dat kan zich onder meer uiten in kortademigheid. Een operatie kan verlichting bieden. Laat zo’n ingreep echter alleen uitvoeren door een dierenarts die hierin ervaring heeft en alleen als het probleem op geen andere manier kan worden verholpen. In Nederland gelden sinds 2019 strengere regels: met kortsnuitige honden mag alleen worden gefokt als ze aan wettelijke criteria voldoen, zoals een normale ademhaling in rust. Vraag een fokker daarom naar de gezondheid van de ouderdieren. Verder zijn regelmatige dierenartsbezoeken verstandig, zodat mogelijke problemen vroeg worden opgemerkt.</p>
 <h2>Voeding</h2>
 <p>Hoewel de Franse bulldog van beweging houdt, is hij gevoelig voor overgewicht. Meestal treedt dat op als hij te weinig beweging krijgt. Veel eigenaren denken dat de hond door zijn kleine formaat weinig hoeft te wandelen. Het tegendeel is waar. Ook verkeerde voeding kan gewichtsproblemen veroorzaken. Kies hoogwaardig voer; dat kan goed samengesteld versvoer (BARF) zijn, maar ook droogvoer gemengd met <a href="https://tierisch-verliebt.de/magazin/obst-und-gemuese-die-die-hunde-essen/">groente</a> is geschikt. Vermijd een te hoog aandeel granen.</p>
-<p><img decoding="async" class="alignnone wp-image-2973" src="/magazin/wp-content/uploads/2025/02/ernaehrung-franzoesische-Bulldogge.webp" alt="Voeding van de Franse bulldog" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-franzoesische-Bulldogge.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-franzoesische-Bulldogge-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-franzoesische-Bulldogge-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-franzoesische-Bulldogge-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/franzoesische-bulldogge-futter-alltag.webp" alt="Franse bulldog bij de dagelijkse verzorging en voeding." width="1536" height="1024" /></p>
 <h2>Conclusie</h2>
 <p>De Franse bulldog behoort tot de populairste hondenrassen. Dit ras is bijzonder geschikt voor gezinnen en daardoor ook heel geliefd bij kinderen. Deze honden passen bij mensen die graag samen actief zijn, zonder hem te overvragen. Anders dan veel mensen denken, is dit ras beslist geen typisch schoothondje. Hij voelt zich het prettigst in een actief gezin dat hem voldoende aandacht kan geven. Als je rekening houdt met de individuele behoeften van de hond, vooral op het gebied van huisvesting, verzorging en voeding, kun je lang en veel plezier aan hem beleven.</p>
 <h2>Veelgestelde vragen</h2>
@@ -67,3 +67,7 @@ Dit ras is erg op mensen gericht en aanhankelijk en is daarom niet geschikt om l
 <p>Ja, de Franse bulldog is heel geschikt voor het leven in de stad.<br />
 Dankzij zijn compacte formaat, rustige karakter en beperkte bewegingsbehoefte kan hij goed in een appartement of stedelijke omgeving leven. Let op hitte, trappen en voldoende groen! Met de juiste verzorging en aanpassingen kan een Franse bulldog een gelukkig leven in de stad leiden.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Beeldverantwoording: De in november 2026 vernieuwde beelden zijn met AI-ondersteuning door Codex gemaakt. De foto’s zijn symbolische afbeeldingen en tonen geen echte leden.</p>
+<!-- /audit-visual-credit -->

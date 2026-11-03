@@ -4,7 +4,7 @@ slug: "bernhardiner"
 type: page
 wpId: 479
 published: "2019-11-05T20:15:42"
-updated: "2026-09-22T13:52:59"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Bernhardiner.jpg"
@@ -49,7 +49,7 @@ excerpt: "<p>Das Portrait des Bernhardiners zeigt eine sanftmütige und imposant
 <p>Weitere rassetypische Krankheiten sind zudem Krebs oder auch eine Hüftgelenksdysplasie und andere Knochenprobleme. Die generelle Lebenserwartung eines Bernhardiners ist vergleichsweise gering und liegt zwischen 8 und 10 Jahren.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Da die Junghunde sehr schnell wachsen, benötigen sie ein entsprechend nährstoffreiches Futter. Diese muss im Einklang mit der Bewegung des Hundes stehen, die nicht vernachlässigt werden darf. Bei der Wahl des Futters ist auf eine gute Qualität zu achten und auf ausreichende Mengen. Allerdings kann es bei ausgewachsenen Bernhardinern zu einer Magendehnung kommen. Daher sollte man lieber mehrere kleine Portionen verfüttern. Vor allem Fleisch sollte den Hauptanteil des Futters ausmachen. Ansonsten muss das Futter sehr nährstoffhaltig sein. Verfüttern kann man sowohl Trocken- als auch Nassfutter. Für die Gelenke empfehlen sich zudem Omega-3-Fettsäuren.</p>
-<p><img decoding="async" class="alignnone wp-image-2729" src="/magazin/wp-content/uploads/2024/09/bernhardiner-essen.webp" alt="bernhardiner-essen" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/bernhardiner-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/bernhardiner-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/bernhardiner-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/bernhardiner-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/bernhardiner-futter-alltag.webp" alt="Bernhardiner wartet neben seinem Menschen bei der Futtervorbereitung (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie viel Pflege benötigt ein Bernhardiner?</strong></p>
 <p>Bernhardiner haben ein dichtes Fell, das regelmäßiges Bürsten erfordert, um Verfilzungen zu verhindern und abgestorbene Haare zu entfernen. Besonders während des Fellwechsels sollten sie häufiger gebürstet werden.</p>
@@ -61,3 +61,7 @@ excerpt: "<p>Das Portrait des Bernhardiners zeigt eine sanftmütige und imposant
 <p>Aufgrund ihrer Größe sind Bernhardiner anfällig für Hüft- und Ellbogendysplasie. Sie können auch Herzprobleme oder Magenprobleme (Magendrehung) entwickeln. Regelmäßige tierärztliche Untersuchungen sind wichtig.</p>
 <p><strong>Wie alt wird ein Bernhardiner?</strong></p>
 <p>Leider haben Bernhardiner eine relativ kurze Lebenserwartung im Vergleich zu anderen Hunderassen. Sie leben im Durchschnitt 8 bis 10 Jahre.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

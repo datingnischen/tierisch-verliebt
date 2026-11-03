@@ -4,7 +4,7 @@ slug: "golden-retriever"
 type: page
 wpId: 264
 published: "2019-09-27T11:37:35"
-updated: "2026-09-22T13:51:09"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Golden-Retriever-1.jpg"
@@ -55,7 +55,7 @@ Besonders süß sind die Welpen.</p>
 <p>Zu den Rassemerkmalen zählt das goldene weiche <a href="https://tierisch-verliebt.de/magazin/pflege-von-fell-und-zaehnen-des-hundes/">Fell</a>. Weitere Merkmale sind wohl der treuherzige Blick und die offene Art.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Der Golden Retriever ist aktiv. Seine Ernährung sollte ausgewogen und reichhaltig sein. Wer sich viel der bewegt, hat meistens einen großen Appetit. Allerdings ist bei einer zu reichhaltigen <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> Vorsicht geboten, denn die blonden Hunde neigen zu Übergewicht. Das macht sich vor allen bei alten Hunden der Rasse bemerkbar. Das Übergewicht kann sich negativ auf die Gesundheit des Hundes auswirken, daher sollten zusätzliche Pfunde vermieden werden. Allerdings ist die Einhaltung des Ernährungsplans bei Golden Retrievern nicht einfach für ihre Besitzer. Die Hunde neigen zum Betteln und den süßen Blicken kann selbst ein strenges Herrchen nicht widerstehen.</p>
-<p><img decoding="async" class="alignnone wp-image-2978" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever.webp" alt="ernaehrung-golden-retriever" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/golden-retriever-futter-alltag.webp" alt="Golden Retriever wartet, während ein Mensch den Napf auf eine Unterlage stellt." width="1536" height="1024" /></p>
 <p>Bei einem ausgewachsenen Hund empfehlen sich zwei Portionen am Tag. Eine wird am Morgen und die andere wird am späten Nachmittag gegeben. Bei der Erstellung des Ernährungsplans sollten jedoch die individuellen Bedürfnisse des Hundes beachtet werden, denn nicht jeder Hund einer Rasse ist wie der andere. Bei einem ausgewachsenen Hund empfiehlt sich eine gesunde Mischung aus Trocken- und Nassfutter. Bei dem Nassfutter ist es wichtig auf die Zusatzstoffe zu achten. Denn einige Hunden entwickeln Unverträglichkeiten. Auch kann das <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futter</a> mit mild gegartem Fleisch aufgewertet werden.</p>
 <p><img decoding="async" class="alignnone size-large wp-image-269" src="/magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-1024x683.jpg" alt="Ausgewachsener Golden Retriever" width="910" height="607" srcset="/magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-1024x683.jpg 1024w, /magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-300x200.jpg 300w, /magazin/wp-content/uploads/2019/09/Golden-Retriever-ausgewachsen-768x512.jpg 768w" sizes="(max-width: 910px) 100vw, 910px" /></p>
 <h2>FAQ</h2>
@@ -79,3 +79,7 @@ Wer einen Golden Retriever hält, sollte sich der möglichen Gesundheitsrisiken 
 <p>Nein, der Golden Retriever ist nicht für Allergiker geeignet.<br />
 Diese Rasse verliert ganzjährig Haare und produziert viele Hautschuppen (Dander), die allergische Reaktionen auslösen können. Zudem haben sie ein dichtes, doppeltes Fell, das Allergene speichert.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

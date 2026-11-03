@@ -4,11 +4,11 @@ slug: "german-rex"
 type: page
 wpId: 221
 published: "2019-07-15T08:04:13"
-updated: "2026-09-26T00:54:55"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/german-rex-titelbild.jpg"
-imageAlt: "German-Rex-Katze mit gewelltem Fell"
+image: "/magazin/wp-content/uploads/2026/11/german-rex-ruheplatz.webp"
+imageAlt: "Schwarz-weiße German Rex mit kurzem gewelltem Fell auf einem zerknitterten Kissen."
 seoTitle: "German Rex Katze"
 description: "Informationen zur Herkunft & Geschichte zur seltenen German Rex Katze mit lockigem Haar findest du in diesem Artikel. Auch Tipps zur Haltung."
 noindex: true
@@ -88,3 +88,7 @@ excerpt: "<p>Die German Rex ist eine seltene Schönheit mit lockigem Haar, die d
 <p data-start="1387" data-end="1682">In der Regel ja. Sie ist sozial, freundlich und neugierig. Sie spielt gerne und genießt Nähe zu Artgenossen. Ideal ist die Haltung zu zweit oder in einer kleinen Gruppe. Zu dominante oder sehr distanzierte Katzen können sie jedoch stressen.</p>
 <h3 data-start="1684" data-end="1961"><strong data-start="1684" data-end="1733">Passt die German Rex zu Familien mit Kindern?</strong></h3>
 <p data-start="1684" data-end="1961">Ja, solange Kinder freundlich und respektvoll mit ihr umgehen. Die German Rex ist verspielt, gutmütig und sucht aktiv Kontakt zu Menschen. Sie gilt als geduldig, mag aber keine groben Berührungen oder „Hochnehmen auf Befehl“.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

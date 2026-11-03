@@ -4,7 +4,7 @@ slug: "ara-futter"
 type: post
 wpId: 3552
 published: "2026-03-03T10:47:09"
-updated: "2026-09-26T00:54:42"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/veverkolog-macaw-5717388_1280.compr_.jpg"
@@ -20,17 +20,11 @@ excerpt: "<p>So bleiben große Papageien gesund, kräftig und ausgeglichen Aras 
 <p><a href="https://tierisch-verliebt.de/magazin/papageien-richtig-fuettern/">https://tierisch-verliebt.de/magazin/papageien-richtig-fuettern/</a></p>
 <hr>
 <h2>Grundprinzip: Frisch, vielfältig und energieangepasst</h2>
-<p>Aras haben einen höheren Energiebedarf als viele kleinere Papageienarten. Dennoch bedeutet das nicht, dass sie fettreich ernährt werden sollten. Die Basis sollte aus frischer, pflanzlicher Kost bestehen – ergänzt durch hochwertige Saaten und Nüsse in kontrollierten Mengen.</p>
-<p>Ein ausgewogener Futterplan besteht aus:</p>
-<ul>
-<li>60–70 % frischem Gemüse</li>
-<li>15–25 % Obst</li>
-<li>10–20 % hochwertigen Körnern, Nüssen oder Pellets</li>
-</ul>
-<p>Die genaue Zusammensetzung kann je nach Aktivitätslevel variieren.</p>
+<p>Aras haben einen höheren Energiebedarf als viele kleinere Papageienarten. Dennoch bedeutet das nicht, dass sie fettreich ernährt werden sollten. Welche Futterbasis und welche Ergänzungen passen, hängt unter anderem von Ara-Art, Aktivität und Gesundheitszustand ab. Saaten und Nüsse allein ergeben keine ausgewogene Ernährung.</p>
+<p>VCA Animal Hospitals beschreibt geeignete Pellets als mögliche Futterbasis für Aras, ergänzt durch Gemüse, bedarfsabhängige Nüsse und begrenzte Obstmengen. Die Empfehlungen lassen sich nicht als pauschale Prozentformel auf jede Ara-Art übertragen. Stimme die Ration und eine Futterumstellung mit einer vogelkundigen Praxis ab.</p>
 <hr>
-<h2>Gemüse – die wichtigste Grundlage</h2>
-<p>Gemüse sollte täglich frisch angeboten werden und den größten Anteil der Nahrung ausmachen.</p>
+<h2>Gemüse – eine frische Ergänzung</h2>
+<p>Gemüse ergänzt die abgestimmte Grundration. Wasche es gründlich, schneide es passend zum Vogel und entferne verderbliche Reste zeitnah.</p>
 <p>Geeignet sind:</p>
 <ul>
 <li>Karotten</li>
@@ -68,14 +62,14 @@ excerpt: "<p>So bleiben große Papageien gesund, kräftig und ausgeglichen Aras 
 </ul>
 <p>Wichtig: Nüsse nur roh und ungesalzen anbieten. Sie eignen sich hervorragend als Belohnung oder Beschäftigungselement.</p>
 <hr>
-<h2>Körner &amp; Pellets – ergänzend einsetzen</h2>
-<p>Hochwertige Körnermischungen oder spezielle Großpapageien-Pellets können eine sinnvolle Ergänzung sein. Achte auf:</p>
+<h2>Grundfutter: Körnermischungen und Pellets unterscheiden</h2>
+<p>Körnermischungen und formulierte Pellets sind nicht gleichwertig: Bei Mischungen können Vögel bevorzugte Saaten auswählen. Geeignete Pellets sollen dagegen eine ausgewogene Nährstoffversorgung erleichtern. Die Auswahl gehört zum individuellen Futterplan. Achte auf:</p>
 <ul>
 <li>Geringen Sonnenblumenkern-Anteil</li>
 <li>Keine künstlichen Farb- oder Duftstoffe</li>
 <li>Frische Qualität</li>
 </ul>
-<p>Pellets können helfen, Nährstofflücken zu schließen, sollten jedoch Frischfutter nicht ersetzen.</p>
+<p>Eine Umstellung auf Pellets braucht Geduld und fachliche Begleitung. Stelle sicher, dass dein Ara das neue Futter tatsächlich frisst; entziehe ihm nicht einfach die vertraute Nahrung.</p>
 <hr>
 <h2>Eiweiß &amp; besondere Ergänzungen</h2>
 <p>In bestimmten Phasen (Mauser, Brutzeit) kann zusätzlicher Eiweißbedarf bestehen.</p>
@@ -85,7 +79,7 @@ excerpt: "<p>So bleiben große Papageien gesund, kräftig und ausgeglichen Aras 
 <li>Keimfutter</li>
 <li>Gekochtes Ei (selten)</li>
 </ul>
-<p>Auch Mineralstoffe wie Kalzium sollten dauerhaft verfügbar sein.</p>
+<p>Zusätzliche Vitamin- oder Mineralstoffpräparate nur nach vogelkundiger Empfehlung einsetzen; der Bedarf hängt auch vom verwendeten Grundfutter ab.</p>
 <hr>
 <h2>Diese Lebensmittel sind tabu</h2>
 <p>Aras dürfen keinesfalls fressen:</p>
@@ -96,7 +90,7 @@ excerpt: "<p>So bleiben große Papageien gesund, kräftig und ausgeglichen Aras 
 &#8211; Stark gewürzte Speisen<br />
 &#8211; Gesalzene oder frittierte Lebensmittel</p>
 <p>Auch stark verarbeitete Produkte sind ungeeignet.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3774" src="/magazin/wp-content/uploads/2026/09/ara-futter-infografik-1024x683.png" alt="Infografik: Aras richtig füttern – Ernährung für große Papageienarten" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/09/ara-futter-infografik-1024x683.png 1024w, /magazin/wp-content/uploads/2026/09/ara-futter-infografik-300x200.png 300w, /magazin/wp-content/uploads/2026/09/ara-futter-infografik-768x512.png 768w, /magazin/wp-content/uploads/2026/09/ara-futter-infografik.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/ara-futterbausteine.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/ara-futterbausteine.webp" alt="Futterbausteine für Aras: geeignetes Grundfutter, Frischkost, bedarfsabhängige Nüsse und frisches Wasser; Avocado, Schokolade, Koffein und Alkohol vermeiden." width="1536" height="1024" /></a></p>
 <hr>
 <h2>Wasser &amp; Hygiene</h2>
 <p>Frisches Wasser muss täglich gewechselt werden. Große Papageien verschmutzen Näpfe schnell – daher regelmäßig reinigen.</p>
@@ -112,7 +106,12 @@ excerpt: "<p>So bleiben große Papageien gesund, kräftig und ausgeglichen Aras 
 </ul>
 <hr>
 <h2>Fazit: Große Papageien brauchen durchdachte Ernährung</h2>
-<p>Aras richtig zu füttern bedeutet, ihren hohen Energiebedarf mit einer gesunden, ausgewogenen und vielfältigen Ernährung zu kombinieren. Frisches Gemüse bildet die Basis, Obst und Nüsse ergänzen, während Körner und Pellets kontrolliert eingesetzt werden sollten.</p>
+<p>Aras richtig zu füttern bedeutet, ihren hohen Energiebedarf mit einer gesunden, ausgewogenen und vielfältigen Ernährung zu kombinieren. Eine geeignete Futterbasis wird durch passende Frischkost ergänzt. Wie viel Obst, Nüsse oder Saaten sinnvoll sind, muss zur jeweiligen Ara-Art und zum einzelnen Tier passen.</p>
 <p>Eine bewusste Ernährung ist bei großen Papageienarten der Schlüssel zu Vitalität, Lebensfreude und einem langen gemeinsamen Leben.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/macaw-bird-animal-parrot-ara-5717388/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://vcahospitals.com/know-your-pet/macaws-feeding" target="_blank" rel="noopener noreferrer">vcahospitals.com</a>.</p>
+<!-- /audit-visual-credit -->

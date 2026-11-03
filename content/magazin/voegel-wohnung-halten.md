@@ -4,11 +4,11 @@ slug: "voegel-wohnung-halten"
 type: post
 wpId: 3596
 published: "2026-03-05T10:36:13"
-updated: "2026-09-26T01:06:42"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
-image: "/magazin/wp-content/uploads/2026/03/Voegel-in-der-Wohnung-richtig-halten.compr_.png"
-imageAlt: "Vögel in der Wohnung halten: Sicherheit und Raumgestaltung"
+image: "/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-alltag.webp"
+imageAlt: "Sicherer Freiflug im Wohnraum"
 seoTitle: "Vögel in der Wohnung halten: Tipps"
 description: "Hier kann man mehr Information über die Sicherheit und Raumgestaltung in der Wohnung für die Vögel finden - Verantwortung und Sicherheit."
 excerpt: "<p>So wird dein Zuhause zu einem sicheren Vogelparadies Viele Vogelarten wie Wellensittiche, Nymphensittiche oder Papageien werden in Wohnungen gehalten. Damit</p>"
@@ -78,7 +78,8 @@ excerpt: "<p>So wird dein Zuhause zu einem sicheren Vogelparadies Viele Vogelart
 <li>Seile oder Schaukeln</li>
 </ul>
 <p>Diese Bereiche können gleichzeitig als Spiel- und Trainingsplatz dienen.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3703" src="/magazin/wp-content/uploads/2026/03/Voegel-in-der-Wohnung.compr_-1024x683.png" alt="Infografik: Vögel sicher in der Wohnung halten – Tipps zu Sicherheit und Raumgestaltung" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/03/Voegel-in-der-Wohnung.compr_-1024x683.png 1024w, /magazin/wp-content/uploads/2026/03/Voegel-in-der-Wohnung.compr_-300x200.png 300w, /magazin/wp-content/uploads/2026/03/Voegel-in-der-Wohnung.compr_-768x512.png 768w, /magazin/wp-content/uploads/2026/03/Voegel-in-der-Wohnung.compr_.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-schaubild.webp" alt="Freiflug: erst den Raum sichern; Fenster und Türen schließen; Glasscheiben sichtbar machen; Gefahren wegräumen" width="1536" height="1024" /></a></p>
+<!-- graphic-text-750 --><details><summary>Grafik als Text lesen</summary><ul><li>Fenster und Türen schließen</li><li>Glasscheiben sichtbar machen</li><li>Gefahren wegräumen</li></ul></details><!-- /graphic-text-750 -->
 <hr>
 <h2>Sauberkeit und Hygiene</h2>
 <p>Vögel produzieren Staub, Federn und Futterreste. Eine regelmäßige Reinigung der Umgebung sorgt nicht nur für Hygiene, sondern auch für eine bessere Luftqualität.</p>
@@ -100,3 +101,8 @@ excerpt: "<p>So wird dein Zuhause zu einem sicheren Vogelparadies Viele Vogelart
 <p>Eine durchdachte Raumgestaltung macht den Alltag für Vogel und Halter deutlich entspannter – und sorgt dafür, dass die Tiere gesund und aktiv bleiben.</p>
 <hr>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.tierschutzbund.de/tiere-themen/haustiere/andere-haustiere/wellensittiche/" target="_blank" rel="noopener noreferrer">www.tierschutzbund.de</a>, <a href="https://www.kreis-dueren.de/kreishaus/amt/amt39/aktuelles/ziervoegel_2024-05-31.php" target="_blank" rel="noopener noreferrer">www.kreis-dueren.de</a>.</p>
+<!-- /audit-visual-credit -->

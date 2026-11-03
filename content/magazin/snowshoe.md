@@ -4,11 +4,11 @@ slug: "snowshoe"
 type: page
 wpId: 1036
 published: "2020-03-16T19:08:42"
-updated: "2026-09-27T22:45:42"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/snowshoe-titelbild.jpg"
-imageAlt: "Snowshoe-Katze mit blauen Augen und weißen Pfoten"
+image: "/magazin/wp-content/uploads/2026/11/snowshoe-unter-dem-stuhl.webp"
+imageAlt: "Snowshoe mit blauen Augen, weißem Gesichts-V und weißen Pfoten tritt unter einem Holzstuhl hervor."
 seoTitle: "Snowshoe"
 description: "Du hast Fragen zu einer Snowshoe? Alles zu Herkunft, Charakter, Haltung, Pflege und Kosten liest du hier."
 excerpt: "<p>Schneeschuhkatzen (Snowshoe) sind mittelgroße Katzen, die aussehen, als würden sie eine Maske mit dunkleren Markierungen an Ohren, Beinen und Schwanz</p>"
@@ -59,3 +59,7 @@ Es ist wichtig, dass Sie Ihrer Katze auch die passende Futtermenge geben. So ble
 <p>Sie „redet“ gern, ist aber meist leiser als eine Siamkatze. Viele Halter beschreiben ihre Stimme als sanft und melodisch.</p>
 <h3>Was kostet eine Snowshoe-Katze?</h3>
 <p>Kitten vom Züchter kosten in der Regel zwischen 900 und 1.100 Euro. Da die Rasse in Deutschland selten ist, muss man oft mit Wartezeiten rechnen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -4,11 +4,11 @@ slug: "chausie"
 type: page
 wpId: 1146
 published: "2020-04-13T20:38:58"
-updated: "2026-09-27T22:45:41"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/chausie-titelbild.jpg"
-imageAlt: "Chausie-Katze mit wildkatzenähnlichem Aussehen"
+image: "/magazin/wp-content/uploads/2026/11/chausie-klettersteg.webp"
+imageAlt: "Chausie mit langen Beinen und braun geticktem Fell auf einem Klettersteg im gesicherten Freigehege."
 seoTitle: "Chausie"
 description: "Du willst mehr zu einer Chausie Katze wissen? Alles zu Charakter, Herkunft, Kosten, Haltung, geeigneter Ernährung und Aktivitäten liest du hier."
 excerpt: "<p>Die Chausie ist eine seltene Katze und gehört zu den Hybridrassen. Für diese Rasse wurden die Hauskatze und die Rohrkatze</p>"
@@ -63,3 +63,7 @@ excerpt: "<p>Die Chausie ist eine seltene Katze und gehört zu den Hybridrassen.
 <p>Für Tiere späterer Generationen in der Regel nicht. Bei frühen Hybridgenerationen (F1, F2) können je nach Bundesland Auflagen gelten – vor dem Kauf lohnt eine Nachfrage beim zuständigen Veterinäramt.</p>
 <h3>Was kostet eine Chausie?</h3>
 <p>Die Preise liegen je nach Generation und Züchter zwischen etwa 1.200 und 10.000 Euro. Frühe Generationen mit hohem Wildkatzenanteil sind am teuersten.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -4,7 +4,7 @@ slug: "heilige-birma"
 type: page
 wpId: 697
 published: "2019-12-20T21:15:18"
-updated: "2026-09-22T13:52:35"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Heilige-Birma.jpg"
@@ -28,7 +28,7 @@ excerpt: "<p>Die mysteriöse Heilige Birma ist eine liebenswerte und anmutige Sa
 <h2>Wesen und Charakter</h2>
 <p>Die Heilige Birma ist besonders menschenbezogen und bekannt für ihr sanftmütiges Wesen. Anders als andere Hauskatzen liebt sie Ruhe und ist nur mäßig aktiv – Unfug kommt ihr daher nur selten in den Sinn. Allerdings heißt dies noch lange nicht, dass diese Katzenrasse langweilig ist. Sie liebt es, ihre Umgebung zu erkunden und folgt ihren Lieblingsmenschen wie ein Schatten. In ihr finden sich zahlreiche Charakterzüge, die eine ideale Familienkatze ausmachen. Die Heilige Birma versteht sich nicht nur mit Kindern gut, sondern auch mit anderen Haustieren.</p>
 <p>Die Samtpfote ist äußerst gesellig, weshalb sie nur ungern alleine gehalten werden sollte. Für ein ausgeglichenes und gesundes Leben sollte sie unbedingt zusammen mit anderen Tieren – egal ob Katze oder Hund – gehalten werden. Auch Fremden gegenüber gilt die Heilige Birma als offen.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3359" src="/magazin/wp-content/uploads/2025/11/heilige-birma-683x1024.png" alt="heilige birma" width="683" height="1024" srcset="/magazin/wp-content/uploads/2025/11/heilige-birma-683x1024.png 683w, /magazin/wp-content/uploads/2025/11/heilige-birma-200x300.png 200w, /magazin/wp-content/uploads/2025/11/heilige-birma-768x1152.png 768w, /magazin/wp-content/uploads/2025/11/heilige-birma.png 1024w" sizes="(max-width: 683px) 100vw, 683px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/heilige-birma-naehpause.webp" alt="Heilige Birma mit blauen Augen und weißen Pfoten sitzt neben einer nähenden Frau auf dem Sofa." width="1536" height="1024" /></p>
 <h2>Herkunft &amp; Geschichte</h2>
 <p>Unzählige Legenden ranken sich um die Herkunft der mysteriösen Katze. So soll sie vor langer Zeit einem Hohepriester in einem Tempel gedient haben. An dessen Sterbebett sei die Seele des Priesters in sie gefahren und nahm ihr verehrungswürdiges Aussehen an. Diese Verwandlung wurde von vielen Menschen als Zeichen ihrer reinen Seele gedeutet – daher auch der Name „Heilige Birma“.</p>
 <p>Eine weitere Theorie besagt, dass die Katze durch die Zucht einer <a href="https://tierisch-verliebt.de/magazin/siamkatze/">Siam-</a> und <a href="https://tierisch-verliebt.de/magazin/perserkatze/">Perserkatze</a> im Jahr 1915 in Frankreich entstanden ist. Diese Kreuzung gilt als perfekter Mittelweg beider Katzenarten. Während des Zweiten Weltkriegs gewann die Heilige Birma immer mehr an Popularität und verbreitete sich schon bald in ganz Westeuropa.</p>
@@ -59,3 +59,7 @@ excerpt: "<p>Die mysteriöse Heilige Birma ist eine liebenswerte und anmutige Sa
 <p data-start="1449" data-end="1686">In der Regel ja. Die Birma ist geduldig, sanft und verspielt und passt damit gut zu Familien. Kinder sollten jedoch lernen, die Signale einer Katze zu respektieren und sie nicht zu bedrängen.</p>
 <h3 data-start="1688" data-end="1910"><strong data-start="1688" data-end="1747">Versteht sich die Heilige Birma mit anderen Haustieren?</strong></h3>
 <p data-start="1688" data-end="1910">Meist sehr gut. Sie ist friedlich und sucht Harmonie. Mit freundlich gesinnten Katzen, kleinen Hunden oder ruhigen Haustieren kann sie problemlos zusammenleben.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

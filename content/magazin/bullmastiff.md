@@ -4,7 +4,7 @@ slug: "bullmastiff"
 type: page
 wpId: 587
 published: "2019-11-11T08:02:17"
-updated: "2026-09-22T13:52:52"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Bullmastiff.jpg"
@@ -42,7 +42,7 @@ excerpt: "<p>Der britische Bullmastiff ist ein starker Freund und durch sein gem
 <p>Diese tollen Hunde lieben die Aktivität im Freien. Dabei sind sie mehr die Ausdauerläufer auf freiem Feld, denn Bergwanderer oder Extremsportler. Wer gerne draußen ist, vielleicht sogar beruflich viel im Freiland unterwegs ist, wird mit diesem Hund glücklich. Natürlich eignet sich ein Bullmastiff bei entsprechender Führung auch für eine Ausbildung zum Wach- oder Schutzhund. Ansonsten können Fährtensuche oder einfach nur ausgedehnte Spaziergänge für den Bullmastiff eine große Freude sein.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Für den Bullmastiff ist die ausgedehnte Beschäftigung mit einer Mahlzeit wichtig. Der Hund sollte neben dem üblichen Trocken- und Nassfutter auch Beschäftigungsfutter haben. Dazu eignen sich Knochen im Maßen, harte Kauartikel oder auch ein Futterball. Der Bullmastiff hat trotz seiner seriösen Erscheinung auch einen ausgeprägten Spieltrieb und Freude an der Erarbeitung einer Mahlzeit. Natürlich kommen auch größere Stücke Fleisch infrage. Je nach Überzeugung des Halters abgekocht oder auch roh.</p>
-<p><img decoding="async" class="alignnone wp-image-2742" src="/magazin/wp-content/uploads/2024/09/bullmastiff-essen.webp" alt="ernaehrung-bullmastiff" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/bullmastiff-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/bullmastiff-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/bullmastiff-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/bullmastiff-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/bullmastiff-futter-alltag.webp" alt="Bullmastiff wartet, während sein Mensch den Napf bereitstellt (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>Fellwechsel und Pflege</h2>
 <p>Das kurze Fell braucht kaum Pflege. Im Fellwechsel kann es angenehm sein, wenn der Halter ab und zu die kleinen feinen Härchen aus dem Fell bürstet. Bei sehr faltigen Hunden, sollte immer ein bisschen darauf geachtet werden, dass sich in der nassen Jahreszeit keine Feuchtigkeit oder in der warmen Jahreszeit Parasiten festsetzen. Gelegentlich und insbesondere im Alter begünstigt der Gang des Bullmastiffs das Wachstum einzelner Krallen, weswegen sie bei Bedarf gekürzt werden sollten.</p>
 <h2><img decoding="async" class="alignnone size-large wp-image-2060" src="/magazin/wp-content/uploads/2023/05/bullmastiff-2-1024x756.jpg" alt="bullmastiff" width="910" height="672" srcset="/magazin/wp-content/uploads/2023/05/bullmastiff-2-1024x756.jpg 1024w, /magazin/wp-content/uploads/2023/05/bullmastiff-2-300x222.jpg 300w, /magazin/wp-content/uploads/2023/05/bullmastiff-2-768x567.jpg 768w, /magazin/wp-content/uploads/2023/05/bullmastiff-2-1536x1134.jpg 1536w, /magazin/wp-content/uploads/2023/05/bullmastiff-2.jpg 1920w" sizes="(max-width: 910px) 100vw, 910px" /></h2>
@@ -63,3 +63,7 @@ excerpt: "<p>Der britische Bullmastiff ist ein starker Freund und durch sein gem
 <p>Bullmastiffs sind anfällig für Hüftdysplasie, Gelenkprobleme und Herzkrankheiten. Regelmäßige tierärztliche Kontrollen sind wichtig, um mögliche Probleme frühzeitig zu erkennen.</p>
 <p><strong>Wie verhält sich der Bullmastiff gegenüber Fremden?</strong></p>
 <p>Bullmastiffs sind von Natur aus wachsam und beschützend, was sie zu guten Wachhunden macht. Sie sind Fremden gegenüber zurückhaltend, aber nicht aggressiv, wenn sie gut sozialisiert wurden.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

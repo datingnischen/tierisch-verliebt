@@ -4,7 +4,7 @@ slug: "vogelkaefig-perfekt"
 type: post
 wpId: 3487
 published: "2026-02-16T08:20:20"
-updated: "2026-09-22T13:50:38"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/mariagodfrida-parakeets-956864_1280.compr_.jpg"
@@ -42,7 +42,8 @@ excerpt: "<p>Ein Vogelkäfig ist weit mehr als nur ein dekoratives Accessoire od
 <li>Kunststoffkäfige als dauerhafte Lösung</li>
 </ul>
 <p>Auch die Gitterabstände sollten zur Vogelgröße passen. Zu große Abstände können Verletzungen verursachen oder sogar Ausbruchsmöglichkeiten bieten.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3489" src="/magazin/wp-content/uploads/2026/02/voegel-kaefig.compr_-1024x683.png" alt="vögel käfig.compr." width="910" height="607" srcset="/magazin/wp-content/uploads/2026/02/voegel-kaefig.compr_-1024x683.png 1024w, /magazin/wp-content/uploads/2026/02/voegel-kaefig.compr_-300x200.png 300w, /magazin/wp-content/uploads/2026/02/voegel-kaefig.compr_-768x512.png 768w, /magazin/wp-content/uploads/2026/02/voegel-kaefig.compr_.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-perfekt-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-perfekt-schaubild.webp" alt="Eine gute Voliere lässt Platz zum Fliegen; Flugbahn frei halten; Naturäste versetzt anbringen; Futter und Wasser sauber halten; Rückzug ermöglichen" width="1536" height="1024" /></a></p>
+<!-- graphic-text-756 --><details><summary>Grafik als Text lesen</summary><ul><li>Flugbahn frei halten</li><li>Naturäste versetzt anbringen</li><li>Futter und Wasser sauber halten</li><li>Rückzug ermöglichen</li></ul></details><!-- /graphic-text-756 -->
 <hr>
 <h2>Die Innenausstattung nicht unterschätzen</h2>
 <p>Ein guter Käfig besteht nicht nur aus Gitter und Boden. Die Einrichtung trägt wesentlich zur Gesundheit und Beschäftigung bei.</p>
@@ -87,3 +88,8 @@ excerpt: "<p>Ein Vogelkäfig ist weit mehr als nur ein dekoratives Accessoire od
 <p><small>Bildquelle: https://pixabay.com/photos/parakeets-little-parrots-birds-pets-956864/</small>&gt;</p>
 <blockquote><p><strong>Tierfreunde verbinden</strong><br />
 Wer Vögel hält, weiß: Geduld, Verantwortung und Einfühlungsvermögen gehören zum Alltag. Genau diese Werte verbinden auch viele Singles auf <a href="/">Tierisch-Verliebt.de</a> &#8211; der Plattform für Menschen, die ihre Liebe zu Tieren teilen und Gleichgesinnte kennenlernen möchten.</p></blockquote>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.tierschutzbund.de/tiere-themen/haustiere/andere-haustiere/wellensittiche/" target="_blank" rel="noopener noreferrer">www.tierschutzbund.de</a>.</p>
+<!-- /audit-visual-credit -->

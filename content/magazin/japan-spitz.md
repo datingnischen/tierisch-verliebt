@@ -4,7 +4,7 @@ slug: "japan-spitz"
 type: page
 wpId: 2629
 published: "2024-02-12T12:01:58"
-updated: "2026-09-26T09:39:20"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/02/Japan-Spitz-4.jpg"
@@ -44,7 +44,7 @@ excerpt: "<p>Hunderassen gibt es wie Sand am Meer, wobei fast jede Nation landes
 <h2>Geeignete Ernährung für Japan Spitz</h2>
 <p>Probate Hundenahrung sollte überwiegend aus Fleisch bestehen. Es hat ebenso hochwertige Qualität zu besitzen wie das ergänzende <a href="https://tierisch-verliebt.de/magazin/obst-und-gemuese-die-die-hunde-essen/">Gemüse</a>. Zucker oder künstliche Zusatzstoffe sind zu vermeiden. Auch ein übertrieben hoher Getreideanteil wirkt sich negativ auf die Gesundheit des Hundes aus.</p>
 <p>Kaum weniger wichtig ist es, die vom Hersteller empfohlenen Mengenvorgaben nicht zu überschreiten. Leckereien sollten weitestgehend tabu sein. Der Japan Spitz dankt es seinem Halter mit fortgesetzter Gesundheit bis ins hohe Alter.</p>
-<p><img decoding="async" class="alignnone wp-image-2995" src="/magazin/wp-content/uploads/2025/02/ernaehrung-japan-spitz.webp" alt="ernaehrung-japan-spitz" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-japan-spitz.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-japan-spitz-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-japan-spitz-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-japan-spitz-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/japan-spitz-futter-alltag.webp" alt="Japan-Spitz geht entspannt auf einen schlichten Napf zu." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Wie verhält sich der Japan Spitz gegenüber Fremden?</h3>
 <p>Der Japan Spitz ist in der Regel freundlich, aber wachsam gegenüber Fremden.<br />
@@ -77,3 +77,7 @@ Diese Rasse ist bekannt für ihre Aufmerksamkeit &amp; Sensibilität gegenüber 
 Er liebt Kinder, ist leicht zu erziehen &amp; passt sich gut ans Familienleben an.<br />
 Er braucht genug Bewegung &amp; kann bellfreudig sein, daher ist Erziehung wichtig.<br />
 Mit der richtigen Pflege &amp; Erziehung ist er ein treuer &amp; liebevoller Begleiter!</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

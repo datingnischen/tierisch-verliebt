@@ -1,0 +1,784 @@
+[
+  {
+    "id": "268",
+    "oldAsset": "/magazin/wp-content/uploads/2025/01/ernaehrung-Deutsche-Dogge-1.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/deutsche-dogge-futter-alltag.webp",
+    "articles": [
+      "deutsche-dogge"
+    ],
+    "alt": "Deutsche Dogge wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird.",
+    "prompt": "Use case: photorealistic-natural. Create ONE landscape 3:2 candid documentary photograph for a dog care article. An adult fawn Great Dane with natural floppy ears stands relaxed in a modest utility room beside a plain empty stainless dog bowl, while a casually dressed adult at the edge of frame measures dry dog food into a small unbranded scoop. Natural window light, slightly imperfect everyday home, believable real fur, correct giant breed anatomy, no posing, all four legs clearly plausible. Ordinary pet care moment, no nutritional quantity recommendation. No text, logos, watermark, food displays, vegetables, meat piles, glossy advertising or plastic fur.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-e219dfb2-a681-4995-ae18-065f68a9e791.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 136668,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "274",
+    "oldAsset": "/magazin/wp-content/uploads/2025/01/ernaehrung-deutscher-schaeferhund.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/deutscher-schaeferhund-futter-alltag.webp",
+    "articles": [
+      "deutscher-schaeferhund"
+    ],
+    "alt": "Deutscher Schäferhund geht entspannt auf einen schlichten Napf zu.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for dog care article. Subject: adult black and tan German Shepherd, accurate breed anatomy and natural proportions. Dog walks calmly toward a plain ceramic feeding bowl on a washable mat in an ordinary apartment hallway, slight motion in one paw. Natural available light, candid ordinary domestic setting with small imperfections, believable textured fur, relaxed everyday interaction. Documentary photograph not glossy advertisement. No logos, text, watermark, food displays, meat or vegetable piles, ration recommendations, plastic beauty fur. All limbs anatomically credible. This is an illustrative AI scene, not a real community member.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-ee8d0e18-4817-42ca-a395-655b3310c85e.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 126646,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "283",
+    "oldAsset": "/magazin/wp-content/uploads/2025/01/ernaehrung-Dobermann-pinscher-1.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/dobermann-futter-alltag.webp",
+    "articles": [
+      "dobermann"
+    ],
+    "alt": "Dobermann ruht daneben, während ein Mensch den Metallnapf ausspült.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for dog care article. Subject: adult black and rust Doberman with natural floppy ears and long tail, accurate breed anatomy and natural proportions. Dog resting nearby while an adult at a low outdoor tap rinses a plain metal dog bowl in a modest paved backyard. Natural available light, candid ordinary domestic setting with small imperfections, believable textured fur, relaxed everyday interaction. Documentary photograph not glossy advertisement. No logos, text, watermark, food displays, meat or vegetable piles, ration recommendations, plastic beauty fur. All limbs anatomically credible. This is an illustrative AI scene, not a real community member.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-5f28e7d5-f00f-4cdc-a407-acbdc7b9306f.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 236382,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "288",
+    "oldAsset": "/magazin/wp-content/uploads/2025/01/ernaehrung-Dogo-Argentino.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/dogo-argentino-futter-alltag.webp",
+    "articles": [
+      "dogo-argentino"
+    ],
+    "alt": "Dogo Argentino frisst ruhig aus einem schlichten Napf im Wohnbereich.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for dog care article. Subject: adult white Dogo Argentino with natural floppy ears, accurate breed anatomy and natural proportions. Dog quietly eating from a plain shallow bowl in a simple home dining corner with worn timber floor, relaxed body posture. Natural available light, candid ordinary domestic setting with small imperfections, believable textured fur, relaxed everyday interaction. Documentary photograph not glossy advertisement. No logos, text, watermark, food displays, meat or vegetable piles, ration recommendations, plastic beauty fur. All limbs anatomically credible. This is an illustrative AI scene, not a real community member.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-1c470efe-fdd6-4635-8352-f1e423bd0ca5.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 114610,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "292",
+    "oldAsset": "/magazin/wp-content/uploads/2025/01/ernaehrung-dogo-canarion.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/dogo-canario-futter-alltag.webp",
+    "articles": [
+      "dogo-canario"
+    ],
+    "alt": "Dogo Canario wartet, während ein Mensch den Napf auf eine Unterlage stellt.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for dog care article. Subject: adult brindle Presa Canario with natural floppy ears, accurate breed anatomy and natural proportions. An adult crouches and sets a plain bowl down on a mat, dog patiently waiting nearby, ordinary covered porch. Natural available light, candid ordinary domestic setting with small imperfections, believable textured fur, relaxed everyday interaction. Documentary photograph not glossy advertisement. No logos, text, watermark, food displays, meat or vegetable piles, ration recommendations, plastic beauty fur. All limbs anatomically credible. This is an illustrative AI scene, not a real community member.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-30f319ae-fb7f-4661-be67-24a038029805.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 190382,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "303",
+    "oldAsset": "/magazin/wp-content/uploads/2025/01/ernaehrung-English-Bulldog.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/englische-bulldogge-futter-alltag.webp",
+    "articles": [
+      "englische-bulldogge"
+    ],
+    "alt": "Englische Bulldogge wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult white and brown English Bulldog with moderate facial folds, accurate breed anatomy and natural proportions. A casually dressed adult measures dry dog food in a small unbranded scoop, dog stands calmly beside empty plain metal bowl in a modest utility room. Change the home and person to feel unique: modest lived-in European home, varied muted clothing and everyday furniture. Natural available light, slightly imperfect candid framing, believable textured fur. No text, logos, watermark, food displays, raw food piles, advertising gloss, exaggerated perfect coat. All limbs anatomically credible. Illustrative AI dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-b4b14f7f-2fd9-4fbc-b394-62b3adc102d6.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 167082,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "315",
+    "oldAsset": "/magazin/wp-content/uploads/2025/01/ernaehrung-Finnishe-Lapphund.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/finnischer-lapphund-futter-alltag.webp",
+    "articles": [
+      "finnischer-lapphund"
+    ],
+    "alt": "Finnischer Lapphund geht entspannt auf einen schlichten Napf zu.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult black tan and cream Finnish Lapphund, accurate breed anatomy and natural proportions. Dog walks calmly toward a plain ceramic feeding bowl on a washable mat in an ordinary apartment hallway, slight motion in one paw. Change the home and person to feel unique: modest lived-in European home, varied muted clothing and everyday furniture. Natural available light, slightly imperfect candid framing, believable textured fur. No text, logos, watermark, food displays, raw food piles, advertising gloss, exaggerated perfect coat. All limbs anatomically credible. Illustrative AI dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-bdba7f89-56c9-40ef-9209-bc8d91ad88a3.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 108576,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "320",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-franzoesische-Bulldogge.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/franzoesische-bulldogge-futter-alltag.webp",
+    "articles": [
+      "franzoesische-bulldogge"
+    ],
+    "alt": "Französische Bulldogge ruht daneben, während ein Mensch den Metallnapf ausspült.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult fawn French Bulldog, accurate breed anatomy and natural proportions. Dog resting nearby while an adult at a low outdoor tap rinses a plain metal dog bowl in a modest paved backyard. Change the home and person to feel unique: modest lived-in European home, varied muted clothing and everyday furniture. Natural available light, slightly imperfect candid framing, believable textured fur. No text, logos, watermark, food displays, raw food piles, advertising gloss, exaggerated perfect coat. All limbs anatomically credible. Illustrative AI dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-14773e81-86d0-4a75-b10d-9b0a9494c094.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 250358,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "329",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Galgo-Espanol.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/galgo-espanol-futter-alltag.webp",
+    "articles": [
+      "galgo-espanol"
+    ],
+    "alt": "Galgo Español frisst ruhig aus einem schlichten Napf im Wohnbereich.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult slender brindle Galgo Espanol, accurate breed anatomy and natural proportions. Dog quietly eating from a plain shallow bowl in a simple home dining corner with worn timber floor, relaxed body posture. Change the home and person to feel unique: modest lived-in European home, varied muted clothing and everyday furniture. Natural available light, slightly imperfect candid framing, believable textured fur. No text, logos, watermark, food displays, raw food piles, advertising gloss, exaggerated perfect coat. All limbs anatomically credible. Illustrative AI dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-879e8812-ca98-49d8-bbed-eaed3171ea30.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 164100,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "340",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Golden-Retriever.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/golden-retriever-futter-alltag.webp",
+    "articles": [
+      "golden-retriever"
+    ],
+    "alt": "Golden Retriever wartet, während ein Mensch den Napf auf eine Unterlage stellt.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult golden Golden Retriever, accurate breed anatomy and natural proportions. An adult crouches and sets a plain bowl down on a mat, dog patiently waiting nearby, ordinary covered porch. Change the home and person to feel unique: modest lived-in European home, varied muted clothing and everyday furniture. Natural available light, slightly imperfect candid framing, believable textured fur. No text, logos, watermark, food displays, raw food piles, advertising gloss, exaggerated perfect coat. All limbs anatomically credible. Illustrative AI dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-6b9452d7-5570-4de2-ac5e-5c88c4c8617f.png",
+      "editPrompt": "Edit this photograph only: remove the tiny intruding blue sleeve and hand at the extreme lower right edge and fill that small corner naturally with the existing porch floor and mat. Preserve the Golden Retriever, woman placing the bowl, lighting, composition, photorealistic documentary textures and all other details exactly. No text or logos."
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 198332,
+        "quality": 82
+      },
+      "repair": "Kleine angeschnittene Fremdhand am rechten Rand per imagegen entfernt und erneut visuell geprüft."
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "369",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Havanese.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/havaneser-futter-alltag.webp",
+    "articles": [
+      "havaneser"
+    ],
+    "alt": "Havaneser wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for a dog care article. Adult cream Havanese with natural slightly untidy coat, correct breed proportions. A casually dressed adult measures dry dog food in a small unbranded scoop, dog stands calmly beside empty plain metal bowl in a modest utility room. Human is an older grey-haired man wearing a faded green shirt. Simple lived-in suburban home in Germany, plain walls, no styled decorative objects. Natural diffused light, ordinary slightly imperfect documentary photography, real fur detail, credible anatomy. No logos, text, watermark, food mountains, raw meat displays, posed glamour, plastic fur. Not a real member portrait; symbolic dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-488454c9-5ad9-41c5-b925-5536d4220b9b.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 140294,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "380",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Hokkaido-Inu.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/hokkaido-inu-futter-alltag.webp",
+    "articles": [
+      "hokkaido-inu"
+    ],
+    "alt": "Hokkaido Inu geht entspannt auf einen schlichten Napf zu.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for a dog care article. Adult red Hokkaido Inu, correct breed proportions. Dog walks calmly toward a plain ceramic feeding bowl on a washable mat in an ordinary apartment hallway, slight motion in one paw. No people visible. Simple lived-in suburban home in Germany, plain walls, no styled decorative objects. Natural diffused light, ordinary slightly imperfect documentary photography, real fur detail, credible anatomy. No logos, text, watermark, food mountains, raw meat displays, posed glamour, plastic fur. Not a real member portrait; symbolic dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-02c2a0b4-12b3-45ba-a605-e5751e18bfa8.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 112772,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "383",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Hovawart.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/hovawart-futter-alltag.webp",
+    "articles": [
+      "hovawart"
+    ],
+    "alt": "Hovawart ruht daneben, während ein Mensch den Metallnapf ausspült.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for a dog care article. Adult black and tan Hovawart, correct breed proportions. Dog resting nearby while an adult at a low outdoor tap rinses a plain metal dog bowl in a modest paved backyard. Human is a middle-aged man in blue work trousers. Simple lived-in suburban home in Germany, plain walls, no styled decorative objects. Natural diffused light, ordinary slightly imperfect documentary photography, real fur detail, credible anatomy. No logos, text, watermark, food mountains, raw meat displays, posed glamour, plastic fur. Not a real member portrait; symbolic dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-8ff7ced8-dd2f-4363-8396-02f1f2cd1cd6.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 283620,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "410",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Siberian-Husky.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/husky-das-portrait-futter-alltag.webp",
+    "articles": [
+      "husky-das-portrait"
+    ],
+    "alt": "Sibirischer Husky frisst ruhig aus einem schlichten Napf im Wohnbereich.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for a dog care article. Adult grey and white Siberian Husky, correct breed proportions. Dog quietly eating from a plain shallow bowl in a simple home dining corner with worn timber floor, relaxed body posture. No people visible. Simple lived-in suburban home in Germany, plain walls, no styled decorative objects. Natural diffused light, ordinary slightly imperfect documentary photography, real fur detail, credible anatomy. No logos, text, watermark, food mountains, raw meat displays, posed glamour, plastic fur. Not a real member portrait; symbolic dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-af3fb325-56e9-4bfc-855e-1bfa52ac4989.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 158110,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "416",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-irischer-wolfshund.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/irischer-wolfshund-futter-alltag.webp",
+    "articles": [
+      "irischer-wolfshund"
+    ],
+    "alt": "Irischer Wolfshund wartet, während ein Mensch den Napf auf eine Unterlage stellt.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph for a dog care article. Adult grey rough-coated Irish Wolfhound, correct breed proportions. An adult crouches and sets a plain bowl down on a mat, dog patiently waiting nearby, ordinary covered porch. Human is an older woman with short grey hair wearing a practical blue jacket. Simple lived-in suburban home in Germany, plain walls, no styled decorative objects. Natural diffused light, ordinary slightly imperfect documentary photography, real fur detail, credible anatomy. No logos, text, watermark, food mountains, raw meat displays, posed glamour, plastic fur. Not a real member portrait; symbolic dog care scene.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-b7f2bd9c-9621-4686-9bcc-a63f079020b8.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 221822,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "421",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-jack-russel.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/jack-russell-terrier-futter-alltag.webp",
+    "articles": [
+      "jack-russell-terrier"
+    ],
+    "alt": "Jack Russell Terrier wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult white and tan Jack Russell Terrier, accurate breed anatomy and realistic proportions. A casually dressed adult measures dry dog food in a small unbranded scoop, dog stands calmly beside empty plain metal bowl in a modest utility room. Human is a young man in a simple red plaid shirt. Modest lived-in everyday home, simple functional furnishings, unstaged documentary moment with natural soft daylight, real textured fur and ordinary imperfections. No text, logos, watermark, glossy advertising, stylized perfect kitchen, raw food display, vegetable piles. Correct four-legged dog anatomy and natural hands. Symbolic AI scene for pet care, not actual community members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-78101782-4efa-42cb-bd40-ab7462b7ada9.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 150778,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "429",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-japan-spitz.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/japan-spitz-futter-alltag.webp",
+    "articles": [
+      "japan-spitz"
+    ],
+    "alt": "Japan-Spitz geht entspannt auf einen schlichten Napf zu.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult white Japanese Spitz, accurate breed anatomy and realistic proportions. Dog walks calmly toward a plain ceramic feeding bowl on a washable mat in an ordinary apartment hallway, slight motion in one paw. No human in picture. Modest lived-in everyday home, simple functional furnishings, unstaged documentary moment with natural soft daylight, real textured fur and ordinary imperfections. No text, logos, watermark, glossy advertising, stylized perfect kitchen, raw food display, vegetable piles. Correct four-legged dog anatomy and natural hands. Symbolic AI scene for pet care, not actual community members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-e8aff1f9-9afa-436f-a15e-35e8ac07a518.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 77658,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "439",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Japanese-Chin-dog.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/japanischer-chin-futter-alltag.webp",
+    "articles": [
+      "japanischer-chin"
+    ],
+    "alt": "Japanischer Chin ruht daneben, während ein Mensch den Metallnapf ausspült.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult black and white Japanese Chin, accurate breed anatomy and realistic proportions. Dog resting nearby while an adult at a low outdoor tap rinses a plain metal dog bowl in a modest paved backyard. Human is a middle-aged woman with short dark hair wearing simple grey sweatshirt. Modest lived-in everyday home, simple functional furnishings, unstaged documentary moment with natural soft daylight, real textured fur and ordinary imperfections. No text, logos, watermark, glossy advertising, stylized perfect kitchen, raw food display, vegetable piles. Correct four-legged dog anatomy and natural hands. Symbolic AI scene for pet care, not actual community members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-9f53fa74-3570-4f13-ad7c-9749a06554ce.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 279552,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "451",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Kangal.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/kangal-futter-alltag.webp",
+    "articles": [
+      "kangal"
+    ],
+    "alt": "Kangal frisst ruhig aus einem schlichten Napf im Wohnbereich.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult fawn Kangal with black mask, accurate breed anatomy and realistic proportions. Dog quietly eating from a plain shallow bowl in a simple home dining corner with worn timber floor, relaxed body posture. No human in picture. Modest lived-in everyday home, simple functional furnishings, unstaged documentary moment with natural soft daylight, real textured fur and ordinary imperfections. No text, logos, watermark, glossy advertising, stylized perfect kitchen, raw food display, vegetable piles. Correct four-legged dog anatomy and natural hands. Symbolic AI scene for pet care, not actual community members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-9e9af784-98a1-4cad-99a2-f50203b99be9.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 193230,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "477",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Komondor.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/komondor-futter-alltag.webp",
+    "articles": [
+      "komondor"
+    ],
+    "alt": "Komondor wartet, während ein Mensch den Napf auf eine Unterlage stellt.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid editorial photograph. Subject adult white corded Komondor, accurate breed anatomy and realistic proportions. An adult crouches and sets a plain bowl down on a mat, dog patiently waiting nearby, ordinary covered porch. Human is a middle-aged man in a brown sweater. Modest lived-in everyday home, simple functional furnishings, unstaged documentary moment with natural soft daylight, real textured fur and ordinary imperfections. No text, logos, watermark, glossy advertising, stylized perfect kitchen, raw food display, vegetable piles. Correct four-legged dog anatomy and natural hands. Symbolic AI scene for pet care, not actual community members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-99fedfe4-961d-4dca-a970-918e4f826a07.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 217530,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "485",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Labrador-Retriever.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/labrador-retriever-futter-alltag.webp",
+    "articles": [
+      "labrador-retriever"
+    ],
+    "alt": "Labrador Retriever wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid documentary photograph for dog care article. Adult black Labrador Retriever, true breed anatomy, natural healthy proportions. A casually dressed adult measures dry dog food in a small unbranded scoop, dog stands calmly beside empty plain metal bowl in a modest utility room. Adult is an older bald man in a blue checked shirt. Ordinary small European house or apartment, functional rather than styled, authentic everyday domestic moment, soft available daylight, realistic fur texture and anatomically sound limbs. No text, logo, watermark, perfect glamorous kitchen, commercial polish, food displays, raw food piles or ration recommendations. AI symbolic scene, no real members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-91c447ea-1480-4b6c-865c-2668fde30c4c.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 156730,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "493",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-leonberger.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/leonberger-futter-alltag.webp",
+    "articles": [
+      "leonberger"
+    ],
+    "alt": "Leonberger geht entspannt auf einen schlichten Napf zu.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid documentary photograph for dog care article. Adult tawny Leonberger with black mask, true breed anatomy, natural healthy proportions. Dog walks calmly toward a plain ceramic feeding bowl on a washable mat in an ordinary apartment hallway, slight motion in one paw. No human visible. Ordinary small European house or apartment, functional rather than styled, authentic everyday domestic moment, soft available daylight, realistic fur texture and anatomically sound limbs. No text, logo, watermark, perfect glamorous kitchen, commercial polish, food displays, raw food piles or ration recommendations. AI symbolic scene, no real members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-c83d6228-206b-48b6-b147-72f14069ed3e.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 81516,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "502",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Magyar-Vizsla.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/magyar-vizsla-futter-alltag.webp",
+    "articles": [
+      "magyar-vizsla"
+    ],
+    "alt": "Magyar Vizsla ruht daneben, während ein Mensch den Metallnapf ausspült.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid documentary photograph for dog care article. Adult rust coloured Hungarian Vizsla, true breed anatomy, natural healthy proportions. Dog resting nearby while an adult at a low outdoor tap rinses a plain metal dog bowl in a modest paved backyard. Adult is a woman with tied-back auburn hair, simple dark green jacket. Ordinary small European house or apartment, functional rather than styled, authentic everyday domestic moment, soft available daylight, realistic fur texture and anatomically sound limbs. No text, logo, watermark, perfect glamorous kitchen, commercial polish, food displays, raw food piles or ration recommendations. AI symbolic scene, no real members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-a0d6fd36-c0cb-4593-b0dd-1009d50d4b6d.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 237584,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "516",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Belgian-Malinois.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/malinois-futter-alltag.webp",
+    "articles": [
+      "malinois"
+    ],
+    "alt": "Malinois frisst ruhig aus einem schlichten Napf im Wohnbereich.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid documentary photograph for dog care article. Adult fawn Belgian Malinois with black mask, true breed anatomy, natural healthy proportions. Dog quietly eating from a plain shallow bowl in a simple home dining corner with worn timber floor, relaxed body posture. No human visible. Ordinary small European house or apartment, functional rather than styled, authentic everyday domestic moment, soft available daylight, realistic fur texture and anatomically sound limbs. No text, logo, watermark, perfect glamorous kitchen, commercial polish, food displays, raw food piles or ration recommendations. AI symbolic scene, no real members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-e6af22d6-bd26-4c73-9333-7c3a050f603d.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 138450,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "521",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-Malteser.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/malteser-futter-alltag.webp",
+    "articles": [
+      "malteser"
+    ],
+    "alt": "Malteser wartet, während ein Mensch den Napf auf eine Unterlage stellt.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid documentary photograph for dog care article. Adult white Maltese with practical short pet coat, true breed anatomy, natural healthy proportions. An adult crouches and sets a plain bowl down on a mat, dog patiently waiting nearby, ordinary covered porch. Adult is a young man wearing a plain navy sweatshirt. Ordinary small European house or apartment, functional rather than styled, authentic everyday domestic moment, soft available daylight, realistic fur texture and anatomically sound limbs. No text, logo, watermark, perfect glamorous kitchen, commercial polish, food displays, raw food piles or ration recommendations. AI symbolic scene, no real members.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-ab987b13-3108-4318-9ed0-f4e217812890.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 162202,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  },
+  {
+    "id": "607",
+    "oldAsset": "/magazin/wp-content/uploads/2025/02/ernaehrung-kaukasian-owtscharka.webp",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/portrait-zu-hunderasse-kaukasischer-owtscharka-futter-alltag.webp",
+    "articles": [
+      "portrait-zu-hunderasse-kaukasischer-owtscharka"
+    ],
+    "alt": "Kaukasischer Owtscharka wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird.",
+    "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 candid documentary photograph for a dog care article. A very large adult grey and cream Caucasian Shepherd (Caucasian Ovcharka) with natural floppy ears and thick realistically slightly untidy double coat stands relaxed next to a plain empty steel dog bowl. A middle-aged woman in a faded burgundy sweatshirt measures dry food using a small unbranded scoop from a closed-lid plastic food container in a simple tiled utility room. Correct powerful but healthy breed proportions, four anatomically plausible legs, soft window light, ordinary practical home, no stylized decor. No logos, text, watermarks, food piles, raw food displays, glamorous perfect coat or advertising polish. Symbolic AI scene, no actual community member.",
+    "generatorSource": {
+      "tool": "built-in image_gen",
+      "mode": "photorealistic-natural",
+      "originalPath": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-729d-7a62-ad01-a3c793dc437f\\exec-60466a97-5251-47e6-aab1-47a6a23a5319.png"
+    },
+    "checks": {
+      "visual": "Visuell geprüft: erkennbare Rasse, plausible Anatomie, natürliche Felltextur, ruhige Alltagsszene, keine Logos oder Schrift.",
+      "originalNotOverwritten": true,
+      "format": {
+        "format": "webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 187156,
+        "quality": 82
+      }
+    },
+    "limitations": [
+      "KI-generiertes Symbolbild; keine echten Mitglieder.",
+      "Keine Futtermenge oder Fütterungsempfehlung aus der dargestellten Situation ableiten."
+    ]
+  }
+]

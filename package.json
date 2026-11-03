@@ -13,6 +13,7 @@
     "#wp-rest-compat": "./lib/wp-rest-compat.ts",
     "#magazine-faq": "./lib/magazine-faq.ts",
     "#magazine-store": "./lib/magazine-store.ts",
+    "#collapse-sources": "./lib/collapse-sources.ts",
     "#static-asset": "./lib/static-asset.ts",
     "#wp-rest-paths": "./lib/wp-rest-paths.ts",
     "#teaser-image": "./lib/teaser-image.ts",

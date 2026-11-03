@@ -4,7 +4,7 @@ slug: "alano"
 type: page
 wpId: 1418
 published: "2020-11-25T18:46:32"
-updated: "2026-09-26T12:48:13"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/11/Alano.jpg"
@@ -42,7 +42,7 @@ excerpt: "<p>Der Alano, in Deutschland auch oft als Spanische Dogge bezeichnet, 
 <p>Keinesfalls ist dieser Hund dafür geeignet, mit ins Büro genommen zu werden und dort stundenlang still zu sitzen. U-Bahn und S-Bahn sind nichts für den Alano. Ein solches Umfeld oder lange Spaziergänge im Großstadtdschungel machen ihn reizbar und er wittert Gefahr.</p>
 <h2>Die richtige Ernährung für Alano</h2>
 <p>Der Alano hat einen großen Bewegungsdrang und eine starke Muskulatur. Dementsprechend groß ist sein Nährstoffbedarf. Er sollte stets fleischhaltig ernährt werden. Hochwertiges Nassfutter ist vorzuziehen. Trockenfutter und Billigfutter mit einem hohen Anteil an Rohasche, <a title="Getreidefreies Futter für den Hund – Ja oder Nein?" href="https://tierisch-verliebt.de/magazin/getreidefreies-futter/">Getreide </a>und tierischen Abfällen stellen kein hochwertiges Futter dar, auch wenn der Alano nicht zu Allergien und Futterunverträglichkeiten neigt. Natürlich muss dem Tier auch genügend Wasser zur Verfügung gestellt werden.</p>
-<p><img decoding="async" class="alignnone wp-image-2868 " src="/magazin/wp-content/uploads/2025/01/Alano-Espanol-beim-Essen.webp" alt="ernaehrung-alano" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/Alano-Espanol-beim-Essen.webp 1024w, /magazin/wp-content/uploads/2025/01/Alano-Espanol-beim-Essen-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/Alano-Espanol-beim-Essen-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/Alano-Espanol-beim-Essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/alano-futter-alltag.webp" alt="Alano Español geht zu einem bereitgestellten Futternapf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>Überlegungen vor der Anschaffung</h2>
 <p>Das Portrait des Alano zeigt eine kraftvolle und charakterstarke Hunderasse, die sich durch ihre Loyalität, Ausdauer und Schutzinstinkt auszeichnet und besonders für erfahrene Halter geeignet ist. Der Alano ist ein Hund, der gern in freier Natur ist und nach dem Austoben Zugang zum Haus und zur Nähe seiner Menschen braucht. Er benötigt viel Bewegung und Beschäftigung. Wer einen solchen Hund bei sich zu Hause aufnehmen möchte, muss dafür Sorge tragen, dass das Tier stets genug Auslauf hat, die Besitzer sollten selbst gut zu Fuß sein und viel Zeit haben, sich mit ihrem Hund zu beschäftigen. Erfahrungen in der Hundehaltung sind zwingend erforderlich.</p>
 <p>Wer das erste Mal einen Hund bei sich aufnehmen möchte, kann durch die Dominanz eines Alanos schnell überfordert sein. Außerdem ist unbedingt darauf zu achten, dass der Hund aus den Händen eines Züchters kommt, der seine Tiere einer Wesensprüfung unterzieht. Dabei werden die Hunde auf ihre Reaktion in Ruhe und in Reizsituationen überprüft. Auf gar keinen Fall sollte man einen Hund dieser Rasse von unseriösen Züchtern kaufen.</p>
@@ -60,3 +60,7 @@ excerpt: "<p>Der Alano, in Deutschland auch oft als Spanische Dogge bezeichnet, 
 <p>Die Fellpflege des Alano ist relativ unkompliziert und daher wenig zeitaufwendig. Diese Hunderasse hat ein kurzes, dichtes Fell, das keine besondere Pflege erfordert, aber trotzdem regelmäßig gepflegt werden sollte, um die Gesundheit der Haut und des Fells zu erhalten. Für Halter, die wenig Zeit in die Pflege investieren möchten, ist dies ein klarer Vorteil.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

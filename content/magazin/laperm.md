@@ -4,11 +4,11 @@ slug: "laperm"
 type: page
 wpId: 1141
 published: "2020-04-09T20:58:19"
-updated: "2026-09-26T00:54:50"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/laperm-titelbild.jpg"
-imageAlt: "LaPerm-Katze mit lockigem Fell"
+image: "/magazin/wp-content/uploads/2026/11/laperm-waeschekorb.webp"
+imageAlt: "LaPerm mit locker gelocktem Fell sitzt am Rand eines Wäschekorbs."
 seoTitle: "LaPerm"
 description: "Du hast Fragen zu einer LaPerm Katze? Alles zu Charakter, Herkunft, Kosten, Haltung, geeigneter Ernährung und Aktivitäten liest du hier."
 excerpt: "<p>Die Katzenrasse LaPerm ist noch eine ziemlich junge Rasse. Ihre Entstehung verdankt sei einer eher zufälligen Mutation der Gene. Die</p>"
@@ -118,3 +118,7 @@ excerpt: "<p>Die Katzenrasse LaPerm ist noch eine ziemlich junge Rasse. Ihre Ent
 <p data-start="2889" data-end="2992">empfindliche Hautpartien aufgrund der Lockenstruktur<br data-start="2941" data-end="2944">Regelmäßige Tierarztchecks sind dennoch wichtig.</p>
 </li>
 </ul>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

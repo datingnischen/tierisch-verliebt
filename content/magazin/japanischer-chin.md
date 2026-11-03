@@ -4,7 +4,7 @@ slug: "japanischer-chin"
 type: page
 wpId: 2622
 published: "2024-01-16T15:32:06"
-updated: "2026-09-22T13:50:51"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/01/dog-3663651_1280.jpg"
@@ -64,7 +64,7 @@ excerpt: "<p>Japanische Hunde wie der Japan Chin galten viele Jahrhunderte als S
 <li>Als zusätzlicher Bestandteil eignet sich Gemüse, wohingegen Zucker, Geschmacksverstärker und Konservierungsmittel zu meiden sind.</li>
 <li>Japanische Chins benötigen aufgrund ihrer geringen Größe nur kleine Futterportionen, um Übergewicht zu vermeiden.</li>
 </ul>
-<p><img decoding="async" class="alignnone wp-image-2998" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Japanese-Chin-dog.webp" alt="ernaehrung-japan-chin" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Japanese-Chin-dog.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Japanese-Chin-dog-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Japanese-Chin-dog-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Japanese-Chin-dog-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/japanischer-chin-futter-alltag.webp" alt="Japanischer Chin ruht daneben, während ein Mensch den Metallnapf ausspült." width="1536" height="1024" /></p>
 <h2>Fazit: ein loyaler Schoßhund auch für Anfänger</h2>
 <p>Der Japanische Chin ist aufgrund seiner Größe und des ruhigen Wesens der ideale Hund für Anfänger und Menschen mit wenig Bewegungsdrang wie beispielsweise Senioren.</p>
 <h2>FAQ</h2>
@@ -88,3 +88,7 @@ Dank seines freundlichen, ruhigen &amp; sozialen Wesens kommt er gut mit Hunden,
 <p>Nein, der Japan Chin gehört nicht zu den bellfreudigen Hunden.<br />
 Er ist eine ruhige, ausgeglichene Rasse, die selten ohne Grund bellt. Allerdings kann er in bestimmten Situationen zum Bellen neigen. Er meldet Fremde oder Ungewöhnliches gelegentlich, aber übertreibt es nicht. Er kann bellen, wenn er alleine ist oder Aufmerksamkeit möchte – das kann trainiert werden. Mit der richtigen Erziehung bleibt der Japan Chin ein ruhiger, angenehmer Begleiter!</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

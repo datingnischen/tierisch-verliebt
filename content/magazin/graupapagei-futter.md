@@ -4,7 +4,7 @@ slug: "graupapagei-futter"
 type: post
 wpId: 3530
 published: "2026-03-02T00:18:40"
-updated: "2026-09-26T00:54:43"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/7551044-parrot-4650474_1280.compr_.jpg"
@@ -18,8 +18,8 @@ excerpt: "<p>So bleibt dein Graupapagei gesund, aktiv und ausgeglichen Der Graup
 <p>Der Graupapagei gehört zu den intelligentesten und sensibelsten Papageienarten. Seine Ernährung spielt eine entscheidende Rolle für Gesundheit, Gefiederqualität, Immunsystem und Verhalten. Gerade Graupapageien neigen bei falscher Fütterung zu Mangelerscheinungen, Übergewicht oder Kalziummangel – deshalb ist ein ausgewogener Futterplan besonders wichtig.</p>
 <p>Wer seinen Graupapagei richtig ernährt, investiert in ein langes, vitales Leben.</p>
 <hr>
-<h2>Die Basis: Frisches Gemüse als Hauptbestandteil</h2>
-<p>Graupapageien sollten überwiegend pflanzlich und abwechslungsreich ernährt werden. Der größte Anteil der täglichen Fütterung sollte aus frischem Gemüse bestehen (ca. 60–70 %).</p>
+<h2>Abwechslungsreiche Ernährung individuell planen</h2>
+<p>Graupapageien brauchen eine abwechslungsreiche, bedarfsgerechte Ration. Die Universität Leipzig beschreibt Samen und Sämereien beziehungsweise geeignete Pellets als Grundfutter, ergänzt durch Gemüse, Grünfutter und Obst. Eine allgemeine Gemüse-Prozentformel ersetzt keinen abgestimmten Futterplan.</p>
 <p>Geeignet sind:</p>
 <ul>
 <li>Karotten</li>
@@ -34,7 +34,7 @@ excerpt: "<p>So bleibt dein Graupapagei gesund, aktiv und ausgeglichen Der Graup
 <p>Gemüse liefert wichtige Vitamine, Mineralstoffe und Ballaststoffe – und sorgt gleichzeitig für Beschäftigung.</p>
 <hr>
 <h2>Obst nur in Maßen</h2>
-<p>Obst enthält natürlichen Zucker und sollte deshalb nur ergänzend gefüttert werden (ca. 20–30 % der Frischkost).</p>
+<p>Obst gehört in den abgestimmten Futterplan und sollte die übrigen Bestandteile nicht verdrängen. Die passende Menge hängt von der Gesamtration und vom einzelnen Vogel ab.</p>
 <p>Geeignet sind:</p>
 <ul>
 <li>Apfel (ohne Kerne)</li>
@@ -46,7 +46,7 @@ excerpt: "<p>So bleibt dein Graupapagei gesund, aktiv und ausgeglichen Der Graup
 <p>Zu viel Obst kann zu Übergewicht und Stoffwechselproblemen führen.</p>
 <hr>
 <h2>Körnermischungen und Pellets – sinnvoll dosieren</h2>
-<p>Graupapageien sind keine reinen Körnerfresser. Hochwertige Körnermischungen sollten nur einen kleinen Teil der täglichen Ernährung ausmachen.</p>
+<p>Saaten können zur Ration gehören, eine einseitige Auswahl bevorzugter Körner ist jedoch zu vermeiden. Ob eine geeignete Mischung oder formulierte Pellets besser passen, sollte mit einer vogelkundigen Praxis besprochen werden.</p>
 <p>Wichtig:</p>
 <ul>
 <li>Geringer Sonnenblumenkern-Anteil</li>
@@ -54,7 +54,8 @@ excerpt: "<p>So bleibt dein Graupapagei gesund, aktiv und ausgeglichen Der Graup
 <li>Gute Qualität und frische Ware</li>
 </ul>
 <p>Pellets können helfen, Nährstoffmängel zu vermeiden, sollten aber ebenfalls nicht die alleinige Futterquelle sein. Frischfutter bleibt unverzichtbar.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3773" src="/magazin/wp-content/uploads/2026/09/graupapagei-futter-infografik-1024x683.png" alt="Infografik: Ernährungsplan und Tipps für Graupapageien" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/09/graupapagei-futter-infografik-1024x683.png 1024w, /magazin/wp-content/uploads/2026/09/graupapagei-futter-infografik-300x200.png 300w, /magazin/wp-content/uploads/2026/09/graupapagei-futter-infografik-768x512.png 768w, /magazin/wp-content/uploads/2026/09/graupapagei-futter-infografik.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/graupapagei-futter-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/graupapagei-futter-schaubild.webp" alt="Graupapageien abwechslungsreich füttern; Passendes Grundfutter; Gemüse und Grünfutter; Obst als Ergänzung; Wasser täglich frisch" width="1536" height="1024" /></a></p>
+<!-- graphic-text-343 --><details><summary>Grafik als Text lesen</summary><ul><li>Passendes Grundfutter</li><li>Gemüse und Grünfutter</li><li>Obst als Ergänzung</li><li>Wasser täglich frisch</li></ul></details><!-- /graphic-text-343 -->
 <hr>
 <h2>Kalzium – besonders wichtig für Graupapageien</h2>
 <p>Graupapageien haben einen erhöhten Kalziumbedarf und neigen zu Kalziummangel (Hypokalzämie).</p>
@@ -117,3 +118,8 @@ Hochwertige Körnermischung oder Pellets</li>
 <p>Eine artgerechte Ernährung fördert nicht nur die Gesundheit, sondern auch das psychische Wohlbefinden dieses sensiblen und intelligenten Vogels.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/parrot-gray-african-gray-parrot-4650474/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.vetmed.uni-leipzig.de/fileadmin/Fakult%C3%A4t_VMF/Klinik_V%C3%B6gel_Reptilien/Flyer/F%C3%BCtterungsempfehlungen_Graupapagei_200618.pdf" target="_blank" rel="noopener noreferrer">www.vetmed.uni-leipzig.de</a>.</p>
+<!-- /audit-visual-credit -->

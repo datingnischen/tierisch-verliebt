@@ -4,7 +4,7 @@ slug: "duitse-herder"
 type: page
 wpId: 282
 published: "2019-10-04T13:11:56"
-updated: "2026-09-22T13:51:08"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/deutscher-schaeferhund.jpg"
@@ -35,7 +35,7 @@ locale: "nl-NL"
 <h2>Herkomst en geschiedenis</h2>
 <p>De Duitse herder komt uit Duitsland. Daar werden lang verschillende typen herdershonden gehouden, die robuust, gehoorzaam en geconcentreerd moesten zijn en goed moesten kunnen hoeden. Het ras zelf ontstond eind 19e eeuw: in 1899 werd de rasvereniging Verein für Deutsche Schäferhunde opgericht, onder meer op voorstel van Max von Stephanitz. De Duitse herder werd al tijdens de Eerste Wereldoorlog als helper ingezet. Hij zocht toen gewonde soldaten en werd gewaardeerd als boodschapperhond en als bron van troost.</p>
 <p>Ook vroeger was hij al een betrouwbare beschermingshond die huis en erf bewaakte. Zo begon zijn loopbaan van oorlogshulp tot diensthond. Tegenwoordig is de Duitse herder als diensthond bij politie en douane onmisbaar. Ook bij schaapherders is hij een geliefde werk- en herdershond die met zijn grote &#8220;will to please&#8221; zijn baasje graag helpt bij het werk.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2575" src="/magazin/wp-content/uploads/2023/12/frau-mit-german-schepherd.png" alt="Vrouw met een Duitse herder" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/deutscher-schaeferhund-waldpause.webp" alt="Een Duitse herder in een alledaagse situatie met zijn verzorger." width="1536" height="1024" /></p>
 <h2>Waar je vóór de aanschaf over moet nadenken</h2>
 <p>Voordat je een Duitse herder aanschaft, moet je beseffen dat hij vooral een werkhond is. Hij heeft voldoende uitdaging, bezigheden en een consequente opvoeding nodig om een evenwichtige gezinshond te zijn. Kies vóór de aanschaf ook een betrouwbare fokker, want gezondheidsaspecten verdienen bij de Duitse herder nadrukkelijk aandacht.</p>
 <p>Vraag de fokker vooral naar de uitslagen van het heuponderzoek van de ouderdieren, omdat het ras gevoelig kan zijn voor heupdysplasie (HD). Als pup mogen ze nog niet te zwaar worden belast. Ook bij voeding is de herder erg gevoelig. Een snelle verandering van voer verdraagt hij slecht en kan spijsverteringsproblemen veroorzaken.</p>
@@ -51,7 +51,7 @@ locale: "nl-NL"
 <h2>Geschikte voeding</h2>
 <p>Net als bij mensen reageert het spijsverteringsstelsel anders in verschillende levensfasen. Daarom moet je het juiste <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">voer</a> voor elke levensfase kiezen. Puppy’s hebben puppyvoer nodig, omdat dat speciaal is afgestemd op hun groei en ontwikkeling. Een Duitse herder groeit lang door en is pas rond de leeftijd van twaalf tot vijftien maanden volwassen. Stap daarom niet te vroeg over naar voer voor volwassen honden (&#8220;Adult&#8221;); volg het advies van de voerfabrikant of je dierenarts en wissel altijd geleidelijk.<br />
 Of je nu droogvoer of natvoer geeft, het is belangrijk op de benodigde voedingsstoffen te letten, zodat de hond alles krijgt wat hij nodig heeft. Ook BARF is voor herdershonden geen probleem.</p>
-<p><img decoding="async" class="alignnone wp-image-2951 " src="/magazin/wp-content/uploads/2025/01/ernaehrung-deutscher-schaeferhund.webp" alt="Voeding van de Duitse herder" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/ernaehrung-deutscher-schaeferhund.webp 1024w, /magazin/wp-content/uploads/2025/01/ernaehrung-deutscher-schaeferhund-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/ernaehrung-deutscher-schaeferhund-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/ernaehrung-deutscher-schaeferhund-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/deutscher-schaeferhund-futter-alltag.webp" alt="Een Duitse herder in een alledaagse situatie met zijn verzorger." width="1536" height="1024" /></p>
 <h2>Veelgestelde vragen</h2>
 <h3>1. Blaffen Duitse herders veel?</h3>
 <p>Duitse herders zijn geen keffers, maar blaffen om duidelijke redenen, zoals bescherming, aandacht of frustratie. Met de juiste opvoeding, voldoende uitdaging en duidelijke regels kun je het blafgedrag beheersen. Een goed opgevoede herder is alert, maar blaft niet overmatig.</p>
@@ -63,3 +63,7 @@ Of je nu droogvoer of natvoer geeft, het is belangrijk op de benodigde voedingss
 <p>Duitse herders hebben mentale uitdagingen net zo hard nodig als lichamelijke beweging. Zoekspelletjes, denkopdrachten, het aanleren van trucjes en afwisselende wandelingen zijn ideaal om hun slimme hoofd bezig te houden. Een herder die voldoende uitdaging krijgt, is rustiger, tevredener en evenwichtiger.</p>
 <h3>5. Kan de Duitse herder goed overweg met andere huisdieren?</h3>
 <p>Duitse herders zijn sociale, leergierige honden die goed met andere huisdieren kunnen omgaan als ze er op jonge leeftijd aan gewend raken. Met een consequente opvoeding, duidelijke regels en een geduldige kennismaking kan een herder harmonieus samenleven met honden, katten en kleine huisdieren.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Beeldverantwoording: De in november 2026 vernieuwde beelden zijn met AI-ondersteuning door Codex gemaakt. De foto’s zijn symbolische afbeeldingen en tonen geen echte leden.</p>
+<!-- /audit-visual-credit -->

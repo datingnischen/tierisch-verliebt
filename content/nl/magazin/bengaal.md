@@ -4,7 +4,7 @@ slug: "bengaal"
 type: page
 wpId: 237
 published: "2019-07-22T14:32:03"
-updated: "2026-09-22T13:51:10"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/bengalkatze.jpg"
@@ -37,7 +37,7 @@ locale: "nl-NL"
 <p>De Bengaal zoals we die tegenwoordig kennen, gaat terug op de Amerikaanse fokster Jean Mill, die in 1963 in Arizona een wilde Aziatische luipaardkat kruiste met een zwarte <a href="https://tierisch-verliebt.de/magazin/hauskatze/">huiskat</a>. Haar doel was om de vacht van een wilde kat te combineren met het karakter van een huiskat. In het verdere, jarenlange fokprogramma, vooral vanaf de jaren tachtig, werden onder meer de Egyptische Mau en de Abessijn ingekruist.</p>
 <p>Aan het einde van dit proces was er een ras ontstaan dat uiterlijk aan de Aziatische luipaardkat deed denken, maar de karaktertrekken van een huiskat had. Tegenwoordig worden er geen andere kattenrassen meer ingekruist en wordt er uitsluitend raszuiver gefokt.</p>
 <p>De Amerikaanse stamboekvereniging TICA erkende de Bengaal in 1986 als nieuw ras. De Europese koepel FIFe volgde in 1999.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3242" src="/magazin/wp-content/uploads/2025/05/Bengalkatze2-1024x683.png" alt="Bengaal 2" width="910" height="607" srcset="/magazin/wp-content/uploads/2025/05/Bengalkatze2-1024x683.png 1024w, /magazin/wp-content/uploads/2025/05/Bengalkatze2-300x200.png 300w, /magazin/wp-content/uploads/2025/05/Bengalkatze2-768x512.png 768w, /magazin/wp-content/uploads/2025/05/Bengalkatze2.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/bengalkatze-alltagsnaehe.webp" alt="Een bengaal wrijft zijn wang tegen de ontspannen hand van een lezende vrouw op de bank." width="1536" height="1024" /></p>
 <h2>Overwegingen vóór de aanschaf</h2>
 <p>De Bengaal is geen goedkoop ras: de <strong>aanschafkosten</strong> liggen als richtprijs meestal <strong>tussen 1000 en 1500 euro</strong> en kunnen afwijken. Fokkers maken bovendien onderscheid tussen een kat als huisdier, een fokdier en een showdier. Vraag ook naar gezondheidsonderzoek van de ouderdieren, bijvoorbeeld op de hartziekte HCM en de erfelijke aandoeningen PK-deficiëntie en PRA-b.</p>
 <p>Het is ook belangrijk dat je voldoende ruimte hebt, want deze katten hebben veel beweging en bewegingsruimte nodig om zich prettig te voelen. Een groot huis, bij voorkeur met een tuin, is daarvoor het meest geschikt.</p>
@@ -71,3 +71,7 @@ locale: "nl-NL"
 <h3 data-start="1761" data-end="1991"><strong data-start="1761" data-end="1798">Is de Bengaal hypoallergeen?</strong></h3>
 <p data-start="1761" data-end="1991">Nee. Hoewel hij een korte, makkelijk te verzorgen vacht heeft, produceert hij net als andere katten het allergeen <em data-start="1894" data-end="1903">Fel d 1</em>. Mensen met een allergie moeten vóór de aanschaf testen of ze de kat verdragen.</p>
 <p class="" data-start="1993" data-end="2214">&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Beeldverantwoording: De in november 2026 vernieuwde beelden zijn met AI-ondersteuning door Codex gemaakt. De foto’s zijn symbolische afbeeldingen en tonen geen echte leden.</p>
+<!-- /audit-visual-credit -->

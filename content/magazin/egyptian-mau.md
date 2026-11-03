@@ -4,11 +4,11 @@ slug: "egyptian-mau"
 type: page
 wpId: 1114
 published: "2020-03-27T20:20:17"
-updated: "2026-09-26T00:54:51"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/egyptian-mau-titelbild.jpg"
-imageAlt: "Egyptian Mau mit silbernem, geflecktem Fell"
+image: "/magazin/wp-content/uploads/2026/11/egyptian-mau-gartenstufe.webp"
+imageAlt: "Silberne Egyptian Mau mit dunklen Tupfen beobachtet ein Blatt auf einer Gartenstufe im gesicherten Gehege."
 seoTitle: "Egyptian Mau - Das Portrait"
 description: "Möchtest du mehr zur Egyptian Mau wissen? Alles über Herkunft, Charakter, Kosten, Aussehen und Pflege liest du in unserem Artikel."
 excerpt: "<p>Die ägyptische Mau-Katze ist nicht unbedingt die älteste Katzenrasse der Welt, stammt aber wohl von ihr ab. Die Vorfahren der</p>"
@@ -39,7 +39,7 @@ excerpt: "<p>Die ägyptische Mau-Katze ist nicht unbedingt die älteste Katzenra
 <h2>Was hat die ägyptische Mau-Katze für eine Persönlichkeit?</h2>
 <p>Diese Katzenrasse kam erst nach dem ersten Weltkrieg erstmals nach Europa. Die Beliebtheit der Mau- Katze als Haustier stieg jedoch nur schleppend an. Mit der Zeit nahm die Anzahl der Mau-Katzen immer mehr zu, was dazu führte, dass diese Rasse heute eine der häufigsten und beliebtesten in hiesigen Haushalten ist.</p>
 <p>Die ägyptische Mau- Katze gilt als äußerst intelligent. Sie sind zudem sympatisch und anhänglich. Die Mau- Rasse zeichnet sich auch durch ihr loyales Wesen aus. Diese Katzen sind treu und zutraulich. Mau-Katzen haben eine sehr beruhigend klingende melodische Stimme. Katzenliebhaber aus aller Welt sind begeistert von dieser Rasse. Ganz besonders am Wesen der Maus ist die Tatsache, dass sie kichernde Töne von sich geben, wenn sie ihre Freude ausdrücken möchten. Das hört man auch nicht alle Tage.</p>
-<p><img decoding="async" class="alignnone wp-image-2576 size-full" src="/magazin/wp-content/uploads/2023/12/frau-mit-egypt-katze.png" alt="Lächelnde Frau hält eine Egyptian Mau auf dem Arm" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/egyptian-mau-alltagsnaehe.webp" alt="Eine Egyptian Mau nähert sich dem Bein einer am Tisch sitzenden Frau." width="1536" height="1024" /></p>
 <h2>Was die Maus besonders gut können</h2>
 <p>Ägyptische Mau-Katzen sind natürlich nicht nur schön. Sie sind sehr aktive Tiere, verspielt und neugierig. Vor allem laufen können Maus schnell. Mit einer Geschwindigkeit von bis zu 50 km/h gelten sie als die schnellsten Hauskatzen überhaupt. Deswegen sollte man bedenken, ob man auch ausreichend Platz hat, bevor man ein solches Tier ins Haus holt. Denn dort, wo sie keinen Auslauf und keinen „Spielplatz“ hat, ist die Mau- Katze nicht glücklich. Sie brauchen viel Aufmerksamkeit und noch mehr Beschäftigung.</p>
 <p>Gezüchtet werden die ägyptischen Maus seit 1988 auch in Europa. Erstmals wurden sie in dieser Region in Italien erfolgreich gezüchtet. Trotz ihrer wilden Wurzeln, handelt es sich bei den heutigen Maus um verspielte Tiere, die durchaus für einen Haushalt mit Kindern geeignet sind. Sie lieben es zu rennen, zu spielen und zu schmusen. Eine ausgewachsene Mau- Katze wiegt zwischen 4 und 5 Kilo.</p>
@@ -62,3 +62,7 @@ excerpt: "<p>Die ägyptische Mau-Katze ist nicht unbedingt die älteste Katzenra
 <p data-start="1314" data-end="1574">Ja, solange Kinder respektvoll mit ihr umgehen. Die Mau ist geduldig, verspielt und neugierig – damit passt sie gut in Familien. Kleine Kinder sollten jedoch lernen, die Katze nicht festzuhalten oder zu bedrängen.</p>
 <h3 data-start="1576" data-end="1861"><strong data-start="1576" data-end="1626">Wie viel Bewegung braucht eine ägyptische Mau?</strong></h3>
 <p data-start="1576" data-end="1861">Sehr viel. Sie gehört zu den aktivsten und schnellsten Katzenrassen. Tägliche Spielzeit (mindestens 30–60 Minuten) ist wichtig, damit sie ausgelastet und glücklich bleibt. Intelligenzspielzeug wird von ihr meist sehr gut angenommen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

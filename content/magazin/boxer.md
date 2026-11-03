@@ -4,7 +4,7 @@ slug: "boxer"
 type: page
 wpId: 523
 published: "2019-11-06T21:39:41"
-updated: "2026-09-22T13:52:58"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Boxer.jpg"
@@ -52,7 +52,7 @@ excerpt: "<p>Der Boxer zählt zu den geselligen und freundlichen Hunderassen, we
 <h2>Die passende Ernährung</h2>
 <p>Von Natur aus weist der Boxer einen kräftigen und muskulösen Knochenbau auf, jedoch kann er an genetisch vererbten typischen Krankheiten leiden. Zu diesen Krankheiten zählen unter anderem angeborene Erkrankungen des Herzens, Entwicklungs- sowie gastrointestinale Störungen. Des Weiteren zählen Erkrankungen des Herzmuskels sowie des Magen-Darm-Trakts dazu. Sollte eine dieser Erkrankungen vorliegen gilt es zu beachten, dass der Boxer ein geeignetes Futter erhält, welches den spezifischen Anforderungen gerecht wird und den Nährstoffbedarf ausreichend deckt.</p>
 <p>Passende Diätfuttermittel können bei solchen Erkrankungen einen sehr positiven Effekt haben und ernährungsbedingten Krankheiten entgegenwirken. Bei einer Fehlversorgung können jedoch gesundheitliche Risiken auftreten. Sollte jedoch eine dieser Erkrankungen klar diagnostiziert sein, muss das Futter umgestellt werden und dem veränderten Bedarf entsprechen.</p>
-<p><img decoding="async" class="alignnone wp-image-2739" src="/magazin/wp-content/uploads/2024/09/boxer-essen.webp" alt="ernaehrung-boxer" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/boxer-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/boxer-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/boxer-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/boxer-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/boxer-futter-alltag.webp" alt="Boxer frisst ruhig aus einem schlichten Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie pflegeintensiv ist der Boxer?</strong></p>
 <p>Der Boxer hat ein kurzes, pflegeleichtes Fell, das nur gelegentliches Bürsten erfordert, um abgestorbene Haare zu entfernen. Baden ist nur bei Bedarf notwendig.</p>
@@ -64,3 +64,7 @@ excerpt: "<p>Der Boxer zählt zu den geselligen und freundlichen Hunderassen, we
 <p>Boxer sind anfällig für Herzprobleme, Hüftdysplasie und bestimmte Krebsarten. Regelmäßige tierärztliche Untersuchungen sind wichtig, um gesundheitliche Probleme frühzeitig zu erkennen.</p>
 <p><strong>Wie verhält sich der Boxer gegenüber Fremden?</strong></p>
 <p>Boxer sind normalerweise freundlich und neugierig gegenüber Fremden, aber sie haben auch einen ausgeprägten Wachinstinkt. Mit der richtigen Sozialisierung sind sie jedoch ausgeglichen und freundlich.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

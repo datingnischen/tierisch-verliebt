@@ -4,7 +4,7 @@ slug: "papageien-giftliste"
 type: post
 wpId: 3525
 published: "2026-03-01T23:53:50"
-updated: "2026-09-26T01:06:47"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/birlok-parrots-4235892_1280.compr_.jpg"
@@ -68,7 +68,8 @@ excerpt: "<p>Was Papageien auf keinen Fall fressen dürfen Papageien sind neugie
 </ul>
 <p>enthalten geringe Mengen Blausäure. Beim Entfernen der Kerne besteht kein Risiko – aber die Kerne selbst sollten nicht verfüttert werden.</p>
 <p>&nbsp;</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3694" src="/magazin/wp-content/uploads/2026/03/Giftliste-fuer-Papageien.compr_-1024x683.png" alt="Infografik: Giftliste – Lebensmittel, die für Papageien tabu sind" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/03/Giftliste-fuer-Papageien.compr_-1024x683.png 1024w, /magazin/wp-content/uploads/2026/03/Giftliste-fuer-Papageien.compr_-300x200.png 300w, /magazin/wp-content/uploads/2026/03/Giftliste-fuer-Papageien.compr_-768x512.png 768w, /magazin/wp-content/uploads/2026/03/Giftliste-fuer-Papageien.compr_.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-giftliste-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-giftliste-schaubild.webp" alt="Diese Gefahren gehören außer Reichweite; Avocado; Schokolade; Koffein; Alkohol; Giftverdacht? Sofort Tierarzt kontaktieren." width="1536" height="1024" /></a></p>
+<!-- graphic-text-566 --><details><summary>Grafik als Text lesen</summary><ul><li>Avocado</li><li>Schokolade</li><li>Koffein</li><li>Alkohol</li><li>Giftverdacht? Sofort Tierarzt kontaktieren.</li></ul></details><!-- /graphic-text-566 -->
 <hr>
 <h2>Vorsicht bei Pflanzen &amp; Haushaltsmitteln</h2>
 <p>Nicht nur Lebensmittel, auch folgende Dinge können gefährlich sein:</p>
@@ -97,3 +98,8 @@ excerpt: "<p>Was Papageien auf keinen Fall fressen dürfen Papageien sind neugie
 <p>Denn Sicherheit geht vor Neugier.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/parrots-birds-perched-animals-4235892/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://vcahospitals.com/know-your-pet/macaws-feeding" target="_blank" rel="noopener noreferrer">vcahospitals.com</a>.</p>
+<!-- /audit-visual-credit -->

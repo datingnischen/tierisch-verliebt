@@ -4,7 +4,7 @@ slug: "papageien-richtig-fuettern"
 type: post
 wpId: 3520
 published: "2026-03-01T23:22:33"
-updated: "2026-09-26T01:06:49"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/hans-parakeets-406637_1280.compr_.jpg"
@@ -29,7 +29,8 @@ excerpt: "<p>So bleibt dein Papagei gesund und vital Die richtige Ernährung ist
 <li>Keine künstlichen Zusätze</li>
 </ul>
 <p>&nbsp;</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3688" src="/magazin/wp-content/uploads/2026/03/Papageien-richtig-fuettern.-compr-1024x683.png" alt="Infografik: Grundernährung und Futterplan für Papageien" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/03/Papageien-richtig-fuettern.-compr-1024x683.png 1024w, /magazin/wp-content/uploads/2026/03/Papageien-richtig-fuettern.-compr-300x200.png 300w, /magazin/wp-content/uploads/2026/03/Papageien-richtig-fuettern.-compr-768x512.png 768w, /magazin/wp-content/uploads/2026/03/Papageien-richtig-fuettern.-compr.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-richtig-fuettern-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-richtig-fuettern-schaubild.webp" alt="Gute Fütterung beginnt bei der Vogelart; Art kennen; Futterplan abstimmen; Frisch ergänzen; Verlauf beobachten" width="1536" height="1024" /></a></p>
+<!-- graphic-text-570 --><details><summary>Grafik als Text lesen</summary><ul><li>Art kennen</li><li>Futterplan abstimmen</li><li>Frisch ergänzen</li><li>Verlauf beobachten</li></ul></details><!-- /graphic-text-570 -->
 <hr>
 <h2>Pellets – sinnvoll oder nicht?</h2>
 <p>Viele Halter setzen auf spezielle Papageien-Pellets, da diese ausgewogen zusammengesetzt sind. Sie können helfen, Nährstoffmängel zu vermeiden. Die können aber keine abwechslungsreiche Ernährung ersetzen.</p>
@@ -77,3 +78,8 @@ Hochwertige Körnermischung oder Pellets</li>
 <p>Denn gute Ernährung ist die beste Gesundheitsvorsorge.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/parakeets-birds-parrots-406637/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.vetmed.uni-leipzig.de/fileadmin/Fakult%C3%A4t_VMF/Klinik_V%C3%B6gel_Reptilien/Flyer/F%C3%BCtterungsempfehlungen_Graupapagei_200618.pdf" target="_blank" rel="noopener noreferrer">www.vetmed.uni-leipzig.de</a>, <a href="https://vcahospitals.com/know-your-pet/macaws-feeding" target="_blank" rel="noopener noreferrer">vcahospitals.com</a>.</p>
+<!-- /audit-visual-credit -->

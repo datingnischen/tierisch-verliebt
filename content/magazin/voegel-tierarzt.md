@@ -4,7 +4,7 @@ slug: "voegel-tierarzt"
 type: post
 wpId: 3591
 published: "2026-03-05T00:19:48"
-updated: "2026-09-26T01:06:44"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/Voegel-beim-Tierarzt.compr_.png"
@@ -23,7 +23,8 @@ excerpt: "<p>Warnzeichen erkennen und rechtzeitig handeln Vögel gehören zu den
 <p>Das bedeutet:<br />
 Wenn ein Vogel sichtbar krank wirkt, ist schnelles Handeln besonders wichtig.</p>
 <p>Ein früher Tierarztbesuch kann oft lebensrettend sein.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3617" src="/magazin/wp-content/uploads/2026/03/Voegel-beim-Tierarzt-Infografik.compr_-1024x683.png" alt="Infografik: Woran man erkennt, dass ein Vogel zum Tierarzt muss" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/03/Voegel-beim-Tierarzt-Infografik.compr_-1024x683.png 1024w, /magazin/wp-content/uploads/2026/03/Voegel-beim-Tierarzt-Infografik.compr_-300x200.png 300w, /magazin/wp-content/uploads/2026/03/Voegel-beim-Tierarzt-Infografik.compr_-768x512.png 768w, /magazin/wp-content/uploads/2026/03/Voegel-beim-Tierarzt-Infografik.compr_.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/voegel-tierarzt-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-tierarzt-schaubild.webp" alt="Zum Vogeltierarzt: gut vorbereitet; Veränderungen notieren; Praxis kontaktieren; Sicher transportieren" width="1536" height="1024" /></a></p>
+<!-- graphic-text-746 --><details><summary>Grafik als Text lesen</summary><ul><li>Veränderungen notieren</li><li>Praxis kontaktieren</li><li>Sicher transportieren</li></ul></details><!-- /graphic-text-746 -->
 <hr>
 <h2>Typische Warnzeichen bei Vögeln</h2>
 <p>Bestimmte Veränderungen können darauf hinweisen, dass ein Tierarztbesuch notwendig ist.</p>
@@ -107,3 +108,8 @@ Wenn ein Vogel sichtbar krank wirkt, ist schnelles Handeln besonders wichtig.</p
 <p>Wer seine Vögel gut beobachtet und Warnsignale ernst nimmt, kann ihre Gesundheit langfristig schützen und ihnen ein langes, vitales Leben ermöglichen.</p>
 <hr>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.vetmeduni.ac.at/interne-kleintiere/ueber-uns/ambulanzen/voegel-reptilien" target="_blank" rel="noopener noreferrer">www.vetmeduni.ac.at</a>, <a href="https://www.tiho-hannover.de/kliniken-institute/kliniken/klinik-fuer-heimtiere-reptilien-und-voegel/notfaelle/voegel" target="_blank" rel="noopener noreferrer">www.tiho-hannover.de</a>.</p>
+<!-- /audit-visual-credit -->

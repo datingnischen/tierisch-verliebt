@@ -4,7 +4,7 @@ slug: "dogo-canario"
 type: page
 wpId: 1454
 published: "2020-12-05T21:59:27"
-updated: "2026-09-22T13:51:47"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/12/dogo-canario-e1607201769247.jpg"
@@ -48,7 +48,7 @@ excerpt: "<p>Wer hat sich nicht schon einmal gefragt, ob dieser massive, gleichz
 <p>Sein Fell ist kurz, glatt anliegend und glänzend. Es besitzt keine Unterwolle und fühlt sich rau an. An den Ohren ist das Fell sehr fein. Die am Ansatz breite Rute verjüngt sich zur Spitze hin. Aufgrund seiner Zucht weist er eine Vielzahl von Farben auf: von Dunkelbraun bis hin zu einem hellem Grau und Blond. Selbst Schattierungen der Farben sind möglich. Weiße Flecken können bei ihm an der Brust und Kehle vorkommen, die Schnauze muss schwarz sein. Die Dogge ist in der Lage ein Alter von 10 bis 12 Jahren zu erreichen.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Grundsätzlich hat der Dogo Canario keine hohen Ansprüche, was seine Ernährung angeht. Trotzdem sollte er vollwertige Nahrung erhalten, die seinen hohen Energiebedarf befriedigt. Auch sollte der Hundebesitzer Faktoren wie Alter, Geschlecht, Gesundheit und Gewicht bei der Futterwahl in Betracht ziehen. Empfehlenswert ist deshalb ausreichend frisches Wasser, fleischreiche und <a title="Getreidefreies Futter für den Hund – Ja oder Nein?" href="https://tierisch-verliebt.de/magazin/getreidefreies-futter/">getreidearme Ernährung</a>. Stichwort hierzu ist das BARF: biologisch artgerechte Rohfütterung. Aber auch Selbstgekochtes oder Nass- und Trockenfutter verschmäht der Hund nicht.</p>
-<p><img decoding="async" class="alignnone wp-image-2958" src="/magazin/wp-content/uploads/2025/01/ernaehrung-dogo-canarion.webp" alt="ernaehrung-dogo-canario" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/ernaehrung-dogo-canarion.webp 1024w, /magazin/wp-content/uploads/2025/01/ernaehrung-dogo-canarion-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/ernaehrung-dogo-canarion-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/ernaehrung-dogo-canarion-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/dogo-canario-futter-alltag.webp" alt="Dogo Canario wartet, während ein Mensch den Napf auf eine Unterlage stellt." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>1. Ist der Dogo Canario für Ersthundebesitzer geeignet?</h3>
 <p>Der Dogo Canario ist kein typischer Anfängerhund.<br />
@@ -64,3 +64,7 @@ excerpt: "<p>Wer hat sich nicht schon einmal gefragt, ob dieser massive, gleichz
 <h3>5. Wie viel Platz benötigt ein Dogo Canario?</h3>
 <p>Der Dogo Canario braucht viel Platz und Bewegung, um glücklich und ausgeglichen zu sein. Ein Haus mit Garten ist ideal, aber auch eine große Wohnung kann funktionieren, wenn der Hund täglich mindestens 2 Stunden Bewegung und geistige Auslastung bekommt. Kleine Wohnungen sind für diese Rasse ungeeignet.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

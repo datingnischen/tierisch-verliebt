@@ -4,7 +4,7 @@ slug: "chihuahua"
 type: page
 wpId: 128
 published: "2019-06-18T15:34:10"
-updated: "2026-09-22T13:51:16"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/06/chihuahua.jpg"
@@ -29,7 +29,7 @@ excerpt: "<p>Chihuahuas entscheiden sehr instinktiv, welchem Menschen sie ihre A
 <p><img decoding="async" class="alignnone size-large wp-image-2192" src="/magazin/wp-content/uploads/2023/08/Chihuahua-1024x683.jpg" alt="Chihuahua" width="910" height="607" srcset="/magazin/wp-content/uploads/2023/08/Chihuahua-1024x683.jpg 1024w, /magazin/wp-content/uploads/2023/08/Chihuahua-300x200.jpg 300w, /magazin/wp-content/uploads/2023/08/Chihuahua-768x512.jpg 768w, /magazin/wp-content/uploads/2023/08/Chihuahua.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
 <h2>Zuneigung und Wärme für den kleinen Hund</h2>
 <p>Der loyale Chihuahua gilt als Gesellschaftshund und benötigt viel Wärme und Zuneigung. Er bindet sich zwar fest an eine Bezugsperson, ist aber dennoch gut als Familienhund geeignet. Mit ihm sind viele Aktivitäten möglich, da er sehr unempfindlich ist und einer Menge Ausdauer mitbringt. Größere Strecken sind überhaupt kein Problem, er läuft auch gern mit den Kindern draußen herum.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2570" src="/magazin/wp-content/uploads/2023/12/frau-mit-chihuahua-2.png" alt="frau mit chihuahua " width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/chihuahua-schnueffelpause.webp" alt="Chihuahua im Y-Geschirr schnuppert bei einem Spaziergang neben einer älteren Frau am Wegrand." width="1536" height="1024" /></p>
 <h2>Herkunft und Geschichte der Chihuahuas</h2>
 <p>Ursprünglich nahm man an, dass die kleinen Hunde aus Malta, Ägypten oder China stammen. Mittlerweile geht man davon aus, dass sie aus Mexiko stammen. Die Azteken und Tolteken hielten sie als Haushunde. Der Legende nach mussten sie als Opfertiere für die Götter herhalten, sondern wurden auch selbst vergöttert und von den Herrschern mit ins Grab genommen.</p>
 <p>Der Hund sollte dem Häuptling im Grab den Weg ins Paradies zeigen, wenn dieser ihn zu Lebzeiten gut behandelt hatte. Der Hund wurde im 19. Jahrhundert in den USA bekannt und verbreitete sich schnell. Sie galten als charmant und quirlig, beschrieben wurde die Rasse erstmals im Jahr 1904. Der Hund wurde schnell in die ganze Welt gebracht, so kam er im Jahr 1956 auch nach Deutschland.</p>
@@ -38,7 +38,7 @@ excerpt: "<p>Chihuahuas entscheiden sehr instinktiv, welchem Menschen sie ihre A
 <p>Der <strong>Chihuahua</strong> wird als kompakter Hund mit einem Kopf in Apfelform und einem markierten, breiten Stop beschrieben. Das Gewicht des Hundes liegt im Idealfall zwischen 1,5 und 2,5 Kilogramm. Die Lebenserwartung liegt zwischen 12 und 16 Jahren, wenn der Hund gut gepflegt wird. Kleinere Ausprägungen der Rasse werden in der Regel nicht so als wie die Größeren.</p>
 <p>Der Kopf ist rund und die Nase relativ kurz. Das Maul ist breit und verfügt über ein Scheren- und Zangengebiss. Die Ohren sind weit geöffnet und sind in der Spitze leicht abgerundet. Der Rumpf der Hunde erscheint fast quadratisch, die Hündinnen sind jedoch etwas länger, damit die Gebärmutter sich im Falle einer Trächtigkeit ausdehnen kann. Es gibt jeweils eine Variante mit langen und kurzen Haaren, die Farben können dabei sehr unterschiedlich sein.</p>
 <p>Die kurzhaarigen <strong>Chihuahuas</strong> verfügen im Nacken- und Rutenbereich über ein etwas längeres <a href="https://tierisch-verliebt.de/magazin/pflege-von-fell-und-zaehnen-des-hundes/">Fell</a>. Die langhaarigen Verwandten sind am Kopf und an der Vorderseite kurzhaarig. Stellen ohne Haare sind in der Rasse nicht erlaubt. Die Variante mit den kurzen Haaren existiert schon wesentlich länger als die Langhaarvariante. Seine Bewegungen wirken elegant und kraftvoll, den Kopf trägt er stets erhoben. Die Rute trägt er entweder über dem Rücken oder gerade nach hinten, die Beine kreuzen sich beim Laufen nie.</p>
-<p><img decoding="async" class="alignnone wp-image-2577 size-full" src="/magazin/wp-content/uploads/2023/12/frau-mit-chihuahua.png" alt="Frau mit Chihuahua" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/chihuahua-gartenbank.webp" alt="Langhaar-Chihuahua sitzt entspannt neben einem Mann auf einer Gartenbank." width="1536" height="1024" /></p>
 <h2>Besonderheiten bei der Ernährung</h2>
 <p>Chihuahuas sind sehr aktive Hunde und müssen auch dementsprechend gefüttert werden. Es sollte unbedingt auf die Vitamine und Mineralstoffe geachtet werden, weil es hier schnell zu Unter- oder Überversorgungen kommen kann. Die Größe des Futters spielt ebenfalls eine wichtige Rolle, damit die Zähne sich beim Kauen optimal abreiben. Die Zusammensetzung des Futters sollte nach Faktoren wie Alter, Größe, Aktivitäten und Gewicht erfolgen, aber auch die Krankheiten spielen eine Rolle. Zuchthunde benötigen ein besonderes <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futter</a>, damit die Hündinnen den Nachwuchs optimal versorgen können. Bestimmte Stoffe können Allergien auslösen, darauf muss man beim Kauf des Futters achten.</p>
 <p>&nbsp;</p>
@@ -52,7 +52,7 @@ excerpt: "<p>Chihuahuas entscheiden sehr instinktiv, welchem Menschen sie ihre A
 <h3>Harnsteine durch falsche Ernährung</h3>
 <p>Harnsteine sind eine häufige Krankheit der Chihuahuas. Sie können entweder genetisch oder durch die Ernährung bedingt werden. Der Hund hat dann häufig Blut im Urin, häufigen Harndrang und Schmerzen beim pinkeln. Die Bildung von Harnsteinen hängt mit dem PH-Wert des Urins zusammen und kann über die Ernährung gesteuert werden. Durch die Zugabe von Natriumkarbonat erhöht sich der PH-Wert im Urin und die Harnsteine bilden sich nicht mehr so einfach.</p>
 <p>Eine erhöhte Wasseraufnahme führt zu einer Vergrößerung der Blase und zur Rückbildung der Harnsteine. Proteine sind ebenfalls wichtig, deshalb sollten auch Muskelfleisch und andere Proteine gefüttert werden. Bei einer Überdosierung können diese aber ebenfalls zu Harnsteinen führen.</p>
-<p><img decoding="async" class="alignleft wp-image-2818" src="/magazin/wp-content/uploads/2024/12/ernaehrung-Chihuahua.webp" alt="ernaehrung-chihuahua" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/12/ernaehrung-Chihuahua.webp 1024w, /magazin/wp-content/uploads/2024/12/ernaehrung-Chihuahua-300x300.webp 300w, /magazin/wp-content/uploads/2024/12/ernaehrung-Chihuahua-150x150.webp 150w, /magazin/wp-content/uploads/2024/12/ernaehrung-Chihuahua-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/chihuahua-futter-alltag.webp" alt="Chihuahua frisst aus einem kleinen Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3><strong>Wie pflegeintensiv ist ein Chihuahua?</strong></h3>
 <p>Chihuahuas sind pflegeleicht, benötigen jedoch regelmäßiges Bürsten, um ihr Fell in gutem Zustand zu halten. Kurzhaarige Chihuahuas brauchen weniger Pflege als langhaarige.</p>
@@ -68,3 +68,7 @@ excerpt: "<p>Chihuahuas entscheiden sehr instinktiv, welchem Menschen sie ihre A
 <p>Chihuahuas sind von Natur aus wachsam und können gegenüber Fremden zurückhaltend sein. Mit der richtigen Sozialisation können sie jedoch freundlich und ausgeglichen sein.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

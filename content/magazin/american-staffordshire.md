@@ -4,7 +4,7 @@ slug: "american-staffordshire"
 type: page
 wpId: 614
 published: "2019-11-18T19:35:42"
-updated: "2026-09-22T13:52:47"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/02/American-Staffordshire-1.jpg"
@@ -47,7 +47,7 @@ excerpt: "<p>Der American Staffordshire Terrier zählt in Deutschland zu den mit
 <h2>Geeignete Ernährung für den American Staffordshire</h2>
 <p>Im Allgemeinen stellt die Rasse keine bestimmten Anforderungen an die Ernährung. Es wird also kein spezielles <a href="https://tierisch-verliebt.de/magazin/getreidefreies-futter/">Futter</a> benötigt. Aufgrund der ohnehin schon kräftigen Statur kann der American Staffordshire allerdings zu Übergewicht neigen. Es wird deshalb empfohlen, ihn lieber mit zwei bis drei Portionen über den Tag verteilt zu füttern, statt mit einer großen Mahlzeit. Dies beugt auch einer Magendrehung vor.</p>
 <p>Je älter der Hund wird, umso wichtiger wird es auf das Gewicht zu achten. Auch, um anderen alters- oder gewichtsbedingten Krankheiten wie Arthrose vorzubeugen &#8211; dies gilt für nahezu jede Hunderasse. Der American Staffordshire spricht auch gut auf die Methode der Rohfütterung, dem sogenannten <a href="https://www.barfinfo.de/" target="_blank" rel="noopener">Barfen</a>, an.</p>
-<p><img decoding="async" class="alignnone wp-image-2706" src="/magazin/wp-content/uploads/2024/09/american-staffordshire-ernaehrung.webp" alt="american-staffordshire-ernaehrung" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/american-staffordshire-ernaehrung.webp 1024w, /magazin/wp-content/uploads/2024/09/american-staffordshire-ernaehrung-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/american-staffordshire-ernaehrung-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/american-staffordshire-ernaehrung-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/american-staffordshire-futter-alltag.webp" alt="American Staffordshire Terrier frisst ruhig aus einem schlichten Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie viel Pflege braucht ein American Staffordshire Terrier?</strong></p>
 <p>Der American Staffordshire Terrier hat ein kurzes Fell, das wenig Pflege erfordert. Regelmäßiges Bürsten hält das Fell glänzend und hilft, abgestorbene Haare zu entfernen.</p>
@@ -59,3 +59,7 @@ excerpt: "<p>Der American Staffordshire Terrier zählt in Deutschland zu den mit
 <p>Diese Rasse ist energiegeladen und benötigt täglich viel Bewegung, um körperlich und geistig ausgelastet zu sein. Längere Spaziergänge und interaktive Spiele sind ideal.</p>
 <p><strong>Sind American Staffordshire Terrier leicht zu trainieren?</strong></p>
 <p>Sie sind intelligent und lernbegierig, aber können manchmal stur sein. Konsequente Erziehung mit positiver Verstärkung ist der Schlüssel zu einem gut erzogenen Hund.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

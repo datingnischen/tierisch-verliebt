@@ -4,7 +4,7 @@ slug: "irischer-wolfshund"
 type: page
 wpId: 572
 published: "2019-11-09T14:18:33"
-updated: "2026-09-22T13:52:54"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Irischer-Wolfshund.jpg"
@@ -43,7 +43,7 @@ excerpt: "<p>Der Irische Wolfshund oder Irish Wolfhound ist ein beeindruckendes 
 <p>Allerdings ist der Irische Wolfshund eher Sprinter als Ausdauerläufer. Er hat in der Regel auch nicht viel Spaß an komplexeren Beschäftigungsspielen wie zum Beispiel Agility oder Suchspielen. Außerdem müssen Menschen, die sich für einen Irischen Wolfshund interessieren, auch berücksichtigen, wieviel ein solcher Hund an <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futter</a> braucht. Und es ist nicht nur die Menge an Futter, sondern auch die Qualität, die ins Geld geht.</p>
 <h2>Gesundheit</h2>
 <p>Die Irischen Wolfshunde haben wie die meisten sehr großen Hunderassen häufig Probleme mit den Gelenken und Wachstumsstörungen der Knochen. Sie müssen deshalb besonders hochwertig und ausgewogen ernährt werden. Überhaupt ist die Größe der Rasse für die Gesundheit der Tiere ein Risiko. Häufig leiden Irische Wolfshunde an Hüft-oder-Ellbogendysplasie aber auch an Herzerkrankungen und Erkrankungen des Magen-Darmtraktes. Besonders gefürchtet ist bei ihnen die Magendrehung. Weshalb beim Füttern besonders gut aufgepasst werden muss. Die Rasse wird in der Regel leider auch nicht sehr alt. Die durchschnittliche Lebenserwartung liegt nur zwischen 6 und 8 Jahren.</p>
-<p><img decoding="async" class="alignnone wp-image-2989" src="/magazin/wp-content/uploads/2025/02/ernaehrung-irischer-wolfshund.webp" alt="ernaehrung-irischer-wolfshund" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-irischer-wolfshund.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-irischer-wolfshund-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-irischer-wolfshund-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-irischer-wolfshund-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/irischer-wolfshund-futter-alltag.webp" alt="Irischer Wolfshund wartet, während ein Mensch den Napf auf eine Unterlage stellt." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Wie soll man einen Irischen Wolfshund füttern?</h3>
 <p>Der Irische Wolfshund benötigt eine ausgewogene, hochwertige Ernährung, die auf seine Größe, Aktivität und speziellen gesundheitlichen Bedürfnisse abgestimmt ist.<br />
@@ -61,3 +61,7 @@ Mit Geduld, Beschäftigung &amp; klarer Routine kann das Alleinsein leichter gem
 <h3>Wie pflegeintensiv ist das Fell des Irischen Wolfshunds?</h3>
 <p>Das Fell des Irischen Wolfshunds ist relativ pflegeleicht – aber regelmäßige Pflege ist trotzdem notwendig.<br />
 Sein dichtes, raues &amp; drahtiges Fell schützt ihn vor Witterungseinflüssen, muss aber kontrolliert gebürstet &amp; gepflegt werden, um Verfilzungen &amp; Hautprobleme zu vermeiden.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

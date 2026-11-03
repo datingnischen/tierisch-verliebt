@@ -4,11 +4,11 @@ slug: "sokoke"
 type: page
 wpId: 1163
 published: "2020-04-15T09:08:47"
-updated: "2026-09-27T22:46:00"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/sokoke-titelbild.jpg"
-imageAlt: "Sokoke-Katze mit braun marmoriertem Fell"
+image: "/magazin/wp-content/uploads/2026/11/sokoke-baumstamm.webp"
+imageAlt: "Schlanke Sokoke mit holzartig gemustertem Tabbyfell läuft über einen niedrigen Baumstamm im gesicherten Gehege."
 seoTitle: "Sokoke"
 description: "Du willst mehr zu einer Sokoke Katze erfahren? Alles zu Charakter, Herkunft, Rassenmerkmalen, Haltung, geeigneter Ernährung und Aktivitäten liest du hier."
 excerpt: "<p>Wer Wildtiere liebt, wird diese Katzenrasse mögen Die Katzenrasse Sokoke ist immer noch sehr selten. Die Sokoke ist eine robuste</p>"
@@ -61,3 +61,7 @@ excerpt: "<p>Wer Wildtiere liebt, wird diese Katzenrasse mögen Die Katzenrasse 
 <p>Wenig. Ihr kurzes, anliegendes Fell ohne Unterwolle muss nur gelegentlich gebürstet werden.</p>
 <h3>Was kostet eine Sokoke?</h3>
 <p>Die Sokoke ist sehr selten, Kitten kosten meist zwischen 1.500 und 1.800 Euro. In Deutschland gibt es nur wenige Züchter.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

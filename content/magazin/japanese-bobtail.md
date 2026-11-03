@@ -4,11 +4,11 @@ slug: "japanese-bobtail"
 type: page
 wpId: 1185
 published: "2020-04-20T10:35:06"
-updated: "2026-09-26T00:54:48"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
-image: "/magazin/wp-content/uploads/2026/09/japanese-bobtail-titelbild.jpg"
-imageAlt: "Japanese-Bobtail-Katze mit kurzem Pompon-Schwanz"
+image: "/magazin/wp-content/uploads/2026/11/japanese-bobtail-spielmoment.webp"
+imageAlt: "Dreifarbige Japanese Bobtail mit kurzem Pomponschwanz untersucht einen kleinen Korkball."
 seoTitle: "Japanese Bobtail"
 description: "Hier findest du alles, was du zu Japanese Bobtail wissen musst: Herkunft, Rassenmerkmale, Charakter sowie Ernährung und Aktivitäten."
 excerpt: "<p>Hier das vollständige Portrait zu Rasse Japanese Bobtail. Steckbrief Name: Japanese Bobtail Wissenschaftlicher Name: Felis catus Herkunft: Japan Lebenserwartung: 14</p>"
@@ -52,3 +52,7 @@ Der Pflegeaufwand Japanese Bobtail ist relativ gering, dennoch ist es empfehlens
 <p data-start="1444" data-end="1750">Ja, meistens sehr gut! Sein freundliches und aktives Wesen macht ihn zu einem tollen Familienbegleiter. Er spielt gerne und bleibt selten nachtragend. Mit katzenfreundlichen Hunden kann er sich ebenfalls problemlos verstehen.</p>
 <h3 data-start="1752" data-end="2006"><strong data-start="1752" data-end="1802">Ist der Japanese Bobtail laut oder eher ruhig?</strong></h3>
 <p data-start="1752" data-end="2006">Diese Rasse gehört zu den „gesprächigeren“ Katzen. Sie kommuniziert mit einer Vielzahl sanfter Laute, nicht laut und fordernd, sondern eher melodisch. Viele Halter empfinden das als besonders charmant.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

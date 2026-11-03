@@ -4,7 +4,7 @@ slug: "magyar-vizsla"
 type: page
 wpId: 2610
 published: "2024-01-17T11:48:54"
-updated: "2026-09-22T13:50:50"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/01/dog-1190024_1280.jpg"
@@ -85,7 +85,7 @@ excerpt: "<p>Sozial, treu, empfindsam und zur gleichen Zeit energiegeladen, akti
 <p>Es sollte sichergestellt werden, dass ein Magyar Vizsla dauerhaft Zugang zu frischem und sauberem Trinkwasser hat. Auch hier gilt, je aktiver der Hund ist, desto durstiger ist er.</p>
 <h3>7. Individuelle Bedürfnisse</h3>
 <p>Je nach Gesundheitszustand und Alter, kann ein Magyar Vizsla auch spezielle Futterbedürfnisse haben. So müssen Welpen und sehr alte Hunde grundsätzlich anders gefüttert werden als ein Hund mittleren Alters. Selbes gilt für den Krankheitsfall. Welche Ernährung dann zu bevorzugen ist, sollte jedoch immer mit dem behandelten Tierarzt abgesprochen werden, da pauschale Empfehlungen hier kaum möglich sind.</p>
-<p><img decoding="async" class="alignnone wp-image-3016" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Magyar-Vizsla.webp" alt="ernaehrung-Magyar-Vizsla" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Magyar-Vizsla.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Magyar-Vizsla-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Magyar-Vizsla-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Magyar-Vizsla-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/magyar-vizsla-futter-alltag.webp" alt="Magyar Vizsla ruht daneben, während ein Mensch den Metallnapf ausspült." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Ist der Magyar Vizsla für das Stadtleben geeignet?</h3>
 <p>Ja, der Magyar Vizsla kann in der Stadt gehalten werden, wenn er genug Bewegung und geistige Auslastung bekommt.<br />
@@ -106,3 +106,7 @@ Positive Verstärkung, spielerisches Training &amp; viel Bewegung sorgen für ei
 <p>Magyar Vizslas sind hochintelligente Hunde mit einem starken „Will to Please“.<br />
 Neben viel Bewegung brauchen sie auch geistige Herausforderungen, um ausgeglichen zu bleiben. Ein unterforderter Vizsla kann sich unerwünschte Verhaltensweisen wie Unruhe, Jaulen oder Zerstören von Gegenständen angewöhnen.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

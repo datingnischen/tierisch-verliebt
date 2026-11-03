@@ -4,7 +4,7 @@ slug: "cane-corso"
 type: page
 wpId: 386
 published: "2019-10-28T06:57:30"
-updated: "2026-09-22T13:53:18"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/cane-corso-1.jpg"
@@ -48,7 +48,7 @@ excerpt: "<p>Der Cane Corso Italiano, auch Italienische Dogge genannt, ist ein g
 <h2>Geeignete Ernährung</h2>
 <p>Wie bei allen großen Hunderassen sollte man auch bei dem Cane Corso auf die <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> achten, da Übergewicht schnell zu Gelenkschäden und anderen schwerwiegenden Erkrankungen führen kann. Bedarfsoptimiertes Hundefutter mit einem hohen Fleischanteil und wenig bis keinem Getreide ist die optimale Ernährung für diesen großen Jagdhund.</p>
 <p>Für Welpen empfiehlt es sich zudem ein auf junge Hunde großer Rassen abgestimmtes Futter zu füttern, bei dem der Proteingehalt auf die Bedürfnisse der jungen Hunde abgestimmt ist. Andernfalls kann ein hoher Proteingehalt im Futter zu einem schnelleren Wachstum führen, was sich wiederum negativ auf das gesamte Skelett des Hundes auswirken kann.</p>
-<p><img decoding="async" class="alignleft wp-image-2811" src="/magazin/wp-content/uploads/2024/12/ernaehrung-Cane-Corso.webp" alt="ernaehrung-cane-corso" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/12/ernaehrung-Cane-Corso.webp 1024w, /magazin/wp-content/uploads/2024/12/ernaehrung-Cane-Corso-300x300.webp 300w, /magazin/wp-content/uploads/2024/12/ernaehrung-Cane-Corso-150x150.webp 150w, /magazin/wp-content/uploads/2024/12/ernaehrung-Cane-Corso-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/cane-corso-futter-alltag.webp" alt="Cane Corso frisst ruhig aus einem Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3><strong>Wie pflegeintensiv ist der Cane Corso?</strong></h3>
 <p>Der Cane Corso hat ein kurzes Fell, das nur gelegentlich gebürstet werden muss, um abgestorbene Haare zu entfernen. Während des Fellwechsels sollte das Bürsten häufiger erfolgen.</p>
@@ -65,3 +65,7 @@ excerpt: "<p>Der Cane Corso Italiano, auch Italienische Dogge genannt, ist ein g
 <h3><strong>Ist der Cane Corso für Anfänger geeignet?</strong></h3>
 <p>Der Cane Corso ist eher für erfahrene Hundebesitzer geeignet, die wissen, wie man einen großen, selbstbewussten Hund führt und trainiert.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

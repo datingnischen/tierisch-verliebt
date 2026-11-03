@@ -4,7 +4,7 @@ slug: "anatolischer-hirtenhund"
 type: page
 wpId: 1275
 published: "2020-11-01T19:56:11"
-updated: "2026-09-22T13:51:53"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/11/Anatolischer-Hirtenhund-e1604256963523.jpg"
@@ -44,7 +44,7 @@ Da er es gewohnt ist, bei Wind und Wetter draußen zu sein, kann er das ganze Ja
 <h2>Geeignete Ernährung für Anatolische Hirtenhund</h2>
 <p>Im Welpenalter ab der 6. Lebenswoche ist eine proteinarme <a href="https://tierisch-verliebt.de/magazin/getreidefreies-futter/">Ernährung</a> sinnvoll, damit der Hund nicht zu schnell in die Höhe schießt. Im adulten Alter ist der Hund bei seinem Fressen nicht wählerisch. Um Gelenkerkrankungen und Übergewicht zu vermeiden, gibt es aber Ernährungsempfehlungen.<br />
 Allgemein frisst der Hund, was er bekommt. Würde man ihm nur Brot und Wasser vorsetzen, wäre er auch damit zufrieden. Der Anatolische Hirtenhund kommt auch mit kleinen Portionen sehr gut zurecht. In seinem ursprünglichen Einsatzgebiet als Herdenhund in der Türkei machen ihm auch tagelanges Fasten nichts aus. Er braucht vergleichsweise wenig Fleisch, es sollte aber nicht ganz darauf verzichtet werden, damit er das notwendige Maß an tierischem Eiweiß erhält.</p>
-<p><img decoding="async" class="alignnone wp-image-2718" src="/magazin/wp-content/uploads/2024/09/anatolischer-hirtenhund-essen.webp" alt="anatolischer-hirtenhund-essen" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/anatolischer-hirtenhund-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/anatolischer-hirtenhund-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/anatolischer-hirtenhund-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/anatolischer-hirtenhund-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/anatolischer-hirtenhund-futter-alltag.webp" alt="Anatolischer Hirtenhund neben seinem Menschen bei der Napfreinigung (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie viel Pflege braucht ein Anatolischer Hirtenhund?</strong></p>
 <p>Anatolische Hirtenhunde haben ein dichtes Fell, das saisonal stark haart. Regelmäßiges Bürsten während des Fellwechsels hilft, abgestorbene Haare zu entfernen und das Fell gesund zu halten.</p>
@@ -56,3 +56,7 @@ Allgemein frisst der Hund, was er bekommt. Würde man ihm nur Brot und Wasser vo
 <p>Wie bei vielen großen Hunderassen können gesundheitliche Probleme wie Hüftdysplasie und Gelenkprobleme auftreten. Regelmäßige tierärztliche Untersuchungen sind wichtig.</p>
 <p><strong>Ist der Anatolische Hirtenhund für das Stadtleben geeignet?</strong></p>
 <p>Diese Rasse eignet sich besser für das Leben auf dem Land oder in einem Haus mit großem Garten. Der Anatolische Hirtenhund benötigt viel Platz und neigt dazu, unruhig zu werden, wenn er nicht genug Bewegung oder Freiheit hat.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

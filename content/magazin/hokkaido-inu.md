@@ -4,7 +4,7 @@ slug: "hokkaido-inu"
 type: page
 wpId: 2637
 published: "2024-02-11T12:19:52"
-updated: "2026-09-26T12:49:23"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/02/Hokkaido-Inu.png"
@@ -39,7 +39,7 @@ excerpt: "<p>Wenige Hunde haben ein so charakteristisches Aussehen wie der stolz
 <p>Farblich gibt es die Hokkaidos in den Varianten Rot, Schwarz, Weiß, Brindle, Wolfsgrau und Sesam (rotbraune Haare mit schwarzen Spitzen). Das widerstandsfähige <a href="https://tierisch-verliebt.de/magazin/pflege-von-fell-und-zaehnen-des-hundes/">Fell</a> besteht aus geraden und harten Deckhaaren sowie einer weichen, dichten Unterwolle. Typisch für die Hunderasse ist die buschige, nach oben gerollte Rute. Die Ohren sind klein, aufrecht und nach vorne gerichtet.</p>
 <h2>Geeignete Ernährung für Hokkaido Inu</h2>
 <p>Erwachsene Hokkaido-Hunde brauchen eine ausgewogene und hochwertige <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a>, deren Gehalt von der Größe, dem Alter sowie den Aktivitäten abhängt. Zugleich spielt der Gesundheitszustand eine Rolle. Das <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futter</a> lässt sich auf zwei Mahlzeiten am Tag rationieren. Die Energiebündel essen sowohl Fisch als auch Fleisch, dazu passen <a href="https://tierisch-verliebt.de/magazin/obst-und-gemuese-die-die-hunde-essen/">Gemüse</a>, Reis oder Nudeln.</p>
-<p><img decoding="async" class="alignnone wp-image-2982" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Hokkaido-Inu.webp" alt="ernaehrung-hokkaido-inu" width="599" height="599" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Hokkaido-Inu.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Hokkaido-Inu-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Hokkaido-Inu-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Hokkaido-Inu-768x768.webp 768w" sizes="(max-width: 599px) 100vw, 599px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/hokkaido-inu-futter-alltag.webp" alt="Hokkaido Inu geht entspannt auf einen schlichten Napf zu." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3 data-pm-slice="1 1 []">Ist der Hokkaido Inu für das Stadtleben geeignet?</h3>
 <p data-pm-slice="1 1 []">Der Hokkaido Inu ist nicht die ideale Rasse für das Stadtleben, kann sich aber mit der richtigen Haltung und genügend Bewegung anpassen.<br />
@@ -62,3 +62,7 @@ Diese Rasse hat ein dichtes, doppellagiges Fell, das stark haart und viele Hauts
 <p>Nein, der Hokkaido Inu ist nicht die beste Wahl für Ersthundebesitzer.<br />
 Diese Rasse ist intelligent, eigenständig und wachsam, aber auch stur und anspruchsvoll in der Erziehung. Ein erfahrener Hundehalter, der konsequent und geduldig ist, wird mit einem Hokkaido Inu besser zurechtkommen als ein Anfänger.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

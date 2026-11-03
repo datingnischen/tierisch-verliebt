@@ -4,7 +4,7 @@ slug: "voegel-und-kinder"
 type: post
 wpId: 3601
 published: "2026-03-05T22:37:24"
-updated: "2026-09-26T01:06:40"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/Vogel-und-Kinder.compr_.png"
@@ -61,7 +61,8 @@ excerpt: "<p>So entsteht eine sichere und liebevolle Beziehung Vögel und Kinder
 <li>Spielzeug austauschen</li>
 </ul>
 <p>Dabei sollten Erwachsene immer unterstützen und erklären, warum diese Aufgaben wichtig sind.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3608" src="/magazin/wp-content/uploads/2026/03/Voegel-und-Kinder-Infografik.compr_-1024x683.png" alt="Infografik: Regeln für ein sicheres Miteinander von Vögeln und Kindern" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/03/Voegel-und-Kinder-Infografik.compr_-1024x683.png 1024w, /magazin/wp-content/uploads/2026/03/Voegel-und-Kinder-Infografik.compr_-300x200.png 300w, /magazin/wp-content/uploads/2026/03/Voegel-und-Kinder-Infografik.compr_-768x512.png 768w, /magazin/wp-content/uploads/2026/03/Voegel-und-Kinder-Infografik.compr_.png 1536w" sizes="(max-width: 910px) 100vw, 910px" />&nbsp;</p>
+<p><a href="/magazin/wp-content/uploads/2026/11/voegel-und-kinder-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-und-kinder-schaubild.webp" alt="Nähe beginnt mit Rücksicht; Beobachten statt festhalten; Erwachsene begleiten; Rückzug respektieren" width="1536" height="1024" /></a>&nbsp;</p>
+<!-- graphic-text-748 --><details><summary>Grafik als Text lesen</summary><ul><li>Beobachten statt festhalten</li><li>Erwachsene begleiten</li><li>Rückzug respektieren</li></ul></details><!-- /graphic-text-748 -->
 <hr>
 <h2>Freiflug sicher gestalten</h2>
 <p>Beim Freiflug sollten Kinder ruhig bleiben und keine schnellen Bewegungen machen. Hektisches Verhalten kann den Vogel erschrecken.</p>
@@ -98,3 +99,8 @@ excerpt: "<p>So entsteht eine sichere und liebevolle Beziehung Vögel und Kinder
 <p>Mit klaren Regeln, Aufsicht und einem sicheren Umfeld entsteht eine harmonische Beziehung zwischen Kind und Vogel.</p>
 <hr>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.zuerchertierschutz.ch/de/tierhaltung/wellensittiche/tipps" target="_blank" rel="noopener noreferrer">www.zuerchertierschutz.ch</a>.</p>
+<!-- /audit-visual-credit -->

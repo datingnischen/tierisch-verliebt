@@ -1,0 +1,681 @@
+[
+  {
+    "id": 8,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-affe.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/affen-rhesusaffe-auffangstation.webp",
+    "articles": [
+      "affen"
+    ],
+    "alt": "Rhesusaffe auf einem Ast in einer begrünten Auffangstation; eine Pflegerin beobachtet ihn mit Abstand.",
+    "prompt": "Create ONE photorealistic natural editorial photograph, 3:2 landscape 1536x1024. A rhesus macaque sits on a broad branch inside a spacious leafy primate sanctuary habitat. In the far background behind a secure mesh boundary an adult female keeper in plain work clothes observes quietly, clearly separated from the animal, no physical contact. Macaque is the sharp main subject, natural brown-grey fur, pinkish face, anatomically accurate hands and feet. Unposed documentary everyday moment, neutral cloudy daylight, imperfect real textures, no theatrical affection. No text, no logo, no collage, no watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:/Users/christian.mogge/.codex/generated_images/01a1a082-e065-7e81-8436-90c2ebc3391f/exec-3c23b6d0-2fe2-4719-b141-6f5df714e7ea.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 312702 Bytes bestätigt.",
+      "Pflegerin vom Affen durch eine Gehegebarriere getrennt; kein Privatkontakt als Haltungsempfehlung inszeniert."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 312702
+  },
+  {
+    "id": 30,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-american-bulldog.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/american-bully-spazierpause.webp",
+    "articles": [
+      "american-bully"
+    ],
+    "alt": "American Bully mit naturbelassenen Ohren bei einer ruhigen Spazierpause mit einem Mann.",
+    "prompt": "Use case: photorealistic-natural. ONE 3:2 landscape editorial photograph 1536x1024. A healthy proportionate blue-grey American Bully with natural uncut ears and long natural tail pauses on a gravel park path, looking at an ordinary middle-aged man crouching a comfortable distance away holding its loose leash. Dog in sharp foreground, man secondary profile with stubble and real skin texture, worn outdoor jacket. A believable quiet walking break, no embrace, no gaze at camera. Overcast neutral daylight, grass and fallen leaves, candid composition from dog eye level. Correct anatomy, no exaggerated musculature, no cropped ears. No text, logo, collage or watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-4914441d-0f28-4499-a416-9faa7c9f48a8.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 321490 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 321490
+  },
+  {
+    "id": 44,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/american-wirehair-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/american-wirehair-flur.webp",
+    "articles": [
+      "american-wirehair"
+    ],
+    "alt": "American Wirehair mit drahtigem Tabbyfell auf einem Holzboden neben einem Papierball.",
+    "prompt": "Use case photorealistic-natural. ONE candid editorial photo, landscape 3:2 1536x1024, animal focused. An adult American Wirehair cat steps slowly across a worn wooden hallway floor, side three-quarter view, looking toward a loosely rolled paper ball. True breed: short dense coarse springy crimped wire coat, brown tabby with white chest, gently curled whiskers, rounded medium head and sturdy body. Texture must read wiry not silky or longhaired. Plain lived-in hallway with shoes blurred behind, no people, no windows in composition. Neutral diffuse daylight, realistic imperfect fur and wood grain. Four anatomically correct paws, single tail, no text, no logos, no collage.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-7b9d4bc6-bc9f-481b-91ee-02988017492e.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 203396 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 203396
+  },
+  {
+    "id": 53,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-savanna-katze.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/savannah-katze-gesicherte-terrasse.webp",
+    "articles": [
+      "ashera",
+      "savannah-katze"
+    ],
+    "alt": "Savannah-Katze nähert sich einer sitzenden Frau in einem gesicherten Außengehege.",
+    "prompt": "Use case photorealistic-natural. ONE natural candid editorial photograph, 3:2 horizontal 1536x1024. A later-generation domestic Savannah cat, tall slender long legs, large upright ears, warm tan short coat with separated solid black spots and dark ringed tail, walks toward an ordinary seated woman about 55 in a fully enclosed secure outdoor cat patio. Cat in sharp foreground, woman's wrinkled hands resting on own knee, no grabbing or hugging, relaxed voluntary approach. Woman in everyday denim and cardigan seen partly in side profile, real age lines and skin texture, not model beauty. Secure mesh patio with climbing log, plain brick wall, neutral cloudy daylight. Accurate anatomy, no serval, no exotic pet glamor, no text/logo/watermark/collage.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-6d48e33a-e9dd-4d10-87cf-f5d0fcde63e2.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 333224 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden.",
+      "Bewusst als Savannah dargestellt; die Artikelverwendung bei Ashera darf keine eigenständige Ashera-Rasse oder nachgewiesene Abstammung behaupten."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 333224
+  },
+  {
+    "id": 183,
+    "oldAsset": "/magazin/wp-content/uploads/2025/05/Katzenrasse-Burmilla2-1024x683.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/burmilla-lesepause.webp",
+    "articles": [
+      "burmilla"
+    ],
+    "alt": "Silberne Burmilla sitzt während einer Lesepause neben den Füßen einer älteren Frau.",
+    "prompt": "Use case photorealistic-natural. ONE candid editorial photo 3:2 horizontal 1536x1024. A short-haired silver shaded Burmilla cat with green eyes and fine dark eyeliner, pink nose, soft rounded head and a subtle silvery tipped coat, sits on a plain wool rug beside an older woman's slippered feet while she reads in an armchair. Animal sharp and dominant, woman only partial lower body and one naturally wrinkled hand turning book page, no touching, no staged embrace. Modest lived-in interior, low oblique camera, neutral soft daylight, slightly rumpled rug, natural detailed fur. Realistic anatomy, no text, logos or collage.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-35fe758f-f2f0-491a-b007-45278f32cc83.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 233310 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 233310
+  },
+  {
+    "id": 189,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/california-spangled-cat-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/california-spangled-cat-kratzpodest.webp",
+    "articles": [
+      "california-spangled-cat"
+    ],
+    "alt": "California Spangled Cat mit dunklen Tupfen ruht aufmerksam auf einem Kratzpodest.",
+    "prompt": "Use case photorealistic-natural. ONE realistic animal-focused editorial photograph 1536x1024 landscape 3:2. A California Spangled domestic cat rests alert on a broad sisal scratching platform in a plain study, side-on whole body. Correct breed: lean muscular long body, short bronze-brown coat with distinct solid dark spots rather than rosettes, barred legs, rounded ear tips, angular face with pronounced cheekbones. Greenish amber eyes. Ordinary shelves softly out of focus, no person, no window visible. Cool neutral soft daylight, unstaged fur, lightly worn sisal. Accurate paws and single ringed tail visible. No text, no logo, no collage, no glamour lighting.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-1b5b0371-75ac-4df1-9bc9-7b8330f1168e.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 190632 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 190632
+  },
+  {
+    "id": 191,
+    "oldAsset": "/magazin/wp-content/uploads/2025/05/California-Spangled-Cat2.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/california-spangled-cat-entdeckung.webp",
+    "articles": [
+      "california-spangled-cat"
+    ],
+    "alt": "California Spangled Cat untersucht neben einem sitzenden Mann eine offene Papiertüte ohne Henkel.",
+    "prompt": "Use case photorealistic-natural. ONE documentary everyday photograph 3:2 landscape 1536x1024. A California Spangled domestic cat investigates a paper shopping bag lying on its side on a modest dining room floor beside a seated adult man about 35 whose hands rest naturally on knees. Cat is sharp main subject in side view, lean long body, bronze-brown short coat with solid dark leopardlike spots not rosettes, barred legs, rounded ear tips, pronounced cheekbones, amber eyes. Man secondary cropped at shoulders, plain t-shirt jeans, no hugging, spontaneous cat exploration. Neutral daylight and real textures, imperfect domestic scene. Bag has no handles or printing. Correct anatomy, no text logos collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-3b9ff787-b2cc-4ca4-91e6-d243e9716b5b.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 175656 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 175656
+  },
+  {
+    "id": 211,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/chausie-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/chausie-klettersteg.webp",
+    "articles": [
+      "chausie"
+    ],
+    "alt": "Chausie mit langen Beinen und braun geticktem Fell auf einem Klettersteg im gesicherten Freigehege.",
+    "prompt": "Use case photorealistic-natural. ONE animal-focused natural editorial photograph 3:2 landscape 1536x1024. Adult domestic Chausie cat stands on a low wooden climbing walkway in a fully secure mesh catio with natural grasses beyond. True Chausie morphology: tall long legs, muscular elongated body, short tawny brown ticked coat without spots or stripes on torso, long upright ears with tiny dark tufts, angular cheekbones, golden eyes, black tipped tail. Profile whole body with head turning slightly, no people. Neutral overcast daylight, believable fur texture, imperfect worn wood, unsentimental documentary framing. No jungle cat or serval, accurate four paws and single tail. No text/logo/collage.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-a6639a11-84ba-4c88-8526-cf735ee55271.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 272052 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 272052
+  },
+  {
+    "id": 214,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-chihuahua-2.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/chihuahua-schnueffelpause.webp",
+    "articles": [
+      "chihuahua"
+    ],
+    "alt": "Chihuahua im Y-Geschirr schnuppert bei einem Spaziergang neben einer älteren Frau am Wegrand.",
+    "prompt": "Use case photorealistic-natural. ONE candid editorial photograph landscape 3:2 1536x1024. A healthy short-coated cream Chihuahua with apple-shaped head, large upright ears, normal eyes, petite but not exaggerated body walks in a well-fitting Y harness on a loose lead along a quiet town pavement. An ordinary woman about 65 in walking shoes is visible only from waist down beside the dog, a spontaneous sniffing stop by a tree pit. Dog is main subject seen low from side at its own eye height, accurate four paws and natural tail. Neutral cloudy daylight, lived street textures, no staged cuddle or fashion glamour. No text logos collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-61a05b09-7c6b-4bf1-93d0-41b0f6ffa269.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 195558 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 195558
+  },
+  {
+    "id": 216,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-chihuahua.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/chihuahua-gartenbank.webp",
+    "articles": [
+      "chihuahua"
+    ],
+    "alt": "Langhaar-Chihuahua sitzt entspannt neben einem Mann auf einer Gartenbank.",
+    "prompt": "Use case photorealistic-natural. ONE natural candid documentary photograph, 3:2 horizontal 1536x1024. A small long-haired black-and-tan Chihuahua with large upright ears and ordinary healthy proportions rests beside a man about 40 on a worn garden bench, in a fenced backyard. Dog voluntarily leans its shoulder lightly against his trouser leg, man's hand resting loosely flat on the bench rather than gripping dog, both looking toward something off frame. Man ordinary broad build, short receding hair, uneven stubble, real skin pores and smile lines, everyday sweatshirt. Dog sharp dominant subject, unobtrusive human companionship. Neutral diffuse daylight, slightly messy garden, subtle relaxed mood, accurate anatomy hands paws. No text logo collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-628464af-f4be-464d-88f4-fde75e454060.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 186502 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 186502
+  },
+  {
+    "id": 240,
+    "oldAsset": "/magazin/wp-content/uploads/2025/10/cornish-rex2-1024x683.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/cornish-rex-deckenmoment.webp",
+    "articles": [
+      "cornish-rex"
+    ],
+    "alt": "Cornish Rex mit kurzem gewelltem Fell beschnuppert eine Decke neben einer am Boden sitzenden Frau.",
+    "prompt": "Use case photorealistic-natural. ONE candid editorial photograph landscape 3:2 1536x1024. Adult Cornish Rex cat with very short close-lying wavy cream coat, slender arched body, long fine legs, wedge-shaped head and very large ears, stands beside a woman about 30 who sits on the floor sorting a plain folded blanket. Cat voluntarily sniffs a corner of blanket, not touching face, woman focused on task and seen in side profile with freckles and flyaway hair, ordinary loose cotton clothes. Plain bedroom, natural unstyled details, cat sharp main subject at low eye level. Cool soft daylight, accurate paws and hands, no long curly fur, no text logo collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-7819c4fd-677c-4c37-b383-0d0efa016ef1.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 105564 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 105564
+  },
+  {
+    "id": 271,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-german-schepherd.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/deutscher-schaeferhund-waldpause.webp",
+    "articles": [
+      "deutscher-schaeferhund"
+    ],
+    "alt": "Deutscher Schäferhund und älterer Mann machen eine ruhige Pause auf einem Waldweg.",
+    "prompt": "Use case photorealistic-natural. ONE natural editorial photograph 3:2 horizontal 1536x1024. Healthy adult black-and-tan German Shepherd with moderate straight back and natural upright ears, relaxed open mouth, pauses beside an older man about 70 on a forest walking trail. Dog near foreground three-quarter side view in sharp focus, man slightly behind standing with loose lead, weathered lined face and grey beard, ordinary waterproof coat. Looking in same off-camera direction rather than at camera, believable everyday companionship, no hug. Damp leaves and ferns, soft neutral overcast daylight, real detailed fur and skin, anatomically correct hands and paws, no exaggerated show sloping back. No text logos watermark collage.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-a7a7dafc-9bee-4109-92f0-53df7ea93b2c.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 305782 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 305782
+  },
+  {
+    "id": 280,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-doberman-hund.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/dobermann-heimkehr.webp",
+    "articles": [
+      "dobermann"
+    ],
+    "alt": "Dobermann mit unkupierten Ohren und langer Rute wartet im Flur, während eine Frau ihre Stiefel auszieht.",
+    "prompt": "Use case photorealistic-natural. ONE documentary candid editorial photograph 1536x1024 landscape 3:2. Black-and-rust adult Dobermann with natural floppy uncut ears and intact long tail stands in a plain home entrance after a walk while an ordinary woman about 45 pulls off her muddy boot seated on a low stool. Dog looks at her from a comfortable distance, lean athletic healthy body, wedge head, crisp rust markings on muzzle eyebrows chest and legs. No cropped ears no docked tail. Woman unstyled short hair, real skin wrinkles, practical rain jacket, head slightly lowered doing task; no embrace. Dog sharp foreground whole body, textured doormat and everyday coat hooks. Neutral daylight, imperfect candid scene, correct paws hands. No text logo collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-c94e8c9d-dd52-46cf-b4c6-8c1a54665776.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 176010 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 176010
+  },
+  {
+    "id": 296,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/egyptian-mau-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/egyptian-mau-gartenstufe.webp",
+    "articles": [
+      "egyptian-mau"
+    ],
+    "alt": "Silberne Egyptian Mau mit dunklen Tupfen beobachtet ein Blatt auf einer Gartenstufe im gesicherten Gehege.",
+    "prompt": "Use case photorealistic-natural. ONE animal-focused realistic editorial photograph landscape 3:2 1536x1024. A silver Egyptian Mau cat crouches naturally on a low weathered garden step inside a secure fully meshed cat enclosure. True Egyptian Mau: athletic medium body, short silver coat with distinct random solid charcoal spots, spotted sides, M forehead marking, dark dorsal stripe, ringed tail, gooseberry-green almond eyes, large alert ears. Side three-quarter whole body, looking at a drifting dry leaf, no person. Neutral cloudy daylight, stone texture and sparse fallen leaves, spontaneous quiet moment, correct four paws and single tail. No rosettes, no blue eyes, no text/logo/collage/watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-693d3bab-baea-41d9-884f-d057bb175695.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 225264 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 225264
+  },
+  {
+    "id": 297,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-egypt-katze.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/egyptian-mau-alltagsnaehe.webp",
+    "articles": [
+      "egyptian-mau"
+    ],
+    "alt": "Eine Egyptian Mau nähert sich dem Bein einer am Tisch sitzenden Frau.",
+    "prompt": "Use case photorealistic-natural. ONE candid editorial photograph landscape 3:2 1536x1024. Silver Egyptian Mau cat voluntarily rubs its cheek lightly against the shin of a seated woman about 60 in a modest dining room, woman is doing a crossword at table, visible lower body and natural aged hand holding pencil. Cat main subject low camera close side view, short silver coat with random solid charcoal spots, gooseberry green eyes, athletic body and ringed tail, forehead M. Everyday quiet coexistence, no grabbing or posing, no window centered in background. Neutral daylight, real fur and skin textures, mildly worn wooden chair and floor. Accurate anatomy, no text readable, no logo, no collage.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-df12659b-c694-4cdd-99e6-a8eea3326936.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 202068 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 202068
+  },
+  {
+    "id": 331,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/german-rex-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/german-rex-ruheplatz.webp",
+    "articles": [
+      "german-rex"
+    ],
+    "alt": "Schwarz-weiße German Rex mit kurzem gewelltem Fell auf einem zerknitterten Kissen.",
+    "prompt": "Use case photorealistic-natural. ONE animal-focused editorial photograph 3:2 landscape 1536x1024. Adult German Rex cat, compact medium body, rounded head, medium broad ears, black-and-white coat with very short soft close rippling waves rather than long ringlets, slightly curved whiskers. Cat is curled in a loose sleeping position on a rumpled cotton cushion inside a plain open wooden cat bed on floor, head lifted drowsily. Quiet ordinary interior, low close three-quarter view, no window in frame, no person. Neutral indirect daylight, detailed short wavy fur and whiskers, natural imperfections, accurate paws. Distinct from huge-eared slender Cornish Rex. No text/logo/collage/watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-498deeb2-bd3b-4dee-9283-9fab0ab72d91.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 157330 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 157330
+  },
+  {
+    "id": 371,
+    "oldAsset": "/magazin/wp-content/uploads/2025/11/heilige-birma-683x1024.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/heilige-birma-naehpause.webp",
+    "articles": [
+      "heilige-birma"
+    ],
+    "alt": "Heilige Birma mit blauen Augen und weißen Pfoten sitzt neben einer nähenden Frau auf dem Sofa.",
+    "prompt": "Use case photorealistic-natural. ONE natural candid editorial photograph 3:2 landscape 1536x1024. A seal-point Sacred Birman cat with vivid blue eyes, silky semi-long cream fur, dark brown face ears and tail and symmetrical white gloves on paws sits beside an ordinary middle-aged woman on a modest apartment sofa. Cat on its own cushion, woman beside it mending a garment, only torso side profile and natural hands visible, not posing or touching, quiet shared everyday moment. Cat focus at its eye level, alert soft expression, correct four white-gloved paws and single fluffy tail. Slightly worn upholstery and thread basket, neutral indirect daylight, real skin texture. No text, no logo, no collage, no watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-73d6ef4e-dc14-467f-a87f-32937e9ebeaf.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 229940 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 229940
+  },
+  {
+    "id": 430,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/japanese-bobtail-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/japanese-bobtail-spielmoment.webp",
+    "articles": [
+      "japanese-bobtail"
+    ],
+    "alt": "Dreifarbige Japanese Bobtail mit kurzem Pomponschwanz untersucht einen kleinen Korkball.",
+    "prompt": "Use case photorealistic-natural. ONE animal-focused realistic editorial photo 3:2 horizontal 1536x1024. A shorthaired Japanese Bobtail, white calico with distinct orange and black patches, slender athletic body, high cheekbones, large upright ears and unmistakable short fluffy pompom tail, stands sideways on a plain pale floor investigating a small cork ball. Entire cat including short pompom tail visible; no long tail, no Manx rump. An ordinary apartment entry area with a low shoe shelf softly blurred, no person and no window in frame. Neutral natural daylight, unstaged playful alertness, real fine fur texture, accurate four legs and paws. No text logo collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-bf8f740f-ee4f-42b4-a349-ac1be17a5d07.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 112714 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 112714
+  },
+  {
+    "id": 450,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/hund-kangal-mit-huebscher-frau-1024x640.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/kangal-weideweg.webp",
+    "articles": [
+      "kangal"
+    ],
+    "alt": "Kangal mit schwarzer Maske steht neben einer Frau an einem eingezäunten ländlichen Weg.",
+    "prompt": "Use case photorealistic-natural. ONE realistic candid documentary photograph landscape 3:2 1536x1024. Adult Kangal dog, very large fawn livestock guardian with distinct black mask, natural folded ears and full curled tail, stands in a quiet fenced rural field beside a woman about 50 in practical muddy boots and a plain fleece jacket. Woman seen side three-quarter, ordinary weathered face, hair loosely tied, holding a loose lead, looking over field while dog sniffs the air. Dog sharp dominant foreground full body, healthy proportions, no intimidating pose and no hug. Dry grasses and simple wooden fence, neutral overcast daylight, real fur and skin texture, accurate paws hands. No children livestock crowds text logos collar spikes or collage.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-0410f2df-5087-4910-a770-29309764ef9c.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 240980 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 240980
+  },
+  {
+    "id": 486,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/laperm-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/laperm-waeschekorb.webp",
+    "articles": [
+      "laperm"
+    ],
+    "alt": "LaPerm mit locker gelocktem Fell sitzt am Rand eines Wäschekorbs.",
+    "prompt": "Use case photorealistic-natural. ONE animal-focused natural editorial photograph landscape 3:2 1536x1024. A LaPerm cat sits on the edge of a low woven laundry basket with a plain cotton towel draped safely inside. True LaPerm: medium slender body, wedge face, medium large ears, loose light springy corkscrew curls especially around neck and belly, curly whiskers, plumed curly tail, brown tabby and white coat. Entire cat in relaxed three-quarter view, glancing sideways, not a dense teddy-bear Selkirk coat. Modest utility room, no person or window visible, neutral natural daylight, ordinary imperfect textures, accurate four paws and single tail. No text logos collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-56989899-06e6-4b22-9119-2672ab485528.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 144298 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 144298
+  },
+  {
+    "id": 554,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-norwegian-katze.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/norwegische-waldkatze-terrassenpause.webp",
+    "articles": [
+      "norwegische-waldkatze"
+    ],
+    "alt": "Norwegische Waldkatze steht in einer gesicherten Terrasse neben einem lesenden älteren Mann.",
+    "prompt": "Use case photorealistic-natural. ONE candid natural editorial photograph 3:2 landscape 1536x1024. Large Norwegian Forest Cat with triangular head, straight nose profile, almond green eyes, ear tufts, thick natural brown tabby and white semi-long coat and full bushy tail stands on a broad wooden table in a securely meshed covered cat patio. Ordinary older man about 60 sits nearby on a stool quietly reading a plain book, side profile with glasses grey hair real wrinkles, cat voluntarily looks toward him with relaxed body, no holding or staged cuddle. Animal sharply dominant, full body, varied rustic outdoor sheltered setting, diffuse cool daylight, real wind-tousled fur, accurate paws hands. No text/logo/collage/watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-f20d6f57-b011-405b-aaaf-10a8983411a8.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 257250 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 257250
+  },
+  {
+    "id": 596,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-persian-katze.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/perserkatze-sanfte-fellpflege.webp",
+    "articles": [
+      "perserkatze"
+    ],
+    "alt": "Ältere Frau bürstet eine entspannt liegende Perserkatze mit langem cremefarbenem Fell.",
+    "prompt": "Use case photorealistic-natural. ONE candid editorial photograph landscape 3:2 1536x1024. Traditional Persian cat with a moderate visible nose rather than extreme flat face, rounded small ears, copper eyes, dense long cream fur and short sturdy legs, rests beside an ordinary woman about 65 seated on a low stool in a modest tidy bedroom. Woman gently brushes the cat's back using one simple grooming brush, cat relaxed with free space to leave, no restraint and no embrace. Animal dominant sharp subject on a low padded grooming mat, a little naturally loose fur nearby, woman side profile real wrinkles grey hair and everyday cardigan. Neutral soft daylight, natural texture, correct hands paws single tail, no inflated doll eyes. No text/logo/collage/watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-7cfee8ce-c062-4ed6-941b-5ea0b9f859cc.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 223626 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 223626
+  },
+  {
+    "id": 686,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/snowshoe-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/snowshoe-unter-dem-stuhl.webp",
+    "articles": [
+      "snowshoe"
+    ],
+    "alt": "Snowshoe mit blauen Augen, weißem Gesichts-V und weißen Pfoten tritt unter einem Holzstuhl hervor.",
+    "prompt": "Use case photorealistic-natural. ONE animal-focused natural editorial photograph landscape 3:2 1536x1024. Adult seal-point Snowshoe cat, short cream coat with dark brown ears mask and tail, distinctive white inverted V on face, blue eyes, four white socked feet, medium athletic body. Cat steps out from under an ordinary wooden chair on a light kitchen floor, full side three-quarter view, head slightly turned, quietly alert. No food staging, no person, no window in composition. Neutral diffuse daylight, scuffed chair legs and realistic fur, true everyday moment, accurate anatomy and single tail. No fluffy Birman coat, no text logo collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-2ee64024-225e-40b2-a846-d0275cdd7b72.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 122668 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 122668
+  },
+  {
+    "id": 687,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/sokoke-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/sokoke-baumstamm.webp",
+    "articles": [
+      "sokoke"
+    ],
+    "alt": "Schlanke Sokoke mit holzartig gemustertem Tabbyfell läuft über einen niedrigen Baumstamm im gesicherten Gehege.",
+    "prompt": "Use case photorealistic-natural. ONE animal-focused editorial photograph landscape 3:2 1536x1024. Adult Sokoke cat walks side-on along a broad low log inside a securely meshed outdoor cat run. Accurate Sokoke: very short close glossy brown ticked coat with strong dark modified classic blotched tabby markings resembling wood grain, long lean athletic legs, slightly longer hind legs, narrow wedge head, fairly large ears, amber-green eyes, long tapering ringed tail. NOT spotted Bengal or wildcat, no rosettes. Whole cat visible, low documentary camera. Dry grass and leaf litter, soft neutral cloudy daylight, ordinary real textures. No people text logos collage watermark, correct four paws and single tail.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-dd45e488-7661-4096-a902-aacd57f48ef3.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 286774 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 286774
+  },
+  {
+    "id": 688,
+    "oldAsset": "/magazin/wp-content/uploads/2026/09/somali-katze-titelbild.jpg",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/somali-katze-karton.webp",
+    "articles": [
+      "somali-katze"
+    ],
+    "alt": "Rötlich getickte Somali-Katze mit buschigem Schwanz sitzt neugierig neben einem offenen Karton.",
+    "prompt": "Use case photorealistic-natural. ONE natural animal-focused editorial photograph landscape 3:2 1536x1024. A ruddy Somali cat with warmly ticked cinnamon-brown semi-long coat, dark dorsal shading, large cupped ears, almond amber eyes, ruff and long foxlike bushy tail sits upright beside an open plain cardboard box on a worn wooden floor. Fine elegant body, foxlike alert face but unmistakably cat, no tabby stripes or spots on torso. Three-quarter view entire cat and full tail visible, looking into box, no person, no window in composition. Plain modest home study, neutral diffuse daylight, detailed natural fur and imperfect cardboard, correct paws and single tail. No text logos collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-58835017-a03d-4cc1-b333-fae0eee5f626.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 173734 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 173734
+  },
+  {
+    "id": 689,
+    "oldAsset": "/magazin/wp-content/uploads/2023/12/frau-mit-sphinx.png",
+    "newAsset": "/magazin/wp-content/uploads/2026/11/sphynx-katze-fleecedecke.webp",
+    "articles": [
+      "sphynx-katze"
+    ],
+    "alt": "Sphynx-Katze ruht auf einer Fleecedecke neben einer lesenden Frau.",
+    "prompt": "Use case photorealistic-natural. ONE candid natural editorial photograph 3:2 landscape 1536x1024. Adult Sphynx cat with natural fine peach-fuzz skin, pink and grey mottling, soft ordinary wrinkles, wedge head, large ears and normal almond green eyes, rests loosely on a soft folded fleece beside a woman about 40 seated on a couch. Woman reading a plain book, only side torso and hands visible, ordinary freckles and skin texture, relaxed cotton shirt. Cat chooses proximity without being held, sharp main subject at low angle with front paws visible and single tail curling naturally beside its body. Warm indoor room but neutral diffuse daylight, no sun exposure, modest unstyled home. Anatomically correct hands paws, no plastic skin no glamour face, no text logos collage watermark.",
+    "generator": "OpenAI built-in image_gen; photorealistic-natural; 2026-11-03",
+    "generatorSource": "C:\\Users\\christian.mogge\\.codex\\generated_images\\01a1a082-e065-7e81-8436-90c2ebc3391f\\exec-6ce8726a-be0c-40bb-aace-55ad113f6ca3.png",
+    "checks": [
+      "Generiertes Original vollständig visuell geprüft: Motiv, sichtbare Anatomie, Fell/Haut und Rassenmerkmale.",
+      "Einzelmotiv ohne Collage; Tier im Fokus; keine erkennbare Marke oder eingebauter Titel.",
+      "Alltagsszene mit freiwilliger Nähe oder Abstand; keine fixierende Kuschelpose.",
+      "WebP-Export mit sharp; technische Metadaten separat verifiziert.",
+      "1536 × 1024 px (3:2), WebP, 179380 Bytes bestätigt."
+    ],
+    "limitations": [
+      "KI-generierte illustrative Darstellung, kein dokumentarischer Rassen- oder Abstammungsnachweis.",
+      "Abgebildete Erwachsene sind fiktiv und dürfen nicht als echte Mitglieder bezeichnet werden."
+    ],
+    "width": 1536,
+    "height": 1024,
+    "bytes": 179380
+  }
+]

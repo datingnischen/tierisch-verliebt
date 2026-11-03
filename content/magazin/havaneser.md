@@ -4,7 +4,7 @@ slug: "havaneser"
 type: page
 wpId: 367
 published: "2019-10-24T21:48:57"
-updated: "2026-09-22T13:53:21"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Havaneser-3.jpg"
@@ -59,7 +59,7 @@ excerpt: "<p>Mit seiner verspielten und aufgeweckten Art gewinnt der Havaneser d
 <h2>Geeignete Ernährung</h2>
 <p>Havaneser stellen grundsätzlich keine großen Erwartungen an ihr Futter und können daher sowohl mit Nass- als auch mit Trockenfutter <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">ernährt</a> werden. Hierbei ist jedoch zu beachten, dass dieses Futter stets gut verdaulich und von hochwertiger Qualität ist. Darüber hinaus sollte das Futter auch zur Größe des Hundes passen. Minderwertiges Futter führt bei einem Havaneser schnell zu gesundheitlichen Problemen. Auch ein Nährstoffmangel ist die Folge, wenn das Tier nicht täglich mit den wichtigsten Nährstoffen versorgt wird.</p>
 <p>Ähnlich wie bei anderen Hundearten sollte auch beim kleinen Havaneser Fleisch an erster Stelle stehen. Als Ergänzung eignen sich beispielsweise Trockenkauartikel, die gleichzeitig die Zähne reinigen. Leckerlis sollten nur in Maßen gefüttert werden, damit der Hund nicht zu schnell an Gewicht zunimmt.</p>
-<p><img decoding="async" class="alignnone wp-image-2980" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Havanese.webp" alt="ernaehrung-havaneser" width="599" height="599" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Havanese.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Havanese-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Havanese-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Havanese-768x768.webp 768w" sizes="(max-width: 599px) 100vw, 599px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/havaneser-futter-alltag.webp" alt="Havaneser wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Wie kann man einen Havaneser geistig auslasten?</h3>
 <p>Der Havaneser ist ein intelligenter und lernfreudiger Hund, der nicht nur körperliche Bewegung, sondern auch geistige Beschäftigung braucht, um glücklich und ausgeglichen zu sein.</p>
@@ -75,3 +75,7 @@ Dank seines freundlichen Wesens, seiner Intelligenz und Anpassungsfähigkeit ist
 <p>Havaneser sind eine insgesamt gesunde Rasse, aber wie alle Hunde haben sie einige rassetypische Gesundheitsrisiken.<br />
 Besonders häufig sind Knieprobleme (Patellaluxation), Zahnprobleme, Allergien und Augenkrankheiten.<br />
 Mit der richtigen Pflege, Ernährung und regelmäßigen Tierarztbesuchen kann man viele Probleme frühzeitig erkennen und vermeiden.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -4,7 +4,7 @@ slug: "bengal-katze"
 type: page
 wpId: 237
 published: "2019-07-22T14:32:03"
-updated: "2026-09-22T13:51:10"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/bengalkatze.jpg"
@@ -34,7 +34,7 @@ excerpt: "<p>Kurzbeschreibung der Bengalkatze Die Bengalkatze ist eine Wildkatze
 <p>Die uns heute bekannte Bengalkatze entstand durch eine kalifornische Genetikerin, die 1963 eine wilde Asiatische Leopardenkatze mit einer schwarzen <a href="https://tierisch-verliebt.de/magazin/hauskatze/">Hauskatze </a>kreuzte. Ihr Ziel war dabei eine Verbindung zwischen dem Fell einer Wildkatze und dem Charakter einer Hauskatze herzustellen. Im weiteren langjährigen Zucht &#8211; und Entstehungsprozess dieser speziellen Rasse wurden mit Burmesen und Siamkatzen noch zwei weitere Katzenarten eingekreuzt.</p>
 <p>Am Ende des Prozesses erhielt die amerikanische Genetikerin, eine äußerlich an eine bengalische Wildkatze erinnernde Rasse, die jedoch die Charakterzüge einer Hauskatze hat. Heutzutage werden in der Zucht allerdings keine anderen Katzenrassen mehr eingekreuzt, sondern nur noch reinerbig gearbeitet.</p>
 <p>In Europa wird diese Katzenrasse erst seit 1999 gezüchtet und ist unter dem Namen Leopardette bekannt. In Deutschland ist die Bengalkatze dennoch nur sehr selten als Hauskatze verbreitet.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3242" src="/magazin/wp-content/uploads/2025/05/Bengalkatze2-1024x683.png" alt="Bengalkatze2" width="910" height="607" srcset="/magazin/wp-content/uploads/2025/05/Bengalkatze2-1024x683.png 1024w, /magazin/wp-content/uploads/2025/05/Bengalkatze2-300x200.png 300w, /magazin/wp-content/uploads/2025/05/Bengalkatze2-768x512.png 768w, /magazin/wp-content/uploads/2025/05/Bengalkatze2.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/bengalkatze-alltagsnaehe.webp" alt="Eine Bengalkatze reibt ihre Wange an der entspannten Hand einer lesenden Frau auf dem Sofa." width="1536" height="1024" /></p>
 <h2>Überlegungen vor der Anschaffung</h2>
 <p>Die Bengalkatze zählt zu den teuersten Katzenrassen die es gibt, weshalb die <strong>Anschaffungskosten</strong> meist <strong>zwischen 1000 und 1500 Euro</strong> liegen. Außerdem unterscheiden Züchter zwischen Liebhabertier, Zuchttier und Schautier.</p>
 <p>Wichtig ist außerdem, dass man genug Fläche zur Verfügung hat, da die Katzen sehr viel Bewegung und Auslauf zum Wohlfühlen benötigen. Am besten eignet sich dafür ein großes Haus, bevorzugt mit Garten.</p>
@@ -70,3 +70,7 @@ Ausgewählte Mikronährstoffe, wie zum Beispiel ausgewählte Aminosäuren, Vitam
 <h3 data-start="1761" data-end="1991"><strong data-start="1761" data-end="1798">Ist die Bengalkatze hypoallergen?</strong></h3>
 <p data-start="1761" data-end="1991">Nein. Obwohl sie ein kurzes, pflegeleichtes Fell besitzt, produziert sie ebenso das Allergen <em data-start="1894" data-end="1903">Fel d 1</em> wie andere Katzen. Allergiker sollten vor der Anschaffung testen, ob sie sie vertragen.</p>
 <p class="" data-start="1993" data-end="2214">&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

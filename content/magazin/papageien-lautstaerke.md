@@ -4,7 +4,7 @@ slug: "papageien-lautstaerke"
 type: post
 wpId: 3581
 published: "2026-03-04T21:13:17"
-updated: "2026-09-26T00:54:41"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/amduma-bird-8151702_1280.compr_.jpg"
@@ -85,7 +85,8 @@ Der Vogel schreit – der Halter reagiert sofort.</p>
 <li>Atemprobleme</li>
 </ul>
 <p>Bei Verdacht sollte ein vogelkundiger Tierarzt konsultiert werden.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3777" src="/magazin/wp-content/uploads/2026/09/papageien-laut-ursachen-infografik-1024x683.png" alt="Infografik: Warum Papageien laut werden – Ursachen und Lösungen" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/09/papageien-laut-ursachen-infografik-1024x683.png 1024w, /magazin/wp-content/uploads/2026/09/papageien-laut-ursachen-infografik-300x200.png 300w, /magazin/wp-content/uploads/2026/09/papageien-laut-ursachen-infografik-768x512.png 768w, /magazin/wp-content/uploads/2026/09/papageien-laut-ursachen-infografik.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-lautstaerke-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-lautstaerke-schaubild.webp" alt="Lautes Rufen: erst die Ursache verstehen; Kontakt gesucht?; Beschäftigung vorhanden?; Umgebung verändert?; Verhalten plötzlich anders?" width="1536" height="1024" /></a></p>
+<!-- graphic-text-568 --><details><summary>Grafik als Text lesen</summary><ul><li>Kontakt gesucht?</li><li>Beschäftigung vorhanden?</li><li>Umgebung verändert?</li><li>Verhalten plötzlich anders?</li></ul></details><!-- /graphic-text-568 -->
 <hr>
 <h2>Was du vermeiden solltest</h2>
 <p>Bestimmte Reaktionen können das Problem verstärken:</p>
@@ -100,3 +101,8 @@ Der Vogel schreit – der Halter reagiert sofort.</p>
 <p>Lautstärke gehört jedoch immer ein Stück weit zum Leben mit Papageien – und ist Teil ihrer faszinierenden Persönlichkeit.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/bird-ornithology-parrots-8151702/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://vcahospitals.com/brookline/know-your-pet/biting-and-screaming-in-birds" target="_blank" rel="noopener noreferrer">vcahospitals.com</a>, <a href="https://www.vetmeduni.ac.at/interne-kleintiere/ueber-uns/ambulanzen/voegel-reptilien" target="_blank" rel="noopener noreferrer">www.vetmeduni.ac.at</a>.</p>
+<!-- /audit-visual-credit -->

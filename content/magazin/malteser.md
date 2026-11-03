@@ -4,7 +4,7 @@ slug: "malteser"
 type: page
 wpId: 350
 published: "2019-10-23T07:29:54"
-updated: "2026-09-22T13:53:24"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Malteser.jpg"
@@ -44,7 +44,7 @@ excerpt: "<p>Ein treuer Blick, eine fröhliche und liebenswerte Art &#8211; dies
 <p>Der Malteser ist ein sehr kleiner Hund. Hündinnen erreichen eine Widerristhöhe von 20 &#8211; 23 cm. Bei Rüden ist die Widerristhöhe mit 21 &#8211; 25 cm etwas höher. Der Körperbau dieser Rasse ist schlank, jedoch nicht zu zierlich. Die leichten Hunde erreichen in der Regel ein Normalgewicht von 3 &#8211; 4 kg. Das auffälligste Merkmal des Maltesers ist sein langes, weiches <a href="https://tierisch-verliebt.de/magazin/pflege-von-fell-und-zaehnen-des-hundes/">Fell</a>, das in manchen Fällen auch elfenbeinfarben sein kann. Bei Ausstellungen haben Malteser oft langes, bis zum Boden reichendes Haar. Dieses bedarf ständiger Pflege. Optisch zeichnet sich die Hunderasse durch schwarze Knopfaugen und einer Stupsnase aus. Der Kopf ist eher breit.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Wie für jede Hunderasse ist auch für den Malteser eine ausgewogene und abwechslungsreiche <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> enorm wichtig. Malteserhunde neigen oft zu Übergewicht, deshalb sind 120 g Futter am Tag komplett ausreichend. Dabei sollte die Menge aufgeteilt werden: 50 Prozent Fleisch, 25 Prozent Gemüse und 25 Prozent Reis. Auch genügend Flüssigkeit/Wasser ist für die Rasse extrem wichtig, da sie zum Austrocknen neigen.</p>
-<p><img decoding="async" class="alignnone wp-image-3021" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Malteser.webp" alt="ernaerung-malteser" width="599" height="599" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Malteser.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Malteser-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Malteser-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Malteser-768x768.webp 768w" sizes="(max-width: 599px) 100vw, 599px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/malteser-futter-alltag.webp" alt="Malteser wartet, während ein Mensch den Napf auf eine Unterlage stellt." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Wie verhält sich der Malteser gegenüber Kindern?</h3>
 <p>Der Malteser ist ein toller Familienhund und kann sich gut mit Kindern verstehen – aber es gibt ein paar Dinge zu beachten!<br />
@@ -61,3 +61,7 @@ Damit es nicht verfilzt oder schmutzig wird, benötigt der Malteser tägliches B
 <hr>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

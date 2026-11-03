@@ -54,3 +54,15 @@ test("15 Dutch cities have regional geography, valid search links and honest pro
     assert.doesNotMatch(city.contentHtml, /<(?:script|iframe|form)\b|\son\w+=/i);
   }
 });
+
+// Die neuen Bildnachweise sollen auch im NL-Renderer nicht offen im Artikel stehen.
+test("Dutch image credits are accessible in a closed source disclosure", () => {
+  for (const slug of ["bengaal", "duitse-herder", "franse-bulldog", "golden-retriever", "labrador-retriever"]) {
+    const entry = getNlBreed(slug);
+    const sources = entry.content.match(/<details class="magazine-sources">[\s\S]*?<\/details>/);
+    assert.ok(sources, `${slug}: missing closed image credit disclosure`);
+    assert.match(sources[0], /Beeldverantwoording/);
+    assert.match(sources[0], /AI-ondersteuning/);
+    assert.match(sources[0], /Bronnen en beeldverantwoording/);
+  }
+});

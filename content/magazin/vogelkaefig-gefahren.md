@@ -4,7 +4,7 @@ slug: "vogelkaefig-gefahren"
 type: post
 wpId: 3515
 published: "2026-03-01T22:38:28"
-updated: "2026-09-26T00:54:44"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/joshandye_picture-bird-7673605_1280.compr_.jpg"
@@ -93,10 +93,16 @@ excerpt: "<p>Ein Vogelkäfig soll ein sicherer Lebensraum sein – doch genau do
 <li>Seile auf Ausfransungen</li>
 </ul>
 <p>Abgenutztes Zubehör sollte rechtzeitig ersetzt werden.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-3770" src="/magazin/wp-content/uploads/2026/09/vogelkaefig-gefahren-infografik-1024x683.png" alt="Infografik: Giftige Materialien und Spielzeuge im Vogelkäfig" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/09/vogelkaefig-gefahren-infografik-1024x683.png 1024w, /magazin/wp-content/uploads/2026/09/vogelkaefig-gefahren-infografik-300x200.png 300w, /magazin/wp-content/uploads/2026/09/vogelkaefig-gefahren-infografik-768x512.png 768w, /magazin/wp-content/uploads/2026/09/vogelkaefig-gefahren-infografik.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-gefahren-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-gefahren-schaubild.webp" alt="Sicherheit beginnt beim Zubehör; Lose Fäden? Entfernen.; Beschädigte Teile? Austauschen.; Spiegel oder Plastikvogel? Weglassen." width="1536" height="1024" /></a></p>
+<!-- graphic-text-752 --><details><summary>Grafik als Text lesen</summary><ul><li>Lose Fäden? Entfernen.</li><li>Beschädigte Teile? Austauschen.</li><li>Spiegel oder Plastikvogel? Weglassen.</li></ul></details><!-- /graphic-text-752 -->
 <hr>
 <h2>Fazit: Sicherheit geht immer vor</h2>
 <p>Ein Vogelkäfig muss nicht nur groß und schön sein – vor allem muss er sicher sein. Giftige Materialien, ungeeignete Spielzeuge oder beschädigte Teile stellen reale Risiken dar. Wer bewusst auswählt und regelmäßig kontrolliert, schafft einen geschützten Lebensraum für seinen Vogel.</p>
 <p>Denn echte Fürsorge beginnt bei der Sicherheit.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/bird-blue-winged-leafbird-7673605/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.bv-tierschutz.de/uploads/Tierschutzwidriges%20Zubeh%C3%B6r%20f%C3%BCr%20Haustiere.pdf" target="_blank" rel="noopener noreferrer">www.bv-tierschutz.de</a>, <a href="https://www.tierschutzbund.de/tiere-themen/haustiere/andere-haustiere/wellensittiche/" target="_blank" rel="noopener noreferrer">www.tierschutzbund.de</a>.</p>
+<!-- /audit-visual-credit -->

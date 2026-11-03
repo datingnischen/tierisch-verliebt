@@ -4,7 +4,7 @@ slug: "bordeaux-dogge"
 type: page
 wpId: 566
 published: "2019-11-09T13:09:44"
-updated: "2026-09-22T13:52:55"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Bordeaux-Dogge.jpg"
@@ -50,7 +50,7 @@ excerpt: "<p>Steckbrief Lebenserwartung: 8 bis 10 Jahre Gewicht: 45 bis 60 kg Wi
 <h2>Geeignete Ernährung</h2>
 <p>Der Bedarf an Nährstoffen der Bordeaux Dogge unterscheidet sich stark von den Bedürfnissen anderer Rassen. Doch auch zwischen den einzelnen Vertretern der Rasse gibt es Unterschiede, da für den individuellen Bedarf an Nährstoffen immer verschiedene Faktoren ausschlaggebend sind. Zu nennen sind hier beispielsweise die Größe, das Gewicht und das Alter des Tieres, sowie seine Aktivität und eventuelle Nahrungsunverträglichkeiten.</p>
 <p>Wie schon erwähnt haben die Bordeaux Doggen eine Tendenz, eine Hüftgelenkdysplasie zu entwickeln, weshalb ihre Energiezufuhr optimal dem Bedarf angepasst werden sollte. So kann ein zu schnelles Wachstum und damit verbundene Schäden an den Gelenken verhindert werden. Die Rasse leidet ebenfalls vermehrt an Blähungen und Magendrehungen, weshalb das Futter leicht verdaulich sein sollte und besser in kleinen Portionen über den Tag hinweg serviert werden sollte.</p>
-<p><img decoding="async" class="alignnone wp-image-2909" src="/magazin/wp-content/uploads/2025/01/essen-Bordeaux-Dogue.webp" alt="ernaehrung-Bordeaux Dogge" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/essen-Bordeaux-Dogue.webp 1024w, /magazin/wp-content/uploads/2025/01/essen-Bordeaux-Dogue-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/essen-Bordeaux-Dogue-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/essen-Bordeaux-Dogue-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/bordeaux-dogge-futter-alltag.webp" alt="Bordeauxdogge frisst ruhig aus einem Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>1. Ist die Bordeaux Dogge für Anfänger geeignet?</h3>
 <p>Die Bordeaux Dogge ist nicht ideal für Anfänger, kann aber unter bestimmten Voraussetzungen auch von Ersthundebesitzern gehalten werden, wenn diese bereit sind, Zeit, Geduld und Energie zu investieren. Hier sind die Gründe:</p>
@@ -73,3 +73,7 @@ excerpt: "<p>Steckbrief Lebenserwartung: 8 bis 10 Jahre Gewicht: 45 bis 60 kg Wi
 <h3>4. Wie viel Platz benötigt eine Bordeaux Dogge?</h3>
 <p>Die Bordeaux Dogge benötigt nicht so viel Platz wie man aufgrund ihrer Größe denken könnte, da sie eine eher ruhige Rasse ist. Optimal ist ein Haus mit einem Garten, der ausreichend Platz bietet, damit die Bordeaux Dogge sich bewegen und entspannen kann. Eine Wohnung kann funktionieren, wenn sie groß genug ist und der Hund ausreichend Bewegung durch Spaziergänge und Aktivitäten erhält.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

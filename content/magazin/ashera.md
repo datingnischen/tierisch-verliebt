@@ -4,7 +4,7 @@ slug: "ashera"
 type: page
 wpId: 2791
 published: "2024-11-20T10:42:59"
-updated: "2026-09-22T13:50:47"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/11/serval.-ashera.jpg"
@@ -28,7 +28,7 @@ excerpt: "<p>Die Ashera Katze: eine der edelsten und teuersten Katzenrassen welt
 <h2>Rassemerkmale der Ashera Katze</h2>
 <p>Da die Ashera nicht als <a href="https://tierisch-verliebt.de/magazin/katzenrassen/">Katzenrasse</a> anerkannt ist, gibt es keine Standards hinsichtlich ihrer Merkmale. Offensichtlich ist jedoch, dass sie sowohl in der Größe und Statur als auch in der Fellzeichnung und dem Verhalten der Savannah Katze gleicht. Die Ashera Katze ist von schlanker Statur und besitzt eine anmutige Schönheit. Mit ihrem Verhalten und ihrer beachtlichen Größe hat sie mehr Ähnlichkeit mit einer Wildkatze als mit einer klassischen Hauskatze.</p>
 <p>Die Katzen erreichen eine Länge bis zu 1,2 Metern und eine Schulterhöhe von bis zu 45 Zentimetern. Bei Katern reicht die Schulterhöhe bis zu 60 Zentimetern und sie werden bis zu 18 Kilogramm schwer. Der schlanke Körper ruht auf langen Beinen. Der kleine Kopf mit großen, senkrecht aufgerichteten Ohren, sitzt auf einem langen Hals. Das beige bis goldfarbene Fell ist mit schwarzen Tupfen gemustert.</p>
-<p><img decoding="async" class="alignnone size-full wp-image-2572" src="/magazin/wp-content/uploads/2023/12/frau-mit-savanna-katze.png" alt="frau mit Savannah Katze" width="1024" height="1024"></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/savannah-katze-gesicherte-terrasse.webp" alt="Savannah-Katze nähert sich einer sitzenden Frau in einem gesicherten Außengehege." width="1536" height="1024" /></p>
 <h2>Wesen und Charakter: Instinkte eines Wildtiers und Friedlichkeit eines Haustiers</h2>
 <p>Obwohl die Ashera Katze über Gene der in Afrika wild lebenden Serval Katze verfügt, ist ihr Wesen ruhig, friedlich und zugewandt. Sie ist gesellig und verspielt, gleichwohl sind Rassen mit einem hohen genetischen Wildtieranteil in ausbruchsicheren Freigehegen zu halten. Anders als herkömmliche Hauskatzen ist die Ashera Katze nicht wasserscheu. Sie verfügt über eine hohe Sprungkraft, hat einen großen Bewegungsdrang und besitzt einen ausgeprägten Jagdtrieb.</p>
 <p>Die Ashera Katze lässt sich draußen, ähnlich wie ein Hund, an der Leine führen. Einerseits zeigt die Katze einen Hang zur Unabhängigkeit, dennoch ist sie ihrem Besitzer treu ergeben. Auffällig am Wesen der Ashera Katze ist ihre hohe Intelligenz. Sie befolgt Kommandos und ist fähig, Tricks zu erlernen. Sie fordert täglich eine Beschäftigung, die ihre geistigen Fähigkeiten trainiert.</p>
@@ -53,3 +53,7 @@ excerpt: "<p>Die Ashera Katze: eine der edelsten und teuersten Katzenrassen welt
 <p data-start="1223" data-end="1468">Ashera Katzen sind gesellig und suchen Nähe – sei es zu Menschen oder zu anderen katzenverträglichen Tieren. Einzelhaltung ist nur bei sehr viel menschlicher Interaktion sinnvoll.</p>
 <h3 data-start="1470" data-end="1714">Wie erkennt man eine echte Ashera Katze?</h3>
 <p data-start="1470" data-end="1714">Aufgrund der unsicheren Herkunft und Ähnlichkeit zur Savannah Katze ist eine eindeutige Identifikation schwierig. Ein DNA-Test kann Hinweise geben, aber vollständige Klarheit bietet er meist nicht.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

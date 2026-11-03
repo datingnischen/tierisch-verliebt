@@ -4,7 +4,7 @@ slug: "komondor"
 type: page
 wpId: 658
 published: "2019-12-09T19:59:50"
-updated: "2026-09-22T13:52:41"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Komondor.jpg"
@@ -50,7 +50,7 @@ excerpt: "<p>Steckbrief Lebenserwartung: 10 bis 13 Jahre Gewicht: 50 bis 60 kg W
 <h2>Eine gesunde Ernährung ist das A und O</h2>
 <p>Wie bei allen Lebewesen ist auch beim Komondor eine ausgewogene <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> für ein ausgeglichenes Wohlbefinden wichtig. Dabei enthält ein optimales Futtermittel einen hohen Fleischanteil, der durch Proteine, Fette, Kohlenhydrate und pflanzliche Inhaltsstoffe, wie Getreide und <a href="https://tierisch-verliebt.de/magazin/obst-und-gemuese-die-die-hunde-essen/">Gemüse</a> ergänzt werden kann. Dieses sollte der Komondor 1-2 mal/ Tag in Form von Nass- oder Trockenfutter erhalten.</p>
 <p>Das Trockenfutter besitzt dabei gegenüber dem Nassfutter den Vorteil, das es durch die raue Oberfläche der Pellets die Zähne des Hundes hervorragend reinigt. Bei jungen Hunden sollte ferner mehrmals am Tag eine kleine Portion gefüttert werden, da ihr Magen nur ein geringes Fassungsvermögen besitzt. Wenn der Vierbeiner evtl. Unverträglichkeiten gegenüber dem Futtermittel zeigt, sollte hier eher auf eine spezielle Nahrung umgestellt werden. So wird gewährleistet, dass der Hund stets gesund und munter bleibt.</p>
-<p><img decoding="async" class="alignnone wp-image-3008" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Komondor.webp" alt="ernaehrung-komondor" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Komondor.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Komondor-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Komondor-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Komondor-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/komondor-futter-alltag.webp" alt="Komondor wartet, während ein Mensch den Napf auf eine Unterlage stellt." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Ist der Komondor für Ersthundebesitzer geeignet?</h3>
 <p>Nein, der Komondor ist nicht für Ersthundebesitzer geeignet.<br />
@@ -72,3 +72,7 @@ Der Komondor hat ein einzigartiges schnurgeformtes, filzartiges Fell, das ihn vo
 Ohne richtige Pflege kann das Fell stark verfilzen &amp; unangenehm riechen!</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

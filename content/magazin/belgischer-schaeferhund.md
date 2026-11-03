@@ -4,7 +4,7 @@ slug: "belgischer-schaeferhund"
 type: page
 wpId: 592
 published: "2019-11-13T19:44:13"
-updated: "2026-09-22T13:52:51"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Belgischer-Schaeferhund.jpg"
@@ -50,7 +50,7 @@ excerpt: "<p>Das Portrait des Belgischen Schäferhundes zeigt eine intelligente 
 <p>Die Varietät Malinois beeindruckt wie der Tervueren durch eine schwarze Maske. Grundsätzlich ist der Malinois allerdings kurzhaarig. Das Fell hat eine gelbbräunliche Farbe, meist mit einer dunkeln Stichelung. Das einzige rauhaarige Fell des Belgischen Schäferhundes hat der Laekenois. Seine Fellfarbe ist gelb-grau-bräunlich.</p>
 <h2>Die richtige Ernährung für Belgische Schäferhunde</h2>
 <p>Die Futtermenge hängt stark von der Größe und dem Gewicht des Hundes ab. Die aktiven, leistungsstarken Hunde benötigen eine ausgewogene und artgerechte Ernährung. Neben einem hohen Fleischanteil ist auch <a href="https://tierisch-verliebt.de/magazin/obst-und-gemuese-die-die-hunde-essen/">Gemüse</a> sehr wichtig. Kohlenhydrate können in Maßen und je nach Aktivität auch zugeführt werden. Wichtig ist, dass die Tiere alle wichtigen Vitalstoffe und Omega-3-Fettsäuren erhalten. Der Protein- und Fettgehalt muss auf den individuellen Bedarf angepasst werden.</p>
-<p><img decoding="async" class="alignnone wp-image-2725 " src="/magazin/wp-content/uploads/2024/09/belgischer-schaeferhund-essen.webp" alt="belgischer-schaeferhund-essen" width="601" height="601" srcset="/magazin/wp-content/uploads/2024/09/belgischer-schaeferhund-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/belgischer-schaeferhund-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/belgischer-schaeferhund-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/belgischer-schaeferhund-essen-768x768.webp 768w" sizes="(max-width: 601px) 100vw, 601px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/belgischer-schaeferhund-futter-alltag.webp" alt="Belgischer Schäferhund neben seinem Menschen beim Reinigen des Napfes (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie pflegeintensiv ist der Belgische Schäferhund?</strong></p>
 <p>Belgische Schäferhunde benötigen regelmäßiges Bürsten, vor allem während des Fellwechsels. Ein wöchentliches Bürsten reicht aus, um das Fell sauber und glänzend zu halten. Ihr dicker Pelz schützt sie vor unterschiedlichen Wetterbedingungen, benötigt aber wenig Pflege.</p>
@@ -64,3 +64,7 @@ excerpt: "<p>Das Portrait des Belgischen Schäferhundes zeigt eine intelligente 
 <p>Sie sind von Natur aus wachsam und misstrauisch gegenüber Fremden, was sie zu guten Wachhunden macht. Mit der richtigen Sozialisierung können sie jedoch lernen, in neuen Situationen gelassener zu sein.</p>
 <p><strong>Wie intelligent ist der Belgische Schäferhund?</strong></p>
 <p>Belgische Schäferhunde gehören zu den intelligentesten Hunderassen. Sie lernen schnell und lieben Herausforderungen, was sie zu großartigen Arbeitshunden und Begleitern macht.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

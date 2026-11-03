@@ -4,7 +4,7 @@ slug: "malinois"
 type: page
 wpId: 583
 published: "2019-11-09T17:40:05"
-updated: "2026-09-22T13:52:53"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Malinois.jpg"
@@ -46,7 +46,7 @@ excerpt: "<p>Der Malinois wird oft mit dem Deutschen Schäferhund verwechselt. D
 <h2>Die geeignete Ernährung für Malinois</h2>
 <p>Malinois haben einen großen Appetit. Der Energiebedarf kann sich je nach Alter, Gewicht und Aktivität unterscheiden. Eine pauschale <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> für alle Hunde gibt es leider nicht. Grundsätzlich ist eine ausgewogene und gesunde Ernährung, mit dem Fokus auf Mineralstoffe und Vitamine, zu empfehlen.</p>
 <p>Bei einem ausgewachsenen Hund kann man sich an die grobe Regel halten das, dass Futter etwa zu 75 Prozent aus Fleisch bestehen sollte. Ein weiterer Bestandteil ist <a href="https://tierisch-verliebt.de/magazin/obst-und-gemuese-die-die-hunde-essen/">Gemüse</a>. Kohlenhydrate, süßes Obst und zu viel Getreide dürfen vermieden werden.</p>
-<p><img decoding="async" class="alignnone wp-image-3019" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Belgian-Malinois.webp" alt="ernaehrung-Malinois" width="599" height="599" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Belgian-Malinois.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Belgian-Malinois-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Belgian-Malinois-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Belgian-Malinois-768x768.webp 768w" sizes="(max-width: 599px) 100vw, 599px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/malinois-futter-alltag.webp" alt="Malinois frisst ruhig aus einem schlichten Napf im Wohnbereich." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Bellt ein Malinois viel?</h3>
 <p>Ja, der Malinois kann dazu neigen, viel zu bellen, wenn er nicht richtig ausgelastet oder erzogen wird.<br />
@@ -64,3 +64,7 @@ Der Malinois ist ein sehr intelligenter, energiegeladener und territorialer Hund
 <p>Nein, Malinois sind generell nicht besonders wetterempfindlich, aber sie haben gewisse Grenzen, da sie ein kurzes Fell ohne dichte Unterwolle besitzen. Ihr sehr aktives Wesen hilft ihnen jedoch, sich auch bei schlechtem Wetter gut zu bewegen und warm zu bleiben.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -4,7 +4,7 @@ slug: "dackel"
 type: page
 wpId: 549
 published: "2019-11-07T21:02:14"
-updated: "2026-09-22T13:52:57"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Dackel.jpg"
@@ -48,7 +48,7 @@ excerpt: "<p>Nicht ohne Grund ist der Dackel, auch Teckel oder Dachshund genannt
 <h2>Geeignete Ernährung für den Dackel</h2>
 <p>Natürlich trägt vor allem eine gesunde und ausgewogene <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> zum Wohlbefinden des Dackels bei. Häufig sind die Hunde nicht gerade wählerisch, was die Futtersorte angeht und nehmen sowohl Nass- als auch Trockenfutter oder auch das Barfen sehr gut an.</p>
 <p>Egal für welche Futterart von welchem Hersteller man sich auch entscheidet, man sollte immer gut darauf achten, welche Mengen der Dackel frisst. Bei kaum einer Hunderasse wirkt sich Übergewicht bereits so gravierend auf den Rücken und damit die Gesundheit des Hundes aus, wie bei den kurzbeinigen Jagdhunden. Aufgrund ihres überdurchschnittlich langen Körperbaus kann es bei Übergewicht sehr schnell zu allerlei Rückenleiden kommen, die mit einer ausgewogenen Ernährung und genügend sportlicher Beschäftigung leicht vermieden werden können.</p>
-<p><img decoding="async" class="alignnone wp-image-2937" src="/magazin/wp-content/uploads/2025/01/ernaehrung-Dachshund.webp" alt="ernaehrung-dackel" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/ernaehrung-Dachshund.webp 1024w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dachshund-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dachshund-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dachshund-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/dackel-futter-alltag.webp" alt="Dackel frisst aus einem kleinen Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>1. Sind Dackel für Ersthundebesitzer geeignet?</h3>
 <p>Dackel sind loyale, intelligente und charmante Hunde, die sich mit der richtigen Erziehung auch für Ersthundebesitzer eignen. Allerdings erfordern sie Geduld, Konsequenz und ein gewisses Maß an Erfahrung mit stureren Hunden. Wer bereit ist, sich auf ihren starken Charakter einzulassen und für ausreichende Beschäftigung zu sorgen, wird mit einem treuen und unterhaltsamen Begleiter belohnt.</p>
@@ -60,3 +60,7 @@ excerpt: "<p>Nicht ohne Grund ist der Dackel, auch Teckel oder Dachshund genannt
 <p>Dackel sind soziale Hunde, die sich gut mit anderen Hunden und manchmal auch mit Katzen verstehen können – wenn sie früh daran gewöhnt werden. Aufgrund ihres Jagdtriebs sind sie jedoch nicht ideal für Haushalte mit Kleintieren. Mit der richtigen Erziehung und einer langsamen Einführung kann das Zusammenleben mit anderen Haustieren jedoch gut funktionieren.</p>
 <h3>5. Wie lange kann ein Dackel alleine bleiben?</h3>
 <p>Dackel sind keine Hunde, die gerne lange alleine bleiben. Mit gutem Training können sie bis zu 4–6 Stunden allein sein, aber längere Zeiten sollten vermieden werden. Wer oft außer Haus ist, sollte eine Betreuung oder Alternativen in Betracht ziehen, um seinen Dackel glücklich und ausgeglichen zu halten.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

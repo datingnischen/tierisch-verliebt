@@ -4,7 +4,7 @@ slug: "jack-russell-terrier"
 type: page
 wpId: 274
 published: "2019-10-02T08:03:25"
-updated: "2026-09-22T13:51:08"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/jack-russell.jpg"
@@ -53,7 +53,7 @@ Um diese Hundetasse körperlich auszulasten, muss man mehr tun, als nur spaziere
 <p>Die Farben des Rassehundes sind folgende: Das meiste Fell ist weiß und hat Abzeichen in braun, Lohfarben, schwarz oder eine Kombination aus diesen Farben. Das Fell selber kann rau, glatt oder stichelhaarig sein. Die Ohren sind V-förmig und nach unten geklappt.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Beim Thema <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futter</a> gib es unterschiedliche Meinungen, die einen sagen Trockenfutter wäre besser, die anderen stimmen dem nicht zu und nehmen das Nassfutter. Bei Welpen gibt es aber eine Regel: Man nimmt am Besten das, was der Züchter dem kleinen Jack Russell gegeben hat. In der Regel kaufen die meisten das Erwachsenenfutter der gleichen Marke. Ansonsten muss man schauen was dem Hund gut bekommt und was er mag.</p>
-<p><img decoding="async" class="alignnone wp-image-2991" src="/magazin/wp-content/uploads/2025/02/ernaehrung-jack-russel.webp" alt="ernaehrung-jack-russell-terrier" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-jack-russel.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-jack-russel-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-jack-russel-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-jack-russel-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/jack-russell-terrier-futter-alltag.webp" alt="Jack Russell Terrier wartet ruhig neben dem Napf, während Trockenfutter abgemessen wird." width="1536" height="1024" /></p>
 <p>Man rät auf jeden Fall davon ab, dem Parson Jack Russell Terrier die Reste des Mittagessen zu geben, es kann sein, dass er von gesalzenem Fleisch eine Nierenkrankheit oder zu hohen Blutdruck bekommt. Nüsse sind auch sehr schädlich, denn der Phosphorgehalt stört beim Wachstum der Knochen. Hier können Missbildungen die Folge vom Verzehr sein.</p>
 <p><img decoding="async" class="alignnone size-large wp-image-2289" src="/magazin/wp-content/uploads/2023/08/Jack-Russell-3-1024x768.jpg" alt="Jack Russell " width="910" height="683" srcset="/magazin/wp-content/uploads/2023/08/Jack-Russell-3-1024x768.jpg 1024w, /magazin/wp-content/uploads/2023/08/Jack-Russell-3-300x225.jpg 300w, /magazin/wp-content/uploads/2023/08/Jack-Russell-3-768x576.jpg 768w, /magazin/wp-content/uploads/2023/08/Jack-Russell-3-600x450.jpg 600w, /magazin/wp-content/uploads/2023/08/Jack-Russell-3.jpg 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
 <h2>FAQ</h2>
@@ -74,3 +74,7 @@ Je nach Sozialisierung kann ihr Verhalten von freundlich und offen bis hin zu mi
 <p>Der Jack Russell Terrier ist nicht die einfachste Wahl für Ersthundebesitzer, aber mit der richtigen Einstellung &amp; Erziehung kann er ein großartiger Begleiter sein.<br />
 Diese Rasse ist intelligent, aktiv &amp; selbstbewusst, was sie zwar liebenswert, aber auch anspruchsvoll in der Erziehung macht.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -4,7 +4,7 @@ slug: "leonberger"
 type: page
 wpId: 691
 published: "2019-12-20T20:55:55"
-updated: "2026-09-22T13:52:36"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Leonberger.jpg"
@@ -56,7 +56,7 @@ excerpt: "<p>Wer auf der Suche nach einen Familien- und Begleithund ist, der ist
 <p>Welpen benötigen anfangs einen hohen Mineralienbedarf, weshalb auf Futter mit reichlich Kalzium zurückgegriffen werden sollte. Es darf aber kein zu energiereiches Futter angeboten werden, da ansonsten der Leonberger zu schnell wächst und dies kann später Probleme am Bewegungsapparat zur Folge haben. Ist der Leonberger dann ausgewachsen und körperlich sehr aktiv, sollte auf eine protein- und energiereiche Nahrung zurückgegriffen werden.</p>
 <p>Ab einem Alter von 6 Jahren zählt der Leonberger bereits zu den Senioren. Ab diesem Zeitpunkt ist leichtes und verdauliches <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futter</a> die beste Wahl, da hier bereits eine Einschränkung der Verdauungsvorgänge und der Organfunktionen vorliegt, was vollkommen normal ist. Übergewicht sollte vermieden werden, den Seniorenhunde leiden häufig an Knochen- und Gelenksbeschwerden.</p>
 <p>In Maßen kann man den Leonberger mit Leckerlis belohnen, was während der Erziehung sehr förderlich sein kann. Ab und zu, darf auch der sanfte Riese naschen, dies jedoch im Rahmen halten.</p>
-<p><img decoding="async" class="alignnone wp-image-3014" src="/magazin/wp-content/uploads/2025/02/ernaehrung-leonberger.webp" alt="ernaehrung-leonberger" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-leonberger.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-leonberger-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-leonberger-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-leonberger-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/leonberger-futter-alltag.webp" alt="Leonberger geht entspannt auf einen schlichten Napf zu." width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Ist der Leonberger für Ersthundebesitzer geeignet?</h3>
 <p>Ja, aber nur unter bestimmten Bedingungen.<br />
@@ -76,3 +76,7 @@ Mit Katzen kann er eine enge Freundschaft aufbauen, wenn er früh daran gewöhnt
 Mit Kleintieren ist Vorsicht geboten, aber mit Training kann er lernen, sie zu akzeptieren.<br />
 Eine frühzeitige Sozialisierung und klare Regeln sorgen für ein harmonisches Zusammenleben!</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

@@ -4,7 +4,7 @@ slug: "kangal"
 type: page
 wpId: 1446
 published: "2020-12-04T19:57:35"
-updated: "2026-09-22T13:51:48"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/12/kangal-e1607108231693.jpg"
@@ -58,12 +58,12 @@ Ein größerer und hoch umzäunter Garten ist für das Tier optimal. Ruhige Tier
 <p data-pm-slice="1 1 []">Ein Kangal kann nach dem FCI-Standard bis zu 60 Kilogramm wiegen. Grundsätzlich ist die Rasse in der Türkei ein wenig zierlicher und kleiner als in vielen anderen Ländern. Dieser muskulöse Hirtenhund strahlt sehr viel Gelassenheit aus, kann aber sehr schnell reagieren. Der breite Kopf wird von hängenden Ohren umrahmt, die buschige und hängende Rute rollt sich leicht auf.</p>
 <p>Das Haarkleid des Hundes verfügt über eine dichte Wolle und ist im Winter zumeist ein wenig länger als in den wärmeren Monaten. Innerhalb der Hunderasse kann die Haarlänge zwischen halblang und kurz abweichen. Kennzeichnend für den Kangal ist die schwarze Maske. Die Ohren und die Nase sind ebenfalls schwarz. Der Rassestandard beschreibt den Hund als einfarbig. Die hellen Flecken Flecken an den Pfoten und am Hals sind gestattet, aber hier gilt: je weniger Weiß vorhanden ist, desto besser.</p>
 <p>Der Kangal ist ein großer und eleganter Hund mit einem beeindruckenden Aussehen. Da die Hirten niemals gezielt züchteten, entwickelte sich das Gewicht und die Größe auf rein natürliche Art und Weise Die Kopfform des Tieres erinnert an den Molosser, jedoch mit einem wachen und aufmerksamen Blick. Die eher mittelgroßen Ohren hängen anliegend und flach sowie seitlich am Kopf. In einer ruhigen Stellung ist die Rute nach oben leicht gerollt. Das Fell der Hunde ist halblang bis kurz und sehr dicht. Der offizielle Standard des Hundes lässt alle Farben zu, wobei viele Hunde hellgrau bis hellbraun und eine dunkelbraune bis schwarze Maske tragen.</p>
-<p><img decoding="async" class="alignnone size-large wp-image-2598" src="/magazin/wp-content/uploads/2023/12/hund-kangal-mit-huebscher-frau-1024x640.png" alt="Hund Kangal mit frau" width="910" height="569" srcset="/magazin/wp-content/uploads/2023/12/hund-kangal-mit-huebscher-frau-1024x640.png 1024w, /magazin/wp-content/uploads/2023/12/hund-kangal-mit-huebscher-frau-300x188.png 300w, /magazin/wp-content/uploads/2023/12/hund-kangal-mit-huebscher-frau-768x480.png 768w, /magazin/wp-content/uploads/2023/12/hund-kangal-mit-huebscher-frau.png 1280w" sizes="(max-width: 910px) 100vw, 910px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/kangal-weideweg.webp" alt="Kangal mit schwarzer Maske steht neben einer Frau an einem eingezäunten ländlichen Weg." width="1536" height="1024" /></p>
 <h2>Geeignete Ernährung</h2>
 <p>Schwere und große Hunde stellen sehr hohe Ansprüche an die <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a>, damit die Gelenke und das Skelett sich gesund entwickeln können. Für die Ernährung des jungen Kangal empfiehlt sich eine Nahrung für Welpen. Hierbei sind Fett- und Proteingehalt an dem Wachstum der Hunderasse angepasst. Zu viel an Energie in der Welpenzeit kann eventuell zu Knochenschäden beim Hund führen.</p>
 <p>Hundenahrung, welche <a title="Getreidefreies Futter für den Hund – Ja oder Nein?" href="https://tierisch-verliebt.de/magazin/getreidefreies-futter/">Getreide</a> oder viel Zucker enthält, sollte vermieden werden. Stattdessen sollten die Halter auf Nass- oder Trockenfutter setzen, bei welchem Fleisch ganz oben auf der Liste der Zutaten steht. Das Übergewicht beim Kangal sollte vermieden werden, indem die Halter vor allem die Taille im Blick haben. Wenn der Hund Fett ansetzt, sollte die Ration an Futter verkleinert und ihm mehr Bewegung geboten werden.</p>
 <p>Übergewicht ist neben der falschen Ernährung im Welpenalter ein wichtiger Faktor, welcher zu quälenden Gelenkproblemen führen kann. Snacks wie Knochen aus Rinderhaut oder Rinderohren eigenen sich besonders gut, um das Kaubedürfnis des Tieres zu befriedigen. Tierknochen hingegen können zu Verletzungen führen. Außerdem sollte der Hund immer einen Zugang zu frischem Wasser haben.</p>
-<p><img decoding="async" class="alignnone wp-image-3001" src="/magazin/wp-content/uploads/2025/02/ernaehrung-Kangal.webp" alt="ernaehrung-kangal" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/02/ernaehrung-Kangal.webp 1024w, /magazin/wp-content/uploads/2025/02/ernaehrung-Kangal-300x300.webp 300w, /magazin/wp-content/uploads/2025/02/ernaehrung-Kangal-150x150.webp 150w, /magazin/wp-content/uploads/2025/02/ernaehrung-Kangal-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/kangal-futter-alltag.webp" alt="Kangal frisst ruhig aus einem schlichten Napf im Wohnbereich." width="1536" height="1024" /></p>
 <h2 data-pm-slice="1 1 []">FAQ</h2>
 <h3>Sind Kangal erlaubt in Deutschland?</h3>
 <p>Ja, der Kangal ist in Deutschland erlaubt. Allerdings wird er in einigen Bundesländern als sogenannter &#8220;Listenhund&#8221; geführt, was bedeutet, dass für seine Haltung bestimmte Auflagen gelten können. Da die Regelungen zur Haltung von Listenhunden in Deutschland von Bundesland zu Bundesland variieren, ist es wichtig, sich über die spezifischen Bestimmungen in Ihrem Wohnort zu informieren. Es ist daher ratsam, sich bei der zuständigen Behörde Ihres Bundeslandes oder Ihrer Gemeinde über die geltenden Vorschriften zu informieren, bevor Sie einen Kangal anschaffen.</p>
@@ -90,3 +90,7 @@ Allerdings gibt es Zeiten im Jahr, in denen er stark haart und mehr Fellpflege b
 Der Kangal ist von Natur aus ein Herdenschutzhund, was bedeutet, dass er ein starkes Territorial- und Schutzverhalten hat. Er kann sich mit anderen Hunden und Haustieren vertragen, wenn er von klein auf richtig sozialisiert wird.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

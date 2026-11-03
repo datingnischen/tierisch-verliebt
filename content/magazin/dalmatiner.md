@@ -4,7 +4,7 @@ slug: "dalmatiner"
 type: page
 wpId: 597
 published: "2019-11-14T21:14:41"
-updated: "2026-09-22T13:52:50"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Dalmatiner.jpg"
@@ -65,7 +65,7 @@ excerpt: "<p>Steckbrief Lebenserwartung: 12 bis 15 Jahre Gewicht: 24 bis 32 kg W
 <p>Unmittelbar nach dem Einzug sollten Sie die Futterempfehlung des Züchters beibehalten. Ein bereits ausgewachsener Hund erhält eine ausgewogene <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> mit geringen Eiweißanteilen. Eine zu große Menge an Proteinen ist für den vierbeinigen Sportler in etwa vergleichbar wie zu viel Hafer für ein Rennpferd, das nur im heimischen Garten sein Runden dreht.</p>
 <p>Vereinzelt neigen Dalmatiner auch zu Nierensteinen. Mit eiweißarmer Ernährung erledigt sich das Problem von selbst. Ein Gros an Eiweiß zeigt sich auch am Fellzustand. Aus dem hellen Weiß entwickelt sich eine schmutzig graue bis gelbbraune Farbe, die eine komplette Fellwechselphase überdauert.</p>
 <p><a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Füttern</a> Sie das große „Pünktchen&#8221; stets mit einem qualitativ hochwertigen Trockenfutter und einige Male pro Woche mit gekochtem Gemüse. Die Vierbeiner nagen ebenso gerne an Brustkernknochen vom Rind oder verzehren gelegentlich Innereien wie Herz, Schenkel oder Nieren. Das gewisse Etwas darf natürlich auch nicht fehlen &#8211; Leckerlis! Allerdings sollten Leckerlis nicht zur Hauptnahrung mutieren, sondern nur als Naschration in Maßen erfolgen.</p>
-<p><img decoding="async" class="alignnone wp-image-2939 " src="/magazin/wp-content/uploads/2025/01/ernaehrung-Dalmatiner.webp" alt="ernaehrung-Dalmatiner" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/ernaehrung-Dalmatiner.webp 1024w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dalmatiner-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dalmatiner-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/ernaehrung-Dalmatiner-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/dalmatiner-futter-alltag.webp" alt="Dalmatiner geht zu einem bereitgestellten Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>1. Sind Dalmatiner für Ersthundebesitzer geeignet?</h3>
 <p>&nbsp;Ja, aber mit Einschränkungen. Dalmatiner sind intelligente, verspielte und loyale Hunde, aber ihr hoher Energiebedarf und ihre Sturheit machen sie für Ersthundebesitzer nicht zur einfachsten Wahl. Wer bereit ist, Zeit in die Erziehung und tägliche Bewegung zu investieren, kann mit einem Dalmatiner jedoch einen großartigen Begleiter bekommen.</p>
@@ -78,3 +78,7 @@ excerpt: "<p>Steckbrief Lebenserwartung: 12 bis 15 Jahre Gewicht: 24 bis 32 kg W
 <h3>5. Verträgt sich der Dalmatiner mit anderen Haustieren?</h3>
 <p>Dalmatiner sind in der Regel sozialverträglich und können mit anderen Hunden, Katzen und manchmal auch Kleintieren zusammenleben. Eine frühe Gewöhnung und eine ruhige Einführung sind entscheidend. Mit der richtigen Erziehung und klaren Regeln kann ein Dalmatiner ein toller Gefährte für andere Haustiere sein!</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

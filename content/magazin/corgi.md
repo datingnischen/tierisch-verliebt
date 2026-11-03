@@ -4,7 +4,7 @@ slug: "corgi"
 type: page
 wpId: 619
 published: "2019-11-19T18:05:24"
-updated: "2026-09-22T13:52:46"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/corgi-2.jpg"
@@ -47,7 +47,7 @@ excerpt: "<p>Der Corgi ist relativ klein, kräftig gebaut und aktiv. Die Hundera
 <p>Der Corgi hat ein dickes, wetterfestes <a href="https://tierisch-verliebt.de/magazin/pflege-von-fell-und-zaehnen-des-hundes/">Fell</a>. Der Corgi verliert im Verhältnis zu anderen Rasse viele Haare, besonders im späten Frühling / Frühsommer. Ein tägliches Überstreichen mit einem Kamm und einer glatten Bürste entfernt viele Haare, bevor sie im ganzen Haus verteilt sind. Bäder helfen die toten Haare (das tote Fell) zu lockern. Das Fell des Hundes muss vor dem Bürsten vollständig trocken sein. Dann können Sie mit einer Bürste das tote Fell entfernen und abstreifen. Die Nägel des Hundes sollten regelmäßig geschnitten und die Ohren auf Sauberkeit und Gesundheit überprüft werden.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Corgis können mit normalen <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Hundefutter</a> gefüttert werden. Eine Diät sollte unbedingt an den Hund individuell angepasst werden (Alter, Gewicht, Krankheiten, usw.). Corgis neigen zu leichtem Übergewicht. Es ist wichtig, dass Sie auf die Kalorienzufuhr genau achten, um das Gewicht Ihres Hundes regulieren zu können. Leckereien können Sie Ihrem Hund natürlich geben – besonders als Belohnung beim Training. Allerdings sollten Sie auf die Menge achten. Falls Sie sich unsicher sind, wenden Sie sich an einen Tierarzt.</p>
-<p><img decoding="async" class="alignnone wp-image-2926" src="/magazin/wp-content/uploads/2025/01/ernaehrung-Corgi.webp" alt="ernaehrung-corgi" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/ernaehrung-Corgi.webp 1024w, /magazin/wp-content/uploads/2025/01/ernaehrung-Corgi-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/ernaehrung-Corgi-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/ernaehrung-Corgi-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/corgi-futter-alltag.webp" alt="Corgi wartet beim Abmessen von Trockenfutter (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>1. Sind Corgis für Ersthundebesitzer geeignet?</h3>
 <p>Corgis sind intelligente, freundliche und verspielte Hunde, die für Ersthundebesitzer geeignet sein können – wenn man bereit ist, sich intensiv mit ihrer Erziehung und Auslastung zu beschäftigen. Wer gerne mit seinem Hund arbeitet und klare Regeln setzt, wird mit einem treuen, unterhaltsamen Begleiter belohnt.</p>
@@ -60,3 +60,7 @@ excerpt: "<p>Der Corgi ist relativ klein, kräftig gebaut und aktiv. Die Hundera
 <h3>5. <span id="3_Sind_die_Boston_Terrier_fur_Allergiker_geeignet">Sind die Corgis für Allergiker geeignet?</span></h3>
 <p>Nein, Corgis sind nicht ideal für Allergiker, da sie regelmäßig haaren und Hautschuppen produzieren. Menschen mit Hundeallergien könnten auf diese Rasse empfindlich reagieren. Allerdings hängt die Verträglichkeit immer von der individuellen Allergie ab.</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

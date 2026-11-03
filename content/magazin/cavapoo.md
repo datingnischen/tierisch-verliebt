@@ -4,7 +4,7 @@ slug: "cavapoo"
 type: page
 wpId: 2475
 published: "2023-09-12T10:08:49"
-updated: "2026-09-22T13:50:52"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/09/Cavapoo-4-scaled.jpg"
@@ -50,7 +50,7 @@ excerpt: "<p>Der Cavapoo, manchmal auch Cavoodle genannt, ist eine Hybdridhunder
 <p>Ein Besuch bei der Hundeschule lohnt sich vor allem für Anfänger. Obwohl der Cavapoo leicht zu erziehen ist, schadet es nicht, bei Experten um Hilfe zu bitten. Tricks sind einfach zu erlernen, weshalb das Niveau auch gesteigert werden kann. Ein gemeinsames Training stärkt dabei nicht nur die Verbindung zwischen Hund und Besitzer, sondern auch die Bekanntschaft mit anderen Hunden. Cavapoos ist eine gesellige Hunderasse, die gerne Zeit mit Artgenossen verbringt.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Bei der Ernährung eines Cavapoos gibt es keine Besonderheiten, die beachtet werden müssen. Die Hunderasse ist anspruchslos und es gibt keine Unverträglichkeiten, die zu Problemen führen könnten. Durch ihr aktives Verhalten neigen sie auch kaum zum Übergewicht, sollten aber mit ausreichend Nährstoffen versorgt werden. Die <a href="https://tierisch-verliebt.de/magazin/havaneser-ernaehrung/">Ernährung</a> sollte dem Alter und der Größe des Tieres angepasst werden. Jüngere Tiere sollten mehr zu sich nehmen, während ältere Cavapoos weniger Energiezufuhr benötigen. Eine Mischung aus Nass- und Trockenfutter ist angebracht, auch Barfen kann sich lohnen.</p>
-<p><img decoding="async" class="alignleft wp-image-2816 " src="/magazin/wp-content/uploads/2024/12/ernaehrung-cavapoo.webp" alt="ernaehrung-cavapoo" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/12/ernaehrung-cavapoo.webp 1024w, /magazin/wp-content/uploads/2024/12/ernaehrung-cavapoo-300x300.webp 300w, /magazin/wp-content/uploads/2024/12/ernaehrung-cavapoo-150x150.webp 150w, /magazin/wp-content/uploads/2024/12/ernaehrung-cavapoo-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/cavapoo-futter-alltag.webp" alt="Cavapoo wartet beim Abmessen von Trockenfutter (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3><strong>Wie pflegeintensiv ist ein Cavapoo?</strong></h3>
 <p>Der Cavapoo hat ein lockiges oder welliges Fell, das regelmäßiges Bürsten benötigt, um Verfilzungen zu vermeiden. Regelmäßiges Trimmen ist ebenfalls notwendig, besonders wenn er ein dichteres, lockiges Fell hat.</p>
@@ -66,3 +66,7 @@ excerpt: "<p>Der Cavapoo, manchmal auch Cavoodle genannt, ist eine Hybdridhunder
 <p>Cavapoos können genetische Gesundheitsprobleme von ihren Elternrassen erben, wie Hüftdysplasie, Herzprobleme oder Augenkrankheiten. Regelmäßige tierärztliche Kontrollen sind wichtig.</p>
 <h3><strong>Ist der Cavapoo für das Stadtleben geeignet?</strong></h3>
 <p>Ja, Cavapoos passen sich gut an das Stadtleben an, solange sie genug Bewegung und mentale Anregung bekommen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

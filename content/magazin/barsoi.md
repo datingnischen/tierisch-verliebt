@@ -4,7 +4,7 @@ slug: "barsoi"
 type: page
 wpId: 2130
 published: "2023-07-14T16:38:52"
-updated: "2026-09-22T13:50:56"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/Barsoi-4.jpg"
@@ -49,7 +49,7 @@ excerpt: "<p>Der grazile, russische Windhund Barsoi ist eine schöne und interes
 <h2>Die perfekte Ernährung für den eleganten Begleiter</h2>
 <p>Der Barsoi zählt zu den Carnivoren und ist ein echter Fleischliebhaber. Daher sollte sein <a href="https://tierisch-verliebt.de/magazin/insektenproteine-in-hundefutter/">Futter</a> größtenteils aus Fleisch bestehen, um ihn mit den notwendigen Nährstoffen zu versorgen. Aber auch Gemüse und Beilagen wie Reis und Kartoffeln sind wichtige Bausteine einer ausgewogenen Ernährung. Ein hochwertiges Futter, welches auf Alter, Größe und Aktivität der Hunderasse abgestimmt ist, ist unerlässlich. Sauberes Trinkwasser sollte immer zur Verfügung stehen. Leckerlis sind eine tolle Unterstützung beim Training, jedoch sollten Tierbesitzer beim Verwöhnen mit Leckereien maßhalten.</p>
 <p>Wie bei vielen großen Hunden ist auch der Barsoi anfällig für eine gefährliche Magendrehung. Um das Risiko zu minimieren, sollte der Barsoi nach dem Fressen unbedingt ruhen.</p>
-<p><img decoding="async" class="alignnone wp-image-2904" src="/magazin/wp-content/uploads/2025/01/essen-Barsoi.webp" alt="ernaehrung-barsoi" width="600" height="600" srcset="/magazin/wp-content/uploads/2025/01/essen-Barsoi.webp 1024w, /magazin/wp-content/uploads/2025/01/essen-Barsoi-300x300.webp 300w, /magazin/wp-content/uploads/2025/01/essen-Barsoi-150x150.webp 150w, /magazin/wp-content/uploads/2025/01/essen-Barsoi-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/barsoi-futter-alltag.webp" alt="Barsoi wartet beim Abmessen des Futters (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>Laufend glücklich: Aktivitäten für Barsois</h2>
 <p>Der Barsoi ist ein waschechter Windhund. Seine Natur erfordert, dass er ausgiebig und in großzügiger Umgebung laufen darf. Tierbesitzer mit der Leidenschaft für Windhunderennen werden eine ideale Verbindung mit ihrem Barsoi eingehen und ihn in seinem Element erleben können.</p>
 <p>Der Barsoi zeigt seine Stärken auch beim Köder-Coursing, Freiland-Coursing, Geruchshürdenlauf und bei der Fährtenarbeit.</p>
@@ -73,3 +73,7 @@ excerpt: "<p>Der grazile, russische Windhund Barsoi ist eine schöne und interes
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

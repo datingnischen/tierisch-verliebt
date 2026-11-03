@@ -4,7 +4,7 @@ slug: "papageien-beschaeftigung"
 type: post
 wpId: 3576
 published: "2026-03-04T20:15:16"
-updated: "2026-09-26T01:06:46"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/jaanasaksman-parrot-4782216_1280.compr_.jpg"
@@ -88,9 +88,15 @@ excerpt: "<p>So bleiben Papageien geistig und körperlich ausgelastet Papageien 
 <p>Viele Papageienarten sind Schwarmtiere. Der Kontakt zu Artgenossen ist ein wichtiger Teil ihres Lebens. Wenn möglich, sollten Papageien nicht allein gehalten werden.</p>
 <p>Auch regelmäßige Interaktion mit dem Halter gehört zur täglichen Beschäftigung.</p>
 <hr>
-<h2><img decoding="async" class="alignnone size-large wp-image-3696" src="/magazin/wp-content/uploads/2026/03/Papageien-beschaeftigen.compr_-1024x683.png" alt="Infografik: Papageien beschäftigen mit Spielzeug, Training und Freiflug" width="910" height="607" srcset="/magazin/wp-content/uploads/2026/03/Papageien-beschaeftigen.compr_-1024x683.png 1024w, /magazin/wp-content/uploads/2026/03/Papageien-beschaeftigen.compr_-300x200.png 300w, /magazin/wp-content/uploads/2026/03/Papageien-beschaeftigen.compr_-768x512.png 768w, /magazin/wp-content/uploads/2026/03/Papageien-beschaeftigen.compr_.png 1536w" sizes="(max-width: 910px) 100vw, 910px" /></h2>
+<h2><a href="/magazin/wp-content/uploads/2026/11/papageien-beschaeftigung-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-beschaeftigung-schaubild.webp" alt="Beschäftigung, die zu Papageien passt; Futter suchen; Knabbern; Bewegen; Gemeinsam entdecken" width="1536" height="1024" /></a></h2>
+<!-- graphic-text-562 --><details><summary>Grafik als Text lesen</summary><ul><li>Futter suchen</li><li>Knabbern</li><li>Bewegen</li><li>Gemeinsam entdecken</li></ul></details><!-- /graphic-text-562 -->
 <h2>Fazit: Beschäftigung ist Lebensqualität</h2>
 <p>Papageien brauchen mehr als einen Käfig und Futter – sie brauchen Herausforderungen, Bewegung und soziale Kontakte. Mit abwechslungsreichem Spielzeug, regelmäßigem Training und ausreichend Freiflug bleibt dein Papagei körperlich fit und geistig aktiv.</p>
 <p>Eine gute Beschäftigung fördert nicht nur die Gesundheit, sondern stärkt auch die Beziehung zwischen Mensch und Tier.</p>
 <hr>
 <p><small>Bildquelle: https://pixabay.com/photos/parrot-grey-parrot-bird-play-4782216/</small>&gt;</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.tierschutzbund.de/tiere-themen/haustiere/andere-haustiere/wellensittiche/" target="_blank" rel="noopener noreferrer">www.tierschutzbund.de</a>, <a href="https://www.aav.org/blogpost/1778905/AAV-Enrichment-Tips?DGPCrPg=13&amp;DGPCrSrt=&amp;tag=" target="_blank" rel="noopener noreferrer">www.aav.org</a>.</p>
+<!-- /audit-visual-credit -->

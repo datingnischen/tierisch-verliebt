@@ -4,7 +4,7 @@ slug: "berner-sennenhund"
 type: page
 wpId: 375
 published: "2019-10-25T21:36:40"
-updated: "2026-09-22T13:53:20"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Berner-Sennenhund.jpg"
@@ -52,7 +52,7 @@ excerpt: "<p>Die Wesens- und die Charakterzüge Der Berner Sennenhund wird vom W
 <p>Ein großer Hund benötigt viel Platz, um Auslauf zu haben und gefördert zu werden. Er sollte nämlich auch nicht unterfordert werden. Der Berner Sennenhund braucht seine Aktivitäten, damit er glücklich ist. Gesundheitsbedingt darf er keine zu belastenden Aktivitäten machen, da diese ihnen dauerhaft beeinträchtigen können. Da der Berner Sennenhund unter anderem genetisch, motorisch vorbelastet ist.</p>
 <h2>Geeignete Ernährung</h2>
 <p>Ein Berner Sennenhund muss eine ausgewogene Ernährung erhalten. Auch der Hund braucht regelmäßig und anständiges Futter. Zwei Dinge sollten Sie nie vergessen: Er kann ja schlecht selbst einkaufen gehen und er lässt sich so etwas nicht gefallen! Die Couch oder die Kissen werden dafür büßen! Der Tierarzt kann auch Nahrungsergänzungsmittel für den Hund verschreiben. Sorgen Sie dafür, dass der Hund nur das frisst, was Sie ihm geben. Vielleicht hat er auch Allergien. Dafür ist aber bereits eigenes Futter erhältlich. Ihr Tierarzt berät Sie gerne.</p>
-<p><img decoding="async" class="alignnone wp-image-2727" src="/magazin/wp-content/uploads/2024/09/berner-sennenhund-essen.webp" alt="berner-sennenhund-essen" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/berner-sennenhund-essen.webp 1024w, /magazin/wp-content/uploads/2024/09/berner-sennenhund-essen-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/berner-sennenhund-essen-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/berner-sennenhund-essen-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/berner-sennenhund-futter-alltag.webp" alt="Berner Sennenhund geht zu seinem bereitgestellten Napf (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <p><strong>Wie viel Pflege benötigt ein Berner Sennenhund?</strong></p>
 <p>Berner Sennenhunde haben ein dichtes, langes Fell, das regelmäßiges Bürsten erfordert, um Verfilzungen zu vermeiden und lose Haare zu entfernen. Besonders während des Fellwechsels sollte das Bürsten häufiger erfolgen.</p>
@@ -64,3 +64,7 @@ excerpt: "<p>Die Wesens- und die Charakterzüge Der Berner Sennenhund wird vom W
 <p>Sie sind intelligent und lernwillig, können aber auch etwas stur sein. Eine geduldige, aber konsequente Erziehung mit positiver Verstärkung ist der Schlüssel zu einem gut erzogenen Berner Sennenhund.</p>
 <p><strong>Welche gesundheitlichen Probleme können bei Berner Sennenhunden auftreten?</strong></p>
 <p>Berner Sennenhunde sind anfällig für bestimmte gesundheitliche Probleme wie Hüft- und Ellbogendysplasie, Krebs und Herzprobleme. Regelmäßige tierärztliche Untersuchungen sind wichtig, um mögliche gesundheitliche Probleme frühzeitig zu erkennen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->

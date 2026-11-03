@@ -12,6 +12,7 @@ import { getNlAudio } from "@/lib/nl-audio";
 import "@/components/city-page/tier-city-page.css";
 import "@/components/city-page/tier-city-hub.css";
 import "@/app/magazin/[slug]/magazin-article.css";
+import "@/app/magazin/[slug]/magazine-sources.css";
 
 export function BreedGrid({ animal }: { animal?: "dog" | "cat" }) {
   return <ul className="tvh-grid nl-breed-grid">{getNlBreeds(animal).map(breed => <li key={breed.slug}>

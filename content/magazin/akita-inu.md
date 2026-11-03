@@ -4,7 +4,7 @@ slug: "akita-inu"
 type: page
 wpId: 450
 published: "2019-11-04T08:16:11"
-updated: "2026-09-22T13:53:03"
+updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Akita-Inu.jpg"
@@ -50,7 +50,7 @@ excerpt: "<p>Der exotische Akita Inu besticht nicht nur durch sein tolles Ausseh
 <h2>Geeignete Ernährung für Akita Inu</h2>
 <p>Der Akita Inu braucht eine ausgewogene und abwechslungsreiche Ernährung, deren genauer Gehalt stark von seiner Leistung, seinem Alter und seinem Gewicht abhängig ist. Die Portionen sollten weder zu groß, noch zu klein und frei von überflüssigen Inhaltsstoffen wie Aromen und Farbstoffen sein. Auch der übermäßige Zusatz von Futterergänzungsmitteln ist eher kontraproduktiv. Es sollte viel mehr auf eine hochwertige Nahrung geachtet werden, die durch Kauartikel aus Trockenfleisch ergänzt werden kann.</p>
 <p>Zudem wurde öfters von allergischen Reaktionen nach dem Verzehr von Futter mit hohen Soja-Anteil oder hohem Proteingehalt berichtet.</p>
-<p data-wp-editing="1"><img decoding="async" class="wp-image-2697 alignleft" src="/magazin/wp-content/uploads/2024/09/Ernaehrung-Akita-Inu.webp" alt="akita-inu-essen" width="600" height="600" srcset="/magazin/wp-content/uploads/2024/09/Ernaehrung-Akita-Inu.webp 1024w, /magazin/wp-content/uploads/2024/09/Ernaehrung-Akita-Inu-300x300.webp 300w, /magazin/wp-content/uploads/2024/09/Ernaehrung-Akita-Inu-150x150.webp 150w, /magazin/wp-content/uploads/2024/09/Ernaehrung-Akita-Inu-768x768.webp 768w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p data-wp-editing="1"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/akita-inu-futter-alltag.webp" alt="Akita Inu wartet, während sein Mensch Futter in einen Napf abmisst (KI-Symbolbild)" width="1536" height="1024" /></p>
 <h2>FAQ</h2>
 <h3>Wie viel Pflege braucht ein Akita Inu?</h3>
 <p>Akita Inus haben ein dichtes Doppelfell, das regelmäßig gebürstet werden sollte, um es sauber und frei von abgestorbenem Haar zu halten. Sie haaren stark, besonders während des Fellwechsels, was zusätzliche Pflege erfordert.</p>
@@ -62,3 +62,7 @@ excerpt: "<p>Der exotische Akita Inu besticht nicht nur durch sein tolles Ausseh
 <p>Akita Inus sind oft zurückhaltend gegenüber Fremden und können territorial sein. Mit anderen Hunden oder Tieren vertragen sie sich nur, wenn sie früh und gut sozialisiert wurden.</p>
 <h3>Welche gesundheitlichen Probleme können beim Akita Inu auftreten?</h3>
 <p>Akita Inus können anfällig für bestimmte genetische Erkrankungen wie Hüftdysplasie, Schilddrüsenerkrankungen oder Augenprobleme sein. Regelmäßige tierärztliche Untersuchungen sind wichtig, um gesundheitliche Probleme früh zu erkennen.</p>
+
+<!-- audit-visual-credit -->
+<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<!-- /audit-visual-credit -->
