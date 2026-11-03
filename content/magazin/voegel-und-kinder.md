@@ -61,7 +61,7 @@ excerpt: "<p>So entsteht eine sichere und liebevolle Beziehung Vögel und Kinder
 <li>Spielzeug austauschen</li>
 </ul>
 <p>Dabei sollten Erwachsene immer unterstützen und erklären, warum diese Aufgaben wichtig sind.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/voegel-und-kinder-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-und-kinder-schaubild.webp" alt="Nähe beginnt mit Rücksicht; Beobachten statt festhalten; Erwachsene begleiten; Rückzug respektieren" width="1536" height="1024" /></a>&nbsp;</p>
+<p><a href="/magazin/wp-content/uploads/2026/11/voegel-und-kinder-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-und-kinder-schaubild.webp" alt="Nähe beginnt mit Rücksicht; Beobachten statt festhalten; Erwachsene begleiten; Rückzug respektieren" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a>&nbsp;</p>
 <!-- graphic-text-748 --><details><summary>Grafik als Text lesen</summary><ul><li>Beobachten statt festhalten</li><li>Erwachsene begleiten</li><li>Rückzug respektieren</li></ul></details><!-- /graphic-text-748 -->
 <hr>
 <h2>Freiflug sicher gestalten</h2>

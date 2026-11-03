@@ -90,7 +90,7 @@ excerpt: "<p>So bleiben große Papageien gesund, kräftig und ausgeglichen Aras 
 &#8211; Stark gewürzte Speisen<br />
 &#8211; Gesalzene oder frittierte Lebensmittel</p>
 <p>Auch stark verarbeitete Produkte sind ungeeignet.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/ara-futterbausteine.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/ara-futterbausteine.webp" alt="Futterbausteine für Aras: geeignetes Grundfutter, Frischkost, bedarfsabhängige Nüsse und frisches Wasser; Avocado, Schokolade, Koffein und Alkohol vermeiden." width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/ara-futterbausteine.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/ara-futterbausteine.webp" alt="Futterbausteine für Aras: geeignetes Grundfutter, Frischkost, bedarfsabhängige Nüsse und frisches Wasser; Avocado, Schokolade, Koffein und Alkohol vermeiden." width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <hr>
 <h2>Wasser &amp; Hygiene</h2>
 <p>Frisches Wasser muss täglich gewechselt werden. Große Papageien verschmutzen Näpfe schnell – daher regelmäßig reinigen.</p>

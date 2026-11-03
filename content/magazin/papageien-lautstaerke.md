@@ -85,7 +85,7 @@ Der Vogel schreit – der Halter reagiert sofort.</p>
 <li>Atemprobleme</li>
 </ul>
 <p>Bei Verdacht sollte ein vogelkundiger Tierarzt konsultiert werden.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/papageien-lautstaerke-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-lautstaerke-schaubild.webp" alt="Lautes Rufen: erst die Ursache verstehen; Kontakt gesucht?; Beschäftigung vorhanden?; Umgebung verändert?; Verhalten plötzlich anders?" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-lautstaerke-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-lautstaerke-schaubild.webp" alt="Lautes Rufen: erst die Ursache verstehen; Kontakt gesucht?; Beschäftigung vorhanden?; Umgebung verändert?; Verhalten plötzlich anders?" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-568 --><details><summary>Grafik als Text lesen</summary><ul><li>Kontakt gesucht?</li><li>Beschäftigung vorhanden?</li><li>Umgebung verändert?</li><li>Verhalten plötzlich anders?</li></ul></details><!-- /graphic-text-568 -->
 <hr>
 <h2>Was du vermeiden solltest</h2>

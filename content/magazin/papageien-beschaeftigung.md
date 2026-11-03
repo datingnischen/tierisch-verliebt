@@ -88,7 +88,7 @@ excerpt: "<p>So bleiben Papageien geistig und körperlich ausgelastet Papageien 
 <p>Viele Papageienarten sind Schwarmtiere. Der Kontakt zu Artgenossen ist ein wichtiger Teil ihres Lebens. Wenn möglich, sollten Papageien nicht allein gehalten werden.</p>
 <p>Auch regelmäßige Interaktion mit dem Halter gehört zur täglichen Beschäftigung.</p>
 <hr>
-<h2><a href="/magazin/wp-content/uploads/2026/11/papageien-beschaeftigung-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-beschaeftigung-schaubild.webp" alt="Beschäftigung, die zu Papageien passt; Futter suchen; Knabbern; Bewegen; Gemeinsam entdecken" width="1536" height="1024" /></a></h2>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-beschaeftigung-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-beschaeftigung-schaubild.webp" alt="Beschäftigung, die zu Papageien passt; Futter suchen; Knabbern; Bewegen; Gemeinsam entdecken" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-562 --><details><summary>Grafik als Text lesen</summary><ul><li>Futter suchen</li><li>Knabbern</li><li>Bewegen</li><li>Gemeinsam entdecken</li></ul></details><!-- /graphic-text-562 -->
 <h2>Fazit: Beschäftigung ist Lebensqualität</h2>
 <p>Papageien brauchen mehr als einen Käfig und Futter – sie brauchen Herausforderungen, Bewegung und soziale Kontakte. Mit abwechslungsreichem Spielzeug, regelmäßigem Training und ausreichend Freiflug bleibt dein Papagei körperlich fit und geistig aktiv.</p>

@@ -68,7 +68,7 @@ excerpt: "<p>Was Papageien auf keinen Fall fressen dürfen Papageien sind neugie
 </ul>
 <p>enthalten geringe Mengen Blausäure. Beim Entfernen der Kerne besteht kein Risiko – aber die Kerne selbst sollten nicht verfüttert werden.</p>
 <p>&nbsp;</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/papageien-giftliste-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-giftliste-schaubild.webp" alt="Diese Gefahren gehören außer Reichweite; Avocado; Schokolade; Koffein; Alkohol; Giftverdacht? Sofort Tierarzt kontaktieren." width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-giftliste-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-giftliste-schaubild.webp" alt="Diese Gefahren gehören außer Reichweite; Avocado; Schokolade; Koffein; Alkohol; Giftverdacht? Sofort Tierarzt kontaktieren." width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-566 --><details><summary>Grafik als Text lesen</summary><ul><li>Avocado</li><li>Schokolade</li><li>Koffein</li><li>Alkohol</li><li>Giftverdacht? Sofort Tierarzt kontaktieren.</li></ul></details><!-- /graphic-text-566 -->
 <hr>
 <h2>Vorsicht bei Pflanzen &amp; Haushaltsmitteln</h2>

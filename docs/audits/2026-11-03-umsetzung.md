@@ -26,7 +26,8 @@ Infografiken: erklärende Tier-/Objektillustrationen, kurze Labels, Rot/Grün, L
 - Reviewkorrekturen: Transportbox feinmaschig statt breiter Katzenbox-Gitter; Volierenvergleiche mit Maßstabshinweis und ohne suggerierende Freigabehaken; Rückzug als Sichtschutz statt Nisthöhle; präziserer Egyptian-Mau-Alt-Text.
 - Idempotenz der Integration geprüft: erneuter Lauf ändert **0 Artikel**.
 - **209/209 Tests bestanden**; Lint **0 Fehler, 47 Warnungen** an vorhandenen Stellen; Produktionsbuild erfolgreich, 403 statisch erzeugte Seiten.
-- Browser-/HTTP-Prüfung der ausgelieferten Vercel-Seiten erfolgt nach Push; Ergebnis und Commit werden im Vault ergänzt.
+- Vercel nach Push geprüft: alle 99 WebPs HTTP 200 und bytegleich zur lokalen Datei; alle 90 deutschen Artikelseiten HTTP 200, neue Bildreferenzen und geschlossene Quellenblöcke. Die fünf betroffenen NL-Seiten ebenfalls HTTP 200 mit neuen Bildern und geschlossenen Nachweisen.
+- Browser-Sichtprüfung am Prüfhost: Katzenfoto, Ara- und Gesundheitsgrafik im mobilen Layout sowie Ara am Desktop kontrolliert. Beim Vogelvergleich alte feste WordPress-Figurebreite entdeckt; über max-width begrenzt. Jede Infografik erhält zusätzlich den sichtbaren Link „Grafik vergrößern“. Finale Browserprüfung dieser Ergänzung und Commit werden im Vault protokolliert.
 
 ## Nachweise und Wiederaufnahme
 

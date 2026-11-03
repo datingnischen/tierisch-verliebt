@@ -78,7 +78,7 @@ excerpt: "<p>So wird dein Zuhause zu einem sicheren Vogelparadies Viele Vogelart
 <li>Seile oder Schaukeln</li>
 </ul>
 <p>Diese Bereiche können gleichzeitig als Spiel- und Trainingsplatz dienen.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-schaubild.webp" alt="Freiflug: erst den Raum sichern; Fenster und Türen schließen; Glasscheiben sichtbar machen; Gefahren wegräumen" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-schaubild.webp" alt="Freiflug: erst den Raum sichern; Fenster und Türen schließen; Glasscheiben sichtbar machen; Gefahren wegräumen" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-750 --><details><summary>Grafik als Text lesen</summary><ul><li>Fenster und Türen schließen</li><li>Glasscheiben sichtbar machen</li><li>Gefahren wegräumen</li></ul></details><!-- /graphic-text-750 -->
 <hr>
 <h2>Sauberkeit und Hygiene</h2>

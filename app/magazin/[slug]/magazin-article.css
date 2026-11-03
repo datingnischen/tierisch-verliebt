@@ -479,3 +479,16 @@
 .tvm-article .rich-content .tvm-horse-cta a.tvm-horse-cta-button:focus-visible {
   background: #fff3e8;
 }
+.rich-content figure.wp-caption {
+  max-width: 100%;
+}
+
+.rich-content .magazine-infographic-zoom {
+  display: block;
+  margin: 8px 0 12px;
+  color: var(--brand);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

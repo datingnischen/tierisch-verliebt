@@ -23,7 +23,7 @@ excerpt: "<p>Warnzeichen erkennen und rechtzeitig handeln Vögel gehören zu den
 <p>Das bedeutet:<br />
 Wenn ein Vogel sichtbar krank wirkt, ist schnelles Handeln besonders wichtig.</p>
 <p>Ein früher Tierarztbesuch kann oft lebensrettend sein.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/voegel-tierarzt-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-tierarzt-schaubild.webp" alt="Zum Vogeltierarzt: gut vorbereitet; Veränderungen notieren; Praxis kontaktieren; Sicher transportieren" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/voegel-tierarzt-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-tierarzt-schaubild.webp" alt="Zum Vogeltierarzt: gut vorbereitet; Veränderungen notieren; Praxis kontaktieren; Sicher transportieren" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-746 --><details><summary>Grafik als Text lesen</summary><ul><li>Veränderungen notieren</li><li>Praxis kontaktieren</li><li>Sicher transportieren</li></ul></details><!-- /graphic-text-746 -->
 <hr>
 <h2>Typische Warnzeichen bei Vögeln</h2>

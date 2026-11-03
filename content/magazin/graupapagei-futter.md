@@ -54,7 +54,7 @@ excerpt: "<p>So bleibt dein Graupapagei gesund, aktiv und ausgeglichen Der Graup
 <li>Gute Qualität und frische Ware</li>
 </ul>
 <p>Pellets können helfen, Nährstoffmängel zu vermeiden, sollten aber ebenfalls nicht die alleinige Futterquelle sein. Frischfutter bleibt unverzichtbar.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/graupapagei-futter-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/graupapagei-futter-schaubild.webp" alt="Graupapageien abwechslungsreich füttern; Passendes Grundfutter; Gemüse und Grünfutter; Obst als Ergänzung; Wasser täglich frisch" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/graupapagei-futter-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/graupapagei-futter-schaubild.webp" alt="Graupapageien abwechslungsreich füttern; Passendes Grundfutter; Gemüse und Grünfutter; Obst als Ergänzung; Wasser täglich frisch" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-343 --><details><summary>Grafik als Text lesen</summary><ul><li>Passendes Grundfutter</li><li>Gemüse und Grünfutter</li><li>Obst als Ergänzung</li><li>Wasser täglich frisch</li></ul></details><!-- /graphic-text-343 -->
 <hr>
 <h2>Kalzium – besonders wichtig für Graupapageien</h2>

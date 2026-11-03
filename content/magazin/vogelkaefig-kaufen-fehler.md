@@ -16,7 +16,7 @@ excerpt: "<p>Ein Vogelkäfig ist nicht einfach nur Zubehör – er ist Lebensrau
 
 <p>Ein Vogelkäfig ist nicht einfach nur Zubehör – er ist Lebensraum, Rückzugsort und Sicherheitszone für deinen gefiederten Mitbewohner. Gerade beim ersten Kauf unterschätzen viele Halter, wie wichtig Größe, Material, Standort und Ausstattung wirklich sind. Die Folge: Unzufriedene Tiere, gesundheitliche Probleme oder ein erneuter Käfigkauf nach kurzer Zeit.</p>
 <p>Damit dir das nicht passiert, solltest du die häufigsten Fehler kennen – und bewusst vermeiden.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-kaufen-fehler-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-kaufen-fehler-schaubild.webp" alt="Beim Käfigkauf: Flugraum statt Deko; Keine schmale Turmform; Horizontale Flugstrecke; Passend zur Vogelart" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-kaufen-fehler-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-kaufen-fehler-schaubild.webp" alt="Beim Käfigkauf: Flugraum statt Deko; Keine schmale Turmform; Horizontale Flugstrecke; Passend zur Vogelart" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-754 --><details><summary>Grafik als Text lesen</summary><ul><li>Keine schmale Turmform</li><li>Horizontale Flugstrecke</li><li>Passend zur Vogelart</li></ul></details><!-- /graphic-text-754 -->
 <hr>
 <h2>Fehler Nr. 1: Der Käfig ist zu klein</h2>

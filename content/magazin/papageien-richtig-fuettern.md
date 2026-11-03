@@ -29,7 +29,7 @@ excerpt: "<p>So bleibt dein Papagei gesund und vital Die richtige Ernährung ist
 <li>Keine künstlichen Zusätze</li>
 </ul>
 <p>&nbsp;</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/papageien-richtig-fuettern-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-richtig-fuettern-schaubild.webp" alt="Gute Fütterung beginnt bei der Vogelart; Art kennen; Futterplan abstimmen; Frisch ergänzen; Verlauf beobachten" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-richtig-fuettern-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-richtig-fuettern-schaubild.webp" alt="Gute Fütterung beginnt bei der Vogelart; Art kennen; Futterplan abstimmen; Frisch ergänzen; Verlauf beobachten" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-570 --><details><summary>Grafik als Text lesen</summary><ul><li>Art kennen</li><li>Futterplan abstimmen</li><li>Frisch ergänzen</li><li>Verlauf beobachten</li></ul></details><!-- /graphic-text-570 -->
 <hr>
 <h2>Pellets – sinnvoll oder nicht?</h2>

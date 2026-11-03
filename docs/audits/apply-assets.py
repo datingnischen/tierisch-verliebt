@@ -42,6 +42,13 @@ for slug,rs in byarticle.items():
    t=re.sub(r'^image: .*$',f'image: "{r["newAsset"]}"',t,flags=re.M)
    t=re.sub(r'^imageAlt: .*$',f'imageAlt: {json.dumps(r["alt"],ensure_ascii=False)}',t,flags=re.M)
   t=family.sub(r['newAsset'],t)
+  if isgraphic:
+   # Ein Bildblock ist keine Überschrift; sonst würde der Zoomtext als TOC-Kapitel erscheinen.
+   t=re.sub(r'<h([2-6])>\s*(<a href="'+re.escape(r['newAsset'])+r'"[^>]*>[\s\S]*?</a>)\s*</h\1>',r'<p>\2</p>',t)
+   zoom='<span class="magazine-infographic-zoom">Grafik vergrößern ↗</span>'
+   def add_zoom(m):
+    return m.group(0) if 'magazine-infographic-zoom' in m.group(0) else m.group(1)+zoom+'</a>'
+   t=re.sub(r'(<a href="'+re.escape(r['newAsset'])+r'"[^>]*>[\s\S]*?)</a>',add_zoom,t)
   # Current paths identify an already updated record; refresh accessible labels idempotently.
   if isgraphic and r.get('labels'):
    mark=f'<!-- graphic-text-{r["id"]} -->'

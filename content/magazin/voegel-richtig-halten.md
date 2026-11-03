@@ -76,7 +76,7 @@ excerpt: "<p>Vögel gehören zu den faszinierendsten Haustieren überhaupt. Ihr 
 <hr>
 <h2>Verantwortung auf viele Jahre</h2>
 <p>Viele Vogelarten erreichen ein erstaunlich hohes Alter. Sittiche können über zehn Jahre leben, Papageien oft mehrere Jahrzehnte. Die Entscheidung für einen Vogel sollte daher immer langfristig gedacht werden – auch finanziell und organisatorisch.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/voegel-richtig-halten-vorbereitung.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-richtig-halten-vorbereitung.webp" alt="Bevor Vögel einziehen; Art kennenlernen; Flugraum vorbereiten; Artgenossen einplanen; Versorgung organisieren" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/voegel-richtig-halten-vorbereitung.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/voegel-richtig-halten-vorbereitung.webp" alt="Bevor Vögel einziehen; Art kennenlernen; Flugraum vorbereiten; Artgenossen einplanen; Versorgung organisieren" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-744 --><details><summary>Grafik als Text lesen</summary><ul><li>Art kennenlernen</li><li>Flugraum vorbereiten</li><li>Artgenossen einplanen</li><li>Versorgung organisieren</li></ul></details><!-- /graphic-text-744 -->
 <hr>
 <h2>Fazit: Wissen und Geduld sind der Schlüssel</h2>

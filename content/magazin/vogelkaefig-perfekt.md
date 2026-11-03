@@ -42,7 +42,7 @@ excerpt: "<p>Ein Vogelkäfig ist weit mehr als nur ein dekoratives Accessoire od
 <li>Kunststoffkäfige als dauerhafte Lösung</li>
 </ul>
 <p>Auch die Gitterabstände sollten zur Vogelgröße passen. Zu große Abstände können Verletzungen verursachen oder sogar Ausbruchsmöglichkeiten bieten.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-perfekt-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-perfekt-schaubild.webp" alt="Eine gute Voliere lässt Platz zum Fliegen; Flugbahn frei halten; Naturäste versetzt anbringen; Futter und Wasser sauber halten; Rückzug ermöglichen" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-perfekt-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-perfekt-schaubild.webp" alt="Eine gute Voliere lässt Platz zum Fliegen; Flugbahn frei halten; Naturäste versetzt anbringen; Futter und Wasser sauber halten; Rückzug ermöglichen" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-756 --><details><summary>Grafik als Text lesen</summary><ul><li>Flugbahn frei halten</li><li>Naturäste versetzt anbringen</li><li>Futter und Wasser sauber halten</li><li>Rückzug ermöglichen</li></ul></details><!-- /graphic-text-756 -->
 <hr>
 <h2>Die Innenausstattung nicht unterschätzen</h2>

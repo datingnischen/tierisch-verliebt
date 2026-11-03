@@ -28,7 +28,7 @@ excerpt: "<p>Krankheiten früh erkennen und richtig handeln Papageien sind faszi
 <li>gleichmäßige Atmung</li>
 </ul>
 <p>Schon kleine Veränderungen können ein Hinweis auf gesundheitliche Probleme sein.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/papageien-warnzeichen.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-warnzeichen.webp" alt="Warnzeichen bei Papageien: ungewöhnliche Ruhe, veränderter Appetit, Gefieder oder Stimme; bei Atemnot, starker Blutung oder fehlender Sitzfähigkeit sofort zum Notdienst." width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageien-warnzeichen.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageien-warnzeichen.webp" alt="Warnzeichen bei Papageien: ungewöhnliche Ruhe, veränderter Appetit, Gefieder oder Stimme; bei Atemnot, starker Blutung oder fehlender Sitzfähigkeit sofort zum Notdienst." width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <hr>
 <h2>Häufige Warnzeichen bei Papageien</h2>
 <p>Bestimmte Symptome sollten immer ernst genommen werden. Dazu gehören:</p>

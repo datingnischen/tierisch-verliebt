@@ -89,7 +89,7 @@ excerpt: "<p>Worauf du beim Kauf wirklich achten solltest Papageienfutter ist ni
 <li>Getrocknete Kräuter</li>
 </ul>
 <p>Diese sollten jedoch als Ergänzung dienen – nicht als Ersatz für Frischkost.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/papageienfutter-kaufen-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageienfutter-kaufen-schaubild.webp" alt="Futterkauf: genauer hinsehen lohnt sich; Für welche Vogelart?; Was steckt drin?; Frisch und trocken?; Passt es zum Futterplan?" width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/papageienfutter-kaufen-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/papageienfutter-kaufen-schaubild.webp" alt="Futterkauf: genauer hinsehen lohnt sich; Für welche Vogelart?; Was steckt drin?; Frisch und trocken?; Passt es zum Futterplan?" width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-576 --><details><summary>Grafik als Text lesen</summary><ul><li>Für welche Vogelart?</li><li>Was steckt drin?</li><li>Frisch und trocken?</li><li>Passt es zum Futterplan?</li></ul></details><!-- /graphic-text-576 -->
 <hr>
 <h2>Preis vs. Qualität</h2>

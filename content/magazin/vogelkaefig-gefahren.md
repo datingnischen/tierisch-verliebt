@@ -93,7 +93,7 @@ excerpt: "<p>Ein Vogelkäfig soll ein sicherer Lebensraum sein – doch genau do
 <li>Seile auf Ausfransungen</li>
 </ul>
 <p>Abgenutztes Zubehör sollte rechtzeitig ersetzt werden.</p>
-<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-gefahren-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-gefahren-schaubild.webp" alt="Sicherheit beginnt beim Zubehör; Lose Fäden? Entfernen.; Beschädigte Teile? Austauschen.; Spiegel oder Plastikvogel? Weglassen." width="1536" height="1024" /></a></p>
+<p><a href="/magazin/wp-content/uploads/2026/11/vogelkaefig-gefahren-schaubild.webp" target="_blank" rel="noopener" aria-label="Grafik in voller Größe öffnen"><img decoding="async" loading="lazy" src="/magazin/wp-content/uploads/2026/11/vogelkaefig-gefahren-schaubild.webp" alt="Sicherheit beginnt beim Zubehör; Lose Fäden? Entfernen.; Beschädigte Teile? Austauschen.; Spiegel oder Plastikvogel? Weglassen." width="1536" height="1024" /><span class="magazine-infographic-zoom">Grafik vergrößern ↗</span></a></p>
 <!-- graphic-text-752 --><details><summary>Grafik als Text lesen</summary><ul><li>Lose Fäden? Entfernen.</li><li>Beschädigte Teile? Austauschen.</li><li>Spiegel oder Plastikvogel? Weglassen.</li></ul></details><!-- /graphic-text-752 -->
 <hr>
 <h2>Fazit: Sicherheit geht immer vor</h2>
