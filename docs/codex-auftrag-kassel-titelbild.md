@@ -25,3 +25,9 @@ In `data/partnersuche-eigene-staedte.json` beim Kassel-Eintrag `"imageUrl": null
 - Commit als `Christian M. Haas <christian@datingnischen.de>` (vorher `git var GIT_AUTHOR_IDENT` / `GIT_COMMITTER_IDENT`), nur eigene Pfade stagen, nach `main` pushen
 - Prüf-URL: https://tierisch-verliebt.vercel.app/partnersuche/kassel/ (Bild im Kopf) und https://tierisch-verliebt.vercel.app/partnersuche/ (Kachel Kassel)
 - Ergebnis als Kommentar in die Trello-Karte
+
+## Umsetzung 03.11.2026
+
+Built-in ImageGen; fotorealistische Alltagsszene, fiktive Frau um 40 mit kurzem sichtbarem Hundeleinenkontakt auf trockenem Parkweg vor gelber Orangerie; warmes Tageslicht, keine Logos, Texte, Kinder oder Wasser. Architektur mit Hessen Kassel Heritage abgeglichen: https://www.heritage-kassel.de/standorte/orangerie . Prompt: Photorealistic editorial landscape, fictional woman in cream jacket and muted red scarf walking medium brown dog on short visible leash, accurate yellow Baroque Orangerie Kassel with central pavilion and long arched-window wings behind; warm daylight, no text/logos/real people.
+
+JPG 1000 × 563, 199767 Bytes. Alt-Text angepasst; Bildnachweis im vorhandenen geschlossenen Quellenblock.
