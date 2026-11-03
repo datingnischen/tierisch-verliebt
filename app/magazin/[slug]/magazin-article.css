@@ -492,3 +492,41 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Kurze redaktionelle Hilfen: Ergebnisse, konkrete Hinweise und echte Abläufe. */
+.rich-content :is(.bird-summary, .bird-note, .bird-warning) {
+  margin: 24px 0;
+  padding: 20px 24px;
+  border: 1px solid #dbe8dc;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px 18px 18px 4px;
+  background: #f3f8f2;
+}
+.rich-content .bird-summary { background: #edf5e9; }
+.rich-content .bird-warning {
+  border-color: #efd4d0;
+  border-left-color: var(--brand);
+  background: #fdf3f0;
+}
+.rich-content :is(.bird-summary, .bird-note, .bird-warning) > :first-child { margin-top: 0; }
+.rich-content :is(.bird-summary, .bird-note, .bird-warning) > :last-child { margin-bottom: 0; }
+.rich-content :is(.bird-steps, .bird-checklist) {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+  padding-left: 28px;
+}
+.rich-content :is(.bird-steps, .bird-checklist) > li {
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+.rich-content :is(.bird-steps, .bird-checklist) > li::marker {
+  color: var(--brand);
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .rich-content :is(.bird-summary, .bird-note, .bird-warning) { padding: 16px; }
+  .rich-content :is(.bird-steps, .bird-checklist) { padding-left: 22px; }
+}

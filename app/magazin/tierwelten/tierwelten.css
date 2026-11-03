@@ -39,12 +39,12 @@
   box-shadow: 0 26px 56px rgba(111, 27, 27, 0.24);
 }
 
-.tierwelten-hero::after {
-  content: "🐾";
+.tierwelten-hero-watermark {
   position: absolute;
   right: -18px;
   top: -34px;
-  font-size: 13rem;
+  width: 208px;
+  height: 208px;
   opacity: 0.08;
   transform: rotate(-18deg);
   pointer-events: none;
@@ -144,8 +144,21 @@
   box-shadow: 0 18px 36px rgba(192, 46, 46, 0.14);
 }
 
-.tierwelten-group-emoji {
-  font-size: 1.9rem;
+.tierwelten-group-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+  border-radius: 12px;
+  color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.tierwelten-group-icon svg { width: 24px; height: 24px; }
+.tierwelten-group-tile:nth-child(even) .tierwelten-group-icon {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
 }
 
 .tierwelten-group-name {
@@ -177,9 +190,9 @@
   width: 64px;
   height: 64px;
   border-radius: 20px;
-  border: 1px solid #f2caca;
+  border: 0;
   background: var(--brand-soft);
-  font-size: 2rem;
+  color: var(--brand);
 }
 
 .tierwelten-group-header h2 {
@@ -392,7 +405,7 @@
   background: #fff;
 }
 
-.tierwelten-match-emoji {
+.tierwelten-match-icon {
   font-size: 1.6rem;
 }
 
@@ -564,3 +577,8 @@
     padding: 24px 20px;
   }
 }
+
+.tierwelten-group-badge svg { width: 30px; height: 30px; }
+.tierwelt-card-fallback svg { width: 64px; height: 64px; color: var(--brand); }
+.tierwelten-match-icon { display: grid; place-items: center; color: var(--accent-dark); }
+.tierwelten-match-icon svg { width: 28px; height: 28px; }

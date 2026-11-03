@@ -4,9 +4,13 @@ import { SITE_URL, getAllMagazineEntries, type MagazineEntry } from "@/lib/magaz
 import { buildMagazineFaqGraph } from "@/lib/magazine-faq";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { TIERWELT_COUNT, TIERWELT_FAQ, TIERWELT_GROUPS, TIERWELT_MATCHES, findTierwelt } from "@/lib/tierwelten";
+import { MagazineCategoryIcon } from "@/components/magazine-category-icon";
+import { BedIcon, BirdIcon, HeartIcon, PawIcon, TreeIcon } from "@/components/city-page/tier-icons";
 import "./tierwelten.css";
 
 const PAGE_URL = `${SITE_URL}/magazin/tierwelten/`;
+const MATCH_ICONS = { perserkatze: BedIcon, "bengal-katze": PawIcon, havaneser: HeartIcon, wildkatze: TreeIcon, "voegel-als-haustiere": BirdIcon } as const;
+
 const REGISTER_URL = "https://tierisch-verliebt.de/?AID=magazin";
 // Kurz halten: Vorlage hängt „| tierisch-verliebt.de“ an, Google schneidet ab ca. 580 px ab.
 const TITLE = "Tierwelten: Katzen, Hunde, Vögel & Pferde";
@@ -90,6 +94,7 @@ export default async function TierweltenPage() {
       </nav>
 
       <section className="tierwelten-hero">
+        <PawIcon className="tierwelten-hero-watermark" />
         <div className="tierwelten-hero-copy">
           <span className="eyebrow">Alle Tierwelten</span>
           <h1>
@@ -127,8 +132,8 @@ export default async function TierweltenPage() {
       <nav className="tierwelten-group-nav" aria-label="Direkt zur Tierfamilie">
         {TIERWELT_GROUPS.map((group) => (
           <a key={group.id} href={`#${group.id}`} className="tierwelten-group-tile">
-            <span className="tierwelten-group-emoji" aria-hidden="true">
-              {group.emoji}
+            <span className="tierwelten-group-icon" aria-hidden="true">
+              <MagazineCategoryIcon slug={group.id} />
             </span>
             <span className="tierwelten-group-name">{group.name}</span>
             <span className="tierwelten-group-count">
@@ -142,7 +147,7 @@ export default async function TierweltenPage() {
         <section key={group.id} id={group.id} className="tierwelten-group" aria-labelledby={`${group.id}-titel`}>
           <header className="tierwelten-group-header">
             <span className="tierwelten-group-badge" aria-hidden="true">
-              {group.emoji}
+              <MagazineCategoryIcon slug={group.id} />
             </span>
             <div>
               <h2 id={`${group.id}-titel`}>{group.name}</h2>
@@ -165,7 +170,7 @@ export default async function TierweltenPage() {
                     {entry?.featuredImage ? (
                       <img src={entry.featuredImage} alt={entry.featuredImageAlt || entry.title} loading="lazy" decoding="async" />
                     ) : (
-                      <span className="tierwelt-card-fallback">{group.emoji}</span>
+                      <span className="tierwelt-card-fallback"><MagazineCategoryIcon slug={group.id} /></span>
                     )}
                     <span className="tierwelt-card-tagline">{world.tagline}</span>
                   </Link>
@@ -200,10 +205,12 @@ export default async function TierweltenPage() {
           <p>Noch unentschlossen? Starte bei dem, was dir im Alltag mit Tier am wichtigsten ist.</p>
         </div>
         <ul className="tierwelten-match-list">
-          {TIERWELT_MATCHES.map((match) => (
+          {TIERWELT_MATCHES.map((match) => {
+            const MatchIcon = MATCH_ICONS[match.slugs[0] as keyof typeof MATCH_ICONS] ?? PawIcon;
+            return (
             <li key={match.need} className="tierwelten-match-item">
-              <span className="tierwelten-match-emoji" aria-hidden="true">
-                {match.emoji}
+              <span className="tierwelten-match-icon" aria-hidden="true">
+                <MatchIcon />
               </span>
               <span className="tierwelten-match-need">{match.need}</span>
               <span className="tierwelten-match-links">
@@ -217,7 +224,8 @@ export default async function TierweltenPage() {
                 })}
               </span>
             </li>
-          ))}
+            );
+          })}
         </ul>
       </section>
 
