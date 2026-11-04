@@ -27,6 +27,7 @@ import {
   type MagazineEntry,
 } from "@/lib/magazine";
 import { withTrailingSlash } from "@/lib/markets";
+import { splitLongParagraphs } from "@/lib/long-paragraphs";
 import { buildChristianBookProfileGraph, stripPublishedBookSchema } from "@/lib/christian-book-profile-schema";
 import { buildMagazineFaqGraph, getMagazineFaqItems, getMagazineFaqSubject, renderMagazineFaqSection } from "@/lib/magazine-faq";
 import { collapseSourceSections } from "@/lib/collapse-sources";
@@ -243,8 +244,8 @@ export default async function MagazineDetailPage({ params }: PageProps) {
   const faqItems = getMagazineFaqItems(entry.content);
   const renderedContent = renderMagazineFaqSection(enhancedContent, getMagazineFaqSubject(entry.title));
   // Quellen und Bildnachweise: klein und zugeklappt als eigener Block am Beitragsende;
-  // die Audio-Zusammenfassung wird zur eigenen Hörkarte.
-  const schemaDedupedContent = collapseSourceSections(relativizeInternalLinks(enhanceAudioSummary(stripPublishedBookSchema(renderedContent))));
+  // die Audio-Zusammenfassung wird zur eigenen Hörkarte. Semrush „Absätze sind zu lang“: Absätze über 120 Wörter an Satzenden teilen.
+  const schemaDedupedContent = splitLongParagraphs(collapseSourceSections(relativizeInternalLinks(enhanceAudioSummary(stripPublishedBookSchema(renderedContent)))));
   const breedKeyFacts = breedProfile ? pickKeyFacts(breedProfile.facts) : [];
   const breedSections = breedPage ? getBreedSectionLinks(entry.content, breedName) : [];
   const profileGraph = buildChristianBookProfileGraph({

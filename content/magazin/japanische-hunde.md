@@ -9,7 +9,7 @@ author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/02/Akita-Inu-2.jpg"
 imageAlt: "Akita Inu"
-seoTitle: "Japanische Hunderassen: 10 Rassen mit Bildern & Vergleich"
+seoTitle: "Japanische Hunderassen mit Bildern"
 description: "Japanische Hunderassen im Vergleich: Größe, Charakter und Haltung von Shiba, Akita und acht weiteren Rassen. Welche passen zu deinem Alltag?"
 excerpt: "<p>Vom kleinen Japan Chin bis zum großen Akita: Entdecke zehn japanische Hunderassen und vergleiche ihre Größe, ihren Charakter und ihre Anforderungen im Alltag.</p>"
 ---
