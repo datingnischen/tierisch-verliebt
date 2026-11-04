@@ -133,3 +133,22 @@ test("lädt keine Bilder von ICONY-Hosts (Code, Daten, next.config)", () => {
   }
   assert.deepEqual(offenders, []);
 });
+
+// Regel 2026-11-04: jede Stadtseite hat einen individuellen <title> (keine Schablone, in der nur die Stadt wechselt).
+test("gives every city page an individual meta title and description", async () => {
+  const { getMarketCityPages } = await loadContent();
+  const titles = new Set();
+  for (const market of ["de", "at", "ch"]) {
+    const descriptions = new Set();
+    for (const page of getMarketCityPages(market)) {
+      assert.ok(page.metaTitle, `${market}/${page.slug}: metaTitle fehlt in data/partnersuche-seo.json`);
+      assert.ok(page.metaTitle.length <= 60, `${market}/${page.slug}: metaTitle ${page.metaTitle.length} > 60`);
+      assert.ok(page.metaTitle.includes(page.cityName.replace(/ am Main$/, "")), `${market}/${page.slug}: Stadt fehlt im Titel`);
+      assert.doesNotMatch(page.metaTitle, /^Tierfreundliche Stadt /);
+      assert.ok(!titles.has(page.metaTitle), `${market}/${page.slug}: Titel doppelt`);
+      titles.add(page.metaTitle);
+      assert.ok(!descriptions.has(page.description), `${market}/${page.slug}: Description doppelt`);
+      descriptions.add(page.description);
+    }
+  }
+});

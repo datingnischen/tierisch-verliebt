@@ -1,0 +1,182 @@
+{
+  "_hinweis": "Individuelle <title> (metaTitle, absolut, max. 60 Zeichen, ohne Domain-Suffix) und Meta-Descriptions (110–155 Zeichen) je Stadtseite. Getrennt von partnersuche-markets.json, damit scripts/import_partnersuche.py sie nicht überschreibt. Jeder Titel nennt nur Orte, die im Seitentext vorkommen. Regel: agent-skills/rules/common.md „Städteseiten: individuelle Titel“.",
+  "de": {
+    "berlin": {
+      "metaTitle": "Tierliebe Singles in Berlin – Gassi am Grunewaldsee",
+      "description": "Partnersuche für Tierfreunde in Berlin: Gassirouten vom Grunewaldsee bis Tempelhof, Cafés mit Hund und Adressen für Trainer, Tierärzte und Pensionen."
+    },
+    "duesseldorf": {
+      "metaTitle": "Tierliebe Singles in Düsseldorf – Gassi an den Rheinwiesen",
+      "description": "Tierliebe Singles in Düsseldorf: Hundefreilaufflächen an den Rheinwiesen, Ausflüge nach Kaiserswerth, hundefreundliche Cafés, Hotels und Hundeschulen."
+    },
+    "stuttgart": {
+      "metaTitle": "Singles mit Hund in Stuttgart – Killesberg & Tapachtal",
+      "description": "Partnersuche für Tierfreunde in Stuttgart: Spaziergänge am Killesberg, Hundeplatz im Tapachtal, der Stadtwald und lokale Tierdienstleister im Überblick."
+    },
+    "koeln": {
+      "metaTitle": "Partnersuche für Tierfreunde in Köln – Poller Wiesen & Co.",
+      "description": "Tierliebe Singles in Köln: Gassi auf den Poller Wiesen, im Stadtwald und Königsforst, Cafés mit Hund in der Südstadt sowie Tierärzte und Hundefriseure."
+    },
+    "muenchen": {
+      "metaTitle": "Singles mit Hund in München – Flaucher & Englischer Garten",
+      "description": "Tierliebe Singles in München: zehn Gassirouten vom Flaucher bis zum Truderinger Wald, Orte, an denen Hunde tabu sind, und empfohlene Tierdienstleister."
+    },
+    "hamburg": {
+      "metaTitle": "Tierliebe Singles in Hamburg – Gassi im Niendorfer Gehege",
+      "description": "Partnersuche für Tierfreunde in Hamburg: Gassi im Niendorfer Gehege und Tangstedter Forst, hundefreundliche Lokale, Tierkliniken und eine Hundeschule."
+    },
+    "dortmund": {
+      "metaTitle": "Tierfreunde-Dating in Dortmund – Phoenix-See & Rombergpark",
+      "description": "Tierliebe Singles in Dortmund: Wanderwege am Phoenix-See, im Rombergpark und Aplerbecker Wald, Hundewiesen, Veranstaltungen und Cafés für Mensch und Hund."
+    },
+    "essen": {
+      "metaTitle": "Tierliebe Singles in Essen – Hundewiesen in allen Bezirken",
+      "description": "Partnersuche für Tierfreunde in Essen: Hundewiesen vom Helenenpark bis zum Hallopark, Gassi im Kruppwald und Stadtwald, Lokale mit Hund und Tierdienste."
+    },
+    "leipzig": {
+      "metaTitle": "Singles mit Hund in Leipzig – Wildpark & Cospudener See",
+      "description": "Tierliebe Singles in Leipzig: Gassirouten am Wildpark, im Rosental und am Cospudener See, Treffpunkte für Katzenfreunde, Gastronomie und Tierdienstleister."
+    },
+    "frankfurt-am-main": {
+      "metaTitle": "Tierliebe Singles in Frankfurt – mit Hund am Mainufer",
+      "description": "Partnersuche für Tierfreunde in Frankfurt am Main: Spaziergänge am Mainufer, Citytour und Museum mit Hund, Badestellen, Hundefriseure und Hundeschulen."
+    },
+    "bremen": {
+      "metaTitle": "Tierliebe Singles in Bremen – Hundestrand am Hemelinger See",
+      "description": "Tierliebe Singles in Bremen: Hundestrand am Hemelinger See, Ausflug zum Tierpark am Meer, Übernachten mit Hund sowie Tierärzte, Hundesalons und Pensionen."
+    },
+    "dresden": {
+      "metaTitle": "Singles mit Hund in Dresden – Gassirunden an der Elbe",
+      "description": "Partnersuche für Tierfreunde in Dresden: malerische Gassirunden an der Elbe, Sightseeing mit Hund, Lokale mit Hundenapf und Treffpunkte für Katzenhalter."
+    },
+    "hannover": {
+      "metaTitle": "Tierliebe Singles in Hannover – Hundestrand am Silbersee",
+      "description": "Tierliebe Singles in Hannover: Hundestrand am Silbersee, Gassi im Hermann-Löns-Park, an der Alten Bult und am Ihmeufer sowie lokale Tierdienstleister."
+    },
+    "nuernberg": {
+      "metaTitle": "Tierfreunde-Dating in Nürnberg – Wöhrder See & Marienberg",
+      "description": "Partnersuche für Tierfreunde in Nürnberg: Gassirouten am Wöhrder See und Rechenberg, Hundespielwiesen im Marienbergpark und lokale Tierdienstleister."
+    },
+    "duisburg": {
+      "metaTitle": "Singles mit Hund in Duisburg – Treffpunkt Biegerpark",
+      "description": "Tierliebe Singles in Duisburg: Hundefreilaufflächen wie der Biegerpark in Huckingen, Gassirunden, Ausflugstipps, Lokale mit Hund und ein Katzenclub."
+    },
+    "bochum": {
+      "metaTitle": "Tierliebe Singles in Bochum – Ruhr-Rundweg & Hordeler Heide",
+      "description": "Partnersuche für Tierfreunde in Bochum: Ruhr-Rundweg in Dahlhausen, Hordeler Heide, Treffpunkte für Hundefreunde, Tierärzte, Tiertrainer und Pensionen."
+    },
+    "wuppertal": {
+      "metaTitle": "Tierliebe Singles in Wuppertal – Gassi in den Barmer Anlagen",
+      "description": "Tierliebe Singles in Wuppertal: grüne Treffpunkte wie die Barmer Anlagen und der Botanische Garten, Betreuung, Training, Tierärzte und Tierschutz vor Ort."
+    },
+    "bielefeld": {
+      "metaTitle": "Singles mit Hund in Bielefeld – Gassi an der Sparrenburg",
+      "description": "Partnersuche für Tierfreunde in Bielefeld: Hundewiese an der Sparrenburg, Auslaufplatz Brake, Bultkamppark, Cafés mit Hund, Tierarzt und Hundeschule."
+    },
+    "bonn": {
+      "metaTitle": "Tierliebe Singles in Bonn – Marienforst & Burg Graurheindorf",
+      "description": "Tierliebe Singles in Bonn: Rundwege um den Annaberger Hof, den Marienforst und Burg Graurheindorf, Lokale mit Hund, Tierarztpraxen und Gassi-Service."
+    },
+    "muenster": {
+      "metaTitle": "Tierliebe Singles in Münster – mit Hund am Aasee",
+      "description": "Partnersuche für Tierfreunde in Münster: Freilaufflächen am Aasee, Kunst und Hund, Allwetterzoo, Abende am Stadthafen sowie Tierärzte und Tierdienste."
+    },
+    "kassel": {
+      "metaTitle": "Tierliebe Singles in Kassel – Fuldaaue & Bergpark mit Hund"
+    }
+  },
+  "at": {
+    "innsbruck": {
+      "metaTitle": "Partnersuche für Tierfreunde in Innsbruck"
+    },
+    "amstetten": {
+      "metaTitle": "Singles mit Haustier in Amstetten – Treffpunkte & Tipps"
+    },
+    "wien": {
+      "metaTitle": "Tierliebe Singles in Wien – Gassi, Hundezonen & Cafés"
+    },
+    "linz": {
+      "metaTitle": "Partnersuche für Tierfreunde in Linz – Treffpunkte & Lokale"
+    },
+    "wels": {
+      "metaTitle": "Partnersuche für Tierfreunde in Wels – Gassi & Lokale"
+    },
+    "villach": {
+      "metaTitle": "Tierische Dates in Villach – Orte & Tipps für Tierfreunde"
+    },
+    "bregenz": {
+      "metaTitle": "Tierliebe Singles in Bregenz – Gassi an der Seepromenade"
+    },
+    "leoben": {
+      "metaTitle": "Tierliebe Singles in Leoben – Herzenssache mit Fell"
+    },
+    "graz": {
+      "metaTitle": "Tierliebe Singles aus Graz – wenn Pfoten Herzen verbinden"
+    },
+    "salzburg": {
+      "metaTitle": "Singles mit Tierliebe in Salzburg treffen"
+    },
+    "klagenfurt": {
+      "metaTitle": "Tierliebe Singles in Klagenfurt – Gassi-Treffs & Cafés"
+    },
+    "dornbirn": {
+      "metaTitle": "Singles mit Herz für Tiere in Dornbirn"
+    },
+    "steyr": {
+      "metaTitle": "Tierfreunde daten in Steyr – Treffpunkte & Tipps für Singles"
+    },
+    "st-poelten": {
+      "metaTitle": "Finde Singles aus St. Pölten, die Tiere lieben"
+    },
+    "eisenstadt": {
+      "metaTitle": "Tierisch verliebt in Eisenstadt: Tipps für die Partnersuche"
+    }
+  },
+  "ch": {
+    "luzern": {
+      "metaTitle": "Luzern verbindet Tierfreunde – Singles mit Fellnase"
+    },
+    "st-gallen": {
+      "metaTitle": "Tierliebe Singles in St. Gallen treffen"
+    },
+    "winterthur": {
+      "metaTitle": "Tierliebe Singles in Winterthur kennenlernen"
+    },
+    "zuerich": {
+      "metaTitle": "Tierliebe Singles in Zürich – Gassiwege & Hundecafés"
+    },
+    "lausanne": {
+      "metaTitle": "Tierliebe Singles in Lausanne – Herzen und Pfoten"
+    },
+    "schaffhausen": {
+      "metaTitle": "Tierliebe Singles in Schaffhausen – Orte für Tierfreunde"
+    },
+    "chur": {
+      "metaTitle": "Tierliebe Singles in Chur – zu zweit tierisch glücklich"
+    },
+    "zug": {
+      "metaTitle": "Partnersuche für Tierfreunde in Zug"
+    },
+    "fribourg": {
+      "metaTitle": "Tierliebe Singles in Fribourg – mit Hund oder Katze"
+    },
+    "bern": {
+      "metaTitle": "Pfote trifft Herz: tierliebe Singles in Bern kennenlernen"
+    },
+    "basel": {
+      "metaTitle": "Dating für Tierfreunde in Basel – wo Tierliebe verbindet"
+    },
+    "genf": {
+      "metaTitle": "Tierliebe Singles in Genf – hundefreundliche Parks & Cafés"
+    },
+    "thun": {
+      "metaTitle": "Singles mit Tierliebe – Dein Match in Thun"
+    },
+    "biel": {
+      "metaTitle": "Tierliebe Singles in Biel – Herzklopfen mit Hundeblick"
+    },
+    "aarau": {
+      "metaTitle": "Aarau trifft Herz und Fell: Singles mit Tierliebe"
+    }
+  }
+}

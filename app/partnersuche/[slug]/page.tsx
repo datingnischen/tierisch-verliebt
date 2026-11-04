@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const city = getMarketCityPage("de", slug);
   if (!city) return {};
   return {
-    title: city.title,
+    title: city.metaTitle ? { absolute: city.metaTitle } : city.title,
     description: city.description,
     alternates: { canonical: publicUrl("de", city.path) },
     openGraph: {
-      title: city.title,
+      title: city.metaTitle ?? city.title,
       description: city.description,
       url: publicUrl("de", city.path),
       images: city.imageUrl ? [city.imageUrl] : undefined,
