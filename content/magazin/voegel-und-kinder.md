@@ -7,8 +7,8 @@ published: "2026-03-05T22:37:24"
 updated: "2026-11-03T12:00:00+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
-image: "/magazin/wp-content/uploads/2026/03/Vogel-und-Kinder.compr_.png"
-imageAlt: "Vögel und Kinder: Zusammenleben sicher gestalten"
+image: "/magazin/wp-content/uploads/2026/11/wellensittiche-paar-pexels-33967944.jpg"
+imageAlt: "Zwei grün-gelbe Wellensittiche sitzen auf einem Naturast"
 seoTitle: "Vögel und Kinder: Regeln für Kontakt und Pflege"
 description: "Dürfen Kinder Vögel anfassen? Freiwilliger Kontakt, Aufsicht, sichere Pflegeaufgaben und klare Grenzen für das Zusammenleben in der Familie."
 excerpt: "<p>Dürfen Kinder Vögel anfassen? Freiwilliger Kontakt, Aufsicht, sichere Pflegeaufgaben und klare Grenzen für das Zusammenleben in der Familie.</p>"
@@ -47,6 +47,6 @@ excerpt: "<p>Dürfen Kinder Vögel anfassen? Freiwilliger Kontakt, Aufsicht, sic
 <p>Redaktionell geprüft am 3. November 2026. Ergänzende Fachquellen: <a href="https://www.tierschutzbund.de/tiere-themen/haustiere/andere-haustiere/wellensittiche/" target="_blank" rel="noopener noreferrer">Deutscher Tierschutzbund: Bedürfnisse von Wellensittichen</a>.</p>
 
 <!-- audit-visual-credit -->
-<p class="bildnachweis">Bildnachweis: Die im November 2026 erneuerten Bilder und Grafiken wurden mit KI-Unterstützung von Codex erstellt. Fotos zeigen Symbolmotive; Illustrationen sind schematisch und nicht maßstabsgetreu.</p>
+<p class="bildnachweis">Titelbild: <a href="https://www.pexels.com/photo/two-budgerigars-interacting-on-tree-branch-33967944/" target="_blank" rel="noopener noreferrer">Wijs (Wise) / Pexels</a>, echte Fotografie von zwei Wellensittichen auf einem Naturast, verwendet unter der <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer">Pexels-Lizenz</a>. Das Schaubild wurde mit KI-Unterstützung von Codex erstellt; es ist schematisch und nicht maßstabsgetreu.</p>
 <p class="bildnachweis">Quellen zu den neuen Schaubildern (abgerufen am 3. November 2026): <a href="https://www.zuerchertierschutz.ch/de/tierhaltung/wellensittiche/tipps" target="_blank" rel="noopener noreferrer">www.zuerchertierschutz.ch</a>.</p>
 <!-- /audit-visual-credit -->
