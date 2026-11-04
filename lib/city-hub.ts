@@ -36,6 +36,18 @@ export type CityHubData = {
 
 const LABEL_SIZE = 38;
 
+// Semrush Text-HTML-Verhältnis: Der Umriss steht im HTML und in den RSC-Daten. Ganze Einheiten reichen bei
+// ca. 1000 Einheiten Kartenbreite; aufeinanderfolgende gleiche Punkte entfallen.
+export function compactMapPath(path: string) {
+  let previous = "";
+  return path.replace(/([ML])(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/g, (_match, command: string, x: string, y: string) => {
+    const point = `${Math.round(Number(x))},${Math.round(Number(y))}`;
+    if (command === "L" && point === previous) return "";
+    previous = point;
+    return `${command}${point}`;
+  });
+}
+
 export function projectPoint(map: CountryMap, lat: number, lon: number) {
   const { k, minX, minY, scale, pad } = map.projection;
   return { x: (lon * k - minX) * scale + pad, y: (-lat - minY) * scale + pad };
@@ -98,7 +110,7 @@ export function getCityHubData(market: MarketCode): CityHubData {
   for (const city of raw) for (const topic of city.allTopics) topicCounts[topic] = (topicCounts[topic] ?? 0) + 1;
   const animals = (["hund", "katze", "pferd", "kleintier", "vogel"] as GuideAnimal[]).filter((animal) => raw.some((city) => city.animals.includes(animal)));
   return {
-    map: { width: map.width, height: map.height, path: map.path },
+    map: { width: map.width, height: map.height, path: compactMapPath(map.path) },
     cities,
     regions,
     totals: {

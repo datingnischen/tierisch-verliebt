@@ -71,12 +71,14 @@ export function NlCityHub({ market }: { market: MarketCode }) {
                   <path d="M32 34c-8.5 0-16 8.6-16 15.2 0 4.5 3.6 6.8 8 6.8 3.3 0 5.3-1.6 8-1.6s4.7 1.6 8 1.6c4.4 0 8-2.3 8-6.8C48 42.6 40.5 34 32 34Z" />
                   <ellipse cx="13" cy="27" rx="6" ry="7.6" /><ellipse cx="24.5" cy="15" rx="6" ry="8" /><ellipse cx="39.5" cy="15" rx="6" ry="8" /><ellipse cx="51" cy="27" rx="6" ry="7.6" />
                 </symbol>
+                {/* Umriss nur einmal im Dokument; Fläche und Punktraster nutzen ihn per <use>. */}
+                <path id={`tvh-land-${market}`} d={data.map.path} />
                 <pattern id={`tvh-dots-${market}`} width="18" height="18" patternUnits="userSpaceOnUse">
                   <circle cx="9" cy="9" r="1.6" className="tvh-map-dot" />
                 </pattern>
               </defs>
-              <path className="tvh-map-land" d={data.map.path} />
-              <path d={data.map.path} fill={`url(#tvh-dots-${market})`} />
+              <use href={`#tvh-land-${market}`} className="tvh-map-land" />
+              <use href={`#tvh-land-${market}`} fill={`url(#tvh-dots-${market})`} />
               {data.cities.map((city, index) => (
                 <MarketLink key={city.slug} className="tvh-pin" market={market} path={city.path}>
                   <title>{`${city.name} – Wandelgids`}</title>

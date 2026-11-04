@@ -4,7 +4,7 @@ import { MarketLink } from "@/components/market-link";
 import { ANIMAL_LABELS, TOPIC_LABELS, buildCityGuide, cityGeo, nearestCities, type GuideTopic } from "@/lib/city-guide";
 import { getMarketCityPages, type MarketCityPage } from "@/lib/market-partnersuche";
 import type { MarketCode } from "@/lib/markets";
-import { AnimalIcon, ClockIcon, HeartIcon, PawIcon, PinIcon, TopicIcon } from "./tier-icons";
+import { AnimalIcon, ClockIcon, HeartIcon, IconSymbols, PawIcon, PinIcon, TOPIC_ICON_NAMES, TopicIcon } from "./tier-icons";
 import { display } from "./display-font";
 import "./tier-city-page.css";
 
@@ -38,6 +38,8 @@ export function TierCityPage({ market, city, expert }: Props) {
 
   return (
     <main className={`tvc ${display.variable}`}>
+      {/* Wiederkehrende Icons einmal als Symbol, sonst stehen dieselben Pfade dutzendfach im HTML und in den RSC-Daten. */}
+      <IconSymbols names={TOPIC_ICON_NAMES} />
       <section className="tvc-hero">
         {city.imageUrl ? <img className="tvc-hero-img" src={city.imageUrl} alt={city.imageAlt?.trim() || `Tierfreundliches ${city.cityName}`} fetchPriority="high" decoding="async" /> : null}
         <svg className="tvc-trail" viewBox="0 0 1200 220" aria-hidden="true" preserveAspectRatio="none">
@@ -60,7 +62,7 @@ export function TierCityPage({ market, city, expert }: Props) {
               <span aria-hidden="true">›</span>
               <span aria-current="page">{city.cityName}</span>
             </nav>
-            <span className="tvc-badge"><PawIcon className="tvc-badge-paw" />Gassi-Guide{geo ? ` · ${geo.region}` : ""}</span>
+            <span className="tvc-badge"><PawIcon className="tvc-badge-paw" use />Gassi-Guide{geo ? ` · ${geo.region}` : ""}</span>
             <h1>{city.title}</h1>
             <p className="tvc-lead">{city.description}</p>
             <div className="tvc-actions">
@@ -85,7 +87,7 @@ export function TierCityPage({ market, city, expert }: Props) {
             </dl>
             {guide.topics.length ? (
               <ul className="tvc-tag-topics">
-                {guide.topics.slice(0, 6).map((topic) => <li key={topic}><TopicIcon topic={topic} />{TOPIC_LABELS[topic]}</li>)}
+                {guide.topics.slice(0, 6).map((topic) => <li key={topic}><TopicIcon topic={topic} use />{TOPIC_LABELS[topic]}</li>)}
               </ul>
             ) : null}
           </aside>
@@ -95,8 +97,8 @@ export function TierCityPage({ market, city, expert }: Props) {
 
       <div className="tvc-wrap">
         <ul className="tvc-facts">
-          <li><PinIcon /><span><small>Suchort</small><span className="sx-strong">{city.cityName}{geo ? `, ${geo.region}` : ""}</span></span></li>
-          {nearby[0] ? <li><PawIcon /><span><small>Nächste Stadtseite</small><span className="sx-strong">{nearby[0].cityName} · {nearby[0].km} km</span></span></li> : null}
+          <li><PinIcon use /><span><small>Suchort</small><span className="sx-strong">{city.cityName}{geo ? `, ${geo.region}` : ""}</span></span></li>
+          {nearby[0] ? <li><PawIcon use /><span><small>Nächste Stadtseite</small><span className="sx-strong">{nearby[0].cityName} · {nearby[0].km} km</span></span></li> : null}
           <li><ClockIcon /><span><small>Lesezeit Guide</small><span className="sx-strong">ca. {guide.readingMinutes} Minuten</span></span></li>
           <li><HeartIcon /><span><small>Anmeldung</small><span className="sx-strong">kostenlos</span></span></li>
         </ul>
@@ -116,7 +118,7 @@ export function TierCityPage({ market, city, expert }: Props) {
           <div className="tvc-ideas-grid">
             {ideas.map((idea, index) => (
               <a key={idea.topic} className={`tvc-idea tvc-t-${idea.topic}`} href={`#${idea.section!.id}`} style={{ "--tilt": `${index % 2 ? 1.2 : -1.2}deg` } as CSSProperties}>
-                <span className="tvc-idea-icon"><TopicIcon topic={idea.topic} /></span>
+                <span className="tvc-idea-icon"><TopicIcon topic={idea.topic} use /></span>
                 <span className="sx-strong">{idea.title}</span>
                 <span>{idea.text}</span>
                 <em>{idea.cta} <span aria-hidden="true">→</span></em>
@@ -129,11 +131,11 @@ export function TierCityPage({ market, city, expert }: Props) {
       <section id="guide" className="tvc-wrap tvc-guide" aria-label={`Gassi-Guide für ${city.cityName}`}>
         {guide.sections.length > 1 ? (
           <aside className="tvc-toc">
-            <span className="tvc-toc-kicker"><PawIcon />Gassi-Guide</span>
+            <span className="tvc-toc-kicker"><PawIcon use />Gassi-Guide</span>
             <span className="sx-strong">Tierfreundliches {city.cityName}</span>
             <ol>
               {guide.sections.map((section, index) => (
-                <li key={section.id}><a href={`#${section.id}`}><TopicIcon topic={section.topic} /><span>{section.heading}</span><small>{pad(index + 1)}</small></a></li>
+                <li key={section.id}><a href={`#${section.id}`}><TopicIcon topic={section.topic} use /><span>{section.heading}</span><small>{pad(index + 1)}</small></a></li>
               ))}
             </ol>
             <a className="tvc-btn tvc-btn-primary tvc-toc-cta" href={city.registrationUrl}>Tierfreunde kennenlernen</a>
@@ -144,7 +146,7 @@ export function TierCityPage({ market, city, expert }: Props) {
           {guide.sections.map((section, index) => (
             <article key={section.id} id={section.id} className={`tvc-chapter tvc-t-${section.topic}`}>
               <header>
-                <span className="tvc-chapter-icon"><TopicIcon topic={section.topic} /></span>
+                <span className="tvc-chapter-icon"><TopicIcon topic={section.topic} use /></span>
                 <span className="tvc-chapter-no" aria-hidden="true">{pad(index + 1)}</span>
                 <span className="tvc-chapter-kicker">{TOPIC_LABELS[section.topic]}</span>
                 <h2>{section.heading}</h2>
@@ -174,7 +176,7 @@ export function TierCityPage({ market, city, expert }: Props) {
             {nearby.map((entry) => (
               <li key={entry.slug}>
                 <MarketLink className="tvc-near-row" market={market} path={entry.path}>
-                  {entry.imageUrl ? <img src={entry.imageUrl} alt={entry.imageAlt || `Partnersuche in ${entry.cityName}`} loading="lazy" decoding="async" /> : <span className="tvc-near-ph"><PawIcon /></span>}
+                  {entry.imageUrl ? <img src={entry.imageUrl} alt={entry.imageAlt || `Partnersuche in ${entry.cityName}`} loading="lazy" decoding="async" /> : <span className="tvc-near-ph"><PawIcon use /></span>}
                   <span className="tvc-near-name"><small>Tierliebe Singles in</small><span className="sx-strong">{entry.cityName}</span></span>
                   <span className="tvc-near-bar" aria-hidden="true"><i style={{ width: `${Math.max(18, (entry.km / maxKm) * 100)}%` }} /></span>
                   <span className="tvc-near-km">{entry.km} km</span>
@@ -188,7 +190,7 @@ export function TierCityPage({ market, city, expert }: Props) {
       <section className="tvc-wrap tvc-related" aria-labelledby="tvc-related-title">
         <h2 id="tvc-related-title">Diese Städte könnten auch interessant für dich sein:</h2>
         <ul>
-          {related.map((link) => <li key={link.path}><MarketLink market={market} path={link.path}><PawIcon />{link.name}</MarketLink></li>)}
+          {related.map((link) => <li key={link.path}><MarketLink market={market} path={link.path}><PawIcon use />{link.name}</MarketLink></li>)}
           <li><MarketLink className="tvc-related-all" market={market} path="/partnersuche">Alle {pages.length} Städte <span aria-hidden="true">→</span></MarketLink></li>
         </ul>
       </section>

@@ -5,7 +5,7 @@ import { MarketLink } from "@/components/market-link";
 import { TOPIC_LABELS } from "@/lib/city-guide";
 import type { HubCity } from "@/lib/city-hub";
 import type { MarketCode } from "@/lib/markets";
-import { PawIcon, PinIcon, TopicIcon } from "./tier-icons";
+import { IconSymbols, PawIcon, PinIcon, TOPIC_ICON_NAMES, TopicIcon } from "./tier-icons";
 
 type Props = { market: MarketCode; cities: HubCity[]; regions: string[]; regionLabel: string };
 
@@ -23,6 +23,7 @@ export function CityFinder({ market, cities, regions, regionLabel }: Props) {
 
   return (
     <div className="tvh-finder">
+      <IconSymbols names={TOPIC_ICON_NAMES} />
       <div className="tvh-finder-bar">
         <label className="tvh-search">
           <PawIcon />
@@ -42,15 +43,15 @@ export function CityFinder({ market, cities, regions, regionLabel }: Props) {
           <li key={city.slug} style={{ ["--i" as string]: index }}>
             <div className="tvh-card">
               <span className="tvh-card-media">
-                {city.imageUrl ? <img src={city.imageUrl} alt={`Tierfreundliches ${city.name}`} loading="lazy" decoding="async" /> : <PawIcon />}
-                <span className="tvh-card-region"><PinIcon />{city.region}</span>
+                {city.imageUrl ? <img src={city.imageUrl} alt={`Tierfreundliches ${city.name}`} loading="lazy" decoding="async" /> : <PawIcon use />}
+                <span className="tvh-card-region"><PinIcon use />{city.region}</span>
               </span>
               <span className="tvh-card-body">
                 <MarketLink className="card-link card-link-block" market={market} path={city.path}><small>Tierliebe Singles in</small>{" "}<span className="sx-strong">{city.name}</span></MarketLink>
                 <span className="tvh-card-meta">{city.chapters} Kapitel{city.tips ? ` · ${city.tips} Adressen` : ""}</span>
                 {city.topics.length ? (
                   <span className="tvh-card-topics">
-                    {city.topics.map((topic) => <span key={topic} title={TOPIC_LABELS[topic]}><TopicIcon topic={topic} /><span className="tvh-sr">{TOPIC_LABELS[topic]}</span></span>)}
+                    {city.topics.map((topic) => <span key={topic} title={TOPIC_LABELS[topic]}><TopicIcon topic={topic} use /><span className="tvh-sr">{TOPIC_LABELS[topic]}</span></span>)}
                   </span>
                 ) : null}
                 <span className="tvh-card-go">Zum Gassi-Guide <span aria-hidden="true">→</span></span>

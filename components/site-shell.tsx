@@ -114,14 +114,26 @@ function Brand({ market }: { market: MarketCode }) {
   );
 }
 
+// Die Pfote steht dreimal im Footer jeder Seite: Geometrie einmal als Symbol, sonst dreifach im HTML und in den
+// RSC-Daten (Semrush „niedriges Text-HTML-Verhältnis“).
+function FooterPawSymbol() {
+  return (
+    <svg aria-hidden="true" focusable="false" width="0" height="0" style={{ position: "absolute", overflow: "hidden" }}>
+      <symbol id="tvf-paw" viewBox="0 0 64 64">
+        <ellipse cx="14" cy="26" rx="6" ry="8" />
+        <ellipse cx="25" cy="14" rx="6" ry="8.5" />
+        <ellipse cx="39" cy="14" rx="6" ry="8.5" />
+        <ellipse cx="50" cy="26" rx="6" ry="8" />
+        <path d="M32 30c-8 0-17 11-17 19 0 6 5 8 9 7 3-1 5-2 8-2s5 1 8 2c4 1 9-1 9-7 0-8-9-19-17-19z" />
+      </symbol>
+    </svg>
+  );
+}
+
 function PawIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-      <ellipse cx="14" cy="26" rx="6" ry="8" />
-      <ellipse cx="25" cy="14" rx="6" ry="8.5" />
-      <ellipse cx="39" cy="14" rx="6" ry="8.5" />
-      <ellipse cx="50" cy="26" rx="6" ry="8" />
-      <path d="M32 30c-8 0-17 11-17 19 0 6 5 8 9 7 3-1 5-2 8-2s5 1 8 2c4 1 9-1 9-7 0-8-9-19-17-19z" />
+      <use href="#tvf-paw" />
     </svg>
   );
 }
@@ -186,6 +198,7 @@ export function SiteFooter({ market = "de" }: Props) {
 
   return (
     <footer className="tv-footer">
+      <FooterPawSymbol />
       <div className="tv-footer-inner">
         <section className="tv-footer-cta" aria-label="Registrierung">
           <PawIcon className="tv-footer-cta-paw tv-footer-cta-paw-big" />
