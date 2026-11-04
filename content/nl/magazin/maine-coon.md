@@ -4,7 +4,7 @@ slug: "maine-coon"
 type: page
 wpId: 230
 published: "2019-07-21T08:43:33"
-updated: "2026-11-03T14:00:00+01:00"
+updated: "2026-11-04T17:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/maine-coon-katze.jpg"
@@ -47,8 +47,10 @@ locale: "nl-NL"
 <p>Controleer de bruikbare afmetingen en stabiliteit in plaats van alleen het etiket ‘XXL’. Je Maine Coon moet zich gemakkelijk kunnen omdraaien in de kattenbak en met haar lichaam op een ligplateau passen. Een kraboppervlak moet uitrekken mogelijk maken; klimelementen moeten stevig vastzitten. Plan aparte plekken voor eten, drinken, rust en de kattenbakken. Deze algemene kattenbehoeften gelden ook voor grote rassen; een vast aantal vierkante meters vervangt deze controle niet. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/">Bron: AAFP/ISFM: Omgevingsbehoeften van katten</a>.</p>
 <h3>Is een negatieve HCM-gentest van de ouders voldoende als gezondheidsbewijs?</h3>
 <p>Nee. Een negatieve Maine-Coon-HCM-gentest betekent dat de onderzochte genvariant niet is aangetoond. De test sluit de hartspierziekte HCM als geheel niet uit. Vraag daarom naast de laboratoriumuitslagen ook naar gedateerde hartecho’s van de ouderdieren. Controleer bij welk dier elke uitslag hoort en wanneer een volgende controle is gepland. Ook een normale echo beschrijft de situatie op het onderzoeksmoment en garandeert geen levenslange hartgezondheid. <a href="https://www.langfordvets.co.uk/diagnostic-laboratories/cat-genetic-testing/genetic-disease-and-trait-tests/maine-coon-hypertrophic-cardiomyopathy-mc-hcm">Bron: Langford Vets: HCM-gentest bij de Maine Coon</a>. <a href="https://www.vet-cardio.co.uk/feline-heart-screening/">Bron: Veterinary Cardiovascular Society: Hartonderzoek</a>.</p>
-<h3>Mijn Maine Coon heeft een draad wol ingeslikt – wat moet ik doen?</h3>
-<p>Bel onmiddellijk je dierenarts of de veterinaire spoeddienst, ook als je kat nog geen klachten heeft. Ingeslikte draden kunnen de darmen laten samentrekken en ernstig beschadigen. Trek nooit aan een draad die uit de bek of anus hangt. Bewaar bolletjes wol, naaigaren en speelgoed met losse touwtjes buiten bereik. Dit gevaar geldt voor alle katten, niet alleen voor Maine Coons. <a href="https://vcahospitals.com/know-your-pet/ingestion-of-foreign-bodies-in-cats">Bron: VCA: Ingeslikte vreemde voorwerpen</a>.</p>
+<h3>Is een Maine Coon altijd een schootkat?</h3>
+<p>Nee. Maine Coons worden vaak als aanhankelijk beschreven, maar nabijheid zoeken is niet hetzelfde als op schoot willen liggen. Sommige volgen hun mensen liever door het huis of liggen naast hen. Vraag vóór de aanschaf hoe de individuele kat contact zoekt. Laat haar bij kennismakingen zelf naar je toe komen en respecteer het als ze weer wegloopt. <a href="https://tica.org/breed/maine-coon/">Bron: TICA: Maine Coon</a>.</p>
+<h3>Hoe voorkom ik klitten in de halflange vacht van mijn Maine Coon?</h3>
+<p>Controleer de vacht regelmatig, vooral achter de oren, onder de oksels en op buik en borst. Kam voorzichtig met de haargroei mee en houd de sessies kort. Stem de verzorging af op hoe snel haar vacht klit, in plaats van op een vast weekschema. Trek niet aan vastzittende klitten en knip ze niet met een schaar weg: je kunt de huid verwonden. Vraag bij sterke vervilting of pijn om professionele hulp. <a href="https://www.rspca.org.uk/adviceandwelfare/pets/cats/health/grooming">Bron: RSPCA: Vachtverzorging</a>.</p>
 <h2>Quellen und weiterführende Informationen</h2>
 <ul>
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/">AAFP/ISFM: Omgevingsbehoeften van katten</a></li>
@@ -56,4 +58,6 @@ locale: "nl-NL"
 <li><a href="https://www.vet-cardio.co.uk/feline-heart-screening/">Veterinary Cardiovascular Society: Hartonderzoek</a></li>
 <li><a href="https://vcahospitals.com/know-your-pet/ingestion-of-foreign-bodies-in-cats">VCA: Ingeslikte vreemde voorwerpen</a></li>
 <li><a href="https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat">Cornell Feline Health Center: Katten voeren</a></li>
+<li><a href="https://tica.org/breed/maine-coon/">TICA: Maine Coon</a></li>
+<li><a href="https://www.rspca.org.uk/adviceandwelfare/pets/cats/health/grooming">RSPCA: Vachtverzorging</a></li>
 </ul>

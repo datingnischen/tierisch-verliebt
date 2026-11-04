@@ -4,7 +4,7 @@ slug: "maine-coon"
 type: page
 wpId: 230
 published: "2019-07-21T08:43:33"
-updated: "2026-11-03T14:00:00+01:00"
+updated: "2026-11-04T17:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/maine-coon-katze.jpg"
@@ -44,8 +44,10 @@ excerpt: "<p>Eine beliebte halblanghaarige Katzenrasse ist die Maine Coon. Im No
 <p>Prüfe die nutzbare Größe und Stabilität statt nur die Aufschrift „XXL“. Deine Maine Coon sollte sich in der Katzentoilette bequem drehen können; auf Liegeflächen muss ihr Körper Platz finden. Kratzflächen sollen das Strecken ermöglichen, Kletterelemente sicher befestigt sein. Plane getrennte Plätze zum Fressen, Trinken, Ruhen und für die Toiletten ein. Diese allgemeinen Katzenbedürfnisse gelten auch für große Rassen; eine pauschale Quadratmeterzahl ersetzt diese Prüfung nicht. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/">Quelle: AAFP/ISFM: Umweltbedürfnisse von Katzen</a>.</p>
 <h3>Reicht ein negativer HCM-Gentest der Eltern als Gesundheitsnachweis?</h3>
 <p>Nein. Ein negativer Maine-Coon-HCM-Gentest bedeutet, dass die untersuchte Genvariante nicht nachgewiesen wurde. Er schließt die Herzmuskelerkrankung HCM nicht insgesamt aus. Lass dir deshalb neben den Laborbefunden auch die datierten Herzultraschallbefunde der Elterntiere zeigen. Frage nach, welchem Tier jeder Befund zugeordnet ist und wann die nächste Kontrolle vorgesehen ist. Auch ein unauffälliger Ultraschall beschreibt den Untersuchungszeitpunkt und garantiert keine lebenslange Herzgesundheit. <a href="https://www.langfordvets.co.uk/diagnostic-laboratories/cat-genetic-testing/genetic-disease-and-trait-tests/maine-coon-hypertrophic-cardiomyopathy-mc-hcm">Quelle: Langford Vets: HCM-Gentest bei Maine Coon</a>. <a href="https://www.vet-cardio.co.uk/feline-heart-screening/">Quelle: Veterinary Cardiovascular Society: Herzvorsorge</a>.</p>
-<h3>Meine Maine Coon hat einen Wollfaden verschluckt – was soll ich tun?</h3>
-<p>Rufe sofort eine Tierarztpraxis oder den tierärztlichen Notdienst an, auch wenn deine Katze noch unauffällig wirkt. Verschluckte Fäden können den Darm zusammenziehen und schwer verletzen. Ziehe niemals an einem Faden, der aus dem Maul oder After hängt. Bewahre Wollknäuel, Nähgarn und Spielzeug mit losen Schnüren außerhalb ihrer Reichweite auf. Diese Gefahr betrifft alle Katzen, nicht nur Maine Coons. <a href="https://vcahospitals.com/know-your-pet/ingestion-of-foreign-bodies-in-cats">Quelle: VCA: Verschluckte Fremdkörper</a>.</p>
+<h3>Ist eine Maine Coon automatisch eine Schmusekatze?</h3>
+<p>Nein. Maine Coons werden häufig als anhänglich beschrieben, doch Nähe bedeutet nicht automatisch, auf dem Schoß liegen zu wollen. Manche begleiten ihre Menschen lieber durch die Wohnung oder liegen neben ihnen. Frage vor der Anschaffung nach dem Kontaktverhalten der einzelnen Katze. Lass sie beim Kennenlernen selbst auf dich zukommen und respektiere, wenn sie wieder geht. <a href="https://tica.org/breed/maine-coon/">Quelle: TICA: Maine Coon</a>.</p>
+<h3>Wie verhindere ich Knoten im halblangen Fell meiner Maine Coon?</h3>
+<p>Kontrolliere das Fell regelmäßig, besonders hinter den Ohren, unter den Achseln sowie an Bauch und Brust. Kämme vorsichtig in Wuchsrichtung und halte die Einheiten kurz. Richte die Pflege danach aus, wie schnell ihr Fell verknotet, statt nach einem starren Wochenplan. Ziehe nicht an festsitzenden Knoten und schneide sie nicht mit einer Schere heraus: Dabei kannst du die Haut verletzen. Hole bei starker Verfilzung oder Schmerzen fachliche Hilfe. <a href="https://www.rspca.org.uk/adviceandwelfare/pets/cats/health/grooming">Quelle: RSPCA: Fellpflege</a>.</p>
 <h2>Quellen und weiterführende Informationen</h2>
 <ul>
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/">AAFP/ISFM: Umweltbedürfnisse von Katzen</a></li>
@@ -53,4 +55,6 @@ excerpt: "<p>Eine beliebte halblanghaarige Katzenrasse ist die Maine Coon. Im No
 <li><a href="https://www.vet-cardio.co.uk/feline-heart-screening/">Veterinary Cardiovascular Society: Herzvorsorge</a></li>
 <li><a href="https://vcahospitals.com/know-your-pet/ingestion-of-foreign-bodies-in-cats">VCA: Verschluckte Fremdkörper</a></li>
 <li><a href="https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat">Cornell Feline Health Center: Katzen füttern</a></li>
+<li><a href="https://tica.org/breed/maine-coon/">TICA: Maine Coon</a></li>
+<li><a href="https://www.rspca.org.uk/adviceandwelfare/pets/cats/health/grooming">RSPCA: Fellpflege</a></li>
 </ul>

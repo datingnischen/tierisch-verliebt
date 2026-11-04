@@ -4,7 +4,7 @@ slug: "britisch-kurzhaar"
 type: page
 wpId: 152
 published: "2019-07-02T19:08:35"
-updated: "2026-11-03T14:00:00+01:00"
+updated: "2026-11-04T17:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/Britisch-Kurzhaar-British-Shorthair.jpg"
@@ -121,11 +121,17 @@ excerpt: "<p>Kurzbeschreibung Diese sanftmütigen Stubentiger haben Katzenliebha
 <p>Lass deine Britisch Kurzhaar selbst entscheiden, wie sie Kontakt aufnimmt. Nähe zu suchen bedeutet nicht automatisch, getragen werden zu wollen. Streichle sie dort, wo sie sich wohlfühlt, und beende den Kontakt, wenn sie ausweicht oder sich anspannt. Halte sie nicht fest, um sie daran zu gewöhnen. Lehnt sie Berührungen plötzlich ab, obwohl sie diese bisher mochte, sollte eine Tierarztpraxis mögliche Schmerzen prüfen. <a href="https://www.cats.org.uk/cats-blog/how-to-pick-up-a-cat">Quelle: Cats Protection: Katzen hochheben</a>.</p>
 <h3>Kräftiger Körperbau oder Übergewicht: Wie prüfe ich das bei meiner BKH?</h3>
 <p>Beurteile deine Britisch Kurzhaar nicht allein nach Gewicht oder rundem Aussehen. Taste ihren Brustkorb sanft ab: Die Rippen sollten mit leichtem Druck fühlbar sein. Von oben sollte hinter dem Brustkorb eine Taille erkennbar sein. Dichtes Fell kann die Form verdecken, deshalb gehört Abtasten dazu. Lass dir in der Tierarztpraxis den Body Condition Score zeigen und ein passendes Zielgewicht bestimmen; eine allgemeine Rasse-Gewichtsspanne ist kein individuelles Idealgewicht. <a href="https://www.pdsa.org.uk/get-involved/our-campaigns/weigh-up/your-cat/your-cats-body-shape/your-cats-body-condition-score">Quelle: PDSA: Körperzustand beurteilen</a>.</p>
-<h3>Meine sonst ruhige BKH zieht sich neuerdings zurück – ist das noch ihr Charakter?</h3>
-<p>Eine neue Verhaltensänderung solltest du nicht mit dem ruhigen Ruf der Britisch Kurzhaar erklären. Weniger Springen, Rückzug, nachlassende Fellpflege oder Abwehr beim Anfassen können auf Schmerzen hinweisen. Notiere, seit wann dir die Veränderung auffällt und ob Fressen oder Toilettengang ebenfalls anders sind. Vereinbare eine tierärztliche Untersuchung, statt die Katze mit mehr Spiel zum Mitmachen zu drängen. <a href="https://www.cats.org.uk/help-and-advice/health/signs-of-pain">Quelle: Cats Protection: Anzeichen für Schmerzen</a>.</p>
+<h3>Muss eine Zweitkatze für meine BKH ebenfalls eine Britisch Kurzhaar sein?</h3>
+<p>Nein. Dieselbe Rasse garantiert nicht, dass zwei Katzen einander akzeptieren. Frage nach bisherigen Erfahrungen mit Artgenossen und achte auf Alter, Aktivität und Charakter. Eine sehr spielfreudige Jungkatze kann eine ruhige erwachsene BKH überfordern. Prüfe zuerst, ob deine bisherige Katze überhaupt Katzengesellschaft schätzt. Plane für die Zusammenführung getrennte Ressourcen und einen schrittweisen Kontaktaufbau. <a href="https://www.bluecross.org.uk/advice/cat/introducing-cats">Quelle: Blue Cross: Katzen zusammenführen</a>. <a href="https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/introducing-cats">Quelle: Cats Protection: Zusammenführung</a>.</p>
+<h3>Beweisen blaues Fell und ein runder Kopf, dass eine Katze eine BKH ist?</h3>
+<p>Nein. Blaugrau ist eine bekannte Fellfarbe der Britisch Kurzhaar, die Rasse gibt es aber in vielen Farben. Das Aussehen allein belegt keine Abstammung. Wird ein Kitten als Rassekatze angeboten, lass dir vor dem Kauf Stammbaum und Registrierungsangaben zeigen und prüfe, bei welchem Verband es registriert ist. Fehlende Papiere beweisen für sich genommen keine schlechte Gesundheit; ebenso wenig beweist das Aussehen die Reinrassigkeit. <a href="https://tica.org/breed/british-shorthair/">Quelle: TICA: British Shorthair</a>. <a href="https://www.cats.org.uk/media/3722/the-kitten-checklist.pdf">Quelle: Cats Protection: Kitten-Checkliste</a>.</p>
 <h2>Quellen und weiterführende Informationen</h2>
 <ul>
 <li><a href="https://www.cats.org.uk/cats-blog/how-to-pick-up-a-cat">Cats Protection: Katzen hochheben</a></li>
 <li><a href="https://www.pdsa.org.uk/get-involved/our-campaigns/weigh-up/your-cat/your-cats-body-shape/your-cats-body-condition-score">PDSA: Körperzustand beurteilen</a></li>
 <li><a href="https://www.cats.org.uk/help-and-advice/health/signs-of-pain">Cats Protection: Anzeichen für Schmerzen</a></li>
+<li><a href="https://www.bluecross.org.uk/advice/cat/introducing-cats">Blue Cross: Katzen zusammenführen</a></li>
+<li><a href="https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/introducing-cats">Cats Protection: Zusammenführung</a></li>
+<li><a href="https://tica.org/breed/british-shorthair/">TICA: British Shorthair</a></li>
+<li><a href="https://www.cats.org.uk/media/3722/the-kitten-checklist.pdf">Cats Protection: Kitten-Checkliste</a></li>
 </ul>

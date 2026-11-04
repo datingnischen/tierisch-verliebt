@@ -4,7 +4,7 @@ slug: "brits-korthaar"
 type: page
 wpId: 152
 published: "2019-07-02T19:08:35"
-updated: "2026-11-03T14:00:00+01:00"
+updated: "2026-11-04T17:00:00+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/Britisch-Kurzhaar-British-Shorthair.jpg"
@@ -124,11 +124,17 @@ locale: "nl-NL"
 <p>Laat je Brits Korthaar zelf bepalen hoe ze contact maakt. Nabijheid zoeken betekent niet automatisch dat ze gedragen wil worden. Aai haar waar ze dat prettig vindt en stop als ze wegdraait of gespannen raakt. Houd haar niet vast om haar eraan te laten wennen. Als ze aanraking plotseling afwijst terwijl ze die eerder prettig vond, laat een dierenarts dan mogelijke pijn onderzoeken. <a href="https://www.cats.org.uk/cats-blog/how-to-pick-up-a-cat">Bron: Cats Protection: Een kat optillen</a>.</p>
 <h3>Stevige bouw of overgewicht: hoe controleer ik dat bij mijn Brits Korthaar?</h3>
 <p>Beoordeel je Brits Korthaar niet alleen op gewicht of een rond uiterlijk. Voel voorzichtig aan haar borstkas: de ribben moeten met lichte druk voelbaar zijn. Van bovenaf hoort achter de ribbenkast een taille zichtbaar te zijn. Een dichte vacht kan de lichaamsvorm verbergen, dus voelen hoort erbij. Vraag je dierenarts de Body Condition Score te laten zien en een passend streefgewicht vast te stellen. Een algemene gewichtsrange voor het ras is geen individueel ideaalgewicht. <a href="https://www.pdsa.org.uk/get-involved/our-campaigns/weigh-up/your-cat/your-cats-body-shape/your-cats-body-condition-score">Bron: PDSA: Lichaamsconditie beoordelen</a>.</p>
-<h3>Mijn normaal rustige Brits Korthaar trekt zich ineens terug – hoort dat bij haar karakter?</h3>
-<p>Verklaar een nieuwe gedragsverandering niet met de rustige reputatie van de Brits Korthaar. Minder springen, terugtrekken, minder vachtverzorging of afweer bij aanraking kunnen op pijn wijzen. Noteer sinds wanneer de verandering opvalt en of eten of toiletgedrag ook veranderd zijn. Maak een afspraak bij de dierenarts in plaats van de kat met meer spel tot activiteit te dwingen. <a href="https://www.cats.org.uk/help-and-advice/health/signs-of-pain">Bron: Cats Protection: Signalen van pijn</a>.</p>
+<h3>Moet een tweede kat voor mijn Brits Korthaar ook een Brits Korthaar zijn?</h3>
+<p>Nee. Hetzelfde ras garandeert niet dat twee katten elkaar accepteren. Vraag naar hun eerdere ervaringen met andere katten en let op leeftijd, activiteit en karakter. Een zeer speelse jonge kat kan een rustige volwassen Brits Korthaar overvragen. Bedenk eerst of je huidige kat gezelschap van een andere kat prettig vindt. Zorg bij een kennismaking voor aparte voorzieningen en bouw het contact geleidelijk op. <a href="https://www.bluecross.org.uk/advice/cat/introducing-cats">Bron: Blue Cross: Katten laten kennismaken</a>. <a href="https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/introducing-cats">Bron: Cats Protection: Katten laten kennismaken</a>.</p>
+<h3>Bewijzen een blauwe vacht en ronde kop dat een kat een Brits Korthaar is?</h3>
+<p>Nee. Blauwgrijs is een bekende vachtkleur van de Brits Korthaar, maar het ras komt in veel kleuren voor. Uiterlijk alleen bewijst geen afstamming. Als een kitten als raskat wordt aangeboden, vraag dan vóór de koop om de stamboom en registratiegegevens en controleer bij welke vereniging het is geregistreerd. Ontbrekende papieren bewijzen op zichzelf niet dat een kat ongezond is; het uiterlijk bewijst evenmin dat ze raszuiver is. <a href="https://tica.org/breed/british-shorthair/">Bron: TICA: British Shorthair</a>. <a href="https://www.cats.org.uk/media/3722/the-kitten-checklist.pdf">Bron: Cats Protection: Kittenchecklist</a>.</p>
 <h2>Quellen und weiterführende Informationen</h2>
 <ul>
 <li><a href="https://www.cats.org.uk/cats-blog/how-to-pick-up-a-cat">Cats Protection: Een kat optillen</a></li>
 <li><a href="https://www.pdsa.org.uk/get-involved/our-campaigns/weigh-up/your-cat/your-cats-body-shape/your-cats-body-condition-score">PDSA: Lichaamsconditie beoordelen</a></li>
 <li><a href="https://www.cats.org.uk/help-and-advice/health/signs-of-pain">Cats Protection: Signalen van pijn</a></li>
+<li><a href="https://www.bluecross.org.uk/advice/cat/introducing-cats">Blue Cross: Katten laten kennismaken</a></li>
+<li><a href="https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/introducing-cats">Cats Protection: Katten laten kennismaken</a></li>
+<li><a href="https://tica.org/breed/british-shorthair/">TICA: British Shorthair</a></li>
+<li><a href="https://www.cats.org.uk/media/3722/the-kitten-checklist.pdf">Cats Protection: Kittenchecklist</a></li>
 </ul>
