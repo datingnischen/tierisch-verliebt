@@ -134,34 +134,44 @@
   },
   "ch": {
     "luzern": {
-      "metaTitle": "Luzern verbindet Tierfreunde – Singles mit Fellnase"
+      "metaTitle": "Luzern verbindet Tierfreunde – Singles mit Fellnase",
+      "h1": "Tierfreunde in Luzern: tierliebe Singles kennenlernen"
     },
     "st-gallen": {
-      "metaTitle": "Tierliebe Singles in St. Gallen treffen"
+      "metaTitle": "Tierliebe Singles in St. Gallen treffen",
+      "h1": "Tierliebe Singles in St. Gallen treffen – mit Hund oder Katze"
     },
     "winterthur": {
-      "metaTitle": "Tierliebe Singles in Winterthur kennenlernen"
+      "metaTitle": "Tierliebe Singles in Winterthur kennenlernen",
+      "h1": "Tierliebe Singles in Winterthur kennenlernen"
     },
     "zuerich": {
-      "metaTitle": "Tierliebe Singles in Zürich – Gassiwege & Hundecafés"
+      "metaTitle": "Tierliebe Singles in Zürich – Gassiwege & Hundecafés",
+      "h1": "Tierliebe in Zürich – Singles mit Hund und Katze treffen"
     },
     "lausanne": {
-      "metaTitle": "Tierliebe Singles in Lausanne – Herzen und Pfoten"
+      "metaTitle": "Tierliebe Singles in Lausanne – Herzen und Pfoten",
+      "h1": "Tierliebe Singles in Lausanne finden"
     },
     "schaffhausen": {
-      "metaTitle": "Tierliebe Singles in Schaffhausen – Orte für Tierfreunde"
+      "metaTitle": "Tierliebe Singles in Schaffhausen – Orte für Tierfreunde",
+      "h1": "Tierliebe Singles in Schaffhausen: Partnersuche für Tierfreunde"
     },
     "chur": {
-      "metaTitle": "Tierliebe Singles in Chur – zu zweit tierisch glücklich"
+      "metaTitle": "Tierliebe Singles in Chur – zu zweit tierisch glücklich",
+      "h1": "Tierliebe Singles in Chur finden und treffen"
     },
     "zug": {
-      "metaTitle": "Partnersuche für Tierfreunde in Zug"
+      "metaTitle": "Partnersuche für Tierfreunde in Zug",
+      "h1": "Partnersuche für Tierfreunde in Zug: tierliebe Singles treffen"
     },
     "fribourg": {
-      "metaTitle": "Tierliebe Singles in Fribourg – mit Hund oder Katze"
+      "metaTitle": "Tierliebe Singles in Fribourg – mit Hund oder Katze",
+      "h1": "Tierliebe Singles in Fribourg finden: Partnersuche mit Hund oder Katze"
     },
     "bern": {
-      "metaTitle": "Pfote trifft Herz: tierliebe Singles in Bern kennenlernen"
+      "metaTitle": "Pfote trifft Herz: tierliebe Singles in Bern kennenlernen",
+      "h1": "Tierliebe Singles in Bern treffen"
     },
     "basel": {
       "metaTitle": "Dating für Tierfreunde in Basel – wo Tierliebe verbindet"
@@ -170,10 +180,12 @@
       "metaTitle": "Tierliebe Singles in Genf – hundefreundliche Parks & Cafés"
     },
     "thun": {
-      "metaTitle": "Singles mit Tierliebe – Dein Match in Thun"
+      "metaTitle": "Singles mit Tierliebe – Dein Match in Thun",
+      "h1": "Singles mit Tierliebe in Thun kennenlernen"
     },
     "biel": {
-      "metaTitle": "Tierliebe Singles in Biel – Herzklopfen mit Hundeblick"
+      "metaTitle": "Tierliebe Singles in Biel – Herzklopfen mit Hundeblick",
+      "h1": "Tierliebe Singles in Biel finden – mit Hund oder Katze"
     },
     "aarau": {
       "metaTitle": "Aarau trifft Herz und Fell: Singles mit Tierliebe"

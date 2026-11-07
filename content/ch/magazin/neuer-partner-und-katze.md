@@ -11,7 +11,7 @@ imageAlt: 'KI-generiertes Symbolbild: Eine getigerte Katze sitzt auf einem erhö
 imageWidth: 1200
 imageHeight: 800
 ---
-<p>Ihr möchtet mehr Zeit miteinander verbringen. Deine Katze findet die neue Stimme in der Wohnung vorerst weniger spannend als du. Vielleicht beobachtet sie alles von oben, vielleicht verschwindet sie unter dem Bett. Das ist kein Urteil über eure Beziehung. Entscheidend ist, ob sie ihren Alltag weiter sicher gestalten kann. Vom ersten Besuch bis zum gemeinsamen Haushalt lohnt es sich, die Veränderungen in kleine Schritte aufzuteilen.</p>
+<p>Ihr möchtet mehr Zeit miteinander verbringen. Deine Katze findet die neue Stimme in der Wohnung vorerst weniger spannend als du. Vielleicht beobachtet sie alles von oben, vielleicht verschwindet sie unter dem Bett. Das ist kein Urteil über eure Beziehung. Entscheidend ist, ob sie ihren Alltag weiter sicher gestalten kann. Vom ersten Besuch bis zum Zusammenleben im gemeinsamen Haushalt lohnt es sich, die Veränderungen in kleine Schritte aufzuteilen.</p>
 
 <h2 id="besuch">Der erste Besuch ist noch kein Zusammenziehen</h2>
 <p>Wenn dein neuer Partner oder deine neue Partnerin zum ersten Mal kommt, braucht die Katze keinen besonderen Empfang. Richtet euch ruhig ein und lasst ihr Wege offen. Sie darf schauen, sich nähern oder verborgen bleiben. Tragt sie nicht zum Sofa, um sie vorzustellen. Ein Treffen ist auch dann gelungen, wenn sie in Ruhe ihren gewohnten Platz nutzt und keinen Kontakt sucht.</p>

@@ -68,7 +68,9 @@ export default async function ChMagazine({ params }: Props) {
     <section className="tvc-hero ch-hero"><div className={`tvc-wrap${article ? " ch-hero-grid" : ""}`}>
       <div><nav className="tvc-crumbs" aria-label="Brotkrümelnavigation"><MarketLink market="ch">Start</MarketLink><span aria-hidden="true">›</span>{article ? <><MarketLink market="ch" path="/magazin">Magazin</MarketLink><span aria-hidden="true">›</span><span>Ratgeber</span></> : <span>Magazin</span>}</nav>
         <span className="tvc-badge"><PawIcon className="tvc-badge-paw" />{article?.category || "Das Schweizer Magazin"}</span>
-        <h1>{article?.title || <>Verliebt sein.<br />Mit Herz und Pfote.</>}</h1>
+        {/* H1-Wörter stehen im Fliesstext (Seobility, 2026-11-07); der Slogan bleibt als Untertitel. */}
+        <h1>{article?.title || "Magazin für tierliebe Singles"}</h1>
+        {article ? null : <p className="ch-hero-slogan">Verliebt sein. Mit Herz und Pfote.</p>}
         <p className="tvc-lead">{article?.description || "Wenn aus deinem Alltag unser Alltag wird: Ideen fürs Kennenlernen, für eure Beziehung und für die Tiere, die dazugehören. Mit Blick auf das Leben in der Schweiz."}</p>
         {article ? <p className="ch-meta">Redaktion tierisch-verliebt.ch · Aktualisiert am <time dateTime={article.updated}>{new Intl.DateTimeFormat("de-CH", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Zurich" }).format(new Date(`${article.updated}T12:00:00Z`))}</time> · {article.readingMinutes} Min. Lesezeit</p> : <div className="ch-hero-tags"><a href="#beitraege">Unsere ersten drei Ratgeber <span aria-hidden="true">↓</span></a><span>Hund · Katze · Partnerschaft</span></div>}
       </div>

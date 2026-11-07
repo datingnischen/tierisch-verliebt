@@ -73,14 +73,15 @@ const ownPages = ownData as unknown as Partial<Record<MarketCode, MarketCityPage
 
 /**
  * Individuelle <title> und Meta-Descriptions je Stadt (2026-11-04). Eigene Datei, damit ein Re-Import sie nicht
- * überschreibt. metaTitle ist absolut (ohne Domain-Suffix, max. 60 Zeichen); die H1 bleibt page.title.
+ * überschreibt. metaTitle ist absolut (ohne Domain-Suffix, max. 60 Zeichen); die H1 bleibt page.title, ausser
+ * `h1` ist gesetzt (2026-11-07, Seobility: H1-Wörter müssen im Fliesstext vorkommen).
  */
-const seoOverrides = seoData as unknown as Partial<Record<MarketCode, Record<string, { metaTitle: string; description?: string }>>>;
+const seoOverrides = seoData as unknown as Partial<Record<MarketCode, Record<string, { metaTitle: string; description?: string; h1?: string }>>>;
 
 function rawCityPages(market: "de" | "at" | "ch"): MarketCityPage[] {
   return [...imports[market].pages, ...(ownPages[market] ?? [])].map((page) => {
     const seo = seoOverrides[market]?.[page.slug];
-    return seo ? { ...page, metaTitle: seo.metaTitle, description: seo.description ?? page.description } : page;
+    return seo ? { ...page, title: seo.h1 ?? page.title, metaTitle: seo.metaTitle, description: seo.description ?? page.description } : page;
   });
 }
 
