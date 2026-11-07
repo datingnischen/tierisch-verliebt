@@ -1,6 +1,6 @@
 ---
-title: 'Gassi-Date: Singles mit Hund entspannt kennenlernen'
-seoTitle: 'Gassi-Date in Österreich: Singles mit Hund kennenlernen'
+title: 'Gassi-Date: mit Hund kennenlernen'
+seoTitle: 'Gassi-Date in Österreich: mit Hund kennenlernen'
 description: 'Vom ersten Chat zur gemeinsamen Runde: So planst du ein Gassi-Date mit ruhigem Treffpunkt, guten Gesprächen und genügend Platz für deinen Hund.'
 teaser: 'Ein Spaziergang, zwei Menschen und ein Hund mit eigenen Bedürfnissen: So wird aus dem ersten Chat eine entspannte Begegnung.'
 category: 'Dating mit Hund'

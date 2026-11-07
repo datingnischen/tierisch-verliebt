@@ -135,6 +135,8 @@ function countAnimals(text: string): GuideAnimal[] {
 
 export function buildCityGuide(input: { market: MarketCode; path?: string; title?: string; contentHtml: string; imageUrl?: string | null; sourceAttributionUrl?: string | null }): CityGuide {
   let html = stripHeroImage(input.contentHtml, input.imageUrl);
+  // Überschriften ohne Text (oft nur das entfernte Stadtbild oder &nbsp;) wären leere h1/h2/h3 (Seobility: leere Überschrift).
+  html = html.replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (match, _level: string, inner: string) => (plainText(inner) ? match : /<img\b/i.test(inner) ? `<p>${inner}</p>` : ""));
   const credit = html.match(CREDIT);
   html = html.replace(CREDIT, "").replace(EMPTY_PARAGRAPH, "").replace(/<hr\s*\/?>\s*$/i, "").trim();
   // Eigene Seiten-URLs im ICONY-Text enden auf "/" (spart die 308-Umleitung), Dateien bleiben unverändert.

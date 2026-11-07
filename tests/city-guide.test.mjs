@@ -53,3 +53,15 @@ test("own page links inside the ICONY text end with a slash", () => {
   const html = guide.introHtml + guide.sections.map((s) => s.html).join("");
   assert.ok(!/href="https:\/\/tierisch-verliebt\.(?:de|at|ch)\/[^"]*[^/"]"/.test(html), "Link ohne Schrägstrich");
 });
+
+test("Stadtseiten: keine leeren Überschriften im Fließtext (Seobility: leere Überschrift)", () => {
+  for (const market of ["de", "at", "ch"]) {
+    for (const page of getMarketCityPages(market)) {
+      const guide = buildCityGuide(page);
+      const html = guide.introHtml + guide.sections.map((s) => s.html).join("");
+      for (const match of html.matchAll(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi)) {
+        assert.ok(plainText(match[2]), `${market}/${page.slug}: leere h${match[1]}`);
+      }
+    }
+  }
+});

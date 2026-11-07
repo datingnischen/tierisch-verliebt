@@ -1,6 +1,6 @@
 ---
-title: 'Erster gemeinsamer Ausflug mit Hund: gut vorbereitet los'
-seoTitle: 'Ausflug mit Hund als Paar: entspannt planen in Österreich'
+title: 'Gemeinsamer Ausflug mit Hund: gut planen'
+seoTitle: 'Gemeinsamer Ausflug mit Hund: gut planen'
 description: 'Stadtrunde, Spazierweg oder Tagesausflug? So plant ihr euren ersten gemeinsamen Ausflug mit Hund in Österreich – mit Anreise, Pausen und einer Packliste.'
 teaser: 'Nicht die längste Strecke macht den besten Ausflug. Findet ein Ziel, das zu euch beiden und zum Hund passt – mit Platz für Pausen und Planänderungen.'
 category: 'Gemeinsam unterwegs'

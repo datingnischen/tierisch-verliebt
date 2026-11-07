@@ -1,6 +1,6 @@
 ---
 title: 'Neuer Partner und Katze: das erste Kennenlernen'
-seoTitle: 'Neuer Partner und Katze: entspannt kennenlernen'
+seoTitle: 'Neuer Partner und Katze: das erste Kennenlernen'
 description: 'Deine Katze und dein neuer Partner müssen nicht sofort beste Freunde sein. So bereitest du Besuche vor und gibst beiden Zeit, Raum und vertraute Abläufe.'
 teaser: 'Der erste Besuch ist kein Beliebtheitstest. Mit Rückzug, ruhigen Begegnungen und klaren Absprachen findet ihr euren gemeinsamen Rhythmus.'
 category: 'Beziehung mit Katze'
