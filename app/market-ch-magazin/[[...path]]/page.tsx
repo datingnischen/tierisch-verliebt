@@ -31,7 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = resolve((await params).path);
   const url = publicUrl("ch", article ? `/magazin/${article.slug}` : "/magazin");
   return {
-    title: { absolute: `${article?.seoTitle || TITLE} | tierisch-verliebt.ch` },
+    // Beitragstitel ohne Domain-Suffix (Seobility: zu lang, Domain im Titel); die Übersicht behält die Marke.
+    title: { absolute: article ? article.seoTitle : `${TITLE} | tierisch-verliebt.ch` },
     description: article?.description || DESCRIPTION,
     alternates: { canonical: url }, robots: { index: true, follow: true },
     openGraph: {
