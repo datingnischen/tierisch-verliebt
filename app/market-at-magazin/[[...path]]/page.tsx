@@ -44,19 +44,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function ArticleCards({ articles }: { articles: AtArticle[] }) {
+// Unter einem Beitrag ohne Teaser: Die Teaser stehen schon auf Übersicht und Startseite (Seobility: Inhalt auf mehreren Seiten).
+function ArticleCards({ articles, teaser = true }: { articles: AtArticle[]; teaser?: boolean }) {
   return <div className="ch-cards">{articles.map((article, index) => <article className="ch-card" key={article.slug}>
     <MarketLink market="at" path={`/magazin/${article.slug}`} className="ch-card-image"><img src={staticAsset(article.image)} alt={article.imageAlt} width={1200} height={800} loading="lazy" /></MarketLink>
     <div className="ch-card-copy"><span className="ch-kicker">{String(index + 1).padStart(2, "0")} / {article.category}</span>
       <h3><MarketLink market="at" path={`/magazin/${article.slug}`}>{article.title}</MarketLink></h3>
-      <p>{article.teaser}</p><span className="ch-card-bottom">{article.readingMinutes} Min. Lesezeit <span aria-hidden="true">↗</span></span>
+      {teaser ? <p>{article.teaser}</p> : null}<span className="ch-card-bottom">{article.readingMinutes} Min. Lesezeit <span aria-hidden="true">↗</span></span>
     </div>
   </article>)}</div>;
 }
 
-function DatingCta() {
+// Eigener Satz je Beitrag, damit der Kasten nicht auf jeder Seite wortgleich steht.
+const CTA_TEXT: Record<string, string> = {
+  "ausflug-mit-hund": "Auf tierisch-verliebt.at lernst du Menschen kennen, für die ein gemeinsamer Ausflug mit Hund ganz selbstverständlich ist.",
+  "gassi-date": "Auf tierisch-verliebt.at findest du Singles, für die eine Runde mit Hund der natürlichste Start ins Kennenlernen ist.",
+  "neuer-partner-und-katze": "Auf tierisch-verliebt.at triffst du Menschen, die verstehen, dass deine Katze bei jeder neuen Beziehung mitredet.",
+};
+
+function DatingCta({ slug }: { slug?: string }) {
   return <section className="ch-cta" aria-labelledby="ch-cta-title"><span className="ch-kicker">Zusammen gehört auch dein Tier dazu</span>
-    <h2 id="ch-cta-title">Jemanden kennenlernen, der das versteht.</h2><p>Auf tierisch-verliebt.at triffst du Menschen, für die Tiere zum Alltag gehören. Ein gemeinsames Thema für das erste Gespräch habt ihr schon.</p>
+    <h2 id="ch-cta-title">Jemanden kennenlernen, der das versteht.</h2><p>{(slug && CTA_TEXT[slug]) || "Auf tierisch-verliebt.at triffst du Menschen, für die Tiere zum Alltag gehören. Ein gemeinsames Thema für das erste Gespräch habt ihr schon."}</p>
     <a className="tvc-btn tvc-btn-primary" href={publicUrl("at", "/registration/?AID=magazin")}>Kostenlos registrieren <span aria-hidden="true">→</span></a>
   </section>;
 }
@@ -94,8 +102,8 @@ export default async function AtMagazine({ params }: Props) {
             <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </article>
         </div>
-        <DatingCta />
-        <section className="ch-more" aria-labelledby="ch-more-title"><span className="ch-kicker">Weiterlesen</span><h2 id="ch-more-title">Mehr Raum für euch und eure Tiere</h2><ArticleCards articles={articles.filter(entry => entry.slug !== article.slug)} /></section>
+        <DatingCta slug={article.slug} />
+        <section className="ch-more" aria-labelledby="ch-more-title"><span className="ch-kicker">Weiterlesen</span><h2 id="ch-more-title">Mehr Raum für euch und eure Tiere</h2><ArticleCards articles={articles.filter(entry => entry.slug !== article.slug)} teaser={false} /></section>
       </> : <>
         <section id="beitraege" aria-labelledby="ch-articles-title"><div className="ch-section-heading"><div><span className="ch-kicker">Kennenlernen & Zusammenleben</span><h2 id="ch-articles-title">Ein guter Anfang. Für alle.</h2></div><p>Drei Ratgeber für die Momente, in denen aus zwei Leben langsam eines wird.</p></div><ArticleCards articles={articles} /></section>
         <section className="ch-local" aria-labelledby="ch-local-title"><div><span className="ch-kicker">Bei dir in der Nähe</span><h2 id="ch-local-title">Die nächste gemeinsame Runde?</h2><p>Unsere österreichischen Stadtseiten geben dir Anregungen für Gassi-Runden und tierliebe Begegnungen. Wähle einen Ort, der zu euch und euren Tieren passt.</p></div><div className="ch-city-links">{[["wien", "Wien"], ["graz", "Graz"], ["salzburg", "Salzburg"]].map(([slug, name]) => <MarketLink market="at" path={`/partnersuche/${slug}`} key={slug}>{name} <span aria-hidden="true">↗</span></MarketLink>)}<MarketLink market="at" path="/partnersuche">Alle Städte <span aria-hidden="true">→</span></MarketLink></div></section>
