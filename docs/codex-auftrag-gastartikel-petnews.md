@@ -38,6 +38,32 @@ Es fehlen das Titelfoto und die Infografik. Beide Bilder gehen zusammen mit dem 
 - Das Logo kommt dezent in die Fußzeile, ohne Claim und mit Abstand zum übrigen Inhalt.
 - Alt-Text, schon gesetzt: „Die drei Länderseiten von tierisch-verliebt auf einen Blick und der Weg von der Anmeldung bis zum ersten gemeinsamen Spaziergang mit Tier.“
 
+## Nachtrag 11.11.2026: zweiter Artikel für svado.nl (niederländisch)
+
+Christian hat svado.nl als zweiten Artikel dazugenommen. Beide Artikel kosten zusammen 100 € brutto. Der Text liegt unter `docs/gastartikel-svado/svado-daten-met-huisdier.md` und `.html`, beide Bilder sind dort schon eingebunden. Der einzige Link geht auf https://tierisch-verliebt.nl/.
+
+### Datei 3: Titelfoto svado
+
+- Zielpfad: `docs/gastartikel-svado/svado-daten-met-huisdier-titel.jpg`
+- Format: JPG, 1600 × 900 px, höchstens 350 KB
+- Motiv: **echtes Foto** mit kommerzieller Lizenz, kein KI-Tierfoto. Zwei Menschen um 30 bis 45 gehen mit einem angeleinten Hund spazieren, möglichst in einer niederländischen Umgebung wie einer Gracht, einem Deich oder einem Park. Es muss ein anderes Motiv sein als das petnews-Foto.
+- Logo `public/brand/tierisch-verliebt-logo-nl.svg` oder `-light-nl.svg` kommt unten rechts hin, ohne Claim „Hier worden dierenliefhebbers verliefd!“. Größe und Rand wie bei Datei 1.
+- Alt-Text, schon gesetzt: „Een vrouw en een man wandelen lachend met een aangelijnde hond langs een Nederlandse gracht.“ Weicht das Motiv ab, passe ihn in `.md` und `.html` an.
+
+### Datei 4: Infografik svado
+
+- Zielpfad: `docs/gastartikel-svado/svado-daten-met-huisdier-infografik.webp`
+- Format: WebP, 1200 px breit, höchstens 300 KB, **niederländische Beschriftung**
+- Stelle: nach „Drie vragen die je al in de chat kunt stellen“. Die Einbindung ist schon gesetzt.
+- Inhalt: ein illustrierter Weg in vier Stationen:
+  1. „Wees open over je huisdier“, Profilfoto mit Hund
+  2. „Drie vragen in de chat“, Sprechblasen
+  3. „Eerste date: samen wandelen“
+  4. „Dieren rustig laten wennen“, zwei Hunde auf neutralem Terrain bzw. eine Katze mit eigenem Raum
+- Keine Zahlen. Markenfarben wie bei Datei 2, NL-Logo ohne Claim dezent in der Fußzeile.
+
+Bildnachweise für beide Fotos kommen in die jeweilige `bildnachweis.md`. Baue ein zweites ZIP `docs/gastartikel-svado/svado-gastartikel.zip`. Beim Commit `docs/gastartikel-svado/` mit stagen.
+
 ## Abschluss
 
 - Beide Bilder visuell prüfen: Hundeanatomie, Leine, Hände, Logo-Darstellung und Lesbarkeit bei 390 px Breite.
