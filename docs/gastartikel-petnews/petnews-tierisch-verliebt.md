@@ -1,5 +1,7 @@
 # Tierisch verliebt: Eine Singlebörse für Menschen, bei denen das Tier zur Familie gehört
 
+![Ein Paar geht Hand in Hand mit einem angeleinten Hund durch den Park. Unten rechts steht das Logo von tierisch-verliebt.de.](petnews-tierisch-verliebt-titel.jpg)
+
 Der Hund liegt schon an der Tür, bevor du überhaupt die Jacke anhast. Die Katze hat entschieden, dass dein Kopfkissen ab sofort ihres ist. Und am Wochenende richtet sich der Tag nach dem Stall, nicht nach dem Brunch-Termin. Wer mit Tieren lebt, kennt das: Sie gehören zum Alltag, und sie gehören zur Familie. Genau an diesem Punkt wird die Partnersuche oft schwierig. Denn wer neu in dein Leben kommt, trifft nicht nur dich, sondern auch die Fellnase auf dem Sofa.
 
 ## Warum Tierliebe bei der Partnersuche so viel zählt
