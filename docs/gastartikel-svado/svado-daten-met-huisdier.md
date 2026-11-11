@@ -1,6 +1,6 @@
 # Daten met een huisdier: zo merk je snel of het klikt, met jou én met je dier
 
-![Twee mensen lopen met een aangelijnde hond door een park in Den Haag. Rechtsonder staat het logo van tierisch-verliebt.nl.](svado-daten-met-huisdier-titel.jpg)
+![Twee mensen wandelen met een aangelijnde hond langs een Amsterdamse gracht. Rechtsonder staat het logo van tierisch-verliebt.nl.](svado-daten-met-huisdier-titel.jpg)
 
 Je hebt een leuke match, het gesprek loopt vanzelf en jullie spreken af voor een eerste date. Dan komt de vraag die elke dierenliefhebber kent: vertel ik meteen over mijn hond, of wacht ik nog even? Voor wie met een huisdier leeft, is dat geen bijzaak. Je dier bepaalt mee hoe je avonden, weekenden en vakanties eruitzien. Wie bij jou hoort, krijgt er dus automatisch een viervoeter, kat of paard bij.
 
