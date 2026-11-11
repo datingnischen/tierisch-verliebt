@@ -46,7 +46,7 @@ Das passt zur Haltung hinter der Seite. Eine Beziehung mit Tier ist nicht nur Ro
 
 Eine Singlebörse für Tierfreunde ersetzt kein Bauchgefühl, und auch hier entscheidet am Ende die Begegnung. Sie sorgt aber dafür, dass eine wichtige Frage schon vor dem ersten Treffen geklärt ist. Wenn dein Tier ein fester Teil deines Lebens ist und du dir jemanden wünschst, der das von Anfang an versteht, ist [tierisch-verliebt.de](https://tierisch-verliebt.de/) einen Versuch wert. Und vielleicht ist der schönste Moment beim ersten Date dann der, in dem dein Hund sich einfach neben die neue Bekanntschaft legt.
 
-<aside aria-label="Über den Autor">
-<h2>Über den Autor</h2>
-<p><strong>Christian M. Haas</strong> ist Datingexperte und Gründer mehrerer Nischen-Singlebörsen. Er hat tierisch-verliebt im Jahr 2018 neu gestartet und betreibt die Plattform bis heute.</p>
+<aside aria-label="Über den Gründer">
+<h2>Über den Gründer</h2>
+<p><strong>Christian M. Haas</strong> ist Datingexperte und Gründer mehrerer Nischen-Singlebörsen. 2018 hat er den Neustart von tierisch-verliebt ins Leben gerufen. Bis dahin war es ein weiter Weg: Die Wunschdomain tierisch-verliebt.de war längst vergeben, und den Namen kannten viele bereits aus dem Fernsehen, unter anderem durch die Sat.1-Romanze „Tierisch verliebt!“ aus dem Jahr 2013. Erst nach langen Gesprächen mit der damaligen Inhaberin konnte er die Domain übernehmen. Seitdem baut er die Plattform für Tierfreunde in Deutschland, Österreich und der Schweiz weiter aus.</p>
 </aside>
