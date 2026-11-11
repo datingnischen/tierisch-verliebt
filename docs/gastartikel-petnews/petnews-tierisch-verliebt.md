@@ -36,7 +36,7 @@ Solche Fragen öffnen ein Gespräch, ohne dass jemand sofort Bedingungen aufstel
 
 Tierliebe hört nicht an der Landesgrenze auf. Deshalb gibt es die Singlebörse nicht nur in Deutschland, sondern auch mit eigenen Seiten für Österreich und die Schweiz. Wer in Wien, Graz oder Salzburg sucht, findet Kontakte über [tierisch-verliebt.at](https://tierisch-verliebt.at/). In Zürich, Bern, Basel und den übrigen Schweizer Regionen ist [tierisch-verliebt.ch](https://tierisch-verliebt.ch/) der passende Einstieg. Die Länderseiten haben eigene Städteseiten mit regionalen Hinweisen, etwa zu Hundewiesen, Leinenpflicht oder Ausflugszielen mit Tier.
 
-Gerade in Grenzregionen kann das interessant sein. Wer am Bodensee, im Allgäu oder in Salzburg wohnt, hat manchmal mehr Gemeinsamkeiten mit Menschen auf der anderen Seite der Grenze als mit Singles in der nächsten Großstadt.
+Gerade in Grenzregionen kann das interessant sein. Wer am Bodensee, im Allgäu oder in Salzburg wohnt, hat manchmal mehr Gemeinsamkeiten mit Menschen auf der anderen Seite der Grenze als mit Singles in der nächsten Großstadt. Und der nächste Schritt ist bereits in Arbeit: Mit tierisch-verliebt.nl entsteht gerade eine niederländische Version für Tierfreunde in den Niederlanden.
 
 ## Mehr als eine Kontaktbörse
 
