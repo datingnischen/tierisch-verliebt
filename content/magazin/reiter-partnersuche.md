@@ -4,7 +4,7 @@ slug: "reiter-partnersuche"
 type: post
 wpId: 3289
 published: "2025-08-21T00:29:20"
-updated: "2026-10-30T08:00:00"
+updated: "2026-10-30T15:21:29"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/09/reiter-partnersuche-titelbild.jpg"

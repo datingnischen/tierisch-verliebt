@@ -4,7 +4,7 @@ slug: "chihuahua"
 type: page
 wpId: 128
 published: "2019-06-18T15:34:10"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-11T16:17:44+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/06/chihuahua.jpg"

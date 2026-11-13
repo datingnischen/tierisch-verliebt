@@ -4,7 +4,7 @@ slug: "tier-adoptieren-aus-tierheim"
 type: post
 wpId: 2651
 published: "2024-04-09T09:06:39"
-updated: "2026-09-26T12:47:42"
+updated: "2026-09-26T16:49:10"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/09/tierheim-husky-hinter-gitter.jpg"

@@ -4,7 +4,7 @@ slug: "listenhunde"
 type: post
 wpId: 1373
 published: "2020-11-15T21:48:41"
-updated: "2025-11-12T12:00:58"
+updated: "2025-10-22T14:55:12"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2020/11/Listenhunde-e1605473309808.jpg"

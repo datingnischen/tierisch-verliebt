@@ -5,7 +5,7 @@ slug: "kaninchen"
 type: page
 wpId: 1563
 published: "2021-09-27T08:40:24"
-updated: "2026-09-22T13:51:42"
+updated: "2026-09-02T07:15:02"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/09/Kaninchen-e1632724210819.jpg"

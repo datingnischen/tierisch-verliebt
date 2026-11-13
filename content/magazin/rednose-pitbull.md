@@ -4,7 +4,7 @@ slug: "rednose-pitbull"
 type: page
 wpId: 751
 published: "2020-01-17T10:17:00"
-updated: "2026-09-22T13:52:28"
+updated: "2026-09-03T10:26:51"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Rednose-Pitbull.jpg"

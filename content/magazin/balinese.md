@@ -4,7 +4,7 @@ slug: "balinese"
 type: page
 wpId: 1033
 published: "2020-03-16T18:13:52"
-updated: "2026-09-22T13:52:08"
+updated: "2026-08-31T16:27:14"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/Balinese.jpg"

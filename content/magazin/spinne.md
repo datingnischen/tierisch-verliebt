@@ -4,7 +4,7 @@ slug: "spinne"
 type: page
 wpId: 1611
 published: "2021-10-28T21:12:08"
-updated: "2026-09-22T13:51:39"
+updated: "2026-09-06T20:21:50"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/10/Spinne.jpg"

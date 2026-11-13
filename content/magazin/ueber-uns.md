@@ -3,8 +3,8 @@ title: "Über uns – Die Geschichte zu tierisch-verliebt.de"
 slug: "ueber-uns"
 type: page
 wpId: 3462
-published: "2026-02-13T09:19:20"
-updated: "2026-09-22T13:50:44"
+published: "2026-02-13T22:22:20"
+updated: "2026-09-02T09:26:08"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/02/christian-m-haas-tierisch-verliebt.png"

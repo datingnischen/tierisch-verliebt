@@ -3,8 +3,8 @@ title: "Aras richtig füttern: Ernährung für große Papageienarten"
 slug: "ara-futter"
 type: post
 wpId: 3552
-published: "2026-03-03T10:47:09"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-03T11:13:41"
+updated: "2026-10-19T09:39:32+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/veverkolog-macaw-5717388_1280.compr_.jpg"

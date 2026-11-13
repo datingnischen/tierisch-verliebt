@@ -3,8 +3,8 @@ title: "Der perfekte Vogelkäfig: Größe, Material & Standort"
 slug: "vogelkaefig-perfekt"
 type: post
 wpId: 3487
-published: "2026-02-16T08:20:20"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-02-16T16:30:56"
+updated: "2026-10-11T19:56:22+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/mariagodfrida-parakeets-956864_1280.compr_.jpg"

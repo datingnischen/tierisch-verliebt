@@ -4,7 +4,7 @@ slug: "deutsch-langhaar"
 type: page
 wpId: 736
 published: "2020-01-13T11:38:52"
-updated: "2026-09-22T13:52:30"
+updated: "2026-09-17T20:48:13"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Deutsch-Langhaar.jpg"

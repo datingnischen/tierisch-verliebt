@@ -4,7 +4,7 @@ slug: "dogtrekking"
 type: post
 wpId: 1992
 published: "2023-04-11T14:54:36"
-updated: "2025-11-12T12:00:37"
+updated: "2025-11-05T15:17:20"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/04/Dogtrekking-2-scaled.jpg"

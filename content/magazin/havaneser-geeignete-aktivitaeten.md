@@ -4,7 +4,7 @@ slug: "havaneser-geeignete-aktivitaeten"
 type: page
 wpId: 1680
 published: "2022-09-16T12:05:04"
-updated: "2026-09-22T13:51:32"
+updated: "2026-09-10T15:10:08"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/havaneser-geeignete-aktivitaeten.jpg"

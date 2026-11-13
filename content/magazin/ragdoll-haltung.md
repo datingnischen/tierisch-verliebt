@@ -4,7 +4,7 @@ slug: "ragdoll-haltung"
 type: page
 wpId: 1746
 published: "2022-09-18T21:59:49"
-updated: "2026-09-22T13:51:22"
+updated: "2026-09-08T10:24:19"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/ragdoll-haltung.jpg"

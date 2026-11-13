@@ -5,7 +5,7 @@ slug: "mops"
 type: page
 wpId: 355
 published: "2019-10-23T20:42:17"
-updated: "2026-09-22T13:53:23"
+updated: "2026-08-29T11:25:22"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Mops.jpg"

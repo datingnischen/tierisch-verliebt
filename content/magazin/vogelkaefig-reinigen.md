@@ -3,8 +3,8 @@ title: "Vogelkäfig richtig reinigen und pflegen"
 slug: "vogelkaefig-reinigen"
 type: post
 wpId: 3511
-published: "2026-03-01T19:22:55"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-01T19:14:40"
+updated: "2026-10-14T10:49:27+02:00"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/03/xuanduongvan87-spring-6639524_1280.compr_.jpg"

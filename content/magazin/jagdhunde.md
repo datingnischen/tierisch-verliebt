@@ -4,7 +4,7 @@ slug: "jagdhunde"
 type: post
 wpId: 1902
 published: "2024-10-12T11:00:36"
-updated: "2025-11-12T12:00:17"
+updated: "2025-11-01T11:23:58"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/02/Jagdhunde-1.jpg"

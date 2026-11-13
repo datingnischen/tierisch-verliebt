@@ -4,7 +4,7 @@ slug: "mastiff"
 type: page
 wpId: 442
 published: "2019-11-01T21:13:24"
-updated: "2026-09-22T13:53:06"
+updated: "2026-09-13T10:05:45"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Mastiff.jpg"

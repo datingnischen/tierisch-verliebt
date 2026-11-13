@@ -4,7 +4,7 @@ slug: "abessinier-katze"
 type: page
 wpId: 773
 published: "2020-01-30T13:58:02"
-updated: "2026-09-22T13:52:24"
+updated: "2026-09-05T19:41:06"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Abessinier.jpg"

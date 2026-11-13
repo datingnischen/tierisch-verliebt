@@ -4,7 +4,7 @@ slug: "schlittenhund"
 type: post
 wpId: 2090
 published: "2024-06-28T20:47:21"
-updated: "2025-11-12T12:00:17"
+updated: "2025-10-24T17:27:38"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/06/Schlittenhund-2.jpg"

@@ -3,8 +3,8 @@ title: "Vogelkäfig kaufen: Die häufigsten Fehler vermeiden"
 slug: "vogelkaefig-kaufen-fehler"
 type: post
 wpId: 3505
-published: "2026-02-28T13:56:55"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-02-28T20:09:31"
+updated: "2026-10-20T15:42:32+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/tonybarajas-bird-6010008_1280.compr_.jpg"

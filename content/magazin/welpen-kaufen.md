@@ -4,7 +4,7 @@ slug: "welpen-kaufen"
 type: post
 wpId: 1197
 published: "2020-07-30T13:03:47"
-updated: "2025-11-12T12:00:58"
+updated: "2025-10-31T15:22:43"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2020/07/welpen-kaufen.jpg"

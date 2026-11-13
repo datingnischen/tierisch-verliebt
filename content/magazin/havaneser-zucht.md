@@ -4,7 +4,7 @@ slug: "havaneser-zucht"
 type: page
 wpId: 1674
 published: "2022-09-15T19:37:33"
-updated: "2026-09-22T13:51:34"
+updated: "2026-09-05T08:35:48"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/Havaneser-zucht.jpg"

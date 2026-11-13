@@ -4,7 +4,7 @@ slug: "ragdoll-zuechter"
 type: page
 wpId: 1752
 published: "2022-09-18T22:00:51"
-updated: "2026-10-23T15:00:00+02:00"
+updated: "2026-10-23T19:16:39+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/Ragdoll-zuechter.jpg"

@@ -3,8 +3,8 @@ title: "Vögel und Kinder: Zusammenleben sicher gestalten"
 slug: "voegel-und-kinder"
 type: post
 wpId: 3601
-published: "2026-03-05T22:37:24"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-05T14:13:49"
+updated: "2026-10-29T20:27:12+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/11/wellensittiche-paar-pexels-33967944.jpg"

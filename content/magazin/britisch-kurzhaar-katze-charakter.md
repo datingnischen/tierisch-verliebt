@@ -4,7 +4,7 @@ slug: "britisch-kurzhaar-katze-charakter"
 type: page
 wpId: 1824
 published: "2022-11-22T21:01:08"
-updated: "2026-09-22T13:51:01"
+updated: "2026-09-14T18:44:20"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/11/Britisch-Kurzhaar-Katze-Charakter.jpg"

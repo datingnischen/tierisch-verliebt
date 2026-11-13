@@ -4,7 +4,7 @@ slug: "ragdoll-charakter"
 type: page
 wpId: 1749
 published: "2022-09-18T16:43:51"
-updated: "2026-09-22T13:51:24"
+updated: "2026-09-17T13:08:10"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/ragdoll-charakter.jpg"

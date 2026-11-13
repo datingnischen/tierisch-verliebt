@@ -4,7 +4,7 @@ slug: "franzoesische-bulldogge"
 type: page
 wpId: 77
 published: "2019-06-16T11:43:30"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-23T14:07:02+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/06/franzoesische-bulldogge.jpg"

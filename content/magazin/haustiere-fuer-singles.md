@@ -4,7 +4,7 @@ slug: "haustiere-fuer-singles"
 type: post
 wpId: 1483
 published: "2020-12-30T11:36:34"
-updated: "2026-10-10T09:00:00"
+updated: "2026-10-10T16:52:21"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2020/12/Haustiere-fuer-Singles.jpg"

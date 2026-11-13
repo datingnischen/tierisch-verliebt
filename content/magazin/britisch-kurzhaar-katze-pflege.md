@@ -4,7 +4,7 @@ slug: "britisch-kurzhaar-katze-pflege"
 type: page
 wpId: 1819
 published: "2022-11-22T20:47:46"
-updated: "2026-09-22T13:51:02"
+updated: "2026-09-22T18:44:29"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/11/Britisch-Kurzhaar-Katze-pflege.jpg"

@@ -4,7 +4,7 @@ slug: "kangal"
 type: page
 wpId: 1446
 published: "2020-12-04T19:57:35"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-18T11:50:52+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/12/kangal-e1607108231693.jpg"

@@ -4,7 +4,7 @@ slug: "hundesozialisation"
 type: post
 wpId: 2506
 published: "2023-10-04T14:11:35"
-updated: "2025-11-12T12:00:36"
+updated: "2025-10-24T10:40:50"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/10/Erfolgreiche-Hundesozialisation.jpg"

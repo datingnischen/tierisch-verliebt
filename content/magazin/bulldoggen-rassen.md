@@ -4,7 +4,7 @@ slug: "bulldoggen-rassen"
 type: post
 wpId: 1393
 published: "2020-11-23T21:04:13"
-updated: "2025-11-12T12:00:57"
+updated: "2025-10-27T13:26:14"
 author: "christian-m-haas"
 categories: ["allgemein", "ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2020/11/bulldogge.jpeg"

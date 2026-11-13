@@ -3,8 +3,8 @@ title: "Vögel beim Tierarzt: Wann ein Besuch notwendig ist"
 slug: "voegel-tierarzt"
 type: post
 wpId: 3591
-published: "2026-03-05T00:19:48"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-05T14:35:55"
+updated: "2026-10-30T20:42:06+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/11/voegel-tierarzt-kind-wellensittich.webp"

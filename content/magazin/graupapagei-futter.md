@@ -3,8 +3,8 @@ title: "Graupapageien richtig füttern: Ernährungsplan und Tipps"
 slug: "graupapagei-futter"
 type: post
 wpId: 3530
-published: "2026-03-02T00:18:40"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-02T19:04:29"
+updated: "2026-10-20T10:16:42+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/7551044-parrot-4650474_1280.compr_.jpg"

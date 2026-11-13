@@ -4,7 +4,7 @@ slug: "havaneser-charakter"
 type: page
 wpId: 1677
 published: "2022-09-16T12:05:08"
-updated: "2026-09-22T13:51:31"
+updated: "2026-09-19T12:33:06"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/Havaneser-charakter.jpg"

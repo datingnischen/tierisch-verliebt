@@ -4,7 +4,7 @@ slug: "papillon"
 type: page
 wpId: 633
 published: "2019-11-21T19:13:35"
-updated: "2026-09-22T13:52:44"
+updated: "2026-08-31T10:53:36"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Papillon-1.jpg"

@@ -4,7 +4,7 @@ slug: "thai-katze"
 type: page
 wpId: 1118
 published: "2020-03-30T18:52:24"
-updated: "2026-09-27T22:46:02"
+updated: "2026-09-27T17:34:51"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/Thai-Katze.jpg"

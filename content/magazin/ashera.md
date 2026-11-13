@@ -4,7 +4,7 @@ slug: "ashera"
 type: page
 wpId: 2791
 published: "2024-11-20T10:42:59"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-01T08:36:59+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/11/serval.-ashera.jpg"

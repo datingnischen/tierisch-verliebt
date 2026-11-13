@@ -4,7 +4,7 @@ slug: "leonberger"
 type: page
 wpId: 691
 published: "2019-12-20T20:55:55"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-22T17:21:48+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Leonberger.jpg"

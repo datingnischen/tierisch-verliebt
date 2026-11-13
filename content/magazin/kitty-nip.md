@@ -4,7 +4,7 @@ slug: "kitty-nip"
 type: post
 wpId: 3307
 published: "2025-10-23T17:34:31"
-updated: "2026-09-26T00:54:45"
+updated: "2026-09-26T20:17:52"
 author: "christian-m-haas"
 categories: ["apps"]
 image: "/magazin/wp-content/uploads/2026/09/kitty-nip-titelbild.jpg"

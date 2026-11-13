@@ -4,7 +4,7 @@ slug: "schutzhunde"
 type: post
 wpId: 2117
 published: "2023-07-13T09:23:38"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-23T21:44:45"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/07/Deutsche-Schaeferhunde.jpg"

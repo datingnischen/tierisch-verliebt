@@ -4,7 +4,7 @@ slug: "hunderassen"
 type: page
 wpId: 193
 published: "2019-07-10T14:16:17"
-updated: "2026-09-26T09:39:11"
+updated: "2026-09-26T19:04:12"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/hunderassen-hunde-im-park.jpg"

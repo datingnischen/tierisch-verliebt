@@ -4,7 +4,7 @@ slug: "sokoke"
 type: page
 wpId: 1163
 published: "2020-04-15T09:08:47"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-15T21:48:20+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/11/sokoke-baumstamm.webp"

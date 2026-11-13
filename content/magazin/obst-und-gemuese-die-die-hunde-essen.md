@@ -4,7 +4,7 @@ slug: "obst-und-gemuese-die-die-hunde-essen"
 type: post
 wpId: 1954
 published: "2023-03-14T20:50:25"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-25T21:16:06"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/03/hund-obst-und-gemuese-scaled.jpg"

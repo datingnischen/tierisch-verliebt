@@ -4,7 +4,7 @@ slug: "europaeisch-kurzhaar"
 type: page
 wpId: 822
 published: "2020-02-15T20:42:08"
-updated: "2026-09-22T13:52:20"
+updated: "2026-09-20T14:50:26"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Europaeisch-Kurzhaar.jpg"

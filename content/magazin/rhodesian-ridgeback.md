@@ -4,7 +4,7 @@ slug: "rhodesian-ridgeback"
 type: page
 wpId: 360
 published: "2019-10-24T21:14:06"
-updated: "2026-09-22T13:53:22"
+updated: "2026-09-12T10:13:10"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Rhodesian-Ridgeback.jpg"

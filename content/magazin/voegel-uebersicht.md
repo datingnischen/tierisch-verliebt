@@ -4,8 +4,8 @@ h1: "Vögel als Haustiere: Haltung, Ernährung und Pflege"
 slug: "voegel-uebersicht"
 type: page
 wpId: 3622
-published: "2026-03-16T16:51:55"
-updated: "2026-09-22T13:50:43"
+published: "2026-03-16T20:53:40"
+updated: "2026-09-17T17:51:54"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/01/voegel-als-haustiere.png"

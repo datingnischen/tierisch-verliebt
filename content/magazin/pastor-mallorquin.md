@@ -4,7 +4,7 @@ slug: "pastor-mallorquin"
 type: page
 wpId: 452
 published: "2019-11-04T08:09:52"
-updated: "2026-09-22T13:53:04"
+updated: "2026-09-11T21:39:43"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/pastor-mallorquin-Ca-de-bestiar.jpg"

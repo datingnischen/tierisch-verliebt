@@ -4,7 +4,7 @@ slug: "american-bulldog"
 type: page
 wpId: 1439
 published: "2020-12-04T11:39:30"
-updated: "2026-09-22T13:51:49"
+updated: "2026-09-04T20:20:39"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/12/american-bulldog.jpg"

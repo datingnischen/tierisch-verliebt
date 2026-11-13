@@ -4,7 +4,7 @@ slug: "datedogter-de-apps"
 type: post
 wpId: 3383
 published: "2025-11-27T19:54:51"
-updated: "2026-09-26T00:54:45"
+updated: "2026-09-26T22:38:51"
 author: "christian-m-haas"
 categories: ["apps"]
 image: "/magazin/wp-content/uploads/2026/09/datedogter-de-apps-titelbild.jpg"

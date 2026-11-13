@@ -4,7 +4,7 @@ slug: "hundeklo"
 type: post
 wpId: 1210
 published: "2020-09-01T14:25:19"
-updated: "2025-11-12T12:00:58"
+updated: "2025-11-08T16:59:19"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2020/09/hundeklo-kaufen.jpg"

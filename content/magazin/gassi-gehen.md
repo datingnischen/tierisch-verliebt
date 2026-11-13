@@ -4,7 +4,7 @@ slug: "gassi-gehen"
 type: post
 wpId: 255
 published: "2019-08-21T13:33:55"
-updated: "2026-06-05T10:11:17"
+updated: "2026-06-05T22:55:15"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2019/08/spazieren-gassi-gehen.jpg"

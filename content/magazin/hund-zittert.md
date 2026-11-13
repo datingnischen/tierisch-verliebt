@@ -4,7 +4,7 @@ slug: "hund-zittert"
 type: post
 wpId: 12
 published: "2019-06-11T11:41:49"
-updated: "2025-11-12T12:01:23"
+updated: "2025-10-30T09:29:47"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2019/06/hund-zittert.jpg"

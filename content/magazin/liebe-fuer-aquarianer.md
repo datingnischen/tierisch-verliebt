@@ -4,7 +4,7 @@ slug: "liebe-fuer-aquarianer"
 type: post
 wpId: 2832
 published: "2024-12-14T09:28:01"
-updated: "2025-11-12T12:00:16"
+updated: "2025-11-09T21:00:55"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2024/12/Aquarianer-Liebe.jpeg"

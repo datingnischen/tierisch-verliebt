@@ -4,7 +4,7 @@ slug: "cesar-hund-west-highland-white-terrier"
 type: page
 wpId: 1797
 published: "2022-11-01T22:09:05"
-updated: "2026-09-22T13:51:19"
+updated: "2026-09-09T19:19:43"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/11/Cesar-Hund.jpg"

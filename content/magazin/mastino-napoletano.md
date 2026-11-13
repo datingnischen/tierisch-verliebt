@@ -4,7 +4,7 @@ slug: "mastino-napoletano"
 type: page
 wpId: 1461
 published: "2020-12-11T15:43:26"
-updated: "2026-09-22T13:51:46"
+updated: "2026-09-13T19:43:48"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/12/Mastino-napoletano-e1607697750430.jpg"

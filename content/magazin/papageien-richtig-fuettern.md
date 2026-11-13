@@ -3,8 +3,8 @@ title: "Papageien richtig füttern: Grundernährung und Futterplan"
 slug: "papageien-richtig-fuettern"
 type: post
 wpId: 3520
-published: "2026-03-01T23:22:33"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-01T20:01:06"
+updated: "2026-10-13T17:30:31+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/hans-parakeets-406637_1280.compr_.jpg"

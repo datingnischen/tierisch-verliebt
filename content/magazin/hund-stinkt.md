@@ -4,7 +4,7 @@ slug: "hund-stinkt"
 type: post
 wpId: 145
 published: "2019-06-21T08:07:06"
-updated: "2026-06-05T17:11:38"
+updated: "2026-06-05T13:00:23"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2019/06/hund-stinkt.jpg"

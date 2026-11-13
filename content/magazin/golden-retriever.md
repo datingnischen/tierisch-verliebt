@@ -4,7 +4,7 @@ slug: "golden-retriever"
 type: page
 wpId: 264
 published: "2019-09-27T11:37:35"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-30T16:21:44+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Golden-Retriever-1.jpg"

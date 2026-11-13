@@ -4,7 +4,7 @@ slug: "maine-coon"
 type: page
 wpId: 230
 published: "2019-07-21T08:43:33"
-updated: "2026-11-04T17:00:00+01:00"
+updated: "2026-11-04T17:45:06+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/maine-coon-katze.jpg"

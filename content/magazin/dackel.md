@@ -4,7 +4,7 @@ slug: "dackel"
 type: page
 wpId: 549
 published: "2019-11-07T21:02:14"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-24T17:55:47+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Dackel.jpg"

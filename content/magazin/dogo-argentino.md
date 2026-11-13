@@ -4,7 +4,7 @@ slug: "dogo-argentino"
 type: page
 wpId: 607
 published: "2019-11-18T19:17:28"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-22T12:11:46+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Dogo-Argentino-2.jpg"

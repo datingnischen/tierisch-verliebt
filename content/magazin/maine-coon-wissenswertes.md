@@ -4,7 +4,7 @@ slug: "maine-coon-wissenswertes"
 type: page
 wpId: 1707
 published: "2022-09-16T22:53:09"
-updated: "2026-09-22T13:51:25"
+updated: "2026-09-13T19:47:53"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/main-coon-wissenswertes.jpg"

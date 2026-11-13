@@ -4,7 +4,7 @@ slug: "weimaraner"
 type: page
 wpId: 395
 published: "2019-10-28T07:42:31"
-updated: "2026-09-22T13:53:16"
+updated: "2026-09-14T18:41:25"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Weimaraner.jpg"

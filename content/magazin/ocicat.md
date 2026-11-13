@@ -4,7 +4,7 @@ slug: "ocicat"
 type: page
 wpId: 890
 published: "2020-02-25T20:50:08"
-updated: "2026-09-26T00:54:53"
+updated: "2026-09-26T13:53:26"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Ocicat.jpg"

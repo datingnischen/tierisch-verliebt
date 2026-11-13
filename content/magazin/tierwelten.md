@@ -3,8 +3,8 @@ title: "Unsere Tierwelten für Tierfreunde & Singles"
 slug: "tierwelten"
 type: page
 wpId: 3443
-published: "2026-01-16T09:56:29"
-updated: "2026-09-22T13:50:45"
+published: "2026-01-16T07:39:55"
+updated: "2026-09-07T16:13:08"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/01/unsere-tierwelten.png"

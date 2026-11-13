@@ -4,7 +4,7 @@ slug: "australian-mist"
 type: page
 wpId: 1129
 published: "2020-04-03T12:02:51"
-updated: "2026-09-25T16:14:12"
+updated: "2026-09-25T19:30:27"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2025/04/Mist.png"

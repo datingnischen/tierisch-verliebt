@@ -4,7 +4,7 @@ slug: "sichere-spielzeug%d0%b5-fuer-den-hund"
 type: post
 wpId: 1949
 published: "2023-03-15T20:11:05"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-31T09:09:03"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/03/Spielzeuge-fuer-Hund-1.jpg"

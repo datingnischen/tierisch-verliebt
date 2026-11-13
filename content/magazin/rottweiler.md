@@ -4,7 +4,7 @@ slug: "rottweiler"
 type: page
 wpId: 446
 published: "2019-11-01T21:48:22"
-updated: "2026-09-22T13:53:05"
+updated: "2026-09-11T16:56:21"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Rottweiler-3.jpg"

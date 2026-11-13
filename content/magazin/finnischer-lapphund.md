@@ -4,7 +4,7 @@ slug: "finnischer-lapphund"
 type: page
 wpId: 1201
 published: "2020-08-09T21:29:40"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-26T16:24:50+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/08/Finnischer-Lapphund-e1597001311541.jpg"

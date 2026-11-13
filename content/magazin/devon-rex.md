@@ -4,7 +4,7 @@ slug: "devon-rex"
 type: page
 wpId: 784
 published: "2020-02-11T20:01:02"
-updated: "2026-09-22T13:52:22"
+updated: "2026-09-16T11:51:04"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Devon-Rex.jpg"

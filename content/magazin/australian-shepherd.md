@@ -4,7 +4,7 @@ slug: "australian-shepherd"
 type: page
 wpId: 327
 published: "2019-10-21T12:29:19"
-updated: "2026-09-22T13:53:25"
+updated: "2026-09-04T16:52:15"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Australian-Shepherd.jpg"

@@ -4,7 +4,7 @@ slug: "hovawart"
 type: page
 wpId: 433
 published: "2019-10-31T22:37:13"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-22T16:35:26+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Hovawart.jpg"

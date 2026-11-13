@@ -4,7 +4,7 @@ slug: "chausie"
 type: page
 wpId: 1146
 published: "2020-04-13T20:38:58"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-15T20:02:46+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/11/chausie-klettersteg.webp"

@@ -4,7 +4,7 @@ slug: "munchkin"
 type: page
 wpId: 1179
 published: "2020-04-17T09:54:36"
-updated: "2026-09-26T00:54:48"
+updated: "2026-09-26T21:02:50"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/04/Munchkin.jpeg"

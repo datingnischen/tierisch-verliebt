@@ -4,7 +4,7 @@ slug: "singles-mit-hund"
 type: post
 wpId: 1015
 published: "2020-03-15T17:44:37"
-updated: "2025-11-12T12:00:58"
+updated: "2025-11-09T20:19:55"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2020/03/singles-mit-hund.jpg"

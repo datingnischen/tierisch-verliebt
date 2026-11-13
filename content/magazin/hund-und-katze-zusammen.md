@@ -4,7 +4,7 @@ slug: "hund-und-katze-zusammen"
 type: post
 wpId: 2005
 published: "2023-04-06T15:42:38"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-26T14:23:49"
 author: "christian-m-haas"
 categories: ["ratgeber-hund", "ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2023/04/Hunde-und-Katze-zusammen.jpg"

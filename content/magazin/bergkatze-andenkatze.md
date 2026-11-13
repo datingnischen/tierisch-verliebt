@@ -4,7 +4,7 @@ slug: "bergkatze-andenkatze"
 type: post
 wpId: 2011
 published: "2023-04-07T10:52:28"
-updated: "2025-11-12T12:00:37"
+updated: "2025-11-10T09:39:38"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2023/04/bergkatze.jpg"

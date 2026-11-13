@@ -4,7 +4,7 @@ slug: "havaneser-herkunft-geschichte"
 type: page
 wpId: 1669
 published: "2022-09-15T19:08:33"
-updated: "2026-09-22T13:51:35"
+updated: "2026-09-02T15:45:02"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/havaneser-herkunft-geschichte.jpg"

@@ -4,7 +4,7 @@ slug: "labrador-retriever"
 type: page
 wpId: 72
 published: "2019-06-13T15:31:13"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-26T17:09:57+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/Labrador-Retriever.jpg"

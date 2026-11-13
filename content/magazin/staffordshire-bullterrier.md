@@ -4,7 +4,7 @@ slug: "staffordshire-bullterrier"
 type: page
 wpId: 1433
 published: "2020-11-29T17:09:50"
-updated: "2026-09-22T13:51:50"
+updated: "2026-09-20T15:55:18"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/11/Staffordshire-Bullterrier-e1606666130347.jpg"

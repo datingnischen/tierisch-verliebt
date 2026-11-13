@@ -4,7 +4,7 @@ slug: "sphynx-katze"
 type: page
 wpId: 755
 published: "2020-01-20T13:01:57"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-29T09:22:08+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Sphynx-Katze.jpg"

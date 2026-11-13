@@ -4,7 +4,7 @@ slug: "exotic-shorthair"
 type: page
 wpId: 768
 published: "2020-01-30T08:28:22"
-updated: "2026-09-22T13:52:25"
+updated: "2026-09-09T18:38:33"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Exotic-Shorthair.jpg"

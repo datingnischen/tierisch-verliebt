@@ -4,7 +4,7 @@ slug: "alano"
 type: page
 wpId: 1418
 published: "2020-11-25T18:46:32"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-02T11:46:46+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/11/Alano.jpg"

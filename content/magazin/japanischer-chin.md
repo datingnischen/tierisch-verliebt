@@ -4,7 +4,7 @@ slug: "japanischer-chin"
 type: page
 wpId: 2622
 published: "2024-01-16T15:32:06"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-10T13:21:08+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/01/dog-3663651_1280.jpg"

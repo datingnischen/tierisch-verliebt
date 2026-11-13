@@ -4,7 +4,7 @@ slug: "tierhaarallergie"
 type: post
 wpId: 896
 published: "2020-02-27T13:38:06"
-updated: "2025-11-12T12:00:58"
+updated: "2025-10-28T13:39:01"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2020/02/Tierhaarallergie.jpg"

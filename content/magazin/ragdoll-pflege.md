@@ -4,7 +4,7 @@ slug: "ragdoll-pflege"
 type: page
 wpId: 1740
 published: "2022-09-18T22:00:38"
-updated: "2026-09-22T13:51:21"
+updated: "2026-09-20T18:25:10"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/ragdoll-pflege.jpg"

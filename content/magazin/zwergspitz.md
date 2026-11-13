@@ -4,7 +4,7 @@ slug: "zwergspitz"
 type: page
 wpId: 421
 published: "2019-10-30T20:01:38"
-updated: "2026-09-22T13:53:11"
+updated: "2026-09-22T12:42:41"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Zwergspitz.jpg"

@@ -4,7 +4,7 @@ slug: "tosa-inu"
 type: page
 wpId: 1472
 published: "2020-12-17T12:19:17"
-updated: "2026-09-22T13:51:44"
+updated: "2026-08-29T09:48:46"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Tosa-Inu.jpg"

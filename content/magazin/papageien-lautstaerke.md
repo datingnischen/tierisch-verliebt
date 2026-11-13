@@ -3,8 +3,8 @@ title: "Warum Papageien laut werden: Ursachen und Lösungen"
 slug: "papageien-lautstaerke"
 type: post
 wpId: 3581
-published: "2026-03-04T21:13:17"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-04T14:13:22"
+updated: "2026-10-12T15:52:04+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/amduma-bird-8151702_1280.compr_.jpg"

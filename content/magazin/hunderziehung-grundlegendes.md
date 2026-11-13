@@ -4,7 +4,7 @@ slug: "hunderziehung-grundlegendes"
 type: post
 wpId: 331
 published: "2019-10-21T08:08:29"
-updated: "2026-06-05T07:11:16"
+updated: "2026-06-05T11:22:31"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2019/10/hundeerziehung.jpg"

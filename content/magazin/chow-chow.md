@@ -4,7 +4,7 @@ slug: "chow-chow"
 type: page
 wpId: 602
 published: "2019-11-15T08:05:50"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-12T17:21:14+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Chow-Chow.jpg"

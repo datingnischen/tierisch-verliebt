@@ -4,7 +4,7 @@ slug: "hauskatze"
 type: page
 wpId: 722
 published: "2020-01-09T12:34:17"
-updated: "2026-09-22T13:52:32"
+updated: "2026-09-20T10:02:01"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Hauskatze.jpg"

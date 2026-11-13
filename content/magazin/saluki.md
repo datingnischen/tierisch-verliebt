@@ -4,7 +4,7 @@ slug: "saluki"
 type: page
 wpId: 2125
 published: "2023-07-14T16:20:09"
-updated: "2026-09-22T13:50:57"
+updated: "2026-09-17T10:52:13"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/Saluki-1.jpg"

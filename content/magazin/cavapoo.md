@@ -4,7 +4,7 @@ slug: "cavapoo"
 type: page
 wpId: 2475
 published: "2023-09-12T10:08:49"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-31T19:38:56+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/09/Cavapoo-4-scaled.jpg"

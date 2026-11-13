@@ -4,7 +4,7 @@ slug: "vogelspinnen"
 type: post
 wpId: 2469
 published: "2023-09-12T09:53:11"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-25T09:07:33"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2023/09/Vogelspinnen-1.jpg"

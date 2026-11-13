@@ -3,8 +3,8 @@ title: "Käfig oder Voliere? Welche Haltung ist artgerecht?"
 slug: "kaefig-oder-voliere"
 type: post
 wpId: 3499
-published: "2026-02-20T08:38:45"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-02-20T07:09:27"
+updated: "2026-11-02T09:03:01+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/02/mariagodfrida-parakeets-956851_1280.compr_.jpg"

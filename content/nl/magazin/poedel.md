@@ -4,7 +4,7 @@ slug: "poedel"
 type: page
 wpId: 470
 published: "2019-11-05T19:20:19"
-updated: "2026-09-22T13:53:01"
+updated: "2026-09-05T16:40:55"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Pudel.jpg"

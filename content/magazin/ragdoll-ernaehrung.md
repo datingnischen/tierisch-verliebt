@@ -4,7 +4,7 @@ slug: "ragdoll-ernaehrung"
 type: page
 wpId: 1743
 published: "2022-09-18T21:59:32"
-updated: "2026-09-22T13:51:24"
+updated: "2026-09-20T15:50:01"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/ragdoll-ernaehrung.jpg"

@@ -4,7 +4,7 @@ slug: "beliebtesten-katzenrassen"
 type: post
 wpId: 149
 published: "2019-07-02T08:18:55"
-updated: "2026-09-25T16:07:45"
+updated: "2026-09-25T12:43:33"
 author: "christian-m-haas"
 categories: ["ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2019/07/beliebtesten-katzenrassen.jpg"

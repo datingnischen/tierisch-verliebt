@@ -4,7 +4,7 @@ slug: "das-erste-aquarium"
 type: post
 wpId: 1477
 published: "2020-12-17T20:12:23"
-updated: "2026-06-05T01:11:41"
+updated: "2026-06-05T16:52:44"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2020/12/mein-erstes-Aquarium.jpg"

@@ -4,7 +4,7 @@ slug: "fruehkastration"
 type: post
 wpId: 1790
 published: "2022-10-02T18:40:26"
-updated: "2025-11-12T12:00:38"
+updated: "2025-10-28T11:34:50"
 author: "christian-m-haas"
 categories: ["ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2022/09/fruehkastration.jpg"

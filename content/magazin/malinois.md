@@ -4,7 +4,7 @@ slug: "malinois"
 type: page
 wpId: 583
 published: "2019-11-09T17:40:05"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-14T12:40:43+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Malinois.jpg"

@@ -4,7 +4,7 @@ slug: "hundehotels"
 type: post
 wpId: 2000
 published: "2023-04-10T15:20:59"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-19T20:58:46"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/04/Hundehotels-2-scaled.jpg"

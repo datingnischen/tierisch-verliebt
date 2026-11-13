@@ -4,7 +4,7 @@ slug: "ragdoll"
 type: page
 wpId: 672
 published: "2019-12-16T19:12:45"
-updated: "2026-10-23T15:00:00+02:00"
+updated: "2026-10-23T14:53:14+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Ragdoll.jpg"

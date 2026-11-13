@@ -4,7 +4,7 @@ slug: "cavalier-king-charles-spaniel"
 type: page
 wpId: 624
 published: "2019-11-20T20:29:35"
-updated: "2026-09-26T09:39:21"
+updated: "2026-09-26T10:21:28"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Cavalier-King-Charles-Spaniel.jpg"

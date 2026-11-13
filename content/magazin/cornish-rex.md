@@ -4,7 +4,7 @@ slug: "cornish-rex"
 type: page
 wpId: 814
 published: "2020-02-13T21:00:17"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-02T21:24:18+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/cat-3770031_960_720.jpg"

@@ -4,7 +4,7 @@ slug: "somali-katze"
 type: page
 wpId: 778
 published: "2020-02-06T13:13:01"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-15T15:57:37+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/11/somali-katze-karton.webp"

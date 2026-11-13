@@ -4,7 +4,7 @@ slug: "afghanischer-windhund"
 type: page
 wpId: 2154
 published: "2023-07-20T16:50:31"
-updated: "2026-09-22T13:50:54"
+updated: "2026-09-17T11:37:11"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/Afghanischer-Windhund-1.jpg"

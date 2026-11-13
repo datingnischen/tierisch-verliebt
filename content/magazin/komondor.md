@@ -4,7 +4,7 @@ slug: "komondor"
 type: page
 wpId: 658
 published: "2019-12-09T19:59:50"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-10T09:11:30+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Komondor.jpg"

@@ -4,7 +4,7 @@ slug: "norwegische-waldkatze"
 type: page
 wpId: 652
 published: "2019-12-06T13:28:34"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-15T09:39:46+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Norwegische-Waldkatze.jpg"

@@ -4,7 +4,7 @@ slug: "katzenfutter-selber-machen"
 type: post
 wpId: 1151
 published: "2020-04-14T17:28:41"
-updated: "2026-06-05T04:11:16"
+updated: "2026-06-05T13:18:26"
 author: "christian-m-haas"
 categories: ["ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2020/04/Katzenfutter-selber-machen.jpg"

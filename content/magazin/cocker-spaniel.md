@@ -4,7 +4,7 @@ slug: "cocker-spaniel"
 type: page
 wpId: 425
 published: "2019-10-30T20:23:09"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-26T18:18:54+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/cocker-spaniel.jpg"

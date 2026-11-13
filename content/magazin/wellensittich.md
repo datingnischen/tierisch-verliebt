@@ -5,7 +5,7 @@ slug: "wellensittich"
 type: page
 wpId: 742
 published: "2020-01-14T20:59:35"
-updated: "2026-09-22T13:52:29"
+updated: "2026-09-08T09:42:43"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Wellensittiche.jpg"

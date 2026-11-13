@@ -4,7 +4,7 @@ slug: "bordeaux-dogge"
 type: page
 wpId: 566
 published: "2019-11-09T13:09:44"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-03T13:15:35+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Bordeaux-Dogge.jpg"

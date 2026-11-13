@@ -4,7 +4,7 @@ slug: "shih-tzu"
 type: page
 wpId: 390
 published: "2019-10-28T07:19:12"
-updated: "2026-09-22T13:53:17"
+updated: "2026-09-20T14:36:29"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Shih-Tzu-2.jpg"

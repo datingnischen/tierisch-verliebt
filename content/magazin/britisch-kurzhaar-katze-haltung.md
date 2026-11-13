@@ -4,7 +4,7 @@ slug: "britisch-kurzhaar-katze-haltung"
 type: page
 wpId: 1806
 published: "2022-11-22T19:34:39"
-updated: "2026-09-22T13:51:03"
+updated: "2026-09-17T14:36:57"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/11/Britisch-Kurzhaar-Katze.jpg"

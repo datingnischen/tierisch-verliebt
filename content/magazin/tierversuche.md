@@ -4,7 +4,7 @@ slug: "tierversuche"
 type: post
 wpId: 454
 published: "2019-11-04T08:06:23"
-updated: "2025-11-12T12:00:58"
+updated: "2025-11-08T18:06:21"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2019/11/tierversuche-1.png"

@@ -4,7 +4,7 @@ slug: "hokkaido-inu"
 type: page
 wpId: 2637
 published: "2024-02-11T12:19:52"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-01T12:33:19+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/02/Hokkaido-Inu.png"

@@ -4,7 +4,7 @@ slug: "brits-korthaar"
 type: page
 wpId: 152
 published: "2019-07-02T19:08:35"
-updated: "2026-11-04T17:00:00+01:00"
+updated: "2026-11-04T20:03:04+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/Britisch-Kurzhaar-British-Shorthair.jpg"

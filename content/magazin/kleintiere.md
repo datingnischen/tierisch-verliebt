@@ -4,7 +4,7 @@ slug: "kleintiere"
 type: page
 wpId: 293
 published: "2019-10-07T13:41:22"
-updated: "2026-09-25T23:11:19"
+updated: "2026-09-25T11:22:03"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/kleintiere-titelbild.jpg"

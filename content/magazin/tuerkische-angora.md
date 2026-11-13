@@ -4,7 +4,7 @@ slug: "tuerkische-angora"
 type: page
 wpId: 764
 published: "2020-01-27T19:40:36"
-updated: "2026-09-27T22:45:51"
+updated: "2026-09-27T09:40:50"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Tuerkische-Angora.jpg"

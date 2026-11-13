@@ -4,7 +4,7 @@ slug: "stammbaum"
 type: post
 wpId: 1719
 published: "2022-09-16T21:40:54"
-updated: "2025-11-12T12:00:38"
+updated: "2025-11-07T10:03:32"
 author: "christian-m-haas"
 categories: ["allgemein", "ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2022/09/stammbaum.jpg"

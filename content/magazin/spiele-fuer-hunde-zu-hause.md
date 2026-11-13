@@ -4,7 +4,7 @@ slug: "spiele-fuer-hunde-zu-hause"
 type: post
 wpId: 1942
 published: "2023-03-09T15:35:54"
-updated: "2025-11-12T12:00:37"
+updated: "2025-11-12T19:02:46"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/03/Spiele-fuer-Hunde-1.jpg"

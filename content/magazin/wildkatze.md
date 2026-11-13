@@ -4,7 +4,7 @@ slug: "wildkatze"
 type: page
 wpId: 702
 published: "2019-12-27T18:08:44"
-updated: "2026-09-27T22:45:55"
+updated: "2026-09-27T18:56:16"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Wildkatze-1.jpg"

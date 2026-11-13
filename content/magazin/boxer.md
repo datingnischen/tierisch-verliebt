@@ -4,7 +4,7 @@ slug: "boxer"
 type: page
 wpId: 523
 published: "2019-11-06T21:39:41"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-19T11:40:34+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Boxer.jpg"

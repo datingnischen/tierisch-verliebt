@@ -4,7 +4,7 @@ slug: "japan-spitz"
 type: page
 wpId: 2629
 published: "2024-02-12T12:01:58"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-25T11:13:11+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/02/Japan-Spitz-4.jpg"

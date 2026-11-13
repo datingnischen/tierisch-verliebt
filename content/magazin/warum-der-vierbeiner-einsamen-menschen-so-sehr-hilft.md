@@ -4,7 +4,7 @@ slug: "warum-der-vierbeiner-einsamen-menschen-so-sehr-hilft"
 type: post
 wpId: 1389
 published: "2020-11-17T08:09:53"
-updated: "2025-11-12T12:00:57"
+updated: "2025-10-22T10:25:37"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2020/11/Vierbeiner-helfen-gegen-Einsamkeit-scaled.jpg"

@@ -4,7 +4,7 @@ slug: "sloughi"
 type: page
 wpId: 2165
 published: "2023-07-24T15:02:00"
-updated: "2026-09-22T13:50:53"
+updated: "2026-09-16T18:02:14"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/sloughi.webp"

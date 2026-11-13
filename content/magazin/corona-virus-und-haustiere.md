@@ -4,7 +4,7 @@ slug: "corona-virus-und-haustiere"
 type: post
 wpId: 1040
 published: "2020-03-17T19:45:45"
-updated: "2025-11-12T12:00:58"
+updated: "2025-11-05T10:49:39"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2020/03/Coronavirus.png"

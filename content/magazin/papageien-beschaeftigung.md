@@ -3,8 +3,8 @@ title: "Papageien beschäftigen: Spielzeug, Training und Freiflug"
 slug: "papageien-beschaeftigung"
 type: post
 wpId: 3576
-published: "2026-03-04T20:15:16"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-04T14:32:14"
+updated: "2026-10-21T08:20:42+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/jaanasaksman-parrot-4782216_1280.compr_.jpg"

@@ -4,7 +4,7 @@ slug: "katzenfutter-im-test"
 type: post
 wpId: 906
 published: "2020-02-28T18:58:42"
-updated: "2025-11-12T12:00:58"
+updated: "2025-11-10T15:35:16"
 author: "christian-m-haas"
 categories: ["ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2020/02/Katzen-Futter-im-Test.jpg"

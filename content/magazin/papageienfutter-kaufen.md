@@ -3,8 +3,8 @@ title: "Papageienfutter kaufen: Zutaten, Qualität und Empfehlungen"
 slug: "papageienfutter-kaufen"
 type: post
 wpId: 3572
-published: "2026-03-03T20:59:34"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-03T19:34:13"
+updated: "2026-10-15T13:19:53+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/susan_oh-new-1948698_1280.compr_.jpg"

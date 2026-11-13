@@ -4,7 +4,7 @@ slug: "ragdoll-geschichte"
 type: page
 wpId: 1736
 published: "2022-09-18T21:59:41"
-updated: "2026-09-22T13:51:22"
+updated: "2026-09-13T10:31:37"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/ragdoll-geschichte.jpg"

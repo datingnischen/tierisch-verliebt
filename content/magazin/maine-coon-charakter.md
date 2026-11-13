@@ -4,7 +4,7 @@ slug: "maine-coon-charakter"
 type: page
 wpId: 1703
 published: "2022-09-16T22:37:11"
-updated: "2026-09-22T13:51:28"
+updated: "2026-09-12T20:22:39"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/main-coon-charakter.jpg"

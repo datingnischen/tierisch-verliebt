@@ -4,7 +4,7 @@ slug: "savannah-katze"
 type: page
 wpId: 686
 published: "2019-12-18T21:10:05"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-31T14:33:08+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Savannah-Katze.jpg"

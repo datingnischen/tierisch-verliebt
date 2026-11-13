@@ -4,7 +4,7 @@ slug: "tuerkisch-van"
 type: page
 wpId: 846
 published: "2020-02-24T13:05:18"
-updated: "2026-09-27T22:46:01"
+updated: "2026-09-27T15:55:58"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Tuerkisch-Van.jpg"

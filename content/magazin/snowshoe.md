@@ -4,7 +4,7 @@ slug: "snowshoe"
 type: page
 wpId: 1036
 published: "2020-03-16T19:08:42"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-11T10:56:54+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/11/snowshoe-unter-dem-stuhl.webp"

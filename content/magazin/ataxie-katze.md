@@ -4,7 +4,7 @@ slug: "ataxie-katze"
 type: post
 wpId: 1553
 published: "2021-04-08T09:17:40"
-updated: "2026-06-04T22:11:33"
+updated: "2026-06-04T20:01:21"
 author: "christian-m-haas"
 categories: ["ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2021/04/Krankheit-ataxie-katzen.jpg"

@@ -4,7 +4,7 @@ slug: "kartaeuser-katze"
 type: page
 wpId: 710
 published: "2019-12-30T18:40:35"
-updated: "2026-09-26T00:54:53"
+updated: "2026-09-26T16:58:44"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Kartaeuser-Katze.jpg"

@@ -4,7 +4,7 @@ slug: "magyar-vizsla"
 type: page
 wpId: 2610
 published: "2024-01-17T11:48:54"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-02T10:10:53+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2024/01/dog-1190024_1280.jpg"

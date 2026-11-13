@@ -4,7 +4,7 @@ slug: "beliebtesten-hunderassen"
 type: post
 wpId: 15
 published: "2019-06-12T16:20:15"
-updated: "2025-11-12T12:01:23"
+updated: "2025-11-08T21:15:05"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2019/06/beliebtesten-hunderassen.jpg"

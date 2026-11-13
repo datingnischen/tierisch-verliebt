@@ -4,7 +4,7 @@ slug: "tibet-terrier"
 type: page
 wpId: 474
 published: "2019-11-05T19:49:15"
-updated: "2026-09-22T13:53:00"
+updated: "2026-09-14T13:34:17"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Tibet-Terrier.jpg"

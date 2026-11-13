@@ -4,7 +4,7 @@ slug: "haustiere-und-kinder"
 type: post
 wpId: 2494
 published: "2023-10-03T13:28:19"
-updated: "2025-11-12T12:00:36"
+updated: "2025-11-09T21:51:56"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2023/10/kind-und-haustiere-1.jpg"

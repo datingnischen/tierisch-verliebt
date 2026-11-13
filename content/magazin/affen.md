@@ -4,7 +4,7 @@ slug: "affen"
 type: post
 wpId: 2601
 published: "2023-12-28T14:14:33"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-27T13:44:05+01:00"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/09/rhesusaffe-auf-ast.jpg"

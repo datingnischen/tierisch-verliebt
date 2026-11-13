@@ -4,7 +4,7 @@ slug: "terrier"
 type: post
 wpId: 1494
 published: "2021-02-18T20:40:39"
-updated: "2025-11-12T12:00:57"
+updated: "2025-10-29T10:50:18"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2021/02/Terrier-1.jpg"

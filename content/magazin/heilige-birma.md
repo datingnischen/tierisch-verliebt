@@ -4,7 +4,7 @@ slug: "heilige-birma"
 type: page
 wpId: 697
 published: "2019-12-20T21:15:18"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-28T14:23:16+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Heilige-Birma.jpg"

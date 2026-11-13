@@ -4,7 +4,7 @@ slug: "pekinese"
 type: page
 wpId: 189
 published: "2019-07-10T14:08:30"
-updated: "2026-09-22T13:51:15"
+updated: "2026-09-08T16:33:09"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/pekingese-pekinese.jpg"

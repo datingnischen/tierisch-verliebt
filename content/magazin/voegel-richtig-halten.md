@@ -3,8 +3,8 @@ title: "Vögel richtig halten: Grundlagen für Anfänger"
 slug: "voegel-richtig-halten"
 type: post
 wpId: 3473
-published: "2026-02-16T00:09:42"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-02-16T11:24:24"
+updated: "2026-10-20T15:19:43+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/11/voegel-richtig-halten-alltag.webp"

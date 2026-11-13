@@ -4,7 +4,7 @@ slug: "hausschweine"
 type: post
 wpId: 2663
 published: "2024-10-15T10:17:25"
-updated: "2025-11-12T12:00:17"
+updated: "2025-10-26T13:53:33"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2024/04/newborn-piglet-spring-green-grass-scaled.jpg"

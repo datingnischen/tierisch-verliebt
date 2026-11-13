@@ -4,7 +4,7 @@ slug: "unterhalt-eines-hundes"
 type: post
 wpId: 1884
 published: "2024-02-24T21:10:00"
-updated: "2025-11-12T12:00:17"
+updated: "2025-11-03T12:19:37"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/02/Hund-2.jpg"

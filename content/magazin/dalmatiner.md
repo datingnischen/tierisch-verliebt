@@ -4,7 +4,7 @@ slug: "dalmatiner"
 type: page
 wpId: 597
 published: "2019-11-14T21:14:41"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-13T10:06:11+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Dalmatiner.jpg"

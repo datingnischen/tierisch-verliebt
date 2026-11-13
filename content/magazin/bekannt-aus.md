@@ -3,8 +3,8 @@ title: "Bekannt aus: tierisch-verliebt in den Medien"
 slug: "bekannt-aus"
 type: post
 wpId: 3639
-published: "2026-10-18T15:00:00"
-updated: "2026-10-18T18:00:00"
+published: "2026-10-18T08:25:14"
+updated: "2026-10-18T08:25:14"
 author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2026/05/community-dating.png"

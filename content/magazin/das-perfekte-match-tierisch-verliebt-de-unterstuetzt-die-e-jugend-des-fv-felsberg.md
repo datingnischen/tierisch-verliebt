@@ -4,7 +4,7 @@ slug: "das-perfekte-match-tierisch-verliebt-de-unterstuetzt-die-e-jugend-des-fv-
 type: post
 wpId: 3422
 published: "2024-12-22T14:36:18"
-updated: "2026-09-22T13:50:42"
+updated: "2026-09-22T11:19:46"
 author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2025/12/Valentino-Sponsoring-Trinkflasche-Feloni-FV-Felsberg.png"

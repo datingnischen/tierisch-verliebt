@@ -4,7 +4,7 @@ slug: "sibirische-katze"
 type: page
 wpId: 726
 published: "2020-01-10T16:53:28"
-updated: "2026-09-27T22:45:53"
+updated: "2026-09-27T16:47:58"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/01/Sibirische-Katze.jpg"

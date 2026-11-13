@@ -3,8 +3,8 @@ title: "Community-Dating: Tierfreunde gemeinsam kennenlernen"
 slug: "community-dating"
 type: post
 wpId: 3638
-published: "2026-05-28T07:05:37"
-updated: "2026-11-03T13:50:00"
+published: "2026-05-28T20:48:01"
+updated: "2026-10-29T19:20:01"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2026/11/community-dating-hundespaziergang.webp"

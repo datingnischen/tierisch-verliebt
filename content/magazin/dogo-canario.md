@@ -4,7 +4,7 @@ slug: "dogo-canario"
 type: page
 wpId: 1454
 published: "2020-12-05T21:59:27"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-15T14:26:09+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/12/dogo-canario-e1607201769247.jpg"

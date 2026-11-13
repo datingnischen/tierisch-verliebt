@@ -4,7 +4,7 @@ slug: "tonkanese"
 type: page
 wpId: 1026
 published: "2020-03-16T17:59:39"
-updated: "2026-09-27T22:45:43"
+updated: "2026-09-27T18:14:29"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/tonkanese-katze.jpg"

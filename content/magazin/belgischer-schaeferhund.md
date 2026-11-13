@@ -4,7 +4,7 @@ slug: "belgischer-schaeferhund"
 type: page
 wpId: 592
 published: "2019-11-13T19:44:13"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-28T10:12:56+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Belgischer-Schaeferhund.jpg"

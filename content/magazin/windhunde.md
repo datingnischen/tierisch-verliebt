@@ -4,7 +4,7 @@ slug: "windhunde"
 type: post
 wpId: 2101
 published: "2024-10-16T18:32:03"
-updated: "2025-11-12T12:00:17"
+updated: "2025-11-06T19:12:59"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/07/windhunde-3.jpg"

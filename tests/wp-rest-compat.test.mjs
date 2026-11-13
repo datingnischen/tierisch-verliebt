@@ -50,9 +50,9 @@ test("posts: Teaser-Abruf wie bei ICONY liefert drei Beiträge im WordPress-Form
 
 test("date ist veröffentlicht, modified ist aktualisiert, *_gmt ist UTC aus Europe/Berlin", () => {
   const post = get("/wp/v2/posts", "slug=community-dating").body[0];
-  assert.equal(post.date, "2026-05-28T07:05:37");
-  assert.equal(post.modified, "2026-11-03T13:50:00");
-  assert.equal(post.date_gmt, "2026-05-28T05:05:37", "Sommerzeit");
+  assert.equal(post.date, "2026-05-28T20:48:01");
+  assert.equal(post.modified, "2026-10-29T19:20:01");
+  assert.equal(post.date_gmt, "2026-05-28T18:48:01", "Sommerzeit");
   assert.equal(berlinToUtc("2026-01-15T12:00:00"), "2026-01-15T11:00:00", "Winterzeit");
 });
 

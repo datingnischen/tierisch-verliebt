@@ -4,7 +4,7 @@ slug: "maine-coon-haltung"
 type: page
 wpId: 1694
 published: "2022-09-16T22:37:01"
-updated: "2026-09-22T13:51:29"
+updated: "2026-09-22T15:56:55"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/maine-coon-haltung.jpg"

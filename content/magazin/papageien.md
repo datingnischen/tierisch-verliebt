@@ -4,7 +4,7 @@ slug: "papageien"
 type: post
 wpId: 2455
 published: "2023-09-15T08:50:20"
-updated: "2025-11-12T12:00:37"
+updated: "2025-11-05T17:21:47"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2023/09/Papageien-3.jpg"

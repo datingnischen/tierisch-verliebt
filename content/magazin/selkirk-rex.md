@@ -4,7 +4,7 @@ slug: "selkirk-rex"
 type: page
 wpId: 818
 published: "2020-02-15T20:06:03"
-updated: "2026-09-27T22:45:48"
+updated: "2026-09-27T08:25:32"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Selkirk-Rex.jpg"

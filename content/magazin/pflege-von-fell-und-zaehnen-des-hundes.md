@@ -4,7 +4,7 @@ slug: "pflege-von-fell-und-zaehnen-des-hundes"
 type: post
 wpId: 1986
 published: "2023-04-05T14:27:06"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-26T13:46:34"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/04/Pflege-von-Fell-und-Zaehnen-Ihres-Hundes-2-scaled.jpg"

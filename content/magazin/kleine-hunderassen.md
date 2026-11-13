@@ -4,7 +4,7 @@ slug: "kleine-hunderassen"
 type: post
 wpId: 2467
 published: "2024-09-13T09:41:40"
-updated: "2025-11-12T12:00:17"
+updated: "2025-10-19T15:41:04"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/08/Havaneser-1.jpg"

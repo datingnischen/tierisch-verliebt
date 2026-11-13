@@ -4,7 +4,7 @@ slug: "anatolischer-hirtenhund"
 type: page
 wpId: 1275
 published: "2020-11-01T19:56:11"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-19T08:44:22+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/11/Anatolischer-Hirtenhund-e1604256963523.jpg"

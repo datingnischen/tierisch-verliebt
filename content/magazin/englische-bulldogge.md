@@ -4,7 +4,7 @@ slug: "englische-bulldogge"
 type: page
 wpId: 380
 published: "2019-10-25T21:57:58"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-22T19:31:20+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/Englische-Bulldogge-2.jpg"

@@ -4,7 +4,7 @@ slug: "korat-katze"
 type: page
 wpId: 1010
 published: "2020-03-12T21:21:25"
-updated: "2026-09-26T00:54:51"
+updated: "2026-09-26T09:55:25"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/Korat-Katze.jpg"

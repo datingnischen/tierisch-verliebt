@@ -4,7 +4,7 @@ slug: "portrait-zu-hunderasse-kaukasischer-owtscharka"
 type: page
 wpId: 2122
 published: "2023-07-14T15:46:35"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-30T12:36:58+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/06/Kaukasischer-Owtscharka-1.jpg"

@@ -4,7 +4,7 @@ slug: "nebelung"
 type: page
 wpId: 956
 published: "2020-03-02T20:19:18"
-updated: "2026-09-26T00:54:52"
+updated: "2026-09-26T09:20:50"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/Nebelung.jpg"

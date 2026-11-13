@@ -4,7 +4,7 @@ slug: "japanische-hunde"
 type: post
 wpId: 2605
 published: "2024-10-09T16:31:04"
-updated: "2026-10-23T12:00:00+02:00"
+updated: "2026-10-23T10:58:43+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/02/Akita-Inu-2.jpg"

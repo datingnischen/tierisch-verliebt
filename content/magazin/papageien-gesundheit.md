@@ -3,8 +3,8 @@ title: "Papageien gesund halten: Warnzeichen und erste Hilfe"
 slug: "papageien-gesundheit"
 type: post
 wpId: 3586
-published: "2026-03-04T23:53:13"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-04T14:16:48"
+updated: "2026-10-13T11:37:04+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/laurarinke-parrots-2911077_1280.compr_.jpg"

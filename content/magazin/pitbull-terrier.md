@@ -4,7 +4,7 @@ slug: "pitbull-terrier"
 type: page
 wpId: 1425
 published: "2020-11-27T08:47:44"
-updated: "2026-09-22T13:51:51"
+updated: "2026-09-01T17:36:05"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/11/Pitbull-Terrier.jpg"

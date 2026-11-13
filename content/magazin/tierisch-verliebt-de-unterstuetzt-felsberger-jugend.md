@@ -4,7 +4,7 @@ slug: "tierisch-verliebt-de-unterstuetzt-felsberger-jugend"
 type: post
 wpId: 2560
 published: "2023-11-28T09:24:35"
-updated: "2026-06-04T19:11:16"
+updated: "2026-06-04T18:24:40"
 author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2023/11/sponsoring-fv-felsberg-vorne.jpg"

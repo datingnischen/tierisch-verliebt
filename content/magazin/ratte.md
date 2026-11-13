@@ -4,7 +4,7 @@ slug: "ratte"
 type: page
 wpId: 1591
 published: "2021-10-26T21:14:05"
-updated: "2026-09-22T13:51:40"
+updated: "2026-09-04T09:45:49"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/10/Ratte.jpg"

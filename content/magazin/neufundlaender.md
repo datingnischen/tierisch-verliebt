@@ -4,7 +4,7 @@ slug: "neufundlaender"
 type: page
 wpId: 464
 published: "2019-11-04T19:51:25"
-updated: "2026-09-22T13:53:02"
+updated: "2026-09-18T13:54:50"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Neufundlaender.jpg"

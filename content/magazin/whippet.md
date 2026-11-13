@@ -4,7 +4,7 @@ slug: "whippet"
 type: page
 wpId: 2120
 published: "2023-07-14T15:41:57"
-updated: "2026-09-22T13:50:59"
+updated: "2026-08-29T10:22:23"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/whippet-3.jpg"

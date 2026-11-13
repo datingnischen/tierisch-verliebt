@@ -5,7 +5,7 @@ slug: "perserkatze"
 type: page
 wpId: 303
 published: "2019-10-08T13:29:35"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-12T21:05:50+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/perserkatze.jpg"

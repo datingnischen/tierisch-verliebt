@@ -4,7 +4,7 @@ slug: "katze-erbricht"
 type: post
 wpId: 137
 published: "2019-06-19T08:02:51"
-updated: "2025-11-12T12:01:23"
+updated: "2025-10-24T09:40:24"
 author: "christian-m-haas"
 categories: ["ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2019/06/katze-erbricht-kotzt.jpg"

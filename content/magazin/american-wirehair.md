@@ -4,7 +4,7 @@ slug: "american-wirehair"
 type: page
 wpId: 1133
 published: "2020-04-06T09:44:34"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-10T11:04:16+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/11/american-wirehair-flur.webp"

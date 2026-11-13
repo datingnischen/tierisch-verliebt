@@ -4,7 +4,7 @@ slug: "bengal-katze"
 type: page
 wpId: 237
 published: "2019-07-22T14:32:03"
-updated: "2026-11-04T17:00:00+01:00"
+updated: "2026-11-04T13:12:05+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/07/bengalkatze.jpg"

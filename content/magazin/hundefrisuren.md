@@ -4,7 +4,7 @@ slug: "hundefrisuren"
 type: post
 wpId: 1958
 published: "2023-03-13T21:28:29"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-24T12:44:52"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/03/Hundefrisuren-1-scaled.jpg"

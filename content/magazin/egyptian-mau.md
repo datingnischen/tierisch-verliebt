@@ -4,7 +4,7 @@ slug: "egyptian-mau"
 type: page
 wpId: 1114
 published: "2020-03-27T20:20:17"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-02T17:36:18+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/11/egyptian-mau-gartenstufe.webp"

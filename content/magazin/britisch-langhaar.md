@@ -4,7 +4,7 @@ slug: "britisch-langhaar"
 type: page
 wpId: 841
 published: "2020-02-18T20:24:41"
-updated: "2026-09-27T22:45:47"
+updated: "2026-09-27T21:51:21"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Britisch-Langhaar.jpg"

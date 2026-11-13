@@ -3,8 +3,8 @@ title: "Vögel in der Wohnung halten: Sicherheit und Raumgestaltung"
 slug: "voegel-wohnung-halten"
 type: post
 wpId: 3596
-published: "2026-03-05T10:36:13"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-05T18:11:06"
+updated: "2026-10-28T08:50:54+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/11/voegel-wohnung-halten-alltag.webp"

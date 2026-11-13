@@ -4,7 +4,7 @@ slug: "shar-pei"
 type: page
 wpId: 628
 published: "2019-11-21T18:52:56"
-updated: "2026-09-22T13:52:45"
+updated: "2026-09-11T16:18:17"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Shar-Pei.jpg"

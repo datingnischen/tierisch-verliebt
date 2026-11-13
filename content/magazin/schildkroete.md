@@ -4,7 +4,7 @@ slug: "schildkroete"
 type: page
 wpId: 1622
 published: "2021-11-11T17:36:52"
-updated: "2026-10-23T17:00:00+02:00"
+updated: "2026-10-23T08:03:08+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/11/schildkroete.jpg"

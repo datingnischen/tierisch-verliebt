@@ -4,7 +4,7 @@ slug: "javanese"
 type: page
 wpId: 1123
 published: "2020-03-31T15:12:45"
-updated: "2026-09-22T13:52:04"
+updated: "2026-08-30T14:22:15"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/Javanese.jpg"

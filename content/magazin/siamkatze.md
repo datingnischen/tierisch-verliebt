@@ -4,7 +4,7 @@ slug: "siamkatze"
 type: page
 wpId: 668
 published: "2019-12-12T20:47:45"
-updated: "2026-09-27T22:45:58"
+updated: "2026-09-27T14:43:47"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Siamkatze.jpg"

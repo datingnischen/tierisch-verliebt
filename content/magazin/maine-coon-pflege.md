@@ -4,7 +4,7 @@ slug: "maine-coon-pflege"
 type: page
 wpId: 1700
 published: "2022-09-16T13:55:49"
-updated: "2026-09-22T13:51:30"
+updated: "2026-09-10T08:49:37"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/main-coon-pflege.jpg"

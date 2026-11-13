@@ -4,7 +4,7 @@ slug: "dobermann"
 type: page
 wpId: 345
 published: "2019-10-22T20:47:58"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-14T16:24:39+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Dobermann.jpg"

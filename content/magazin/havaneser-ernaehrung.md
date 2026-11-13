@@ -4,7 +4,7 @@ slug: "havaneser-ernaehrung"
 type: page
 wpId: 1686
 published: "2022-09-16T12:03:07"
-updated: "2026-09-25T23:11:16"
+updated: "2026-09-25T10:42:43"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/havaneser-ernaehrung-titelbild.jpg"

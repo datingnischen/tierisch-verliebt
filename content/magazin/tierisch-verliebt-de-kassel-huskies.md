@@ -4,7 +4,7 @@ slug: "tierisch-verliebt-de-kassel-huskies"
 type: post
 wpId: 2754
 published: "2024-10-01T13:23:30"
-updated: "2026-06-04T14:11:22"
+updated: "2026-06-04T18:21:41"
 author: "christian-m-haas"
 categories: ["presse"]
 image: "/magazin/wp-content/uploads/2024/11/tierisch-verliebt-del-kassel-partnerschaft.jpg"

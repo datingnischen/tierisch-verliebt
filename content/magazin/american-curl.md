@@ -4,7 +4,7 @@ slug: "american-curl"
 type: page
 wpId: 970
 published: "2020-03-04T14:31:18"
-updated: "2026-09-22T13:52:11"
+updated: "2026-08-30T22:57:07"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/American-Curl.jpg"

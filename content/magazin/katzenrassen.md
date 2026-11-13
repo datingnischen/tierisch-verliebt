@@ -5,7 +5,7 @@ slug: "katzenrassen"
 type: page
 wpId: 645
 published: "2019-12-04T09:27:10"
-updated: "2026-09-26T09:39:06"
+updated: "2026-09-26T07:00:15"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/katzenrassen-kaetzchen-auf-der-wiese.jpg"

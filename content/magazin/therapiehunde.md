@@ -4,7 +4,7 @@ slug: "therapiehunde"
 type: post
 wpId: 2500
 published: "2023-10-05T14:01:00"
-updated: "2025-11-12T12:00:18"
+updated: "2025-10-21T10:44:31"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/10/therapie-hund.jpeg"

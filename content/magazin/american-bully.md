@@ -4,7 +4,7 @@ slug: "american-bully"
 type: page
 wpId: 1659
 published: "2021-12-13T08:01:39"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-18T15:02:19+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/12/American-Bully.jpg"

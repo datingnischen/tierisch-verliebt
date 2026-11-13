@@ -4,7 +4,7 @@ slug: "insektenproteine-in-hundefutter"
 type: post
 wpId: 1880
 published: "2023-02-21T22:32:04"
-updated: "2025-11-12T12:00:38"
+updated: "2025-10-29T15:45:12"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/02/Insektenproteine-in-Hundefutter.jpg"

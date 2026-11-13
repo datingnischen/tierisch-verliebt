@@ -4,7 +4,7 @@ slug: "frettchen"
 type: post
 wpId: 2461
 published: "2023-09-14T09:09:01"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-28T14:25:09"
 author: "christian-m-haas"
 categories: ["allgemein"]
 image: "/magazin/wp-content/uploads/2023/09/Frettchen-3.jpg"

@@ -4,7 +4,7 @@ slug: "havaneser-pflege"
 type: page
 wpId: 1683
 published: "2022-09-16T12:04:37"
-updated: "2026-09-22T13:51:32"
+updated: "2026-09-15T11:40:52"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/09/Havaneser-pflege.jpg"

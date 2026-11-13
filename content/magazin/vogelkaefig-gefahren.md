@@ -3,8 +3,8 @@ title: "Gefahren im Vogelkäfig: Giftige Materialien und Spielzeuge"
 slug: "vogelkaefig-gefahren"
 type: post
 wpId: 3515
-published: "2026-03-01T22:38:28"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-03-01T14:07:57"
+updated: "2026-10-13T14:25:59+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/03/joshandye_picture-bird-7673605_1280.compr_.jpg"

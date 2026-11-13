@@ -4,7 +4,7 @@ slug: "blue-lacy"
 type: page
 wpId: 1663
 published: "2021-12-16T20:06:29"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-11-02T15:29:22+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/12/Blue-Lacy.jpg"

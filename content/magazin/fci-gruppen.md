@@ -4,7 +4,7 @@ slug: "fci-gruppen"
 type: page
 wpId: 201
 published: "2019-07-11T15:42:31"
-updated: "2026-09-25T23:11:22"
+updated: "2026-09-25T15:48:32"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/fci-gruppen-titelbild.jpg"

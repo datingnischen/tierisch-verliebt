@@ -4,7 +4,7 @@ slug: "burma-katze"
 type: page
 wpId: 831
 published: "2020-02-17T12:31:26"
-updated: "2026-09-22T13:52:19"
+updated: "2026-09-06T11:03:36"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Burma-Katze.jpg"

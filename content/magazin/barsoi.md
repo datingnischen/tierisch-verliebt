@@ -4,7 +4,7 @@ slug: "barsoi"
 type: page
 wpId: 2130
 published: "2023-07-14T16:38:52"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-23T17:50:51+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/Barsoi-4.jpg"

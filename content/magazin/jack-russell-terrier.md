@@ -4,7 +4,7 @@ slug: "jack-russell-terrier"
 type: page
 wpId: 274
 published: "2019-10-02T08:03:25"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-24T21:23:34+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/jack-russell.jpg"

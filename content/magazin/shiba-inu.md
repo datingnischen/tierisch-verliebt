@@ -4,7 +4,7 @@ slug: "shiba-inu"
 type: page
 wpId: 408
 published: "2019-10-29T19:37:44"
-updated: "2026-09-22T13:53:13"
+updated: "2026-09-16T18:00:19"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/02/Shiba-Inu-das-Portrait-3.jpg"

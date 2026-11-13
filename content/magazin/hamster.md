@@ -4,7 +4,7 @@ slug: "hamster"
 type: page
 wpId: 1572
 published: "2021-10-10T20:55:35"
-updated: "2026-09-22T13:51:42"
+updated: "2026-09-08T10:25:25"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/10/Hamster.jpg"

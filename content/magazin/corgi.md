@@ -4,7 +4,7 @@ slug: "corgi"
 type: page
 wpId: 619
 published: "2019-11-19T18:05:24"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-16T21:56:40+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/08/corgi-2.jpg"

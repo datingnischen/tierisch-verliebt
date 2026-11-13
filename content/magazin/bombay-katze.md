@@ -4,7 +4,7 @@ slug: "bombay-katze"
 type: page
 wpId: 835
 published: "2020-02-17T12:46:28"
-updated: "2026-09-22T13:52:18"
+updated: "2026-09-12T19:25:49"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/Bombay-Katze.jpg"

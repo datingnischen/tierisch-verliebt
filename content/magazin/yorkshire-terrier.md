@@ -4,7 +4,7 @@ slug: "yorkshire-terrier"
 type: page
 wpId: 429
 published: "2019-10-31T22:11:27"
-updated: "2026-09-22T13:53:10"
+updated: "2026-09-17T17:37:22"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Yorkshire-Terrier.jpg"

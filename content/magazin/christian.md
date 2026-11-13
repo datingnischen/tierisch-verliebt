@@ -4,7 +4,7 @@ slug: "christian"
 type: page
 wpId: 3377
 published: "2025-11-12T11:47:45"
-updated: "2026-09-23T20:59:28"
+updated: "2026-09-23T16:55:18"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/02/christian-m-haas-tierisch-verliebt.png"

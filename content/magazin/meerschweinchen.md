@@ -4,7 +4,7 @@ slug: "meerschweinchen"
 type: page
 wpId: 288
 published: "2019-10-07T13:31:14"
-updated: "2026-09-22T13:51:07"
+updated: "2026-08-31T15:50:17"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/meerschweinchen.jpg"

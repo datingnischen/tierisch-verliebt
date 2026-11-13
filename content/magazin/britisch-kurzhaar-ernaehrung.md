@@ -4,7 +4,7 @@ slug: "britisch-kurzhaar-ernaehrung"
 type: page
 wpId: 1811
 published: "2022-11-22T20:22:45"
-updated: "2026-09-22T13:51:02"
+updated: "2026-09-14T11:55:27"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2022/11/Britisch-Kurzhaar-Katze-Ernaehrung.jpg"

@@ -4,7 +4,7 @@ slug: "malteser"
 type: page
 wpId: 350
 published: "2019-10-23T07:29:54"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-12T22:33:37+02:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/10/Malteser.jpg"

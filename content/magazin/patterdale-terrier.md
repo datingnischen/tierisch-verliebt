@@ -4,7 +4,7 @@ slug: "patterdale-terrier"
 type: page
 wpId: 1490
 published: "2021-02-17T12:08:41"
-updated: "2026-09-22T13:51:43"
+updated: "2026-09-09T11:08:17"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/02/Patterdale-Terrier-e1613559700861.jpg"

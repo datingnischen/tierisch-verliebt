@@ -3,8 +3,8 @@ title: "Vögel als Haustiere: Welche Arten passen zu deinem Lebensstil?"
 slug: "voegel-als-haustiere"
 type: post
 wpId: 3452
-published: "2026-01-23T15:35:24"
-updated: "2026-11-03T12:00:00+01:00"
+published: "2026-01-23T09:26:34"
+updated: "2026-10-25T10:57:01+01:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
 image: "/magazin/wp-content/uploads/2026/01/voegel-als-haustiere.png"

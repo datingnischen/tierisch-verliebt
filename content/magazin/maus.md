@@ -5,7 +5,7 @@ slug: "maus"
 type: page
 wpId: 1582
 published: "2021-10-21T08:25:44"
-updated: "2026-09-22T13:51:40"
+updated: "2026-09-11T15:34:59"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2021/10/Maus.jpg"

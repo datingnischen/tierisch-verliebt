@@ -4,7 +4,7 @@ slug: "american-staffordshire"
 type: page
 wpId: 614
 published: "2019-11-18T19:35:42"
-updated: "2026-11-03T12:00:00+01:00"
+updated: "2026-10-27T20:37:54+01:00"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/02/American-Staffordshire-1.jpg"

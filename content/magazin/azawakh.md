@@ -4,7 +4,7 @@ slug: "azawakh"
 type: page
 wpId: 2141
 published: "2023-07-17T11:56:13"
-updated: "2026-09-22T13:50:55"
+updated: "2026-09-07T17:38:39"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2023/07/Azawakh.jpg"

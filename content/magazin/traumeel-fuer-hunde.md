@@ -4,7 +4,7 @@ slug: "traumeel-fuer-hunde"
 type: post
 wpId: 2645
 published: "2024-02-28T14:50:31"
-updated: "2026-06-04T17:11:16"
+updated: "2026-06-04T11:26:14"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2024/02/Traumeel.jpg"

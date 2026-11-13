@@ -4,7 +4,7 @@ slug: "zibetkatze"
 type: page
 wpId: 3177
 published: "2025-03-05T00:31:41"
-updated: "2026-09-26T00:54:47"
+updated: "2026-09-26T14:53:09"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/zibetkatze-titelbild.jpg"

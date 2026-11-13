@@ -4,7 +4,7 @@ slug: "hundesportarten"
 type: post
 wpId: 2509
 published: "2023-10-02T14:29:58"
-updated: "2025-11-12T12:00:37"
+updated: "2025-10-23T14:12:34"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2023/10/Hundesportarten-1-scaled.jpg"

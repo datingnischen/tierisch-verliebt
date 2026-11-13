@@ -4,7 +4,7 @@ slug: "boston-terrier"
 type: page
 wpId: 555
 published: "2019-11-09T08:46:46"
-updated: "2026-09-22T13:52:56"
+updated: "2026-09-17T10:34:25"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/11/Boston-Terrier.jpg"
