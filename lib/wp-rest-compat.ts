@@ -134,7 +134,8 @@ function buildSource(): WpSource {
 
   const posts = store.posts.map((entry): WpPost => {
     const date = entry.date ?? "";
-    const modified = entry.modified ?? date;
+    // WordPress liefert date/modified ohne Offset (Ortszeit); Frontmatter-Werte wie "…+01:00" kürzen.
+    const modified = (entry.modified ?? date).slice(0, 19);
     const author = authors.find((item) => item.slug === entry.authorSlug)?.id ?? 1;
     const upload = entry.featuredImage?.match(/\/magazin\/wp-content\/uploads\/.+$/)?.[0];
     const [width, height] = (upload && sizes[upload]) || [0, 0];

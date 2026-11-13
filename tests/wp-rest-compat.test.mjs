@@ -54,6 +54,7 @@ test("date ist veröffentlicht, modified ist aktualisiert, *_gmt ist UTC aus Eur
   assert.equal(post.modified, "2026-10-29T19:20:01");
   assert.equal(post.date_gmt, "2026-05-28T18:48:01", "Sommerzeit");
   assert.equal(berlinToUtc("2026-01-15T12:00:00"), "2026-01-15T11:00:00", "Winterzeit");
+  for (const item of get("/wp/v2/posts", "per_page=100").body) assert.match(item.modified, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/, `${item.slug}: modified ohne Offset wie WordPress`);
 });
 
 test("Auszüge sind vollständige Sätze, Beitragsbilder haben Alt-Text und Maße, alle Bilder sind in den Maßen erfasst", async () => {
