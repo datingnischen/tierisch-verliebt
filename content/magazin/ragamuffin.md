@@ -4,7 +4,7 @@ slug: "ragamuffin"
 type: page
 wpId: 886
 published: "2020-02-25T20:12:53"
-updated: "2026-09-27T18:34:11"
+updated: "2026-09-13T18:34:11"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/02/RagaMuffin.jpg"

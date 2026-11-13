@@ -3,7 +3,7 @@ title: "5 Tipps für die Haltung einer Maine Coon Katze"
 slug: "maine-coon-haltung"
 type: page
 wpId: 1694
-published: "2022-09-16T22:37:01"
+published: "2022-09-02T15:12:14"
 updated: "2026-09-22T15:56:55"
 author: "christian-m-haas"
 categories: []

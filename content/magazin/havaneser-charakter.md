@@ -3,7 +3,7 @@ title: "Havaneser-Hunde – Charakter"
 slug: "havaneser-charakter"
 type: page
 wpId: 1677
-published: "2022-09-16T12:05:08"
+published: "2022-08-23T20:32:23"
 updated: "2026-09-19T12:33:06"
 author: "christian-m-haas"
 categories: []

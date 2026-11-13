@@ -3,7 +3,7 @@ title: "Ragdoll-Züchter in Deutschland: finden und vergleichen"
 slug: "ragdoll-zuechter"
 type: page
 wpId: 1752
-published: "2022-09-18T22:00:51"
+published: "2022-09-10T08:45:08"
 updated: "2026-10-23T19:16:39+02:00"
 author: "christian-m-haas"
 categories: []

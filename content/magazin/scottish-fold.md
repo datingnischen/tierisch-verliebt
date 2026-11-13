@@ -4,7 +4,7 @@ slug: "scottish-fold"
 type: page
 wpId: 1175
 published: "2020-04-16T08:53:47"
-updated: "2026-09-27T12:41:33"
+updated: "2026-09-13T12:41:33"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/04/Scottish-Fold.jpg"

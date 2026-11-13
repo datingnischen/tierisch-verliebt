@@ -3,8 +3,8 @@ title: "Tonkanese – Das Portrait"
 slug: "tonkanese"
 type: page
 wpId: 1026
-published: "2020-03-16T17:59:39"
-updated: "2026-09-27T18:14:29"
+published: "2020-03-15T09:54:55"
+updated: "2026-09-24T18:14:29"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2026/09/tonkanese-katze.jpg"

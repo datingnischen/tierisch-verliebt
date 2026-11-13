@@ -3,7 +3,7 @@ title: "Wissenswertes über Maine Coon Katze"
 slug: "maine-coon-wissenswertes"
 type: page
 wpId: 1707
-published: "2022-09-16T22:53:09"
+published: "2022-08-29T11:11:55"
 updated: "2026-09-13T19:47:53"
 author: "christian-m-haas"
 categories: []

@@ -4,7 +4,7 @@ slug: "orientalisch-kurzhaar"
 type: page
 wpId: 948
 published: "2020-03-01T14:02:22"
-updated: "2026-09-27T18:23:43"
+updated: "2026-09-22T18:23:43"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2020/03/Orientalisch-Kurzhaar.jpg"

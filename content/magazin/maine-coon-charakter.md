@@ -3,7 +3,7 @@ title: "Charakter der Maine Coon Katze"
 slug: "maine-coon-charakter"
 type: page
 wpId: 1703
-published: "2022-09-16T22:37:11"
+published: "2022-09-12T17:45:35"
 updated: "2026-09-12T20:22:39"
 author: "christian-m-haas"
 categories: []

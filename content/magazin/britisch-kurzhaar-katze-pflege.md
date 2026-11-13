@@ -3,7 +3,7 @@ title: "Die Pflege der Britisch Kurzhaar Katze"
 slug: "britisch-kurzhaar-katze-pflege"
 type: page
 wpId: 1819
-published: "2022-11-22T20:47:46"
+published: "2022-11-19T17:39:17"
 updated: "2026-09-22T18:44:29"
 author: "christian-m-haas"
 categories: []

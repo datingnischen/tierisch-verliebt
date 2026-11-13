@@ -3,7 +3,7 @@ title: "Shiba Inu – das Portrait"
 slug: "shiba-inu"
 type: page
 wpId: 408
-published: "2019-10-29T19:37:44"
+published: "2019-10-27T15:10:09"
 updated: "2026-09-16T18:00:19"
 author: "christian-m-haas"
 categories: []

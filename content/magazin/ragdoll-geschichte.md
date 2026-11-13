@@ -3,7 +3,7 @@ title: "Die Geschichte der Ragdollkatze"
 slug: "ragdoll-geschichte"
 type: page
 wpId: 1736
-published: "2022-09-18T21:59:41"
+published: "2022-09-17T20:09:26"
 updated: "2026-09-13T10:31:37"
 author: "christian-m-haas"
 categories: []

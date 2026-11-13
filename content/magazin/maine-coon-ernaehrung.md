@@ -3,7 +3,7 @@ title: "Was ist die beste Ernährung für Ihre Maine Coon Katze"
 slug: "maine-coon-ernaehrung"
 type: page
 wpId: 1697
-published: "2022-09-16T22:37:59"
+published: "2022-08-24T21:02:37"
 updated: "2026-08-31T11:57:41"
 author: "christian-m-haas"
 categories: []

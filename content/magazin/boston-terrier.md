@@ -3,7 +3,7 @@ title: "Der Boston Terrier – ein charakterstarker Gentleman"
 slug: "boston-terrier"
 type: page
 wpId: 555
-published: "2019-11-09T08:46:46"
+published: "2019-11-08T16:56:05"
 updated: "2026-09-17T10:34:25"
 author: "christian-m-haas"
 categories: []

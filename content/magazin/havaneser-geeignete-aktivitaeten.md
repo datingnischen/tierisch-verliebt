@@ -3,7 +3,7 @@ title: "Geeignete Aktivitäten – So hälst du deinen Havaneser fit"
 slug: "havaneser-geeignete-aktivitaeten"
 type: page
 wpId: 1680
-published: "2022-09-16T12:05:04"
+published: "2022-08-25T15:31:49"
 updated: "2026-09-10T15:10:08"
 author: "christian-m-haas"
 categories: []

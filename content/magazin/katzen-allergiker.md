@@ -4,7 +4,7 @@ slug: "katzen-allergiker"
 type: post
 wpId: 2760
 published: "2024-10-28T12:21:59"
-updated: "2026-09-26T07:04:26"
+updated: "2026-09-16T07:04:26"
 author: "christian-m-haas"
 categories: ["ratgeber-katze"]
 image: "/magazin/wp-content/uploads/2026/09/katzenallergie-frau-niest.jpeg"

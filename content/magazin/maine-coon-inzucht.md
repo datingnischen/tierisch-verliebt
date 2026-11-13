@@ -3,7 +3,7 @@ title: "Inzucht – Wieviel Inzucht darf bei einer Maine Coon Katze sein?"
 slug: "maine-coon-inzucht"
 type: page
 wpId: 1710
-published: "2022-09-16T22:37:42"
+published: "2022-08-19T12:35:22"
 updated: "2026-09-02T10:26:34"
 author: "christian-m-haas"
 categories: []

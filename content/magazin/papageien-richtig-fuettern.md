@@ -3,7 +3,7 @@ title: "Papageien richtig füttern: Grundernährung und Futterplan"
 slug: "papageien-richtig-fuettern"
 type: post
 wpId: 3520
-published: "2026-03-01T20:01:06"
+published: "2026-02-25T20:01:06"
 updated: "2026-10-13T17:30:31+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]

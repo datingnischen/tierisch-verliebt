@@ -3,7 +3,7 @@ title: "Malinois – Das Portrait"
 slug: "malinois"
 type: page
 wpId: 583
-published: "2019-11-09T17:40:05"
+published: "2019-11-02T13:53:32"
 updated: "2026-10-14T12:40:43+02:00"
 author: "christian-m-haas"
 categories: []

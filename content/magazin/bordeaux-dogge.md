@@ -3,7 +3,7 @@ title: "Die Bordeaux Dogge – Portrait der Hunderasse"
 slug: "bordeaux-dogge"
 type: page
 wpId: 566
-published: "2019-11-09T13:09:44"
+published: "2019-11-03T17:51:46"
 updated: "2026-11-03T13:15:35+01:00"
 author: "christian-m-haas"
 categories: []

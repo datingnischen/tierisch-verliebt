@@ -4,7 +4,7 @@ slug: "russisch-blau"
 type: page
 wpId: 716
 published: "2019-12-31T19:36:39"
-updated: "2026-09-27T15:03:09"
+updated: "2026-09-24T15:03:09"
 author: "christian-m-haas"
 categories: []
 image: "/magazin/wp-content/uploads/2019/12/Russisch-Blau.jpg"

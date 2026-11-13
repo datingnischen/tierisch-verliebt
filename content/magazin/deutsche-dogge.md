@@ -3,7 +3,7 @@ title: "Deutsche Dogge – Das Portrait"
 slug: "deutsche-dogge"
 type: page
 wpId: 412
-published: "2019-10-29T20:05:08"
+published: "2019-10-26T15:47:06"
 updated: "2026-10-26T20:31:15+01:00"
 author: "christian-m-haas"
 categories: []

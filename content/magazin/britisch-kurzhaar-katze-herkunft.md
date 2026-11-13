@@ -3,7 +3,7 @@ title: "Herkunft von Britisch Kurzhaar Katze"
 slug: "britisch-kurzhaar-katze-herkunft"
 type: page
 wpId: 1829
-published: "2022-11-22T21:21:00"
+published: "2022-11-21T12:00:28"
 updated: "2026-09-08T20:17:21"
 author: "christian-m-haas"
 categories: []

@@ -3,7 +3,7 @@ title: "Portrait zu Hunderasse: Saluki"
 slug: "saluki"
 type: page
 wpId: 2125
-published: "2023-07-14T16:20:09"
+published: "2023-07-12T11:07:07"
 updated: "2026-09-17T10:52:13"
 author: "christian-m-haas"
 categories: []

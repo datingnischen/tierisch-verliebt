@@ -3,7 +3,7 @@ title: "Cane Corso – Das Portrait"
 slug: "cane-corso"
 type: page
 wpId: 386
-published: "2019-10-28T06:57:30"
+published: "2019-10-27T09:22:30"
 updated: "2026-10-31T09:57:29+01:00"
 author: "christian-m-haas"
 categories: []

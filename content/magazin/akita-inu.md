@@ -3,7 +3,7 @@ title: "Akita Inu – Das Portrait"
 slug: "akita-inu"
 type: page
 wpId: 450
-published: "2019-11-04T08:16:11"
+published: "2019-10-19T16:27:37"
 updated: "2026-10-13T20:55:22+02:00"
 author: "christian-m-haas"
 categories: []

@@ -3,7 +3,7 @@ title: "Die richtige Pflege der Maine Coon"
 slug: "maine-coon-pflege"
 type: page
 wpId: 1700
-published: "2022-09-16T13:55:49"
+published: "2022-09-09T10:57:42"
 updated: "2026-09-10T08:49:37"
 author: "christian-m-haas"
 categories: []

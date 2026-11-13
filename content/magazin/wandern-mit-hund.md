@@ -4,7 +4,7 @@ slug: "wandern-mit-hund"
 type: post
 wpId: 2657
 published: "2024-04-07T09:12:50"
-updated: "2026-09-26T12:38:42"
+updated: "2026-09-05T12:38:42"
 author: "christian-m-haas"
 categories: ["ratgeber-hund"]
 image: "/magazin/wp-content/uploads/2026/09/wandern-mit-hund-verschneiter-wald.jpg"

@@ -3,7 +3,7 @@ title: "Bernhardiner – Das Portrait"
 slug: "bernhardiner"
 type: page
 wpId: 479
-published: "2019-11-05T20:15:42"
+published: "2019-11-03T11:21:45"
 updated: "2026-10-11T13:50:47+02:00"
 author: "christian-m-haas"
 categories: []

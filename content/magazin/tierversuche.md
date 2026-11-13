@@ -3,7 +3,7 @@ title: "Was sind Tierversuche und warum Deutschland handeln sollte"
 slug: "tierversuche"
 type: post
 wpId: 454
-published: "2019-11-04T08:06:23"
+published: "2019-10-22T11:47:30"
 updated: "2025-11-08T18:06:21"
 author: "christian-m-haas"
 categories: ["allgemein"]

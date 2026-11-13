@@ -3,7 +3,7 @@ title: "Die Haltung einer Ragdoll Katze"
 slug: "ragdoll-haltung"
 type: page
 wpId: 1746
-published: "2022-09-18T21:59:49"
+published: "2022-09-14T14:06:32"
 updated: "2026-09-08T10:24:19"
 author: "christian-m-haas"
 categories: []

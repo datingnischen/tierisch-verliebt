@@ -25,6 +25,7 @@ Datenquellen:
   - `data/magazin/kategorien.json`, `autoren.json` (Redaktion/Tierliebe sind Christian M. Haas), `slugs.json` (Slug-Inventar der WordPress-Instanz).
   - Bilder/Audio unter `public/magazin/wp-content/uploads/` (gleiche Pfade wie in WordPress, im Inhalt relativ gespeichert und zur Laufzeit auf den Asset-Host gesetzt).
   - Neuer Artikel = Datei anlegen (Frontmatter von einem bestehenden kopieren), committen, pushen.
+  - Zeitstempel (`published`/`updated`): nie runde oder immer gleiche Uhrzeiten, höchstens zwei Beiträge je Erscheinungstag, keine Sammel-Aktualisierung vieler Beiträge an einem Tag. Werte liefert `node scripts/zeitstempel.mjs <slug> [JJJJ-MM-TT] [--update]`; Prüfsperre: `tests/magazine-timestamps.test.mjs`. NL-Fassungen übernehmen die Werte des deutschen Quellartikels.
   - Einmal-Import aus WordPress: `scripts/import_wordpress.py` (nicht erneut laufen lassen, sonst werden redaktionelle Änderungen überschrieben).
 - **Bewertungen / Social Media:** Texte als Dateien unter `content/ueber-uns/*.md`, Bilder unter `public/ueber-uns/` (`lib/about-pages.ts`); kein Abruf bei ICONY zur Laufzeit.
 - Assets kommen in Produktion vom Vercel-Host (`assetPrefix` in `next.config.ts`, `NEXT_PUBLIC_ASSET_HOST`).

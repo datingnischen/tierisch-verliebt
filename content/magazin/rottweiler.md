@@ -3,7 +3,7 @@ title: "Rottweiler – Sanftmut und Dominanz in einem Wesen"
 slug: "rottweiler"
 type: page
 wpId: 446
-published: "2019-11-01T21:48:22"
+published: "2019-10-26T21:44:38"
 updated: "2026-09-11T16:56:21"
 author: "christian-m-haas"
 categories: []

@@ -3,7 +3,7 @@ title: "Die Ernährung einer Britisch Kurzhaar Katze"
 slug: "britisch-kurzhaar-ernaehrung"
 type: page
 wpId: 1811
-published: "2022-11-22T20:22:45"
+published: "2022-11-18T20:09:33"
 updated: "2026-09-14T11:55:27"
 author: "christian-m-haas"
 categories: []

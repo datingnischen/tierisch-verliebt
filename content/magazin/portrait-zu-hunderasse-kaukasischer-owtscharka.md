@@ -3,7 +3,7 @@ title: "Portrait zu Hunderasse: Kaukasischer Owtscharka"
 slug: "portrait-zu-hunderasse-kaukasischer-owtscharka"
 type: page
 wpId: 2122
-published: "2023-07-14T15:46:35"
+published: "2023-07-09T17:28:09"
 updated: "2026-10-30T12:36:58+01:00"
 author: "christian-m-haas"
 categories: []

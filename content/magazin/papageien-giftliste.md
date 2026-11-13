@@ -3,7 +3,7 @@ title: "Giftliste für Papageien: Diese Lebensmittel sind tabu"
 slug: "papageien-giftliste"
 type: post
 wpId: 3525
-published: "2026-03-01T16:55:33"
+published: "2026-02-22T16:55:33"
 updated: "2026-10-15T20:40:23+02:00"
 author: "christian-m-haas"
 categories: ["ratgeber-voegel"]
