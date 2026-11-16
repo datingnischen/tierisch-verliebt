@@ -181,3 +181,11 @@
     padding: 24px;
   }
 }
+
+.tvf-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 42rem;
+  height: auto;
+  border-radius: 1rem;
+}

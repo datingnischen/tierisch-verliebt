@@ -49,6 +49,7 @@ html[lang="nl-NL"] .tvc-hero h1 { overflow-wrap: anywhere; hyphens: auto; }
 
 /* Over ons, Privacy, Colofon */
 .nl-info-hero { padding-bottom: 30px; }
+.nl-faq-hero-image { display: block; width: 100%; max-width: 42rem; height: auto; margin-top: 1.5rem; border-radius: 1rem; }
 .nl-info-body { max-width: 860px; padding-top: 10px; padding-bottom: 60px; }
 .nl-info-body .rich-content { overflow-wrap: anywhere; }
 .nl-info-body section { margin-bottom: 2rem; }

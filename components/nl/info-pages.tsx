@@ -88,6 +88,13 @@ export const NL_FAQ: { title: string; entries: NlFaqEntry[] }[] = [
 
 export const NL_FAQ_ENTRIES: NlFaqEntry[] = NL_FAQ.flatMap((group) => group.entries);
 
+export const NL_FAQ_IMAGE = {
+  url: staticAsset("/pages/faq.webp"),
+  width: 1200,
+  height: 675,
+  alt: "Twee hondenbezitters praten op een veldpad met hun honden aan de lijn – veelgestelde vragen over tierisch-verliebt",
+};
+
 const OPERATOR = <p>
   Christian Mogge Internetdienstleistungen<br />
   c/o Grosch Postflex #1280<br />
@@ -213,6 +220,9 @@ export function NlInfoPageView({ page }: { page: NlInfoPage }) {
       <span className="tvc-badge"><PawIcon className="tvc-badge-paw" />{meta.badge}</span>
       <h1>{meta.h1}</h1>
       {page === "over-ons" ? <p className="tvc-lead">tierisch-verliebt.nl is een gids voor singles in Nederland bij wie hond, kat en co. bij de familie horen. Hier lees je wie de gidsen maakt, hoe we werken en hoe aanmelden werkt.</p> : page === "veelgestelde-vragen" ? <p className="tvc-lead">tierisch-verliebt.nl is nog in opbouw. Hier beantwoorden we de belangrijkste vragen over de status van de site, het aanmelden en onze gidsen.</p> : null}
+      {page === "veelgestelde-vragen" && (
+        <img className="nl-faq-hero-image" src={NL_FAQ_IMAGE.url} alt={NL_FAQ_IMAGE.alt} width={NL_FAQ_IMAGE.width} height={NL_FAQ_IMAGE.height} loading="eager" decoding="async" />
+      )}
     </div></section>
     <div className="tvc-wrap nl-info-body"><article className="rich-content">
       <Body />

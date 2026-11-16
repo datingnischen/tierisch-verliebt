@@ -6,7 +6,7 @@ import { NlBreedPage, NlMagazine } from "@/components/nl/magazine";
 import { PreviewLinkRewriter } from "@/components/preview-link-rewriter";
 import { getMarketCityPage, getMarketCityPages, getMarketPartnersucheHub } from "@/lib/market-partnersuche";
 import { getNlBreed } from "@/lib/nl-magazine";
-import { NlInfoPageView, NL_AUTHOR, NL_FAQ_ENTRIES, NL_INFO_META } from "@/components/nl/info-pages";
+import { NlInfoPageView, NL_AUTHOR, NL_FAQ_ENTRIES, NL_FAQ_IMAGE, NL_INFO_META } from "@/components/nl/info-pages";
 import { NL_BREEDS, NL_GOOGLE_SITE_VERIFICATION, NL_INFO_PAGES, NL_LEGAL_PAGES, NL_PILOT_INDEXABLE, type NlInfoPage } from "@/lib/nl-routes";
 import { staticAsset } from "#static-asset";
 import { publicUrl } from "@/lib/markets";
@@ -53,12 +53,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // /dating/ zeigt dieselbe Stadtübersicht wie die Startseite: Canonical auf die Startseite.
   const canonical = publicUrl("nl", page.kind === "hub" ? "/" : parts.join("/"));
   const indexable = NL_PILOT_INDEXABLE && !(page.kind === "info" && NL_LEGAL_PAGES.includes(page.page));
+  const images = page.kind === "breed" ? [{ url: page.entry.image, alt: page.entry.imageAlt }]
+    : page.kind === "info" && page.page === "veelgestelde-vragen" ? [NL_FAQ_IMAGE] : undefined;
   return { title: { absolute: `${page.title} | tierisch-verliebt.nl` }, description: page.description,
     alternates: { canonical }, robots: { index: indexable, follow: true },
     verification: { google: NL_GOOGLE_SITE_VERIFICATION },
     // Icons von der eigenen Domain (Google übernimmt Favicons nur von derselben Website), nicht vom Asset-Host.
     icons: { icon: [{ url: publicUrl("nl", "/favicon.ico"), sizes: "48x48" }, { url: publicUrl("nl", "/brand/icon-144.png"), sizes: "144x144", type: "image/png" }], apple: publicUrl("nl", "/brand/apple-icon.png") },
-    openGraph: { title: page.title, description: page.description, url: canonical, locale: "nl_NL", siteName: "tierisch-verliebt.nl", images: page.kind === "breed" ? [{ url: page.entry.image, alt: page.entry.imageAlt }] : undefined },
+    openGraph: { title: page.title, description: page.description, url: canonical, locale: "nl_NL", siteName: "tierisch-verliebt.nl", images },
   };
 }
 
