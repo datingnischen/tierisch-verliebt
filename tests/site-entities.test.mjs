@@ -70,7 +70,7 @@ test("magazine posts get a BlogPosting with author, category breadcrumb and Berl
   assert.deepEqual(Object.keys(byType), ["WebPage", "BreadcrumbList", "BlogPosting", "WebSite", "Organization"]);
   const article = byType.BlogPosting;
   assert.equal(article.mainEntityOfPage["@id"], `${url}#webpage`);
-  assert.equal(article.author["@id"], `${siteUrl}/magazin/christian#person`);
+  assert.equal(article.author["@id"], "https://datingnischen.de/christian/#person");
   assert.equal(article.publisher["@id"], `${siteUrl}#operator`);
   assert.equal(article.isPartOf["@id"], `${siteUrl}#website`);
   assert.equal(article.datePublished, "2026-05-28T07:05:37+02:00");

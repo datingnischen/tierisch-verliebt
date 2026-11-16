@@ -1,3 +1,4 @@
+import { christianPerson } from "@/lib/christian-person.mjs";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NlCityHub } from "@/components/nl/city-hub";
@@ -72,7 +73,7 @@ export default async function NlPilot({ params }: Props) {
     { "@type": "WebSite", "@id": `${publicUrl("nl")}#website`, name: "tierisch-verliebt.nl", url: publicUrl("nl"), inLanguage: "nl-NL" },
     { "@type": page.kind === "info" && page.page === "over-ons" ? "AboutPage" : "WebPage", "@id": `${url}#webpage`, url, name: page.title, description: page.description, inLanguage: "nl-NL", isPartOf: { "@id": `${publicUrl("nl")}#website` } },
     ...(page.kind === "info" && page.page === "over-ons" ? [
-      { "@type": "Person", "@id": `${url}#person`, name: NL_AUTHOR.name, jobTitle: NL_AUTHOR.jobTitle, image: staticAsset(NL_AUTHOR.image), url, sameAs: NL_AUTHOR.sameAs },
+      { ...christianPerson(), jobTitle: NL_AUTHOR.jobTitle, image: staticAsset(NL_AUTHOR.image) },
     ] : []),
     ...(page.kind === "info" && page.page === "veelgestelde-vragen" ? [
       { "@type": "FAQPage", "@id": `${url}#faq`, inLanguage: "nl-NL", mainEntity: NL_FAQ_ENTRIES.map(entry => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })) },

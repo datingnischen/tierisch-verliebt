@@ -41,13 +41,13 @@ test("builds the Christian CMS-gated profile and book graph", () => {
   assert.equal(website.publisher["@id"], operator["@id"]);
   assert.equal(breadcrumb.itemListElement.length, 3);
   assert.deepEqual(breadcrumb.itemListElement.map((item) => item.name), ["Startseite", "Magazin", "Christian M. Haas"]);
-  assert.equal(profile.mainEntity["@id"], `${base.canonicalUrl}#person`);
+  assert.equal(profile.mainEntity["@id"], "https://datingnischen.de/christian/#person");
   assert.equal(profile.isPartOf["@id"], website["@id"]);
   assert.equal(profile.breadcrumb["@id"], breadcrumb["@id"]);
-  assert.equal(person["@id"], `${base.canonicalUrl}#person`);
+  assert.equal(person["@id"], "https://datingnischen.de/christian/#person");
   assert.equal(person.mainEntityOfPage["@id"], profile["@id"]);
   assert.equal(person.affiliation["@id"], operator["@id"]);
-  assert.equal(book.author["@id"], `${base.canonicalUrl}#person`);
+  assert.equal(book.author["@id"], "https://datingnischen.de/christian/#person");
   assert.equal(book.bookEdition, "1. Auflage");
   assert.equal(book.publisher.name, "BoD – Books on Demand");
   assert.deepEqual(

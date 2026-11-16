@@ -1,3 +1,4 @@
+import { CHRISTIAN_PERSON_ID, christianPerson } from "./christian-person.mjs";
 export type StructuredDataNode = Record<string, unknown>;
 
 export type ProfileBreadcrumbItem = { name: string; url: string };
@@ -82,7 +83,7 @@ export function buildChristianBookProfileGraph(input: ChristianBookProfileInput)
   const bookImage = extractBoundedBookImage(input.content);
   if (!bookImage) return null;
 
-  const personId = `${input.canonicalUrl}#person`;
+  const personId = CHRISTIAN_PERSON_ID;
   const pageId = `${input.canonicalUrl}#profile-page`;
   const breadcrumbId = `${input.canonicalUrl}#breadcrumb`;
   const websiteId = `${input.siteUrl}#website`;
@@ -129,17 +130,13 @@ export function buildChristianBookProfileGraph(input: ChristianBookProfileInput)
         inLanguage: "de-DE",
       },
       {
-        "@type": "Person",
-        "@id": personId,
-        name: input.profileName,
+        ...christianPerson(),
         description: input.profileDescription,
-        url: input.canonicalUrl,
         mainEntityOfPage: { "@id": pageId },
         image: input.profileImage,
         jobTitle: input.jobTitle,
         affiliation: { "@id": operatorId },
         publishingPrinciples: input.aboutPageUrl,
-        sameAs: input.sameAs?.length ? input.sameAs : undefined,
         knowsAbout: input.knowsAbout?.length ? input.knowsAbout : undefined,
       },
       {

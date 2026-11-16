@@ -1,3 +1,4 @@
+import { CHRISTIAN_NAME, christianPerson } from "./christian-person.mjs";
 export const BRAND_NAME = "tierisch-verliebt.de";
 
 export const PLATFORM_OPERATOR = {
@@ -156,7 +157,9 @@ export function buildMagazineArticleGraph(input: MagazineArticleGraphInput) {
       datePublished: withBerlinOffset(input.datePublished),
       dateModified: withBerlinOffset(input.dateModified ?? input.datePublished),
       articleSection: input.category?.name,
-      author: input.author ? { "@type": "Person", "@id": authorId, name: input.author.name, url: input.author.url } : undefined,
+      author: input.author?.name === CHRISTIAN_NAME
+        ? christianPerson()
+        : input.author ? { "@type": "Person", "@id": authorId, name: input.author.name, url: input.author.url } : undefined,
       publisher: { "@id": ids.operator },
     });
   }
