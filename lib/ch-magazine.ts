@@ -3,6 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { CH_MAGAZINE_SLUGS, publicUrl } from "#markets";
 import { staticAsset } from "#static-asset";
+import { schemaZeitstempel } from "./schema-zeitstempel.ts";
 
 export type ChArticle = {
   slug: string; title: string; seoTitle: string; description: string; teaser: string;
@@ -49,7 +50,7 @@ export function chMagazineGraph(article?: ChArticle) {
     { "@type": "BreadcrumbList", itemListElement: crumbs },
     article ? {
       "@type": "Article", "@id": `${url}#article`, url, mainEntityOfPage: url, headline: article.title,
-      description: article.description, inLanguage: "de-CH", datePublished: article.published, dateModified: article.updated,
+      description: article.description, inLanguage: "de-CH", datePublished: schemaZeitstempel(article.published, article.slug), dateModified: schemaZeitstempel(article.updated || article.published, article.slug),
       image: { "@type": "ImageObject", url: staticAsset(article.image), width: article.imageWidth, height: article.imageHeight },
       author: { "@type": "Organization", name: "Redaktion tierisch-verliebt.ch", url: root },
     } : {

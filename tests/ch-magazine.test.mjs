@@ -42,7 +42,8 @@ test("CH-Dateiquelle und strukturierte Daten bleiben vollständig in der Schweiz
     const schema = graph.find(item => item["@type"] === "Article");
     assert.equal(schema.url, `https://tierisch-verliebt.ch/magazin/${article.slug}/`);
     assert.equal(schema.inLanguage, "de-CH");
-    assert.equal(schema.dateModified, "2026-10-23");
+    // Google will einen DateTime-Wert mit Zone; die Uhrzeit leitet schemaZeitstempel aus dem Slug ab.
+    assert.match(schema.dateModified, /^2026-10-23T\d\d:\d\d:\d\d\+0[12]:00$/);
     assert.equal(graph.find(item => item["@type"] === "FAQPage").mainEntity.length, 3);
     assert.equal(article.sections.some(section => section.id === "checkliste"), true);
   }
