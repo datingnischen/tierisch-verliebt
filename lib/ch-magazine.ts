@@ -3,7 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { CH_MAGAZINE_SLUGS, publicUrl } from "#markets";
 import { staticAsset } from "#static-asset";
-import { schemaZeitstempel } from "./schema-zeitstempel.ts";
+import { schemaZeitstempel } from "#schema-zeitstempel";
 
 export type ChArticle = {
   slug: string; title: string; seoTitle: string; description: string; teaser: string;

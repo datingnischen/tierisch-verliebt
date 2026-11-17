@@ -5,6 +5,7 @@
   "type": "module",
   "imports": {
     "#markets": "./lib/markets.ts",
+    "#schema-zeitstempel": "./lib/schema-zeitstempel.ts",
     "#nl-routes": "./lib/nl-routes.ts",
     "#it-routes": "./lib/it-routes.ts",
     "#magazine": "./lib/magazine.ts",

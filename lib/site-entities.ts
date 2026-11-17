@@ -1,4 +1,5 @@
 import { CHRISTIAN_NAME, christianPerson } from "./christian-person.mjs";
+import { schemaZeitstempel } from "#schema-zeitstempel";
 export const BRAND_NAME = "tierisch-verliebt.de";
 
 export const PLATFORM_OPERATOR = {
@@ -90,17 +91,10 @@ const BERLIN_CLOCK = new Intl.DateTimeFormat("en-US", {
 });
 
 /** WordPress dates come without zone; the magazine is edited in Berlin. */
-export function withBerlinOffset(date?: string) {
-  if (!date) return undefined;
-  if (/(Z|[+-]\d{2}:\d{2})$/.test(date)) return date;
-  const wallAsUtc = Date.parse(`${date}Z`);
-  if (Number.isNaN(wallAsUtc)) return undefined;
-  const part = Object.fromEntries(BERLIN_CLOCK.formatToParts(new Date(wallAsUtc)).map((p) => [p.type, Number(p.value)]));
-  const berlinWall = Date.UTC(part.year, part.month - 1, part.day, part.hour, part.minute, part.second);
-  const offsetMinutes = Math.round((berlinWall - wallAsUtc) / 60000);
-  const sign = offsetMinutes < 0 ? "-" : "+";
-  const abs = Math.abs(offsetMinutes);
-  return `${date}${sign}${String(Math.floor(abs / 60)).padStart(2, "0")}:${String(abs % 60).padStart(2, "0")}`;
+export function withBerlinOffset(date?: string | null, seed?: string) {
+  // Ein reiner Tag ist kein gueltiger schema.org/DateTime-Wert: schemaZeitstempel
+  // ergaenzt die Uhrzeit deterministisch (nie rund, je Seite verschieden).
+  return schemaZeitstempel(date, seed ?? date ?? "");
 }
 
 /** Article (posts) or WebPage (CMS pages) with breadcrumb, author, operator and the website, which points to the brand. */
