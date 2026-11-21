@@ -2,6 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import { IconySinglesWidget } from "@/components/icony-singles-widget";
 import { MarketLink } from "@/components/market-link";
 import { ANIMAL_LABELS, TOPIC_LABELS, buildCityGuide, cityGeo, nearestCities, type GuideTopic } from "@/lib/city-guide";
+import { cityQuizHint } from "@/lib/city-quiz-hint";
 import { getMarketCityPages, type MarketCityPage } from "@/lib/market-partnersuche";
 import type { MarketCode } from "@/lib/markets";
 import { AnimalIcon, ClockIcon, HeartIcon, IconSymbols, PawIcon, PinIcon, TOPIC_ICON_NAMES, TopicIcon } from "./tier-icons";
@@ -27,6 +28,7 @@ function pad(value: number) {
 
 export function TierCityPage({ market, city, expert }: Props) {
   const guide = buildCityGuide(city);
+  const quizHint = cityQuizHint(market, city.slug);
   const pages = getMarketCityPages(market);
   const geo = cityGeo(market, city.slug);
   const nearby = nearestCities(market, city.slug, pages, 5);
@@ -154,6 +156,13 @@ export function TierCityPage({ market, city, expert }: Props) {
               {section.html ? <div className="rich-content tvc-rich" dangerouslySetInnerHTML={{ __html: section.html }} /> : null}
             </article>
           ))}
+          {quizHint ? (
+            <p className="tvc-quiz-hint">
+              {quizHint.before}
+              <a href={quizHint.href} target="_blank" rel="noopener">{quizHint.anchor}</a>
+              {quizHint.after}
+            </p>
+          ) : null}
           {city.sources?.length ? (
             <details className="tvc-sources">
               <summary>Quellen</summary>

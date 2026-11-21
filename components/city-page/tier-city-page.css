@@ -1081,6 +1081,19 @@
   }
 }
 
+/* Redaktioneller Hinweis auf eine eigene Verteilerseite (z. B. koelner-singles.de), am Ende des Guides. */
+.tvc-quiz-hint {
+  margin: 14px 0 0;
+  color: var(--tvc-ink);
+  line-height: 1.65;
+}
+
+.tvc-quiz-hint a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* Quellen eigener Stadtseiten (z. B. Kassel): natives details, standardmäßig zu, 13 px. */
 .tvc-sources {
   margin: 8px 0 0;

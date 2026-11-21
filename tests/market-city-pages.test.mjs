@@ -152,3 +152,19 @@ test("gives every city page an individual meta title and description", async () 
     }
   }
 });
+
+// Rückverlinkung auf koelner-singles.de (2026-11-21): nur die Kölner Stadtseite, eigener Ankertext, dofollow.
+test("Quiz-Hinweis auf koelner-singles.de nur auf der Köln-Seite", async () => {
+  const { cityQuizHint } = await import("../lib/city-quiz-hint.ts");
+  const hint = cityQuizHint("de", "koeln");
+  assert.ok(hint, "Hinweis für Köln fehlt");
+  assert.equal(hint.href, "https://koelner-singles.de/#quiz");
+  assert.equal(hint.anchor, "Veedel-Check für Kölner Singles");
+  assert.equal(cityQuizHint("de", "berlin"), null);
+  assert.equal(cityQuizHint("at", "koeln"), null);
+  const view = readFileSync(new URL("../components/city-page/tier-city-page.tsx", import.meta.url), "utf8");
+  assert.match(view, /className="tvc-quiz-hint"/);
+  assert.doesNotMatch(view, /tvc-quiz-hint[\s\S]{0,400}(sponsored|nofollow)/);
+  const hintIndex = view.indexOf("tvc-quiz-hint");
+  assert.ok(hintIndex > 0 && hintIndex < view.indexOf('<details className="tvc-sources">'), "Hinweis steht vor den Quellen");
+});
