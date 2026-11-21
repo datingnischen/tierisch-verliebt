@@ -15,6 +15,17 @@ type Props = {
   locale?: "de" | "it";
 };
 
+type AgeRange = "alle" | "18-29" | "30-44" | "45-59" | "60-99";
+
+/** Altersfenster der Profilvorschau. Ohne age_min/age_max zeigt ICONY nur 20 bis 55 Jahre. */
+const AGE_RANGES: Record<AgeRange, { min: number; max: number }> = {
+  alle: { min: 18, max: 99 },
+  "18-29": { min: 18, max: 29 },
+  "30-44": { min: 30, max: 44 },
+  "45-59": { min: 45, max: 59 },
+  "60-99": { min: 60, max: 99 },
+};
+
 const COPY = {
   de: {
     noscript: "Für Profilvorschauen bitte JavaScript aktivieren oder die ausführliche Suche nutzen.",
@@ -29,6 +40,8 @@ const COPY = {
     title: (city: string) => `Neue tierliebe Singles in ${city}`,
     intro: (city: string) => `Wähle Frauen oder Männer und entdecke echte Profilvorschauen aus ${city} und Umgebung.`,
     legend: "Profile auswählen",
+    ageLegend: "Alter auswählen",
+    anyAge: "Alle",
     from: (label: string, city: string) => `${label} aus ${city}`,
     lazy: (city: string) => `Die Profilvorschauen aus ${city} werden geladen, sobald du diesen Bereich ansiehst.`,
     search: (city: string) => `Ausführlicher in ${city} suchen`,
@@ -47,6 +60,8 @@ const COPY = {
     title: (city: string) => `Single che amano gli animali vicino a ${city}`,
     intro: (city: string) => `Scegli donne o uomini e scopri profili reali da ${city} e dintorni.`,
     legend: "Scegli i profili",
+    ageLegend: "Scegli l\'età",
+    anyAge: "Tutte",
     from: (label: string, city: string) => `${label} da ${city}`,
     lazy: (city: string) => `I profili da ${city} vengono caricati quando arrivi a questa sezione.`,
     search: (city: string) => `Cerca in modo dettagliato vicino a ${city}`,
@@ -54,7 +69,7 @@ const COPY = {
   },
 };
 
-function buildWidgetDocument({ city, zip, country, platformId, registrationUrl, gender, locale = "de" }: Props & { gender: Gender }) {
+function buildWidgetDocument({ city, zip, country, platformId, registrationUrl, gender, age, locale = "de" }: Props & { gender: Gender; age: AgeRange }) {
   const copy = COPY[locale];
   const options = JSON.stringify({
     city,
@@ -64,6 +79,8 @@ function buildWidgetDocument({ city, zip, country, platformId, registrationUrl, 
     registrationUrl,
     gender: gender === "women" ? 2 : 1,
     count: 6,
+    ageMin: AGE_RANGES[age].min,
+    ageMax: AGE_RANGES[age].max,
     years: copy.years,
     photo: copy.photo,
     profileFrom: copy.profileFrom,
@@ -86,13 +103,14 @@ function install(i,c,o,n,y,j,s){i.IconyObject=y;i[y]=i[y]||function(){function b
 function fallback(){if(completed)return;completed=true;root.className="state";root.textContent=options.empty}
 function safeImage(value){if(typeof value!=="string")return"";if(value.startsWith("//"))return"https:"+value;return value.startsWith("https://")?value:""}
 function render(response){var items=response&&Array.isArray(response.data)?response.data.filter(function(item){return item&&item.gender===(options.gender===2?"female":"male")}):[];if(!items.length)return fallback();completed=true;root.className="grid";root.textContent="";items.slice(0,options.count).forEach(function(item){var a=document.createElement("a"),imageWrap=document.createElement("div"),strong=document.createElement("strong"),span=document.createElement("span"),image=safeImage(item.imageurl);a.className="tile";a.href=options.registrationUrl;a.target="_blank";a.rel="noopener noreferrer";imageWrap.className="image";if(image){var img=document.createElement("img");img.src=image;img.loading="lazy";img.alt=options.photo+String(item.username||"Profil");imageWrap.appendChild(img)}strong.textContent=String(item.username||options.profileFrom+options.city);span.textContent=String(item.userinfo_text||[item.age?item.age+options.years:"",item.city||options.city].filter(Boolean).join(", "));a.append(imageWrap,strong,span);root.appendChild(a)})}
-install(window,document,"script","https://js.icony.com/api.js","icony");window.icony("create",options.platformId);window.icony("get", "activities", "json",render,{count:options.count,gender:options.gender,country:options.country,zip:options.zip,affiliate:"location",use_thumbnails:0,blurred:0});setTimeout(fallback,10000)
+install(window,document,"script","https://js.icony.com/api.js","icony");window.icony("create",options.platformId);window.icony("get", "activities", "json",render,{count:options.count,gender:options.gender,country:options.country,zip:options.zip,age_min:options.ageMin,age_max:options.ageMax,affiliate:"location",use_thumbnails:0,blurred:0});setTimeout(fallback,10000)
 })();</script></body></html>`;
 }
 
 export function IconySinglesWidget(props: Props) {
   const [gender, setGender] = useState<Gender>("women");
-  const srcDoc = useMemo(() => buildWidgetDocument({ ...props, gender }), [props, gender]);
+  const [age, setAge] = useState<AgeRange>("alle");
+  const srcDoc = useMemo(() => buildWidgetDocument({ ...props, gender, age }), [props, gender, age]);
   const copy = COPY[props.locale ?? "de"];
   const selectedLabel = gender === "women" ? copy.women : copy.men;
   const controlName = `tierisch-singles-${props.platformId}-${props.zip}`;
@@ -113,10 +131,19 @@ export function IconySinglesWidget(props: Props) {
           </label>
         ))}
       </fieldset>
+      <fieldset className={styles.controls}>
+        <legend>{copy.ageLegend}</legend>
+        {(Object.keys(AGE_RANGES) as AgeRange[]).map((value) => (
+          <label className={age === value ? styles.active : undefined} key={value}>
+            <input type="radio" name={`${controlName}-alter`} checked={age === value} onChange={() => setAge(value)} />
+            {value === "alle" ? copy.anyAge : value === "60-99" ? "60+" : value.replace("-", "–")}
+          </label>
+        ))}
+      </fieldset>
       <div className={styles.framePanel}>
         <strong>{copy.from(selectedLabel, props.city)}</strong>
         <p>{copy.lazy(props.city)}</p>
-        <iframe key={gender} className={styles.frame} title={copy.from(selectedLabel, props.city)} srcDoc={srcDoc} loading="lazy" referrerPolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" />
+        <iframe key={`${gender}-${age}`} className={styles.frame} title={copy.from(selectedLabel, props.city)} srcDoc={srcDoc} loading="lazy" referrerPolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" />
       </div>
       <div className={styles.actions}>
         <a href={props.searchUrl} target="_blank" rel="noopener noreferrer">{copy.search(props.city)}</a>
